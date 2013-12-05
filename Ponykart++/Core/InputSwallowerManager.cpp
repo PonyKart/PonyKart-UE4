@@ -1,0 +1,33 @@
+#include "Core/InputSwallowerManager.h"
+
+using namespace std;
+using namespace Ponykart;
+
+void InputSwallowerManager::addSwallower(const bool* const condition, void* swallower)
+{
+	ThingsToCheck.insert(pair<const bool* const,void*>(condition, swallower));
+}
+
+bool InputSwallowerManager::isSwallowed(void* querier)
+{
+	bool result = false;
+	// we go through our conditions to check
+	for (auto pair : ThingsToCheck)
+	{
+		// and we don't count things that are managed by the querier
+		if (pair.second == querier)
+			continue;
+		// We OR the conditions with the result. If any of the conditions are true, the input is swallowed.
+		result |= *(pair.first);
+	}
+	return result;
+}
+
+bool InputSwallowerManager::isSwallowed()
+{
+	bool result = false;
+	// we go through our conditions to check
+	for (auto pair : ThingsToCheck)
+		result |= *(pair.first); // we OR the conditions with the result. If any of the conditions are true, the input is swallowed.
+	return result;
+}

@@ -7,7 +7,7 @@ const float LevelManager::INITIAL_DELAY{0.1f};
 
 LevelManager::LevelManager()
 {
-	IsValidLevel = false;
+	isValidLevel = false;
 	hasRunPostInitEvents = false;
 	elapsed = 0;
 	frameOneRendered = frameTwoRendered = false;

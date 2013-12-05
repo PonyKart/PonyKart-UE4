@@ -7,16 +7,15 @@
 #include "Levels/Level.h"
 #include "Levels/LevelChangeRequest.h"
 #include "Levels/LevelChangedEventArgs.h"
+#include "Core/Settings.h"
 
-// TODO: Events are basically function pointers. Implement them. You may need to have vectors of them for each event.
-// TODO: Apparently, Mogre has an event system. Fint the equivalent in Ogre.
+// TODO: Implement all the required events
 
 namespace Ponykart
 {
 namespace Levels
 {
 
-// TODO: This is probably how you're supposed to define LevelEvent, since it's apparently a type. Probably
 using LevelEvent =  std::vector<std::function<void (LevelChangedEventArgs)>>;
 using LevelProgressEvent =  std::vector<std::function<void (LevelChangedEventArgs,std::string)>>;
 
@@ -24,25 +23,26 @@ class LevelManager
 {
 public:
 	explicit LevelManager();
-	void RunPostInitEvents(); // runs level manager stuff that needs to run immediately after kernel setup
-	void LoadLevel(LevelChangeRequest request, float delay = INITIAL_DELAY); // Loads a level! (delay: Minimum time to wait (in seconds) before we load the level, to let stuff like loading screens have a chance to render.)
+	void runPostInitEvents(); // runs level manager stuff that needs to run immediately after kernel setup
+	void loadLevel(LevelChangeRequest request, float delay = INITIAL_DELAY); // Loads a level! (delay: Minimum time to wait (in seconds) before we load the level, to let stuff like loading screens have a chance to render.)
 	// Getters
 	Level getCurrentLevel();
 	bool getIsValidLevel();
+	inline bool isPlayableLevel() {return currentLevel && currentLevel->getType()==LevelType::Race && currentLevel->getName()!=Settings::MainMenuName;};
 
 private:
-	void UnloadLevel(LevelChangedEventArgs eventArgs); // Unloads the current level
-	void LoadLevelNow(LevelChangedEventArgs args); // Unloads the current level and loads the new level
+	void unloadLevel(LevelChangedEventArgs eventArgs); // Unloads the current level
+	void loadLevelNow(LevelChangedEventArgs args); // Unloads the current level and loads the new level
 	// TODO: Fix FrameEvent not being defined
 	//bool DelayedRun_FrameStarted(FrameEvent evt, float delay, void (*action)(LevelChangedEventArgs), LevelChangedEventArgs args); // Runs something after both the specified time has passed and two frames have been rendered.
-	void Detach(); // Unhook from the frame started event
-	void Invoke(LevelEvent e, LevelChangedEventArgs args); // Helper
-	void InvokeLevelProgress(LevelChangedEventArgs args, std::string message);
+	void detach(); // Unhook from the frame started event
+	void invoke(LevelEvent e, LevelChangedEventArgs args); // Helper
+	void invokeLevelProgress(LevelChangedEventArgs args, std::string message);
 
 private:
-	Level currentLevel;
+	Level* currentLevel;
 	bool hasRunPostInitEvents;
-	bool IsValidLevel;
+	bool isValidLevel;
 	static const float INITIAL_DELAY; // time to wait until we run the event
 	float elapsed; // used in the FrameStarted method
 	bool frameOneRendered, frameTwoRendered; // keeps track of how many frames we've rendered

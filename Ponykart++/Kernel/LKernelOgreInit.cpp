@@ -17,12 +17,12 @@ void LKernel::initOgreRenderSystem()
 {
 	//renderSystem = root->getRenderSystemByName("Direct3D9 Rendering Subsystem");
 	renderSystem = root->getRenderSystemByName("OpenGL Rendering Subsystem");
-	renderSystem->setConfigOption("Full Screen", Options::Get("Full Screen"));
-	renderSystem->setConfigOption("VSync", Options::Get("VSync"));
-	renderSystem->setConfigOption("VSync Interval", Options::Get("VSync Interval"));
-	renderSystem->setConfigOption("FSAA", Options::Get("FSAA"));
-	renderSystem->setConfigOption("Video Mode", Options::Get("Video Mode"));
-	renderSystem->setConfigOption("sRGB Gamma Conversion", Options::Get("sRGB Gamma Conversion"));
+	renderSystem->setConfigOption("Full Screen", Options::get("Full Screen"));
+	renderSystem->setConfigOption("VSync", Options::get("VSync"));
+	renderSystem->setConfigOption("VSync Interval", Options::get("VSync Interval"));
+	renderSystem->setConfigOption("FSAA", Options::get("FSAA"));
+	renderSystem->setConfigOption("Video Mode", Options::get("Video Mode"));
+	renderSystem->setConfigOption("sRGB Gamma Conversion", Options::get("sRGB Gamma Conversion"));
 	root->setRenderSystem(renderSystem); // Add to global objects
 	addGlobalObject(renderSystem);
 #if DEBUG
@@ -44,10 +44,21 @@ void LKernel::initOgreRenderSystem()
 
 void LKernel::initOgreRenderWindow()
 {
-	window = root->initialise(true, "Ponykart"); // Should be initialized in the rendering thread, for some reason
-	window->addViewport(root->createSceneManager("OctreeSceneManager","sceneMgr")->createCamera("tempCam"));
+	window = root->initialise(true, "Ponykart");
 	window->setDeactivateOnFocusChange(false);
 	addGlobalObject(window);
+}
+
+void LKernel::initOgreSceneManager()
+{
+	sceneManager = root->createSceneManager("OctreeSceneManager","sceneMgr");
+	addGlobalObject(sceneManager);
+}
+
+void LKernel::initOgreViewportCam()
+{
+	viewport = window->addViewport(sceneManager->createCamera("tempCam"));
+	addGlobalObject(viewport);
 }
 
 void LKernel::details::initOgreResources()

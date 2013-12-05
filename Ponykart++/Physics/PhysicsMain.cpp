@@ -8,37 +8,72 @@ using namespace Ponykart::Physics;
 using namespace Ponykart::LKernel;
 using namespace Ponykart::Levels;
 
+// Define static members
+bool PhysicsMain::DrawLines = false;
+bool PhysicsMain::SlowMo = false;
+/*
+
 PhysicsMain::PhysicsMain()
 {
 	log("[Loading] Creating PhysicsMain...");
 	LevelManager::OnLevelUnload.push_back(OnLevelUnload);
+
+	// Create our frame listeners
+	frameEnded = new FrameEndedListener;
 }
 
 void PhysicsMain::OnLevelUnload(LevelChangedEventArgs eventArgs)
 {
-	LKernel::GetG<Root>()->removeFrameListener(FrameEnded);
-	// TODO: FrameEnded must inherit from Ogre::FrameListener
+	LKernel::GetG<Root>()->removeFrameListener(frameEnded);
 
-	lock (world)
+	if (world)
 	{
-		if (!world.IsDisposed)
+		for (int a = 0; a < world->collisionObjectArray.Count; a++)
 		{
-			for (int a = 0; a < world.CollisionObjectArray.Count; a++)
+			auto obj = world->collisionObjectArray[a];
+			if (obj)
 			{
-				var obj = world.CollisionObjectArray[a];
-				if (obj != null && !obj.IsDisposed)
-				{
-					world.RemoveCollisionObject(obj);
-					obj.Dispose();
-				}
+				world->removeCollisionObject(obj);
+				delete obj;
 			}
-
-			broadphase.Dispose();
-			solver.Dispose();
-			dcc.Dispose();
-			dispatcher.Dispose();
-
-			world.Dispose();
 		}
+
+		delete broadphase; broadphase=nullptr;
+		delete solver; solver=nullptr;
+		delete dcc; dcc=nullptr;
+		delete dispatcher; dispatcher=nullptr;
+
+		delete world; world=nullptr;
 	}
 }
+
+bool FrameEndedListener::frameEnded(const Ogre::FrameEvent& evt)
+{
+	if (Pauser.IsPaused || world.IsDisposed)
+		return true;
+
+	// run the events that go just before we simulate
+	if (PreSimulate != null)
+		PreSimulate(world, evt);
+
+	if (FinaliseBeforeSimulation != null)
+		FinaliseBeforeSimulation(world, evt);
+
+	world->stepSimulation(PhysicsMain::SlowMo ? evt.timeSinceLastFrame / 10.0 : evt.timeSinceLastFrame, _maxSubsteps, _fixedTimestep);
+
+	// run the events that go just after we simulate
+	if (PostSimulate != null)
+		PostSimulate(world, evt);
+
+	if (PhysicsMain::DrawLines)
+		world.DebugDrawWorld();
+
+	//foreach (var item in LKernel.GetG<LevelManager>().CurrentLevel.Things) {
+	//	if (item.Value.Name.Contains("Apple") && !item.Value.Name.Contains("Tree")) {
+	//		System.Console.WriteLine(item.Value.Body.IsActive);
+	//	}
+	//}
+
+	return true;
+}
+*/

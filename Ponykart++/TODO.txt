@@ -3,19 +3,22 @@
 - Convert the CurrentNamingScheme to a newNamingSceme with lowercase first letter for objects/functions/variables
 - Find how to remove errors with vertex_program_ref and fragment_program_ref in the .materials files
 - Make constructors explicit everywhere not doing so wouldn't make sense
-- Rename InitializeOgre() into something more appropriate, since this function does other stuff and the actual Ogre init is mostly done in the Splash
-- Make a simple/small documentation for the code. Or just add comments at the start of some files. <- This.
-- Have a thread for Ogre only, and a thread for everything else if possible. Remember that Ogre can't into multithreads. At all.
--- Ogre is shit. We're just not going to process the message pump outside of increment()
+- Make a simple/small documentation for the code. Or just add comments at the start of some files.
+- 'if "Twh = Yes" in the options, derpy will not follow you'. Change Twh to something more meaningful
+- Changelog says thas shaders are useless, and only there because knighty wanted them. Are shaders useless ?
+- Getters for set-protected or set-private members should return const references or const pointers instead of copies, and be inline
+
+# OgreBullet
+- DiscreteDynamicsWorld
 
 # Optimisations
-- Getters for set-protected or set-private members should return const references instead of copies, and be inline
 - Remove D3D9 from the active plugins once you're done testing with it
 - Make functions take const args and references and make variables constexpr whenever it makes sense
 - Zip some ressources when it makes sense (big-ish files with good ratio)
 - Delete all the files in ./media that we don't actually need.
 - Index the (unordered_)maps with enums instead of strings when possible.
 - In PhysicsMain::frameEnded, the physics is processed ~at fixed intervals, it's probably causing the physics jitter.
+- Replace some calls of LKernel::GetG by the pointer itself, when possible (E.g LKernel::GetG<Ogre::Root> becomes LKernel::root)
 
 # Compilation
 - Find a decent C++11 compiler that supports <thread> on windows and can compile Ogre.

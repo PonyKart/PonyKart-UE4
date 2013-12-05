@@ -1,10 +1,16 @@
-#include <boost/thread.hpp>
-#include "LKernel.h"
+#include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
 #include "Physics/PhysicsMain.h"
+#include "Core/Cameras/CameraManager.h"
+#include "Core/Settings.h"
+#include "Core/InputMain.h"
+#include "Core/KeyBindingManager.h"
+#include "Core/InputSwallowerManager.h"
+#include "Core/Pauser.h"
 
 using namespace Ogre;
 using namespace Ponykart;
+using namespace Ponykart::Core;
 using namespace Ponykart::Physics;
 using namespace LKernel::details;
 
@@ -22,7 +28,7 @@ void LKernel::loadInitialObjects(Splash& splash)
 	splash.increment("Initialising Bullet physics engine...");
 	try
 	{
-		addGlobalObject(new PhysicsMain());
+		//addGlobalObject(new PhysicsMain());
 		//addGlobalObject(new CollisionShapeManager());
 		//addGlobalObject(new CollisionReporter());
 		//addGlobalObject(new TriggerReporter());
@@ -32,4 +38,16 @@ void LKernel::loadInitialObjects(Splash& splash)
 	{
 		throw std::string("Bullet loading unsuccessful! Try installing the 2010 VC++ Redistributable (x86) - google it!");
 	}
+
+	// level
+	splash.increment("Loading first level physics...");
+	//GetG<PhysicsMain>().LoadPhysicsLevel(Settings::MainMenuName); // TODO: Implement LoadPhysicsLevel
+	addGlobalObject(new CameraManager());
+
+	// OIS and input
+	splash.increment("Starting input system...");
+	addGlobalObject(new InputMain());
+	addGlobalObject(new KeyBindingManager());
+	addGlobalObject(new InputSwallowerManager());
+	addGlobalObject(new Pauser());
 }

@@ -14,7 +14,7 @@ int main()
 	try
 	{
 		log("[Loading] Loading configuration...");
-		Options::Initialize();
+		Options::initialize();
 
 		log("[Loading] Loading the render system...");
 		initOgreRenderSystem();
@@ -22,12 +22,19 @@ int main()
 		log("[Loading] Creating the render window...");
 		initOgreRenderWindow();
 
+		log("Creating scene manager...");
+		initOgreSceneManager();
+
+		log("Creating player camera and viewport...");
+		initOgreViewportCam();
+
 		Splash splash;
 
 		loadInitialObjects(splash);
 
 		//startRendering();
 
+		log("Exited successfully.");
 		return EXIT_SUCCESS;
 	}
 	catch (std::string e) // If you can't guarantee that someone will catch your exceptions, throw a string.

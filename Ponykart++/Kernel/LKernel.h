@@ -17,6 +17,8 @@ namespace LKernel
 	extern Ogre::Root* root;
 	extern Ogre::RenderWindow* window;
 	extern Ogre::RenderSystem* renderSystem;
+	extern Ogre::SceneManager* sceneManager;
+	extern Ogre::Viewport* viewport;
 
 	// Implementation details that are not part of the interface.
 	namespace details
@@ -33,6 +35,8 @@ namespace LKernel
 	void initOgreRoot();
 	void initOgreRenderSystem();
 	void initOgreRenderWindow();
+	void initOgreSceneManager();
+	void initOgreViewportCam();
 	void loadInitialObjects(Splash& splash);
 	void* addGlobalObject(void* object, std::string typeName);
 	template<typename T> static inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());}

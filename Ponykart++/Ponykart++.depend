@@ -8,7 +8,7 @@
 1385590985 c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\launch.h
 	<string>
 
-1386016362 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\kernel\lkernel.h
+1386243658 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\kernel\lkernel.h
 	<unordered_map>
 	<typeinfo>
 	<OgreTextAreaOverlayElement.h>
@@ -1436,10 +1436,10 @@
 	"OgrePCZPlugin.h"
 	"OgreOctreeZonePlugin.h"
 
-1386005818 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernel.cpp
+1386243480 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernel.cpp
 	"Kernel/LKernel.h"
 
-1386016362 c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernel.h
+1386243658 c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernel.h
 	<unordered_map>
 	<typeinfo>
 	<OgreTextAreaOverlayElement.h>
@@ -1457,31 +1457,37 @@
 	"Ogre.h"
 	"OgreTextAreaOverlayElement.h"
 
-1386014150 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernelregistration.cpp
-	<boost/thread.hpp>
-	"LKernel.h"
+1386253951 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernelregistration.cpp
+	"Kernel/LKernel.h"
 	"Levels/LevelManager.h"
 	"Physics/PhysicsMain.h"
+	"Core/Cameras/CameraManager.h"
+	"Core/Settings.h"
+	"Core/InputMain.h"
+	"Core/KeyBindingManager.h"
+	"Core/InputSwallowerManager.h"
+	"Core/Pauser.h"
 
 1386002636 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\launch.h
 	<string>
 	<Ogre.h>
 
-1386014931 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\levels\levelmanager.h
+1386264221 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\levels\levelmanager.h
 	<string>
 	<functional>
 	<Ogre.h>
 	"Levels/Level.h"
 	"Levels/LevelChangeRequest.h"
 	"Levels/LevelChangedEventArgs.h"
+	"Core/Settings.h"
 
-1385727452 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\levels\levelmanager.cpp
+1386264602 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\levels\levelmanager.cpp
 	"Levels/LevelManager.h"
 
-1385638370 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\levels\level.cpp
+1386265162 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\levels\level.cpp
 	"Levels/Level.h"
 
-1386001378 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\levels\level.h
+1386265045 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\levels\level.h
 	<string>
 	<unordered_map>
 	"Levels/LevelType.h"
@@ -1524,19 +1530,19 @@
 	<Ogre.h>
 	"TokenHolder.h"
 
-1386013235 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernelogreinit.cpp
+1386266325 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernelogreinit.cpp
 	<string>
 	"Kernel/LKernel.h"
 	"Core/Options.h"
 
-1386001348 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\options.h
+1386264667 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\options.h
 	<string>
 	<unordered_map>
 	"Core/OptionsEnums.h"
 
 1385753557 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\optionsenums.h
 
-1385999159 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\options.cpp
+1386265227 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\options.cpp
 	<fstream>
 	"Core/Options.h"
 	"Ogre.h"
@@ -8087,18 +8093,83 @@
 
 1386013537 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\physics\collisionshapemanager.h
 
-1385988208 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\physics\physicsmain.cpp
+1386245283 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\physics\physicsmain.cpp
+	<Ogre.h>
 	"Physics/PhysicsMain.h"
+	"Kernel/LKernel.h"
+	"Levels/LevelManager.h"
 
-1386014763 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\physics\physicsmain.h
+1386245235 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\physics\physicsmain.h
+	<OgreFrameListener.h>
 	"Levels/LevelChangedEventArgs.h"
 
 1386004133 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\kernel\lkernelstartup.cpp
 
-1386012992 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\main.cpp
+1386266380 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\main.cpp
 	<string>
 	<Ogre.h>
 	"Core/Options.h"
 	"UI/Splash.h"
 	"Kernel/LKernel.h"
+
+1386245548 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\cameras\cameramanager.h
+	<vector>
+	"Core/Cameras/LCamera.h"
+
+1386245609 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\cameras\lcamera.h
+	<string>
+	<Ogre.h>
+
+1386244400 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\cameras\cameramanager.cpp
+	"Core/Cameras/CameraManager.h"
+
+1386245487 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\cameras\lcamera.cpp
+	<string>
+	"Core/Cameras/LCamera.h"
+
+1386253304 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\inputswallowermanager.cpp
+	"Core/InputSwallowerManager.h"
+
+1386253222 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\inputswallowermanager.h
+	<map>
+
+1386266248 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\inputmain.cpp
+	<string>
+	<sstream>
+	"Kernel/LKernel.h"
+	"Core/InputMain.h"
+
+1386262251 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\inputmain.h
+	<vector>
+	<functional>
+	<OIS.h>
+	"Core/ControllerManager.h"
+
+1386247418 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\controllermanager.h
+
+1386246553 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\settings.h
+
+1386264951 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\keybindingmanager.cpp
+	"Kernel/LKernel.h"
+	"Core/KeyBindingManager.h"
+	"Core/InputMain.h"
+	"Core/Options.h"
+	"Core/InputSwallowerManager.h"
+
+1386264322 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\keybindingmanager.h
+	<map>
+	<functional>
+	<OIS.h>
+	"Core/ControllerManager.h"
+
+1386265101 source:c:\users\tux\documents\dev\projects\ponykart\ponykart++\core\pauser.cpp
+	"Core/Pauser.h"
+	"Core/InputMain.h"
+	"Kernel/LKernel.h"
+	"Levels/LevelManager.h"
+	"Core/InputSwallowerManager.h"
+
+1386264569 c:\users\tux\documents\dev\projects\ponykart\ponykart++\\core\pauser.h
+	<functional>
+	<OIS.h>
 

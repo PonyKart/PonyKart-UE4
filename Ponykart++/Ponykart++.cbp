@@ -64,6 +64,7 @@
 			<Add directory="C:/Program Files (x86)/OGRE/include/OGRE" />
 			<Add directory="C:/Users/Tux/Documents/Dev/Projects/Ponykart/PonykartParsers++/" />
 			<Add directory="C:/boost_1_55_0" />
+			<Add directory="C:/Program Files (x86)/OgreBullet/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-Wl,--enable-auto-import" />
@@ -76,15 +77,26 @@
 			<Add directory="C:/boost_1_55_0/stage/lib" />
 		</Linker>
 		<Unit filename="Actors/LThing.h" />
+		<Unit filename="Core/Cameras/CameraManager.cpp" />
+		<Unit filename="Core/Cameras/CameraManager.h" />
+		<Unit filename="Core/Cameras/LCamera.cpp" />
+		<Unit filename="Core/Cameras/LCamera.h" />
+		<Unit filename="Core/ControllerManager.h" />
+		<Unit filename="Core/InputMain.cpp" />
+		<Unit filename="Core/InputMain.h" />
+		<Unit filename="Core/InputSwallowerManager.cpp" />
+		<Unit filename="Core/InputSwallowerManager.h" />
+		<Unit filename="Core/KeyBindingManager.cpp" />
+		<Unit filename="Core/KeyBindingManager.h" />
 		<Unit filename="Core/Options.cpp" />
 		<Unit filename="Core/Options.h" />
 		<Unit filename="Core/OptionsEnums.h" />
+		<Unit filename="Core/Settings.h" />
 		<Unit filename="Core/main.cpp" />
 		<Unit filename="Kernel/LKernel.cpp" />
 		<Unit filename="Kernel/LKernel.h" />
 		<Unit filename="Kernel/LKernelOgreInit.cpp" />
 		<Unit filename="Kernel/LKernelRegistration.cpp" />
-		<Unit filename="Kernel/LKernelStartup.cpp" />
 		<Unit filename="Levels/Level.cpp" />
 		<Unit filename="Levels/Level.h" />
 		<Unit filename="Levels/LevelChangeRequest.h" />

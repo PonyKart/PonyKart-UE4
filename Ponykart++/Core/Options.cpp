@@ -10,10 +10,10 @@ using namespace std;
 // Define the static members
 unordered_map<string, string> Options::dict;
 unordered_map<string, string> Options::defaults;
-ModelDetailOption Options::ModelDetail;
-ShadowDetailOption Options::ShadowDetail;
+ModelDetailOption Options::modelDetail;
+ShadowDetailOption Options::shadowDetail;
 
-void Options::SetupDictionaries()
+void Options::setupDictionaries()
 {
 	defaults={
 		{"FSAA","0"},
@@ -35,9 +35,9 @@ void Options::SetupDictionaries()
 	dict = defaults; // copy it into the regular dictionary
 }
 
-void Options::Initialize()
+void Options::initialize()
 {
-	SetupDictionaries();
+	setupDictionaries();
 
 	constexpr char optionsPath[] = "media/config/ponykart.cfg";
 
@@ -50,8 +50,8 @@ void Options::Initialize()
 		for (auto setting : defaults)
 			file << setting.first << "=" << setting.second << endl;
 		file.close();
-		ModelDetail = ModelDetailOption::Medium;
-		ShadowDetail = ShadowDetailOption::Some;
+		modelDetail = ModelDetailOption::Medium;
+		shadowDetail = ShadowDetailOption::Some;
 	}
 	else // otherwise we just read from it
 	{
@@ -64,23 +64,23 @@ void Options::Initialize()
 			dict[curPair.first] = curPair.second;
 		// Convert the settings for ModelDetail and ShadowDetail (string) into enum values (int)
 		string enumStr = dict["ModelDetail"];
-		ModelDetail = enumStr=="High"?ModelDetailOption::High: (enumStr=="Low"?ModelDetailOption::Low: (ModelDetailOption::Medium));
+		modelDetail = enumStr=="High"?ModelDetailOption::High: (enumStr=="Low"?ModelDetailOption::Low: (ModelDetailOption::Medium));
 		enumStr = dict["ShadowDetail"];
-		ShadowDetail = enumStr=="Many"?ShadowDetailOption::Many: (enumStr=="None"?ShadowDetailOption::None: (ShadowDetailOption::Some));
+		shadowDetail = enumStr=="Many"?ShadowDetailOption::Many: (enumStr=="None"?ShadowDetailOption::None: (ShadowDetailOption::Some));
 	}
 
 #ifdef DEBUG
 	// since we sometimes add new options, we want to make sure the .ini file has all of them
-	Save();
+	save();
 #endif
 }
 
-void Options::Save()
+void Options::save()
 {
 	constexpr char optionsPath[] = "media/config/ponykart.cfg";
 
-	dict["ModelDetail"] = ModelDetail==ModelDetailOption::High?"High": (ModelDetail==ModelDetailOption::Low?"Low": ("Medium"));
-	dict["ShadowDetail"] = ShadowDetail==ShadowDetailOption::Many?"Many": (ShadowDetail==ShadowDetailOption::None?"None": ("Some"));
+	dict["ModelDetail"] = modelDetail==ModelDetailOption::High?"High": (modelDetail==ModelDetailOption::Low?"Low": ("Medium"));
+	dict["ShadowDetail"] = shadowDetail==ShadowDetailOption::Many?"Many": (shadowDetail==ShadowDetailOption::None?"None": ("Some"));
 
 	fstream file;
 	file.open(optionsPath,ios::out);
@@ -90,7 +90,7 @@ void Options::Save()
 		file << setting.first << "=" << setting.second << endl;
 }
 
-string Options::Get(const string keyName)
+string Options::get(const string keyName)
 {
 	// TODO: The string comparisons should be case-insensitive, like in the C# code
 	if (keyName == "ModelDetail")
@@ -99,4 +99,15 @@ string Options::Get(const string keyName)
 		throw new string("Use the Options.ShadowDetail enum instead of this method!");
 
 	return dict[keyName];
+}
+
+bool Options::getBool(string keyName)
+{
+	string value = dict[keyName];
+	if (value == "Yes")
+		return true;
+	else if (value == "No")
+		return false;
+	else
+		throw string("Options::getBool: The key '"+keyName+"' does not represent a boolean option!");
 }
