@@ -6,7 +6,8 @@ This is a fork of Ponykart, originally git-svn cloned from the ponykart sourcefo
 <h4><a href="http://github.com/Ponykart/PonyKart/releases">Downloads</a></h4>
 
 <b>Google group : <a href="https://groups.google.com/forum/#!forum/ponykart">groups.google.com/forum/#!forum/ponykart</a><br/>
-Original site (dead) : <a href="http://ponykart.net">ponykart.net</a></b>
+Original site (dead) : <a href="http://ponykart.net">ponykart.net</a><br/>
+New site : <a href="http://ponykart.org">ponykart.org</b>
 
 
 
