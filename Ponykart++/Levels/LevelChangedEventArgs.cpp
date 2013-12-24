@@ -2,8 +2,8 @@
 
 using namespace Ponykart::Levels;
 
-LevelChangedEventArgs::LevelChangedEventArgs(const Level& newLevel, const Level& oldLevel, const LevelChangeRequest& request)
-: NewLevel(newLevel), OldLevel(oldLevel), Request(request)
+LevelChangedEventArgs::LevelChangedEventArgs(const Level& NewLevel, const Level& OldLevel, const LevelChangeRequest& Request)
+: newLevel(NewLevel), oldLevel(OldLevel), request(Request)
 {
 
 }

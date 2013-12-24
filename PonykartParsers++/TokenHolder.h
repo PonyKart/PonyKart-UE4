@@ -9,34 +9,39 @@
 
 namespace PonykartParsers
 {
-// Since both the .thing and its blocks can all have properties, they all use this abstract class to give them dictionaries and a few helpful methods
+// Since both the .thing and its blocks can all have properties, they all use this abstract class to give them maps and a few helpful methods
 class TokenHolder // TODO: Implement properly
 {
 public:
-	TokenHolder()=delete;
-	virtual void SetUpDictionaries(); // Constructs the std::unordered_maps
-	virtual void Finish();
-	ThingEnum GetEnumProperty(std::string propertyName, ThingEnum* defaultValue=nullptr); // Gets an enum property from the dictionaries.
-	std::string GetStringProperty(std::string propertyName, std::string defaultValue=std::string()); // Gets a string property from the dictionaries.
-	float GetFloatProperty(std::string propertyName, float* defaultValue=nullptr); // Gets a float property from the dictionaries.
-	bool GetBoolProperty(std::string propertyName, bool* defaultValue=nullptr); // Gets a boolean property from the dictionaries.
-	Ogre::Vector3 GetVectorProperty(std::string propertyName, Ogre::Vector3* defaultValue=nullptr); // Gets a vector property from the dictionaries.
-	Ogre::Quaternion GetQuatProperty(std::string propertyName, Ogre::Quaternion* defaultValue); // Gets a quaternion property from the dictionaries.
+	//virtual void SetUpmaps()=0; // Constructs the std::unordered_maps
+	virtual void finish()=0;
+	ThingEnum getEnumProperty(const std::string& propertyName) const; // Gets an enum property from the maps.
+	ThingEnum getEnumProperty(const std::string& propertyName, const ThingEnum& defaultValue) const; // Gets an enum property from the maps.
+	std::string getStringProperty(const std::string& propertyName) const; // Gets a string property from the maps.
+	std::string getStringProperty(const std::string& propertyName, const std::string& defaultValue) const; // Gets a string property from the maps.
+	float getFloatProperty(const std::string& propertyName) const; // Gets a float property from the maps.
+	float getFloatProperty(const std::string& propertyName, const float defaultValue) const; // Gets a float property from the maps.
+	bool getBoolProperty(const std::string& propertyName) const; // Gets a boolean property from the maps.
+	bool getBoolProperty(const std::string& propertyName, const bool defaultValue) const; // Gets a boolean property from the maps.
+	Ogre::Vector3 getVectorProperty(const std::string& propertyName) const; // Gets a vector property from the maps.
+	Ogre::Vector3 getVectorProperty(const std::string& propertyName, const Ogre::Vector3& defaultValue) const; // Gets a vector property from the maps.
+	Ogre::Quaternion getQuatProperty(const std::string& propertyName) const; // Gets a quaternion property from the maps.
+	Ogre::Quaternion getQuatProperty(const std::string& propertyName, const Ogre::Quaternion& defaultValue) const; // Gets a quaternion property from the maps.
 	// Getters
-	std::unordered_map<std::string, ThingEnum> getEnumTokens();
-	std::unordered_map<std::string, std::string> getStringTokens();
-	std::unordered_map<std::string, float> getFloatTokens();
-	std::unordered_map<std::string, bool> getBoolTokens();
-	std::unordered_map<std::string, Ogre::Vector3> getVectorTokens();
-	std::unordered_map<std::string, Ogre::Quaternion> getQuatTokens();
+	const std::unordered_map<std::string, ThingEnum>& getEnumTokens() const;
+	const std::unordered_map<std::string, std::string>& getStringTokens() const;
+	const std::unordered_map<std::string, float>& getFloatTokens() const;
+	const std::unordered_map<std::string, bool>& getBoolTokens() const;
+	const std::unordered_map<std::string, Ogre::Vector3>& getVectorTokens() const;
+	const std::unordered_map<std::string, Ogre::Quaternion>& getQuatTokens() const;
 
 protected: // Set-protected public members
-	std::unordered_map<std::string, ThingEnum> EnumTokens;
-	std::unordered_map<std::string, std::string> StringTokens;
-	std::unordered_map<std::string, float> FloatTokens;
-	std::unordered_map<std::string, bool> BoolTokens;
-	std::unordered_map<std::string, Ogre::Vector3> VectorTokens;
-	std::unordered_map<std::string, Ogre::Quaternion> QuatTokens;
+	std::unordered_map<std::string, ThingEnum> enumTokens;
+	std::unordered_map<std::string, std::string> stringTokens;
+	std::unordered_map<std::string, float> floatTokens;
+	std::unordered_map<std::string, bool> boolTokens;
+	std::unordered_map<std::string, Ogre::Vector3> vectorTokens;
+	std::unordered_map<std::string, Ogre::Quaternion> quatTokens;
 
 };
 } // PonykartParsers

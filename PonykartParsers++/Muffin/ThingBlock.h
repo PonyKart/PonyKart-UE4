@@ -3,28 +3,30 @@
 
 #include <string>
 #include <Ogre.h>
+#include "TokenHolder.h"
 
-#include "MuffinDefinition.h"
+//#include "MuffinDefinition.h"
 
 namespace PonykartParsers
 {
+class MuffinDefinition;
 // These represent each Thing in the .muffin files
-class ThingBlock : TokenHolder
+class ThingBlock : public TokenHolder
 {
 public:
-	ThingBlock(std::string thingName, MuffinDefinition owner);
-	ThingBlock(std::string thingName, Ogre::Vector3 position);
-	ThingBlock(std::string thingName, Ogre::Vector3 position, Ogre::Quaternion orientation);
-	void Finish() override;
+	ThingBlock(std::string ThingName, MuffinDefinition* Owner);
+	ThingBlock(std::string ThingName, Ogre::Vector3 Position);
+	ThingBlock(std::string ThingName, Ogre::Vector3 Position, Ogre::Quaternion Orientation);
+	void finish();
 	// Getters
-	std::string getThingName();
-	MuffinDefinition getOwner();
+	std::string getThingName() const;
+	MuffinDefinition* getOwner();
 	Ogre::Vector3 getPosition();
 
 private: // Set-private public members
-	std::string ThingName; // The name of the .thing file this corresponds with
-	MuffinDefinition Owner;
-	Ogre::Vector3 Position;
+	std::string thingName; // The name of the .thing file this corresponds with
+	MuffinDefinition* owner;
+	Ogre::Vector3 position;
 };
 } // PonykartParsers
 

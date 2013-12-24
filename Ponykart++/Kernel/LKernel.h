@@ -14,11 +14,11 @@ namespace Ponykart
 namespace LKernel
 {
 	// Anyone can get those from ogre's interface, but accessing them throught LKernel is faster.
-	extern Ogre::Root* root;
-	extern Ogre::RenderWindow* window;
-	extern Ogre::RenderSystem* renderSystem;
-	extern Ogre::SceneManager* sceneManager;
-	extern Ogre::Viewport* viewport;
+	extern Ogre::Root* gRoot;
+	extern Ogre::RenderWindow* gWindow;
+	extern Ogre::RenderSystem* gRenderSystem;
+	extern Ogre::SceneManager* gSceneManager;
+	extern Ogre::Viewport* gViewport;
 
 	// Implementation details that are not part of the interface.
 	namespace details
@@ -40,7 +40,7 @@ namespace LKernel
 	void loadInitialObjects(Splash& splash);
 	void* addGlobalObject(void* object, std::string typeName);
 	template<typename T> static inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());}
-	template<typename T> static T* GetG() {return (T*)details::globalObjects[typeid(T).name()];}
+	template<typename T> static T* getG() {return (T*)details::globalObjects[typeid(T).name()];}
 } // LKernel
 } // Ponykart
 

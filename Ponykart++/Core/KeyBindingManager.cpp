@@ -25,7 +25,7 @@ KeyBindingManager::KeyBindingManager()
 
 	// TODO: Replace the LymphInputEvents with std::functions
 
-	auto input = LKernel::GetG<InputMain>();
+	auto input = LKernel::getG<InputMain>();
 	input->OnKeyboardPress_Anything.push_back(onKeyboardPressAnything);
 	input->OnKeyboardRelease_Anything.push_back(onKeyboardReleaseAnything);
 	input->OnLeftXAxisMoved.push_back(input_OnLeftXAxisMoved);
@@ -73,7 +73,7 @@ void KeyBindingManager::setupInitialBindings()
 void KeyBindingManager::onKeyboardPressAnything(OIS::KeyEvent ke)
 {
 	// don't do anything if it's swallowed
-	if (LKernel::GetG<InputSwallowerManager>()->isSwallowed())
+	if (LKernel::getG<InputSwallowerManager>()->isSwallowed())
 		return;
 
 	LKey key;
@@ -84,7 +84,7 @@ void KeyBindingManager::onKeyboardPressAnything(OIS::KeyEvent ke)
 void KeyBindingManager::onKeyboardReleaseAnything(OIS::KeyEvent ke)
 {
 	// don't do anything if it's swallowed
-	if (LKernel::GetG<InputSwallowerManager>()->isSwallowed())
+	if (LKernel::getG<InputSwallowerManager>()->isSwallowed())
 		return;
 
 	LKey key;
@@ -94,7 +94,7 @@ void KeyBindingManager::onKeyboardReleaseAnything(OIS::KeyEvent ke)
 
 void KeyBindingManager::input_OnLeftXAxisMoved(void* sender, Core::ControllerAxisArgument e)
 {
-	if ( LKernel::GetG<InputSwallowerManager>()->isSwallowed( ) )
+	if ( LKernel::getG<InputSwallowerManager>()->isSwallowed( ) )
 		return;
 
 	invoke( AxisEvents[LAxisDict[e.Axis]] );
@@ -102,7 +102,7 @@ void KeyBindingManager::input_OnLeftXAxisMoved(void* sender, Core::ControllerAxi
 
 void KeyBindingManager::onMousePress_Anything(OIS::MouseEvent e, OIS::MouseButtonID id)
 {
-	if (LKernel::GetG<InputSwallowerManager>()->isSwallowed())
+	if (LKernel::getG<InputSwallowerManager>()->isSwallowed())
 		return;
 
 	switch (id)

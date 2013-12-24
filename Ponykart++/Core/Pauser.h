@@ -1,6 +1,7 @@
 #ifndef PAUSER_H_INCLUDED
 #define PAUSER_H_INCLUDED
 
+#include <vector>
 #include <functional>
 #include <OIS.h>
 
@@ -24,7 +25,7 @@ public:
 
 public:
 // An event for things that need it
-static std::function<void (PausingState state)> pauseEvent;
+static std::vector<std::function<void (PausingState state)>> pauseEvent;
 // I think most things will be fine with just a boolean.
 // Setting this to true will pause the spawner, physics engine, level changer, movement managers, etc.
 // It won't pause animations, UI, scripts, cameras, and so on.

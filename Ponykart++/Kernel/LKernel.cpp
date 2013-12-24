@@ -4,11 +4,11 @@ using namespace Ponykart;
 using namespace LKernel::details;
 
 // Define the globals
-Ogre::Root* LKernel::root;
-Ogre::RenderWindow* LKernel::window;
-Ogre::RenderSystem* LKernel::renderSystem;
-Ogre::SceneManager* LKernel::sceneManager;
-Ogre::Viewport* LKernel::viewport;
+Ogre::Root* LKernel::gRoot;
+Ogre::RenderWindow* LKernel::gWindow;
+Ogre::RenderSystem* LKernel::gRenderSystem;
+Ogre::SceneManager* LKernel::gSceneManager;
+Ogre::Viewport* LKernel::gViewport;
 std::unordered_map<std::string,void*> LKernel::details::globalObjects;
 std::unordered_map<std::string,void*> LKernel::details::levelObjects;
 

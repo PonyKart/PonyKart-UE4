@@ -7,9 +7,11 @@
 #include "Core/KeyBindingManager.h"
 #include "Core/InputSwallowerManager.h"
 #include "Core/Pauser.h"
+#include "Actors/Wheels/WheelFactory.h"
 
 using namespace Ogre;
 using namespace Ponykart;
+using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Physics;
 using namespace LKernel::details;
@@ -50,4 +52,11 @@ void LKernel::loadInitialObjects(Splash& splash)
 	addGlobalObject(new KeyBindingManager());
 	addGlobalObject(new InputSwallowerManager());
 	addGlobalObject(new Pauser());
+
+	// spawner
+	splash.increment("Creating spawner...");
+	addGlobalObject(new WheelFactory());
+	//addGlobalObject(new ThingDatabase());
+	//addGlobalObject(new Spawner());
+	//addGlobalObject(new AnimationManager());
 }

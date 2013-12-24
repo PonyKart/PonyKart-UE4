@@ -9,8 +9,8 @@ using namespace Ponykart::LKernel;
 using namespace Ponykart::Levels;
 
 // Define static members
-bool PhysicsMain::DrawLines = false;
-bool PhysicsMain::SlowMo = false;
+bool PhysicsMain::drawLines = false;
+bool PhysicsMain::slowMo = false;
 /*
 
 PhysicsMain::PhysicsMain()
@@ -22,6 +22,14 @@ PhysicsMain::PhysicsMain()
 	frameEnded = new FrameEndedListener;
 }
 
+*/
+
+btDiscreteDynamicsWorld* PhysicsMain::getWorld()
+{
+    return world;
+}
+
+/*
 void PhysicsMain::OnLevelUnload(LevelChangedEventArgs eventArgs)
 {
 	LKernel::GetG<Root>()->removeFrameListener(frameEnded);

@@ -7,34 +7,78 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/PonykartParsers++" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Muffind" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="3" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
+				<Linker>
+					<Add library="C:\boost_1_55_0\stage\lib\libboost_system-mgw48-mt-d-1_55.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/PonykartParsers++" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Muffin" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="3" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-O2" />
+					<Add option="-march=i686" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="C:\boost_1_55_0\stage\lib\libboost_system-mgw48-mt-1_55.a" />
+				</Linker>
+			</Target>
+			<Target title="FastRelease">
+				<Option output="bin/Muffin" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/FastRelease/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="C:\boost_1_55_0\stage\lib\libboost_system-mgw48-mt-1_55.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-Wno-unused-local-typedefs" />
+			<Add directory="C:/Users/Tux/Documents/Dev/Projects/Ponykart/PonykartParsers++/" />
+			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include" />
+			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OIS" />
+			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OGRE" />
+			<Add directory="C:/boost_1_55_0" />
 		</Compiler>
+		<Linker>
+			<Add library="OgreMain" />
+			<Add directory="C:/Program Files (x86)/OGRE-MinGW/lib/release" />
+		</Linker>
+		<Unit filename="Muffin/MuffinDefinition.cpp" />
 		<Unit filename="Muffin/MuffinDefinition.h" />
+		<Unit filename="Muffin/ThingBlock.cpp" />
 		<Unit filename="Muffin/ThingBlock.h" />
 		<Unit filename="ThingEnum.h" />
+		<Unit filename="Thing/BillboardBlock.cpp" />
+		<Unit filename="Thing/BillboardBlock.h" />
+		<Unit filename="Thing/BillboardSetBlock.cpp" />
+		<Unit filename="Thing/BillboardSetBlock.h" />
+		<Unit filename="Thing/ModelBlock.cpp" />
+		<Unit filename="Thing/ModelBlock.h" />
+		<Unit filename="Thing/RibbonBlock.cpp" />
+		<Unit filename="Thing/RibbonBlock.h" />
+		<Unit filename="Thing/ShapeBlock.cpp" />
+		<Unit filename="Thing/ShapeBlock.h" />
+		<Unit filename="Thing/SoundBlock.cpp" />
+		<Unit filename="Thing/SoundBlock.h" />
+		<Unit filename="Thing/ThingDatabase.h" />
+		<Unit filename="Thing/ThingDefinition.cpp" />
+		<Unit filename="Thing/ThingDefinition.h" />
+		<Unit filename="TokenHolder.cpp" />
 		<Unit filename="TokenHolder.h" />
 		<Extensions>
 			<code_completion />

@@ -3,12 +3,12 @@
 using namespace Ponykart;
 using namespace Ponykart::Levels;
 
-const std::string& Level::getName()
+const std::string& Level::getName() const
 {
 	return name;
 }
 
-LevelType Level::getType()
+LevelType Level::getType() const
 {
 	return type;
 }

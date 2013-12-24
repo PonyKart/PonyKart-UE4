@@ -13,7 +13,7 @@ InputMain::InputMain()
 
 	OIS::ParamList* pl = new OIS::ParamList();
 	int* windowHnd=new int;
-	LKernel::GetG<Ogre::RenderWindow>()->getCustomAttribute("WINDOW", windowHnd); // window is your RenderWindow!
+	LKernel::getG<Ogre::RenderWindow>()->getCustomAttribute("WINDOW", windowHnd); // window is your RenderWindow!
 	ostringstream oss; oss << *windowHnd;
 	pl->insert(std::pair<std::string,std::string> ("WINDOW", oss.str())); // TODO: Find another way to give the window to OIS. It needs to be portable.
 
@@ -32,8 +32,8 @@ InputMain::InputMain()
 
 	// sets the mouseState initial width and height (default is too low)
 	OIS::MouseState mouseState = InputMouse->getMouseState(); // TODO: Find the OIS equivalent of mouseState.height and width
-	mouseState.width = LKernel::GetG<Ogre::Viewport>()->getActualWidth();
-	mouseState.height = LKernel::GetG<Ogre::Viewport>()->getActualHeight();
+	mouseState.width = LKernel::getG<Ogre::Viewport>()->getActualWidth();
+	mouseState.height = LKernel::getG<Ogre::Viewport>()->getActualHeight();
 
 	//LKernel::GetG<Ogre::Root>().FrameStarted += new FrameListener.FrameStartedHandler(FrameStarted); TODO: Implement this frame listener
 

@@ -43,7 +43,7 @@ Splash::~Splash()
 
 void Splash::updateGUI()
 {
-	root->renderOneFrame();
+	gRoot->renderOneFrame();
 	WindowEventUtilities::messagePump();
 }
 
@@ -54,7 +54,7 @@ void Splash::increment(std::string text)
 	current++;
 	progressFG->setDimensions(((float)current)/maximum,1);
 	progressText->setCaption(text);
-	root->renderOneFrame();
+	gRoot->renderOneFrame();
 	WindowEventUtilities::messagePump();
 }
 

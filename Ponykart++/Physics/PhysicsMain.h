@@ -4,6 +4,8 @@
 #include <OgreFrameListener.h>
 #include "Levels/LevelChangedEventArgs.h"
 
+class btDiscreteDynamicsWorld;
+
 namespace Ponykart
 {
 namespace Physics
@@ -12,7 +14,9 @@ namespace Physics
 	{
 	public:
 		PhysicsMain();
-		static void OnLevelUnload(Levels::LevelChangedEventArgs eventArgs); // Deletes the world
+		static void onLevelUnload(Levels::LevelChangedEventArgs eventArgs); // Deletes the world
+		// Getters
+		btDiscreteDynamicsWorld* getWorld();
 
 	private:
 		// Runs just before every frame. Simulates one frame of physics.
@@ -31,11 +35,11 @@ namespace Physics
 		//DefaultCollisionConfiguration* dcc;
 		//CollisionDispatcher* dispatcher;
 		//SequentialImpulseConstraintSolver* solver;
-		//DiscreteDynamicsWorld* world;
+		btDiscreteDynamicsWorld* world;
 
 	public:
-		static bool DrawLines; // Should we draw debug lines or not?
-		static bool SlowMo;
+		static bool drawLines; // Should we draw debug lines or not?
+		static bool slowMo;
 	};
 } // Physics
 } // Ponykart

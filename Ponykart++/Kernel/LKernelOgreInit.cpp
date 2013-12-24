@@ -9,22 +9,22 @@ using namespace Ogre;
 
 void LKernel::initOgreRoot()
 {
-	root = new Ogre::Root("media/config/plugins.cfg", "", "Ponykart.log");
-	addGlobalObject(root);
+	gRoot = new Ogre::Root("media/config/plugins.cfg", "", "Ponykart.log");
+	addGlobalObject(gRoot);
 }
 
 void LKernel::initOgreRenderSystem()
 {
-	//renderSystem = root->getRenderSystemByName("Direct3D9 Rendering Subsystem");
-	renderSystem = root->getRenderSystemByName("OpenGL Rendering Subsystem");
-	renderSystem->setConfigOption("Full Screen", Options::get("Full Screen"));
-	renderSystem->setConfigOption("VSync", Options::get("VSync"));
-	renderSystem->setConfigOption("VSync Interval", Options::get("VSync Interval"));
-	renderSystem->setConfigOption("FSAA", Options::get("FSAA"));
-	renderSystem->setConfigOption("Video Mode", Options::get("Video Mode"));
-	renderSystem->setConfigOption("sRGB Gamma Conversion", Options::get("sRGB Gamma Conversion"));
-	root->setRenderSystem(renderSystem); // Add to global objects
-	addGlobalObject(renderSystem);
+	//gRenderSystem = gRoot->getRenderSystemByName("Direct3D9 Rendering Subsystem");
+	gRenderSystem = gRoot->getRenderSystemByName("OpenGL Rendering Subsystem");
+	gRenderSystem->setConfigOption("Full Screen", Options::get("Full Screen"));
+	gRenderSystem->setConfigOption("VSync", Options::get("VSync"));
+	gRenderSystem->setConfigOption("VSync Interval", Options::get("VSync Interval"));
+	gRenderSystem->setConfigOption("FSAA", Options::get("FSAA"));
+	gRenderSystem->setConfigOption("Video Mode", Options::get("Video Mode"));
+	gRenderSystem->setConfigOption("sRGB Gamma Conversion", Options::get("sRGB Gamma Conversion"));
+	gRoot->setRenderSystem(gRenderSystem); // Add to global objects
+	addGlobalObject(gRenderSystem);
 #if DEBUG
 	// print out the things we can support
 	auto renderList = root->getAvailableRenderers();
@@ -44,21 +44,21 @@ void LKernel::initOgreRenderSystem()
 
 void LKernel::initOgreRenderWindow()
 {
-	window = root->initialise(true, "Ponykart");
-	window->setDeactivateOnFocusChange(false);
-	addGlobalObject(window);
+	gWindow = gRoot->initialise(true, "Ponykart");
+	gWindow->setDeactivateOnFocusChange(false);
+	addGlobalObject(gWindow);
 }
 
 void LKernel::initOgreSceneManager()
 {
-	sceneManager = root->createSceneManager("OctreeSceneManager","sceneMgr");
-	addGlobalObject(sceneManager);
+	gSceneManager = gRoot->createSceneManager("OctreeSceneManager","sceneMgr");
+	addGlobalObject(gSceneManager);
 }
 
 void LKernel::initOgreViewportCam()
 {
-	viewport = window->addViewport(sceneManager->createCamera("tempCam"));
-	addGlobalObject(viewport);
+	gViewport = gWindow->addViewport(gSceneManager->createCamera("tempCam"));
+	addGlobalObject(gViewport);
 }
 
 void LKernel::details::initOgreResources()

@@ -7,18 +7,29 @@
 - 'if "Twh = Yes" in the options, derpy will not follow you'. Change Twh to something more meaningful
 - Changelog says thas shaders are useless, and only there because knighty wanted them. Are shaders useless ?
 - Getters for set-protected or set-private members should return const references or const pointers instead of copies, and be inline
+- See if it's possible to switch to CMkake instead of Codeblocks. This way we can have real threaded C++11 with GCC under loonix and MSVC 13 under win
+- Add some Doxygen
 
-# OgreBullet
-- DiscreteDynamicsWorld
+# Ogre
+- Maybe we could switch to 1.9/1.10, overlays are just moved to a subsystem that you can initialize in two lines. Check the porting notes.
+- Ogre 1.9 would probably compile with MSVC 2013
+
+# OgreBullet/Bullet
+- Check alexeyknyshev's repo. Implement them yourself if he doesn't
+- OgreBullet is too outdated and too many classes are missing. We should just use bullet directly.
 
 # Optimisations
 - Remove D3D9 from the active plugins once you're done testing with it
-- Make functions take const args and references and make variables constexpr whenever it makes sense
+- Make functions take const args and references, and make variables constexpr whenever it makes sense
 - Zip some ressources when it makes sense (big-ish files with good ratio)
 - Delete all the files in ./media that we don't actually need.
 - Index the (unordered_)maps with enums instead of strings when possible.
 - In PhysicsMain::frameEnded, the physics is processed ~at fixed intervals, it's probably causing the physics jitter.
 - Replace some calls of LKernel::GetG by the pointer itself, when possible (E.g LKernel::GetG<Ogre::Root> becomes LKernel::root)
+- Only #include when necessary. Replace some #includes by forward declarations and pointers whenever possible. Don't #include in headers whenever possible.
+- Use extern templates when possible.
+- Try to use precompiled headers if possible
+- Use proper symbol visibility
 
 # Compilation
 - Find a decent C++11 compiler that supports <thread> on windows and can compile Ogre.
