@@ -45,14 +45,14 @@ public:
 
 private:
 	// The maps that converts our key commands into OIS keys
-	static std::map<LKey, OIS::KeyCode> LKeysDict;
-	static std::map<OIS::KeyCode, LKey> OISKeysDict;
-	static std::map<ControllerButtons, LKey> LButtonsDict;
-	static std::map<ControllerAxis, LKey> LAxisDict;
+	static std::map<LKey, OIS::KeyCode> lKeysDict;
+	static std::map<OIS::KeyCode, LKey> oisKeysDict;
+	static std::map<ControllerButtons, LKey> lButtonsDict;
+	static std::map<ControllerAxis, LKey> lAxisDict;
 
-	static std::map<LKey, std::function<void ()>> PressEventsDict;
-	static std::map<LKey, std::function<void ()>> ReleaseEventsDict;
-	static std::map<LKey, std::function<void ()>> AxisEvents;
+	static std::map<LKey, std::function<void ()>> pressEventsDict;
+	static std::map<LKey, std::function<void ()>> releaseEventsDict;
+	static std::map<LKey, std::function<void ()>> axisEvents;
 };
 
 } // Core

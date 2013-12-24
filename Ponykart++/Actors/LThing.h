@@ -42,6 +42,9 @@ public:
 	Ogre::SceneNode* getRootNode();
 	const btRigidBody* const getBody() const;
 	Ogre::Vector3 getBodyLinearVelocity() const;
+	inline Ogre::Vector3 getSpawnPosition() const {return spawnPosition;};
+	inline Ogre::Quaternion getSpawnOrientation() const {return spawnOrientation;};
+	inline Ogre::Vector3 getSpawnScale() const {return spawnScale;};
 	const std::vector<ModelComponent*>& getModelComponents() const;
 	const std::vector<ShapeComponent*>& getShapeComponents() const;
 	const std::vector<RibbonComponent*>& getRibbonComponents() const;

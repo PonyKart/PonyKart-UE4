@@ -4,6 +4,7 @@
 #include <vector>
 #include <functional>
 #include <OIS.h>
+#include <OgreFrameListener.h>
 #include "Core/ControllerManager.h"
 
 //#define PRINTINPUT // uncomment if you want all input to be printed
@@ -30,33 +31,40 @@ public:
 	const Core::ControllerManager* const getInputController();
 
 private:
-	void CreateEventHandlers();
+	void createEventHandlers();
 
 private:
-	OIS::InputManager* InputManager;
-	OIS::Keyboard* InputKeyboard;
-	OIS::Mouse* InputMouse;
-	Core::ControllerManager* InputController;
+	class FrameStartedListener : public Ogre::FrameListener
+	{
+		bool frameStarted(const Ogre::FrameEvent& evt) override;
+	};
+	FrameStartedListener* frameStarted;
+
+private:
+	OIS::InputManager* inputManager;
+	OIS::Keyboard* inputKeyboard;
+	OIS::Mouse* inputMouse;
+	Core::ControllerManager* inputController;
 
 public: // Events
-	std::vector<std::function<void (OIS::KeyEvent)>> OnKeyboardPress_Anything; // When any keyboard button is pressed. This should eventually be removed once we know what all of the keys are.
-	std::vector<std::function<void (OIS::KeyEvent)>> OnKeyboardRelease_Anything;
+	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardPress_Anything; // When any keyboard button is pressed. This should eventually be removed once we know what all of the keys are.
+	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardRelease_Anything;
 
-	std::vector<std::function<void (OIS::KeyEvent)>> OnKeyboardPress_Escape;
+	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardPress_Escape;
 
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMousePress_Anything;
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMouseRelease_Anything;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMousePress_Anything;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMouseRelease_Anything;
 
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMousePress_Left;
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMouseRelease_Left;
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMousePress_Right;
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMouseRelease_Right;
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMousePress_Middle;
-	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> OnMouseRelease_Middle;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMousePress_Left;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMouseRelease_Left;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMousePress_Right;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMouseRelease_Right;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMousePress_Middle;
+	std::vector<std::function<void (OIS::MouseEvent, OIS::MouseButtonID)>> onMouseRelease_Middle;
 
-	std::vector<std::function<void (OIS::MouseEvent)>> OnMouseMove;
+	std::vector<std::function<void (OIS::MouseEvent)>> onMouseMove;
 
-	std::vector<std::function<void (void* sender, Core::ControllerAxisArgument e)>> OnLeftXAxisMoved;
+	std::vector<std::function<void (void* sender, Core::ControllerAxisArgument e)>> onLeftXAxisMoved;
 };
 
 } // Ponykart

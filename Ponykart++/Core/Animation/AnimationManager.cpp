@@ -12,6 +12,16 @@ AnimationManager::AnimationManager()
 	LevelManager::onLevelUnload.push_back(onLevelUnload);
 }
 
+void AnimationManager::add(Ogre::AnimationBlender* ab)
+{
+	blenders.push_back(ab);
+}
+
+void AnimationManager::add(Ogre::AnimationState* state)
+{
+	states.push_back(state);
+}
+
 void AnimationManager::remove(Ogre::AnimationBlender* ab)
 {
 	for (auto it=blenders.begin(); it!=blenders.end(); it++)

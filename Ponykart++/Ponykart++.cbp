@@ -60,8 +60,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add option="-Wno-unused-local-typedefs" />
-			<Add directory="C:/Users/Tux/Documents/Dev/Projects/Ponykart/Ponykart++/" />
-			<Add directory="C:/Users/Tux/Documents/Dev/Projects/Ponykart/PonykartParsers++/" />
+			<Add directory="$(PROJECT_DIR)" />
+			<Add directory="$(PROJECT_DIR)/../PonykartParsers++/" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OIS" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OGRE" />
@@ -73,7 +73,7 @@
 			<Add option="-Wl,--enable-auto-import" />
 			<Add library="OgreMain" />
 			<Add library="OIS" />
-			<Add directory="C:/Users/Tux/Documents/Dev/Projects/Ponykart/PonykartParsers++/bin/" />
+			<Add directory="$(PROJECT_DIR)/../PonykartParsers++/bin/" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/lib/release" />
 			<Add directory="C:/boost_1_55_0/stage/lib" />
 		</Linker>
@@ -90,11 +90,13 @@
 		<Unit filename="Actors/DashJavelin.cpp" />
 		<Unit filename="Actors/DashJavelin.h" />
 		<Unit filename="Actors/Driver.h" />
+		<Unit filename="Actors/InstancedGeometryManager.cpp" />
 		<Unit filename="Actors/InstancedGeometryManager.h" />
 		<Unit filename="Actors/Kart.cpp" />
 		<Unit filename="Actors/Kart.h" />
 		<Unit filename="Actors/LThing.cpp" />
 		<Unit filename="Actors/LThing.h" />
+		<Unit filename="Actors/StaticGeometryManager.cpp" />
 		<Unit filename="Actors/StaticGeometryManager.h" />
 		<Unit filename="Actors/TwiCutlass.h" />
 		<Unit filename="Actors/Wheels/Wheel.cpp" />

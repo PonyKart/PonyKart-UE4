@@ -23,21 +23,21 @@ InputMain::InputMain()
 	pl->insert(std::pair<std::string,std::string> ("w32_mouse", "DISCL_FOREGROUND"));
 	//#endif
 
-	InputManager = OIS::InputManager::createInputSystem(*pl);
+	inputManager = OIS::InputManager::createInputSystem(*pl);
 
 	// Create all devices (except joystick, as most people have Keyboard/Mouse) using buffered input.
-	InputKeyboard = (OIS::Keyboard*) InputManager->createInputObject(OIS::Type::OISKeyboard, true);
-	InputMouse = (OIS::Mouse*) InputManager->createInputObject(OIS::Type::OISMouse, true);
-	InputController = new Core::ControllerManager();
+	inputKeyboard = (OIS::Keyboard*) inputManager->createInputObject(OIS::Type::OISKeyboard, true);
+	inputMouse = (OIS::Mouse*) inputManager->createInputObject(OIS::Type::OISMouse, true);
+	inputController = new Core::ControllerManager();
 
 	// sets the mouseState initial width and height (default is too low)
-	OIS::MouseState mouseState = InputMouse->getMouseState(); // TODO: Find the OIS equivalent of mouseState.height and width
+	OIS::MouseState mouseState = inputMouse->getMouseState(); // TODO: Find the OIS equivalent of mouseState.height and width
 	mouseState.width = LKernel::getG<Ogre::Viewport>()->getActualWidth();
 	mouseState.height = LKernel::getG<Ogre::Viewport>()->getActualHeight();
 
-	//LKernel::GetG<Ogre::Root>().FrameStarted += new FrameListener.FrameStartedHandler(FrameStarted); TODO: Implement this frame listener
+	LKernel::gRoot->addFrameListener(frameStarted);  // TODO: Implement this frame listener
 
-	//CreateEventHandlers(); // TODO: Implement
+	createEventHandlers(); // TODO: Implement
 
 	log("[Loading] OIS input system loaded!");
 }

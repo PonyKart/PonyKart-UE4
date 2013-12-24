@@ -19,7 +19,7 @@ Pauser::Pauser()
 	typedef void(*ftype)(OIS::KeyEvent); // For disanbiguanting the overloads of invokePauseEvent
 
 	// if we press `, then pause
-	LKernel::getG<InputMain>()->OnKeyboardPress_Anything.push_back(static_cast<ftype>(invokePauseEvent));
+	LKernel::getG<InputMain>()->onKeyboardPress_Anything.push_back(static_cast<ftype>(invokePauseEvent));
 	LKernel::getG<InputSwallowerManager>()->addSwallower(&isPaused, this);
 }
 
