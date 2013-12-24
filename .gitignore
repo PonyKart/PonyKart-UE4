@@ -12,3 +12,6 @@ tmp/
 *.suo
 *.user
 *.sln.docstates
+
+# Archives
+*.rar
