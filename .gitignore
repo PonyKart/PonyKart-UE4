@@ -13,5 +13,9 @@ tmp/
 *.user
 *.sln.docstates
 
+# Codeblocks user files
+*.depend
+*.layout
+
 # Archives
 *.rar
