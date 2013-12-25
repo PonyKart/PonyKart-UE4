@@ -17,5 +17,5 @@ tmp/
 *.depend
 *.layout
 
-# Archives
-*.rar
+# /References
+/[Rr]eferences/

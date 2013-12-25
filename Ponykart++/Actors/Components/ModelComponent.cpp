@@ -91,6 +91,21 @@ Entity* ModelComponent::getEntity()
 	return entity;
 }
 
+unsigned ModelComponent::getId() const
+{
+	return id;
+}
+
+string ModelComponent::getName() const
+{
+	return name;
+}
+
+const LThing* const ModelComponent::getOwner() const
+{
+	return owner;
+}
+
 Quaternion ModelComponent::initSpawnOrientation(const ModelBlock* const block) const
 {
 	Quaternion q; Vector3 v;

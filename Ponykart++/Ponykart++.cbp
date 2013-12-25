@@ -73,8 +73,11 @@
 			<Add option="-Wl,--enable-auto-import" />
 			<Add library="OgreMain" />
 			<Add library="OIS" />
+			<Add library="BulletCollision" />
+			<Add library="BulletDynamics" />
 			<Add directory="$(PROJECT_DIR)/../PonykartParsers++/bin/" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/lib/release" />
+			<Add directory="C:/Program Files (x86)/BULLET_PHYSICS/lib" />
 			<Add directory="C:/boost_1_55_0/stage/lib" />
 		</Linker>
 		<Unit filename="Actors/Components/BillboardSetComponent.cpp" />
@@ -144,6 +147,8 @@
 		<Unit filename="Lua/LuaMain.h" />
 		<Unit filename="Misc/Extensions.cpp" />
 		<Unit filename="Misc/Extensions.h" />
+		<Unit filename="Misc/direntSearch.cpp" />
+		<Unit filename="Misc/direntSearch.h" />
 		<Unit filename="Physics/CollisionGroups.h" />
 		<Unit filename="Physics/CollisionObjectDataHolder.h" />
 		<Unit filename="Physics/CollisionReports/CollisionReporter.cpp" />

@@ -1,3 +1,4 @@
+#include <functional>
 #include "Actors/InstancedGeometryManager.h"
 #include "Actors/LThing.h"
 #include "Actors/Components/ModelComponent.h"
@@ -9,6 +10,7 @@
 #include "Thing/ThingDefinition.h"
 
 using namespace std;
+using namespace std::placeholders;
 using namespace Ogre;
 using namespace PonykartParsers;
 using namespace Ponykart;
@@ -20,7 +22,7 @@ using namespace Ponykart::LKernel;
 InstancedGeometryManager::InstancedGeometryManager()
  : regionDimensions(_instancedRegionSize, 200, _instancedRegionSize)
 {
-	LevelManager::onLevelUnload.push_back(onLevelUnload);
+	LevelManager::onLevelUnload.push_back(function<void (LevelChangedEventArgs*)>(bind(&InstancedGeometryManager::onLevelUnload,this,placeholders::_1)));
 }
 
 void InstancedGeometryManager::add(ModelComponent* mc, ThingBlock* thingTemplate, ModelBlock* block, ThingDefinition* def)
@@ -72,4 +74,18 @@ void InstancedGeometryManager::add(ModelComponent* mc, ThingBlock* thingTemplate
 
 	// then put our transform into the dictionary
 	transforms[key].push_back(trans);
+}
+
+void InstancedGeometryManager::onLevelUnload(LevelChangedEventArgs* eventArgs)
+{
+	ents.clear();
+	transforms.clear();
+
+	auto sceneMgr = LKernel::gSceneManager;
+	for (auto pair : igeoms)
+	{
+		sceneMgr->destroyInstancedGeometry(pair.second);
+		delete pair.second;
+	}
+	igeoms.clear();
 }

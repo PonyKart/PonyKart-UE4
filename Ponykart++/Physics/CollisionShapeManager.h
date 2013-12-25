@@ -5,7 +5,6 @@
 #include <string>
 
 class btCollisionShape;
-class btShapeComponent;
 
 namespace Ogre
 {
@@ -17,7 +16,11 @@ namespace PonykartParsers{class ThingDefinition;}
 
 namespace Ponykart
 {
-namespace Actors{class LThing;}
+namespace Actors
+{
+	class LThing;
+	class ShapeComponent();
+}
 namespace Levels{class LevelChangedEventArgs;}
 
 namespace Physics
@@ -35,8 +38,8 @@ namespace Physics
 		btCollisionShape* importCollisionShape(const std::string& bulletfile); // Imports a collision shape from a .bullet file.
 		void serializeShape(btCollisionShape* shape, const std::string& name); // Serializes a collision shape and exports a .bullet file.
 	private:
-		static void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // Enumerates through our resource group paths and finds all of the .bullet files
-		btCollisionShape* createShapeForComponent(btShapeComponent* component); // Creates a collision shape for a shape component
+		void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // Enumerates through our resource group paths and finds all of the .bullet files
+		btCollisionShape* createShapeForComponent(Actors::ShapeComponent* component); // Creates a collision shape for a shape component
 	public:
 		std::unordered_map<std::string, btCollisionShape*> shapes;
 		std::unordered_map<std::string, std::string> bulletFiles;

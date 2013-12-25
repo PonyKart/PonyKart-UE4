@@ -14,7 +14,7 @@ void WheelFactory::readWheelsFromFiles()
 {
 	wheels.clear(); // since we can run this whenever (like when we're tweaking files), we want to clear our dictionary first
 
-	std::vector<string> files = direntSearch("media/vehicles/", ".wheel"); // Recursively get all filenames matching the extension
+	std::vector<string> files = direntSearchRec("media/vehicles/", ".wheel"); // Recursively get all filenames matching the extension
 
 	for (string filename : files)
 	{
