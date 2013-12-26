@@ -1,14 +1,16 @@
 #include <BulletCollision/CollisionShapes/btCompoundShape.h>
-#include <
 #include "Actors/LThing.h"
+#include "Actors/Components/ShapeComponent.h"
 #include "Levels/LevelManager.h"
 #include "Misc/direntSearch.h"
+#include "Misc/Extensions.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Thing/ThingDefinition.h"
 
 using namespace std;
 using namespace Ogre;
 using namespace PonykartParsers;
+using namespace Ponykart;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Levels;
 using namespace Ponykart::Physics;
@@ -60,7 +62,7 @@ btCollisionShape* CollisionShapeManager::createAndRegisterShape(LThing* thing, T
 			if (forceCompound)
 			{
 				btCompoundShape* comp = new btCompoundShape();
-				comp->addChildShape(thing->getShapeComponents().at(0).transform, createShapeForComponent(thing->getShapeComponents().at(0)));
+				comp->addChildShape(toBtTransform(thing->getShapeComponents().at(0)->transform), createShapeForComponent(thing->getShapeComponents().at(0)));
 
 				shape = comp;
 			}
@@ -71,17 +73,17 @@ btCollisionShape* CollisionShapeManager::createAndRegisterShape(LThing* thing, T
 		// otherwise, make all of our shapes and stick them in a compound shape
 		else
 		{
-			shape = *shapeIt;
+			shape = shapeIt->second;
 			btCompoundShape* comp = new btCompoundShape();
 
-			for (ShapeComponent component : thing->getShapeComponents())
-				comp->addChildShape(component.transform, createShapeForComponent(component));
+			for (ShapeComponent* component : thing->getShapeComponents())
+				comp->addChildShape(toBtTransform(component->transform), createShapeForComponent(component));
 
 			shape = comp;
 		}
 
 		// then put the shape in our dictionary
-		shapes.insert(pair<string, btCollisionShape*>thing->getName(), shape);
+		shapes.insert(pair<string, btCollisionShape*>(thing->getName(), shape));
 	}
 	return shape;
 }

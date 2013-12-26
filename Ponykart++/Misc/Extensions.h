@@ -5,11 +5,13 @@
 #include <irrKlang.h>
 #include <LinearMath/btVector3.h>
 #include <LinearMath/btQuaternion.h>
+#include <LinearMath/btTransform.h>
 
 namespace Ponykart
 {
 	irrklang::vec3df toSoundVector(const Ogre::Vector3& vec);
 	btQuaternion toBtQuaternion(const Ogre::Quaternion& quat);
+	btTransform toBtTransform(const Ogre::Matrix4& mat);
 	btVector3 toBtVector3(const Ogre::Vector3& vec);
 	Ogre::Vector3 toOgreVector3(const btVector3& vec);
 	Ogre::ColourValue toColourValue(const Ogre::Quaternion& quat);

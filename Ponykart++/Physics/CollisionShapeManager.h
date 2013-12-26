@@ -19,7 +19,7 @@ namespace Ponykart
 namespace Actors
 {
 	class LThing;
-	class ShapeComponent();
+	class ShapeComponent;
 }
 namespace Levels{class LevelChangedEventArgs;}
 
