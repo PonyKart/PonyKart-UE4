@@ -1,6 +1,11 @@
 #include <string>
-
+#include <OgreConfigFile.h>
+#include <OgreMeshManager.h>
+#include <OgreSkeletonManager.h>
+#include <OgreRenderWindow.h>
+#include <OgreRoot.h>
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgreInit.h"
 #include "Core/Options.h"
 
 using namespace Ponykart;

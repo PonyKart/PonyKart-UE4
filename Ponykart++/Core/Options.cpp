@@ -1,6 +1,6 @@
 #include <fstream>
+#include <OgreConfigFile.h>
 #include "Core/Options.h"
-#include "Ogre.h"
 
 using namespace Ponykart;
 using namespace Ponykart::Core;

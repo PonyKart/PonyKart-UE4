@@ -1,8 +1,8 @@
 #include <string>
-#include <Ogre.h>
 #include "Core/Options.h"
 #include "UI/Splash.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgreInit.h"
 
 using namespace Ponykart::LKernel;
 using Ponykart::Core::Options;

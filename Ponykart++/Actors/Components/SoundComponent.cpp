@@ -1,7 +1,7 @@
 #include "Actors/LThing.h"
 #include "Actors/Components/SoundComponent.h"
 #include "Kernel/LKernel.h"
-#include "Misc/Extensions.h"
+#include "Misc/irrklangExtensions.h"
 #include "Muffin/ThingBlock.h"
 #include "Sound/SoundMain.h"
 #include "Thing/SoundBlock.h"

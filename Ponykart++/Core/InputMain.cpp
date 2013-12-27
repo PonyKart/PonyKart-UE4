@@ -1,5 +1,8 @@
 #include <string>
 #include <sstream>
+#include <OgreRenderWindow.h>
+#include <OgreRoot.h>
+#include <OgreViewport.h>
 #include "Kernel/LKernel.h"
 #include "Core/InputMain.h"
 

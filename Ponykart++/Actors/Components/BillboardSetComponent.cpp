@@ -4,7 +4,7 @@
 #include "Actors/Components/ModelComponent.h"
 #include "Core/IDs.h"
 #include "Kernel/LKernel.h"
-#include "Misc/Extensions.h"
+#include "Misc/ogreExtensions.h"
 #include "Muffin/ThingBlock.h"
 #include "Thing/BillboardSetBlock.h"
 

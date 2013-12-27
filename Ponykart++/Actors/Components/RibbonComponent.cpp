@@ -5,7 +5,7 @@
 #include "Core/Options.h"
 #include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
-#include "Misc/Extensions.h"
+#include "Misc/ogreExtensions.h"
 #include "Muffin/ThingBlock.h"
 #include "Thing/RibbonBlock.h"
 

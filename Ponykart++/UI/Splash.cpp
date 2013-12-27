@@ -1,4 +1,10 @@
-#include <Ogre.h>
+#include <OgreConfigFile.h>
+#include <OgreOverlay.h>
+#include <OgreOverlayContainer.h>
+#include <OgreOverlayManager.h>
+#include <OgreRoot.h>
+#include <OgreTextAreaOverlayElement.h>
+#include <OgreWindowEventUtilities.h>
 #include "UI/Splash.h"
 #include "Core/Options.h"
 #include "Kernel/LKernel.h"
@@ -12,6 +18,12 @@ using Ponykart::Core::Options;
 int Splash::current;
 const int Splash::maximum = 19;
 
+/// Loads and displays the splash screen.
+/** Reads configuration from "media/config/splash.res" and loads all ressource groups inside.\n
+	The options must be initialized.\n
+	Ogre must be initialized with a scene manager, camera and viewport.\n
+	@sa Ponykart::Core::Options, Kernel/LKernel.h
+*/
 Splash::Splash()
 {
 	current=0;
@@ -47,11 +59,15 @@ void Splash::updateGUI()
 	WindowEventUtilities::messagePump();
 }
 
-void Splash::increment(std::string text)
+/// Increments the progress bar's internal counter and update the GUI/message queue.
+/** The progress bar reaches 100% when the internal counter reaches Splash::maximum.
+	@arg text The text to display in the progress bar. Should describe what is currently loading
+**/
+void Splash::increment(const std::string& text)
 {
 	log("[Loading] " + text);
 
-	current++;
+	current = current>=maximum ? current+1 : current;
 	progressFG->setDimensions(((float)current)/maximum,1);
 	progressText->setCaption(text);
 	gRoot->renderOneFrame();

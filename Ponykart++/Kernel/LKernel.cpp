@@ -1,3 +1,4 @@
+#include <OgreLogManager.h>
 #include "Kernel/LKernel.h"
 
 using namespace Ponykart;
@@ -12,7 +13,7 @@ Ogre::Viewport* LKernel::gViewport;
 std::unordered_map<std::string,void*> LKernel::details::globalObjects;
 std::unordered_map<std::string,void*> LKernel::details::levelObjects;
 
-void* LKernel::addGlobalObject(void* object, std::string type)
+void* LKernel::addGlobalObject(void* object, const std::string& type)
 {
 	if (globalObjects.find(type) != globalObjects.end())
 		throw std::string(std::string("Global object already added ") + type);
@@ -20,4 +21,9 @@ void* LKernel::addGlobalObject(void* object, std::string type)
 	globalObjects.insert(std::pair<std::string,void*>(type,object));
 
 	return object;
+}
+
+void LKernel::log(const std::string& message)
+{
+	Ogre::LogManager::getSingleton().logMessage(message);
 }

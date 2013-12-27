@@ -8,7 +8,7 @@
 - Changelog says thas shaders are useless, and only there because knighty wanted them. Are shaders useless ?
 - Getters for set-protected or set-private members should return const references or const pointers instead of copies, and be inline
 - See if it's possible to switch to CMkake instead of Codeblocks. This way we can have real threaded C++11 with GCC under loonix and MSVC 13 under win
-- Add some Doxygen
+- Add some Doxygen. Start by conerting the inline // in headers to ///<
 
 # Ogre
 - Maybe we could switch to 1.9/1.10, overlays are just moved to a subsystem that you can initialize in two lines. Check the porting notes.
