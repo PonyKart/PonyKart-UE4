@@ -21,7 +21,7 @@ using namespace Ponykart::Levels;
 StaticGeometryManager::StaticGeometryManager()
  : regionDimensions(_staticRegionSize, 200, _staticRegionSize)
 {
-	LevelManager::onLevelUnload.push_back(onLevelUnload);
+	LevelManager::onLevelUnload.push_back(bind(&StaticGeometryManager::onLevelUnload,this,placeholders::_1));
 }
 
 void StaticGeometryManager::add(ModelComponent* mc, ThingBlock* thingTemplate, ModelBlock* block, ThingDefinition* def)
@@ -85,4 +85,20 @@ void StaticGeometryManager::add(ModelComponent* mc, ThingBlock* thingTemplate, M
 		sg=sgIt->second;
 
 	sg->addEntity(ent, pos, orient, sca);
+}
+
+void StaticGeometryManager::onLevelUnload(LevelChangedEventArgs* eventArgs)
+{
+	ents.clear();
+
+	auto sceneMgr = LKernel::gSceneManager;
+	for (auto pair : sgeoms)
+	{
+		if (pair.second != nullptr)
+		{
+			sceneMgr->destroyStaticGeometry(pair.second);
+			delete pair.second;
+		}
+	}
+	sgeoms.clear();
 }

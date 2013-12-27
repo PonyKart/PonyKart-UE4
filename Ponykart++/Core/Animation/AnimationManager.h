@@ -9,6 +9,7 @@
 namespace Ogre
 {
 	class AnimationBlender;
+	class FrameEvent;
 }
 
 namespace Ponykart
@@ -23,7 +24,7 @@ namespace Core
 {
 	/// Instead of each ModelComponent hooking up to FrameStarted to update any animation it might have, we just give it
 	/// to this class to update it for us. This means we only have to hook one FrameStarted method up instead of loads of them.
-	class AnimationManager
+	class AnimationManager : public Ogre::FrameListener
 	{
 	public:
 		AnimationManager();
@@ -32,8 +33,9 @@ namespace Core
 		void remove(Ogre::AnimationBlender* ab); ///< Remove an animation from being automatically updated
 		void remove(Ogre::AnimationState* state); ///< Remove an animation from being automatically updated
 	private:
-		static void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); ///< hook up to the frame started event
-		static void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); ///< clear our states list and disconnect from the frame started event
+		bool frameStarted(const Ogre::FrameEvent& evt) override; ///< update all of our animations, but only if we aren't paused
+		void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); ///< hook up to the frame started event
+		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); ///< clear our states list and disconnect from the frame started event
 	private:
 		std::vector<Ogre::AnimationBlender*> blenders;
 		std::vector<Ogre::AnimationState*> states;

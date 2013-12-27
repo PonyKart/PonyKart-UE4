@@ -22,7 +22,7 @@ using namespace Ponykart::LKernel;
 InstancedGeometryManager::InstancedGeometryManager()
  : regionDimensions(_instancedRegionSize, 200, _instancedRegionSize)
 {
-	LevelManager::onLevelUnload.push_back(function<void (LevelChangedEventArgs*)>(bind(&InstancedGeometryManager::onLevelUnload,this,placeholders::_1)));
+	LevelManager::onLevelUnload.push_back(bind(&InstancedGeometryManager::onLevelUnload,this,placeholders::_1));
 }
 
 void InstancedGeometryManager::add(ModelComponent* mc, ThingBlock* thingTemplate, ModelBlock* block, ThingDefinition* def)

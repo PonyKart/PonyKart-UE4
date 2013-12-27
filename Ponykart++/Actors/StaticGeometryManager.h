@@ -25,7 +25,7 @@ namespace Actors
 		StaticGeometryManager();
 		void add(ModelComponent* mc, PonykartParsers::ThingBlock* thingTemplate, PonykartParsers::ModelBlock* block, PonykartParsers::ThingDefinition* def); ///< Adds all of the geometry used by a model component to the static geometry. This is used by the ModelComponent.
 	private:
-		static void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
+		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
 	public:
 		std::unordered_map<std::string, Ogre::StaticGeometry*> sgeoms;
 		std::unordered_map<std::string, Ogre::Entity*> ents;
