@@ -15,15 +15,15 @@ namespace Physics
 	class OgreMotionState : public btMotionState
 	{
 	public:
-		OgreMotionState(btTransform& transform, Ogre::SceneNode* node, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-		OgreMotionState(Ogre::Vector3& position, Ogre::Quaternion& orientation, Ogre::SceneNode* node, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-		OgreMotionState(btVector3& position, btQuaternion& orientation, Ogre::SceneNode* node, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-		OgreMotionState(Ogre::SceneNode* node, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
+		OgreMotionState(btTransform& btTransform, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
+		OgreMotionState(Ogre::Vector3& position, Ogre::Quaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
+		OgreMotionState(btVector3& position, btQuaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
+		OgreMotionState(Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
 		void getWorldTransform(btTransform& worldTrans) const override;
 		void setWorldTransform(const btTransform& worldTrans) override; // Bullet only calls the update of worldtransform for active objects
 	protected:
-		Ogre::SceneNode* node;
 		btTransform transform;
+		Ogre::SceneNode* node;
 	private:
 		Actors::LThing* owner;
 	};

@@ -45,4 +45,5 @@
 - At some point make a big .rar and ship the source, all the precompiled dependencies, MinGW, and a project file configured to use those.
 -- Actually we should maybe move MinGW into the Ponykart++ folder, and add MinGW to the .gitignore.
 -- Or maybe just provide the dependencies's sources with a pregenerated Codeblocks project/CMakeFiles
-- Make two C::B Ponykart++ project files, for Win and Lin
+- Maintin two C::B Ponykart++ project files, for Win and Lin, until we switch to CMake
+- Replace some Ogre.h includes by only the necessary headers (Vector3, Quaternion, ...)
