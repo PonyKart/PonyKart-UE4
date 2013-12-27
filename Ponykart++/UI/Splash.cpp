@@ -67,7 +67,7 @@ void Splash::increment(const std::string& text)
 {
 	log("[Loading] " + text);
 
-	current = current>=maximum ? current+1 : current;
+	current = current<maximum ? current+1 : current;
 	progressFG->setDimensions(((float)current)/maximum,1);
 	progressText->setCaption(text);
 	gRoot->renderOneFrame();
