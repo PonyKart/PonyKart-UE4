@@ -48,7 +48,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add option="-Wno-unused-local-typedefs" />
-			<Add directory="C:/Users/Tux/Documents/Dev/Projects/Ponykart/PonykartParsers++/" />
+			<Add directory="$(PROJECT_DIR)" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OIS" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OGRE" />
@@ -75,9 +75,12 @@
 		<Unit filename="Thing/ShapeBlock.h" />
 		<Unit filename="Thing/SoundBlock.cpp" />
 		<Unit filename="Thing/SoundBlock.h" />
+		<Unit filename="Thing/ThingDatabase.cpp" />
 		<Unit filename="Thing/ThingDatabase.h" />
 		<Unit filename="Thing/ThingDefinition.cpp" />
 		<Unit filename="Thing/ThingDefinition.h" />
+		<Unit filename="Thing/ThingImporter.cpp" />
+		<Unit filename="Thing/ThingImporter.h" />
 		<Unit filename="TokenHolder.cpp" />
 		<Unit filename="TokenHolder.h" />
 		<Extensions>

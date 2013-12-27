@@ -12,9 +12,9 @@ class ThingDatabase
 {
 public:
 	ThingDatabase();
-	ThingDefinition* getThingDefinition(std::string name);
+	ThingDefinition* getThingDefinition(const std::string& name);
 public:
-	std::unordered_map<std::string, ThingDefinition> definitions;
+	std::unordered_map<std::string, ThingDefinition*> definitions;
 };
 
 } // PonykartParsers
