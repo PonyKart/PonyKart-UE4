@@ -19,14 +19,14 @@ namespace Physics
     class CollisionObjectDataHolder
     {
 	public:
-		CollisionObjectDataHolder(btCollisionObject* owner, PonykartCollisionGroups collisionGroup, const std::string& name); ///< Create a data holder without a LThing object.
-		CollisionObjectDataHolder(Actors::LThing* thing); ///< Create a data holder using properties of an LThing object.
+		CollisionObjectDataHolder(Actors::LThing* Thing); ///< Create a data holder using properties of an LThing object.
+		CollisionObjectDataHolder(btCollisionObject* Owner, PonykartCollisionGroups* CollisionGroup, const std::string& Name);
 		int getHashCode();
 		Actors::Kart* getThingAsKart(); ///< If this has a LThing associated with it and that LThing is a kart, this returns it as a kart. Otherwise it returns null.
 	private:
-		std::string name; ///< The object's name
 		btCollisionObject* owner; ///< The collision object this data holder is attached to.
-		PonykartCollisionGroups collisionGroup; ///< The object's collision group
+		PonykartCollisionGroups* collisionGroup; ///< The object's collision group
+		std::string name; ///< The object's name
 		Actors::LThing* thing; ///< If this has a LThing associated with it, this points to it.
 		int id; ///< Identificiation number. Is not the same as the Thing's ID!
     };

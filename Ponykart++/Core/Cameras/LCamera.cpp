@@ -3,7 +3,7 @@
 
 using namespace Ponykart::Core;
 
-LCamera::LCamera(std::string name)
+LCamera::LCamera(const std::string& Name)
+ : name(Name)
 {
-	Name=name;
 }

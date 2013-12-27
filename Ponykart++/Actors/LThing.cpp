@@ -140,7 +140,7 @@ SceneNode* LThing::getRootNode()
 	return rootNode;
 }
 
-const btRigidBody* const LThing::getBody() const
+btRigidBody* LThing::getBody()
 {
 	return body;
 }

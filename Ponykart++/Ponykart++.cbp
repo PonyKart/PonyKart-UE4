@@ -75,6 +75,7 @@
 			<Add library="OIS" />
 			<Add library="BulletCollision" />
 			<Add library="BulletDynamics" />
+			<Add library="LinearMath" />
 			<Add directory="$(PROJECT_DIR)/../PonykartParsers++/bin/" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/lib/release" />
 			<Add directory="C:/Program Files (x86)/BULLET_PHYSICS/lib" />
@@ -155,6 +156,7 @@
 		<Unit filename="Misc/ogreExtensions.cpp" />
 		<Unit filename="Misc/ogreExtensions.h" />
 		<Unit filename="Physics/CollisionGroups.h" />
+		<Unit filename="Physics/CollisionObjectDataHolder.cpp" />
 		<Unit filename="Physics/CollisionObjectDataHolder.h" />
 		<Unit filename="Physics/CollisionReports/CollisionReporter.cpp" />
 		<Unit filename="Physics/CollisionReports/CollisionReporter.h" />

@@ -12,7 +12,7 @@ namespace Core
 class LCamera
 {
 public:
-	LCamera(std::string name);
+	LCamera(const std::string& Name);
 	// Getters
 	const Ogre::Camera* const getCamera();
 	const Ogre::SceneNode* const getCameraNode();
