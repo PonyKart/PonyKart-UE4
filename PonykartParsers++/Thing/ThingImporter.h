@@ -19,8 +19,10 @@ namespace PonykartParsers
 		static void prepareFileList();
 	private:
 		MuffinParser::RuleInstance* root;
-		static bool hasPreparedFileList;
 		static std::unordered_map<std::string, std::string> fileList;
+		#if !DEBUG
+			static bool hasPreparedFileList;
+		#endif
 	};
 } // PonykartParsers
 

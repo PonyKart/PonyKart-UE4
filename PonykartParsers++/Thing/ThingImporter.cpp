@@ -1,14 +1,17 @@
 #include <fstream>
 #include <OgreLogManager.h>
+#include "Misc/direntSearch.h"
 #include "Muffin/MuffinParser.h"
 #include "Thing/ThingDefinition.h"
 #include "Thing/ThingImporter.h"
 
-
 using namespace std;
 using namespace PonykartParsers;
 
-bool ThingImporter::hasPreparedFileList(false);
+std::unordered_map<std::string, std::string> ThingImporter::fileList;
+#if !DEBUG
+	bool ThingImporter::hasPreparedFileList(false);
+#endif
 
 ThingImporter::ThingImporter()
 {
@@ -52,4 +55,32 @@ ThingDefinition* ThingImporter::parse(const std::string& nameOfThing)
 	thingDef->finish();
 
 	return thingDef;
+}
+
+void ThingImporter::prepareFileList()
+{
+#if !DEBUG
+	if (!hasPreparedFileList)
+	{
+#endif
+		Ogre::ResourceGroupManager& rgm = Ogre::ResourceGroupManager::getSingleton();
+		for (string group : rgm.getResourceGroups())
+		{
+			if (!rgm.isResourceGroupInitialised(group) || group == "Bootstrap")
+				continue;
+
+			auto resourceLocations = *(rgm.listResourceLocations(group));
+
+			for (string loc : resourceLocations)
+			{
+				auto scripts = direntSearch(loc, ".thing");
+
+				for (string file : scripts)
+					fileList[getFilenameWithoutExtension(file)] = file;
+			}
+		}
+#if !DEBUG
+		hasPreparedFileList = true;
+	}
+#endif
 }

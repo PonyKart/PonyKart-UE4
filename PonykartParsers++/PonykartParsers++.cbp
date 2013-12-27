@@ -60,6 +60,7 @@
 		</Linker>
 		<Unit filename="Muffin/MuffinDefinition.cpp" />
 		<Unit filename="Muffin/MuffinDefinition.h" />
+		<Unit filename="Muffin/MuffinParser.h" />
 		<Unit filename="Muffin/ThingBlock.cpp" />
 		<Unit filename="Muffin/ThingBlock.h" />
 		<Unit filename="ThingEnum.h" />
