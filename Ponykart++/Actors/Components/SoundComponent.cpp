@@ -15,6 +15,8 @@ using namespace Ponykart::LKernel;
 using namespace Ponykart::Sound;
 using namespace PonykartParsers;
 
+/** @param lthing The Thing this component is attached to.
+	@param block The block we're creating this component from */
 SoundComponent::SoundComponent(LThing* lthing, ThingBlock* thingTemplate, SoundBlock* block)
 {
 	needUpdate = false;
@@ -46,6 +48,8 @@ SoundComponent::SoundComponent(LThing* lthing, ThingBlock* thingTemplate, SoundB
 	soundMain->addSoundComponent(this);
 }
 
+/// Update's the sound's position (and velocity if the owner has a Body).
+/** Called from Ponykart::Physics::OgreMotionState. */
 void SoundComponent::update()
 {
 	needUpdate = false;

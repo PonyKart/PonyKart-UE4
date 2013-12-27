@@ -7,11 +7,12 @@
 #include <OgreFrameListener.h>
 #include "Core/ControllerManager.h"
 
-//#define PRINTINPUT // uncomment if you want all input to be printed
+//#define PRINTINPUT ///< uncomment if you want all input to be printed
 
 namespace Ponykart
 {
-/* Class that handles all of the input. This acts as a "layer" between the input library and the rest of the program.
+/// Class that handles all of the input.
+/**This acts as a "layer" between the input library and the rest of the program.
 // This makes it easier to change libraries and stuff, since you'd only need to change this class instead of everything
 // that uses input.
 //
@@ -19,7 +20,7 @@ namespace Ponykart
 //
 // Other classes (mostly handlers) should only use events fired off from this class and not ones fired off from the
 // input library.
-*/
+**/
 class InputMain // TODO: Finish implementing InputMain
 {
 public:
@@ -47,7 +48,7 @@ private:
 	Core::ControllerManager* inputController;
 
 public: // Events
-	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardPress_Anything; // When any keyboard button is pressed. This should eventually be removed once we know what all of the keys are.
+	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardPress_Anything; ///< When any keyboard button is pressed. This should eventually be removed once we know what all of the keys are.
 	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardRelease_Anything;
 
 	std::vector<std::function<void (OIS::KeyEvent)>> onKeyboardPress_Escape;

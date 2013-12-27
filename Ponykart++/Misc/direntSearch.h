@@ -11,7 +11,7 @@
 #include <string>
 
 std::string getFilenameWithoutExtension(const std::string& path);
-std::vector<std::string> direntSearch(const std::string& directory, const std::string& extension); // Search only inside directory
-std::vector<std::string> direntSearchRec(const std::string& directory, const std::string& extension); // Search recursively
+std::vector<std::string> direntSearch(const std::string& directory, const std::string& extension); ///< Search only inside directory
+std::vector<std::string> direntSearchRec(const std::string& directory, const std::string& extension); ///< Search recursively
 
 #endif // DIRENTSEARCH_H_INCLUDED

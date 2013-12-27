@@ -43,7 +43,7 @@ private:
 	Sound::SoundMain* soundMain;
 	irrklang::ISound *idleSound, *fullSound;
 	irrklang::ISoundSource *revDownSound, *revUpSound;
-	bool idleState; // true if we're in the "play the slower sound" state, false if we're in the "play the faster sound" state
+	bool idleState; ///< true if we're in the "play the slower sound" state, false if we're in the "play the faster sound" state
 };
 
 } // Actors

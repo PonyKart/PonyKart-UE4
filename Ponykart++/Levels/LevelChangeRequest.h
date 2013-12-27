@@ -8,7 +8,7 @@ namespace Ponykart
 {
 namespace Levels
 {
-// A little struct to hold data that needs to be passed from one level to another to create specific stuff
+/// A little struct to hold data that needs to be passed from one level to another to create specific stuff
 struct LevelChangeRequest
 {
 	std::string newLevelName;

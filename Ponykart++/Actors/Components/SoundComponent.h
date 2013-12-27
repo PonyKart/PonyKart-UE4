@@ -25,8 +25,8 @@ using SoundFrameEvent = std::vector<std::function<void (LThing*, irrklang::ISoun
 class SoundComponent // TODO: Implement SoundComponent properly
 {
 public:
-	SoundComponent(LThing* lthing, PonykartParsers::ThingBlock *thingTemplate, PonykartParsers::SoundBlock* block); // lthing:The Thing this component is attached to. block:The block we're creating this component from
-	void update(); // Update's the sound's position (and velocity if the owner has a Body). Called from Ponykart::Physics::OgreMotionState.
+	SoundComponent(LThing* lthing, PonykartParsers::ThingBlock *thingTemplate, PonykartParsers::SoundBlock* block);
+	void update();
 	// Getters
 	irrklang::ISound* getSound();
 	std::string getName() const;

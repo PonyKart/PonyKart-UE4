@@ -15,11 +15,11 @@ namespace Actors
 {
 	class LThing;
 
-	// Represents a physics collision shape
+	/// Represents a physics collision shape
 	class ShapeComponent
 	{
 	public:
-		ShapeComponent(LThing* lthing, PonykartParsers::ShapeBlock* block); // For physics
+		ShapeComponent(LThing* lthing, PonykartParsers::ShapeBlock* block); ///< For physics
 		// Getters
 		PonykartParsers::ThingEnum getType();
 		Ogre::Vector3 getDimensions();

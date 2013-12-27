@@ -3,7 +3,7 @@
 #include "Actors/Components/ShapeComponent.h"
 #include "Levels/LevelManager.h"
 #include "Misc/direntSearch.h"
-#include "Misc/Extensions.h"
+#include "Misc/bulletExtensions.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Thing/ThingDefinition.h"
 

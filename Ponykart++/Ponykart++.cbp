@@ -135,6 +135,7 @@
 		<Unit filename="Kernel/LKernel.cpp" />
 		<Unit filename="Kernel/LKernel.h" />
 		<Unit filename="Kernel/LKernelOgreInit.cpp" />
+		<Unit filename="Kernel/LKernelOgreInit.h" />
 		<Unit filename="Kernel/LKernelRegistration.cpp" />
 		<Unit filename="Levels/Level.cpp" />
 		<Unit filename="Levels/Level.h" />

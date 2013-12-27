@@ -8,13 +8,13 @@ namespace Ponykart
 {
 namespace Core
 {
-// Manages all of our cameras and handles switching between them as necessary.
+/// Manages all of our cameras and handles switching between them as necessary.
 class CameraManager
 {
 public:
 	CameraManager();
 	// getters
-	const LCamera* const getCurrentCamera(); // Gets the current camera that is being used for rendering.
+	const LCamera* const getCurrentCamera(); ///< Gets the current camera that is being used for rendering.
 
 public:
 	std::vector<LCamera*> cameras;

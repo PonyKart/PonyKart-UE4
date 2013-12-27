@@ -21,7 +21,7 @@ class Driver;
 
 //delegate void KartEvent(Kart kart); // TODO: Implement
 
-// Base class for karts. -Z is forwards!
+/// Base class for karts. -Z is forwards!
 class Kart : public LThing
 {
 public:
@@ -43,12 +43,12 @@ public:
 protected:
 //	MotionState initializationMotionState() override; // TODO: Find MotionState definition and implement
 public:
-	int ownerID; // A special ID number just for the karts. 0 is usually the player kart, but don't rely on this.
+	int ownerID; ///< A special ID number just for the karts. 0 is usually the player kart, but don't rely on this.
 	const float defaultMaxSpeed;
-	const float frontDriftAngle; // (RADIANS) The angle of the "front" wheels during drifting
-	const float backDriftAngle; // (RADIANS) The angle of the "back" wheels during drifting
-	const Ogre::Radian driftTransitionAngle; // (RADIANS) The angle the kart "jumps" through when starting drifting
-	bool isInAir; // Should only be set by KartHandler
+	const float frontDriftAngle; ///< (RADIANS) The angle of the "front" wheels during drifting
+	const float backDriftAngle; ///< (RADIANS) The angle of the "back" wheels during drifting
+	const Ogre::Radian driftTransitionAngle; ///< (RADIANS) The angle the kart "jumps" through when starting drifting
+	bool isInAir; ///< Should only be set by KartHandler
 	KartDriftState driftState;
 	Driver* driver;
 	Players::Player* player;

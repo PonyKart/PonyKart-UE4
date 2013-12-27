@@ -36,13 +36,13 @@ namespace Actors
 	private:
 		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
 	public:
-		std::unordered_map<std::string, Ogre::InstancedGeometry*> igeoms; // uses map group + mesh name as a key
-		std::unordered_map<std::string, std::vector<Transform>> transforms; // uses map group + mesh name as a key
-		std::unordered_map<std::string, Ogre::Entity*> ents; // uses map group + mesh name as a key
+		std::unordered_map<std::string, Ogre::InstancedGeometry*> igeoms; ///< uses map group + mesh name as a key
+		std::unordered_map<std::string, std::vector<Transform>> transforms; ///< uses map group + mesh name as a key
+		std::unordered_map<std::string, Ogre::Entity*> ents; ///< uses map group + mesh name as a key
 		const Ogre::Vector3 regionDimensions;
 	private:
 		static constexpr float _instancedRegionSize = 60.0;
-		static constexpr int _numInstancesPerBatch = 1; // maximum 80
+		static constexpr int _numInstancesPerBatch = 1; ///< maximum 80
 	};
 } // Actors
 } // Ponykart

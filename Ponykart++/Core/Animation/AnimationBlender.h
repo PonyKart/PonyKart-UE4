@@ -16,18 +16,18 @@ namespace Ogre
 {
 	enum AnimationBlendingTransition
 	{
-		BlendSwitch, // immediately switch - stop source and start dest
-		BlendWhileAnimating, // cross fade, blend source animation out while blending destination animation in
-		BlendThenAnimate // blend source to first frame of dest, when done, start dest anim
+		BlendSwitch, ///< immediately switch - stop source and start dest
+		BlendWhileAnimating, ///< cross fade, blend source animation out while blending destination animation in
+		BlendThenAnimate ///< blend source to first frame of dest, when done, start dest anim
 	};
 
 	class AnimationBlender
 	{
 	public:
 		AnimationBlender(Entity* entity);
-		void addTime(float time); // Adds time to the animation, similar to AnimationState.AddTime()
-		void blend(const std::string& animation, AnimationBlendingTransition transition, float duration, bool looping); // Fade between two states
-		void init(const std::string& animation, bool looping); // Initialise the animation blender with an initial animation
+		void addTime(float time); ///< Adds time to the animation, similar to AnimationState.AddTime()
+		void blend(const std::string& animation, AnimationBlendingTransition transition, float duration, bool looping); ///< Fade between two states
+		void init(const std::string& animation, bool looping); ///< Initialise the animation blender with an initial animation
 		// Getters
         inline float getProgress() const {return mTimeleft / mDuration;};
         inline AnimationState* getSource() {return mSource;};

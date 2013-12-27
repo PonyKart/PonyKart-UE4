@@ -240,6 +240,9 @@ void LThing::setupPhysics(PonykartParsers::ThingBlock* thingTemplate, PonykartPa
 	setBodyUserObject();
 }
 
+/// Runs the thing's script, if it has one.
+/** If this thing was made from a .muffin, this is called from Level.RunLevelScripts to make sure it runs after everything else is created.\n
+	If it was made on the fly, it runs at the end of the constructor, as long as it's a valid level of course. */
 void LThing::runScript()
 {
 	if (!script.empty())

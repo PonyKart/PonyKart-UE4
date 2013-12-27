@@ -5,8 +5,8 @@
 
 namespace Ponykart
 {
-	// Handles getting ID numbers
-	class IDs // Abstract class
+	/// Handles getting ID numbers (abstract class)
+	class IDs
 	{
 	public:
 		static unsigned incremental();

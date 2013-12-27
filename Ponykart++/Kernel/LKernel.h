@@ -30,9 +30,9 @@ namespace LKernel
 	// Interface
 	void log(const std::string& message); ///< Logs a message with Ogre. Ogre must be initialized.
 	void loadInitialObjects(Splash& splash);
-	void* addGlobalObject(void* object, const std::string& typeName);
-	template<typename T> static inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());}
-	template<typename T> static T* getG() {return (T*)details::globalObjects[typeid(T).name()];}
+	void* addGlobalObject(void* object, const std::string& typeName); ///< Add a singleton to LKernel's map.
+	template<typename T> static inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());} ///< Add a singleton to LKernel's map.
+	template<typename T> static T* getG() {return (T*)details::globalObjects[typeid(T).name()];} ///< Get a singleton from LKernel's map.
 } // LKernel
 } // Ponykart
 

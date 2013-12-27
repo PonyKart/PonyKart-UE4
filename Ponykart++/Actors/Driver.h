@@ -37,7 +37,7 @@ namespace Actors
         void changeAnimation(std::string animationName) override;
         void changeAnimation(std::string animationName, Ogre::AnimationBlendingTransition transition, float duration = 0.2f);
         void changeAnimation(DriverAnimation anim, Ogre::AnimationBlendingTransition transition = Ogre::AnimationBlendingTransition::BlendWhileAnimating, float duration = 0.2);
-        void changeAnimationIfNotBlending(DriverAnimation anim, Ogre::AnimationBlendingTransition transition = Ogre::AnimationBlendingTransition::BlendWhileAnimating, float duration = 0.2); // Only runs successfully if it is currently not blending an animation.
+        void changeAnimationIfNotBlending(DriverAnimation anim, Ogre::AnimationBlendingTransition transition = Ogre::AnimationBlendingTransition::BlendWhileAnimating, float duration = 0.2); ///< Only runs successfully if it is currently not blending an animation.
     public:
 		Kart* kart;
 		Players::Player* player;

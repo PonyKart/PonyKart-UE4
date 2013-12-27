@@ -11,7 +11,8 @@ namespace Ponykart
 namespace Core
 {
 
-// Our key commands - these are for things that need to be polled. If you want to just respond to events, use the ones in InputMain.
+/// Our key commands - these are for things that need to be polled.
+/** If you want to just respond to events, use the ones in InputMain. */
 enum LKey
 {
 	Accelerate,
@@ -25,13 +26,13 @@ enum LKey
 	Item
 };
 
-// This class provides an interface between game commands (accelerate, etc) and key presses (WASD, etc).
-// This way we can change which keys do things at runtime
+/// This class provides an interface between game commands (accelerate, etc) and key presses (WASD, etc).
+/** This way we can change which keys do things at runtime */
 class KeyBindingManager
 {
 public:
 	KeyBindingManager();
-	void setupInitialBindings(); // Set up some initial key bindings
+	void setupInitialBindings(); ///< Set up some initial key bindings
 	static void onKeyboardPressAnything(OIS::KeyEvent ke);
 	static void onKeyboardReleaseAnything(OIS::KeyEvent ke);
 	static void input_OnLeftXAxisMoved(void* sender, Core::ControllerAxisArgument e);

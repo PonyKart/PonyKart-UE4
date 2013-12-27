@@ -8,7 +8,7 @@ namespace Ponykart
 {
 namespace Core
 {
-// All camera classes should subclass from this.
+/// All camera classes should subclass from this.
 class LCamera
 {
 public:
@@ -19,10 +19,10 @@ public:
 	std::string getName();
 
 protected:
-	Ogre::Camera* Camera; // The Ogre camera we're manipulating
-	Ogre::SceneNode* CameraNode; // The scene node the camera is attached to
-	std::string Name; // The name of this camera
-	bool IsActive; // Is this camera active or not?
+	Ogre::Camera* camera; ///< The Ogre camera we're manipulating
+	Ogre::SceneNode* cameraNode; ///< The scene node the camera is attached to
+	std::string name; ///< The name of this camera
+	bool isActive; ///< Is this camera active or not?
 };
 } // Core
 } // Ponykart

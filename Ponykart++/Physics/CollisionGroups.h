@@ -7,13 +7,14 @@ namespace Ponykart
 {
 namespace Physics
 {
-	// We can have a maximum of 15 different collision groups.
-	// Remember to cast to btCollisionFilterGroups before using them.
+	/// Collision groups for bullet
+	/** We can have a maximum of 15 different collision groups.
+	// Remember to cast to btCollisionFilterGroups before using them. */
 	enum class PonykartCollisionGroups
 	{
 		/// Everything!
 		All = btBroadphaseProxy::CollisionFilterGroups::AllFilter, // -1
-		/// Collides with nothing. If you have one of these, why does it even have a physics object?
+		// /// Collides with nothing. If you have one of these, why does it even have a physics object?
 		//None = btBroadphaseProxy::CollisionFilterGroups::None, // 0
 		/// Self-explanatory. Most of the stuff we can bump into and push around falls into this category.
 		Default = btBroadphaseProxy::CollisionFilterGroups::DefaultFilter, // 1
@@ -36,7 +37,7 @@ namespace Physics
 		/// Collides with everything! Even things marked as "collides with nothing"! Use sparingly.
 		All = -1,
 
-		/// Collides with nothing.
+		// /// Collides with nothing.
 		//None = (int)PonykartCollisionGroups::None,
 
 		/// Collides with other defaults, environment, kinematic, debris, karts, and invisible walls.
