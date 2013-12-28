@@ -1,4 +1,4 @@
-#include "Thing/ShapeBlock.h"
+#include "Thing/Blocks/ShapeBlock.h"
 
 using namespace Ogre;
 using namespace PonykartParsers;

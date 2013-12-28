@@ -49,41 +49,53 @@
 			<Add option="-fexceptions" />
 			<Add option="-Wno-unused-local-typedefs" />
 			<Add directory="$(PROJECT_DIR)" />
+			<Add directory="$(PROJECT_DIR)/../Ponykart++" />
+			<Add directory="C:/Program Files (x86)/BULLET_PHYSICS/include/bullet" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OIS" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/include/OGRE" />
+			<Add directory="C:/Users/Tux/Documents/Dev/Tools/irrKlang-1.4.0/include" />
 			<Add directory="C:/boost_1_55_0" />
 		</Compiler>
 		<Linker>
 			<Add library="OgreMain" />
 			<Add directory="C:/Program Files (x86)/OGRE-MinGW/lib/release" />
 		</Linker>
+		<Unit filename="Misc/bulletExtensions.cpp" />
+		<Unit filename="Misc/bulletExtensions.h" />
+		<Unit filename="Misc/direntSearch.cpp" />
+		<Unit filename="Misc/direntSearch.h" />
+		<Unit filename="Misc/irrklangExtensions.cpp" />
+		<Unit filename="Misc/irrklangExtensions.h" />
+		<Unit filename="Misc/ogreExtensions.cpp" />
+		<Unit filename="Misc/ogreExtensions.h" />
 		<Unit filename="Muffin/MuffinDefinition.cpp" />
 		<Unit filename="Muffin/MuffinDefinition.h" />
+		<Unit filename="Muffin/MuffinParser.cpp" />
 		<Unit filename="Muffin/MuffinParser.h" />
-		<Unit filename="Muffin/ThingBlock.cpp" />
-		<Unit filename="Muffin/ThingBlock.h" />
-		<Unit filename="ThingEnum.h" />
-		<Unit filename="Thing/BillboardBlock.cpp" />
-		<Unit filename="Thing/BillboardBlock.h" />
-		<Unit filename="Thing/BillboardSetBlock.cpp" />
-		<Unit filename="Thing/BillboardSetBlock.h" />
-		<Unit filename="Thing/ModelBlock.cpp" />
-		<Unit filename="Thing/ModelBlock.h" />
-		<Unit filename="Thing/RibbonBlock.cpp" />
-		<Unit filename="Thing/RibbonBlock.h" />
-		<Unit filename="Thing/ShapeBlock.cpp" />
-		<Unit filename="Thing/ShapeBlock.h" />
-		<Unit filename="Thing/SoundBlock.cpp" />
-		<Unit filename="Thing/SoundBlock.h" />
+		<Unit filename="Muffin/TokenHolder.cpp" />
+		<Unit filename="Muffin/TokenHolder.h" />
+		<Unit filename="Thing/Blocks/BillboardBlock.cpp" />
+		<Unit filename="Thing/Blocks/BillboardBlock.h" />
+		<Unit filename="Thing/Blocks/BillboardSetBlock.cpp" />
+		<Unit filename="Thing/Blocks/BillboardSetBlock.h" />
+		<Unit filename="Thing/Blocks/ModelBlock.cpp" />
+		<Unit filename="Thing/Blocks/ModelBlock.h" />
+		<Unit filename="Thing/Blocks/RibbonBlock.cpp" />
+		<Unit filename="Thing/Blocks/RibbonBlock.h" />
+		<Unit filename="Thing/Blocks/ShapeBlock.cpp" />
+		<Unit filename="Thing/Blocks/ShapeBlock.h" />
+		<Unit filename="Thing/Blocks/SoundBlock.cpp" />
+		<Unit filename="Thing/Blocks/SoundBlock.h" />
+		<Unit filename="Thing/Blocks/ThingBlock.cpp" />
+		<Unit filename="Thing/Blocks/ThingBlock.h" />
 		<Unit filename="Thing/ThingDatabase.cpp" />
 		<Unit filename="Thing/ThingDatabase.h" />
 		<Unit filename="Thing/ThingDefinition.cpp" />
 		<Unit filename="Thing/ThingDefinition.h" />
+		<Unit filename="Thing/ThingEnum.h" />
 		<Unit filename="Thing/ThingImporter.cpp" />
 		<Unit filename="Thing/ThingImporter.h" />
-		<Unit filename="TokenHolder.cpp" />
-		<Unit filename="TokenHolder.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

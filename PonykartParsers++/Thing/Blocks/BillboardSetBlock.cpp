@@ -1,4 +1,4 @@
-#include "Thing/BillboardSetBlock.h"
+#include "Thing/Blocks/BillboardSetBlock.h"
 
 using namespace PonykartParsers;
 

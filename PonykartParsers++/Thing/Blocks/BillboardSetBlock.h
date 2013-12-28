@@ -2,8 +2,8 @@
 #define BILLBOARDSETBLOCK_H_INCLUDED
 
 #include <vector>
-#include "TokenHolder.h"
-#include "Thing/BillboardBlock.h"
+#include "Muffin/TokenHolder.h"
+#include "Thing/Blocks/BillboardBlock.h"
 
 namespace PonykartParsers
 {

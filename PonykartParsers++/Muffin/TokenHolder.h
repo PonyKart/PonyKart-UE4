@@ -3,9 +3,10 @@
 
 #include <unordered_map>
 #include <string>
-#include <Ogre.h>
+#include <OgreQuaternion.h>
+#include <OgreVector3.h>
 
-#include "ThingEnum.h"
+#include "Thing/ThingEnum.h"
 
 namespace PonykartParsers
 {

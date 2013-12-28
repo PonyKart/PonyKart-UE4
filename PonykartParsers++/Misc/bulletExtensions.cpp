@@ -5,7 +5,7 @@
 
 using namespace Ogre;
 
-namespace Ponykart
+namespace Extensions
 {
 	btQuaternion toBtQuaternion(const Quaternion& quat)
 	{
@@ -26,4 +26,4 @@ namespace Ponykart
 	{
 		return btVector3(vec.x,vec.y,vec.z);
 	}
-}
+} // Extensions

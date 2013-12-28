@@ -147,14 +147,6 @@
 		<Unit filename="Levels/LevelManager.h" />
 		<Unit filename="Levels/LevelType.h" />
 		<Unit filename="Lua/LuaMain.h" />
-		<Unit filename="Misc/bulletExtensions.cpp" />
-		<Unit filename="Misc/bulletExtensions.h" />
-		<Unit filename="Misc/direntSearch.cpp" />
-		<Unit filename="Misc/direntSearch.h" />
-		<Unit filename="Misc/irrklangExtensions.cpp" />
-		<Unit filename="Misc/irrklangExtensions.h" />
-		<Unit filename="Misc/ogreExtensions.cpp" />
-		<Unit filename="Misc/ogreExtensions.h" />
 		<Unit filename="Physics/CollisionGroups.h" />
 		<Unit filename="Physics/CollisionObjectDataHolder.cpp" />
 		<Unit filename="Physics/CollisionObjectDataHolder.h" />

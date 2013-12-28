@@ -1,4 +1,4 @@
-#include "Thing/ModelBlock.h"
+#include "Thing/Blocks/ModelBlock.h"
 
 using namespace PonykartParsers;
 

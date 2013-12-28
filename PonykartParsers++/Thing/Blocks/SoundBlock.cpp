@@ -1,4 +1,4 @@
-#include "Thing/SoundBlock.h"
+#include "Thing/Blocks/SoundBlock.h"
 
 using namespace PonykartParsers;
 

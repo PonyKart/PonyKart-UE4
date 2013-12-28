@@ -1,7 +1,7 @@
 #ifndef SOUNDBLOCK_H_INCLUDED
 #define SOUNDBLOCK_H_INCLUDED
 
-#include "TokenHolder.h"
+#include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
 {

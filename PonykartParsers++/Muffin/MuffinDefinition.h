@@ -3,8 +3,8 @@
 
 #include <string>
 #include <vector>
-#include "TokenHolder.h"
-#include "Muffin/ThingBlock.h"
+#include "Muffin/TokenHolder.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 namespace PonykartParsers
 {

@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-#include "TokenHolder.h"
+#include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
 {
@@ -13,13 +13,13 @@ namespace PonykartParsers
 	class BillboardSetBlock;
 	class SoundBlock;
 
-    // Represents a .thing file - these are one per file and not one per LThing object!
+    /// Represents a .thing file - these are one per file and not one per LThing object!
     class ThingDefinition : public TokenHolder
     {
     public:
-        ThingDefinition(std::string name);
+        ThingDefinition(const std::string& Name);
         ~ThingDefinition();
-        void finish() override; // Must be called after you're done importing everything into the dictionaries
+        void finish() override; ///< Must be called after you're done importing everything into the dictionaries
         // Getters
         std::string getName() const;
         const std::vector<ShapeBlock*>& getShapeBlocks() const;

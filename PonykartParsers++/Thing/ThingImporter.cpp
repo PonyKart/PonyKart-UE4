@@ -1,11 +1,13 @@
 #include <fstream>
 #include <OgreLogManager.h>
+#include <OgreResourceGroupManager.h>
 #include "Misc/direntSearch.h"
 #include "Muffin/MuffinParser.h"
 #include "Thing/ThingDefinition.h"
 #include "Thing/ThingImporter.h"
 
 using namespace std;
+using namespace Extensions;
 using namespace PonykartParsers;
 
 std::unordered_map<std::string, std::string> ThingImporter::fileList;

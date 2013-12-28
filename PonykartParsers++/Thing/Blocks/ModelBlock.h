@@ -1,7 +1,7 @@
 #ifndef MODELBLOCK_H_INCLUDED
 #define MODELBLOCK_H_INCLUDED
 
-#include "TokenHolder.h"
+#include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
 {

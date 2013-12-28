@@ -2,7 +2,7 @@
 #define SHAPEBLOCK_H_INCLUDED
 
 #include <Ogre.h>
-#include "TokenHolder.h"
+#include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
 {

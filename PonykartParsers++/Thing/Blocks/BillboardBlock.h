@@ -1,7 +1,7 @@
 #ifndef BILLBOARDBLOCK_H_INCLUDED
 #define BILLBOARDBLOCK_H_INCLUDED
 
-#include "TokenHolder.h"
+#include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
 {

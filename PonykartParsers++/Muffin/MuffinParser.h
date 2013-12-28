@@ -59,21 +59,21 @@ namespace MuffinParser
 	/// Represents an inner node
 	struct RuleInstance : Node
 	{
-		RuleInstance(NodeType type, const Node** Children) : Node(type), children(Children) {};
+		RuleInstance(NodeType type, const std::vector<Node*>& Children) : Node(type), children(Children) {};
 
-		const Node** children;
+		std::vector<Node*> children;
 	};
 
 	/// Represents a leaf node
-	class Token : Node
+	class Token : public Node
 	{
 	public:
 		Token();
-		Token(Token** PrecedingFillerTokens, NodeType Type, const std::string& Image, int LineNr, int CharNr);
+		Token(std::vector<Token*> PrecedingFillerTokens, NodeType Type, const std::string& Image, int LineNr, int CharNr);
 	private:
 		static NodeType specializeType(NodeType Type, const std::string& Image);
 	public:
-		const Token** precedingFillerTokens;
+		const std::vector<Token*> precedingFillerTokens;
 		const std::string image;
 		const int lineNr, charNr;
 	private:
@@ -84,11 +84,11 @@ namespace MuffinParser
 	{
 	public:
 		Parser() = default;
-		RuleInstance* parse(std::string source);
+		RuleInstance* parse(const std::string& Source); ///< Ogre should be initialized (use of the LogManager)
 	private:
 		Token* nextToken();
 		Token* fetchToken(int offset);
-		Token** getFillerTokens();
+		std::vector<Token*> getFillerTokens();
 		Token* nextToken(bool useFetched);
 		RuleInstance* matchStart();
 		RuleInstance* matchProperty();
@@ -107,12 +107,12 @@ namespace MuffinParser
 	private:
 		std::string source;
 		int index, length, currLine, currChar, laOffset;
-		const std::vector<Token*> fetchedTokens;
-		const std::stack<bool> laSuccess;
-		const std::stack<int> laOffsets;
-		const std::stack<bool> onceOrMoreB;
-		const std::vector<Token*> tokens;
-		const std::stack<int> indices, currLines, currChars;
+		std::vector<Token*> fetchedTokens;
+		std::stack<bool> laSuccess;
+		std::stack<int> laOffsets;
+		std::stack<bool> onceOrMoreB;
+		std::vector<Token*> tokens;
+		std::stack<int> indices, currLines, currChars;
 	};
 } // MuffinParser
 } // PonykartParsers

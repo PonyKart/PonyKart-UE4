@@ -1,4 +1,4 @@
-#include "Muffin/ThingBlock.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace Ogre;

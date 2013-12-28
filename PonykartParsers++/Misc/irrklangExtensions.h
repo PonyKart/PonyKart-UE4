@@ -5,9 +5,9 @@
 
 namespace Ogre{class Vector3;}
 
-namespace Ponykart
+namespace Extensions
 {
 	irrklang::vec3df toSoundVector(const Ogre::Vector3& vec);
-} // Ponykart
+} // Extensions
 
 #endif // EXTENSIONS_H_INCLUDED
