@@ -2,13 +2,14 @@
 #include <OgreLogManager.h>
 #include <OgreResourceGroupManager.h>
 #include "Misc/direntSearch.h"
-#include "Muffin/MuffinParser.h"
 #include "Thing/ThingDefinition.h"
 #include "Thing/ThingImporter.h"
+#include "Thing/ThingParser.h"
 
 using namespace std;
 using namespace Extensions;
 using namespace PonykartParsers;
+using namespace PonykartParsers::ThingParser;
 
 std::unordered_map<std::string, std::string> ThingImporter::fileList;
 #if !DEBUG
@@ -47,7 +48,7 @@ ThingDefinition* ThingImporter::parse(const std::string& nameOfThing)
     fileStream.read(&fileContents[0], fileContents.size());
     fileStream.close();
 
-	MuffinParser::Parser p;
+	ThingParser::Parser p;
 	root = p.parse(fileContents);
 
 	ThingDefinition* thingDef = new ThingDefinition(nameOfThing);
@@ -85,4 +86,35 @@ void ThingImporter::prepareFileList()
 		hasPreparedFileList = true;
 	}
 #endif
+}
+
+void ThingImporter::parse(ThingDefinition* thingDef)
+{
+	for (unsigned a = 0; a < root->children.size(); a++)
+	{
+		Node* prop = root->children[a];
+		switch (prop->type)
+		{
+			case NodeType::Rule_Property:
+				parseProperty(thingDef, (RuleInstance*)((RuleInstance*)prop)->children[0]);
+				break;
+			case NodeType::Rule_Shape:
+				parseShape(thingDef, (RuleInstance*)prop);
+				break;
+			case NodeType::Rule_Model:
+				parseModel(thingDef, (RuleInstance*)prop);
+				break;
+			case NodeType::Rule_Ribbon:
+				parseRibbon(thingDef, (RuleInstance*)prop);
+				break;
+			case NodeType::Rule_BillboardSet:
+				parseBillboardSet(thingDef, (RuleInstance*)prop);
+				break;
+			case NodeType::Rule_Sound:
+				parseSound(thingDef, (RuleInstance*)prop);
+				break;
+			default:
+				break;
+		}
+	}
 }

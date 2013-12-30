@@ -96,6 +96,7 @@
 		<Unit filename="Thing/ThingEnum.h" />
 		<Unit filename="Thing/ThingImporter.cpp" />
 		<Unit filename="Thing/ThingImporter.h" />
+		<Unit filename="Thing/ThingParser.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

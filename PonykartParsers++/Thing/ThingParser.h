@@ -1,5 +1,5 @@
-#ifndef MUFFINPARSER_H_INCLUDED
-#define MUFFINPARSER_H_INCLUDED
+#ifndef THINGPARSER_H_INCLUDED
+#define THINGPARSER_H_INCLUDED
 
 #include <stack>
 #include <string>
@@ -8,7 +8,7 @@
 
 namespace PonykartParsers
 {
-namespace MuffinParser
+namespace ThingParser
 {
 	enum NodeType
 	{
@@ -19,6 +19,12 @@ namespace MuffinParser
 		Tok_RBrace,
 		Tok_Name,
 		Tok_KeyFalse,
+		Tok_KeyModel,
+		Tok_KeyShape,
+		Tok_KeyRibbon,
+		Tok_KeyBillboard,
+		Tok_KeyBillboardSet,
+		Tok_KeySound,
 		Tok_KeyTrue,
 		Tok_StringLiteral,
 		Tok_FloatLiteral,
@@ -34,19 +40,26 @@ namespace MuffinParser
 		Rule_NumericProperty,
 		Rule_StringProperty,
 		Rule_BoolProperty,
-		Rule_Block,
+		Rule_Shape,
+		Rule_Model,
+		Rule_Ribbon,
+		Rule_BillboardSet,
+		Rule_Billboard,
+		Rule_Sound,
 		Rule_AnyName
 	};
 
-	std::string NodeTypeMap[] = {"Tok_EOF", "Tok_Assign", "Tok_Comma", "Tok_LBrace", "Tok_RBrace",
-		"Tok_Name,Tok_KeyFalse", "Tok_KeyTrue", "Tok_StringLiteral", "Tok_FloatLiteral", "Tok_IntLiteral",
+	std::string NodeTypeMap[] = {"Tok_EOF", "Tok_Assign", "Tok_Comma", "Tok_LBrace", "Tok_RBrace", "Tok_Name",
+		"Tok_KeyFalse", "Tok_KeyModel", "Tok_KeyShape", "Tok_KeyRibbon", "Tok_KeyBillboard",
+		"Tok_KeyBillboardSet", "Tok_KeySound", "Tok_KeyTrue", "Tok_StringLiteral", "Tok_FloatLiteral", "Tok_IntLiteral",
 		"Tok_SingleLineComment", "Tok_MultiLineComment", "Tok_Whitespace", "Rule_Start", "Rule_Property",
 		"Rule_EnumProperty", "Rule_QuatProperty", "Rule_Vec3Property", "Rule_NumericProperty", "Rule_StringProperty",
-		"Rule_BoolProperty", "Rule_Block", "Rule_AnyName"};
+		"Rule_BoolProperty", "Rule_Shape", "Rule_Model", "Rule_Ribbon", "Rule_BillboardSet", "Rule_Billboard",
+		"Rule_Sound", "Rule_AnyName"};
 
 	struct Node // Abstract
 	{
-		Node(NodeType Type) : type(Type) {};
+		Node(NodeType Type) : type(Type) {}
 		static std::string typeName(NodeType Type)
 		{
 			std::string s = NodeTypeMap[Type];
@@ -56,7 +69,7 @@ namespace MuffinParser
 		const NodeType type;
 	};
 
-	/// Represents an inner node
+	/// represents an inner node
 	struct RuleInstance : Node
 	{
 		RuleInstance(NodeType type, const std::vector<Node*>& Children) : Node(type), children(Children) {};
@@ -98,7 +111,6 @@ namespace MuffinParser
 		RuleInstance* matchNumericProperty();
 		RuleInstance* matchStringProperty();
 		RuleInstance* matchBoolProperty();
-		RuleInstance* matchBlock();
 		RuleInstance* matchAnyName();
 		void lookaheadEnumProperty();
 		void lookaheadNumericProperty();
@@ -114,7 +126,8 @@ namespace MuffinParser
 		std::vector<Token*> tokens;
 		std::stack<int> indices, currLines, currChars;
 	};
-} // MuffinParser
+
+} // ThingParser
 } // PonykartParsers
 
-#endif // MUFFINPARSER_H_INCLUDED
+#endif // THINGPARSER_H_INCLUDED
