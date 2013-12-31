@@ -118,3 +118,47 @@ void ThingImporter::parse(ThingDefinition* thingDef)
 		}
 	}
 }
+
+void ThingImporter::parseProperty(TokenHolder* holder, ThingParser::RuleInstance* prop)
+{
+	string propName = tolower(getNameFromProperty(prop), std::locale());
+	switch (prop->type)
+	{
+		case NodeType::Rule_StringProperty:
+			holder->setStringProperty(propName, parseStringProperty(prop));
+			break;
+		case NodeType::Rule_BoolProperty:
+			holder->setBoolProperty(propName, parseBoolProperty(prop));
+			break;
+		case NodeType::Rule_EnumProperty:
+			holder->setBoolProperty(propName, parseEnumProperty(prop));
+			break;
+		case NodeType::Rule_NumericProperty:
+			holder->setFloatProperty(propName, parseFloatProperty(prop));
+			break;
+		case NodeType::Rule_Vec3Property:
+			holder->setVectorProperty(propName, parseVectorProperty(prop));
+			break;
+		case NodeType::Rule_QuatProperty:
+			holder->setQuatProperty(propName, parseQuatProperty(prop));
+			break;
+		default:
+			break;
+	}
+}
+
+/** Note that the .thing format uses xyzw but ogre uses wxyz! **/
+Ogre::Quaternion ThingImporter::parseQuatProperty(ThingParser::RuleInstance* prop)
+{
+	Token* tok1 = (Token*)prop->children[2];
+	Token* tok2 = (Token*)prop->children[4];
+	Token* tok3 = (Token*)prop->children[6];
+	Token* tok4 = (Token*)prop->children[8];
+
+	float x = atof(tok1->image.c_str());
+	float y = atof(tok2->image.c_str());
+	float z = atof(tok3->image.c_str());
+	float w = atof(tok4->image.c_str());
+
+	return Ogre::Quaternion(w, x, y, z);
+}
