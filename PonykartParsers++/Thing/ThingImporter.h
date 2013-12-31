@@ -20,7 +20,7 @@ namespace PonykartParsers
 		std::string parseStringProperty(ThingParser::RuleInstance* prop); ///< Parse a string property
 		bool parseBoolProperty(ThingParser::RuleInstance* prop); ///< Parse a bool property
 		ThingEnum parseEnumProperty(ThingParser::RuleInstance* prop); ///< Parse an enum property. The value must exist in ThingEnum, but it is not case sensitive.
-		bool parseFloatProperty(ThingParser::RuleInstance* prop); ///< Parse a float property
+		float parseFloatProperty(ThingParser::RuleInstance* prop); ///< Parse a float property
 		Ogre::Vector3 parseVectorProperty(ThingParser::RuleInstance* prop); ///< Parse a vector property, i.e. a triplet of floats separated by commas
 		Ogre::Quaternion parseQuatProperty(ThingParser::RuleInstance* prop); ///< Parse a quaternion property, i.e. a quartet of floats separated by commas.
 		void parseShape(ThingDefinition* thingDef, ThingParser::RuleInstance* block); ///< Shape blocks

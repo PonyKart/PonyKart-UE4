@@ -246,6 +246,61 @@ void ThingImporter::parseSound(ThingDefinition* thingDef, RuleInstance* block)
 	thingDef->addSoundBlock(soundBlock);
 }
 
+string ThingImporter::parseStringProperty(RuleInstance* prop)
+{
+	Token* valTok = (Token*)prop->children[2];
+	string val = valTok->image;
+
+	// need to substring because we get "\"foo\"" from the file, and we don't want extra quotes
+	return val.substr(1, val.size() - 2);
+}
+
+bool ThingImporter::parseBoolProperty(RuleInstance* prop)
+{
+	Token* valTok = (Token*)prop->children[2];
+	if (valTok->type == NodeType::Tok_KeyTrue)
+		return true;
+	else if (valTok->type == NodeType::Tok_KeyFalse)
+		return false;
+	else
+		throw string("ThingImporter::parseBoolProperty: Boolean property is not true or false! (How did we even get to this point?)");
+}
+
+ThingEnum ThingImporter::parseEnumProperty(RuleInstance* prop)
+{
+	RuleInstance* valRule = (RuleInstance*)prop->children[2];
+	Token* valTok = (Token*)valRule->children[0];
+
+	int result=-1;
+	for (unsigned i=0; i<ThingEnumMap.size(); i++) // Parse valTok->image into a ThingEnum
+		if (string(tolower(valTok->image.c_str(), locale())) == string(tolower(ThingEnumMap[i], locale())))
+			result = i;
+
+	if (result != -1)
+		return ThingEnum(result);
+	else
+		throw string("ThingImporter::parseEnumProperty: Unable to parse Enum property!");
+}
+
+float ThingImporter::parseFloatProperty(RuleInstance* prop)
+{
+	Token* tok = (Token*)prop->children[2];
+	return atof(tok->image.c_str());
+}
+
+Ogre::Vector3 ThingImporter::parseVectorProperty(RuleInstance* prop)
+{
+	Token* tok1 = (Token*)prop->children[2];
+	Token* tok2 = (Token*)prop->children[4];
+	Token* tok3 = (Token*)prop->children[6];
+
+	float x = atof(tok1->image.c_str());
+	float y = atof(tok2->image.c_str());
+	float z = atof(tok3->image.c_str());
+
+	return Ogre::Vector3(x, y, z);
+}
+
 /** Note that the .thing format uses xyzw but ogre uses wxyz! **/
 Ogre::Quaternion ThingImporter::parseQuatProperty(ThingParser::RuleInstance* prop)
 {
