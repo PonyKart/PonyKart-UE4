@@ -15,3 +15,8 @@ const std::vector<BillboardBlock*>& BillboardSetBlock::getBillboardBlocks() cons
 {
     return billboardBlocks;
 }
+
+void BillboardSetBlock::addBillboardBlock(BillboardBlock* block)
+{
+	billboardBlocks.push_back(block);
+}

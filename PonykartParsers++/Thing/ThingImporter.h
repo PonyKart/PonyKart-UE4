@@ -27,7 +27,7 @@ namespace PonykartParsers
 		void parseModel(ThingDefinition* thingDef, ThingParser::RuleInstance* block); ///< Model blocks
 		void parseRibbon(ThingDefinition* thingDef, ThingParser::RuleInstance* block); ///< Ribbon blocks
 		void parseBillboardSet(ThingDefinition* thingDef, ThingParser::RuleInstance* block); ///< BillboardSet blocks
-		void parseBillboard(ThingDefinition* thingDef, ThingParser::RuleInstance* block); ///< Billboard blocks
+		void parseBillboard(BillboardSetBlock* bbSet, ThingParser::RuleInstance* block); ///< Billboard blocks
 		void parseSound(ThingDefinition* thingDef, ThingParser::RuleInstance* block); ///< Sound blocks
 	private:
 		static void prepareFileList();

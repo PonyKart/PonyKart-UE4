@@ -143,3 +143,33 @@ const unordered_map<string, string>& TokenHolder::getStringTokens() const
 {
 	return stringTokens;
 }
+
+void TokenHolder::setEnumProperty(const std::string& propertyName, ThingEnum value)
+{
+	enumTokens[propertyName] = value;
+}
+
+void TokenHolder::setStringProperty(const std::string& propertyName, const std::string& value)
+{
+	stringTokens[propertyName] = value;
+}
+
+void TokenHolder::setFloatProperty(const std::string& propertyName, float value)
+{
+	floatTokens[propertyName] = value;
+}
+
+void TokenHolder::setBoolProperty(const std::string& propertyName, bool value)
+{
+	boolTokens[propertyName] = value;
+}
+
+void TokenHolder::setVectorProperty(const std::string& propertyName, const Ogre::Vector3& value)
+{
+	vectorTokens[propertyName] = value;
+}
+
+void TokenHolder::setQuatProperty(const std::string& propertyName, const Ogre::Quaternion& value)
+{
+	quatTokens[propertyName] = value;
+}

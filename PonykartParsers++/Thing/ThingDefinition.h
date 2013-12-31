@@ -20,13 +20,18 @@ namespace PonykartParsers
         ThingDefinition(const std::string& Name);
         ~ThingDefinition();
         void finish() override; ///< Must be called after you're done importing everything into the dictionaries
-        // Getters
+		void addShapeBlock(ShapeBlock* block); ///< Adds a block to the vector
+		void addModelBlock(ModelBlock* block); ///< Adds a block to the vector
+		void addRibbonBlock(RibbonBlock* block); ///< Adds a block to the vector
+		void addBillboardSetBlock(BillboardSetBlock* block); ///< Adds a block to the vector
+		void addSoundBlock(SoundBlock* block); ///< Adds a block to the vector
+		// Getters
         std::string getName() const;
-        const std::vector<ShapeBlock*>& getShapeBlocks() const;
-		const std::vector<ModelBlock*>& getModelBlocks() const;
-		const std::vector<RibbonBlock*>& getRibbonBlocks() const;
-		const std::vector<BillboardSetBlock*>& getBillboardSetBlocks() const;
-		const std::vector<SoundBlock*>& getSoundBlocks() const;
+        const std::vector<ShapeBlock*>& getShapeBlocks() const; ///< Gets a const ref to the vector
+		const std::vector<ModelBlock*>& getModelBlocks() const; ///< Gets a const ref to the vector
+		const std::vector<RibbonBlock*>& getRibbonBlocks() const; ///< Gets a const ref to the vector
+		const std::vector<BillboardSetBlock*>& getBillboardSetBlocks() const; ///< Gets a const ref to the vector
+		const std::vector<SoundBlock*>& getSoundBlocks() const; ///< Gets a const ref to the vector
     protected:
 		std::string name;
 		std::vector<ShapeBlock*> shapeBlocks;

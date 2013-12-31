@@ -10,32 +10,32 @@
 
 namespace PonykartParsers
 {
-// Since both the .thing and its blocks can all have properties, they all use this abstract class to give them maps and a few helpful methods
-class TokenHolder // TODO: Implement properly
+/// Since both the .thing and its blocks can all have properties, they all use this abstract class to give them maps and a few helpful methods
+class TokenHolder
 {
 public:
-	//virtual void SetUpmaps()=0; // Constructs the std::unordered_maps
-	virtual void finish()=0;
+	//virtual void SetUpmaps()=0; ///< Constructs the std::unordered_maps
+	virtual void finish() {};
 	// Getters
-	ThingEnum getEnumProperty(const std::string& propertyName) const; // Gets an enum property from the maps.
-	ThingEnum getEnumProperty(const std::string& propertyName, const ThingEnum& defaultValue) const; // Gets an enum property from the maps.
-	std::string getStringProperty(const std::string& propertyName) const; // Gets a string property from the maps.
-	std::string getStringProperty(const std::string& propertyName, const std::string& defaultValue) const; // Gets a string property from the maps.
-	float getFloatProperty(const std::string& propertyName) const; // Gets a float property from the maps.
-	float getFloatProperty(const std::string& propertyName, const float defaultValue) const; // Gets a float property from the maps.
-	bool getBoolProperty(const std::string& propertyName) const; // Gets a boolean property from the maps.
-	bool getBoolProperty(const std::string& propertyName, const bool defaultValue) const; // Gets a boolean property from the maps.
-	Ogre::Vector3 getVectorProperty(const std::string& propertyName) const; // Gets a vector property from the maps.
-	Ogre::Vector3 getVectorProperty(const std::string& propertyName, const Ogre::Vector3& defaultValue) const; // Gets a vector property from the maps.
-	Ogre::Quaternion getQuatProperty(const std::string& propertyName) const; // Gets a quaternion property from the maps.
-	Ogre::Quaternion getQuatProperty(const std::string& propertyName, const Ogre::Quaternion& defaultValue) const; // Gets a quaternion property from the maps.
+	ThingEnum getEnumProperty(const std::string& propertyName) const; ///< Gets an enum property from the maps.
+	ThingEnum getEnumProperty(const std::string& propertyName, const ThingEnum& defaultValue) const; ///< Gets an enum property from the maps.
+	std::string getStringProperty(const std::string& propertyName) const; ///< Gets a string property from the maps.
+	std::string getStringProperty(const std::string& propertyName, const std::string& defaultValue) const; ///< Gets a string property from the maps.
+	float getFloatProperty(const std::string& propertyName) const; ///< Gets a float property from the maps.
+	float getFloatProperty(const std::string& propertyName, const float defaultValue) const; ///< Gets a float property from the maps.
+	bool getBoolProperty(const std::string& propertyName) const; ///< Gets a boolean property from the maps.
+	bool getBoolProperty(const std::string& propertyName, const bool defaultValue) const; ///< Gets a boolean property from the maps.
+	Ogre::Vector3 getVectorProperty(const std::string& propertyName) const; ///< Gets a vector property from the maps.
+	Ogre::Vector3 getVectorProperty(const std::string& propertyName, const Ogre::Vector3& defaultValue) const; ///< Gets a vector property from the maps.
+	Ogre::Quaternion getQuatProperty(const std::string& propertyName) const; ///< Gets a quaternion property from the maps.
+	Ogre::Quaternion getQuatProperty(const std::string& propertyName, const Ogre::Quaternion& defaultValue) const; ///< Gets a quaternion property from the maps.
 	// Setters
-	void setEnumProperty(const std::string& propertyName, ThingEnum value); // Sets an enum property in the maps.
-	void setStringProperty(const std::string& propertyName, const std::string& value); // Sets a string property in the maps.
-	void setFloatProperty(const std::string& propertyName, float value); // Sets a float property in the maps.
-	void setBoolProperty(const std::string& propertyName, bool value); // Sets a bool property in the maps.
-	void setVectorProperty(const std::string& propertyName, const Ogre::Vector3& value); // Sets a vector property in the maps.
-	void setQuatProperty(const std::string& propertyName, const Ogre::Quaternion& value); // Sets a quaternion property in the maps.
+	void setEnumProperty(const std::string& propertyName, ThingEnum value); ///< Sets an enum property in the maps.
+	void setStringProperty(const std::string& propertyName, const std::string& value); ///< Sets a string property in the maps.
+	void setFloatProperty(const std::string& propertyName, float value); ///< Sets a float property in the maps.
+	void setBoolProperty(const std::string& propertyName, bool value); ///< Sets a bool property in the maps.
+	void setVectorProperty(const std::string& propertyName, const Ogre::Vector3& value); ///< Sets a vector property in the maps.
+	void setQuatProperty(const std::string& propertyName, const Ogre::Quaternion& value); ///< Sets a quaternion property in the maps.
 	// Getters
 	const std::unordered_map<std::string, ThingEnum>& getEnumTokens() const;
 	const std::unordered_map<std::string, std::string>& getStringTokens() const;

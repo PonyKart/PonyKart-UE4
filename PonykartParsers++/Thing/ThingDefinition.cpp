@@ -51,3 +51,28 @@ const vector<SoundBlock*>& ThingDefinition::getSoundBlocks() const
 {
 	return soundBlocks;
 }
+
+void ThingDefinition::addShapeBlock(ShapeBlock* block)
+{
+	shapeBlocks.push_back(block);
+}
+
+void ThingDefinition::addModelBlock(ModelBlock* block)
+{
+	modelBlocks.push_back(block);
+}
+
+void ThingDefinition::addRibbonBlock(RibbonBlock* block)
+{
+	ribbonBlocks.push_back(block);
+}
+
+void ThingDefinition::addBillboardSetBlock(BillboardSetBlock* block)
+{
+	billboardSetBlocks.push_back(block);
+}
+
+void ThingDefinition::addSoundBlock(SoundBlock* block)
+{
+	soundBlocks.push_back(block);
+}

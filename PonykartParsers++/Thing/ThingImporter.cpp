@@ -5,6 +5,11 @@
 #include "Thing/ThingDefinition.h"
 #include "Thing/ThingImporter.h"
 #include "Thing/ThingParser.h"
+#include "Thing/Blocks/ShapeBlock.h"
+#include "Thing/Blocks/ModelBlock.h"
+#include "Thing/Blocks/RibbonBlock.h"
+#include "Thing/Blocks/BillboardSetBlock.h"
+#include "Thing/Blocks/SoundBlock.h"
 
 using namespace std;
 using namespace Extensions;
@@ -58,6 +63,13 @@ ThingDefinition* ThingImporter::parse(const std::string& nameOfThing)
 	thingDef->finish();
 
 	return thingDef;
+}
+
+string ThingImporter::getNameFromProperty(RuleInstance* prop)
+{
+	RuleInstance* nameRule = (RuleInstance*)prop->children[0];
+	Token* nameTok = (Token*)nameRule->children[0];
+	return nameTok->image;
 }
 
 void ThingImporter::prepareFileList()
@@ -145,6 +157,93 @@ void ThingImporter::parseProperty(TokenHolder* holder, ThingParser::RuleInstance
 		default:
 			break;
 	}
+}
+
+void ThingImporter::parseShape(ThingDefinition* thingDef, RuleInstance* block)
+{
+	ShapeBlock* shapeBlock = new ShapeBlock(thingDef);
+
+	for (unsigned a = 2; a < block->children.size() - 1; a++)
+	{
+		RuleInstance* rule = (RuleInstance*)block->children[a];
+		if (rule->type == NodeType::Rule_Property)
+			parseProperty(shapeBlock, (RuleInstance*)rule->children[0]);
+	}
+
+	thingDef->addShapeBlock(shapeBlock);
+}
+
+void ThingImporter::parseModel(ThingDefinition* thingDef, RuleInstance* block)
+{
+	ModelBlock* modelBlock = new ModelBlock(thingDef);
+
+	for (unsigned a = 2; a < block->children.size() - 1; a++)
+	{
+		RuleInstance* rule = (RuleInstance*)block->children[a];
+		if (rule->type == NodeType::Rule_Property)
+			parseProperty(modelBlock, (RuleInstance*)rule->children[0]);
+	}
+
+	thingDef->addModelBlock(modelBlock);
+}
+
+void ThingImporter::parseRibbon(ThingDefinition* thingDef, RuleInstance* block)
+{
+	RibbonBlock* ribbonBlock = new RibbonBlock(thingDef);
+
+	for (unsigned a = 2; a < block->children.size() - 1; a++)
+	{
+		RuleInstance* rule = (RuleInstance*)block->children[a];
+		if (rule->type == NodeType::Rule_Property)
+			parseProperty(ribbonBlock, (RuleInstance*)rule->children[0]);
+	}
+
+	thingDef->addRibbonBlock(ribbonBlock);
+}
+
+void ThingImporter::parseBillboardSet(ThingDefinition* thingDef, RuleInstance* block)
+{
+	BillboardSetBlock* billboardSetBlock = new BillboardSetBlock(thingDef);
+
+	for (unsigned a = 2; a < block->children.size() - 1; a++)
+	{
+		RuleInstance* rule = (RuleInstance*)block->children[a];
+		if (rule->type == NodeType::Rule_Property)
+			parseProperty(billboardSetBlock, (RuleInstance*)rule->children[0]);
+		else if (rule->type == NodeType::Rule_Billboard)
+			parseBillboard(billboardSetBlock, rule);
+	}
+
+	thingDef->addBillboardSetBlock(billboardSetBlock);
+}
+
+/** @param bbSet We pass the bbset block, not the whole thingDefinition **/
+void ThingImporter::parseBillboard(BillboardSetBlock* bbSet, RuleInstance* block)
+{
+	BillboardBlock* billboardBlock = new BillboardBlock(bbSet);
+
+	for (unsigned a = 2; a < block->children.size() - 1; a++)
+	{
+		RuleInstance* rule = (RuleInstance*)block->children[a];
+		if (rule->type == NodeType::Rule_Property)
+			parseProperty(billboardBlock, (RuleInstance*)rule->children[0]);
+	}
+
+	bbSet->addBillboardBlock(billboardBlock);
+}
+
+void ThingImporter::parseSound(ThingDefinition* thingDef, RuleInstance* block)
+{
+	SoundBlock* soundBlock = new SoundBlock(thingDef);
+
+	for (unsigned a = 2; a < block->children.size() - 1; a++)
+	{
+		RuleInstance* rule = (RuleInstance*)block->children[a];
+		if (rule->type == NodeType::Rule_Property)
+			parseProperty(soundBlock, (RuleInstance*)rule->children[0]);
+	}
+
+	thingDef->addSoundBlock(soundBlock);
 }
 
 /** Note that the .thing format uses xyzw but ogre uses wxyz! **/

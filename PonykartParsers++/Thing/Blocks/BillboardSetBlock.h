@@ -10,12 +10,13 @@ namespace PonykartParsers
 
 class ThingDefinition;
 
-// Represents a BillboardSet { } block in a .thing file
+/// Represents a BillboardSet { } block in a .thing file
 class BillboardSetBlock : public TokenHolder
 {
 public:
 	BillboardSetBlock(ThingDefinition* Owner);
 	~BillboardSetBlock();
+	void addBillboardBlock(BillboardBlock* block);
 	// Getters
 	const ThingDefinition* const getOwner() const;
 	const std::vector<BillboardBlock*>& getBillboardBlocks() const;
