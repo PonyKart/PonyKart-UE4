@@ -168,6 +168,11 @@ void Parser::lookaheadAnyName()
 	}
 }
 
+Token* Parser::nextToken()
+{
+	return nextToken(true);
+}
+
 Token* Parser::nextToken(bool useFetched)
 {
 	if (useFetched && fetchedTokens.size() != 0)
@@ -1102,6 +1107,460 @@ Token* Parser::nextToken(bool useFetched)
 
 	stringstream ss; ss << "Line " << currLine << ", char " << currChar << ": No token match";
 	throw string(ss.str());
+}
+
+RuleInstance* Parser::matchProperty()
+{
+	vector<Node*> nodes;
+
+	laOffsets.push(laOffset);
+	laSuccess.push(true);
+	lookaheadBoolProperty();
+	laOffset = laOffsets.top(); laOffsets.pop();
+	if (laSuccess.top())
+	{
+		laSuccess.pop();
+		nodes.push_back(matchBoolProperty());
+	}
+	else
+	{
+		laSuccess.pop();
+		laOffsets.push(laOffset);
+		laSuccess.push(true);
+		lookaheadEnumProperty();
+		laOffset = laOffsets.top(); laOffsets.pop();
+		if (laSuccess.top())
+		{
+			laSuccess.pop();
+			nodes.push_back(matchEnumProperty());
+		}
+		else
+		{
+			laSuccess.pop();
+			laOffsets.push(laOffset);
+			laSuccess.push(true);
+			lookaheadAnyName();
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_Assign)
+					laOffset++;
+				else
+				{
+					laSuccess.pop();
+					laSuccess.push(false);
+				}
+			}
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+				else
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_FloatLiteral)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+			}
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_Comma)
+					laOffset++;
+				else
+				{
+					laSuccess.pop();
+					laSuccess.push(false);
+				}
+			}
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+				else
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_FloatLiteral)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+			}
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_Comma)
+					laOffset++;
+				else
+				{
+					laSuccess.pop();
+					laSuccess.push(false);
+				}
+			}
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+				else
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_FloatLiteral)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+			}
+			if (laSuccess.top())
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_Comma)
+					laOffset++;
+				else
+				{
+					laSuccess.pop();
+					laSuccess.push(false);
+				}
+			}
+			laOffset = laOffsets.top(); laOffsets.pop();
+			if (laSuccess.top())
+			{
+				laSuccess.pop();
+				nodes.push_back(matchQuatProperty());
+			}
+			else
+			{
+				laSuccess.pop();
+				laOffsets.push(laOffset);
+				laSuccess.push(true);
+				lookaheadAnyName();
+				if (laSuccess.top())
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_Assign)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+				if (laSuccess.top())
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+					{
+						if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+							laOffset++;
+						else
+						{
+							laSuccess.pop();
+							laSuccess.push(false);
+						}
+					}
+					else
+					{
+						if (fetchToken(laOffset)->type == NodeType::Tok_FloatLiteral)
+							laOffset++;
+						else
+						{
+							laSuccess.pop();
+							laSuccess.push(false);
+						}
+					}
+				}
+				if (laSuccess.top())
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_Comma)
+						laOffset++;
+					else
+					{
+						laSuccess.pop();
+						laSuccess.push(false);
+					}
+				}
+				laOffset = laOffsets.top(); laOffsets.pop();
+				if (laSuccess.top())
+				{
+					laSuccess.pop();
+					nodes.push_back(matchVec3Property());
+				}
+				else
+				{
+					laSuccess.pop();
+					laOffsets.push(laOffset);
+					laSuccess.push(true);
+					lookaheadNumericProperty();
+					laOffset = laOffsets.top(); laOffsets.pop();
+					if (laSuccess.top())
+					{
+						laSuccess.pop();
+						nodes.push_back(matchNumericProperty());
+					}
+					else
+					{
+						laSuccess.pop();
+						nodes.push_back(matchStringProperty());
+					}
+				}
+			}
+		}
+	}
+
+	return new RuleInstance(NodeType::Rule_Property, nodes);
+}
+
+RuleInstance* Parser::matchShape()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if ((tok = nextToken())->type != NodeType::Tok_KeyShape)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeyShape token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_LBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected LBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	while (true) {
+		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
+			nodes.push_back(matchProperty());
+		}
+		else
+			break;
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_RBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected RBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_Shape, nodes);
+}
+
+RuleInstance* Parser::matchModel()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if ((tok = nextToken())->type != NodeType::Tok_KeyModel)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeyModel token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_LBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected LBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	while (true)
+	{
+		if ((tok = fetchToken(laOffset))->type==NodeType::Tok_KeyBillboard || tok->type==NodeType::Tok_KeyBillboardSet
+			|| tok->type==NodeType::Tok_KeyFalse || tok->type==NodeType::Tok_KeyModel
+			|| tok->type==NodeType::Tok_KeyRibbon || tok->type==NodeType::Tok_KeyShape
+			|| tok->type==NodeType::Tok_KeySound || tok->type==NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name)
+		{
+			nodes.push_back(matchProperty());
+		}
+		else
+			break;
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_RBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected RBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_Model, nodes);
+}
+
+RuleInstance* Parser::matchRibbon()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if ((tok = nextToken())->type != NodeType::Tok_KeyRibbon)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeyRibbon token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_LBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected LBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	while (true) {
+		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
+			nodes.push_back(matchProperty());
+		}
+		else
+			break;
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_RBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected RBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_Ribbon, nodes);
+}
+
+RuleInstance* Parser::matchBillboardSet()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if ((tok = nextToken())->type != NodeType::Tok_KeyBillboardSet)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeyBillboardSet token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_LBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected LBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	while (true) {
+		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
+			laOffsets.push(laOffset);
+			laSuccess.push(true);
+			if (fetchToken(laOffset)->type == NodeType::Tok_KeyBillboard)
+				laOffset++;
+			else
+			{
+				laSuccess.pop();
+				laSuccess.push(false);
+			}
+			laOffset = laOffsets.top(); laOffsets.pop();
+			if (laSuccess.top())
+			{
+				laSuccess.pop();
+				nodes.push_back(matchBillboard());
+			}
+			else
+			{
+				laSuccess.pop();
+				nodes.push_back(matchProperty());
+			}
+		}
+		else
+			break;
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_RBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected RBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_BillboardSet, nodes);
+}
+
+RuleInstance* Parser::matchBillboard()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if ((tok = nextToken())->type != NodeType::Tok_KeyBillboard)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeyBillboard token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_LBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected LBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	while (true) {
+		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
+			nodes.push_back(matchProperty());
+		}
+		else
+			break;
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_RBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected RBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_Billboard, nodes);
+}
+
+RuleInstance* Parser::matchSound()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if ((tok = nextToken())->type != NodeType::Tok_KeySound)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeySound token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_LBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected LBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	while (true) {
+		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
+			nodes.push_back(matchProperty());
+		}
+		else
+			break;
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_RBrace)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected RBrace token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_Sound, nodes);
 }
 
 } // ThingParser

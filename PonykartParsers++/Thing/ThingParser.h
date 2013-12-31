@@ -115,6 +115,7 @@ namespace ThingParser
 		RuleInstance* matchShape();
 		RuleInstance* matchModel();
 		RuleInstance* matchRibbon();
+		RuleInstance* matchBillboard();
 		RuleInstance* matchBillboardSet();
 		RuleInstance* matchSound();
 		void lookaheadEnumProperty();
