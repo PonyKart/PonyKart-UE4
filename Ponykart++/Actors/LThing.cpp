@@ -108,6 +108,21 @@ LThing::~LThing() // TODO: The C# version takes "bool disposing" as an argument.
 	}
 }
 
+std::string LThing::getName() const
+{
+	return name;
+}
+
+unsigned LThing::getID() const
+{
+	return id;
+}
+
+const std::vector<ShapeComponent*>& LThing::getShapeComponents() const
+{
+	return shapeComponents;
+}
+
 void LThing::changeAnimation(std::string animationName)
 {
 	for (auto mcomp : modelComponents)

@@ -13,6 +13,10 @@ using namespace Ponykart::Core;
 using namespace Ponykart::Levels;
 using namespace Ponykart::LKernel;
 
+SpawnEvent<LThing*> Spawner::onThingCreation;
+SpawnEvent<Kart*> Spawner::onKartCreation;
+SpawnEvent<Driver*> Spawner::onDriverCreation;
+
 Spawner::Spawner() : _spawnLock(false)
 {
 	database = LKernel::getG<ThingDatabase>();
@@ -56,4 +60,11 @@ Kart* Spawner::spawnKart(std::string thingName, PonykartParsers::ThingBlock* thi
 		return kart;
 	}
 	_unlock();
+}
+
+template<typename T> void Spawner::invoke(SpawnEvent<T> evt, T actor)
+{
+	if (evt.size())
+		for (auto fun : evt)
+			fun(actor);
 }

@@ -11,6 +11,10 @@
 
 namespace Ponykart
 {
+template<typename T> using LymphInputEvent1 = typename std::vector<std::function<void (T eventArgs)>>;
+template<typename T, typename U> using LymphInputEvent2 = typename std::vector<std::function<void (T eventArg1, U eventArg2)>>;
+using AxisMovedEventHandler = std::vector<std::function<void (void* sender, Core::ControllerAxisArgument e )>>;
+
 /// Class that handles all of the input.
 /**This acts as a "layer" between the input library and the rest of the program.
 // This makes it easier to change libraries and stuff, since you'd only need to change this class instead of everything
@@ -21,7 +25,7 @@ namespace Ponykart
 // Other classes (mostly handlers) should only use events fired off from this class and not ones fired off from the
 // input library.
 **/
-class InputMain // TODO: Finish implementing InputMain
+class InputMain : public OIS::KeyListener, public OIS::MouseListener // TODO: Finish implementing InputMain
 {
 public:
 	InputMain();
@@ -30,9 +34,17 @@ public:
 	const OIS::Keyboard* const getInputKeyboard();
 	const OIS::Mouse* const getInputMouse();
 	const Core::ControllerManager* const getInputController();
+	// Event handlers
+	bool keyPressed(const OIS::KeyEvent& ke) override; ///< Handles key pressing and fires appropriate events
+	bool keyReleased(const OIS::KeyEvent& ke) override; ///< Handles key releasing and fires appropriate events
+	bool mousePressed(const OIS::MouseEvent& me, OIS::MouseButtonID id) override; ///< Handles mouse pressing and fires appropriate events
+    bool mouseReleased(const OIS::MouseEvent& me, OIS::MouseButtonID id) override; ///< Handles mouse releasing and fires appropriate events
+    bool mouseMoved(const OIS::MouseEvent& me) override; ///< Handles mouse movement and fires appropriate events
 
 private:
-	void createEventHandlers();
+	void createEventHandlers(); ///< Hook up to OIS's event handlers
+	template<typename T> void fireEvent(LymphInputEvent1<T> handler, T eventArgs); ///< Fires an event. Helper method so we don't have to check every single event for null.
+	template<typename T, typename U> void fireEvent(LymphInputEvent2<T,U> handler, T eventArg1, U eventArg2); ///< Fires an event. Helper method so we don't have to check every single event for null.
 
 private:
 	class FrameStartedListener : public Ogre::FrameListener

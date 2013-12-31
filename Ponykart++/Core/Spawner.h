@@ -53,7 +53,7 @@ public:
 private:
 	PonykartParsers::ThingDatabase* database;
 	Levels::LevelManager* levelManager;
-	bool _spawnLock; ///< No mutexes with MinGW 4.8.1 TODO: Use a real mutex when switching to CMake
+	bool _spawnLock; ///< No mutexes with MinGW 4.8.1 TODO: Use a real mutex (when switching to CMake ?)
 };
 } // Core
 } // Ponykart

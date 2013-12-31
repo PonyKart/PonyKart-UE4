@@ -29,7 +29,7 @@ public:
 	/** @param delay Minimum time to wait (in seconds) before we load the level, to let stuff like loading screens have a chance to render.) */
 	void loadLevel(LevelChangeRequest request, float delay = INITIAL_DELAY);
 	// Getters
-	Level* getCurrentLevel();
+	inline Level* getCurrentLevel() {return currentLevel;};
 	inline bool getIsValidLevel() {return isValidLevel;};
 	inline bool isPlayableLevel() {return currentLevel && currentLevel->getType()==LevelType::Race && currentLevel->getName()!=Settings::MainMenuName;};
 
