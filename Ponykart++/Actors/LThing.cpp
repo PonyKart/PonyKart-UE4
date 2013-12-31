@@ -15,7 +15,6 @@
 #include "Lua/LuaMain.h"
 #include "Misc/bulletExtensions.h"
 #include "Misc/ogreExtensions.h"
-#include "Muffin/ThingBlock.h"
 #include "Physics/CollisionGroups.h"
 #include "Physics/CollisionObjectDataHolder.h"
 #include "Physics/CollisionShapeManager.h"
@@ -24,10 +23,12 @@
 #include "Physics/Materials/PhysicsMaterialFactory.h"
 #include "Physics/MotionStates/OgreMotionState.h"
 #include "Thing/ThingDefinition.h"
-#include "TokenHolder.h"
+#include "Thing/Blocks/ThingBlock.h"
+#include "Muffin/TokenHolder.h"
 
 using namespace std;;
 using namespace Ogre;
+using namespace Extensions;
 using namespace PonykartParsers;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Levels;

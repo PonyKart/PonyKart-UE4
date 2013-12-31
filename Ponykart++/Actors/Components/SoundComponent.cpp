@@ -2,13 +2,14 @@
 #include "Actors/Components/SoundComponent.h"
 #include "Kernel/LKernel.h"
 #include "Misc/irrklangExtensions.h"
-#include "Muffin/ThingBlock.h"
 #include "Sound/SoundMain.h"
-#include "Thing/SoundBlock.h"
+#include "Thing/Blocks/SoundBlock.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace Ogre;
 using namespace irrklang;
+using namespace Extensions;
 using namespace Ponykart;
 using namespace Ponykart::Actors;
 using namespace Ponykart::LKernel;

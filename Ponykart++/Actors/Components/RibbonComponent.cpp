@@ -6,11 +6,12 @@
 #include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
 #include "Misc/ogreExtensions.h"
-#include "Muffin/ThingBlock.h"
-#include "Thing/RibbonBlock.h"
+#include "Thing/Blocks/RibbonBlock.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace Ogre;
+using namespace Extensions;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Levels;

@@ -8,12 +8,13 @@
 #include "Core/Animation/AnimationManager.h"
 #include "Kernel/LKernel.h"
 #include "Misc/ogreExtensions.h"
-#include "Muffin/ThingBlock.h"
-#include "Thing/ModelBlock.h"
 #include "Thing/ThingDefinition.h"
+#include "Thing/Blocks/ModelBlock.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace Ogre;
+using namespace Extensions;
 using namespace PonykartParsers;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Core;

@@ -9,6 +9,7 @@
 
 using namespace std;
 using namespace Ogre;
+using namespace Extensions;
 using namespace PonykartParsers;
 using namespace Ponykart;
 using namespace Ponykart::Actors;

@@ -5,9 +5,9 @@
 #include "Core/Options.h"
 #include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
-#include "Muffin/ThingBlock.h"
-#include "Thing/ModelBlock.h"
 #include "Thing/ThingDefinition.h"
+#include "Thing/Blocks/ModelBlock.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace std::placeholders;

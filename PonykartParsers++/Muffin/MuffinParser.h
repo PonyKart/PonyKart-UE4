@@ -68,7 +68,7 @@ namespace MuffinParser
 	class Token : public Node
 	{
 	public:
-		Token();
+		//Token();
 		Token(std::vector<Token*> PrecedingFillerTokens, NodeType Type, const std::string& Image, int LineNr, int CharNr);
 	private:
 		static NodeType specializeType(NodeType Type, const std::string& Image);

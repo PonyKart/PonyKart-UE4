@@ -1,6 +1,6 @@
 #include "Actors/Kart.h"
-#include "Muffin/ThingBlock.h"
 #include "Thing/ThingDefinition.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace Ogre;
 using namespace PonykartParsers;

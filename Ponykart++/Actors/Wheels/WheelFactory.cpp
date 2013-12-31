@@ -3,6 +3,7 @@
 
 using namespace std;
 using namespace Ogre;
+using namespace Extensions;
 using namespace Ponykart::Actors;
 
 WheelFactory::WheelFactory()

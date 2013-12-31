@@ -2,13 +2,42 @@
 #include "Thing/ThingParser.h"
 
 using namespace std;
-using namespace PonykartParsers;
-using namespace ThingParser;
+using namespace PonykartParsers::ThingParser;
 
-namespace PonykartParsers
+std::string NodeTypeMap[] = {"Tok_EOF", "Tok_Assign", "Tok_Comma", "Tok_LBrace", "Tok_RBrace", "Tok_Name",
+	"Tok_KeyFalse", "Tok_KeyModel", "Tok_KeyShape", "Tok_KeyRibbon", "Tok_KeyBillboard",
+	"Tok_KeyBillboardSet", "Tok_KeySound", "Tok_KeyTrue", "Tok_StringLiteral", "Tok_FloatLiteral", "Tok_IntLiteral",
+	"Tok_SingleLineComment", "Tok_MultiLineComment", "Tok_Whitespace", "Rule_Start", "Rule_Property",
+	"Rule_EnumProperty", "Rule_QuatProperty", "Rule_Vec3Property", "Rule_NumericProperty", "Rule_StringProperty",
+	"Rule_BoolProperty", "Rule_Shape", "Rule_Model", "Rule_Ribbon", "Rule_BillboardSet", "Rule_Billboard",
+	"Rule_Sound", "Rule_AnyName"};
+
+std::unordered_map<std::string, NodeType> Token::specForTok_Name;
+
+Token::Token(vector<Token* > PrecedingFillerTokens, NodeType Type, const string& Image, int LineNr, int CharNr)
+ : Node(specializeType(Type, Image)), precedingFillerTokens(PrecedingFillerTokens),
+	image(Image), lineNr(LineNr), charNr(CharNr)
 {
-namespace ThingParser
+}
+
+NodeType Token::specializeType(NodeType Type, const string& Image)
 {
+	std::unordered_map<std::string, NodeType>::iterator it;
+	switch (Type)
+	{
+		case NodeType::Tok_Name:
+			it = specForTok_Name.find(Image);
+			if (it != specForTok_Name.end())
+				return it->second;
+			it = specForTok_Name.find(tolower(Image,locale()));
+			if (it != specForTok_Name.end())
+				return it->second;
+			break;
+		default:
+			break;
+	}
+	return Type;
+}
 
 RuleInstance* Parser::parse(const std::string& Source)
 {
@@ -18,7 +47,7 @@ RuleInstance* Parser::parse(const std::string& Source)
 	laOffset = 0;
 	currLine = 1;
 	currChar = 1;
-	RuleInstance* r;
+	RuleInstance* r = nullptr;
 	try
 	{
 		r = matchStart();
@@ -1992,5 +2021,366 @@ vector<Token*> Parser::getFillerTokens()
 	return tokens;
 }
 
-} // ThingParser
-} // PonykartParsers
+RuleInstance* Parser::matchBoolProperty()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	nodes.push_back(matchAnyName());
+	if ((tok = nextToken())->type != NodeType::Tok_Assign)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Assign token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_KeyTrue)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_KeyFalse)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected KeyFalse token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+
+	return new RuleInstance(NodeType::Rule_BoolProperty, nodes);
+}
+
+RuleInstance* Parser::matchEnumProperty()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	nodes.push_back(matchAnyName());
+	if ((tok = nextToken())->type != NodeType::Tok_Assign)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Assign token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	nodes.push_back(matchAnyName());
+
+	return new RuleInstance(NodeType::Rule_EnumProperty, nodes);
+}
+
+RuleInstance* Parser::matchQuatProperty()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	nodes.push_back(matchAnyName());
+	if ((tok = nextToken())->type != NodeType::Tok_Assign)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Assign token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_Comma)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Comma token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLitreal token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_Comma)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Comma token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_Comma)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Comma token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+
+	return new RuleInstance(NodeType::Rule_QuatProperty, nodes);
+}
+
+RuleInstance* Parser::matchVec3Property()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	nodes.push_back(matchAnyName());
+	if ((tok = nextToken())->type != NodeType::Tok_Assign)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Assign token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_Comma)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Comma token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+	if ((tok = nextToken())->type != NodeType::Tok_Comma)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Comma token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+
+	return new RuleInstance(NodeType::Rule_Vec3Property, nodes);
+}
+
+RuleInstance* Parser::matchNumericProperty()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	nodes.push_back(matchAnyName());
+	if ((tok = nextToken())->type != NodeType::Tok_Assign)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Assign token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+		nodes.push_back(nextToken());
+	else
+	{
+		if ((tok = nextToken())->type != NodeType::Tok_FloatLiteral)
+		{
+			stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected FloatLiteral token";
+			throw string(ss.str());
+		}
+		nodes.push_back(tok);
+	}
+
+	return new RuleInstance(NodeType::Rule_NumericProperty, nodes);
+}
+
+RuleInstance* Parser::matchStringProperty()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	nodes.push_back(matchAnyName());
+	if ((tok = nextToken())->type != NodeType::Tok_Assign)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Assign token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+	if ((tok = nextToken())->type != NodeType::Tok_StringLiteral)
+	{
+		stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected StringLiteral token";
+		throw string(ss.str());
+	}
+	nodes.push_back(tok);
+
+	return new RuleInstance(NodeType::Rule_StringProperty, nodes);
+}
+
+RuleInstance* Parser::matchAnyName()
+{
+	vector<Node*> nodes;
+	Token* tok;
+
+	if (fetchToken(laOffset)->type == NodeType::Tok_KeyFalse)
+		nodes.push_back(nextToken());
+	else
+	{
+		if (fetchToken(laOffset)->type == NodeType::Tok_KeyModel)
+			nodes.push_back(nextToken());
+		else
+		{
+			if (fetchToken(laOffset)->type == NodeType::Tok_KeyShape)
+				nodes.push_back(nextToken());
+			else
+			{
+				if (fetchToken(laOffset)->type == NodeType::Tok_KeyRibbon)
+					nodes.push_back(nextToken());
+				else
+				{
+					if (fetchToken(laOffset)->type == NodeType::Tok_KeyBillboard)
+						nodes.push_back(nextToken());
+					else
+					{
+						if (fetchToken(laOffset)->type == NodeType::Tok_KeyBillboardSet)
+							nodes.push_back(nextToken());
+						else
+						{
+							if (fetchToken(laOffset)->type == NodeType::Tok_KeySound)
+								nodes.push_back(nextToken());
+							else
+							{
+								if (fetchToken(laOffset)->type == NodeType::Tok_KeyTrue)
+									nodes.push_back(nextToken());
+								else
+								{
+									if ((tok = nextToken())->type != NodeType::Tok_Name)
+									{
+										stringstream ss; ss << "Line " << tok->lineNr << ", char " << tok->charNr << ": Expected Name token";
+										throw string(ss.str());
+									}
+									nodes.push_back(tok);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	return new RuleInstance(NodeType::Rule_AnyName, nodes);
+}
+
+void Parser::lookaheadBoolProperty()
+{
+	lookaheadAnyName();
+	if (laSuccess.top())
+	{
+		if (fetchToken(laOffset)->type == NodeType::Tok_Assign)
+			laOffset++;
+		else
+		{
+			laSuccess.pop();
+			laSuccess.push(false);
+		}
+	}
+	if (laSuccess.top())
+	{
+		if (fetchToken(laOffset)->type == NodeType::Tok_KeyTrue)
+			laOffset++;
+		else
+		{
+			if (fetchToken(laOffset)->type == NodeType::Tok_KeyFalse)
+				laOffset++;
+			else
+			{
+				laSuccess.pop();
+				laSuccess.push(false);
+			}
+		}
+	}
+}
+
+void Parser::lookaheadEnumProperty()
+{
+	lookaheadAnyName();
+	if (laSuccess.top())
+	{
+		if (fetchToken(laOffset)->type == NodeType::Tok_Assign)
+			laOffset++;
+		else
+		{
+			laSuccess.pop();
+			laSuccess.push(false);
+		}
+	}
+	if (laSuccess.top())
+		lookaheadAnyName();
+}
+
+void Parser::lookaheadNumericProperty()
+{
+	lookaheadAnyName();
+	if (laSuccess.top())
+	{
+		if (fetchToken(laOffset)->type == NodeType::Tok_Assign)
+			laOffset++;
+		else
+		{
+			laSuccess.pop();
+			laSuccess.push(false);
+		}
+	}
+	if (laSuccess.top())
+	{
+		if (fetchToken(laOffset)->type == NodeType::Tok_IntLiteral)
+			laOffset++;
+		else
+		{
+			if (fetchToken(laOffset)->type == NodeType::Tok_FloatLiteral)
+				laOffset++;
+			else
+			{
+				laSuccess.pop();
+				laSuccess.push(false);
+			}
+		}
+	}
+}

@@ -10,6 +10,7 @@ namespace PonykartParsers
 {
 namespace ThingParser
 {
+	/** Don't forget to update NodeTypeMap when changing NodeType **/
 	enum NodeType
 	{
 		Tok_EOF,
@@ -49,13 +50,7 @@ namespace ThingParser
 		Rule_AnyName
 	};
 
-	std::string NodeTypeMap[] = {"Tok_EOF", "Tok_Assign", "Tok_Comma", "Tok_LBrace", "Tok_RBrace", "Tok_Name",
-		"Tok_KeyFalse", "Tok_KeyModel", "Tok_KeyShape", "Tok_KeyRibbon", "Tok_KeyBillboard",
-		"Tok_KeyBillboardSet", "Tok_KeySound", "Tok_KeyTrue", "Tok_StringLiteral", "Tok_FloatLiteral", "Tok_IntLiteral",
-		"Tok_SingleLineComment", "Tok_MultiLineComment", "Tok_Whitespace", "Rule_Start", "Rule_Property",
-		"Rule_EnumProperty", "Rule_QuatProperty", "Rule_Vec3Property", "Rule_NumericProperty", "Rule_StringProperty",
-		"Rule_BoolProperty", "Rule_Shape", "Rule_Model", "Rule_Ribbon", "Rule_BillboardSet", "Rule_Billboard",
-		"Rule_Sound", "Rule_AnyName"};
+	extern std::string NodeTypeMap[];
 
 	struct Node // Abstract
 	{

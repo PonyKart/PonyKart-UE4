@@ -48,6 +48,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add option="-Wno-unused-local-typedefs" />
+			<Add option="-Wno-strict-aliasing" />
 			<Add directory="$(PROJECT_DIR)" />
 			<Add directory="$(PROJECT_DIR)/../Ponykart++" />
 			<Add directory="C:/Program Files (x86)/BULLET_PHYSICS/include/bullet" />

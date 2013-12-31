@@ -7,7 +7,8 @@ using namespace PonykartParsers::MuffinParser;
 std::unordered_map<std::string, NodeType> Token::specForTok_Name;
 
 Token::Token(vector<Token* > PrecedingFillerTokens, NodeType Type, const string& Image, int LineNr, int CharNr)
- : Node(specializeType(type, image)), precedingFillerTokens(PrecedingFillerTokens), image(Image), lineNr(LineNr), charNr(CharNr)
+ : Node(specializeType(Type, Image)), precedingFillerTokens(PrecedingFillerTokens),
+	image(Image), lineNr(LineNr), charNr(CharNr)
 {
 }
 

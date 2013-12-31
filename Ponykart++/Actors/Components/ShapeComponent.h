@@ -2,7 +2,7 @@
 #define SHAPECOMPONENT_H_INCLUDED
 
 #include <Ogre.h>
-#include "ThingEnum.h"
+#include "Thing/ThingEnum.h"
 
 namespace PonykartParsers
 {

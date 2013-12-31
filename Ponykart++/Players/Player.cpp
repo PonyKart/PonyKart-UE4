@@ -2,8 +2,8 @@
 #include "Core/Spawner.h"
 #include "Kernel/LKernel.h"
 #include "Players/Player.h"
-#include "Muffin/ThingBlock.h"
 #include "Muffin/MuffinDefinition.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace Ogre;

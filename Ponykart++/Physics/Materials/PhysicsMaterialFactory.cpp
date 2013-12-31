@@ -6,6 +6,7 @@
 #include "Physics/Materials/PhysicsMaterialFactory.h"
 
 using namespace std;
+using namespace Extensions;
 using namespace Ponykart::Physics;
 
 PhysicsMaterialFactory::PhysicsMaterialFactory()

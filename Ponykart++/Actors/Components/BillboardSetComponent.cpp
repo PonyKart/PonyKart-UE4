@@ -5,11 +5,12 @@
 #include "Core/IDs.h"
 #include "Kernel/LKernel.h"
 #include "Misc/ogreExtensions.h"
-#include "Muffin/ThingBlock.h"
-#include "Thing/BillboardSetBlock.h"
+#include "Thing/Blocks/BillboardSetBlock.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 using namespace std;
 using namespace Ogre;
+using namespace Extensions;
 using namespace Ponykart::Actors;
 using namespace PonykartParsers;
 

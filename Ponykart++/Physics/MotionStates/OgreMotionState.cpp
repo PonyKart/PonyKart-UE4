@@ -6,6 +6,7 @@
 #include "Physics/MotionStates/OgreMotionState.h"
 
 using namespace Ogre;
+using namespace Extensions;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Physics;
 

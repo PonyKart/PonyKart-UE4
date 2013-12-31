@@ -5,8 +5,8 @@
 #include <Ogre.h>
 #include "Actors/LThing.h"
 #include "Core/Animation/AnimationBlender.h"
-#include "Muffin/ThingBlock.h"
 #include "Thing/ThingDefinition.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 namespace Ponykart
 {

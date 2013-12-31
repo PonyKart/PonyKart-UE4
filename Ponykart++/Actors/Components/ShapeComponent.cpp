@@ -1,6 +1,6 @@
 #include "Actors/Components/ShapeComponent.h"
 #include "Kernel/LKernel.h"
-#include "Thing/ShapeBlock.h"
+#include "Thing/Blocks/ShapeBlock.h"
 
 using namespace PonykartParsers;
 using namespace Ponykart::Actors;
