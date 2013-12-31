@@ -1563,5 +1563,434 @@ RuleInstance* Parser::matchSound()
 	return new RuleInstance(NodeType::Rule_Sound, nodes);
 }
 
+vector<Token*> Parser::getFillerTokens()
+{
+	tokens.clear();
+	indices = stack<int>();
+	currLines = stack<int>();
+	currChars = stack<int>();
+	char c;
+	bool pass;
+	while (true)
+	{
+		int oldIndex = index, lastLine = currLine, lastChar = currChar;
+
+		//Token "SingleLineComment"
+		pass = true;
+		indices.push(index);
+		currLines.push(currLine);
+		currChars.push(currChar);
+		if (index + 2 < length && source.compare(index, 2, "//") == 0)
+		{
+			index += 2;
+			currChar += 2;
+		}
+		else
+			pass = false;
+		if (pass)
+		{
+			while (true)
+			{
+				indices.push(index);
+				currLines.push(currLine);
+				currChars.push(currChar);
+				if (index < length && (c = source[index]) != '\r' && c != '\n')
+				{
+					index++;
+					currChar++;
+				}
+				else
+					pass = false;
+				if (pass)
+				{
+					indices.pop();
+					currLines.pop();
+					currChars.pop();
+				}
+				else
+				{
+					pass = true;
+					index = indices.top(); indices.pop();
+					currLine = currLines.top(); currLines.pop();
+					currChar = currChars.top(); currChars.pop();
+					break;
+				}
+			}
+			if (pass)
+			{
+				indices.push(index);
+				currLines.push(currLine);
+				currChars.push(currChar);
+				if (index + 2 < length && source.compare(index, 2, "//") == 0)
+				{
+					index += 2;
+					currLine++;
+					currChar = 1;
+				}
+				else
+					pass = false;
+				if (!pass)
+				{
+					pass = true;
+					if (index < length && ((c = source[index]) == '\r' || c == '\n'))
+					{
+						index++;
+						if (c == '\r') {}
+						else
+							if (c == '\n')
+							{
+								currLine++;
+								currChar = 1;
+							}
+							else
+								currChar++;
+					}
+					else
+						pass = false;
+				}
+				if (pass)
+				{
+					indices.pop();
+					currLines.pop();
+					currChars.pop();
+				}
+				else
+				{
+					pass = true;
+					index = indices.top(); indices.pop();
+					currLine = currLines.top(); currLines.pop();
+					currChar = currChars.top(); currChars.pop();
+				}
+			}
+		}
+		if (pass)
+		{
+			indices.pop();
+			currLines.pop();
+			currChars.pop();
+			tokens.push_back(new Token(vector<Token*>(), NodeType::Tok_SingleLineComment, source.substr(oldIndex, index - oldIndex), lastLine, lastChar));
+			continue;
+		}
+		else
+		{
+			index = indices.top(); indices.pop();
+			currLine = currLines.top(); currLines.pop();
+			currChar = currChars.top(); currChars.pop();
+		}
+
+		//Token "MultiLineComment"
+		pass = true;
+		indices.push(index);
+		currLines.push(currLine);
+		currChars.push(currChar);
+		if (index + 2 < length && source.compare(index, 2, "//") == 0)
+		{
+			index += 2;
+			currChar += 2;
+		}
+		else
+			pass = false;
+		if (pass)
+		{
+			while (true)
+			{
+				indices.push(index);
+				currLines.push(currLine);
+				currChars.push(currChar);
+				if (index < length && (c = source[index]) != '*')
+				{
+					index++;
+					if (c == '\r') {}
+					else
+						if (c == '\n')
+						{
+							currLine++;
+							currChar = 1;
+						}
+						else
+							currChar++;
+				}
+				else
+					pass = false;
+				if (pass)
+				{
+					indices.pop();
+					currLines.pop();
+					currChars.pop();
+				}
+				else
+				{
+					pass = true;
+					index = indices.top(); indices.pop();
+					currLine = currLines.top(); currLines.pop();
+					currChar = currChars.top(); currChars.pop();
+					break;
+				}
+			}
+			if (pass)
+			{
+				indices.push(index);
+				currLines.push(currLine);
+				currChars.push(currChar);
+				onceOrMoreB.push(false);
+				while (true)
+				{
+					indices.push(index);
+					currLines.push(currLine);
+					currChars.push(currChar);
+					if (index < length && source[index] == '*')
+					{
+						index++;
+						currChar++;
+					}
+					else
+						pass = false;
+					if (pass)
+					{
+						onceOrMoreB.pop();
+						onceOrMoreB.push(true);
+						indices.pop();
+						currLines.pop();
+						currChars.pop();
+					}
+					else
+					{
+						index = indices.top(); indices.pop();
+						currLine = currLines.top(); currLines.pop();
+						currChar = currChars.top(); currChars.pop();
+						break;
+					}
+				}
+				pass = onceOrMoreB.top(); onceOrMoreB.pop();
+				if (pass)
+				{
+					indices.pop();
+					currLines.pop();
+					currChars.pop();
+				}
+				else
+				{
+					index = indices.top(); indices.pop();
+					currLine = currLines.top(); currLines.pop();
+					currChar = currChars.top(); currChars.pop();
+				}
+				if (pass)
+				{
+					while (true)
+					{
+						indices.push(index);
+						currLines.push(currLine);
+						currChars.push(currChar);
+						if (index < length && (c = source[index]) != '*' && c != '/')
+						{
+							index++;
+							if (c == '\r') {}
+							else
+								if (c == '\n')
+								{
+									currLine++;
+									currChar = 1;
+								}
+								else
+									currChar++;
+						}
+						else
+							pass = false;
+						if (pass)
+						{
+							while (true)
+							{
+								indices.push(index);
+								currLines.push(currLine);
+								currChars.push(currChar);
+								if (index < length && (c = source[index]) != '*')
+								{
+									index++;
+									if (c == '\r') {}
+									else
+										if (c == '\n')
+										{
+											currLine++;
+											currChar = 1;
+										}
+										else
+											currChar++;
+								}
+								else
+									pass = false;
+								if (pass)
+								{
+									indices.pop();
+									currLines.pop();
+									currChars.pop();
+								}
+								else
+								{
+									pass = true;
+									index = indices.top(); indices.pop();
+									currLine = currLines.top(); currLines.pop();
+									currChar = currChars.top(); currChars.pop();
+									break;
+								}
+							}
+							if (pass)
+							{
+								indices.push(index);
+								currLines.push(currLine);
+								currChars.push(currChar);
+								onceOrMoreB.push(false);
+								while (true)
+								{
+									indices.push(index);
+									currLines.push(currLine);
+									currChars.push(currChar);
+									if (index < length && source[index] == '*')
+									{
+										index++;
+										currChar++;
+									}
+									else
+										pass = false;
+									if (pass)
+									{
+										onceOrMoreB.pop();
+										onceOrMoreB.push(true);
+										indices.pop();
+										currLines.pop();
+										currChars.pop();
+									}
+									else
+									{
+										index = indices.top(); indices.pop();
+										currLine = currLines.top(); currLines.pop();
+										currChar = currChars.top(); currChars.pop();
+										break;
+									}
+								}
+								pass = onceOrMoreB.top(); onceOrMoreB.pop();
+								if (pass)
+								{
+									indices.pop();
+									currLines.pop();
+									currChars.pop();
+								}
+								else
+								{
+									index = indices.top(); indices.pop();
+									currLine = currLines.top(); currLines.pop();
+									currChar = currChars.top(); currChars.pop();
+								}
+							}
+						}
+						if (pass)
+						{
+							indices.pop();
+							currLines.pop();
+							currChars.pop();
+						}
+						else
+						{
+							pass = true;
+							index = indices.top(); indices.pop();
+							currLine = currLines.top(); currLines.pop();
+							currChar = currChars.top(); currChars.pop();
+							break;
+						}
+					}
+					if (pass)
+					{
+						if (index < length && source[index] == '/')
+						{
+							index++;
+							currChar++;
+						}
+						else
+							pass = false;
+					}
+				}
+			}
+		}
+		if (pass)
+		{
+			indices.pop();
+			currLines.pop();
+			currChars.pop();
+			tokens.push_back(new Token(vector<Token*>(), NodeType::Tok_MultiLineComment, source.substr(oldIndex, index - oldIndex), lastLine, lastChar));
+			continue;
+		}
+		else
+		{
+			index = indices.top(); indices.pop();
+			currLine = currLines.top(); currLines.pop();
+			currChar = currChars.top(); currChars.pop();
+		}
+
+		//Token "Whitespace"
+		pass = true;
+		indices.push(index);
+		currLines.push(currLine);
+		currChars.push(currChar);
+		onceOrMoreB.push(false);
+		while (true)
+		{
+			indices.push(index);
+			currLines.push(currLine);
+			currChars.push(currChar);
+			if (index < length && ((c = source[index]) == '\t' || c == ' ' || c == '\r' || c == '\n'))
+			{
+				index++;
+				if (c == '\r') {}
+				else
+					if (c == '\n')
+					{
+						currLine++;
+						currChar = 1;
+					}
+					else
+						currChar++;
+			}
+			else
+				pass = false;
+			if (pass)
+			{
+				onceOrMoreB.pop();
+				onceOrMoreB.push(true);
+				indices.pop();
+				currLines.pop();
+				currChars.pop();
+			}
+			else
+			{
+				index = indices.top(); indices.pop();
+				currLine = currLines.top(); currLines.pop();
+				currChar = currChars.top(); currChars.pop();
+				break;
+			}
+		}
+		pass = onceOrMoreB.top(); onceOrMoreB.pop();
+		if (pass)
+		{
+			indices.pop();
+			currLines.pop();
+			currChars.pop();
+		}
+		else
+		{
+			index = indices.top(); indices.pop();
+			currLine = currLines.top(); currLines.pop();
+			currChar = currChars.top(); currChars.pop();
+		}
+		if (pass)
+		{
+			tokens.push_back(new Token(vector<Token*>(), NodeType::Tok_Whitespace, source.substr(oldIndex, index - oldIndex), lastLine, lastChar));
+			continue;
+		}
+
+		break;
+	}
+
+	return tokens;
+}
+
 } // ThingParser
 } // PonykartParsers
