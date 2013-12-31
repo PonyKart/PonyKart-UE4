@@ -101,7 +101,7 @@ namespace ThingParser
 	private:
 		Token* nextToken();
 		Token* nextToken(bool useFetched);
-		Token* fetchToken(int offset);
+		Token* fetchToken(unsigned offset);
 		std::vector<Token*> getFillerTokens();
 		RuleInstance* matchStart();
 		RuleInstance* matchProperty();
@@ -112,6 +112,11 @@ namespace ThingParser
 		RuleInstance* matchStringProperty();
 		RuleInstance* matchBoolProperty();
 		RuleInstance* matchAnyName();
+		RuleInstance* matchShape();
+		RuleInstance* matchModel();
+		RuleInstance* matchRibbon();
+		RuleInstance* matchBillboardSet();
+		RuleInstance* matchSound();
 		void lookaheadEnumProperty();
 		void lookaheadNumericProperty();
 		void lookaheadBoolProperty();

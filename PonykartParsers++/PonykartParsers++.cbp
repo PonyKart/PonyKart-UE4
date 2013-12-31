@@ -93,9 +93,11 @@
 		<Unit filename="Thing/ThingDatabase.h" />
 		<Unit filename="Thing/ThingDefinition.cpp" />
 		<Unit filename="Thing/ThingDefinition.h" />
+		<Unit filename="Thing/ThingEnum.cpp" />
 		<Unit filename="Thing/ThingEnum.h" />
 		<Unit filename="Thing/ThingImporter.cpp" />
 		<Unit filename="Thing/ThingImporter.h" />
+		<Unit filename="Thing/ThingParser.cpp" />
 		<Unit filename="Thing/ThingParser.h" />
 		<Extensions>
 			<code_completion />
