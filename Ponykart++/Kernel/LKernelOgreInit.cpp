@@ -32,7 +32,7 @@ void LKernel::initOgreRenderSystem()
 	addGlobalObject(gRenderSystem);
 #if DEBUG
 	// print out the things we can support
-	auto renderList = root->getAvailableRenderers();
+	auto renderList = gRoot->getAvailableRenderers();
 	for (auto renderSystem : renderList)
 	{
 		log("\n**** Available options for Render System: " + renderSystem->getName() + " ****");

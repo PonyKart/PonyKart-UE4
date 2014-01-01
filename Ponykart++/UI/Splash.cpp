@@ -1,4 +1,5 @@
 #include <OgreConfigFile.h>
+#include <OgreMaterialManager.h>
 #include <OgreOverlay.h>
 #include <OgreOverlayContainer.h>
 #include <OgreOverlayManager.h>
