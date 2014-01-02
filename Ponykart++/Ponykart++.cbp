@@ -167,6 +167,7 @@
 		<Unit filename="Players/PlayerManager.h" />
 		<Unit filename="Sound/SoundMain.cpp" />
 		<Unit filename="Sound/SoundMain.h" />
+		<Unit filename="UI/LuaConsoleManager.h" />
 		<Unit filename="UI/Splash.cpp" />
 		<Unit filename="UI/Splash.h" />
 		<Extensions>
