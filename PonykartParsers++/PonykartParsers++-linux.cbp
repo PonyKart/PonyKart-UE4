@@ -34,16 +34,50 @@
 			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-fPIC" />
 			<Add directory="." />
 			<Add directory="/usr/include/OGRE" />
+			<Add directory="/usr/local/include/irrKlang" />
+			<Add directory="/usr/include/bullet" />
 		</Compiler>
+		<Unit filename="Misc/bulletExtensions.cpp" />
+		<Unit filename="Misc/bulletExtensions.h" />
+		<Unit filename="Misc/direntSearch.cpp" />
+		<Unit filename="Misc/direntSearch.h" />
+		<Unit filename="Misc/irrklangExtensions.cpp" />
+		<Unit filename="Misc/irrklangExtensions.h" />
+		<Unit filename="Misc/ogreExtensions.cpp" />
+		<Unit filename="Misc/ogreExtensions.h" />
 		<Unit filename="Muffin/MuffinDefinition.cpp" />
 		<Unit filename="Muffin/MuffinDefinition.h" />
-		<Unit filename="Muffin/ThingBlock.cpp" />
-		<Unit filename="Muffin/ThingBlock.h" />
+		<Unit filename="Muffin/MuffinParser.cpp" />
+		<Unit filename="Muffin/MuffinParser.h" />
+		<Unit filename="Muffin/TokenHolder.cpp" />
+		<Unit filename="Muffin/TokenHolder.h" />
+		<Unit filename="Thing/Blocks/BillboardBlock.cpp" />
+		<Unit filename="Thing/Blocks/BillboardBlock.h" />
+		<Unit filename="Thing/Blocks/BillboardSetBlock.cpp" />
+		<Unit filename="Thing/Blocks/BillboardSetBlock.h" />
+		<Unit filename="Thing/Blocks/ModelBlock.cpp" />
+		<Unit filename="Thing/Blocks/ModelBlock.h" />
+		<Unit filename="Thing/Blocks/RibbonBlock.cpp" />
+		<Unit filename="Thing/Blocks/RibbonBlock.h" />
+		<Unit filename="Thing/Blocks/ShapeBlock.cpp" />
+		<Unit filename="Thing/Blocks/ShapeBlock.h" />
+		<Unit filename="Thing/Blocks/SoundBlock.cpp" />
+		<Unit filename="Thing/Blocks/SoundBlock.h" />
+		<Unit filename="Thing/Blocks/ThingBlock.cpp" />
+		<Unit filename="Thing/Blocks/ThingBlock.h" />
+		<Unit filename="Thing/ThingDatabase.cpp" />
+		<Unit filename="Thing/ThingDatabase.h" />
+		<Unit filename="Thing/ThingDefinition.cpp" />
 		<Unit filename="Thing/ThingDefinition.h" />
-		<Unit filename="ThingEnum.h" />
-		<Unit filename="TokenHolder.h" />
+		<Unit filename="Thing/ThingEnum.cpp" />
+		<Unit filename="Thing/ThingEnum.h" />
+		<Unit filename="Thing/ThingImporter.cpp" />
+		<Unit filename="Thing/ThingImporter.h" />
+		<Unit filename="Thing/ThingParser.cpp" />
+		<Unit filename="Thing/ThingParser.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
