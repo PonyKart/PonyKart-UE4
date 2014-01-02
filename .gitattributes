@@ -10,9 +10,11 @@
 # default for csharp files.
 # Note: This is only used by command line
 ###############################################################################
-*.cs     eol=crlf
-*.xaml   eol=crlf
-*.resx   eol=crlf
+*.cs    text eol=crlf
+*.xaml  text eol=crlf
+*.resx  text eol=crlf
+*.cpp   text
+*.h     text
 
 ###############################################################################
 # Set the merge driver for project and solution files
@@ -24,11 +26,12 @@
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just uncomment the entries below
 ###############################################################################
-*.sln       merge=binary
-*.csproj    merge=binary
+*.cbp        merge=binary
+*.sln        merge=binary
+*.csproj     merge=binary
 #*.vbproj    merge=binary
-*.vcxproj   merge=binary
-*.vcproj    merge=binary
+*.vcxproj    merge=binary
+*.vcproj     merge=binary
 #*.dbproj    merge=binary
 #*.fsproj    merge=binary
 #*.lsproj    merge=binary
