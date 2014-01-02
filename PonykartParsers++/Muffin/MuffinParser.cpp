@@ -39,7 +39,7 @@ RuleInstance* Parser::parse(const string& Source)
 	laOffset = 0;
 	currLine = 1;
 	currChar = 1;
-	RuleInstance* r;
+	RuleInstance* r=nullptr;
 	try
 	{
 		r = matchStart();
