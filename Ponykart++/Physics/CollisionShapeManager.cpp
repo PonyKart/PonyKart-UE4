@@ -1,6 +1,13 @@
 #include <BulletCollision/CollisionShapes/btCompoundShape.h>
+#include <BulletCollision/CollisionShapes/btBoxShape.h>
+#include <BulletCollision/CollisionShapes/btCapsuleShape.h>
+#include <BulletCollision/CollisionShapes/btConeShape.h>
+#include <BulletCollision/CollisionShapes/btCylinderShape.h>
+#include <BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h>
+#include <BulletCollision/CollisionShapes/btSphereShape.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/ShapeComponent.h"
+#include "Misc/direntSearch.h"
 #include "Levels/LevelManager.h"
 #include "Misc/direntSearch.h"
 #include "Misc/bulletExtensions.h"
@@ -87,4 +94,130 @@ btCollisionShape* CollisionShapeManager::createAndRegisterShape(LThing* thing, T
 		shapes.insert(pair<string, btCollisionShape*>(thing->getName(), shape));
 	}
 	return shape;
+}
+
+btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent* component)
+{
+	switch (component->getType())
+	{
+	case ThingEnum::Box:
+		return new btBoxShape(toBtVector3(component->getDimensions()));
+	case ThingEnum::Cylinder:
+		return new btCylinderShape(toBtVector3(component->getDimensions()));
+	case ThingEnum::Cone:
+	{
+		btConeShape* cone = new btConeShape(component->getRadius(), component->getHeight());
+		cone->setConeUpIndex(1);
+		return cone;
+	}
+	case ThingEnum::Capsule:
+		return new btCapsuleShape(component->getRadius(), component->getHeight());
+	case ThingEnum::Sphere:
+		return new btSphereShape(component->getRadius());
+	case ThingEnum::Hull:
+	{
+		btCollisionShape* shape;
+
+		string name = getFilenameWithoutExtension(component->getMesh());
+		string bulletFilePath = getBulletFile(name);
+
+		if (!bulletFilePath.empty())
+			shape = importCollisionShape(name); // so it has a file
+		else
+		{
+			/*var sceneMgr = LKernel.GetG<SceneManager>();
+			// get our entity if we have one, create it if we don't
+			Entity ent = sceneMgr.HasEntity(component.Mesh) ? sceneMgr.GetEntity(component.Mesh) : sceneMgr.CreateEntity(component.Mesh, component.Mesh);
+
+			ConvexHullShape hull = OgreToBulletMesh.ConvertToHull(
+				ent.GetMesh(),
+				component.Transform.GetTrans(),
+				component.Transform.ExtractQuaternion(),
+				Vector3.UNIT_SCALE);
+			shape = hull;
+
+			// TODO: figure out how to deal with concave triangle mesh shapes since apparently they aren't being exported
+			SerializeShape(shape, name);*/
+			throw string("Your \"Mesh\" property did not point to an existing .bullet file!" + component->getMesh());
+		}
+		return shape;
+	}
+	case ThingEnum::Mesh:
+	{
+		btCollisionShape* shape;
+		// example
+		// physics/example.bullet
+		string name = getFilenameWithoutExtension(component->getMesh());
+		string bulletFilePath = getBulletFile(name);
+
+		// right, so what we do is test to see if this shape has a .bullet file, and if it doesn't, create one
+		if (!bulletFilePath.empty())
+			shape = importCollisionShape(name); // so it has a file
+		else
+		{
+			/*Launch.Log("[CollisionShapeManager] " + bulletFilePath + " does not exist, converting Ogre mesh into physics trimesh and exporting new .bullet file...");
+
+			// it does not have a file, so we need to convert our ogre mesh
+			var sceneMgr = LKernel.GetG<SceneManager>();
+			Entity ent = sceneMgr.HasEntity(component.Mesh) ? sceneMgr.GetEntity(component.Mesh) : sceneMgr.CreateEntity(component.Mesh, component.Mesh);
+
+			shape = new BvhTriangleMeshShape(
+				OgreToBulletMesh.Convert(
+					ent.GetMesh(),
+					component.Transform.GetTrans(),
+					component.Transform.ExtractQuaternion(),
+					Vector3.UNIT_SCALE),
+				true,
+				true);
+
+			(shape as BvhTriangleMeshShape).BuildOptimizedBvh();
+
+			// and then export it as a .bullet file
+			SerializeShape(shape, name);*/
+			throw string("Your \"Mesh\" property did not point to an existing .bullet file!" + component->getMesh());
+		}
+		return shape;
+	}
+	/// NOTE: TODO: Implement this ASAP. A C# pixel is a 32 bit ARGB value
+	/// EasyBMP can read a BMP and give the ARGB values, and it looks portable.
+	/*
+	case ThingEnum::Heightmap:
+	{
+		string filename = "media/" + component->getMesh();
+		//FileStream stream = new FileStream(filename, FileMode.Open, FileAccess.Read);
+		//Bitmap bitmap = new Bitmap(filename);
+
+		int width = 256, length = 256;
+
+		unsigned char* terr = new unsigned char[width * length * 4];
+		MemoryStream file = new MemoryStream(terr);
+		BinaryWriter writer = new BinaryWriter(file);
+		for (int i = 0; i < width; i++) {
+			for (int j = 0; j < length; j++) {
+				writer.Write(bitmap.GetPixel((int) (((float) i / width) * bitmap.Width), (int) (((float) j / length) * bitmap.Height)).R / 255.0);
+				//writer.Write(bitmap.GetPixel(i, j).R / 255f);
+			}
+		}
+		writer.Flush();
+		file.Position = 0;
+
+		float heightScale = component->getMaxHeight() - component->getMinHeight() / 255.0;
+		Vector3 scale = component->getDimensions();
+
+		btHeightfieldTerrainShape* heightfield = new btHeightfieldTerrainShape(width, length, file, heightScale,
+			component->getMinHeight(), component->getMaxHeight(), 1, PHY_ScalarType::PHY_FLOAT, false);
+
+		//heightfield.SetUseDiamondSubdivision(true);
+		//heightfield.LocalScaling = new Vector3(scale.x / width, scale.y, scale.z / length);
+
+		//Matrix4 trans = new Matrix4();
+		//trans.MakeTransform(new Vector3(-scale.x / 2f, scale.y / 2f, -scale.z / 2f), new Vector3(scale.x, 1, scale.z), Quaternion.IDENTITY);
+		//component.Transform = trans;
+
+		return heightfield;
+	}
+	*/
+	default:
+		throw string("ShapeComponent's Type was invalid!");
+	}
 }

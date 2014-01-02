@@ -5,6 +5,7 @@
 #include "Sound/SoundMain.h"
 #include "Thing/Blocks/SoundBlock.h"
 #include "Thing/Blocks/ThingBlock.h"
+#include "UI/LuaConsoleManager.h"
 
 using namespace std;
 using namespace Ogre;
@@ -72,10 +73,10 @@ void SoundComponent::update()
 			event(owner, sound);
 #if DEBUG
 		}
-		catch ()
+		catch (...)
 		{
 			log("[Lua] *** EXCEPTION *** caught in SoundComponent::update");
-			LKernel::getG<LuaConsoleManager>()->addLabel("ERROR: Exception caught in SoundComponent::update");
+			LKernel::getG<UI::LuaConsoleManager>()->addLabel("ERROR: Exception caught in SoundComponent::update");
 		}
 #endif
 	}

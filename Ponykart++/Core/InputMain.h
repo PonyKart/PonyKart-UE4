@@ -38,8 +38,8 @@ public:
 	bool keyPressed(const OIS::KeyEvent& ke) override; ///< Handles key pressing and fires appropriate events
 	bool keyReleased(const OIS::KeyEvent& ke) override; ///< Handles key releasing and fires appropriate events
 	bool mousePressed(const OIS::MouseEvent& me, OIS::MouseButtonID id) override; ///< Handles mouse pressing and fires appropriate events
-    bool mouseReleased(const OIS::MouseEvent& me, OIS::MouseButtonID id) override; ///< Handles mouse releasing and fires appropriate events
-    bool mouseMoved(const OIS::MouseEvent& me) override; ///< Handles mouse movement and fires appropriate events
+	bool mouseReleased(const OIS::MouseEvent& me, OIS::MouseButtonID id) override; ///< Handles mouse releasing and fires appropriate events
+	bool mouseMoved(const OIS::MouseEvent& me) override; ///< Handles mouse movement and fires appropriate events
 
 private:
 	void createEventHandlers(); ///< Hook up to OIS's event handlers
