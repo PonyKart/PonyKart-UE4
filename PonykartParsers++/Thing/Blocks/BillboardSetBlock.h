@@ -1,6 +1,13 @@
 #ifndef BILLBOARDSETBLOCK_H_INCLUDED
 #define BILLBOARDSETBLOCK_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include <vector>
 #include "Muffin/TokenHolder.h"
 #include "Thing/Blocks/BillboardBlock.h"
@@ -14,12 +21,12 @@ class ThingDefinition;
 class BillboardSetBlock : public TokenHolder
 {
 public:
-	BillboardSetBlock(ThingDefinition* Owner);
-	~BillboardSetBlock();
-	void addBillboardBlock(BillboardBlock* block);
+	DLLEXPORT BillboardSetBlock(ThingDefinition* Owner);
+	DLLEXPORT ~BillboardSetBlock();
+	DLLEXPORT void addBillboardBlock(BillboardBlock* block);
 	// Getters
-	const ThingDefinition* const getOwner() const;
-	const std::vector<BillboardBlock*>& getBillboardBlocks() const;
+	DLLEXPORT const ThingDefinition* const getOwner() const;
+	DLLEXPORT const std::vector<BillboardBlock*>& getBillboardBlocks() const;
 protected:
 	ThingDefinition* owner;
 	std::vector<BillboardBlock*> billboardBlocks;

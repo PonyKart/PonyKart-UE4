@@ -27,8 +27,8 @@ namespace Physics
 		};
 
 	private:
-		static constexpr int _maxSubsteps = 60; //45;
-		static constexpr float _fixedTimestep = 1.0/60.0; //1f / 45f;
+		static const int _maxSubsteps;
+		static const float _fixedTimestep;
 		static FrameEndedListener* frameEnded;
 		// TODO: Implement the missing OgreBullet classes, or wait for an official implementation
 		//BroadphaseInterface* broadphase;

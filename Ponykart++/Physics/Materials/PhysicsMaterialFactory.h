@@ -9,7 +9,7 @@ namespace Ponykart
 {
 namespace Physics
 {
-	class PhysicsMaterial;
+	struct PhysicsMaterial;
 
 	class PhysicsMaterialFactory
 	{

@@ -30,7 +30,7 @@ namespace Actors
 		std::unordered_map<std::string, Ogre::StaticGeometry*> sgeoms;
 		std::unordered_map<std::string, Ogre::Entity*> ents;
 	private:
-		static constexpr float _staticRegionSize = 4;
+		static const float _staticRegionSize;
 		const Ogre::Vector3 regionDimensions;
 	};
 } // Actors

@@ -92,7 +92,7 @@ void KeyBindingManager::onKeyboardReleaseAnything(OIS::KeyEvent ke)
 		invoke(releaseEventsDict[key]);
 }
 
-void KeyBindingManager::input_OnLeftXAxisMoved(void* sender, Core::ControllerAxisArgument e)
+void KeyBindingManager::input_OnLeftXAxisMoved(void* sender, ControllerAxisArgument e)
 {
 	if ( LKernel::getG<InputSwallowerManager>()->isSwallowed( ) )
 		return;

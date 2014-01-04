@@ -9,7 +9,7 @@
 namespace Ogre
 {
 	class AnimationBlender;
-	class FrameEvent;
+	struct FrameEvent;
 }
 
 namespace Ponykart

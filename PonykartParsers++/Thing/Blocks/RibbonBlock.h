@@ -1,6 +1,13 @@
 #ifndef RIBONBLOCK_H_INCLUDED
 #define RIBONBLOCK_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
@@ -12,9 +19,9 @@ class ThingDefinition;
 class RibbonBlock : public TokenHolder
 {
 public:
-	RibbonBlock(ThingDefinition* Owner);
+	DLLEXPORT RibbonBlock(ThingDefinition* Owner);
 	// Getters
-	ThingDefinition* getOwner();
+	DLLEXPORT ThingDefinition* getOwner();
 
 protected:
 	ThingDefinition* owner;

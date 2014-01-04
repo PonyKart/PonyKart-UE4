@@ -1,6 +1,13 @@
 #ifndef SOUNDBLOCK_H_INCLUDED
 #define SOUNDBLOCK_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
@@ -12,9 +19,9 @@ class ThingDefinition;
 class SoundBlock : public TokenHolder
 {
 public:
-	SoundBlock(ThingDefinition* Owner);
+	DLLEXPORT SoundBlock(ThingDefinition* Owner);
 	// Getters
-	const ThingDefinition* const getOwner();
+	DLLEXPORT const ThingDefinition* const getOwner();
 protected:
 	ThingDefinition* owner;
 };

@@ -1,6 +1,13 @@
 #ifndef BULLETEXTENSIONS_H_INCLUDED
 #define BULLETEXTENSIONS_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include <LinearMath/btVector3.h>
 #include <LinearMath/btQuaternion.h>
 #include <LinearMath/btTransform.h>
@@ -14,10 +21,10 @@ namespace Ogre
 
 namespace Extensions
 {
-	btQuaternion toBtQuaternion(const Ogre::Quaternion& quat);
-	btTransform toBtTransform(const Ogre::Matrix4& mat);
-	btTransform toBtTransform(const Ogre::Quaternion& rotScale, const Ogre::Vector3& pos);
-	btVector3 toBtVector3(const Ogre::Vector3& vec);
+	DLLEXPORT btQuaternion toBtQuaternion(const Ogre::Quaternion& quat);
+	DLLEXPORT btTransform toBtTransform(const Ogre::Matrix4& mat);
+	DLLEXPORT btTransform toBtTransform(const Ogre::Quaternion& rotScale, const Ogre::Vector3& pos);
+	DLLEXPORT btVector3 toBtVector3(const Ogre::Vector3& vec);
 } // Extensions
 
 #endif // BULLETEXTENSIONS_H_INCLUDED

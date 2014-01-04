@@ -1,6 +1,13 @@
 #ifndef BILLBOARDBLOCK_H_INCLUDED
 #define BILLBOARDBLOCK_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include "Muffin/TokenHolder.h"
 
 namespace PonykartParsers
@@ -12,9 +19,9 @@ class BillboardSetBlock;
 class BillboardBlock : public TokenHolder
 {
 public:
-	BillboardBlock(BillboardSetBlock* Owner);
+	DLLEXPORT BillboardBlock(BillboardSetBlock* Owner);
 	// Getters
-	BillboardSetBlock* getOwner();
+	DLLEXPORT BillboardSetBlock* getOwner();
 
 protected:
 	BillboardSetBlock* owner;

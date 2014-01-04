@@ -4,16 +4,16 @@
 namespace Settings
 {
 
-constexpr static char WorldFileLocation[] = "media/worlds/";
-constexpr static char MainMenuName[] = "Level0";
-constexpr static bool EnableGlowyRegions = false;
-constexpr static int NumberOfPlayers = 2;
-constexpr static float CameraTightness = 21;
-constexpr static float Gravity = -15;
-constexpr static float CameraNodeYOffset = 1.25;
-constexpr static float CameraNodeZOffset = -2.85;
-constexpr static float CameraTargetYOffset = 0.9;
-constexpr static float KartGravity = -14;
+const static char WorldFileLocation[] = "media/worlds/";
+const static char MainMenuName[] = "Level0";
+const static bool EnableGlowyRegions = false;
+const static int NumberOfPlayers = 2;
+const static float CameraTightness = 21;
+const static float Gravity = -15;
+const static float CameraNodeYOffset = 1.25;
+const static float CameraNodeZOffset = -2.85;
+const static float CameraTargetYOffset = 0.9;
+const static float KartGravity = -14;
 
 } // Settings
 

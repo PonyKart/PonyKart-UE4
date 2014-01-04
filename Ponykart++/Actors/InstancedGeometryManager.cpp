@@ -19,6 +19,10 @@ using namespace Ponykart::Core;
 using namespace Ponykart::Levels;
 using namespace Ponykart::LKernel;
 
+// Define static members
+const float InstancedGeometryManager::_instancedRegionSize = 60.0;
+const int InstancedGeometryManager::_numInstancesPerBatch = 1; ///< maximum 80
+
 InstancedGeometryManager::InstancedGeometryManager()
  : regionDimensions(_instancedRegionSize, 200, _instancedRegionSize)
 {

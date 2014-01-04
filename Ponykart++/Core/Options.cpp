@@ -15,7 +15,7 @@ ShadowDetailOption Options::shadowDetail;
 
 void Options::setupDictionaries()
 {
-	defaults={
+	defaults=unordered_map<string,string>({
 		{"FSAA","0"},
 		{"Floating-point mode","Fastest"}, // Fastest or Accurate
 		{"Full Screen","No"}, // Yes or No
@@ -31,7 +31,7 @@ void Options::setupDictionaries()
 		{"ShadowDistance","40"},
 		{"Twh","No"},
 		{"Controller", "Keyboard"},
-	};
+	});
 	dict = defaults; // copy it into the regular dictionary
 }
 
@@ -39,7 +39,7 @@ void Options::initialize()
 {
 	setupDictionaries();
 
-	constexpr char optionsPath[] = "media/config/ponykart.cfg";
+	static const char optionsPath[] = "media/config/ponykart.cfg";
 
 	fstream file;
 	file.open(optionsPath,ios::in);
@@ -77,7 +77,7 @@ void Options::initialize()
 
 void Options::save()
 {
-	constexpr char optionsPath[] = "media/config/ponykart.cfg";
+	static const char optionsPath[] = "media/config/ponykart.cfg";
 
 	dict["ModelDetail"] = modelDetail==ModelDetailOption::High?"High": (modelDetail==ModelDetailOption::Low?"Low": ("Medium"));
 	dict["ShadowDetail"] = shadowDetail==ShadowDetailOption::Many?"Many": (shadowDetail==ShadowDetailOption::None?"None": ("Some"));

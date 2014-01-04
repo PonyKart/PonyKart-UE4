@@ -1,6 +1,13 @@
 #ifndef THINGBLOCK_H_INCLUDED
 #define THINGBLOCK_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include <string>
 #include <Ogre.h>
 #include "Muffin/TokenHolder.h"
@@ -14,14 +21,14 @@ class MuffinDefinition;
 class ThingBlock : public TokenHolder
 {
 public:
-	ThingBlock(std::string ThingName, MuffinDefinition* Owner);
-	ThingBlock(std::string ThingName, Ogre::Vector3 Position);
-	ThingBlock(std::string ThingName, Ogre::Vector3 Position, Ogre::Quaternion Orientation);
-	void finish();
+	DLLEXPORT ThingBlock(std::string ThingName, MuffinDefinition* Owner);
+	DLLEXPORT ThingBlock(std::string ThingName, Ogre::Vector3 Position);
+	DLLEXPORT ThingBlock(std::string ThingName, Ogre::Vector3 Position, Ogre::Quaternion Orientation);
+	DLLEXPORT void finish() override;
 	// Getters
-	std::string getThingName() const;
-	MuffinDefinition* getOwner();
-	Ogre::Vector3 getPosition();
+	DLLEXPORT std::string getThingName() const;
+	DLLEXPORT MuffinDefinition* getOwner();
+	DLLEXPORT Ogre::Vector3 getPosition();
 
 private: // Set-private public members
 	std::string thingName; // The name of the .thing file this corresponds with

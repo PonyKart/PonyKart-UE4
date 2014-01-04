@@ -18,6 +18,9 @@ using namespace Ponykart::Core;
 using namespace Ponykart::LKernel;
 using namespace Ponykart::Levels;
 
+// Static members
+const float StaticGeometryManager::_staticRegionSize = 4;
+
 StaticGeometryManager::StaticGeometryManager()
  : regionDimensions(_staticRegionSize, 200, _staticRegionSize)
 {

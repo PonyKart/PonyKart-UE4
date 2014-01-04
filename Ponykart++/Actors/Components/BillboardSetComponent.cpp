@@ -1,3 +1,6 @@
+#ifdef _WIN32
+	#include <cstdint>
+#endif
 #include <sstream>
 #include "Actors/LThing.h"
 #include "Actors/Components/BillboardSetComponent.h"

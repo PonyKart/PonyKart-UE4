@@ -1,6 +1,13 @@
 #ifndef SHAPEBLOCK_H_INCLUDED
 #define SHAPEBLOCK_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifdef _WIN32
+#define DLLEXPORT __declspec( dllexport )
+#else
+#define DLLEXPORT
+#endif
+
 #include <Ogre.h>
 #include "Muffin/TokenHolder.h"
 
@@ -13,12 +20,12 @@ class ThingDefinition;
 class ShapeBlock : public TokenHolder
 {
 public:
-	ShapeBlock(ThingDefinition* Owner);
-	void finish() override;
-	static Ogre::Quaternion globalEulerToQuat(Ogre::Radian rotX, Ogre::Radian rotY, Ogre::Radian rotZ);
+	DLLEXPORT ShapeBlock(ThingDefinition* Owner);
+	DLLEXPORT void finish() override;
+	DLLEXPORT static Ogre::Quaternion globalEulerToQuat(Ogre::Radian rotX, Ogre::Radian rotY, Ogre::Radian rotZ);
 	// Getters
-	const ThingDefinition* getOwner();
-	const Ogre::Matrix4& getTransform();
+	DLLEXPORT const ThingDefinition* getOwner();
+	DLLEXPORT const Ogre::Matrix4& getTransform();
 
 protected:
 	ThingDefinition* owner;
