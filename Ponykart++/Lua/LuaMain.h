@@ -1,7 +1,6 @@
 #ifndef LUAMAIN_H_INCLUDED
 #define LUAMAIN_H_INCLUDED
 
-#include <exception>
 #include <vector>
 #include <functional>
 #include <mutex>
