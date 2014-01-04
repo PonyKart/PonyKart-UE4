@@ -44,7 +44,5 @@
 -- MinGW 4.8.1 with CMake 2.8, WITHOUT the -O3/-DNDEBUG/-g  flags seems to work.
 --- Building with -O1 -DNDEBUG works too.
 - At some point make a big .rar and ship the source, all the precompiled dependencies, MinGW, and a project file configured to use those.
--- Actually we should maybe move MinGW into the Ponykart++ folder, and add MinGW to the .gitignore.
--- Or maybe just provide the dependencies's sources with a pregenerated Codeblocks project/CMakeFiles
-- Maintin two C::B Ponykart++ project files, for Win and Lin, until we switch to CMake
 - Replace some Ogre.h includes by only the necessary headers (Vector3, Quaternion, ...)
+=>  Really now. Switch to MSVC, it's getting ridiculous. First a project file, CMake later. And replace that unsafe non-atomic homemade lock.
