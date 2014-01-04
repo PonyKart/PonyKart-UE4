@@ -4,9 +4,14 @@
  *		Source: github.com/paulrehkugler/ExtensionSearch
  */
 
-#include <unistd.h>
+#ifdef _WIN32
+	#include <io.h>
+	#include "WindowsCompat/dirent.h"
+#else
+	#include <unistd.h>
+	#include <dirent.h>
+#endif
 #include <iostream>
-#include <dirent.h>
 #include <vector>
 
 namespace Extensions

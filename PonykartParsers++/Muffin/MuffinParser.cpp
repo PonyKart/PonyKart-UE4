@@ -15,13 +15,15 @@ Token::Token(vector<Token* > PrecedingFillerTokens, NodeType Type, const string&
 NodeType Token::specializeType(NodeType Type, const string& Image)
 {
 	std::unordered_map<std::string, NodeType>::iterator it;
+	string lImage{ Image };
 	switch (Type)
 	{
 		case NodeType::Tok_Name:
 			it = specForTok_Name.find(Image);
 			if (it != specForTok_Name.end())
 				return it->second;
-			it = specForTok_Name.find(tolower(Image,locale()));
+			transform(lImage.begin(), lImage.end(), lImage.begin(), ::tolower);
+			it = specForTok_Name.find(lImage);
 			if (it != specForTok_Name.end())
 				return it->second;
 			break;

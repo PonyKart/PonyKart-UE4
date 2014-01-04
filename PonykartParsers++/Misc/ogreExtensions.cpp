@@ -12,13 +12,13 @@ namespace Extensions
 
 	Vector3 degreeVectorToRadianVector(const Ogre::Vector3& vec)
 	{
-		constexpr double twopi = 6.28318530717958647692; ///< 2*PI (double precision)
+		const double twopi = 6.28318530717958647692; ///< 2*PI (double precision)
 		return Vector3(vec.x*twopi/360.0, vec.y*twopi/360.0, vec.z*twopi/360.0);
 	}
 
 	Vector3 radianVectorToDegreeVector(const Ogre::Vector3& vec)
 	{
-		constexpr double twopi = 6.28318530717958647692; ///< 2*PI (double precision)
+		const double twopi = 6.28318530717958647692; ///< 2*PI (double precision)
 		return Vector3(vec.x*360.0/twopi, vec.y*360.0/twopi, vec.z*360.0/twopi);
 	}
 

@@ -133,7 +133,8 @@ void ThingImporter::parse(ThingDefinition* thingDef)
 
 void ThingImporter::parseProperty(TokenHolder* holder, ThingParser::RuleInstance* prop)
 {
-	string propName = tolower(getNameFromProperty(prop), std::locale());
+	string propName = getNameFromProperty(prop);
+	transform(propName.begin(), propName.end(), propName.begin(), ::tolower);
 	switch (prop->type)
 	{
 		case NodeType::Rule_StringProperty:
@@ -272,9 +273,15 @@ ThingEnum ThingImporter::parseEnumProperty(RuleInstance* prop)
 	Token* valTok = (Token*)valRule->children[0];
 
 	int result=-1;
-	for (unsigned i=0; i<ThingEnumMap.size(); i++) // Parse valTok->image into a ThingEnum
-		if (string(tolower(valTok->image.c_str(), locale())) == string(tolower(ThingEnumMap[i], locale())))
+	for (unsigned i = 0; i < ThingEnumMap.size(); i++) // Parse valTok->image into a ThingEnum
+	{
+		string s1{ThingEnumMap[i]};
+		string s2{valTok->image};
+		transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+		transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
+		if (s1 == s2)
 			result = i;
+	}
 
 	if (result != -1)
 		return ThingEnum(result);

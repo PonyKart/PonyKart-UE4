@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B13DA1C5-0B70-4EF7-87D1-E34C7A96E39F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PonykartParsers</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files (x86)\BULLET_PHYSICS\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\OGRE-VS12\lib\release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Muffin</TargetName>
+    <IntDir>$(SolutionDir)obj\</IntDir>
+    <IncludePath>$(ProjectDir);C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files (x86)\BULLET_PHYSICS\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\OGRE-VS12\lib\release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PONYKARTPARSERS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PONYKARTPARSERS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Misc\bulletExtensions.cpp" />
+    <ClCompile Include="Misc\direntSearch.cpp" />
+    <ClCompile Include="Misc\irrklangExtensions.cpp" />
+    <ClCompile Include="Misc\ogreExtensions.cpp" />
+    <ClCompile Include="Muffin\MuffinDefinition.cpp" />
+    <ClCompile Include="Muffin\MuffinParser.cpp" />
+    <ClCompile Include="Muffin\TokenHolder.cpp" />
+    <ClCompile Include="Thing\Blocks\BillboardBlock.cpp" />
+    <ClCompile Include="Thing\Blocks\BillboardSetBlock.cpp" />
+    <ClCompile Include="Thing\Blocks\ModelBlock.cpp" />
+    <ClCompile Include="Thing\Blocks\RibbonBlock.cpp" />
+    <ClCompile Include="Thing\Blocks\ShapeBlock.cpp" />
+    <ClCompile Include="Thing\Blocks\SoundBlock.cpp" />
+    <ClCompile Include="Thing\Blocks\ThingBlock.cpp" />
+    <ClCompile Include="Thing\ThingDatabase.cpp" />
+    <ClCompile Include="Thing\ThingDefinition.cpp" />
+    <ClCompile Include="Thing\ThingEnum.cpp" />
+    <ClCompile Include="Thing\ThingImporter.cpp" />
+    <ClCompile Include="Thing\ThingParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Misc\bulletExtensions.h" />
+    <ClInclude Include="Misc\direntSearch.h" />
+    <ClInclude Include="Misc\irrklangExtensions.h" />
+    <ClInclude Include="Misc\ogreExtensions.h" />
+    <ClInclude Include="Muffin\MuffinDefinition.h" />
+    <ClInclude Include="Muffin\MuffinParser.h" />
+    <ClInclude Include="Muffin\TokenHolder.h" />
+    <ClInclude Include="Thing\Blocks\BillboardBlock.h" />
+    <ClInclude Include="Thing\Blocks\BillboardSetBlock.h" />
+    <ClInclude Include="Thing\Blocks\ModelBlock.h" />
+    <ClInclude Include="Thing\Blocks\RibbonBlock.h" />
+    <ClInclude Include="Thing\Blocks\ShapeBlock.h" />
+    <ClInclude Include="Thing\Blocks\SoundBlock.h" />
+    <ClInclude Include="Thing\Blocks\ThingBlock.h" />
+    <ClInclude Include="Thing\ThingDatabase.h" />
+    <ClInclude Include="Thing\ThingDefinition.h" />
+    <ClInclude Include="Thing\ThingEnum.h" />
+    <ClInclude Include="Thing\ThingImporter.h" />
+    <ClInclude Include="Thing\ThingParser.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
