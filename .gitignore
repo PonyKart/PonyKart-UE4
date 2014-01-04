@@ -12,6 +12,8 @@ tmp/
 *.suo
 *.user
 *.sln.docstates
+*.sdf
+*.opensdf
 
 # Codeblocks user files
 *.depend
