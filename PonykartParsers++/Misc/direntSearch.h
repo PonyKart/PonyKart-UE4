@@ -19,9 +19,9 @@
 
 namespace Extensions
 {
-	DLLEXPORT std::string getFilenameWithoutExtension(const std::string& path); ///< Keep everything between the last / and the last .
-	DLLEXPORT std::vector<std::string> direntSearch(const std::string& directory, const std::string& extension); ///< Search only inside directory
-	DLLEXPORT std::vector<std::string> direntSearchRec(const std::string& directory, const std::string& extension); ///< Search recursively
+	DLLEXPORT std::string __cdecl getFilenameWithoutExtension(const std::string& path); ///< Keep everything between the last / and the last .
+	DLLEXPORT std::vector<std::string> __cdecl direntSearch(const std::string& directory, const std::string& extension); ///< Search only inside directory
+	DLLEXPORT std::vector<std::string> __cdecl direntSearchRec(const std::string& directory, const std::string& extension); ///< Search recursively
 } // Extensions
 
 #endif // DIRENTSEARCH_H_INCLUDED
