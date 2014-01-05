@@ -12,6 +12,7 @@
 #define DLLEXPORT __declspec( dllexport )
 #else
 #define DLLEXPORT
+#define __cdecl __attribute__((__cdecl__))
 #endif
 
 #include <vector>

@@ -55,8 +55,8 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-std=c++11" />
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 			<Add directory="." />
 			<Add directory="../PonykartParsers++/" />
@@ -75,10 +75,10 @@
 			<Add library="BulletCollision" />
 			<Add library="BulletSoftBody" />
 			<Add library="LinearMath" />
-			<Add library="libirrKlang.a" />
+			<Add library="IrrKlang" />
 			<Add library="boost_system" />
-			<Add directory="../PonykartParsers++/bin/" />
 			<Add library="lua5.1" />
+			<Add directory="../PonykartParsers++/bin/" />
 			<Add directory="/usr/lib/i386-linux-gnu/OGRE-1.8.0" />
 		</Linker>
 		<Unit filename="Actors/Components/BillboardSetComponent.cpp" />
