@@ -21,16 +21,16 @@ namespace Actors
 	public:
 		ShapeComponent(LThing* lthing, PonykartParsers::ShapeBlock* block); ///< For physics
 		// Getters
-		PonykartParsers::ThingEnum getType();
-		Ogre::Vector3 getDimensions();
-		float getRadius();
-		float getHeight();
-		std::string getMesh();
+		PonykartParsers::ThingEnum getType() const;
+		Ogre::Vector3 getDimensions() const;
+		float getRadius() const;
+		float getHeight() const;
+		std::string getMesh() const;
 
-		float getMinHeight();
-		float getMaxHeight();
-		int getWidth();
-		int getLength();
+		float getMinHeight() const;
+		float getMaxHeight() const;
+		int getWidth() const;
+		int getLength() const;
 	public:
 		Ogre::Matrix4 transform;
 	private:

@@ -41,3 +41,48 @@ ShapeComponent::ShapeComponent(LThing* lthing, PonykartParsers::ShapeBlock* bloc
 		default: break;
 	}
 }
+
+PonykartParsers::ThingEnum ShapeComponent::getType() const
+{
+    return type;
+}
+
+Ogre::Vector3 ShapeComponent::getDimensions() const
+{
+    return dimensions;
+}
+
+float ShapeComponent::getRadius() const
+{
+    return radius;
+}
+
+float ShapeComponent::getHeight() const
+{
+    return height;
+}
+
+std::string ShapeComponent::getMesh() const
+{
+    return mesh;
+}
+
+float ShapeComponent::getMinHeight() const
+{
+    return minHeight;
+}
+
+float ShapeComponent::getMaxHeight() const
+{
+    return maxHeight;
+}
+
+int ShapeComponent::getWidth() const
+{
+    return width;
+}
+
+int ShapeComponent::getLength() const
+{
+    return height;
+}
