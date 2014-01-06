@@ -33,7 +33,7 @@ namespace Actors
     {
     public:
         Driver(PonykartParsers::ThingBlock block, PonykartParsers::ThingDefinition def);
-        void attachToKart(Kart* kart, Ogre::Vector3 offset);
+        void attachToKart(Kart* newKart, Ogre::Vector3 offset);
         void changeAnimation(std::string animationName) override;
         void changeAnimation(std::string animationName, Ogre::AnimationBlendingTransition transition, float duration = 0.2f);
         void changeAnimation(DriverAnimation anim, Ogre::AnimationBlendingTransition transition = Ogre::AnimationBlendingTransition::BlendWhileAnimating, float duration = 0.2);

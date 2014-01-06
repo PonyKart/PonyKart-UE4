@@ -21,6 +21,7 @@
     <ClCompile Include="Actors\Components\ShapeComponent.cpp" />
     <ClCompile Include="Actors\Components\SoundComponent.cpp" />
     <ClCompile Include="Actors\DashJavelin.cpp" />
+    <ClCompile Include="Actors\Driver.cpp" />
     <ClCompile Include="Actors\InstancedGeometryManager.cpp" />
     <ClCompile Include="Actors\Kart.cpp" />
     <ClCompile Include="Actors\LThing.cpp" />

@@ -32,7 +32,7 @@
 - Try to use precompiled headers if possible
 - Use proper symbol visibility
 - "#ifdef MSVC #define constexpr static const" and then use constexp normally. Except it's not MSVC but some other define.
-
+- Use emplace_back instead of push_back when adding temporaries. "No code is faster than some code."
 # Compilation
 - Find a decent C++11 compiler that supports <thread> on windows and can compile Ogre.
 -- Mingw has no <thread> support on windows.
