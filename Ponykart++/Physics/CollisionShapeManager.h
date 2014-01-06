@@ -31,7 +31,7 @@ namespace Physics
 		CollisionShapeManager();
 		btCollisionShape* getShape(const std::string& name); ///< Gets a collision shape.
 		btCollisionShape* getShapeFromFile(const std::string& filename, Ogre::Entity* ent, Ogre::SceneNode* node); ///< Gets a collision shape from a .bullet file.
-		std::string getBulletFile(const std::string& filename); ///< Gets a bullet file's full path
+		std::string getBulletFile(const std::string& filename);
 		btCollisionShape* createAndRegisterShape(Actors::LThing* thing, PonykartParsers::ThingDefinition* def); ///< Creates a CollisionShape from the ShapeComponents of the given thing. If the shape already exists, we'll just return that instead.
 		void registerShape(const std::string& name, btCollisionShape* shape); ///< If you've already created a shape, this registers it
 		bool tryGetShape(const std::string& name, btCollisionShape* outShape); ///< Tries to get a shape from the shape map
