@@ -141,6 +141,9 @@
     <ClCompile Include="UI\Splash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BMP\EasyBMP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actors\DashJavelin.h">
@@ -297,6 +300,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UI\Splash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BMP\EasyBMP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -31,6 +31,7 @@
 - Use extern templates when possible.
 - Try to use precompiled headers if possible
 - Use proper symbol visibility
+- "#ifdef MSVC #define constexpr static const" and then use constexp normally. Except it's not MSVC but some other define.
 
 # Compilation
 - Find a decent C++11 compiler that supports <thread> on windows and can compile Ogre.

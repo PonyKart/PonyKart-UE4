@@ -7,6 +7,7 @@
 #include <BulletCollision/CollisionShapes/btSphereShape.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/ShapeComponent.h"
+#include "BMP/EasyBMP.h"
 #include "Misc/direntSearch.h"
 #include "Levels/LevelManager.h"
 #include "Misc/direntSearch.h"
@@ -137,7 +138,8 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 			shape = importCollisionShape(name); // so it has a file
 		else
 		{
-			/*var sceneMgr = LKernel.GetG<SceneManager>();
+			/* Was commented out in the C# files
+			var sceneMgr = LKernel.GetG<SceneManager>();
 			// get our entity if we have one, create it if we don't
 			Entity ent = sceneMgr.HasEntity(component.Mesh) ? sceneMgr.GetEntity(component.Mesh) : sceneMgr.CreateEntity(component.Mesh, component.Mesh);
 
@@ -167,7 +169,8 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 			shape = importCollisionShape(name); // so it has a file
 		else
 		{
-			/*Launch.Log("[CollisionShapeManager] " + bulletFilePath + " does not exist, converting Ogre mesh into physics trimesh and exporting new .bullet file...");
+			/* Was commented out in the C# files
+			Launch.Log("[CollisionShapeManager] " + bulletFilePath + " does not exist, converting Ogre mesh into physics trimesh and exporting new .bullet file...");
 
 			// it does not have a file, so we need to convert our ogre mesh
 			var sceneMgr = LKernel.GetG<SceneManager>();
@@ -190,47 +193,41 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 		}
 		return shape;
 	}
-	/// NOTE: TODO: Implement this ASAP. A C# pixel is a 32 bit ARGB value, each value is a uint8
-	/// EasyBMP can read a BMP and give the ARGB values, and it looks portable.
-	/// libbmp looks fine too. Their pixel is BGRA 4*uint8 tho
-	/// libbmp can't read directly from a file. You need to know stuff before.
-	/*
 	case ThingEnum::Heightmap:
 	{
 		string filename = "media/" + component->getMesh();
-		//FileStream stream = new FileStream(filename, FileMode.Open, FileAccess.Read);
-		//Bitmap bitmap = new Bitmap(filename);
+		BMP image;
+		image.ReadFromFile(filename.c_str());
+		const int imageWidth = image.TellWidth(), imageHeight = image.TellHeight();
 
-		int width = 256, length = 256;
+		static const short newPicSize = 256; // Width and height of the heightmap
+		static const int newPicSizeSquared = newPicSize*newPicSize;
 
-		unsigned char* terr = new unsigned char[width * length * 4];
-		MemoryStream file = new MemoryStream(terr);
-		BinaryWriter writer = new BinaryWriter(file);
-		for (int i = 0; i < width; i++) {
-			for (int j = 0; j < length; j++) {
-				writer.Write(bitmap.GetPixel((int) (((float) i / width) * bitmap.Width), (int) (((float) j / length) * bitmap.Height)).R / 255.0);
-				//writer.Write(bitmap.GetPixel(i, j).R / 255f);
-			}
-		}
-		writer.Flush();
-		file.Position = 0;
+		// Write the red value of each selected pixel, divided by 255, as a float (assuming 32bit floats)
+		static_assert (sizeof(float) == 4, "This algorithm requires float to be IEEE 754 conformant");
+		float* terr = new float[newPicSizeSquared];
+		for (int i = 0; i < newPicSize; i++)
+			for (int j = 0; j < newPicSize; j++)
+				terr[i+j*newPicSize] = (((float)image((int)(((float)i / newPicSize) * imageWidth),
+											(int)(((float)j / newPicSize) * imageHeight))->Red) / 255.0);
 
 		float heightScale = component->getMaxHeight() - component->getMinHeight() / 255.0;
 		Vector3 scale = component->getDimensions();
 
-		btHeightfieldTerrainShape* heightfield = new btHeightfieldTerrainShape(width, length, file, heightScale,
+		btHeightfieldTerrainShape* heightfield = new btHeightfieldTerrainShape(newPicSize, newPicSize, terr, heightScale,
 			component->getMinHeight(), component->getMaxHeight(), 1, PHY_ScalarType::PHY_FLOAT, false);
 
-		//heightfield.SetUseDiamondSubdivision(true);
-		//heightfield.LocalScaling = new Vector3(scale.x / width, scale.y, scale.z / length);
+		/* Was commented out in the C# files
+		heightfield.SetUseDiamondSubdivision(true);
+		heightfield.LocalScaling = new Vector3(scale.x / width, scale.y, scale.z / length);
 
-		//Matrix4 trans = new Matrix4();
-		//trans.MakeTransform(new Vector3(-scale.x / 2f, scale.y / 2f, -scale.z / 2f), new Vector3(scale.x, 1, scale.z), Quaternion.IDENTITY);
-		//component.Transform = trans;
+		Matrix4 trans = new Matrix4();
+		trans.MakeTransform(new Vector3(-scale.x / 2f, scale.y / 2f, -scale.z / 2f), new Vector3(scale.x, 1, scale.z), Quaternion.IDENTITY);
+		component.Transform = trans;
+		*/
 
 		return heightfield;
 	}
-	*/
 	default:
 		throw string("ShapeComponent's Type was invalid!");
 	}

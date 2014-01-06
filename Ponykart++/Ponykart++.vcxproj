@@ -27,6 +27,7 @@
     <ClCompile Include="Actors\StaticGeometryManager.cpp" />
     <ClCompile Include="Actors\Wheels\Wheel.cpp" />
     <ClCompile Include="Actors\Wheels\WheelFactory.cpp" />
+    <ClCompile Include="BMP\EasyBMP.cpp" />
     <ClCompile Include="Core\Animation\AnimationBlender.cpp" />
     <ClCompile Include="Core\Animation\AnimationManager.cpp" />
     <ClCompile Include="Core\Cameras\CameraManager.cpp" />
@@ -75,6 +76,7 @@
     <ClInclude Include="Actors\Wheels\Wheel.h" />
     <ClInclude Include="Actors\Wheels\WheelFactory.h" />
     <ClInclude Include="Actors\Wheels\WheelID.h" />
+    <ClInclude Include="BMP\EasyBMP.h" />
     <ClInclude Include="Core\Animation\AnimationBlender.h" />
     <ClInclude Include="Core\Animation\AnimationManager.h" />
     <ClInclude Include="Core\Cameras\CameraManager.h" />
