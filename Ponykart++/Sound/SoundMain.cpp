@@ -33,7 +33,7 @@ SoundMain::SoundMain()
 	playerManager->onPostPlayerCreation.push_back(onPostPlayerCreation);
 	LevelManager::onLevelUnload.push_back(onLevelUnload);
 	LevelManager::onLevelLoad.push_back(onLevelLoad);
-	LKernel::getG<Pauser>()->pauseEvent.push_back(pauseEvent);
+	LKernel::getG<Pauser>()->pauseEvent.push_back(bind(&SoundMain::pauseEvent,this,placeholders::_1));
 
 	E_SOUND_ENGINE_OPTIONS flags = (E_SOUND_ENGINE_OPTIONS) (ESEO_DEFAULT_OPTIONS | ESEO_MUTE_IF_NOT_FOCUSED | ESEO_MULTI_THREADED);
 	engine = createIrrKlangDevice(E_SOUND_OUTPUT_DRIVER::ESOD_AUTO_DETECT, flags);
@@ -82,4 +82,9 @@ ISound* SoundMain::play3D(ISoundSource* source, const Vector3& pos, bool looping
 		sound->setIsPaused(true);
 
 	return sound;
+}
+
+void SoundMain::pauseEvent(PausingState state)
+{
+	engine->setAllSoundsPaused(state == PausingState::Pausing);
 }

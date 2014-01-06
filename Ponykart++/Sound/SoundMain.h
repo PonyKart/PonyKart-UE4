@@ -32,7 +32,7 @@ public:
 	float getEngineDefault3DSoundMinDistance();
 	irrklang::ISoundSource* getSource(std::string filename); // Gets a sound source. The engine keeps track of all of these. Don't include the "media/sound/" bit.
 private:
-	static void pauseEvent(Core::PausingState state);
+	void pauseEvent(Core::PausingState state);
 	static void onPostPlayerCreation(); // Manually called from the LevelManager
 	static void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // prepares file locations
 	static void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Delete all of the sound sources
