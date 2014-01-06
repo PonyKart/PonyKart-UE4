@@ -79,3 +79,9 @@ Player::Player(LevelChangedEventArgs eventArgs, int Id, bool IsComputerControlle
 	kart->ownerID = Id;
 	id = Id;
 }
+
+void Player::detach()
+{
+	kart = nullptr;
+	driver = nullptr;
+}
