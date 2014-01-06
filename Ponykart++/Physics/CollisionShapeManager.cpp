@@ -28,6 +28,18 @@ CollisionShapeManager::CollisionShapeManager()
 	LevelManager::onLevelLoad.push_back(function<void (LevelChangedEventArgs*)>(bind(&CollisionShapeManager::onLevelLoad,this,placeholders::_1)));
 }
 
+/// Gets a bullet file's full path
+/// @param filename The filename, without any path or extension
+/// @return The bullet file's full path if it was found, or an empty string if it wasn't
+string CollisionShapeManager::getBulletFile(const string& filename) 
+{
+	string result;
+	auto it = bulletFiles.find(getFilenameWithoutExtension(filename));
+	if (it != end(bulletFiles))
+		result = it->second;
+	return result;
+}
+
 void CollisionShapeManager::onLevelLoad(LevelChangedEventArgs* eventArgs)
 {
 #if !DEBUG
