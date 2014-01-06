@@ -6,6 +6,7 @@
 #include "Core/Options.h"
 #include "Core/Pauser.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
 #include "Players/PlayerManager.h"
 #include "Sound/SoundMain.h"
@@ -30,7 +31,7 @@ SoundMain::SoundMain()
 	playerManager = LKernel::getG<PlayerManager>();
 	cameraManager = LKernel::getG<CameraManager>();
 
-	playerManager->onPostPlayerCreation.push_back(onPostPlayerCreation);
+	playerManager->onPostPlayerCreation.push_back(bind(&SoundMain::onPostPlayerCreation,this));
 	LevelManager::onLevelUnload.push_back(onLevelUnload);
 	LevelManager::onLevelLoad.push_back(onLevelLoad);
 	LKernel::getG<Pauser>()->pauseEvent.push_back(bind(&SoundMain::pauseEvent,this,placeholders::_1));
@@ -87,4 +88,10 @@ ISound* SoundMain::play3D(ISoundSource* source, const Vector3& pos, bool looping
 void SoundMain::pauseEvent(PausingState state)
 {
 	engine->setAllSoundsPaused(state == PausingState::Pausing);
+}
+
+void SoundMain::onPostPlayerCreation() 
+{
+	if (LKernel::getG<LevelManager>()->isPlayableLevel())
+		LKernel::onEveryUnpausedTenthOfASecondEvent.push_back(bind(&SoundMain::everyTenth,this,placeholders::_1));
 }

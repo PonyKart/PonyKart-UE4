@@ -33,7 +33,7 @@ public:
 	irrklang::ISoundSource* getSource(std::string filename); // Gets a sound source. The engine keeps track of all of these. Don't include the "media/sound/" bit.
 private:
 	void pauseEvent(Core::PausingState state);
-	static void onPostPlayerCreation(); // Manually called from the LevelManager
+	void onPostPlayerCreation(); // Manually called from the LevelManager
 	static void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // prepares file locations
 	static void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Delete all of the sound sources
 	void everyTenth(void* o);
