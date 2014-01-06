@@ -123,14 +123,14 @@ const std::vector<ShapeComponent*>& LThing::getShapeComponents() const
 	return shapeComponents;
 }
 
-void LThing::changeAnimation(std::string animationName)
+void LThing::changeAnimation(const std::string& animationName)
 {
 	for (auto mcomp : modelComponents)
 	{
 		if (mcomp->animationBlender != nullptr && mcomp->getEntity()->getAllAnimationStates()->hasAnimationState(animationName))
 		{
 			mcomp->animationBlender->blend(animationName, AnimationBlendingTransition::BlendSwitch, 0, true);
-			mcomp->animationBlender->addTime((int) id);
+			mcomp->animationBlender->addTime((float) id);
 		}
 	}
 }

@@ -33,7 +33,7 @@ class LThing
 public:
 	LThing(PonykartParsers::ThingBlock* thingTemplate, PonykartParsers::ThingDefinition* def);
 	virtual ~LThing();
-	virtual void changeAnimation(std::string animationName);
+	virtual void changeAnimation(const std::string& animationName);
 	void runScript();
 	// Getters
 	unsigned getID() const;
