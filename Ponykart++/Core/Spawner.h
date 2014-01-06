@@ -2,8 +2,9 @@
 #define SPAWNER_H_INCLUDED
 
 #include <functional>
-#include <vector>
+#include <mutex>
 #include <string>
+#include <vector>
 #include <Ogre.h>
 
 namespace PonykartParsers
@@ -43,8 +44,6 @@ public:
 	Actors::Kart* spawnKart(std::string thingName, PonykartParsers::ThingBlock* thingTemplate); ///< Spawns a kart
 	Actors::Driver* spawnDriver(std::string thingName, PonykartParsers::ThingBlock* thingTemplate); ///< Spawns a driver
 private:
-	void inline _lock(); // Lock the _spawnLock
-	void inline _unlock(); // Unlock the _spawnLock
 	template<typename T> void invoke(SpawnEvent<T> evt, T actor);
 public:
 	static SpawnEvent<Actors::LThing*> onThingCreation; ///< Fires whenever anything is spawned.
@@ -53,7 +52,7 @@ public:
 private:
 	PonykartParsers::ThingDatabase* database;
 	Levels::LevelManager* levelManager;
-	bool _spawnLock; ///< No mutexes with MinGW 4.8.1 TODO: Use a real mutex (when switching to CMake ?)
+	std::mutex _spawnLock;
 };
 } // Core
 } // Ponykart

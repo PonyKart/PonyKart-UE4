@@ -17,32 +17,19 @@ SpawnEvent<LThing*> Spawner::onThingCreation;
 SpawnEvent<Kart*> Spawner::onKartCreation;
 SpawnEvent<Driver*> Spawner::onDriverCreation;
 
-Spawner::Spawner() : _spawnLock(false)
+Spawner::Spawner()
 {
 	database = LKernel::getG<ThingDatabase>();
 	levelManager = LKernel::getG<LevelManager>();
 }
 
-void Spawner::_lock()
-{
-	while(_spawnLock);
-	_spawnLock=true;
-}
-
-void Spawner::_unlock()
-{
-	if (_spawnLock)
-		_spawnLock=false;
-	else
-		throw string("Spawnler::_unlock: Lock is already unlocked !");
-}
-
 Kart* Spawner::spawnKart(std::string thingName, PonykartParsers::ThingBlock* thingTemplate)
 {
-	if (Pauser::isPaused) {
+	if (Pauser::isPaused)
 		throw string("Attempted to spawn \"" + thingName + "\" while paused!");
-	}
-	_lock();
+	
+	_spawnLock.lock();
+	try
 	{
 		auto definition = database->getThingDefinition(thingName);
 
@@ -57,9 +44,15 @@ Kart* Spawner::spawnKart(std::string thingName, PonykartParsers::ThingBlock* thi
 
 		invoke(onKartCreation, kart);
 		invoke(onThingCreation, (LThing*)kart);
+		_spawnLock.unlock();
 		return kart;
 	}
-	_unlock();
+	catch (...)
+	{
+		_spawnLock.unlock();
+		throw string("Spawner::spawnKart: Unknow exception caught ! Emergency unlock of _spawnLock.");
+	}
+	_spawnLock.unlock();
 }
 
 template<typename T> void Spawner::invoke(SpawnEvent<T> evt, T actor)

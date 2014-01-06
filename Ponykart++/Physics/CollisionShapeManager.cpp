@@ -190,8 +190,10 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 		}
 		return shape;
 	}
-	/// NOTE: TODO: Implement this ASAP. A C# pixel is a 32 bit ARGB value
+	/// NOTE: TODO: Implement this ASAP. A C# pixel is a 32 bit ARGB value, each value is a uint8
 	/// EasyBMP can read a BMP and give the ARGB values, and it looks portable.
+	/// libbmp looks fine too. Their pixel is BGRA 4*uint8 tho
+	/// libbmp can't read directly from a file. You need to know stuff before.
 	/*
 	case ThingEnum::Heightmap:
 	{
