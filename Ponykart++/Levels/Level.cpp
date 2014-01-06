@@ -37,3 +37,8 @@ void Level::addThing(Actors::LThing* newThing)
 	else
 		things.insert(pair<string, LThing*>(newThing->getName(), newThing));
 }
+
+const PonykartParsers::MuffinDefinition* const Level::getDefinition() const
+{
+	return definition;
+}
