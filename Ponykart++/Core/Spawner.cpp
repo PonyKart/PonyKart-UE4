@@ -1,4 +1,5 @@
 #include "Actors/DashJavelin.h"
+#include "Actors/Driver.h"
 #include "Actors/TwiCutlass.h"
 #include "Core/Pauser.h"
 #include "Core/Spawner.h"
@@ -31,8 +32,7 @@ Kart* Spawner::spawnKart(std::string thingName, PonykartParsers::ThingBlock* thi
 	_spawnLock.lock();
 	try
 	{
-		auto definition = database->getThingDefinition(thingName);
-
+		auto definition = database->getThingDefinition(thingName);		
 		Kart* kart;
 		if (thingName == "DashJavelin")
 			kart = new DashJavelin(thingTemplate, definition);
@@ -50,9 +50,32 @@ Kart* Spawner::spawnKart(std::string thingName, PonykartParsers::ThingBlock* thi
 	catch (...)
 	{
 		_spawnLock.unlock();
-		throw string("Spawner::spawnKart: Unknow exception caught ! Emergency unlock of _spawnLock.");
+		throw string("Spawner::spawnKart: Unknown exception caught ! Emergency unlock of _spawnLock.");
 	}
-	_spawnLock.unlock();
+}
+
+Driver* Spawner::spawnDriver(string thingName, ThingBlock* thingTemplate)
+{
+	if (Pauser::isPaused)
+		throw string("Spawner::spawnDriver: Attempted to spawn \"" + thingName + "\" while paused!");
+	_spawnLock.lock();
+	try
+	{
+		auto definition = database->getThingDefinition(thingName);
+		Driver* driver = new Driver(thingTemplate, definition);
+
+		levelManager->getCurrentLevel()->addThing((LThing*)driver);
+
+		invoke(onDriverCreation, driver);
+		invoke<LThing*>(onThingCreation, (LThing*)driver);
+		_spawnLock.unlock();
+		return driver;
+	}
+	catch (...)
+	{
+		_spawnLock.unlock();
+		throw string("Spawner::spawnDriver: Unknown exception caught ! Emergency unlock of _spawnLock.");
+	}
 }
 
 template<typename T> void Spawner::invoke(SpawnEvent<T> evt, T actor)
