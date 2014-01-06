@@ -6,7 +6,7 @@
 
 namespace PonykartParsers
 {
-	namespace ThingParser{class RuleInstance;}
+	namespace ThingParser{struct RuleInstance;}
 	class ThingDefinition;
 
 	class ThingImporter
