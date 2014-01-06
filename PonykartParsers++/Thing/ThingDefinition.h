@@ -2,10 +2,12 @@
 #define THINGDEFINITION_H_INCLUDED
 
 // MSVC needs to be told what to export in the DLL
+#ifndef DLLEXPORT
 #ifdef _WIN32
 #define DLLEXPORT __declspec( dllexport )
 #else
 #define DLLEXPORT
+#endif
 #endif
 
 #include <vector>

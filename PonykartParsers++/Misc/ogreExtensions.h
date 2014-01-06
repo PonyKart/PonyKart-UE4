@@ -1,22 +1,26 @@
 #ifndef OGREEXTENSIONS_H_INCLUDED
 #define OGREEXTENSIONS_H_INCLUDED
 
+// MSVC needs to be told what to export in the DLL
+#ifndef DLLEXPORT
+#ifdef _WIN32
+#define DLLEXPORT __declspec(dllexport)
+#else
+#define DLLEXPORT
+#endif
+#endif
+
 #include <OgreColourValue.h>
 #include <OgreQuaternion.h>
 #include <OgreVector3.h>
 
-// MSVC needs to be told what to export in the DLL
-#ifdef _WIN32
-#define DLLEXPORT __declspec( dllexport )
-#else
-#define DLLEXPORT
-#endif
-
 class btVector3;
+class btQuaternion;
 
 namespace Extensions
 {
 	DLLEXPORT Ogre::Vector3 toOgreVector3(const btVector3& vec);
+	DLLEXPORT Ogre::Quaternion toOgreQuaternion(const btQuaternion& quat);
 	DLLEXPORT Ogre::ColourValue toColourValue(const Ogre::Quaternion& quat);
 	DLLEXPORT Ogre::Vector3 degreeVectorToRadianVector(const Ogre::Vector3& vec); ///< If you have a vector to be used for rotation but it's in degrees and you want radians, use this!
 	DLLEXPORT Ogre::Vector3 radianVectorToDegreeVector(const Ogre::Vector3& vec); /// If you have a vector to be used for rotation but it's in radians and you want degrees, use this!

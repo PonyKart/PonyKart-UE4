@@ -1,10 +1,21 @@
-#include <math.h>
+#include <LinearMath/btVector3.h>
+#include <LinearMath/btQuaternion.h>
 #include "Misc/ogreExtensions.h"
 
 using namespace Ogre;
 
 namespace Extensions
 {
+	Vector3 toOgreVector3(const btVector3& vec)
+	{
+		return Vector3(vec.getX(), vec.getY(), vec.getZ());
+	}
+
+	Quaternion toOgreQuaternion(const btQuaternion& quat)
+	{
+		return Quaternion(quat.getW(), quat.getX(), quat.getY(), quat.getZ());
+	}
+
 	ColourValue toColourValue(const Quaternion& quat)
 	{
 		return ColourValue(quat.x, quat.y, quat.z, quat.w);

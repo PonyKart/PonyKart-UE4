@@ -89,6 +89,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)bin\Muffind.dll</OutputFile>
+      <ImportLibrary>$(ProjectDir)bin\Muffind.lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +110,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)bin\Muffin.dll</OutputFile>
+      <ImportLibrary>$(ProjectDir)bin\Muffin.lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|Win32'">
@@ -131,6 +135,8 @@
       <OptimizeReferences>false</OptimizeReferences>
       <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <LinkTimeCodeGeneration />
+      <OutputFile>$(ProjectDir)bin\Muffin.dll</OutputFile>
+      <ImportLibrary>$(ProjectDir)bin\Muffin.lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

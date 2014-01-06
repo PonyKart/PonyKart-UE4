@@ -11,16 +11,16 @@ namespace Ponykart
 namespace Actors{class LThing;}
 namespace Physics
 {
-	// Handy thing that bullet has to keep graphics synched up with physics. It only updates the node when it's actually changed instead of every frame!
+	/// Handy thing that bullet has to keep graphics synched up with physics. It only updates the node when it's actually changed instead of every frame!
 	class OgreMotionState : public btMotionState
 	{
 	public:
-		OgreMotionState(btTransform& btTransform, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-		OgreMotionState(Ogre::Vector3& position, Ogre::Quaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-		OgreMotionState(btVector3& position, btQuaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-		OgreMotionState(Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); // thing:The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
+		OgreMotionState(btTransform& btTransform, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); 
+		OgreMotionState(Ogre::Vector3& position, Ogre::Quaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); 
+		OgreMotionState(btVector3& position, btQuaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); 
+		OgreMotionState(Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr);
 		void getWorldTransform(btTransform& worldTrans) const override;
-		void setWorldTransform(const btTransform& worldTrans) override; // Bullet only calls the update of worldtransform for active objects
+		void setWorldTransform(const btTransform& worldTrans) override; ///< Bullet only calls the update of worldtransform for active objects
 	protected:
 		btTransform transform;
 		Ogre::SceneNode* node;
