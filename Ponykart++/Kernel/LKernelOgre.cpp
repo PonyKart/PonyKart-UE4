@@ -5,7 +5,7 @@
 #include <OgreRenderWindow.h>
 #include <OgreRoot.h>
 #include "Kernel/LKernel.h"
-#include "Kernel/LKernelOgreInit.h"
+#include "Kernel/LKernelOgre.h"
 #include "Core/Options.h"
 
 using namespace Ponykart;
@@ -107,4 +107,9 @@ void LKernel::details::loadOgreResourceGroups()
 			//ResourceGroupManager::getSingleton().initialiseResourceGroup("Bootstrap");
 			ResourceGroupManager::getSingleton().initialiseResourceGroup("Main");
 #endif
+}
+
+void LKernel::log(const std::string& message)
+{
+	Ogre::LogManager::getSingleton().logMessage(message);
 }

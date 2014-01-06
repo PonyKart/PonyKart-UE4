@@ -42,7 +42,7 @@
     <ClCompile Include="Core\Pauser.cpp" />
     <ClCompile Include="Core\Spawner.cpp" />
     <ClCompile Include="Kernel\LKernel.cpp" />
-    <ClCompile Include="Kernel\LKernelOgreInit.cpp" />
+    <ClCompile Include="Kernel\LKernelOgre.cpp" />
     <ClCompile Include="Kernel\LKernelRegistration.cpp" />
     <ClCompile Include="Levels\Level.cpp" />
     <ClCompile Include="Levels\LevelChangedEventArgs.cpp" />
@@ -94,7 +94,7 @@
     <ClInclude Include="Core\Settings.h" />
     <ClInclude Include="Core\Spawner.h" />
     <ClInclude Include="Kernel\LKernel.h" />
-    <ClInclude Include="Kernel\LKernelOgreInit.h" />
+    <ClInclude Include="Kernel\LKernelOgre.h" />
     <ClInclude Include="Levels\Level.h" />
     <ClInclude Include="Levels\LevelChangedEventArgs.h" />
     <ClInclude Include="Levels\LevelChangeRequest.h" />

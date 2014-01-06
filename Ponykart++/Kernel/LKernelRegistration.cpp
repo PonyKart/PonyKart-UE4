@@ -1,5 +1,5 @@
 #include "Kernel/LKernel.h"
-#include "Kernel/LKernelOgreInit.h"
+#include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
 #include "Physics/PhysicsMain.h"
 #include "Core/Cameras/CameraManager.h"

@@ -4,6 +4,7 @@
 #include <OgreRoot.h>
 #include <OgreViewport.h>
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Core/InputMain.h"
 
 using namespace std;

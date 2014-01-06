@@ -11,6 +11,9 @@
 - Add some Doxygen. Start by conerting the inline // in headers to ///<
 - There's a MLP Racing folder in the MLPMA.
 
+# Correctness
+- Might want to check those float -> int conversions. Rounding is probably a good idea (instead of truncating), because floating point imprecisions.
+
 # Ogre
 - Maybe we could switch to 1.9/1.10, overlays are just moved to a subsystem that you can initialize in two lines. Check the porting notes.
 - Ogre 1.9 would probably compile with MSVC 2013
@@ -33,6 +36,8 @@
 - Use proper symbol visibility
 - "#ifdef MSVC #define constexpr static const" and then use constexp normally. Except it's not MSVC but some other define.
 - Use emplace_back instead of push_back when adding temporaries. "No code is faster than some code."
+- LKernel::log should really be in a smaller header. Maybe rename LKernelOgreInit (who includes nothing) into LKernelOgre
+
 # Compilation
 - Find a decent C++11 compiler that supports <thread> on windows and can compile Ogre.
 -- Mingw has no <thread> support on windows.
@@ -45,5 +50,3 @@
 -- MinGW 4.8.1 with CMake 2.8, WITHOUT the -O3/-DNDEBUG/-g  flags seems to work.
 --- Building with -O1 -DNDEBUG works too.
 - At some point make a big .rar and ship the source, all the precompiled dependencies, MinGW, and a project file configured to use those.
-- Replace some Ogre.h includes by only the necessary headers (Vector3, Quaternion, ...)
-=>  Really now. Switch to MSVC, it's getting ridiculous. First a project file, CMake later. And replace that unsafe non-atomic homemade lock.

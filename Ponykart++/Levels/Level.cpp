@@ -1,5 +1,5 @@
 #include "Actors/LThing.h"
-#include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Levels/Level.h"
 
 using namespace std;

@@ -1,4 +1,5 @@
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Core/KeyBindingManager.h"
 #include "Core/InputMain.h"
 #include "Core/Options.h"

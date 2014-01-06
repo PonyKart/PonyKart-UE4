@@ -1,6 +1,8 @@
 #ifndef LKERNEL_H_INCLUDED
 #define LKERNEL_H_INCLUDED
 
+#include <functional>
+#include <vector>
 #include <unordered_map>
 #include <typeinfo>
 
@@ -19,6 +21,7 @@ namespace LKernel
 	extern Ogre::RenderSystem* gRenderSystem;
 	extern Ogre::SceneManager* gSceneManager;
 	extern Ogre::Viewport* gViewport;
+	extern std::vector<std::function<void (void*)>> onEveryUnpausedTenthOfASecondEvent;
 
 	/// Implementation details that are not part of the interface.
 	namespace details
@@ -28,7 +31,6 @@ namespace LKernel
 	} // details
 
 	// Interface
-	void log(const std::string& message); ///< Logs a message with Ogre. Ogre must be initialized.
 	void loadInitialObjects(Splash& splash);
 	void* addGlobalObject(void* object, const std::string& typeName); ///< Add a singleton to LKernel's map.
 	template<typename T> static inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());} ///< Add a singleton to LKernel's map.

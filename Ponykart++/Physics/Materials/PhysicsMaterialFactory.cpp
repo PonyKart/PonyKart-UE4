@@ -1,6 +1,6 @@
 #include <vector>
 #include <OgreConfigFile.h>
-#include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Misc/direntSearch.h"
 #include "Physics/Materials/PhysicsMaterial.h"
 #include "Physics/Materials/PhysicsMaterialFactory.h"

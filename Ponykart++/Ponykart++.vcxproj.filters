@@ -90,9 +90,6 @@
     <ClCompile Include="Kernel\LKernel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Kernel\LKernelOgreInit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Kernel\LKernelRegistration.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -145,6 +142,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Actors\Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Kernel\LKernelOgre.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -245,9 +245,6 @@
     <ClInclude Include="Kernel\LKernel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Kernel\LKernelOgreInit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Levels\Level.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -306,6 +303,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BMP\EasyBMP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel\LKernelOgre.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

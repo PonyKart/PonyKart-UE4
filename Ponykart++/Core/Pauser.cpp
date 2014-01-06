@@ -1,6 +1,7 @@
 #include "Core/Pauser.h"
 #include "Core/InputMain.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
 #include "Core/InputSwallowerManager.h"
 

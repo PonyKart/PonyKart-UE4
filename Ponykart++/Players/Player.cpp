@@ -1,6 +1,7 @@
 #include "Core/Settings.h"
 #include "Core/Spawner.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Players/Player.h"
 #include "Muffin/MuffinDefinition.h"
 #include "Thing/Blocks/ThingBlock.h"

@@ -1,4 +1,5 @@
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
 #include "Lua/LuaMain.h"
 

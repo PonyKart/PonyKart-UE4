@@ -1,3 +1,5 @@
+#include <string>
+
 namespace Ponykart
 {
 namespace LKernel
@@ -5,8 +7,8 @@ namespace LKernel
 	/// Implementation details that are not part of the interface.
 	namespace details
 	{
-		void initOgreResources(); /// Adds all of the resource locations but doesn't actually load anything.
-		void loadOgreResourceGroups(); /// Loads the resources into memory.
+		void initOgreResources(); ///< Adds all of the resource locations but doesn't actually load anything.
+		void loadOgreResourceGroups(); ///< Loads the resources into memory.
 	} // details
 
 	void initOgreRoot();
@@ -14,5 +16,7 @@ namespace LKernel
 	void initOgreRenderWindow();
 	void initOgreSceneManager();
 	void initOgreViewportCam();
+
+	void log(const std::string& message); ///< Logs a message with Ogre. Ogre must be initialized.
 } // LKernel
 } // Ponykart

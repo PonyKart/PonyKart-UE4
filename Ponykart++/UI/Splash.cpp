@@ -9,6 +9,7 @@
 #include "UI/Splash.h"
 #include "Core/Options.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 
 using namespace Ogre;
 using namespace Ponykart;
