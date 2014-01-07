@@ -45,10 +45,10 @@ ThingDefinition* ThingImporter::parse(const std::string& nameOfThing)
 	ifstream fileStream(filePath, ios::in);
 	if (!fileStream)
 		throw string("ThingImporter: Can't open "+filePath);
-
+	
 	string fileContents;
     fileStream.seekg(0, std::ios::end);
-    fileContents.resize(fileStream.tellg());
+    fileContents.resize(fileStream.tellg()); // We're assuming that the .thing is smaller than 4GB
     fileStream.seekg(0, std::ios::beg);
     fileStream.read(&fileContents[0], fileContents.size());
     fileStream.close();
@@ -144,7 +144,7 @@ void ThingImporter::parseProperty(TokenHolder* holder, ThingParser::RuleInstance
 			holder->setBoolProperty(propName, parseBoolProperty(prop));
 			break;
 		case NodeType::Rule_EnumProperty:
-			holder->setBoolProperty(propName, parseEnumProperty(prop));
+			holder->setEnumProperty(propName, parseEnumProperty(prop));
 			break;
 		case NodeType::Rule_NumericProperty:
 			holder->setFloatProperty(propName, parseFloatProperty(prop));
