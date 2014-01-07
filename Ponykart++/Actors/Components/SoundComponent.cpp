@@ -1,12 +1,15 @@
 #include "Actors/LThing.h"
 #include "Actors/Components/SoundComponent.h"
 #include "Kernel/LKernel.h"
-#include "Kernel/LKernelOgre.h"
 #include "Misc/irrklangExtensions.h"
 #include "Sound/SoundMain.h"
 #include "Thing/Blocks/SoundBlock.h"
 #include "Thing/Blocks/ThingBlock.h"
 #include "UI/LuaConsoleManager.h"
+
+#if DEBUG
+#include "Kernel/LKernelOgre.h"
+#endif
 
 using namespace std;
 using namespace Ogre;
