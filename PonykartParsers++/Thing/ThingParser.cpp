@@ -71,7 +71,7 @@ RuleInstance* Parser::matchStart()
 	vector<Node*> nodes;
 	Token* tok;
 
-	while (true)
+	for (;;)
 	{
 		if ((tok = fetchToken(laOffset))->type==NodeType::Tok_KeyBillboard || tok->type==NodeType::Tok_KeyBillboardSet
 			|| tok->type==NodeType::Tok_KeyFalse || tok->type==NodeType::Tok_KeyModel
@@ -335,7 +335,7 @@ Token* Parser::nextToken(bool useFetched)
 		}
 		if (pass)
 		{
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -425,7 +425,7 @@ Token* Parser::nextToken(bool useFetched)
 		pass = false;
 	if (pass)
 	{
-		while (true)
+		for (;;)
 		{
 			indices.push(index);
 			currLines.push(currLine);
@@ -555,7 +555,7 @@ Token* Parser::nextToken(bool useFetched)
 		currLines.push(currLine);
 		currChars.push(currChar);
 		onceOrMoreB.push(false);
-		while (true)
+		for (;;)
 		{
 			indices.push(index);
 			currLines.push(currLine);
@@ -607,7 +607,7 @@ Token* Parser::nextToken(bool useFetched)
 				pass = false;
 			if (pass)
 			{
-				while (true)
+				for (;;)
 				{
 					indices.push(index);
 					currLines.push(currLine);
@@ -655,7 +655,7 @@ Token* Parser::nextToken(bool useFetched)
 				currLines.push(currLine);
 				currChars.push(currChar);
 				onceOrMoreB.push(false);
-				while (true)
+				for (;;)
 				{
 					indices.push(index);
 					currLines.push(currLine);
@@ -744,7 +744,7 @@ Token* Parser::nextToken(bool useFetched)
 					currLines.push(currLine);
 					currChars.push(currChar);
 					onceOrMoreB.push(false);
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -826,7 +826,7 @@ Token* Parser::nextToken(bool useFetched)
 					pass = false;
 				if (pass)
 				{
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -895,7 +895,7 @@ Token* Parser::nextToken(bool useFetched)
 						currLines.push(currLine);
 						currChars.push(currChar);
 						onceOrMoreB.push(false);
-						while (true)
+						for (;;)
 						{
 							indices.push(index);
 							currLines.push(currLine);
@@ -985,7 +985,7 @@ Token* Parser::nextToken(bool useFetched)
 			currLines.push(currLine);
 			currChars.push(currChar);
 			onceOrMoreB.push(false);
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -1100,7 +1100,7 @@ Token* Parser::nextToken(bool useFetched)
 					pass = false;
 				if (pass)
 				{
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -1384,7 +1384,7 @@ RuleInstance* Parser::matchShape()
 		throw string(ss.str());
 	}
 	nodes.push_back(tok);
-	while (true) {
+	for (;;) {
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
 			nodes.push_back(matchProperty());
 		}
@@ -1418,7 +1418,7 @@ RuleInstance* Parser::matchModel()
 		throw string(ss.str());
 	}
 	nodes.push_back(tok);
-	while (true)
+	for (;;)
 	{
 		if ((tok = fetchToken(laOffset))->type==NodeType::Tok_KeyBillboard || tok->type==NodeType::Tok_KeyBillboardSet
 			|| tok->type==NodeType::Tok_KeyFalse || tok->type==NodeType::Tok_KeyModel
@@ -1457,7 +1457,7 @@ RuleInstance* Parser::matchRibbon()
 		throw string(ss.str());
 	}
 	nodes.push_back(tok);
-	while (true) {
+	for (;;) {
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
 			nodes.push_back(matchProperty());
 		}
@@ -1491,7 +1491,7 @@ RuleInstance* Parser::matchBillboardSet()
 		throw string(ss.str());
 	}
 	nodes.push_back(tok);
-	while (true) {
+	for (;;) {
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
 			laOffsets.push(laOffset);
 			laSuccess.push(true);
@@ -1544,7 +1544,7 @@ RuleInstance* Parser::matchBillboard()
 		throw string(ss.str());
 	}
 	nodes.push_back(tok);
-	while (true) {
+	for (;;) {
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
 			nodes.push_back(matchProperty());
 		}
@@ -1578,7 +1578,7 @@ RuleInstance* Parser::matchSound()
 		throw string(ss.str());
 	}
 	nodes.push_back(tok);
-	while (true) {
+	for (;;) {
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyBillboard || tok->type == NodeType::Tok_KeyBillboardSet || tok->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyModel || tok->type == NodeType::Tok_KeyRibbon || tok->type == NodeType::Tok_KeyShape || tok->type == NodeType::Tok_KeySound || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name) {
 			nodes.push_back(matchProperty());
 		}
@@ -1603,7 +1603,7 @@ vector<Token*> Parser::getFillerTokens()
 	currChars = stack<int>();
 	char c;
 	bool pass;
-	while (true)
+	for (;;)
 	{
 		int oldIndex = index, lastLine = currLine, lastChar = currChar;
 
@@ -1621,7 +1621,7 @@ vector<Token*> Parser::getFillerTokens()
 			pass = false;
 		if (pass)
 		{
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -1724,7 +1724,7 @@ vector<Token*> Parser::getFillerTokens()
 			pass = false;
 		if (pass)
 		{
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -1765,7 +1765,7 @@ vector<Token*> Parser::getFillerTokens()
 				currLines.push(currLine);
 				currChars.push(currChar);
 				onceOrMoreB.push(false);
-				while (true)
+				for (;;)
 				{
 					indices.push(index);
 					currLines.push(currLine);
@@ -1808,7 +1808,7 @@ vector<Token*> Parser::getFillerTokens()
 				}
 				if (pass)
 				{
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -1830,7 +1830,7 @@ vector<Token*> Parser::getFillerTokens()
 							pass = false;
 						if (pass)
 						{
-							while (true)
+							for (;;)
 							{
 								indices.push(index);
 								currLines.push(currLine);
@@ -1871,7 +1871,7 @@ vector<Token*> Parser::getFillerTokens()
 								currLines.push(currLine);
 								currChars.push(currChar);
 								onceOrMoreB.push(false);
-								while (true)
+								for (;;)
 								{
 									indices.push(index);
 									currLines.push(currLine);
@@ -1963,7 +1963,7 @@ vector<Token*> Parser::getFillerTokens()
 		currLines.push(currLine);
 		currChars.push(currChar);
 		onceOrMoreB.push(false);
-		while (true)
+		for (;;)
 		{
 			indices.push(index);
 			currLines.push(currLine);

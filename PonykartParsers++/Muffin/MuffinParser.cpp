@@ -66,7 +66,7 @@ std::vector<Token*> Parser::getFillerTokens()
 	currChars = stack<int>();
 	char c;
 	bool pass;
-	while (true)
+	for (;;)
 	{
 		int oldIndex = index, lastLine = currLine, lastChar = currChar;
 
@@ -84,7 +84,7 @@ std::vector<Token*> Parser::getFillerTokens()
 			pass = false;
 		if (pass)
 		{
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -196,7 +196,7 @@ std::vector<Token*> Parser::getFillerTokens()
 			pass = false;
 		if (pass)
 		{
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -240,7 +240,7 @@ std::vector<Token*> Parser::getFillerTokens()
 				currLines.push(currLine);
 				currChars.push(currChar);
 				onceOrMoreB.push(false);
-				while (true)
+				for (;;)
 				{
 					indices.push(index);
 					currLines.push(currLine);
@@ -290,7 +290,7 @@ std::vector<Token*> Parser::getFillerTokens()
 				}
 				if (pass)
 				{
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -312,7 +312,7 @@ std::vector<Token*> Parser::getFillerTokens()
 							pass = false;
 						if (pass)
 						{
-							while (true)
+							for (;;)
 							{
 								indices.push(index);
 								currLines.push(currLine);
@@ -356,7 +356,7 @@ std::vector<Token*> Parser::getFillerTokens()
 								currLines.push(currLine);
 								currChars.push(currChar);
 								onceOrMoreB.push(false);
-								while (true)
+								for (;;)
 								{
 									indices.push(index);
 									currLines.push(currLine);
@@ -461,7 +461,7 @@ std::vector<Token*> Parser::getFillerTokens()
 		currLines.push(currLine);
 		currChars.push(currChar);
 		onceOrMoreB.push(false);
-		while (true)
+		for (;;)
 		{
 			indices.push(index);
 			currLines.push(currLine);
@@ -663,7 +663,7 @@ Token* Parser::nextToken(bool useFetched)
 		}
 		if (pass)
 		{
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -757,7 +757,7 @@ Token* Parser::nextToken(bool useFetched)
 		pass = false;
 	if (pass)
 	{
-		while (true)
+		for (;;)
 		{
 			indices.push(index);
 			currLines.push(currLine);
@@ -896,7 +896,7 @@ Token* Parser::nextToken(bool useFetched)
 		currLines.push(currLine);
 		currChars.push(currChar);
 		onceOrMoreB.push(false);
-		while (true)
+		for (;;)
 		{
 			indices.push(index);
 			currLines.push(currLine);
@@ -955,7 +955,7 @@ Token* Parser::nextToken(bool useFetched)
 				pass = false;
 			if (pass)
 			{
-				while (true)
+				for (;;)
 				{
 					indices.push(index);
 					currLines.push(currLine);
@@ -1006,7 +1006,7 @@ Token* Parser::nextToken(bool useFetched)
 				currLines.push(currLine);
 				currChars.push(currChar);
 				onceOrMoreB.push(false);
-				while (true)
+				for (;;)
 				{
 					indices.push(index);
 					currLines.push(currLine);
@@ -1105,7 +1105,7 @@ Token* Parser::nextToken(bool useFetched)
 					currLines.push(currLine);
 					currChars.push(currChar);
 					onceOrMoreB.push(false);
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -1197,7 +1197,7 @@ Token* Parser::nextToken(bool useFetched)
 					pass = false;
 				if (pass)
 				{
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -1272,7 +1272,7 @@ Token* Parser::nextToken(bool useFetched)
 						currLines.push(currLine);
 						currChars.push(currChar);
 						onceOrMoreB.push(false);
-						while (true)
+						for (;;)
 						{
 							indices.push(index);
 							currLines.push(currLine);
@@ -1372,7 +1372,7 @@ Token* Parser::nextToken(bool useFetched)
 			currLines.push(currLine);
 			currChars.push(currChar);
 			onceOrMoreB.push(false);
-			while (true)
+			for (;;)
 			{
 				indices.push(index);
 				currLines.push(currLine);
@@ -1497,7 +1497,7 @@ Token* Parser::nextToken(bool useFetched)
 					pass = false;
 				if (pass)
 				{
-					while (true)
+					for (;;)
 					{
 						indices.push(index);
 						currLines.push(currLine);
@@ -1546,7 +1546,7 @@ RuleInstance* Parser::matchStart()
 	vector<Node*> nodes;
 	Token* tok;
 
-	while (true)
+	for (;;)
 	{
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyFalse || tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name)
 		{
@@ -1638,7 +1638,7 @@ RuleInstance* Parser::matchBlock()
 		throw string("Line " + ssLine.str() + ", char " + ssChar.str() + ": Expected LBrace token");
 	}
 	nodes.push_back(tok);
-	while (true)
+	for (;;)
 	{
 		if ((tok = fetchToken(laOffset))->type == NodeType::Tok_KeyFalse
 			|| tok->type == NodeType::Tok_KeyTrue || tok->type == NodeType::Tok_Name)

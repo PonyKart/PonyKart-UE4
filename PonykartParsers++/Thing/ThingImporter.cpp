@@ -48,7 +48,7 @@ ThingDefinition* ThingImporter::parse(const std::string& nameOfThing)
 	
 	string fileContents;
     fileStream.seekg(0, std::ios::end);
-    fileContents.resize(fileStream.tellg()); // We're assuming that the .thing is smaller than 4GB
+    fileContents.resize((size_t)fileStream.tellg()); // We're assuming that the .thing is smaller than 4GB
     fileStream.seekg(0, std::ios::beg);
     fileStream.read(&fileContents[0], fileContents.size());
     fileStream.close();
@@ -292,7 +292,7 @@ ThingEnum ThingImporter::parseEnumProperty(RuleInstance* prop)
 float ThingImporter::parseFloatProperty(RuleInstance* prop)
 {
 	Token* tok = (Token*)prop->children[2];
-	return atof(tok->image.c_str());
+	return (float)atof(tok->image.c_str());
 }
 
 Ogre::Vector3 ThingImporter::parseVectorProperty(RuleInstance* prop)
@@ -301,9 +301,9 @@ Ogre::Vector3 ThingImporter::parseVectorProperty(RuleInstance* prop)
 	Token* tok2 = (Token*)prop->children[4];
 	Token* tok3 = (Token*)prop->children[6];
 
-	float x = atof(tok1->image.c_str());
-	float y = atof(tok2->image.c_str());
-	float z = atof(tok3->image.c_str());
+	float x = (float)atof(tok1->image.c_str());
+	float y = (float)atof(tok2->image.c_str());
+	float z = (float)atof(tok3->image.c_str());
 
 	return Ogre::Vector3(x, y, z);
 }
@@ -316,10 +316,10 @@ Ogre::Quaternion ThingImporter::parseQuatProperty(ThingParser::RuleInstance* pro
 	Token* tok3 = (Token*)prop->children[6];
 	Token* tok4 = (Token*)prop->children[8];
 
-	float x = atof(tok1->image.c_str());
-	float y = atof(tok2->image.c_str());
-	float z = atof(tok3->image.c_str());
-	float w = atof(tok4->image.c_str());
+	float x = (float)atof(tok1->image.c_str());
+	float y = (float)atof(tok2->image.c_str());
+	float z = (float)atof(tok3->image.c_str());
+	float w = (float)atof(tok4->image.c_str());
 
 	return Ogre::Quaternion(w, x, y, z);
 }
