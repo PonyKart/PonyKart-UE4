@@ -10,6 +10,7 @@
 - See if it's possible to switch to CMkake instead of Codeblocks. This way we can have real threaded C++11 with GCC under loonix and MSVC 13 under win
 - Add some Doxygen. Start by conerting the inline // in headers to ///<
 - There's a MLP Racing folder in the MLPMA.
+- "onEveryUnpausedTenthOfASecondEvent". Seriously? This has to be a joke. Formatting nightmare.
 
 # Correctness
 - Might want to check those float -> int conversions. Rounding is probably a good idea (instead of truncating), because floating point imprecisions.

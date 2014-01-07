@@ -34,7 +34,7 @@ SoundMain::SoundMain()
 	cameraManager = LKernel::getG<CameraManager>();
 
 	playerManager->onPostPlayerCreation.push_back(bind(&SoundMain::onPostPlayerCreation,this));
-	LevelManager::onLevelUnload.push_back(onLevelUnload);
+	LevelManager::onLevelUnload.push_back(bind(&SoundMain::onLevelUnload, this, placeholders::_1));
 	LevelManager::onLevelLoad.push_back(bind(&SoundMain::onLevelLoad, this, placeholders::_1));
 	LKernel::getG<Pauser>()->pauseEvent.push_back(bind(&SoundMain::pauseEvent,this,placeholders::_1));
 
@@ -119,4 +119,29 @@ void SoundMain::onLevelLoad(LevelChangedEventArgs* eventArgs)
 				fileList[getFilename(file)] = file;
 		}
 	}
+}
+
+void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
+{
+	// Get the adress of the function we registered to the event
+	typedef void(*fPtrType)(void*);
+	auto fPtr = function<void(void*)>(bind(&SoundMain::everyTenth, this, placeholders::_1)).target<fPtrType>();
+
+	// Remove all functions of the event matching this address. Hopefully exactly one.
+	bool found = false; // TODO: This is experimental. It may not work, if it does, remove the bool and the throw.
+	for (auto it = begin(onEveryUnpausedTenthOfASecondEvent); it != end(onEveryUnpausedTenthOfASecondEvent); it++)
+		if ((*it).target<fPtrType>() == fPtr)
+		{
+			onEveryUnpausedTenthOfASecondEvent.erase(it);
+			found = true;
+			break;
+		}	
+	if (!found)
+		throw string("SoundMain::onLevelUnload: Couldn't unregister from event onEveryUnpausedTenthOfASecondEvent");
+
+	engine->removeAllSoundSources();
+	engine->setListenerPosition(vec3df(0, 0, 0), vec3df(0, 0, -1));
+	musics.clear();
+	sounds.clear();
+	components.clear();
 }
