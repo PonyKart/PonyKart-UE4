@@ -17,16 +17,25 @@
 
 namespace Extensions
 {
+	std::string __cdecl getFilename(const std::string& path)
+	{
+		std::string result;
+		auto pos = path.rfind('/');
+		if (pos != std::string::npos)	result = std::string(path, pos+1);
+		pos = result.rfind('\\');
+		if (pos != std::string::npos)	result = std::string(result, pos+1);
+		return result;
+	}
 
 	std::string __cdecl getFilenameWithoutExtension(const std::string& path) // TODO: Check if this is correct (getFilenameWithoutExtension)
 	{
 		std::string result;
 		auto pos = path.rfind('/');
-		if (pos != std::string::npos)	result = std::string(path, pos);
+		if (pos != std::string::npos)	result = std::string(path, pos+1);
 		pos = result.rfind('\\');
-		if (pos != std::string::npos)	result = std::string(result, pos);
+		if (pos != std::string::npos)	result = std::string(result, pos+1);
 		pos = result.rfind('.');
-		if (pos != std::string::npos)	result = std::string(result, 0, pos-1);
+		if (pos != std::string::npos)	result = std::string(result, 0, pos);
 		return result;
 	}
 

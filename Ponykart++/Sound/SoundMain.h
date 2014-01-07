@@ -34,7 +34,7 @@ public:
 private:
 	void pauseEvent(Core::PausingState state);
 	void onPostPlayerCreation(); // Manually called from the LevelManager
-	static void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // prepares file locations
+	void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // prepares file locations
 	static void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Delete all of the sound sources
 	void everyTenth(void* o);
 private:

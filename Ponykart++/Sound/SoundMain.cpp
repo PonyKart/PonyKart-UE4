@@ -5,6 +5,7 @@
 #include "Core/Cameras/CameraManager.h"
 #include "Core/Options.h"
 #include "Core/Pauser.h"
+#include "Misc/direntSearch.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
@@ -14,6 +15,7 @@
 using namespace std;
 using namespace irrklang;
 using namespace Ogre;
+using namespace Extensions;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Levels;
@@ -33,7 +35,7 @@ SoundMain::SoundMain()
 
 	playerManager->onPostPlayerCreation.push_back(bind(&SoundMain::onPostPlayerCreation,this));
 	LevelManager::onLevelUnload.push_back(onLevelUnload);
-	LevelManager::onLevelLoad.push_back(onLevelLoad);
+	LevelManager::onLevelLoad.push_back(bind(&SoundMain::onLevelLoad, this, placeholders::_1));
 	LKernel::getG<Pauser>()->pauseEvent.push_back(bind(&SoundMain::pauseEvent,this,placeholders::_1));
 
 	E_SOUND_ENGINE_OPTIONS flags = (E_SOUND_ENGINE_OPTIONS) (ESEO_DEFAULT_OPTIONS | ESEO_MUTE_IF_NOT_FOCUSED | ESEO_MULTI_THREADED);
@@ -94,4 +96,27 @@ void SoundMain::onPostPlayerCreation()
 {
 	if (LKernel::getG<LevelManager>()->isPlayableLevel())
 		LKernel::onEveryUnpausedTenthOfASecondEvent.push_back(bind(&SoundMain::everyTenth,this,placeholders::_1));
+}
+
+void SoundMain::onLevelLoad(LevelChangedEventArgs* eventArgs)
+{
+	auto& rgMan = ResourceGroupManager::getSingleton();
+	for (string group : rgMan.getResourceGroups())
+	{
+		if (!rgMan.isResourceGroupInitialised(group) || group == "Bootstrap")
+			continue;
+
+		auto resourceLocations = *(rgMan.listResourceLocations(group));
+		for (string loc : resourceLocations)
+		{
+			std::vector<string> soundfiles = direntSearch(loc, "*.ogg");
+			std::vector<string> tmpVec = direntSearch(loc, "*.mp3");
+			std::vector<string> tmpVec2 = direntSearch(loc, "*.wav");
+			soundfiles.insert(end(soundfiles), begin(tmpVec), end(tmpVec));
+			soundfiles.insert(end(soundfiles), begin(tmpVec2), end(tmpVec2));
+
+			for (string file : soundfiles)
+				fileList[getFilename(file)] = file;
+		}
+	}
 }
