@@ -103,10 +103,16 @@
 		<Unit filename="Actors/StaticGeometryManager.cpp" />
 		<Unit filename="Actors/StaticGeometryManager.h" />
 		<Unit filename="Actors/TwiCutlass.h" />
+		<Unit filename="Actors/Wheels/DriftState.h" />
 		<Unit filename="Actors/Wheels/Wheel.cpp" />
 		<Unit filename="Actors/Wheels/Wheel.h" />
 		<Unit filename="Actors/Wheels/WheelFactory.cpp" />
 		<Unit filename="Actors/Wheels/WheelFactory.h" />
+		<Unit filename="Actors/Wheels/WheelID.h" />
+		<Unit filename="BMP/EasyBMP.cpp" />
+		<Unit filename="BMP/EasyBMP.h" />
+		<Unit filename="BMP/EasyBMP_BMP.h" />
+		<Unit filename="BMP/EasyBMP_DataStructures.h" />
 		<Unit filename="Core/Animation/AnimationBlender.cpp" />
 		<Unit filename="Core/Animation/AnimationBlender.h" />
 		<Unit filename="Core/Animation/AnimationManager.cpp" />
@@ -135,8 +141,8 @@
 		<Unit filename="Core/main.cpp" />
 		<Unit filename="Kernel/LKernel.cpp" />
 		<Unit filename="Kernel/LKernel.h" />
-		<Unit filename="Kernel/LKernelOgreInit.cpp" />
-		<Unit filename="Kernel/LKernelOgreInit.h" />
+		<Unit filename="Kernel/LKernelOgre.cpp" />
+		<Unit filename="Kernel/LKernelOgre.h" />
 		<Unit filename="Kernel/LKernelRegistration.cpp" />
 		<Unit filename="Levels/Level.cpp" />
 		<Unit filename="Levels/Level.h" />
