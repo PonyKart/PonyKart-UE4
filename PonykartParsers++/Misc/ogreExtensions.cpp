@@ -23,14 +23,14 @@ namespace Extensions
 
 	Vector3 degreeVectorToRadianVector(const Ogre::Vector3& vec)
 	{
-		const double twopi = 6.28318530717958647692; ///< 2*PI (double precision)
-		return Vector3((float)vec.x*twopi/360.0, (float)vec.y*twopi/360.0, (float)vec.z*twopi/360.0);
+		static const Real twopi = 6.28318530717958647692f; ///< 2*PI
+		return Vector3((float)vec.x*twopi/360.f, (float)vec.y*twopi/360.f, (float)vec.z*twopi/360.f);
 	}
 
 	Vector3 radianVectorToDegreeVector(const Ogre::Vector3& vec)
 	{
-		const double twopi = 6.28318530717958647692; ///< 2*PI (double precision)
-		return Vector3((float)vec.x*360.0/twopi, (float)vec.y*360.0/twopi, (float)vec.z*360.0/twopi);
+		static const Real twopi = 6.28318530717958647692f; ///< 2*PI
+		return Vector3((float)vec.x*360.f/twopi, (float)vec.y*360.f/twopi, (float)vec.z*360.f/twopi);
 	}
 
 	Quaternion degreeVectorToGlobalQuaternion(const Vector3& vec)
