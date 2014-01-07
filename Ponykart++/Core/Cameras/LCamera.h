@@ -2,7 +2,13 @@
 #define LCAMERA_H_INCLUDED
 
 #include <string>
-#include <Ogre.h>
+#include <OgreCamera.h>
+#include <OgreSceneNode.h>
+
+namespace Ogre
+{
+	struct FrameEvent;
+}
 
 namespace Ponykart
 {
@@ -14,9 +20,12 @@ class LCamera
 public:
 	LCamera(const std::string& Name);
 	// Getters
-	const Ogre::Camera* const getCamera();
-	const Ogre::SceneNode* const getCameraNode();
-	std::string getName();
+	const Ogre::Camera* const getCamera() const;
+	const Ogre::SceneNode* const getCameraNode() const;
+	std::string getName() const;
+
+protected:
+	virtual bool updateCamera(Ogre::FrameEvent* evt);
 
 protected:
 	Ogre::Camera* camera; ///< The Ogre camera we're manipulating

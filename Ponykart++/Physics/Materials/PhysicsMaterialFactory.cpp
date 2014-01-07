@@ -40,11 +40,11 @@ void PhysicsMaterialFactory::readMaterialsFromFiles()
 			ssAD << PhysicsMaterial::DEFAULT_ANGULAR_DAMPING;
 			ssLD << PhysicsMaterial::DEFAULT_LINEAR_DAMPING;
 
-			PhysicsMaterial *mat = new PhysicsMaterial (
-				atof(cfile.getSetting("Friction", matname, ssF.str()).c_str()),
-				atof(cfile.getSetting("Bounciness", matname, ssB.str()).c_str()),
-				atof(cfile.getSetting("AngularDamping", matname, ssAD.str()).c_str()),
-				atof(cfile.getSetting("LinearDamping", matname, ssLD.str()).c_str())
+			PhysicsMaterial *mat = new PhysicsMaterial(
+				(float)atof(cfile.getSetting("Friction", matname, ssF.str()).c_str()),
+				(float)atof(cfile.getSetting("Bounciness", matname, ssB.str()).c_str()),
+				(float)atof(cfile.getSetting("AngularDamping", matname, ssAD.str()).c_str()),
+				(float)atof(cfile.getSetting("LinearDamping", matname, ssLD.str()).c_str())
 			);
 
 			materials[matname] = mat;

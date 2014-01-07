@@ -86,3 +86,8 @@ void Player::detach()
 	kart = nullptr;
 	driver = nullptr;
 }
+
+const btRigidBody* const Player::getBody() const
+{
+	return kart->getBody();
+}

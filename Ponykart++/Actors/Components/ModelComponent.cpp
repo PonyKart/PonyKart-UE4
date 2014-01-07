@@ -57,7 +57,7 @@ ModelComponent::ModelComponent(LThing* lthing, ThingBlock* thingTemplate, ModelB
 		setupAnimation(block);
 
 		string boneName = block->getStringProperty("AttachBone");
-		int modelComponentID = block->getFloatProperty("AttachComponentID");
+		int modelComponentID = block->getFloatProperty("AttachComponentID"); // TODO: BUG:? Check float->int conversion
 		Quaternion offsetQuat = block->getQuatProperty("AttachOffsetOrientation", Quaternion::IDENTITY);
 		Vector3 offsetVec = block->getVectorProperty("AttachOffsetPosition", Vector3::ZERO);
 

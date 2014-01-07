@@ -147,6 +147,9 @@
     <ClCompile Include="Kernel\LKernelOgre.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Players\PlayerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actors\DashJavelin.h">
@@ -306,6 +309,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Kernel\LKernelOgre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Cameras\PlayerCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Cameras\KnightyCamera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

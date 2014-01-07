@@ -29,7 +29,7 @@ void WheelFactory::readWheelsFromFiles()
 			string wheelname = sectionIterator.peekNextKey();
 			unordered_map<string,float> wheeldict;
 			for (auto curPair : *(sectionIterator.getNext())) // go over every property in the file and add it to the dictionary, parsing it as a float
-				wheeldict.insert(pair<string,float>(curPair.first, atof(curPair.second.c_str())));
+				wheeldict.insert(pair<string,float>(curPair.first, (float)atof(curPair.second.c_str())));
 
 			wheels[wheelname] = wheeldict;
 		}

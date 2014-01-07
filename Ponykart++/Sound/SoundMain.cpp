@@ -3,12 +3,17 @@
 #include "irrKlang.h"
 #include "Actors/Components/SoundComponent.h"
 #include "Core/Cameras/CameraManager.h"
+#include "Core/Cameras/KnightyCamera.h"
+#include "Core/Cameras/PlayerCamera.h"
 #include "Core/Options.h"
 #include "Core/Pauser.h"
 #include "Misc/direntSearch.h"
+#include "Misc/ogreExtensions.h"
+#include "Misc/irrklangExtensions.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
+#include "Players/Player.h"
 #include "Players/PlayerManager.h"
 #include "Sound/SoundMain.h"
 
@@ -144,4 +149,43 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 	musics.clear();
 	sounds.clear();
 	components.clear();
+}
+
+void SoundMain::everyTenth(void* o)
+{
+	if (playerManager->getMainPlayer() == nullptr) 
+	{
+		engine->update();
+		return;
+	}
+	const LCamera* cam = cameraManager->getCurrentCamera();
+	const btRigidBody* body = playerManager->getMainPlayer()->getBody();
+
+	// Enjoy your RTTI
+	const PlayerCamera* PCam = dynamic_cast<const PlayerCamera*>(cam);
+	const KnightyCamera* KCam = dynamic_cast<const KnightyCamera*>(cam);
+	vec3df pos, rot, vel;
+	if (PCam || KCam) 
+	{
+		pos = toSoundVector(body->getCenterOfMassPosition());
+		rot = toSoundVector(toOgreQuaternion(body->getOrientation()).yAxis());
+		vel = toSoundVector(body->getLinearVelocity());
+	}
+	else 
+	{
+		const Quaternion& derivedOrientation = cam->getCamera()->getDerivedOrientation();
+		pos = toSoundVector(cam->getCamera()->getDerivedPosition());
+		rot = toSoundVector(derivedOrientation.yAxis());
+		vel = toSoundVector(body->getLinearVelocity());
+	}
+
+	engine->setListenerPosition(pos,rot,vel,vec3df(0, 1, 0)); // TODO: BUG:? Is everyone using the same axes ?
+
+	for (auto component : components) 
+	{
+		if (component->needUpdate)
+			component->update();
+	}
+
+	engine->update();
 }

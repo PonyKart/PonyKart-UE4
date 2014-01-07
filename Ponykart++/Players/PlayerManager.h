@@ -3,12 +3,12 @@
 
 #include <functional>
 #include <vector>
-#include "Players/Player.h"
 
 namespace Ponykart
 {
 namespace Players
 {
+class Player;
 
 using PlayerEvent = std::vector<std::function<void ()>>;
 

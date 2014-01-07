@@ -991,7 +991,7 @@ bool BMP::ReadFromFile( const char* FileName )
    // read the three bit masks
 
    ebmpWORD TempMaskWORD;
-   ebmpWORD ZeroWORD;
+//   ebmpWORD ZeroWORD;
   
    SafeFread( (char*) &RedMask , 2 , 1 , fp );
    if( IsBigEndian() )

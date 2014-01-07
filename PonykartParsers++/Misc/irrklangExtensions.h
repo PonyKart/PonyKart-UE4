@@ -13,10 +13,12 @@
 #include <irrKlang.h>
 
 namespace Ogre{class Vector3;}
+class btVector3;
 
 namespace Extensions
 {
 	DLLEXPORT irrklang::vec3df toSoundVector(const Ogre::Vector3& vec);
+	DLLEXPORT irrklang::vec3df toSoundVector(const btVector3& vec);
 } // Extensions
 
 #endif // EXTENSIONS_H_INCLUDED

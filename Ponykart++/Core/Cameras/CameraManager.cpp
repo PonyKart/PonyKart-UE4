@@ -8,3 +8,8 @@ CameraManager::CameraManager()
 	//LevelManager.OnLevelLoad += new LevelEvent(OnLevelLoad);
 	//LevelManager.OnLevelUnload += new LevelEvent(OnLevelUnload);
 }
+
+const LCamera* const CameraManager::getCurrentCamera()
+{
+	return currentCamera;
+}

@@ -56,6 +56,7 @@
     <ClCompile Include="Physics\MotionStates\OgreMotionState.cpp" />
     <ClCompile Include="Physics\PhysicsMain.cpp" />
     <ClCompile Include="Players\Player.cpp" />
+    <ClCompile Include="Players\PlayerManager.cpp" />
     <ClCompile Include="Sound\SoundMain.cpp" />
     <ClCompile Include="UI\LuaConsoleManager.cpp" />
     <ClCompile Include="UI\Splash.cpp" />
@@ -81,7 +82,9 @@
     <ClInclude Include="Core\Animation\AnimationBlender.h" />
     <ClInclude Include="Core\Animation\AnimationManager.h" />
     <ClInclude Include="Core\Cameras\CameraManager.h" />
+    <ClInclude Include="Core\Cameras\KnightyCamera.h" />
     <ClInclude Include="Core\Cameras\LCamera.h" />
+    <ClInclude Include="Core\Cameras\PlayerCamera.h" />
     <ClInclude Include="Core\ControllerManager.h" />
     <ClInclude Include="Core\IDs.h" />
     <ClInclude Include="Core\InputMain.h" />
@@ -156,22 +159,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)obj\</IntDir>
+    <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\</IntDir>
     <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Program Files (x86)\Lua\5.1\include;C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;C:\Program Files %28x86%29\OGRE-VS12\include\OIS;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\Program Files %28x86%29\OGRE-VS12\lib\release;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\lib;C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)obj\</IntDir>
+    <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\</IntDir>
     <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Program Files (x86)\Lua\5.1\include;C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;C:\Program Files %28x86%29\OGRE-VS12\include\OIS;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\Program Files %28x86%29\OGRE-VS12\lib\release;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\lib;C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)obj\</IntDir>
+    <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\</IntDir>
     <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Program Files (x86)\Lua\5.1\include;C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;C:\Program Files %28x86%29\OGRE-VS12\include\OIS;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\Program Files %28x86%29\OGRE-VS12\lib\release;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\lib;C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>

@@ -6,6 +6,7 @@
 #include "Actors/Kart.h"
 #include "Levels/LevelChangedEventArgs.h"
 
+
 namespace Ponykart
 {
 namespace Players
@@ -17,8 +18,9 @@ public:
 	Player(Levels::LevelChangedEventArgs eventArgs, int Id, bool IsComputerControlled);
 	virtual void detach();
 	// Getters
-	const Actors::Kart* const getKart();
-	const Actors::Driver* const getDriver();
+	const Actors::Kart* const getKart() const;
+	const Actors::Driver* const getDriver() const;
+	const btRigidBody* const getBody() const; ///< Gets the kart's Body
 	int getId();
 	const std::string& getCharacter();
 	bool getIsComputerControlled();

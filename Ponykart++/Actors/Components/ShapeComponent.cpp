@@ -84,5 +84,5 @@ int ShapeComponent::getWidth() const
 
 int ShapeComponent::getLength() const
 {
-    return height;
+    return height; // TODO: BUG:? Check float->int conversion
 }

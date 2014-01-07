@@ -67,7 +67,7 @@ void AnimationBlender::blend(const string& animation, AnimationBlendingTransitio
 				}
 				mTarget = newTarget;
 				mTarget->setEnabled(true);
-				mTarget->setWeight(1.0 - mTimeleft / mDuration);
+				mTarget->setWeight((float)1.0f - mTimeleft / mDuration);
 				mTarget->setTimePosition(0);
 				mTarget->setLoop(looping);
 				mComplete = false;
@@ -113,7 +113,7 @@ void AnimationBlender::addTime(float time)
 				{
 					// still blending, advance weights
 					mSource->setWeight(mTimeleft / mDuration);
-					mTarget->setWeight(1.0 - mTimeleft / mDuration);
+					mTarget->setWeight((float)1.0f - mTimeleft / mDuration);
 
 					if (mTransition == AnimationBlendingTransition::BlendWhileAnimating)
 						mTarget->addTime(time);

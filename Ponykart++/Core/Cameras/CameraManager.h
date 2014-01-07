@@ -20,7 +20,7 @@ public:
 	std::vector<LCamera*> cameras;
 
 private:
-	LCamera* CurrentCamera;
+	LCamera* currentCamera;
 };
 } // Core
 } // Ponykart
