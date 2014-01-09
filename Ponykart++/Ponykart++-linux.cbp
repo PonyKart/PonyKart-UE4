@@ -55,8 +55,8 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-Wall" />
 			<Add option="-std=c++11" />
+			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add directory="." />
 			<Add directory="../PonykartParsers++/" />
@@ -64,8 +64,6 @@
 			<Add directory="/usr/include/OIS" />
 			<Add directory="/usr/include/bullet" />
 			<Add directory="/usr/local/include/irrKlang" />
-			<Add directory="/usr/local/lib" />
-			<Add directory="/usr/local/lib/irrKlang" />
 			<Add directory="/usr/include/lua5.1" />
 		</Compiler>
 		<Linker>
@@ -80,6 +78,7 @@
 			<Add library="lua5.1" />
 			<Add directory="../PonykartParsers++/bin/" />
 			<Add directory="/usr/lib/i386-linux-gnu/OGRE-1.8.0" />
+			<Add directory="/usr/local/lib/irrKlang" />
 		</Linker>
 		<Unit filename="Actors/Components/BillboardSetComponent.cpp" />
 		<Unit filename="Actors/Components/BillboardSetComponent.h" />
@@ -93,6 +92,7 @@
 		<Unit filename="Actors/Components/SoundComponent.h" />
 		<Unit filename="Actors/DashJavelin.cpp" />
 		<Unit filename="Actors/DashJavelin.h" />
+		<Unit filename="Actors/Driver.cpp" />
 		<Unit filename="Actors/Driver.h" />
 		<Unit filename="Actors/InstancedGeometryManager.cpp" />
 		<Unit filename="Actors/InstancedGeometryManager.h" />
@@ -119,8 +119,10 @@
 		<Unit filename="Core/Animation/AnimationManager.h" />
 		<Unit filename="Core/Cameras/CameraManager.cpp" />
 		<Unit filename="Core/Cameras/CameraManager.h" />
+		<Unit filename="Core/Cameras/KnightyCamera.h" />
 		<Unit filename="Core/Cameras/LCamera.cpp" />
 		<Unit filename="Core/Cameras/LCamera.h" />
+		<Unit filename="Core/Cameras/PlayerCamera.h" />
 		<Unit filename="Core/ControllerManager.h" />
 		<Unit filename="Core/IDs.cpp" />
 		<Unit filename="Core/IDs.h" />
@@ -139,6 +141,7 @@
 		<Unit filename="Core/Spawner.cpp" />
 		<Unit filename="Core/Spawner.h" />
 		<Unit filename="Core/main.cpp" />
+		<Unit filename="Core/main.h" />
 		<Unit filename="Kernel/LKernel.cpp" />
 		<Unit filename="Kernel/LKernel.h" />
 		<Unit filename="Kernel/LKernelOgre.cpp" />
@@ -171,6 +174,7 @@
 		<Unit filename="Physics/PhysicsMain.h" />
 		<Unit filename="Players/Player.cpp" />
 		<Unit filename="Players/Player.h" />
+		<Unit filename="Players/PlayerManager.cpp" />
 		<Unit filename="Players/PlayerManager.h" />
 		<Unit filename="Sound/SoundMain.cpp" />
 		<Unit filename="Sound/SoundMain.h" />

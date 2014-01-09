@@ -78,6 +78,7 @@
 		<Unit filename="Thing/ThingImporter.h" />
 		<Unit filename="Thing/ThingParser.cpp" />
 		<Unit filename="Thing/ThingParser.h" />
+		<Unit filename="WindowsCompat/dirent.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

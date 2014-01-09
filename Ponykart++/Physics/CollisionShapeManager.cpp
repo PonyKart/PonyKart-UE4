@@ -32,7 +32,7 @@ CollisionShapeManager::CollisionShapeManager()
 /// Gets a bullet file's full path
 /// @param filename The filename, without any path or extension
 /// @return The bullet file's full path if it was found, or an empty string if it wasn't
-string CollisionShapeManager::getBulletFile(const string& filename) 
+string CollisionShapeManager::getBulletFile(const string& filename)
 {
 	string result;
 	auto it = bulletFiles.find(getFilenameWithoutExtension(filename));
@@ -106,6 +106,8 @@ btCollisionShape* CollisionShapeManager::createAndRegisterShape(LThing* thing, T
 		// then put the shape in our dictionary
 		shapes.insert(pair<string, btCollisionShape*>(thing->getName(), shape));
 	}
+	else
+        shape = shapeIt->second;
 	return shape;
 }
 
