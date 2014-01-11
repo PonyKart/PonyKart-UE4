@@ -40,6 +40,11 @@ public:
 	const Wheel* const getWheelBR() const;
 	const btRaycastVehicle* const getVehicle() const;
 	btRaycastVehicle* getVehicle();
+	float getVehicleSpeed() const;
+	bool isCompletelyDrifting() const; ///< Returns true if we're completely drifting - not starting, not stopping, but in between.
+	bool isStartingDrifting() const; ///< Returns true if we're starting to drift
+	bool isStoppingDrifting() const; ///< Returns true if we're stopping drifting
+	bool isDriftingAtAll() const; ///< Returns true if we're drifting at all - starting, stopping, or in between.
 	const btRaycastVehicle::btVehicleTuning* const getTuning() const;
 	Ogre::Quaternion getActualOrientation() const;
 	const Ogre::SceneNode* const getLeftParticleNode() const;

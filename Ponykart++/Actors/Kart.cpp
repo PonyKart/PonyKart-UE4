@@ -66,3 +66,8 @@ Ogre::Quaternion Kart::getActualOrientation() const
 {
 	return toOgreQuaternion(kartMotionState->actualOrientation);
 }
+
+float Kart::getVehicleSpeed() const
+{
+	return _vehicle->getCurrentSpeedKmHour();
+}

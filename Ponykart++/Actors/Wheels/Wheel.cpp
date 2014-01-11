@@ -1,8 +1,10 @@
 #include <BulletDynamics/Vehicle/btRaycastVehicle.h>
 #include "Actors/Kart.h"
 #include "Actors/Wheels/Wheel.h"
+#include "Core/Pauser.h"
 #include "Kernel/LKernel.h"
 #include "Misc/bulletExtensions.h"
+#include "Misc/ogreExtensions.h"
 #include "Physics/PhysicsMain.h"
 
 using namespace std;
@@ -10,6 +12,7 @@ using namespace std::placeholders;
 using namespace Ogre;
 using namespace Extensions;
 using namespace Ponykart::Actors;
+using namespace Ponykart::Core;
 using namespace Ponykart::LKernel;
 using namespace Ponykart::Physics;
 
@@ -70,4 +73,41 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 
 	// and then hook up to the event
 	PhysicsMain::postSimulate.push_back(bind(&Wheel::postSimulate,this,_1,_2));
+}
+
+void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
+{
+	if (!Pauser::isPaused) 
+	{
+		btWheelInfo info = kart->getVehicle()->getWheelInfo(intWheelID);
+		float currentSpeed = vehicle->getCurrentSpeedKmHour();
+
+		if (kart->getBody()->isActive() && (kart->getVehicleSpeed() > 1.f || kart->getVehicleSpeed() < -1.f)) 
+		{
+			// don't change the kart's orientation when we're drifting
+			if (kart->isDriftingAtAll())
+				node->setOrientation(kart->getActualOrientation());
+			else
+				node->setOrientation(toOgreQuaternion(info.m_worldTransform.getRotation()));
+		}
+		else 
+		{
+			// TODO: fix it so wheels aren't spinning when we're stopped, but they can still move left and right
+			node->setOrientation(toOgreQuaternion(info.m_worldTransform.getRotation()));
+		}
+
+		// the wheel sorta "comes off" when it's moving quickly in the air, so we only need to update the z translation then
+		if (!kart->isInAir) 
+		{
+			Vector3 trans = toOgreVector3(info.m_worldTransform.getOrigin());
+			node->setPosition(axlePoint.x, kart->getRootNode()->convertWorldToLocalPosition(trans).y, axlePoint.z);
+		}
+		else
+			node->setPosition(axlePoint);
+
+		changeFriction(&info, currentSpeed);
+		accelerate(currentSpeed);
+		brake(currentSpeed);
+		turn(evt->timeSinceLastFrame, currentSpeed);
+	}
 }

@@ -9,6 +9,7 @@
 
 class btDiscreteDynamicsWorld;
 class btRaycastVehicle;
+struct btWheelInfo;
 namespace Ponykart
 {
 namespace Actors
@@ -37,7 +38,7 @@ public:
 	const Ogre::SceneNode* const getNode();
 	const Ogre::Entity* const getEntity();
 protected:
-	//void ChangeFriction(WheelInfo info, float currentSpeed); ///< Changes wheel friction depending on our current speed
+	void changeFriction(btWheelInfo* info, float currentSpeed); ///< Changes wheel friction depending on our current speed
 	void accelerate(float currentSpeed); ///< Apply some torque to the engine.
 	void brake(float currentSpeed); ///< Apply some brake torque.
 	void calculateTurnMultipliers(const float currentSpeed, float& turnAngleMultiplier, float& turnSpeedMultiplier); ///< Calculates the turning multipliers, based on our current speed and drift state.
