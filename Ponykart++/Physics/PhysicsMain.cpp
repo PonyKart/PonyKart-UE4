@@ -12,7 +12,7 @@ using namespace Ponykart::Levels;
 bool PhysicsMain::drawLines = false;
 bool PhysicsMain::slowMo = false;
 const int PhysicsMain::_maxSubsteps = 60; //45;
-const float PhysicsMain::_fixedTimestep = 1.0 / 60.0; //1.0/45.0;
+const float PhysicsMain::_fixedTimestep = 1.0f / 60.0f; //1.0/45.0;
 PhysicsWorldEvent PhysicsMain::postCreateWorld;
 PhysicsSimulateEvent PhysicsMain::preSimulate;
 PhysicsSimulateEvent PhysicsMain::postSimulate;
