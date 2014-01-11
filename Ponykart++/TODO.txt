@@ -3,51 +3,34 @@
 - Convert the CurrentNamingScheme to a newNamingSceme with lowercase first letter for objects/functions/variables
 - Find how to remove errors with vertex_program_ref and fragment_program_ref in the .materials files
 - Make constructors explicit everywhere not doing so wouldn't make sense
-- Make a simple/small documentation for the code. Or just add comments at the start of some files.
-- 'if "Twh = Yes" in the options, derpy will not follow you'. Change Twh to something more meaningful
+- Fix the doc to be Doxygen in all the files. Add some when necessary
+- 'if "Twh = Yes" in the options, derpy will not follow you'. Change Twh to something more meaningful ?
 - Changelog says thas shaders are useless, and only there because knighty wanted them. Are shaders useless ?
-- Getters for set-protected or set-private members should return const references or const pointers instead of copies, and be inline
-- See if it's possible to switch to CMkake instead of Codeblocks. This way we can have real threaded C++11 with GCC under loonix and MSVC 13 under win
-- Add some Doxygen. Start by conerting the inline // in headers to ///<
 - There's a MLP Racing folder in the MLPMA.
 - "onEveryUnpausedTenthOfASecondEvent". Seriously? This has to be a joke. Formatting nightmare.
+- Write proper build instructions for Windows and Linux.
+=> Under Windows have all the dependencies's folders directly in C: (C:\Ogre, C:\Bullet, ...)
 
 # Correctness
 - Might want to check those float -> int conversions. Rounding is probably a good idea (instead of truncating), because floating point imprecisions.
 
 # Ogre
 - Maybe we could switch to 1.9/1.10, overlays are just moved to a subsystem that you can initialize in two lines. Check the porting notes.
-- Ogre 1.9 would probably compile with MSVC 2013
-
-# OgreBullet/Bullet
-- Check alexeyknyshev's repo. Implement them yourself if he doesn't
-- OgreBullet is too outdated and too many classes are missing. We should just use bullet directly.
 
 # Optimisations
-- Remove D3D9 from the active plugins once you're done testing with it
-- Make functions take const args and references, and make variables constexpr whenever it makes sense
+- Remember to remove D3D9 from the active plugins once you're done testing with it
+- Fix the const-correctness when possible, and pass by ref when it makes sense
 - Zip some ressources when it makes sense (big-ish files with good ratio)
 - Delete all the files in ./media that we don't actually need.
 - Index the (unordered_)maps with enums instead of strings when possible.
-- In PhysicsMain::frameEnded, the physics is processed ~at fixed intervals, it's probably causing the physics jitter.
-- Replace some calls of LKernel::GetG by the pointer itself, when possible (E.g LKernel::GetG<Ogre::Root> becomes LKernel::root)
-- Only #include when necessary. Replace some #includes by forward declarations and pointers whenever possible. Don't #include in headers whenever possible.
-- Use extern templates when possible.
-- Try to use precompiled headers if possible
-- Use proper symbol visibility
-- "#ifdef MSVC #define constexpr static const" and then use constexp normally. Except it's not MSVC but some other define.
+- In PhysicsMain::frameEnded, the physics is processed at fixed intervals (?), it's probably causing the physics jitter.
+- Replace some calls of LKernel::getG by the pointer itself, when possible (E.g LKernel::getG<Ogre::Root> -> LKernel::gRoot)
+- Only #include when necessary. Replace some #includes by forward declarations and pointers whenever possible.
+- Try to use precompiled headers if possible. It would be usefull for our dependencies.
 - Use emplace_back instead of push_back when adding temporaries. "No code is faster than some code."
-- LKernel::log should really be in a smaller header. Maybe rename LKernelOgreInit (who includes nothing) into LKernelOgre
 
 # Compilation
-- Find a decent C++11 compiler that supports <thread> on windows and can compile Ogre.
--- Mingw has no <thread> support on windows.
--- Doesn't work with Mingw-w64
--- Doesn't work with Mingw-builds
--- Doesn't work with VS2013, and all the previous Visual compilers can't into C++11.
---- We'll just have to keep using Mingw, but either without threads or linking with a third-part lib on Windows
----- Actually we don't need threads. We can just call messagePump to process events on a timer, and only renderOneFrame when Increment is called
 - Find a way to build Bullet. Maybe another mingw/visual with static link, or changing the flags
--- MinGW 4.8.1 with CMake 2.8, WITHOUT the -O3/-DNDEBUG/-g  flags seems to work.
---- Building with -O1 -DNDEBUG works too.
-- At some point make a big .rar and ship the source, all the precompiled dependencies, MinGW, and a project file configured to use those.
+-- MinGW 4.8.1 with CMake 2.8, with -O1 -DNDEBUG works.
+-- Visual works, with full optimisations.
+- CMake.

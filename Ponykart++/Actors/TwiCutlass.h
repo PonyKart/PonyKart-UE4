@@ -19,10 +19,11 @@ namespace Sound
 
 namespace Actors
 {
-	class TwiCutlass : public Kart
+	class TwiCutlass : public Kart, public Ogre::FrameListener
 	{
 	public:
 		TwiCutlass(PonykartParsers::ThingBlock* block, PonykartParsers::ThingDefinition* def);
+		bool frameStarted(const Ogre::FrameEvent& evt) override; ///< Change the width of the jet engine based on our current speed
 		// Getters
 
 	private:

@@ -1,11 +1,13 @@
 #ifndef KART_H_INCLUDED
 #define KART_H_INCLUDED
 
-#include <Ogre.h>
+#include <BulletDynamics/Vehicle/btRaycastVehicle.h>
 #include <OgreFrameListener.h>
 #include "Actors/LThing.h"
 #include "Actors/Wheels/Wheel.h"
 
+
+class btRaycastVehicle;
 namespace PonykartParsers
 {
 	class ThingBlock;
@@ -14,6 +16,7 @@ namespace PonykartParsers
 
 namespace Ponykart
 {
+namespace Physics{ class KartMotionState; }
 namespace Players{ class Player; }
 namespace Actors
 {
@@ -35,6 +38,10 @@ public:
 	const Wheel* const getWheelFR() const;
 	const Wheel* const getWheelBL() const;
 	const Wheel* const getWheelBR() const;
+	const btRaycastVehicle* const getVehicle() const;
+	btRaycastVehicle* getVehicle();
+	const btRaycastVehicle::btVehicleTuning* const getTuning() const;
+	Ogre::Quaternion getActualOrientation() const;
 	const Ogre::SceneNode* const getLeftParticleNode() const;
 	const Ogre::SceneNode* const getRightParticleNode() const;
 	// Setters
@@ -52,12 +59,15 @@ public:
 	KartDriftState driftState;
 	Driver* driver;
 	Players::Player* player;
+	Physics::KartMotionState* kartMotionState;
 	// our wheelshapes
 protected:
 	Wheel* wheelFL;
 	Wheel* wheelFR;
 	Wheel* wheelBL;
 	Wheel* wheelBR;
+	btRaycastVehicle* _vehicle;
+	btRaycastVehicle::btVehicleTuning* tuning;
 private:
 	float maxSpeed;
 	float maxSpeedSquared;

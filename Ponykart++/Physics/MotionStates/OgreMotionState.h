@@ -16,8 +16,8 @@ namespace Physics
 	{
 	public:
 		OgreMotionState(btTransform& btTransform, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); 
+		OgreMotionState(const btVector3& position, const btQuaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing = nullptr);
 		OgreMotionState(Ogre::Vector3& position, Ogre::Quaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); 
-		OgreMotionState(btVector3& position, btQuaternion& orientation, Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr); 
 		OgreMotionState(Ogre::SceneNode* sceneNode, Actors::LThing* thing=nullptr);
 		void getWorldTransform(btTransform& worldTrans) const override;
 		void setWorldTransform(const btTransform& worldTrans) override; ///< Bullet only calls the update of worldtransform for active objects

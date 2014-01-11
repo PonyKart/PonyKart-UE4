@@ -2,12 +2,12 @@
 #define LCAMERA_H_INCLUDED
 
 #include <string>
-#include <OgreCamera.h>
-#include <OgreSceneNode.h>
 
 namespace Ogre
 {
 	struct FrameEvent;
+	class Camera;
+	class SceneNode;
 }
 
 namespace Ponykart

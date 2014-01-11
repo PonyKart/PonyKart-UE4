@@ -55,8 +55,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir);C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\OGRE-VS12\lib\release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);C:\OGRE\include\OGRE;C:\BULLET_PHYSICS\include\bullet;C:\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OGRE\lib\debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
   </PropertyGroup>
@@ -64,16 +64,16 @@
     <LinkIncremental>false</LinkIncremental>
     <TargetName>Muffin</TargetName>
     <IntDir>$(ProjectDir)obj\</IntDir>
-    <IncludePath>$(ProjectDir);C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\OGRE-VS12\lib\release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);C:\OGRE\include\OGRE;C:\BULLET_PHYSICS\include\bullet;C:\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OGRE\lib\release;$(LibraryPath)</LibraryPath>
     <OutDir>$(ProjectDir)bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <TargetName>Muffin</TargetName>
     <IntDir>$(ProjectDir)obj\</IntDir>
-    <IncludePath>$(ProjectDir);C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\OGRE-VS12\lib\release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);C:\OGRE\include\OGRE;C:\BULLET_PHYSICS\include\bullet;C:\irrKlang-1.4.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OGRE\lib\release;$(LibraryPath)</LibraryPath>
     <OutDir>$(ProjectDir)bin\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

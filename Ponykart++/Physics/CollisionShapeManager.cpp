@@ -5,13 +5,16 @@
 #include <BulletCollision/CollisionShapes/btCylinderShape.h>
 #include <BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h>
 #include <BulletCollision/CollisionShapes/btSphereShape.h>
+#include <BulletWorldImporter\btBulletWorldImporter.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/ShapeComponent.h"
 #include "BMP/EasyBMP.h"
-#include "Misc/direntSearch.h"
 #include "Levels/LevelManager.h"
+#include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Misc/direntSearch.h"
 #include "Misc/bulletExtensions.h"
+#include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Thing/ThingDefinition.h"
 
@@ -233,4 +236,29 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 	default:
 		throw string("ShapeComponent's Type was invalid!");
 	}
+}
+
+/**
+/// @param bulletfile Part of the filename. "media/physics/" + name + ".bullet"
+/// This only imports the first collision shape from the file. If it has multiple, they will be ignored.
+**/
+btCollisionShape* CollisionShapeManager::importCollisionShape(const std::string& bulletfile)
+{
+	btBulletWorldImporter importer((btDynamicsWorld*)LKernel::getG<PhysicsMain>()->getWorld());
+
+	auto filenameIt = bulletFiles.find(bulletfile);
+	if (filenameIt != end(bulletFiles))
+	{
+		// load that file
+		if (importer.loadFile(filenameIt->second.c_str())) 
+		{
+			LKernel::log("[PhysicsMain] Importing "+bulletfile+"...");
+			// these should only have one collision shape in them, so we'll just use that
+			return importer.getCollisionShapeByIndex(0);
+		}
+		else // if the file wasn't able to be loaded, throw an exception
+			throw string(bulletfile + " was unable to be imported");
+	}
+	else
+		throw string("That .bullet file was not found : " + bulletfile);
 }

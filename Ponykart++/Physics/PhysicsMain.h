@@ -1,6 +1,8 @@
 #ifndef PHYSICSMAIN_H_INCLUDED
 #define PHYSICSMAIN_H_INCLUDED
 
+#include <functional>
+#include <vector>
 #include <OgreFrameListener.h>
 #include "Levels/LevelChangedEventArgs.h"
 
@@ -10,6 +12,9 @@ namespace Ponykart
 {
 namespace Physics
 {
+	using PhysicsWorldEvent = std::vector<std::function<void (btDiscreteDynamicsWorld*)>>;
+	using PhysicsSimulateEvent = std::vector<std::function<void(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)>>;
+
 	class PhysicsMain
 	{
 	public:
@@ -30,7 +35,7 @@ namespace Physics
 		static const int _maxSubsteps;
 		static const float _fixedTimestep;
 		static FrameEndedListener* frameEnded;
-		// TODO: Implement the missing OgreBullet classes, or wait for an official implementation
+		// TODO: Use bullet directly
 		//BroadphaseInterface* broadphase;
 		//DefaultCollisionConfiguration* dcc;
 		//CollisionDispatcher* dispatcher;
@@ -40,6 +45,13 @@ namespace Physics
 	public:
 		static bool drawLines; // Should we draw debug lines or not?
 		static bool slowMo;
+
+		static PhysicsWorldEvent postCreateWorld; ///< Is invoked right after the physics world is created.
+		static PhysicsSimulateEvent preSimulate; ///< Is invoked right before the physics world is simulated.
+		static PhysicsSimulateEvent postSimulate; ///< Is invoked right after the physics world is simulated.
+		/// Is invoked just after PreSimulate but just before the physics world is simulated.
+		/// You should use this as a last "get everything ready" point before we simulate.
+		static PhysicsSimulateEvent finaliseBeforeSimulation;
 	};
 } // Physics
 } // Ponykart

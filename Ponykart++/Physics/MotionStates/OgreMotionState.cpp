@@ -24,7 +24,7 @@ OgreMotionState::OgreMotionState(Vector3& position, Quaternion& orientation, Sce
 }
 
 /// @param thing The connected lthing, used for updating sounds. You can pass null to skip updating sounds.
-OgreMotionState::OgreMotionState(btVector3& position, btQuaternion& orientation, SceneNode* sceneNode, LThing* thing)
+OgreMotionState::OgreMotionState(const btVector3& position, const btQuaternion& orientation, SceneNode* sceneNode, LThing* thing)
  : transform(orientation, position), node(sceneNode), owner(thing)
 {
 }

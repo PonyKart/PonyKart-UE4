@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
-#include <Ogre.h>
+#include <OgreFrameListener.h>
 
 namespace Ogre
 {

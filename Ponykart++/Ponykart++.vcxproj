@@ -26,6 +26,7 @@
     <ClCompile Include="Actors\Kart.cpp" />
     <ClCompile Include="Actors\LThing.cpp" />
     <ClCompile Include="Actors\StaticGeometryManager.cpp" />
+    <ClCompile Include="Actors\TwiCutlass.cpp" />
     <ClCompile Include="Actors\Wheels\Wheel.cpp" />
     <ClCompile Include="Actors\Wheels\WheelFactory.cpp" />
     <ClCompile Include="BMP\EasyBMP.cpp" />
@@ -53,10 +54,12 @@
     <ClCompile Include="Physics\CollisionShapeManager.cpp" />
     <ClCompile Include="Physics\Materials\PhysicsMaterial.cpp" />
     <ClCompile Include="Physics\Materials\PhysicsMaterialFactory.cpp" />
+    <ClCompile Include="Physics\MotionStates\KartMotionState.cpp" />
     <ClCompile Include="Physics\MotionStates\OgreMotionState.cpp" />
     <ClCompile Include="Physics\PhysicsMain.cpp" />
     <ClCompile Include="Players\Player.cpp" />
     <ClCompile Include="Players\PlayerManager.cpp" />
+    <ClCompile Include="Sound\SoundCrossfader.cpp" />
     <ClCompile Include="Sound\SoundMain.cpp" />
     <ClCompile Include="UI\LuaConsoleManager.cpp" />
     <ClCompile Include="UI\Splash.cpp" />
@@ -110,10 +113,12 @@
     <ClInclude Include="Physics\CollisionShapeManager.h" />
     <ClInclude Include="Physics\Materials\PhysicsMaterial.h" />
     <ClInclude Include="Physics\Materials\PhysicsMaterialFactory.h" />
+    <ClInclude Include="Physics\MotionStates\KartMotionState.h" />
     <ClInclude Include="Physics\MotionStates\OgreMotionState.h" />
     <ClInclude Include="Physics\PhysicsMain.h" />
     <ClInclude Include="Players\Player.h" />
     <ClInclude Include="Players\PlayerManager.h" />
+    <ClInclude Include="Sound\SoundCrossfader.h" />
     <ClInclude Include="Sound\SoundMain.h" />
     <ClInclude Include="UI\LuaConsoleManager.h" />
     <ClInclude Include="UI\Splash.h" />
@@ -161,22 +166,22 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
-    <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Program Files (x86)\Lua\5.1\include;C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;C:\Program Files %28x86%29\OGRE-VS12\include\OIS;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\Program Files %28x86%29\OGRE-VS12\lib\release;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\lib;C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Lua\5.1\include;C:\OGRE\include\OGRE;C:\OGRE\include\OIS;C:\irrKlang-1.4.0\include;C:\BULLET_PHYSICS\include\bullet;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
-    <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Program Files (x86)\Lua\5.1\include;C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;C:\Program Files %28x86%29\OGRE-VS12\include\OIS;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\Program Files %28x86%29\OGRE-VS12\lib\release;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\lib;C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Lua\5.1\include;C:\OGRE\include\OGRE;C:\OGRE\include\OIS;C:\irrKlang-1.4.0\include;C:\BULLET_PHYSICS\include\bullet;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
-    <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Program Files (x86)\Lua\5.1\include;C:\Program Files %28x86%29\OGRE-VS12\include\OGRE;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\include\bullet;C:\Users\Tux\Documents\Dev\Tools\irrKlang-1.4.0\include;C:\Program Files %28x86%29\OGRE-VS12\include\OIS;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\Program Files %28x86%29\OGRE-VS12\lib\release;C:\Program Files %28x86%29\BULLET_PHYSICS-VS12\lib;C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Lua\5.1\include;C:\OGRE\include\OGRE;C:\OGRE\include\OIS;C:\irrKlang-1.4.0\include;C:\BULLET_PHYSICS\include\bullet;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -190,7 +195,7 @@
     <Link>
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;lua5.1.lib;LinearMath.lib;irrKlang.lib</AdditionalDependencies>
+      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;BulletFileLoader.lib;BulletWorldImporter.lib;LinearMath.lib;irrKlang.lib;lua5.1.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -209,7 +214,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;lua5.1.lib;LinearMath.lib;irrKlang.lib</AdditionalDependencies>
+      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;BulletFileLoader.lib;BulletWorldImporter.lib;LinearMath.lib;irrKlang.lib;lua5.1.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|Win32'">
@@ -217,23 +222,24 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <Optimization>Disabled</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <MinimalRebuild>true</MinimalRebuild>
       <BufferSecurityCheck>false</BufferSecurityCheck>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <FloatingPointModel>Fast</FloatingPointModel>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
       <OptimizeReferences>false</OptimizeReferences>
-      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;lua5.1.lib;LinearMath.lib;irrKlang.lib</AdditionalDependencies>
+      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;BulletFileLoader.lib;BulletWorldImporter.lib;LinearMath.lib;irrKlang.lib;lua5.1.lib</AdditionalDependencies>
       <LinkTimeCodeGeneration>
       </LinkTimeCodeGeneration>
     </Link>
