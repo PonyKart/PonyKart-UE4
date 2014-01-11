@@ -91,6 +91,8 @@ protected:
 private:
 	WheelID id; ///< Lets us keep track of which wheel this is on the kart
 	static const float MINIMUM_FRICTION;
+	static const float STOP_DRIFT_STEER_CHANGE;
+	static const float START_DRIFT_STEER_CHANGE;
 };
 } // Actors
 } // Ponykart

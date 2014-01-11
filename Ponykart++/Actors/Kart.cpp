@@ -71,3 +71,8 @@ float Kart::getVehicleSpeed() const
 {
 	return _vehicle->getCurrentSpeedKmHour();
 }
+
+bool Kart::isDriftingAtAll() const
+{
+	return KartDriftStateExtensions::isDriftingAtAll(driftState);
+}
