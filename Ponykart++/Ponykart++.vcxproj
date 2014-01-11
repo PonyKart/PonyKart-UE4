@@ -167,35 +167,36 @@
     <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
     <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Lua\5.1\include;C:\OGRE\include\OGRE;C:\OGRE\include\OIS;C:\irrKlang-1.4.0\include;C:\BULLET_PHYSICS\include\bullet;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\debug;C:\BULLET_PHYSICS\lib\Debug;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
     <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Lua\5.1\include;C:\OGRE\include\OGRE;C:\OGRE\include\OIS;C:\irrKlang-1.4.0\include;C:\BULLET_PHYSICS\include\bullet;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib\Release;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)build\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\</IntDir>
     <IncludePath>$(ProjectDir);$(ProjectDir)..\PonykartParsers++\;C:\Lua\5.1\include;C:\OGRE\include\OGRE;C:\OGRE\include\OIS;C:\irrKlang-1.4.0\include;C:\BULLET_PHYSICS\include\bullet;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\..\PonykartParsers++\bin;C:\OGRE\lib\release;C:\BULLET_PHYSICS\lib\Release;C:\Lua\5.1\lib;C:\irrKlang-1.4.0\lib\Win32-visualStudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Muffin.lib;OgreMain.lib;OIS.lib;BulletDynamics.lib;BulletCollision.lib;BulletFileLoader.lib;BulletWorldImporter.lib;LinearMath.lib;irrKlang.lib;lua5.1.lib</AdditionalDependencies>
+      <AdditionalDependencies>Muffind.lib;OgreMain_d.lib;OIS_d.lib;BulletDynamics_Debug.lib;BulletCollision_Debug.lib;BulletFileLoader_Debug.lib;BulletWorldImporter_Debug.lib;LinearMath_Debug.lib;irrKlang.lib;lua5.1.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <PostBuildEvent>
       <Command>copy /Y "$(TargetPath)" "$(ProjectDir)build\$(TargetFileName)"</Command>
