@@ -16,6 +16,9 @@ using namespace Ponykart::Core;
 using namespace Ponykart::LKernel;
 using namespace Ponykart::Physics;
 
+// Static members
+const float Wheel::MINIMUM_FRICTION=3.f;
+
 Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID, 
 	const unordered_map<string, float>& dict, const string& meshName)
 	: defaultRadius(dict.at("Radius")), defaultWidth(dict.at("Width")),
@@ -109,5 +112,21 @@ void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
 		accelerate(currentSpeed);
 		brake(currentSpeed);
 		turn(evt->timeSinceLastFrame, currentSpeed);
+	}
+}
+
+void Wheel::changeFriction(btWheelInfo* info, float currentSpeed)
+{
+	// really strong friction so we don't roll down hills when we're stopped
+	if (accelerateMultiplier == 0 && currentSpeed > -2.f && currentSpeed < 2.f)
+		info->m_frictionSlip = 10000.f;
+	// if we're going slower than the slow speed, keep friction at maximum
+	else if (currentSpeed < defaultSlowSpeed)
+		info->m_frictionSlip = defaultFrictionSlip;
+	// otherwise, change friction based on speed to a minimum
+	else 
+	{
+		float newFric = friction * (1 - ((currentSpeed - defaultSlowSpeed) / ((kart->getMaxSpeed() * 3.6f) - defaultSlowSpeed)));
+		info->m_frictionSlip = newFric > MINIMUM_FRICTION ? newFric : MINIMUM_FRICTION;
 	}
 }
