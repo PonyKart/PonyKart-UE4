@@ -21,9 +21,8 @@ namespace Actors
 		WantsDriftingButNotTurning
 	};
 
-    class KartDriftStateExtensions
+    namespace KartDriftStateExtensions
 	{
-	public:
 		static inline bool isFullDrift(KartDriftState kds)
 		{
 			return kds == KartDriftState::FullLeft || kds == KartDriftState::FullRight;

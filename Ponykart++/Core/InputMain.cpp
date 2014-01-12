@@ -3,13 +3,15 @@
 #include <OgreRenderWindow.h>
 #include <OgreRoot.h>
 #include <OgreViewport.h>
+#include "Core/InputMain.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
-#include "Core/InputMain.h"
+#include "Levels/LevelManager.h"
 
 using namespace std;
 using namespace OIS;
 using namespace Ponykart;
+using namespace Ponykart::Levels;
 using namespace Ponykart::LKernel;
 
 InputMain::InputMain()
@@ -40,7 +42,7 @@ InputMain::InputMain()
 	mouseState.width = LKernel::getG<Ogre::Viewport>()->getActualWidth();
 	mouseState.height = LKernel::getG<Ogre::Viewport>()->getActualHeight();
 
-	LKernel::gRoot->addFrameListener(frameStarted);  // TODO: Implement this frame listener
+	LKernel::gRoot->addFrameListener(this);  // TODO: ASAP! Implement this frame listener! It's crashing without it.
 
 	createEventHandlers(); // TODO: Implement
 
@@ -155,5 +157,22 @@ bool InputMain::mouseMoved(const MouseEvent& me)
 	cout << "Mouse moved: x " << me.state.X.rel << " | y " << me.state.Y.rel);
 #endif
 	fireEvent<MouseEvent>(onMouseMove, me);
+	return true;
+}
+
+bool InputMain::frameStarted(const Ogre::FrameEvent& evt)
+{
+	if (!LKernel::getG<LevelManager>()->getIsValidLevel())
+		return true;
+	
+	//timeSinceLastFrame += e.timeSinceLastFrame;
+	//if (timeSinceLastFrame >= _inputCaptureRate) {
+	// Capture all key presses since last check.
+	inputKeyboard->capture();
+	// Capture all mouse movements and button presses since last check.
+	inputMouse->capture();
+	//	timeSinceLastFrame -= _inputCaptureRate;
+	//}
+
 	return true;
 }

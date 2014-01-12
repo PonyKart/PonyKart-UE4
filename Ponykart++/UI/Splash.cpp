@@ -85,16 +85,16 @@ void Splash::createScene()
 	((MaterialPtr)MaterialManager::getSingleton().create("LoadingMaterial","splash"))->getTechnique(0)->getPass(0)->createTextureUnitState("loading.png");
 	OverlayContainer* panel = static_cast<OverlayContainer*>(overlayManager->createOverlayElement("Panel","LoadingPanel"));
 	panel->setMaterialName("LoadingMaterial");
-	panel->setDimensions(1,0.96);
+	panel->setDimensions(1,0.96f);
 
 	// Progess bar
 	OverlayContainer* progressBar = static_cast<OverlayContainer*>(overlayManager->createOverlayElement("Panel","ProgressBar"));
-	progressBar->setDimensions(1,0.04);
-	progressBar->setPosition(0,0.96);
+	progressBar->setDimensions(1,0.04f);
+	progressBar->setPosition(0,0.96f);
 	MaterialPtr progressBGMat = MaterialManager::getSingleton().create("progressBG","splash");
-	progressBGMat->getTechnique(0)->getPass(0)->createTextureUnitState()->setColourOperationEx(LBX_SOURCE1,LBS_MANUAL,LBS_CURRENT,ColourValue(0.9, 0.9, 0.9));;
+	progressBGMat->getTechnique(0)->getPass(0)->createTextureUnitState()->setColourOperationEx(LBX_SOURCE1,LBS_MANUAL,LBS_CURRENT,ColourValue(0.9f, 0.9f, 0.9f));;
 	MaterialPtr progressFGMat = MaterialManager::getSingleton().create("progressFG","splash");
-	progressFGMat->getTechnique(0)->getPass(0)->createTextureUnitState()->setColourOperationEx(LBX_SOURCE1,LBS_MANUAL,LBS_CURRENT,ColourValue(0.23, 0.88, 0.5));;
+	progressFGMat->getTechnique(0)->getPass(0)->createTextureUnitState()->setColourOperationEx(LBX_SOURCE1,LBS_MANUAL,LBS_CURRENT,ColourValue(0.23f, 0.88f, 0.5f));;
 	progressBG = static_cast<OverlayContainer*>(overlayManager->createOverlayElement("Panel","ProgressBarBG"));
 	progressBG->setMaterialName("progressBG");
 	progressBG->setDimensions(1,1);
@@ -106,12 +106,12 @@ void Splash::createScene()
 	FontManager::getSingleton().getByName("BlueHighway")->load(); // HACK: Workaround for bug #324 in Ogre
 	progressText = static_cast<TextAreaOverlayElement*>(overlayManager->createOverlayElement("TextArea", "text"));
 	progressText->setMetricsMode(GuiMetricsMode::GMM_RELATIVE);
-	progressText->setLeft(0.01);
-	progressText->setTop(0.01);
+	progressText->setLeft(0.01f);
+	progressText->setTop(0.01f);
 	progressText->setHorizontalAlignment(GHA_LEFT);
 	progressText->setVerticalAlignment(GVA_TOP);
 	progressText->setFontName("BlueHighway");
-	progressText->setCharHeight(0.03);
+	progressText->setCharHeight(0.03f);
 	progressText->setColour(Ogre::ColourValue(0,0,0));
 
 	progressBar->addChild(progressBG);

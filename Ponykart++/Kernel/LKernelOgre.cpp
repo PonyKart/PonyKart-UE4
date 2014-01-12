@@ -14,7 +14,11 @@ using namespace Ogre;
 
 void LKernel::initOgreRoot()
 {
+#ifdef DEBUG
+	gRoot = new Ogre::Root("media_debug/config/plugins.cfg", "", "Ponykart.log");
+#else
 	gRoot = new Ogre::Root("media/config/plugins.cfg", "", "Ponykart.log");
+#endif
 	addGlobalObject(gRoot);
 }
 

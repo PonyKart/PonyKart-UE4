@@ -25,7 +25,7 @@ using AxisMovedEventHandler = std::vector<std::function<void (void* sender, Core
 // Other classes (mostly handlers) should only use events fired off from this class and not ones fired off from the
 // input library.
 **/
-class InputMain : public OIS::KeyListener, public OIS::MouseListener // TODO: Finish implementing InputMain
+class InputMain : public OIS::KeyListener, public OIS::MouseListener, public Ogre::FrameListener // TODO: Finish implementing InputMain
 {
 public:
 	InputMain();
@@ -47,11 +47,7 @@ private:
 	template<typename T, typename U> void fireEvent(LymphInputEvent2<T,U> handler, T eventArg1, U eventArg2); ///< Fires an event. Helper method so we don't have to check every single event for null.
 
 private:
-	class FrameStartedListener : public Ogre::FrameListener
-	{
-		bool frameStarted(const Ogre::FrameEvent& evt) override;
-	};
-	FrameStartedListener* frameStarted;
+	bool frameStarted(const Ogre::FrameEvent& evt) override;
 
 private:
 	OIS::InputManager* inputManager;
