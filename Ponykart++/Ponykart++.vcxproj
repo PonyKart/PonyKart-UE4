@@ -110,6 +110,7 @@
     <ClInclude Include="Physics\CollisionGroups.h" />
     <ClInclude Include="Physics\CollisionObjectDataHolder.h" />
     <ClInclude Include="Physics\CollisionReports\CollisionReporter.h" />
+    <ClInclude Include="Physics\CollisionReports\CollisionReportInfo.h" />
     <ClInclude Include="Physics\CollisionShapeManager.h" />
     <ClInclude Include="Physics\Materials\PhysicsMaterial.h" />
     <ClInclude Include="Physics\Materials\PhysicsMaterialFactory.h" />

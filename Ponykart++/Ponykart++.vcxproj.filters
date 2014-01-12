@@ -332,5 +332,8 @@
     <ClInclude Include="Physics\MotionStates\KartMotionState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Physics\CollisionReports\CollisionReportInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

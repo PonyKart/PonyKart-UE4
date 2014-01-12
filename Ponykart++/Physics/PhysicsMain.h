@@ -4,6 +4,7 @@
 #include <functional>
 #include <vector>
 #include <OgreFrameListener.h>
+#include <BulletCollision/CollisionDispatch/btManifoldResult.h>
 #include "Levels/LevelChangedEventArgs.h"
 
 class btDiscreteDynamicsWorld;
@@ -18,7 +19,7 @@ namespace Physics
 {
 	using PhysicsWorldEvent = std::vector<std::function<void (btDiscreteDynamicsWorld*)>>;
 	using PhysicsSimulateEvent = std::vector<std::function<void(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt)>>;
-
+	using ContactAdded = std::vector<std::function<bool (btManifoldPoint&,btCollisionObjectWrapper*,int,int,btCollisionObjectWrapper*,int,int)>>;
 	class PhysicsMain : public Ogre::FrameListener
 	{
 	public:
@@ -45,6 +46,7 @@ namespace Physics
 		static bool drawLines; // Should we draw debug lines or not?
 		static bool slowMo;
 
+		static ContactAdded contactAdded;
 		static PhysicsWorldEvent postCreateWorld; ///< Is invoked right after the physics world is created.
 		static PhysicsSimulateEvent preSimulate; ///< Is invoked right before the physics world is simulated.
 		static PhysicsSimulateEvent postSimulate; ///< Is invoked right after the physics world is simulated.

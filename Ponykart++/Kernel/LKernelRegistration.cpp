@@ -1,14 +1,16 @@
-#include "Kernel/LKernel.h"
-#include "Kernel/LKernelOgre.h"
-#include "Levels/LevelManager.h"
-#include "Physics/PhysicsMain.h"
+#include "Actors/Wheels/WheelFactory.h"
 #include "Core/Cameras/CameraManager.h"
 #include "Core/Settings.h"
 #include "Core/InputMain.h"
 #include "Core/KeyBindingManager.h"
 #include "Core/InputSwallowerManager.h"
 #include "Core/Pauser.h"
-#include "Actors/Wheels/WheelFactory.h"
+#include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
+#include "Levels/LevelManager.h"
+#include "Physics/PhysicsMain.h"
+#include "Physics/CollisionShapeManager.h"
+#include "Physics/CollisionReports/CollisionReporter.h"
 
 using namespace Ogre;
 using namespace Ponykart;
@@ -32,8 +34,8 @@ void LKernel::loadInitialObjects(Splash& splash)
 	try
 	{
 		addGlobalObject(new PhysicsMain());
-		//addGlobalObject(new CollisionShapeManager());
-		//addGlobalObject(new CollisionReporter());
+		addGlobalObject(new CollisionShapeManager());
+		addGlobalObject(new CollisionReporter());
 		//addGlobalObject(new TriggerReporter());
 		//addGlobalObject(new PhysicsMaterialFactory());
 	}
