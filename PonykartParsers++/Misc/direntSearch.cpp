@@ -43,6 +43,8 @@ namespace Extensions
 	{
 		std::vector<std::string> results;
 		DIR* dir_point = opendir(directory.c_str());
+		if (!dir_point)
+			throw std::string("direntSearch: Failed to open " + directory + ", opendir() returned nullptr");
 		dirent* entry = readdir(dir_point);
 		while (entry){									// if !entry then end of directory
 			if (entry->d_type == DT_REG){		// if entry is a regular file
@@ -60,12 +62,14 @@ namespace Extensions
 	{
 		std::vector<std::string> results;
 		DIR* dir_point = opendir(directory.c_str());
+		if (!dir_point)
+			throw std::string("direntSearchRec: Failed to open " + directory +", opendir() returned nullptr");
 		dirent* entry = readdir(dir_point);
 		while (entry){									// if !entry then end of directory
 			if (entry->d_type == DT_DIR){				// if entry is a directory
 				std::string fname = entry->d_name;
 				if (fname != "." && fname != "..")
-					direntSearchRec(entry->d_name, extension);	// search through it
+					direntSearchRec(directory + "/" +entry->d_name, extension);	// search through it
 			}
 			else if (entry->d_type == DT_REG){		// if entry is a regular file
 				std::string fname = entry->d_name;	// filename

@@ -65,7 +65,7 @@ int main()
 
 		//startRendering();
 
-		log("Exited successfully.");
+		log("End of code. Exited successfully.");
 		return EXIT_SUCCESS;
 	}
 	catch (std::string e) // If you can't guarantee that someone will catch your exceptions, throw a string.
