@@ -1,6 +1,7 @@
 #include "Core/Pauser.h"
 #include "Core/InputMain.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
 #include "Core/InputSwallowerManager.h"
 
@@ -10,7 +11,7 @@ using namespace Ponykart::Levels;
 
 // Define static members
 bool Pauser::isPaused = false;
-std::function<void (PausingState state)> Pauser::pauseEvent;
+std::vector<std::function<void (PausingState state)>> Pauser::pauseEvent;
 
 Pauser::Pauser()
 {
@@ -19,8 +20,8 @@ Pauser::Pauser()
 	typedef void(*ftype)(OIS::KeyEvent); // For disanbiguanting the overloads of invokePauseEvent
 
 	// if we press `, then pause
-	LKernel::GetG<InputMain>()->OnKeyboardPress_Anything.push_back(static_cast<ftype>(invokePauseEvent));
-	LKernel::GetG<InputSwallowerManager>()->addSwallower(&isPaused, this);
+	LKernel::getG<InputMain>()->onKeyboardPress_Anything.push_back(static_cast<ftype>(invokePauseEvent));
+	LKernel::getG<InputSwallowerManager>()->addSwallower(&isPaused, this);
 }
 
 void Pauser::invokePauseEvent(OIS::KeyEvent ke)
@@ -31,7 +32,7 @@ void Pauser::invokePauseEvent(OIS::KeyEvent ke)
 
 void Pauser::invokePauseEvent()
 {
-	if (LKernel::GetG<LevelManager>()->isPlayableLevel())
+	if (LKernel::getG<LevelManager>()->isPlayableLevel())
 		pauseWithEvent();
 }
 
@@ -39,11 +40,13 @@ void Pauser::pauseWithEvent()
 {
 	log("Pause!");
 	isPaused = !isPaused;
-	if (pauseEvent)
+	if (pauseEvent.size())
 	{
 		if (isPaused)
-			pauseEvent(PausingState::Pausing);
+			for (auto event : pauseEvent)
+				event(PausingState::Pausing);
 		else
-			pauseEvent(PausingState::Unpausing);
+			for (auto event : pauseEvent)
+				event(PausingState::Unpausing);
 	}
 }

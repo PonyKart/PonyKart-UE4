@@ -1,8 +1,8 @@
 #include <string>
-#include <Ogre.h>
 #include "Core/Options.h"
 #include "UI/Splash.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 
 using namespace Ponykart::LKernel;
 using Ponykart::Core::Options;
@@ -41,4 +41,7 @@ int main()
 	{
 		log("[EXCEPTION] " + e);
 	}
+	// TODO: Catch standard exceptions too. Log e.what()
+
+	return EXIT_FAILURE; // If we're here, we came from a catch
 }

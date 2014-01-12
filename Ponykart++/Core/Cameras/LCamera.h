@@ -2,27 +2,36 @@
 #define LCAMERA_H_INCLUDED
 
 #include <string>
-#include <Ogre.h>
+
+namespace Ogre
+{
+	struct FrameEvent;
+	class Camera;
+	class SceneNode;
+}
 
 namespace Ponykart
 {
 namespace Core
 {
-// All camera classes should subclass from this.
+/// All camera classes should subclass from this.
 class LCamera
 {
 public:
-	LCamera(std::string name);
+	LCamera(const std::string& Name);
 	// Getters
-	const Ogre::Camera* const getCamera();
-	const Ogre::SceneNode* const getCameraNode();
-	std::string getName();
+	const Ogre::Camera* const getCamera() const;
+	const Ogre::SceneNode* const getCameraNode() const;
+	std::string getName() const;
 
 protected:
-	Ogre::Camera* Camera; // The Ogre camera we're manipulating
-	Ogre::SceneNode* CameraNode; // The scene node the camera is attached to
-	std::string Name; // The name of this camera
-	bool IsActive; // Is this camera active or not?
+	virtual bool updateCamera(Ogre::FrameEvent* evt);
+
+protected:
+	Ogre::Camera* camera; ///< The Ogre camera we're manipulating
+	Ogre::SceneNode* cameraNode; ///< The scene node the camera is attached to
+	std::string name; ///< The name of this camera
+	bool isActive; ///< Is this camera active or not?
 };
 } // Core
 } // Ponykart

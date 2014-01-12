@@ -3,27 +3,25 @@
 
 #include <string>
 #include <vector>
-#include "TokenHolder.h"
-//#include "Muffin/ThingBlock.h"
-
-class ThingBlock;
+#include "Muffin/TokenHolder.h"
+#include "Thing/Blocks/ThingBlock.h"
 
 namespace PonykartParsers
 {
 // Represents a .muffin file
-class MuffinDefinition : TokenHolder // TODO: Implement this class and TokenHolder properly
+class MuffinDefinition : public TokenHolder // TODO: Implement this class and TokenHolder properly
 {
 public:
-	void SetUpDictionaries() override;
-	void Finish() override;
+	MuffinDefinition(std::string Name);
+	void finish() override;
 	// Getters
 	std::string getName();
 	std::vector<ThingBlock> getThingBlocks();
 	std::vector<std::string> getExtraFiles();
 private: // Set-private public members
-	std::string Name;
-	std::vector<ThingBlock> ThingBlocks;
-	std::vector<std::string> ExtraFiles; // Other .muffin files this one should load.
+	std::string name;
+	std::vector<ThingBlock> thingBlocks;
+	std::vector<std::string> extraFiles; // Other .muffin files this one should load.
 };
 } // PonykartParsers
 
