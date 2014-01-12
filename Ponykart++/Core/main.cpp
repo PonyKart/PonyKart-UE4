@@ -1,4 +1,5 @@
 #include <string>
+#include <fstream>
 #include "Core/Options.h"
 #include "UI/Splash.h"
 #include "Kernel/LKernel.h"
@@ -10,7 +11,37 @@ using Ponykart::Splash;
 
 int main()
 {
-	initOgreRoot();
+	try
+	{
+		initOgreRoot();
+	}
+	catch (std::bad_alloc e)
+	{
+		std::ofstream logfile;
+		std::cerr << "Error initializing ogre. Are you using the correct DLLs ?";
+		logfile.open("Ponykart.log", std::ios::out);
+		if (logfile.is_open())
+		{
+			logfile.clear();
+			logfile << "Error initializing ogre. Are you using the correct DLLs ?\n";
+			logfile.close();
+		}
+		abort();
+	}
+	catch (Ogre::InternalErrorException e)
+	{
+		std::ofstream logfile;
+		std::cerr << "Error initializing ogre : " << e.getDescription();
+		logfile.open("Ponykart.log", std::ios::out);
+		if (logfile.is_open())
+		{
+			logfile.clear();
+			logfile  << "Error initializing ogre : " << e.getFullDescription();
+			logfile.close();
+		}
+		abort();
+	}
+	
 	try
 	{
 		log("[Loading] Loading configuration...");
