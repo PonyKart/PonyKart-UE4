@@ -19,8 +19,9 @@ tmp/
 *.depend
 *.layout
 
-# /References
+# Archives
+*.rar
+
 /[Rr]eferences/
 
-# Doxygen
 doxygen/
