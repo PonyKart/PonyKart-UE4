@@ -31,7 +31,7 @@ void LKernel::loadInitialObjects(Splash& splash)
 	splash.increment("Initialising Bullet physics engine...");
 	try
 	{
-		//addGlobalObject(new PhysicsMain());
+		addGlobalObject(new PhysicsMain());
 		//addGlobalObject(new CollisionShapeManager());
 		//addGlobalObject(new CollisionReporter());
 		//addGlobalObject(new TriggerReporter());
@@ -39,7 +39,11 @@ void LKernel::loadInitialObjects(Splash& splash)
 	}
 	catch (...)
 	{
+#ifdef _WIN32
 		throw std::string("Bullet loading unsuccessful! Try installing the 2010 VC++ Redistributable (x86) - google it!");
+#else
+		throw std::string("Bullet loading unsuccessful!");
+#endif
 	}
 
 	// level
@@ -55,7 +59,7 @@ void LKernel::loadInitialObjects(Splash& splash)
 	addGlobalObject(new Pauser());
 
 	// spawner
-	splash.increment("Creating spawner...");
+	splash.increment("Creating spawners...");
 	addGlobalObject(new WheelFactory());
 	//addGlobalObject(new ThingDatabase());
 	//addGlobalObject(new Spawner());

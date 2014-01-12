@@ -82,7 +82,7 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	PhysicsMain::postSimulate.push_back(bind(&Wheel::postSimulate,this,_1,_2));
 }
 
-void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
+void Wheel::postSimulate(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt)
 {
 	if (!Pauser::isPaused) 
 	{
@@ -115,7 +115,7 @@ void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
 		changeFriction(&info, currentSpeed);
 		accelerate(currentSpeed);
 		brake(currentSpeed);
-		turn(evt->timeSinceLastFrame, currentSpeed);
+		turn(evt.timeSinceLastFrame, currentSpeed);
 	}
 }
 

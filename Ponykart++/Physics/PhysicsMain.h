@@ -7,39 +7,38 @@
 #include "Levels/LevelChangedEventArgs.h"
 
 class btDiscreteDynamicsWorld;
+class btBroadphaseInterface;
+class btDefaultCollisionConfiguration;
+class btCollisionDispatcher;
+class btSequentialImpulseConstraintSolver;
 
 namespace Ponykart
 {
 namespace Physics
 {
 	using PhysicsWorldEvent = std::vector<std::function<void (btDiscreteDynamicsWorld*)>>;
-	using PhysicsSimulateEvent = std::vector<std::function<void(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)>>;
+	using PhysicsSimulateEvent = std::vector<std::function<void(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt)>>;
 
-	class PhysicsMain
+	class PhysicsMain : public Ogre::FrameListener
 	{
 	public:
 		PhysicsMain();
-		static void onLevelUnload(Levels::LevelChangedEventArgs eventArgs); // Deletes the world
+		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Deletes the world
 		// Getters
 		btDiscreteDynamicsWorld* getWorld();
 
 	private:
 		// Runs just before every frame. Simulates one frame of physics.
 		// Physics simulation should be the only thing that's using FrameEnded!
-		class FrameEndedListener : public Ogre::FrameListener
-		{
-			bool frameEnded(const Ogre::FrameEvent& evt) override;
-		};
+		bool frameEnded(const Ogre::FrameEvent& evt) override;
 
 	private:
 		static const int _maxSubsteps;
 		static const float _fixedTimestep;
-		static FrameEndedListener* frameEnded;
-		// TODO: Use bullet directly
-		//BroadphaseInterface* broadphase;
-		//DefaultCollisionConfiguration* dcc;
-		//CollisionDispatcher* dispatcher;
-		//SequentialImpulseConstraintSolver* solver;
+		btBroadphaseInterface* broadphase;
+		btDefaultCollisionConfiguration* dcc;
+		btCollisionDispatcher* dispatcher;
+		btSequentialImpulseConstraintSolver* solver;
 		btDiscreteDynamicsWorld* world;
 
 	public:

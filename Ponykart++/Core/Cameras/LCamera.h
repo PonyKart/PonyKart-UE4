@@ -25,7 +25,7 @@ public:
 	std::string getName() const;
 
 protected:
-	virtual bool updateCamera(Ogre::FrameEvent* evt);
+	virtual bool updateCamera(const Ogre::FrameEvent& evt);
 
 protected:
 	Ogre::Camera* camera; ///< The Ogre camera we're manipulating
