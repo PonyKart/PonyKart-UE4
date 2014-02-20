@@ -29,7 +29,6 @@
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-march=i686" />
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-Os" />
 					<Add option="-O3" />
@@ -58,15 +57,17 @@
 			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-m32" />
 			<Add directory="." />
 			<Add directory="../PonykartParsers++/" />
 			<Add directory="/usr/include/OGRE/" />
 			<Add directory="/usr/include/OIS" />
 			<Add directory="/usr/include/bullet" />
 			<Add directory="/usr/local/include/irrKlang" />
-			<Add directory="/usr/include/lua5.1" />
+			<Add directory="/usr/include/lua5.2" />
 		</Compiler>
 		<Linker>
+			<Add option="-m32" />
 			<Add library="OgreMain" />
 			<Add library="OIS" />
 			<Add library="BulletDynamics" />
@@ -75,10 +76,12 @@
 			<Add library="LinearMath" />
 			<Add library="IrrKlang" />
 			<Add library="boost_system" />
-			<Add library="lua5.1" />
+			<Add library="lua5.2" />
 			<Add directory="../PonykartParsers++/bin/" />
 			<Add directory="/usr/lib/i386-linux-gnu/OGRE-1.8.0" />
 			<Add directory="/usr/local/lib/irrKlang" />
+			<Add directory="/usr/lib/i386-linux-gnu" />
+			<Add directory="/usr/lib/gcc/i486-linux-gnu/4.8.2" />
 		</Linker>
 		<Unit filename="Actors/Components/BillboardSetComponent.cpp" />
 		<Unit filename="Actors/Components/BillboardSetComponent.h" />

@@ -30,6 +30,7 @@
 - Use emplace_back instead of push_back when adding temporaries. "No code is faster than some code."
 
 # Compilation
+- Is there a way to set up a build server everyone could use ?
 - Find a way to build Bullet. Maybe another mingw/visual with static link, or changing the flags
 -- MinGW 4.8.1 with CMake 2.8, with -O1 -DNDEBUG works.
 -- Visual works, with full optimisations.
