@@ -5,7 +5,7 @@
 #include <BulletCollision/CollisionShapes/btCylinderShape.h>
 #include <BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h>
 #include <BulletCollision/CollisionShapes/btSphereShape.h>
-#include <BulletWorldImporter\btBulletWorldImporter.h>
+#include <BulletWorldImporter/btBulletWorldImporter.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/ShapeComponent.h"
 #include "BMP/EasyBMP.h"
@@ -250,7 +250,7 @@ btCollisionShape* CollisionShapeManager::importCollisionShape(const std::string&
 	if (filenameIt != end(bulletFiles))
 	{
 		// load that file
-		if (importer.loadFile(filenameIt->second.c_str())) 
+		if (importer.loadFile(filenameIt->second.c_str()))
 		{
 			LKernel::log("[PhysicsMain] Importing "+bulletfile+"...");
 			// these should only have one collision shape in them, so we'll just use that
