@@ -77,6 +77,7 @@
 			<Add library="IrrKlang" />
 			<Add library="boost_system" />
 			<Add library="lua5.2" />
+			<Add library="BulletWorldImporter" />
 			<Add directory="../PonykartParsers++/bin/" />
 			<Add directory="/usr/lib/i386-linux-gnu/OGRE-1.8.0" />
 			<Add directory="/usr/local/lib/irrKlang" />
