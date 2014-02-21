@@ -20,7 +20,7 @@ void Options::setupDictionaries()
 		{"Floating-point mode","Fastest"}, // Fastest or Accurate
 		{"Full Screen","No"}, // Yes or No
 		{"VSync","Yes"}, // Yes or No
-		{"VSync Interval","1"}, // 1, 2, 3, or 4
+//		{"VSync Interval","1"}, // 1, 2, 3, or 4
 		{"Video Mode","1024 x 768 @ 32-bit colour"},
 		{"sRGB Gamma Conversion","No"}, // Yes or No
 		{"Music","No"}, // Yes or No

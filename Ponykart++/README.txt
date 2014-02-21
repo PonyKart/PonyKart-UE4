@@ -2,10 +2,11 @@
 - Ogre (and OIS) 1.8.1
 - Bullet2 (Dynamics, Collision, LinearMath, FileLoader, WorldImporter) >= 2.81-r2613
 - Boost >= 1.55.0
-- Lua 5.1
+- Lua 5.2
 - irrKlang 1.4.0
 
 # Build instructions :
+- Checkout a branch. master should always work, dev may not always compile successfully.
 - Install the dependencies (use the same compiler for all the dependencies and the project)
 - Compile the project, a Visual Studio 2013 and Code::Blocks project files are provided for Windows and Linux
 - Copy the media/ folder in the build/ folder

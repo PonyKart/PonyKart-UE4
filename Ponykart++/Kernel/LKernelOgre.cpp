@@ -14,7 +14,7 @@ using namespace Ogre;
 
 void LKernel::initOgreRoot()
 {
-#ifdef DEBUG
+#if defined(DEBUG) && defined(WIN32)
 	gRoot = new Ogre::Root("media_debug/config/plugins.cfg", "", "Ponykart.log");
 #else
 	gRoot = new Ogre::Root("media/config/plugins.cfg", "", "Ponykart.log");
@@ -28,7 +28,7 @@ void LKernel::initOgreRenderSystem()
 	gRenderSystem = gRoot->getRenderSystemByName("OpenGL Rendering Subsystem");
 	gRenderSystem->setConfigOption("Full Screen", Options::get("Full Screen"));
 	gRenderSystem->setConfigOption("VSync", Options::get("VSync"));
-	gRenderSystem->setConfigOption("VSync Interval", Options::get("VSync Interval"));
+//	gRenderSystem->setConfigOption("VSync Interval", Options::get("VSync Interval"));
 	gRenderSystem->setConfigOption("FSAA", Options::get("FSAA"));
 	gRenderSystem->setConfigOption("Video Mode", Options::get("Video Mode"));
 	gRenderSystem->setConfigOption("sRGB Gamma Conversion", Options::get("sRGB Gamma Conversion"));

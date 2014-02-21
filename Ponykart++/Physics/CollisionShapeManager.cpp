@@ -5,7 +5,7 @@
 #include <BulletCollision/CollisionShapes/btCylinderShape.h>
 #include <BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h>
 #include <BulletCollision/CollisionShapes/btSphereShape.h>
-#include <BulletWorldImporter\btBulletWorldImporter.h>
+#include <BulletWorldImporter/btBulletWorldImporter.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/ShapeComponent.h"
 #include "BMP/EasyBMP.h"
@@ -217,7 +217,7 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 											(int)(((float)j / newPicSize) * imageHeight))->Red) / 255.0);
 
 		float heightScale = (float)(component->getMaxHeight() - component->getMinHeight() / 255.0);
-		Vector3 scale = component->getDimensions();
+		//Vector3 scale = component->getDimensions();
 
 		btHeightfieldTerrainShape* heightfield = new btHeightfieldTerrainShape(newPicSize, newPicSize, terr, heightScale,
 			component->getMinHeight(), component->getMaxHeight(), 1, PHY_ScalarType::PHY_FLOAT, false);
@@ -250,7 +250,7 @@ btCollisionShape* CollisionShapeManager::importCollisionShape(const std::string&
 	if (filenameIt != end(bulletFiles))
 	{
 		// load that file
-		if (importer.loadFile(filenameIt->second.c_str())) 
+		if (importer.loadFile(filenameIt->second.c_str()))
 		{
 			LKernel::log("[PhysicsMain] Importing "+bulletfile+"...");
 			// these should only have one collision shape in them, so we'll just use that

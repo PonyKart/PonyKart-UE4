@@ -80,7 +80,7 @@ void SoundComponent::update()
 		catch (...)
 		{
 			log("[Lua] *** EXCEPTION *** caught in SoundComponent::update");
-			LKernel::getG<UI::LuaConsoleManager>()->addLabel("ERROR: Exception caught in SoundComponent::update");
+			//LKernel::getG<UI::LuaConsoleManager>()->addLabel("ERROR: Exception caught in SoundComponent::update"); // TODO: Implement LuaConsoleManger::addLabel, then uncomment
 		}
 #endif
 	}

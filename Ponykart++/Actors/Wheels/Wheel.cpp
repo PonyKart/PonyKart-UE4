@@ -23,7 +23,7 @@ const float Wheel::MINIMUM_FRICTION=3.f;
 const float Wheel::STOP_DRIFT_STEER_CHANGE = 0.0104719755f /*(0.6 degrees)*/ * 0.5f * 5.f /*(slow turn angle multiplier)*/;
 const float Wheel::START_DRIFT_STEER_CHANGE = 0.0104719755f /*(0.6 degrees)*/ * 3.f * 5.f /*(slow turn angle multiplier)*/;
 
-Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID, 
+Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	const unordered_map<string, float>& dict, const string& meshName)
 	: defaultRadius(dict.at("Radius")), defaultWidth(dict.at("Width")),
 	defaultSuspensionRestLength(dict.at("SuspensionRestLength")), defaultSpringStiffness(dict.at("SpringStiffness")),
@@ -32,7 +32,7 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	defaultBrakeForce(dict.at("BrakeForce")), defaultMotorForce(dict.at("MotorForce")),
 	defaultMaxTurnAngle(Degree(dict.at("TurnAngle")).valueRadians()), defaultSlowSpeed(dict.at("SlowSpeed")),
 	defaultHighSpeed(dict.at("HighSpeed")), defaultSlowTurnAngleMultiplier(dict.at("SlowTurnAngleMultiplier")),
-	defaultSlowTurnSpeedMultiplier(dict.at("SlowTurnSpeedMultiplier")), 
+	defaultSlowTurnSpeedMultiplier(dict.at("SlowTurnSpeedMultiplier")),
 	defaultDriftingTurnAngle(Degree(dict.at("DriftingTurnAngle")).valueRadians()),
 	defaultDriftingTurnSpeed(Degree(dict.at("DriftingTurnSpeed")).valueRadians()),
 	defaultSteerIncrementTurn(Degree(dict.at("SteerIncrementTurn")).valueRadians()),
@@ -58,7 +58,7 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	else
 		isFrontWheel = false;
 
-	vehicle->addWheel(toBtVector3(connectionPoint), toBtVector3(wheelDirection), toBtVector3(wheelAxle), 
+	vehicle->addWheel(toBtVector3(connectionPoint), toBtVector3(wheelDirection), toBtVector3(wheelAxle),
 		defaultSuspensionRestLength, defaultRadius, *kart->getTuning(), isFrontWheel);
 
 	btWheelInfo info = vehicle->getWheelInfo(intWheelID);
@@ -79,17 +79,17 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	node->setOrientation(kart->getActualOrientation());
 
 	// and then hook up to the event
-	PhysicsMain::postSimulate.push_back(bind(&Wheel::postSimulate,this,_1,_2));
+	PhysicsMain::postSimulate.push_back(bind(&Wheel::postSimulate,this,placeholders::_1,placeholders::_2));
 }
 
 void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
 {
-	if (!Pauser::isPaused) 
+	if (!Pauser::isPaused)
 	{
 		btWheelInfo info = kart->getVehicle()->getWheelInfo(intWheelID);
 		float currentSpeed = vehicle->getCurrentSpeedKmHour();
 
-		if (kart->getBody()->isActive() && (kart->getVehicleSpeed() > 1.f || kart->getVehicleSpeed() < -1.f)) 
+		if (kart->getBody()->isActive() && (kart->getVehicleSpeed() > 1.f || kart->getVehicleSpeed() < -1.f))
 		{
 			// don't change the kart's orientation when we're drifting
 			if (kart->isDriftingAtAll())
@@ -97,14 +97,14 @@ void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
 			else
 				node->setOrientation(toOgreQuaternion(info.m_worldTransform.getRotation()));
 		}
-		else 
+		else
 		{
 			// TODO: fix it so wheels aren't spinning when we're stopped, but they can still move left and right
 			node->setOrientation(toOgreQuaternion(info.m_worldTransform.getRotation()));
 		}
 
 		// the wheel sorta "comes off" when it's moving quickly in the air, so we only need to update the z translation then
-		if (!kart->isInAir) 
+		if (!kart->isInAir)
 		{
 			Vector3 trans = toOgreVector3(info.m_worldTransform.getOrigin());
 			node->setPosition(axlePoint.x, kart->getRootNode()->convertWorldToLocalPosition(trans).y, axlePoint.z);
@@ -128,7 +128,7 @@ void Wheel::changeFriction(btWheelInfo* info, float currentSpeed)
 	else if (currentSpeed < defaultSlowSpeed)
 		info->m_frictionSlip = defaultFrictionSlip;
 	// otherwise, change friction based on speed to a minimum
-	else 
+	else
 	{
 		float newFric = friction * (1 - ((currentSpeed - defaultSlowSpeed) / ((kart->getMaxSpeed() * 3.6f) - defaultSlowSpeed)));
 		info->m_frictionSlip = newFric > MINIMUM_FRICTION ? newFric : MINIMUM_FRICTION;
@@ -138,20 +138,20 @@ void Wheel::changeFriction(btWheelInfo* info, float currentSpeed)
 void Wheel::accelerate(float currentSpeed)
 {
 	// if we're mostly stopped and we aren't trying to accelerate, then brake
-	if (accelerateMultiplier == 0.f) 
+	if (accelerateMultiplier == 0.f)
 	{
-		if (currentSpeed > -2.f || currentSpeed < 2.f) 
+		if (currentSpeed > -2.f || currentSpeed < 2.f)
 		{
 			vehicle->applyEngineForce(0.f, intWheelID);
 			isBrakeOn = true;
 		}
-		else 
+		else
 		{
 			vehicle->applyEngineForce(0.f, intWheelID);
 			isBrakeOn = true; //false;
 		}
 	}
-	else 
+	else
 	{
 		// the wheels with motor force change depending on whether the kart is drifting or not
 		// rear-wheel drive, remember!
@@ -160,7 +160,7 @@ void Wheel::accelerate(float currentSpeed)
 		//vehicle.ApplyEngineForce(_motorForce * AccelerateMultiplier, IntWheelID);
 
 		//Here is the new line that makes it accelerate but the max speed need to be increase inorder to make if over jumps.
-		vehicle->applyEngineForce(_motorForce * accelerateMultiplier * 
+		vehicle->applyEngineForce(_motorForce * accelerateMultiplier *
 			(((currentSpeed + kart->getMaxSpeed() *3.6f) / (kart->getMaxSpeed() * 3.6f)) / 2.f), intWheelID);
 
 		// if we are trying to accelerate in the opposite direction that we're moving, then brake
@@ -174,28 +174,28 @@ void Wheel::accelerate(float currentSpeed)
 
 void Wheel::brake(float currentSpeed)
 {
-	if (isBrakeOn) 
+	if (isBrakeOn)
 	{
 		// handbrake
-		if (accelerateMultiplier == 0.f && (currentSpeed > -2.f && currentSpeed < 2.f)) 
+		if (accelerateMultiplier == 0.f && (currentSpeed > -2.f && currentSpeed < 2.f))
 		{
 			// the point of this is to lock the wheels in place so we don't move when we're stopped
 			vehicle->setBrake(10000.f, intWheelID);
 		}
 		// normal brake
-		else if ((accelerateMultiplier > 0.f && currentSpeed < -2.f) || (accelerateMultiplier < 0.f && currentSpeed > 2.f)) 
+		else if ((accelerateMultiplier > 0.f && currentSpeed < -2.f) || (accelerateMultiplier < 0.f && currentSpeed > 2.f))
 		{
 			// brake to apply when we're changing direction
 			vehicle->setBrake(defaultBrakeForce, intWheelID);
 		}
 		// normal brake
-		else 
+		else
 		{
 			// brake to apply when we're just slowing down
 			vehicle->setBrake(1.f/*BrakeForce * 0.25f*/, intWheelID);
 		}
 	}
-	else 
+	else
 	{
 		vehicle->setBrake(0.f, intWheelID);
 	}
@@ -220,7 +220,7 @@ void Wheel::turn(float timeSinceLastFrame, float currentSpeed)
 
 	// turn the wheels! All of the logic here makes sure that we don't turn further than the wheel can turn,
 	// and don't turn too far when we're straightening out
-	if (currentAngle < targetSteerAngle) 
+	if (currentAngle < targetSteerAngle)
 	{
 		if (currentAngle + steerChange <= targetSteerAngle)
 			vehicle->setSteeringValue(currentAngle + steerChange, intWheelID);
@@ -228,7 +228,7 @@ void Wheel::turn(float timeSinceLastFrame, float currentSpeed)
 		else if (currentAngle + steerChange > targetSteerAngle)
 			vehicle->setSteeringValue(targetSteerAngle, intWheelID);
 	}
-	else if (currentAngle > targetSteerAngle) 
+	else if (currentAngle > targetSteerAngle)
 	{
 		if (currentAngle - steerChange >= targetSteerAngle)
 			vehicle->setSteeringValue(currentAngle - steerChange, intWheelID);
@@ -240,22 +240,22 @@ void Wheel::turn(float timeSinceLastFrame, float currentSpeed)
 
 void Wheel::calculateTurnMultipliers(const float currentSpeed, float& turnAngleMultiplier, float& turnSpeedMultiplier)
 {
-	if (driftState == WheelDriftState::None) 
+	if (driftState == WheelDriftState::None)
 	{
 		// less than the slow speed = extra turn multiplier
-		if (currentSpeed < defaultSlowSpeed) 
+		if (currentSpeed < defaultSlowSpeed)
 		{
 			turnAngleMultiplier = defaultSlowTurnAngleMultiplier;
 			turnSpeedMultiplier = defaultSlowTurnSpeedMultiplier;
 		}
 		// more than the high speed = no extra multiplier
-		else if (currentSpeed > defaultHighSpeed) 
+		else if (currentSpeed > defaultHighSpeed)
 		{
 			turnAngleMultiplier = 1.f;
 			turnSpeedMultiplier = 1.f;
 		}
 		// somewhere in between = time for a cosine curve!
-		else 
+		else
 		{
 			float relativeSpeed = currentSpeed - defaultSlowSpeed;
 			float maxRelativeSpeed = defaultHighSpeed - defaultSlowSpeed;
@@ -264,7 +264,7 @@ void Wheel::calculateTurnMultipliers(const float currentSpeed, float& turnAngleM
 		}
 	}
 	// no multiplier when we're drifting
-	else 
+	else
 	{
 		turnAngleMultiplier = 1.f;
 		turnSpeedMultiplier = 1.f;
@@ -273,22 +273,22 @@ void Wheel::calculateTurnMultipliers(const float currentSpeed, float& turnAngleM
 
 float Wheel::calculateSteerChange(float targetSteerAngle, float speedTurnSpeedMultiplier, float currentAngle, float timestep)
 {
-	if (driftState == WheelDriftState::None) 
+	if (driftState == WheelDriftState::None)
 	{
 		if (isStopDrift(kart->driftState))
 			return STOP_DRIFT_STEER_CHANGE * timestep;
-		else if (Ogre::Math::Abs(targetSteerAngle - idealSteerAngle) < Ogre::Math::Abs(currentAngle - idealSteerAngle)) 
+		else if (Ogre::Math::Abs(targetSteerAngle - idealSteerAngle) < Ogre::Math::Abs(currentAngle - idealSteerAngle))
 		{
 			// we are not turning any more, so the wheels are moving back to their forward positions
 			return defaultSteerDecrementTurn * speedTurnSpeedMultiplier * timestep;
 		}
-		else 
+		else
 		{
 			// we are turning, so the wheels are moving to their turned positions
 			return defaultSteerIncrementTurn * speedTurnSpeedMultiplier * timestep;
 		}
 	}
-	else 
+	else
 	{
 		if (isStartDrift(kart->driftState))
 			return START_DRIFT_STEER_CHANGE * timestep;
@@ -299,19 +299,19 @@ float Wheel::calculateSteerChange(float targetSteerAngle, float speedTurnSpeedMu
 float Wheel::calculateTurnAngle(float turnAngleMultiplier)
 {
 	bool isFrontWheel = vehicle->getWheelInfo(intWheelID).m_bIsFrontWheel;
-	if (driftState == WheelDriftState::None && (id == WheelID::FrontLeft || id == WheelID::FrontRight)) 
+	if (driftState == WheelDriftState::None && (id == WheelID::FrontLeft || id == WheelID::FrontRight))
 	{
 		// front wheels, no drift
 		// calculate what angle the wheels should try to be at
 		return (defaultMaxTurnAngle * turnMultiplier * turnAngleMultiplier) + idealSteerAngle;
 	}
 	else if ((driftState == WheelDriftState::Left && (id == WheelID::FrontLeft || id == WheelID::BackLeft))
-		|| (driftState == WheelDriftState::Right && (id == WheelID::FrontRight || id == WheelID::BackRight))) 
+		|| (driftState == WheelDriftState::Right && (id == WheelID::FrontRight || id == WheelID::BackRight)))
 	{
 		// "front" wheels, yes drift
 		return (defaultDriftingTurnAngle * turnMultiplier) + idealSteerAngle;
 	}
-	else 
+	else
 	{
 		// back wheels
 		return idealSteerAngle;
@@ -320,17 +320,17 @@ float Wheel::calculateTurnAngle(float turnAngleMultiplier)
 
 float Wheel::getMotorForceForDriftState(WheelID id, WheelDriftState driftState, float motorForce)
 {
-	if (driftState == WheelDriftState::None) 
+	if (driftState == WheelDriftState::None)
 	{
 		if (id == WheelID::BackLeft || id == WheelID::BackRight)
 			return motorForce;
 	}
-	else if (driftState == WheelDriftState::Left) 
+	else if (driftState == WheelDriftState::Left)
 	{
 		if (id == WheelID::FrontRight || id == WheelID::BackRight)
 			return motorForce;
 	}
-	else if (driftState == WheelDriftState::Right) 
+	else if (driftState == WheelDriftState::Right)
 	{
 		if (id == WheelID::FrontLeft || id == WheelID::BackLeft)
 			return motorForce;
