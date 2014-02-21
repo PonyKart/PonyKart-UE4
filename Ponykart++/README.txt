@@ -6,6 +6,7 @@
 - irrKlang 1.4.0
 
 # Build instructions :
+- Checkout a branch. master should always work, dev may not always compile successfully.
 - Install the dependencies (use the same compiler for all the dependencies and the project)
   The dependencies must compiled for a 32bit architecture, because irrKlang is 32bit only.
 - Compile the project, a Visual Studio 2013 and Code::Blocks project files are provided for Windows and Linux
