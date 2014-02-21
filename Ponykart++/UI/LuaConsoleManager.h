@@ -14,7 +14,14 @@ namespace UI
 	class LuaConsoleManager // TODO: Implement LuaConsoleManager
 	{
 	public:
-		void addLabel(const std::string& text); ///< Adds a line of text to the console
+		void addLabel(const std::string& text);
+
+    private:
+		int labelY;
+		Panel* panel;
+		TextBox* textBox;
+		GUI* luaGui;
+		std::string lastInput = "";
 	};
 } // UI
 } // Ponykart

@@ -97,7 +97,7 @@ void SoundMain::pauseEvent(PausingState state)
 	engine->setAllSoundsPaused(state == PausingState::Pausing);
 }
 
-void SoundMain::onPostPlayerCreation() 
+void SoundMain::onPostPlayerCreation()
 {
 	if (LKernel::getG<LevelManager>()->isPlayableLevel())
 		LKernel::onEveryUnpausedTenthOfASecondEvent.push_back(bind(&SoundMain::everyTenth,this,placeholders::_1));
@@ -140,7 +140,7 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 			onEveryUnpausedTenthOfASecondEvent.erase(it);
 			found = true;
 			break;
-		}	
+		}
 	if (!found)
 		throw string("SoundMain::onLevelUnload: Couldn't unregister from event onEveryUnpausedTenthOfASecondEvent");
 
@@ -153,7 +153,7 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 
 void SoundMain::everyTenth(void* o)
 {
-	if (playerManager->getMainPlayer() == nullptr) 
+	if (playerManager->getMainPlayer() == nullptr)
 	{
 		engine->update();
 		return;
@@ -165,13 +165,13 @@ void SoundMain::everyTenth(void* o)
 	const PlayerCamera* PCam = dynamic_cast<const PlayerCamera*>(cam);
 	const KnightyCamera* KCam = dynamic_cast<const KnightyCamera*>(cam);
 	vec3df pos, rot, vel;
-	if (PCam || KCam) 
+	if (PCam || KCam)
 	{
 		pos = toSoundVector(body->getCenterOfMassPosition());
 		rot = toSoundVector(toOgreQuaternion(body->getOrientation()).yAxis());
 		vel = toSoundVector(body->getLinearVelocity());
 	}
-	else 
+	else
 	{
 		const Quaternion& derivedOrientation = cam->getCamera()->getDerivedOrientation();
 		pos = toSoundVector(cam->getCamera()->getDerivedPosition());
@@ -179,9 +179,9 @@ void SoundMain::everyTenth(void* o)
 		vel = toSoundVector(body->getLinearVelocity());
 	}
 
-	engine->setListenerPosition(pos,rot,vel,vec3df(0, 1, 0)); // TODO: BUG:? Is everyone using the same axes ?
+	engine->setListenerPosition(pos,rot,vel,vec3df(0, 1, 0)); // TODO: BUG:? Is everyone (irrKlang/ogre/..) using the same axes ?
 
-	for (auto component : components) 
+	for (auto component : components)
 	{
 		if (component->needUpdate)
 			component->update();
