@@ -24,6 +24,7 @@ tmp/
 /*.creator
 /*.files
 /*.includes
+/*.creator.user
 
 # Archives
 *.rar

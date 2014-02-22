@@ -39,8 +39,8 @@ DashJavelin::DashJavelin(PonykartParsers::ThingBlock* block, PonykartParsers::Th
 
 	idleSound = soundComponents[0]->getSound();
 	fullSound = soundComponents[1]->getSound();
-	revDownSound = soundMain->getSource("RD_Kart_Rev_Down.ogg");
-	revUpSound = soundMain->getSource("RD_Kart_Rev_Up.ogg");
+	revDownSoundData = soundMain->loadSoundData("RD_Kart_Rev_Down.ogg");
+	revUpSoundData = soundMain->loadSoundData("RD_Kart_Rev_Up.ogg");
 
 	// convert from linear velocity to KPH
 	topSpeedKmHour = defaultMaxSpeed * 3.6f;
