@@ -1,6 +1,4 @@
-#include "ik_ESoundEngineOptions.h"
-#include "ik_ESoundOutputDrivers.h"
-#include "irrKlang.h"
+#include <al.h>
 #include "Actors/Components/SoundComponent.h"
 #include "Core/Cameras/CameraManager.h"
 #include "Core/Cameras/KnightyCamera.h"
@@ -9,7 +7,7 @@
 #include "Core/Pauser.h"
 #include "Misc/direntSearch.h"
 #include "Misc/ogreExtensions.h"
-#include "Misc/irrklangExtensions.h"
+#include "Misc/alExtensions.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
@@ -18,7 +16,6 @@
 #include "Sound/SoundMain.h"
 
 using namespace std;
-using namespace irrklang;
 using namespace Ogre;
 using namespace Extensions;
 using namespace Ponykart::Actors;
@@ -43,14 +40,14 @@ SoundMain::SoundMain()
 	LevelManager::onLevelLoad.push_back(bind(&SoundMain::onLevelLoad, this, placeholders::_1));
 	LKernel::getG<Pauser>()->pauseEvent.push_back(bind(&SoundMain::pauseEvent,this,placeholders::_1));
 
-	E_SOUND_ENGINE_OPTIONS flags = (E_SOUND_ENGINE_OPTIONS) (ESEO_DEFAULT_OPTIONS | ESEO_MUTE_IF_NOT_FOCUSED | ESEO_MULTI_THREADED);
-	engine = createIrrKlangDevice(E_SOUND_OUTPUT_DRIVER::ESOD_AUTO_DETECT, flags);
-	engine->setDefault3DSoundMinDistance(50);
+//	E_SOUND_ENGINE_OPTIONS flags = (E_SOUND_ENGINE_OPTIONS) (ESEO_DEFAULT_OPTIONS | ESEO_MUTE_IF_NOT_FOCUSED | ESEO_MULTI_THREADED);
+//	engine = createIrrKlangDevice(E_SOUND_OUTPUT_DRIVER::ESOD_AUTO_DETECT, flags);
+//	engine->setDefault3DSoundMinDistance(50);
 
-	log("[Loading] IrrKlang and SoundMain initialised!");
+	log("[Loading] OpenAL and SoundMain initialised!");
 }
 
-irrklang::ISoundSource* SoundMain::getSource(std::string filename)
+ALbuffer SoundMain::loadSoundData (string filename)
 {
 	string _path=filename;
 	auto filenamePos=filename.rfind("/");
@@ -59,14 +56,14 @@ irrklang::ISoundSource* SoundMain::getSource(std::string filename)
 
 	auto fullpathIt = fileList.find(_path);
 	if (fullpathIt != fileList.end())
-		return engine->getSoundSource(fullpathIt->second.c_str(), true);
+		return -1; //engine->getSoundSource(fullpathIt->second.c_str(), true);
 	else
 		throw string("SoundMain::getSource: "+_path + " was not found!");
 }
 
 float SoundMain::getEngineDefault3DSoundMinDistance()
 {
-	return engine->getDefault3DSoundMinDistance();
+	return 0; //engine->getDefault3DSoundMinDistance();
 }
 
 void SoundMain::addSoundComponent(SoundComponent* sc)
@@ -74,27 +71,28 @@ void SoundMain::addSoundComponent(SoundComponent* sc)
 	components.insert(sc);
 }
 
-ISound* SoundMain::play3D(ISoundSource* source, const Vector3& pos, bool looping, bool startPaused, bool sfx)
+ALsource SoundMain::play3D(ALbuffer sound, const Vector3& pos, bool looping, bool startPaused, bool sfx)
 {
-	log(string("[Sounds] Creating 3D sound: ") + source->getName() + " Looping: " + (looping ? "true" : "false"));
+//	log(string("[Sounds] Creating 3D sound: ") + source->getName() + " Looping: " + (looping ? "true" : "false"));
 
-	ISound* sound = engine->play3D(source, vec3df(pos.x, pos.y, pos.z), looping, startPaused, sfx);
-	sounds.push_back(sound);
+//	ISound* sound = engine->play3D(source, vec3df(pos.x, pos.y, pos.z), looping, startPaused, sfx);
+//	sounds.push_back(sound);
 
-	if (!enableSounds)
-	{
-		sound->setIsPaused(true);
-		sound->setVolume(0);
-	}
-	else if (startPaused)
-		sound->setIsPaused(true);
+//	if (!enableSounds)
+//	{
+//		sound->setIsPaused(true);
+//		sound->setVolume(0);
+//	}
+//	else if (startPaused)
+//		sound->setIsPaused(true);
 
-	return sound;
+//	return sound;
+	return -1;
 }
 
 void SoundMain::pauseEvent(PausingState state)
 {
-	engine->setAllSoundsPaused(state == PausingState::Pausing);
+	//engine->setAllSoundsPaused(state == PausingState::Pausing);
 }
 
 void SoundMain::onPostPlayerCreation() 
@@ -144,10 +142,10 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 	if (!found)
 		throw string("SoundMain::onLevelUnload: Couldn't unregister from event onEveryUnpausedTenthOfASecondEvent");
 
-	engine->removeAllSoundSources();
-	engine->setListenerPosition(vec3df(0, 0, 0), vec3df(0, 0, -1));
-	musics.clear();
-	sounds.clear();
+	//engine->removeAllSoundSources();
+	//engine->setListenerPosition(vec3df(0, 0, 0), vec3df(0, 0, -1));
+	musicSources.clear();
+	soundSources.clear();
 	components.clear();
 }
 
@@ -155,7 +153,7 @@ void SoundMain::everyTenth(void* o)
 {
 	if (playerManager->getMainPlayer() == nullptr) 
 	{
-		engine->update();
+		//engine->update();
 		return;
 	}
 	const LCamera* cam = cameraManager->getCurrentCamera();
@@ -164,22 +162,23 @@ void SoundMain::everyTenth(void* o)
 	// Enjoy your RTTI
 	const PlayerCamera* PCam = dynamic_cast<const PlayerCamera*>(cam);
 	const KnightyCamera* KCam = dynamic_cast<const KnightyCamera*>(cam);
-	vec3df pos, rot, vel;
+	Vector3 pos, rot;
+	btVector3 vel;
 	if (PCam || KCam) 
 	{
-		pos = toSoundVector(body->getCenterOfMassPosition());
-		rot = toSoundVector(toOgreQuaternion(body->getOrientation()).yAxis());
-		vel = toSoundVector(body->getLinearVelocity());
+		pos = toOgreVector3(body->getCenterOfMassPosition());
+		rot = toOgreQuaternion(body->getOrientation()).yAxis();
+		vel = body->getLinearVelocity();
 	}
 	else 
 	{
 		const Quaternion& derivedOrientation = cam->getCamera()->getDerivedOrientation();
-		pos = toSoundVector(cam->getCamera()->getDerivedPosition());
-		rot = toSoundVector(derivedOrientation.yAxis());
-		vel = toSoundVector(body->getLinearVelocity());
+		pos = cam->getCamera()->getDerivedPosition();
+		rot = derivedOrientation.yAxis();
+		vel = body->getLinearVelocity();
 	}
 
-	engine->setListenerPosition(pos,rot,vel,vec3df(0, 1, 0)); // TODO: BUG:? Is everyone using the same axes ?
+	//engine->setListenerPosition(pos,rot,vel,vec3df(0, 1, 0)); // TODO: BUG:? Is everyone using the same axes ?
 
 	for (auto component : components) 
 	{
@@ -187,5 +186,5 @@ void SoundMain::everyTenth(void* o)
 			component->update();
 	}
 
-	engine->update();
+	//engine->update();
 }

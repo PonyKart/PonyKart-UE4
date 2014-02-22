@@ -5,9 +5,10 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <string>
-#include <ik_ISound.h>
-#include <ik_ISoundEngine.h>
+#include <al.h>
 #include "Core/Pauser.h"
+#include "Misc/alExtensions.h"
+
 
 namespace Ponykart
 {
@@ -24,13 +25,13 @@ class SoundMain // TODO: Implement SoundMain properly
 {
 public:
 	SoundMain(); // The sound manager class.
-	irrklang::ISound* play3D(std::string filename, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool sfx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
-	irrklang::ISound* play3D(irrklang::ISoundSource* source, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool sfx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
+	Extensions::ALsource play3D(std::string filename, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool sfx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
+	Extensions::ALsource play3D(Extensions::ALbuffer sound, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool sfx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
 	void addSoundComponent(Actors::SoundComponent* sc);
 	// Getters
-	const irrklang::ISoundEngine* const getEngine() const;
+	Extensions::ALcontext getContext() const;
 	float getEngineDefault3DSoundMinDistance();
-	irrklang::ISoundSource* getSource(std::string filename); // Gets a sound source. The engine keeps track of all of these. Don't include the "media/sound/" bit.
+	Extensions::ALbuffer loadSoundData(std::string filename); // Gets a sound source. The engine keeps track of all of these. Don't include the "media/sound/" bit.
 private:
 	void pauseEvent(Core::PausingState state);
 	void onPostPlayerCreation(); // Manually called from the LevelManager
@@ -38,9 +39,10 @@ private:
 	void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Delete all of the sound sources
 	void everyTenth(void* o);
 private:
-	irrklang::ISoundEngine* engine;
-	std::vector<irrklang::ISound*> musics;
-	std::vector<irrklang::ISound*> sounds;
+	Extensions::ALcontext context;
+	std::vector<Extensions::ALbuffer> soundBuffers;
+	std::vector<Extensions::ALsource> musicSources;
+	std::vector<Extensions::ALsource> soundSources;
 	std::set<Actors::SoundComponent*> components;
 
 	bool enableMusic;

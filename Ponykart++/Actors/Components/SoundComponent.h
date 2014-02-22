@@ -5,7 +5,8 @@
 #include <vector>
 #include <string>
 #include <Ogre.h>
-#include <ik_ISound.h>
+#include <al.h>
+#include "Misc/alExtensions.h"
 
 namespace PonykartParsers
 {
@@ -20,7 +21,7 @@ namespace Actors
 
 class LThing;
 
-using SoundFrameEvent = std::vector<std::function<void (LThing*, irrklang::ISound*)>>;
+using SoundFrameEvent = std::vector<std::function<void (LThing*, Extensions::ALsource)>>;
 
 class SoundComponent // TODO: Implement SoundComponent properly
 {
@@ -28,14 +29,14 @@ public:
 	SoundComponent(LThing* lthing, PonykartParsers::ThingBlock *thingTemplate, PonykartParsers::SoundBlock* block);
 	void update();
 	// Getters
-	irrklang::ISound* getSound();
+	Extensions::ALsource getSound();
 	std::string getName() const;
 
 public:
 	bool needUpdate;
 	SoundFrameEvent onUpdate;
 protected:
-	irrklang::ISound* sound;
+	Extensions::ALsource sound;
 	std::string name;
 private:
 	Ogre::Vector3 relativePosition;
