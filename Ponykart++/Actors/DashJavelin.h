@@ -2,9 +2,9 @@
 #define DASHJAVELIN_H_INCLUDED
 
 #include <Ogre.h>
-#include <ik_ISound.h>
-#include <ik_ISoundSource.h>
+#include "Misc/alExtensions.h"
 #include "Actors/Kart.h"
+
 
 namespace PonykartParsers
 {
@@ -41,8 +41,8 @@ private:
 	Ogre::RibbonTrail* jetRibbon;
 
 	Sound::SoundMain* soundMain;
-	irrklang::ISound *idleSound, *fullSound;
-	irrklang::ISoundSource *revDownSound, *revUpSound;
+	Extensions::ALsource idleSound, fullSound;
+	Extensions::ALbuffer revDownSoundData, revUpSoundData;
 	bool idleState; ///< true if we're in the "play the slower sound" state, false if we're in the "play the faster sound" state
 };
 
