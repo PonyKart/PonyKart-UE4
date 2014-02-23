@@ -24,7 +24,7 @@ std::string LCamera::getName() const
 	return name;
 }
 
-bool LCamera::updateCamera(Ogre::FrameEvent* evt)
+bool LCamera::updateCamera(const Ogre::FrameEvent& evt)
 {
 	return true;
 }

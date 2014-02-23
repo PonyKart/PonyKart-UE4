@@ -16,6 +16,9 @@
 
 # Ogre
 - Maybe we could switch to 1.9/1.10, overlays are just moved to a subsystem that you can initialize in two lines. Check the porting notes.
+- We need a replacement for Miyagi. Either keep raw overlays, or install CEGUI/MyGUI/RbGUI/.. but that's another dependency
+-- Overlays seems to be lower-level we might run in trouble trying to make more complicated controls later on.
+-- CEGUI is apparently a piece of overengineered mess over severely underengineered code. Reportedly.
 
 # Optimisations
 - Remember to remove D3D9 from the active plugins once you're done testing with it
@@ -33,4 +36,4 @@
 - Find a way to build Bullet. Maybe another mingw/visual with static link, or changing the flags
 -- MinGW 4.8.1 with CMake 2.8, with -O1 -DNDEBUG works.
 -- Visual works, with full optimisations.
-- CMake.
+- A build system. premake5 reportedly works.

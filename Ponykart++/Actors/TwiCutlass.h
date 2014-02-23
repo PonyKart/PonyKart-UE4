@@ -1,7 +1,7 @@
 #ifndef TWICUTLASS_H_INCLUDED
 #define TWICUTLASS_H_INCLUDED
 
-#include <ik_ISound.h>
+#include "Misc/alExtensions.h"
 #include "Actors/Kart.h"
 
 namespace PonykartParsers
@@ -29,7 +29,7 @@ namespace Actors
 	private:
         const float topSpeedKmHour;
         Sound::SoundMain* soundMain;
-        irrklang::ISound *idleSound, *fullSound;
+		Extensions::ALsource idleSound, fullSound;
         bool idleState;
 	};
 } // Actors

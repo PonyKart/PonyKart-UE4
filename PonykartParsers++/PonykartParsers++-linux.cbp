@@ -21,7 +21,6 @@
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-march=i686" />
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-O3" />
 				</Compiler>
@@ -35,11 +34,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add option="-fPIC" />
+			<Add option="-m32" />
 			<Add directory="." />
 			<Add directory="/usr/include/OGRE" />
 			<Add directory="/usr/local/include/irrKlang" />
 			<Add directory="/usr/include/bullet" />
 		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add directory="/usr/lib/gcc/i486-linux-gnu/4.8.2" />
+		</Linker>
 		<Unit filename="Misc/bulletExtensions.cpp" />
 		<Unit filename="Misc/bulletExtensions.h" />
 		<Unit filename="Misc/direntSearch.cpp" />

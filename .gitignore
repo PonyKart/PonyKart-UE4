@@ -19,6 +19,13 @@ tmp/
 *.depend
 *.layout
 
+# QtCreator user files
+/*.config
+/*.creator
+/*.files
+/*.includes
+/*.creator.user
+
 # Archives
 *.rar
 

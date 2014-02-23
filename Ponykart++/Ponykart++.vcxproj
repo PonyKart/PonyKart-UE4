@@ -110,6 +110,7 @@
     <ClInclude Include="Physics\CollisionGroups.h" />
     <ClInclude Include="Physics\CollisionObjectDataHolder.h" />
     <ClInclude Include="Physics\CollisionReports\CollisionReporter.h" />
+    <ClInclude Include="Physics\CollisionReports\CollisionReportInfo.h" />
     <ClInclude Include="Physics\CollisionShapeManager.h" />
     <ClInclude Include="Physics\Materials\PhysicsMaterial.h" />
     <ClInclude Include="Physics\Materials\PhysicsMaterialFactory.h" />
@@ -191,6 +192,8 @@
       <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4251;4275;4193</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>

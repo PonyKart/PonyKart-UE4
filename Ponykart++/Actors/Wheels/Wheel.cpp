@@ -26,9 +26,10 @@ const float Wheel::START_DRIFT_STEER_CHANGE = 0.0104719755f /*(0.6 degrees)*/ * 
 Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	const unordered_map<string, float>& dict, const string& meshName)
 	: defaultRadius(dict.at("Radius")), defaultWidth(dict.at("Width")),
-	defaultSuspensionRestLength(dict.at("SuspensionRestLength")), defaultSpringStiffness(dict.at("SpringStiffness")),
-	defaultSpringCompression(dict.at("SpringCompression")), defaultSpringDamping(dict.at("SpringDamping")),
-	friction(dict.at("FrictionSlip")), defaultRollInfluence(dict.at("RollInfluence")),
+	defaultSuspensionRestLength(dict.at("SuspensionRestLength")),
+	defaultFrictionSlip(friction), intWheelID((int)wheelID), friction(dict.at("FrictionSlip")),
+	defaultSpringStiffness(dict.at("SpringStiffness")), defaultSpringCompression(dict.at("SpringCompression")),
+	defaultSpringDamping(dict.at("SpringDamping")), defaultRollInfluence(dict.at("RollInfluence")),
 	defaultBrakeForce(dict.at("BrakeForce")), defaultMotorForce(dict.at("MotorForce")),
 	defaultMaxTurnAngle(Degree(dict.at("TurnAngle")).valueRadians()), defaultSlowSpeed(dict.at("SlowSpeed")),
 	defaultHighSpeed(dict.at("HighSpeed")), defaultSlowTurnAngleMultiplier(dict.at("SlowTurnAngleMultiplier")),
@@ -36,8 +37,7 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	defaultDriftingTurnAngle(Degree(dict.at("DriftingTurnAngle")).valueRadians()),
 	defaultDriftingTurnSpeed(Degree(dict.at("DriftingTurnSpeed")).valueRadians()),
 	defaultSteerIncrementTurn(Degree(dict.at("SteerIncrementTurn")).valueRadians()),
-	defaultSteerDecrementTurn(Degree(dict.at("SteerDecrementTurn")).valueRadians()),
-	intWheelID((int)wheelID), defaultFrictionSlip(friction)
+	defaultSteerDecrementTurn(Degree(dict.at("SteerDecrementTurn")).valueRadians())
 {
 	// set up these
 	kart = owner;
@@ -61,7 +61,7 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	vehicle->addWheel(toBtVector3(connectionPoint), toBtVector3(wheelDirection), toBtVector3(wheelAxle),
 		defaultSuspensionRestLength, defaultRadius, *kart->getTuning(), isFrontWheel);
 
-	btWheelInfo info = vehicle->getWheelInfo(intWheelID);
+	btWheelInfo info = vehicle->getWheelInfo(intWheelID); /// TODO: WARNING: Set but not used
 	info.m_suspensionStiffness = defaultSpringStiffness;
 	info.m_wheelsDampingRelaxation = defaultSpringDamping;
 	info.m_wheelsDampingCompression = defaultSpringCompression;
@@ -82,7 +82,7 @@ Wheel::Wheel(Kart* owner, const Vector3& connectionPoint, WheelID wheelID,
 	PhysicsMain::postSimulate.push_back(bind(&Wheel::postSimulate,this,placeholders::_1,placeholders::_2));
 }
 
-void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
+void Wheel::postSimulate(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt)
 {
 	if (!Pauser::isPaused)
 	{
@@ -115,7 +115,7 @@ void Wheel::postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt)
 		changeFriction(&info, currentSpeed);
 		accelerate(currentSpeed);
 		brake(currentSpeed);
-		turn(evt->timeSinceLastFrame, currentSpeed);
+		turn(evt.timeSinceLastFrame, currentSpeed);
 	}
 }
 
@@ -298,7 +298,7 @@ float Wheel::calculateSteerChange(float targetSteerAngle, float speedTurnSpeedMu
 
 float Wheel::calculateTurnAngle(float turnAngleMultiplier)
 {
-	bool isFrontWheel = vehicle->getWheelInfo(intWheelID).m_bIsFrontWheel;
+	bool isFrontWheel = vehicle->getWheelInfo(intWheelID).m_bIsFrontWheel; /// TODO: WARNING: Not used
 	if (driftState == WheelDriftState::None && (id == WheelID::FrontLeft || id == WheelID::FrontRight))
 	{
 		// front wheels, no drift

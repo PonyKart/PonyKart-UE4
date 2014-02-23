@@ -31,7 +31,7 @@ public:
 	Wheel(Kart* owner, const Ogre::Vector3& connectionPoint, WheelID wheelID, 
 		const std::unordered_map<std::string, float>& dict, const std::string& meshName);
 	~Wheel(); ///< clean up stuff
-	void postSimulate(btDiscreteDynamicsWorld* world, Ogre::FrameEvent* evt); ///< Update our node's position and orientation and accelerate/brake/turn if we aren't paused
+	void postSimulate(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt); ///< Update our node's position and orientation and accelerate/brake/turn if we aren't paused
 	float calculateTurnAngleMultiplier(float currentSpeed); ///< Same as CalculateTurnMultipliers(), but only does the Angle part.
 	float calculateTurnAngle(float turnAngleMultiplier); ///< Calculates the angle the wheel should try to be at (in radians). // Use this one if you already know what the turnAngleMultiplier is.
 	// Getters

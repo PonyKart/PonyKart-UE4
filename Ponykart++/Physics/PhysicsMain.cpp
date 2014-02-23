@@ -1,9 +1,14 @@
-#include <Ogre.h>
-#include "Physics/PhysicsMain.h"
+#include <BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h>
+#include <BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h>
+#include <BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h>
+#include "Core/Pauser.h"
+#include "Kernel/LKernelOgre.h"
 #include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
+#include "Physics/PhysicsMain.h"
 
 using namespace Ogre;
+using namespace Ponykart::Core;
 using namespace Ponykart::Physics;
 using namespace Ponykart::LKernel;
 using namespace Ponykart::Levels;
@@ -17,34 +22,28 @@ PhysicsWorldEvent PhysicsMain::postCreateWorld;
 PhysicsSimulateEvent PhysicsMain::preSimulate;
 PhysicsSimulateEvent PhysicsMain::postSimulate;
 PhysicsSimulateEvent PhysicsMain::finaliseBeforeSimulation;
-/*
+
 
 PhysicsMain::PhysicsMain()
 {
 	log("[Loading] Creating PhysicsMain...");
-	LevelManager::OnLevelUnload.push_back(OnLevelUnload);
-
-	// Create our frame listeners
-	frameEnded = new FrameEndedListener;
+	LevelManager::onLevelUnload.push_back(std::bind(&PhysicsMain::onLevelUnload, this, std::placeholders::_1));
 }
-
-*/
 
 btDiscreteDynamicsWorld* PhysicsMain::getWorld()
 {
     return world;
 }
 
-/*
-void PhysicsMain::OnLevelUnload(LevelChangedEventArgs eventArgs)
+void PhysicsMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 {
-	LKernel::GetG<Root>()->removeFrameListener(frameEnded);
+	LKernel::gRoot->removeFrameListener(this);
 
 	if (world)
 	{
-		for (int a = 0; a < world->collisionObjectArray.Count; a++)
+		for (int a = 0; a < world->getCollisionObjectArray().size(); a++)
 		{
-			auto obj = world->collisionObjectArray[a];
+			auto obj = world->getCollisionObjectArray()[a];
 			if (obj)
 			{
 				world->removeCollisionObject(obj);
@@ -61,26 +60,26 @@ void PhysicsMain::OnLevelUnload(LevelChangedEventArgs eventArgs)
 	}
 }
 
-bool FrameEndedListener::frameEnded(const Ogre::FrameEvent& evt)
+bool PhysicsMain::frameEnded(const Ogre::FrameEvent& evt)
 {
-	if (Pauser.IsPaused || world.IsDisposed)
+	if (Pauser::isPaused || world==nullptr)
 		return true;
 
 	// run the events that go just before we simulate
-	if (PreSimulate != null)
-		PreSimulate(world, evt);
+	for (auto& fun : preSimulate)
+		fun(world, evt);
 
-	if (FinaliseBeforeSimulation != null)
-		FinaliseBeforeSimulation(world, evt);
+	for (auto& fun : finaliseBeforeSimulation)
+		fun(world, evt);
 
-	world->stepSimulation(PhysicsMain::SlowMo ? evt.timeSinceLastFrame / 10.0 : evt.timeSinceLastFrame, _maxSubsteps, _fixedTimestep);
+	world->stepSimulation(PhysicsMain::slowMo ? evt.timeSinceLastFrame / 10.f : evt.timeSinceLastFrame, _maxSubsteps, _fixedTimestep);
 
 	// run the events that go just after we simulate
-	if (PostSimulate != null)
-		PostSimulate(world, evt);
+	for (auto& fun : postSimulate)
+		fun(world, evt);
 
-	if (PhysicsMain::DrawLines)
-		world.DebugDrawWorld();
+	if (PhysicsMain::drawLines)
+		world->debugDrawWorld();
 
 	//foreach (var item in LKernel.GetG<LevelManager>().CurrentLevel.Things) {
 	//	if (item.Value.Name.Contains("Apple") && !item.Value.Name.Contains("Tree")) {
@@ -90,4 +89,3 @@ bool FrameEndedListener::frameEnded(const Ogre::FrameEvent& evt)
 
 	return true;
 }
-*/
