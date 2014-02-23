@@ -3,6 +3,7 @@
 using namespace std;
 using namespace Ponykart::UI;
 
+/*
 /// Adds a line of text to the console
 /// @param text The text to add.
 void LuaConsoleManager::addLabel(const string& text)
@@ -29,3 +30,4 @@ void LuaConsoleManager::addLabel(const string& text)
     if (luaGui.Visible)
         textBox.Focused = true;
 }
+*/

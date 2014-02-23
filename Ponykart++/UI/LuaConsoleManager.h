@@ -18,9 +18,9 @@ namespace UI
 
     private:
 		int labelY;
-		Panel* panel;
-		TextBox* textBox;
-		GUI* luaGui;
+//		Panel* panel;
+//		TextBox* textBox;
+//		GUI* luaGui;
 		std::string lastInput = "";
 	};
 } // UI
