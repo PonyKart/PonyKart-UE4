@@ -46,7 +46,8 @@ solution "Ponykart++"
 			os.findlib("vorbisfile"),
 			os.findlib("sndfile"),
 			os.findlib("ogg"),
-			os.findlib("openal"),		
+			os.findlib("openal"),
+			os.findlib("boost_system"), 		
 			-- Try in C:/
 			"C:/OGRE/lib/release",
 			"C:/BULLET_PHYSICS/lib/Release",
