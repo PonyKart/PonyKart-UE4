@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#include "Physics/CollisionGroups.h"
 
 class btCollisionObject;
 struct btCollisionObjectWrapper;
@@ -18,7 +19,7 @@ namespace Physics
 	struct CollisionReportInfo;
 
 	/// Our delegate for collision reports
-	using CollisionReportEvent = std::function<void(CollisionReportInfo* info)>;
+	using CollisionReportEvent = std::vector<std::function<void(CollisionReportInfo* info)>>;
 
 	/// Our class for handling all collision reports, firing events when physics objects collide.
 	/// 
@@ -37,6 +38,8 @@ namespace Physics
 		/// Fired every frame when an object is inside another object.
 		bool contactAdded(btManifoldPoint& point, btCollisionObjectWrapper* objectA, int partId0, int index0, 
 												btCollisionObjectWrapper* objectB, int partId1, int index1);
+		void addEvent(PonykartCollisionGroups firstType, PonykartCollisionGroups secondType, CollisionReportEvent handler);
+		void addEvent(int firstType, int secondType, CollisionReportEvent handler);
 	private:
 		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
 

@@ -9,7 +9,7 @@ CollisionObjectDataHolder::CollisionObjectDataHolder(LThing* Thing)
  : thing(Thing)
 {
 	owner = Thing->getBody();
-	collisionGroup = thing->getCollisionGroup();
+	collisionGroup = *thing->getCollisionGroup();
 	name = thing->getName();
 }
 
@@ -17,7 +17,7 @@ CollisionObjectDataHolder::CollisionObjectDataHolder(LThing* Thing)
 /** @param CollisionGroup The collision group of the object
 /// @param Name The name of the object, excluding an ID
 /// @param Owner The collision object this data holder is attached to */
-CollisionObjectDataHolder::CollisionObjectDataHolder(btCollisionObject* Owner, PonykartCollisionGroups* CollisionGroup, const std::string& Name)
+CollisionObjectDataHolder::CollisionObjectDataHolder(btCollisionObject* Owner, PonykartCollisionGroups CollisionGroup, const std::string& Name)
  : owner(Owner), collisionGroup(CollisionGroup), name(Name)
 {
 	id = IDs::random();
