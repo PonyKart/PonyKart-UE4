@@ -28,6 +28,8 @@ solution "Ponykart++"
 			"/usr/include/AL",
 			"/usr/local/include/vorbis",
 			"/usr/include/vorbis",
+			"/usr/local/include/opus",
+			"/usr/include/opus",
 		}
 	configuration { "MacOSX" }
 		buildoptions "-std=c++11"
@@ -63,6 +65,8 @@ solution "Ponykart++"
 				"sndfile",
 				"vorbisfile",
 				"vorbis",
+				"opusfile",
+				"opus",
 				"ogg",
 				"boost_system",
 			}

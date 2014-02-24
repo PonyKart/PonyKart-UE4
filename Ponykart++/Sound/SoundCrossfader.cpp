@@ -1,3 +1,4 @@
+#include <al.h>
 #include <OgreRoot.h>
 #include "Core/Pauser.h"
 #include "Kernel/LKernel.h"
@@ -14,8 +15,8 @@ using namespace Extensions;
 /// @param duration How long you want the crossfade to take, in seconds.
 /// @param toFadeInVolume What volume you want the "fade in" sound to have when it is completed
 **/
-SoundCrossfader::SoundCrossfader(ALsource toFadeOut, ALsource toFadeIn, float Duration, float toFadeInVolume)
-: progress(0), duration(Duration), initialFadeOutVolume(toFadeOut == -1 ? 0.f : /*toFadeOut->getVolume()*/0),
+SoundCrossfader::SoundCrossfader(ALSource toFadeOut, ALSource toFadeIn, float Duration, float toFadeInVolume)
+: progress(0), duration(Duration), initialFadeOutVolume(toFadeOut == -1 ? 0.f : alGetSourceGain(toFadeOut)),
 	targetFadeInVolume(toFadeIn == -1 ? 1.f : toFadeInVolume)
 {
 	// NOTE: Sounds will not exist when we're using the null sound driver!
@@ -42,8 +43,8 @@ bool SoundCrossfader::frameEnded(const Ogre::FrameEvent& evt)
 
 	// adjust volumes relatively
 	float relProgress = progress / duration;
-	//soundToFadeOut->setVolume(1.f - (relProgress * initialFadeOutVolume));
-	//soundToFadeIn->setVolume(relProgress * targetFadeInVolume);
+	alSourcef(soundToFadeOut, AL_GAIN, 1.f - (relProgress * initialFadeOutVolume));
+	alSourcef(soundToFadeIn, AL_GAIN, relProgress * targetFadeInVolume);
 
 	return true;
 }
@@ -51,9 +52,13 @@ bool SoundCrossfader::frameEnded(const Ogre::FrameEvent& evt)
 void SoundCrossfader::detach()
 {
 	if (soundToFadeOut != -1)
-		/*soundToFadeOut->setVolume(0.f)*/;
+	{
+		alSourcef(soundToFadeOut, AL_GAIN, 0.f);
+	}
 	if (soundToFadeIn != -1)
-		/*oundToFadeIn->setVolume(targetFadeInVolume)*/;
+	{
+		alSourcef(soundToFadeIn, AL_GAIN, targetFadeInVolume);
+	}
 
 	LKernel::gRoot->removeFrameListener(this);
 

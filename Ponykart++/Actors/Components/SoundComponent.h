@@ -21,7 +21,7 @@ namespace Actors
 
 class LThing;
 
-using SoundFrameEvent = std::vector<std::function<void (LThing*, Extensions::ALsource)>>;
+using SoundFrameEvent = std::vector<std::function<void (LThing*, Extensions::ALSource)>>;
 
 class SoundComponent // TODO: Implement SoundComponent properly
 {
@@ -29,14 +29,14 @@ public:
 	SoundComponent(LThing* lthing, PonykartParsers::ThingBlock *thingTemplate, PonykartParsers::SoundBlock* block);
 	void update();
 	// Getters
-	Extensions::ALsource getSound();
+	Extensions::ALSource getSound();
 	std::string getName() const;
 
 public:
 	bool needUpdate;
 	SoundFrameEvent onUpdate;
 protected:
-	Extensions::ALsource sound;
+	Extensions::ALSource sound;
 	std::string name;
 private:
 	Ogre::Vector3 relativePosition;

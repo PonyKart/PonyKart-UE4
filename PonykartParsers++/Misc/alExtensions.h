@@ -5,9 +5,10 @@
 
 namespace Extensions
 {
-	using ALcontext = void*;
-	using ALsource = ALuint;
-	using ALbuffer = ALuint;
+	using ALSource = ALuint;
+	using ALBuffer = ALuint;
+
+	ALfloat alGetSourceGain (ALSource src);
 }
 
 #endif // ALEXTENSIONS_H_INCLUDED

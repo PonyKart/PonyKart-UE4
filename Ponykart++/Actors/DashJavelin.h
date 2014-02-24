@@ -41,8 +41,8 @@ private:
 	Ogre::RibbonTrail* jetRibbon;
 
 	Sound::SoundMain* soundMain;
-	Extensions::ALsource idleSound, fullSound;
-	Extensions::ALbuffer revDownSoundData, revUpSoundData;
+	Extensions::ALSource idleSound, fullSound;
+	Extensions::ALBuffer revDownSoundData, revUpSoundData;
 	bool idleState; ///< true if we're in the "play the slower sound" state, false if we're in the "play the faster sound" state
 };
 

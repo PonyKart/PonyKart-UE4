@@ -1,3 +1,4 @@
+#include <al.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/SoundComponent.h"
 #include "Kernel/LKernel.h"
@@ -37,17 +38,20 @@ SoundComponent::SoundComponent(LThing* lthing, ThingBlock* thingTemplate, SoundB
 
 	sound = soundMain->play3D(soundData, relativePosition, looping, startPaused, sfx);
 
-	//sound->setPlaybackSpeed(block->getFloatProperty("Speed", 1));
+	alSourcef(sound, AL_PITCH, block->getFloatProperty("Speed", 1));
 	auto volumeIt=block->getFloatTokens().find("volume");
 	if (volumeIt!=block->getFloatTokens().end())
-		/*sound->setVolume(volumeIt->second)*/;
+		alSourcef(sound, AL_GAIN, volumeIt->second);
 
-	//sound->setMinDistance(block->getFloatProperty("mindistance", soundMain->getEngineDefault3DSoundMinDistance()));
+	alSourcef(sound, AL_REFERENCE_DISTANCE, block->getFloatProperty("mindistance", soundMain->getDefaultReferenceDistance()));
 
 	// TODO: effects, if we end up using any of them
 
 	update();
-	//sound->setIsPaused(false);
+	ALint state;
+	alGetSourcei(sound, AL_SOURCE_STATE, &state);
+	if (state == AL_PAUSED)
+		alSourcePlay(sound);
 
 	soundMain->addSoundComponent(this);
 }
@@ -61,9 +65,12 @@ void SoundComponent::update()
 
 	Vector3 parent = owner->getRootNode()->_getDerivedPosition();
 	// update the position
-	//sound->setPosition(irrklang::vec3df(parent.x + relativePosition.x, parent.y + relativePosition.y, parent.z + relativePosition.z));
+	alSource3f(sound, AL_POSITION, parent.x + relativePosition.x, parent.y + relativePosition.y, parent.z + relativePosition.z);
 	if (owner->getBody() != nullptr)
-		/*sound->setVelocity(toSoundVector(owner->getBodyLinearVelocity()))*/;
+	{
+		auto vel = owner->getBodyLinearVelocity();
+		alSource3f(sound, AL_VELOCITY, vel.x, vel.y, vel.z);
+	}
 
 	if (onUpdate.size()) // run the OnUpdate methods
 	{
@@ -85,7 +92,7 @@ void SoundComponent::update()
 	}
 }
 
-ALsource SoundComponent::getSound()
+ALSource SoundComponent::getSound()
 {
 	return sound;
 }

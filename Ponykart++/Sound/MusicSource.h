@@ -16,15 +16,15 @@ public:
 	MusicSource (const std::string filename);
 	~MusicSource ();
 
-	Extensions::ALsource GetSource () const;
+	Extensions::ALSource GetSource () const;
 
 	void Pause ();
 	void Play ();
 	void Pump ();
 
 private:
-	Extensions::ALsource source;
-	std::vector<Extensions::ALbuffer> buffers;
+	Extensions::ALSource source;
+	std::vector<Extensions::ALBuffer> buffers;
 	OggVorbis_File file;
 };
 
