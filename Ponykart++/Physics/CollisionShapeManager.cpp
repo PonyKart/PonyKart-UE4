@@ -217,7 +217,7 @@ btCollisionShape* CollisionShapeManager::createShapeForComponent(ShapeComponent*
 											(int)(((float)j / newPicSize) * imageHeight))->Red) / 255.0);
 
 		float heightScale = (float)(component->getMaxHeight() - component->getMinHeight() / 255.0);
-		Vector3 scale = component->getDimensions();
+		//Vector3 scale = component->getDimensions();
 
 		btHeightfieldTerrainShape* heightfield = new btHeightfieldTerrainShape(newPicSize, newPicSize, terr, heightScale,
 			component->getMinHeight(), component->getMaxHeight(), 1, PHY_ScalarType::PHY_FLOAT, false);

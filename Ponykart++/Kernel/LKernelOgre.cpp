@@ -14,7 +14,7 @@ using namespace Ogre;
 
 void LKernel::initOgreRoot()
 {
-#ifdef DEBUG
+#if defined(DEBUG) && defined(WIN32)
 	gRoot = new Ogre::Root("media_debug/config/plugins.cfg", "", "Ponykart.log");
 #else
 	gRoot = new Ogre::Root("media/config/plugins.cfg", "", "Ponykart.log");

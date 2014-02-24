@@ -28,16 +28,16 @@ Kart* Spawner::spawnKart(std::string thingName, PonykartParsers::ThingBlock* thi
 {
 	if (Pauser::isPaused)
 		throw string("Attempted to spawn \"" + thingName + "\" while paused!");
-	
+
 	_spawnLock.lock();
 	try
 	{
-		auto definition = database->getThingDefinition(thingName);		
+		auto definition = database->getThingDefinition(thingName);
 		Kart* kart;
 		if (thingName == "DashJavelin")
 			kart = new DashJavelin(thingTemplate, definition);
-		else if (thingName == "TwiCutlass")
-			kart = new TwiCutlass(thingTemplate, definition);
+		//else if (thingName == "TwiCutlass") //TODO: Implement TwiCutlass
+		//	kart = new TwiCutlass(thingTemplate, definition);
 		else
 			kart = new Kart(thingTemplate, definition);
 		levelManager->getCurrentLevel()->addThing(kart);

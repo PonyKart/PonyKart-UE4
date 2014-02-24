@@ -18,7 +18,7 @@ using Ponykart::Core::Options;
 
 // Define the static const members
 int Splash::current;
-const int Splash::maximum = 19;
+const int Splash::maximum = 10;
 
 /// Loads and displays the splash screen.
 /** Reads configuration from "media/config/splash.res" and loads all ressource groups inside.\n
