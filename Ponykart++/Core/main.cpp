@@ -1,5 +1,6 @@
 #include <string>
 #include <fstream>
+#include <cstdio>
 #include "Core/Options.h"
 #include "UI/Splash.h"
 #include "Kernel/LKernel.h"
@@ -59,13 +60,18 @@ int main()
 		log("Creating player camera and viewport...");
 		initOgreViewportCam();
 
-		Splash splash;
+		// Splash screen
+		{
+			Splash splash;
 
-		loadInitialObjects(splash);
+			loadInitialObjects(splash);
 
-		//startRendering();
+			//startRendering();
+		}
 
-		log("End of code. Exited successfully.");
+		log("End of code. Shutting down...");
+		shutdown();
+		std::printf("Shutdown successful.\n");
 		return EXIT_SUCCESS;
 	}
 	catch (std::string e) // If you can't guarantee that someone will catch your exceptions, throw a string.
@@ -74,5 +80,9 @@ int main()
 	}
 	// TODO: Catch standard exceptions too. Log e.what()
 
+	log ("Exception thrown. Shutting down...");
+	shutdown();
+	std::printf("Shutdown successful.\n");
 	return EXIT_FAILURE; // If we're here, we came from a catch
 }
+

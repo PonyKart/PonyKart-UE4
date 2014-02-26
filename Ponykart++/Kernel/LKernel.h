@@ -9,6 +9,7 @@
 #include <OgreTextAreaOverlayElement.h>
 #include <OgreFontManager.h>
 
+#include "LKernelObject.h"
 #include "UI/Splash.h"
 
 namespace Ponykart
@@ -21,20 +22,27 @@ namespace LKernel
 	extern Ogre::RenderSystem* gRenderSystem;
 	extern Ogre::SceneManager* gSceneManager;
 	extern Ogre::Viewport* gViewport;
-	extern std::vector<std::function<void (void*)>> onEveryUnpausedTenthOfASecondEvent;
+	extern std::vector<std::function<void (LKernelObject*)>> onEveryUnpausedTenthOfASecondEvent;
 
 	/// Implementation details that are not part of the interface.
 	namespace details
 	{
-		extern std::unordered_map<std::string,void*> globalObjects;
-		extern std::unordered_map<std::string,void*> levelObjects;
+		extern std::unordered_map<std::string, LKernelObject*> globalObjects;
+		extern std::unordered_map<std::string, LKernelObject*> levelObjects;
 	} // details
 
 	// Interface
 	void loadInitialObjects(Splash& splash);
-	void* addGlobalObject(void* object, const std::string& typeName); ///< Add a singleton to LKernel's map.
-	template<typename T> static inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());} ///< Add a singleton to LKernel's map.
-	template<typename T> static T* getG() {return (T*)details::globalObjects[typeid(T).name()];} ///< Get a singleton from LKernel's map.
+	LKernelObject* addGlobalObject(LKernelObject* object, const std::string& typeName); ///< Add a singleton to LKernel's map.
+	template<typename T> inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());} ///< Add a singleton to LKernel's map.
+	template<typename T> T* getG() {return (T*)details::globalObjects[typeid(T).name()];} ///< Get a singleton from LKernel's map.
+	template<> Ogre::Root *getG<Ogre::Root> ();
+	template<> Ogre::RenderWindow *getG<Ogre::RenderWindow> ();
+	template<> Ogre::RenderSystem *getG<Ogre::RenderSystem> ();
+	template<> Ogre::SceneManager *getG<Ogre::SceneManager> ();
+	template<> Ogre::Viewport *getG<Ogre::Viewport> ();
+
+	void shutdown ();
 } // LKernel
 } // Ponykart
 

@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#include "Kernel/LKernelObject.h"
 
 class btCollisionObject;
 struct btCollisionObjectWrapper;
@@ -26,7 +27,7 @@ namespace Physics
 	/// profiling thing yet, so it's good enough for now.
 	/// 
 	/// Remember that things you want to be collided with need to have their CollisionFlags.CustomMaterialCallback flag set!
-	class CollisionReporter
+	class CollisionReporter : public LKernel::LKernelObject
 	{
 		static const unsigned char HIGHEST_BIT_IN_COLLISION_GROUPS = 64; ///< Remember to update this!
 

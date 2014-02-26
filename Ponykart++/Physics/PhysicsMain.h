@@ -5,6 +5,7 @@
 #include <vector>
 #include <OgreFrameListener.h>
 #include <BulletCollision/CollisionDispatch/btManifoldResult.h>
+#include "Kernel/LKernelObject.h"
 #include "Levels/LevelChangedEventArgs.h"
 
 class btDiscreteDynamicsWorld;
@@ -20,7 +21,9 @@ namespace Physics
 	using PhysicsWorldEvent = std::vector<std::function<void (btDiscreteDynamicsWorld*)>>;
 	using PhysicsSimulateEvent = std::vector<std::function<void(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt)>>;
 	using ContactAdded = std::vector<std::function<bool (btManifoldPoint&,btCollisionObjectWrapper*,int,int,btCollisionObjectWrapper*,int,int)>>;
-	class PhysicsMain : public Ogre::FrameListener
+
+
+	class PhysicsMain : public LKernel::LKernelObject, public Ogre::FrameListener
 	{
 	public:
 		PhysicsMain();

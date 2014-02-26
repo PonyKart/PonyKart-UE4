@@ -4,6 +4,7 @@
 #include <string>
 #include <functional>
 #include <Ogre.h>
+#include "Kernel/LKernelObject.h"
 #include "Levels/Level.h"
 #include "Levels/LevelChangeRequest.h"
 #include "Core/Settings.h"
@@ -20,7 +21,7 @@ class LevelChangedEventArgs;
 using LevelEvent = std::vector<std::function<void (LevelChangedEventArgs*)>>;
 using LevelProgressEvent = std::vector<std::function<void (LevelChangedEventArgs*,std::string)>>;
 
-class LevelManager
+class LevelManager : public LKernel::LKernelObject
 {
 public:
 	explicit LevelManager();

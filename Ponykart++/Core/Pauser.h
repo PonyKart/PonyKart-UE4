@@ -4,6 +4,7 @@
 #include <vector>
 #include <functional>
 #include <OIS.h>
+#include "Kernel/LKernelObject.h"
 
 namespace Ponykart
 {
@@ -15,7 +16,7 @@ enum PausingState
 	Unpausing
 };
 
-class Pauser
+class Pauser : public LKernel::LKernelObject
 {
 public:
 	Pauser();

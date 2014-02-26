@@ -5,7 +5,9 @@
 #include <functional>
 #include <OIS.h>
 #include <OgreFrameListener.h>
+#include "Kernel/LKernelObject.h"
 #include "Core/ControllerManager.h"
+
 
 //#define PRINTINPUT ///< uncomment if you want all input to be printed
 
@@ -25,7 +27,7 @@ using AxisMovedEventHandler = std::vector<std::function<void (void* sender, Core
 // Other classes (mostly handlers) should only use events fired off from this class and not ones fired off from the
 // input library.
 **/
-class InputMain : public OIS::KeyListener, public OIS::MouseListener, public Ogre::FrameListener // TODO: Finish implementing InputMain
+class InputMain : public LKernel::LKernelObject, public OIS::KeyListener, public OIS::MouseListener, public Ogre::FrameListener // TODO: Finish implementing InputMain
 {
 public:
 	InputMain();

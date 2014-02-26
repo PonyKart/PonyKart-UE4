@@ -1,7 +1,8 @@
+#include "Sound/SoundMain.h"
+
 #include <cctype>
+#include <chrono>
 #include <algorithm>
-#include <alc.h>
-#include <al.h>
 #include <alext.h>
 #include <efx.h>
 #include <sndfile.hh>
@@ -21,7 +22,7 @@
 #include "Levels/LevelManager.h"
 #include "Players/Player.h"
 #include "Players/PlayerManager.h"
-#include "Sound/SoundMain.h"
+#include "Sound/Music/MusicSource.h"
 
 using namespace std;
 using namespace Ogre;
@@ -45,31 +46,72 @@ SoundMain::SoundMain()
 	playerManager = LKernel::getG<PlayerManager>();
 	cameraManager = LKernel::getG<CameraManager>();
 
-	playerManager->onPostPlayerCreation.push_back(bind(&SoundMain::onPostPlayerCreation,this));
+	//playerManager->onPostPlayerCreation.push_back(bind(&SoundMain::onPostPlayerCreation,this));
 	LevelManager::onLevelUnload.push_back(bind(&SoundMain::onLevelUnload, this, placeholders::_1));
 	LevelManager::onLevelLoad.push_back(bind(&SoundMain::onLevelLoad, this, placeholders::_1));
 	LKernel::getG<Pauser>()->pauseEvent.push_back(bind(&SoundMain::pauseEvent,this,placeholders::_1));
 
-	auto dev = alcOpenDevice(nullptr);
-	context = alcCreateContext(dev, nullptr);
+	device = alcOpenDevice(nullptr);
+	context = alcCreateContext(device, nullptr);
 	alcMakeContextCurrent(context);
 	if (alGetError() != AL_NO_ERROR)
 		throw string("Failed to initialize OpenAL!");
 
 	alDistanceModel(AL_INVERSE_DISTANCE_CLAMPED);
 
-	idleSources.reserve(32);
-	activeSources.reserve(32);
-	alGenSources((int)idleSources.capacity(), idleSources.data());
+	idleSources.resize(32);
+	alGenSources(idleSources.size(), idleSources.data());
 
-	log("[Loading] OpenAL and SoundMain initialised!");
+	musicQuit = false;
+	musicThread = thread([this]() {
+		musicLock.lock();
+		for (auto m : musicSources)
+			m->pump();
+		musicLock.unlock();
+
+		this_thread::sleep_for(chrono::milliseconds(100));
+		if (musicQuit)
+			return;
+	});
+
+	log("[Loading] OpenAL and SoundMain initialised.");
 }
 
 
 SoundMain::~SoundMain ()
 {
+	stopAllSources();
+
+	musicQuit = true;
+	musicThread.join();
+
+	alDeleteSources(idleSources.size(), idleSources.data());
+
 	alcMakeContextCurrent(nullptr);
 	alcDestroyContext(context);
+	alcCloseDevice(device);
+
+	log("[Shutdown] OpenAL and SoundMain shutdown.");
+}
+
+
+void SoundMain::stopAllSources ()
+{
+	for (auto src : activeSources) {
+		alSourceStop(src);
+		alSourcei(src, AL_BUFFER, 0);
+	}
+	idleSources.insert(idleSources.end(), activeSources.begin(), activeSources.end());
+	activeSources.clear();
+	for (auto buf : buffers)
+		alDeleteBuffers(1, &buf);
+	buffers.clear();
+
+	for (auto m : musicSources)
+		m->destroy();
+
+	lock_guard<mutex> musicGuard(musicLock);
+	musicSources.clear();
 }
 
 
@@ -127,8 +169,7 @@ ALBuffer SoundMain::loadWavData(string filename)
 
 	ALBuffer buf = 0;
 	alGenBuffers(1, &buf);
-	switch (info.channels)
-	{
+	switch (info.channels) {
 	case 1:
 		alBufferData(buf, AL_FORMAT_MONO16, data, sizeof(ALshort) * info.frames, info.samplerate);
 		break;
@@ -149,23 +190,20 @@ ALBuffer SoundMain::loadVorbisData(string filename)
 		throw string("Error openning vorbis file: " + filename);
 	if (ov_streams(&vf) > 1)
 		log("[Sound] WARNING: Vorbis file has more than 1 bitstream: " + filename);
-	auto info = ov_info(&vf, 0);
-	if (info->channels > 2)
-	{
+	auto info = ov_info(&vf, -1);
+	if (info->channels > 2) {
 		ov_clear(&vf);
 		throw string("Vorbis file has more than 2 channels: " + filename);
 	}
 
-	ogg_int64_t pcmTotal = ov_pcm_total(&vf, 0);
+	ogg_int64_t pcmTotal = ov_pcm_total(&vf, -1);
 	ogg_int64_t dataLength = sizeof(ALshort) * pcmTotal * info->channels;
 	auto data = new char[dataLength];
 	int bitstream;
 	long offset = 0;
-	while (offset < dataLength)
-	{
+	while (offset < dataLength) {
 		auto result = ov_read(&vf, data + offset, dataLength - offset, false, 2, true, &bitstream);
-		if (result < 0)
-		{
+		if (result < 0) {
 			ov_clear(&vf);
 			delete[] data;
 			throw string("Error while decoding vorbis file: " + filename);
@@ -176,8 +214,7 @@ ALBuffer SoundMain::loadVorbisData(string filename)
 	ALBuffer buf = 0;
 	alGenBuffers(1, &buf);
 
-	switch (info->channels)
-	{
+	switch (info->channels) {
 	case 1:
 		alBufferData(buf, AL_FORMAT_MONO16, (ALvoid*)data, sizeof(ALshort) * pcmTotal, info->rate);
 		break;
@@ -202,24 +239,21 @@ ALBuffer SoundMain::loadOpusData(string filename)
 		throw string("Error openning opus file: " + filename);
 	if (op_link_count(of) > 1)
 		log("[Sound] WARNING: Opus file has more than 1 link: " + filename);
-	int channels = op_channel_count(of, 0);
-	if (channels > 2)
-	{
+	int channels = op_channel_count(of, -1);
+	if (channels > 2) {
 		op_free(of);
 		throw("Opus file has more than 2 channels: " + filename);
 	}
 
-	ogg_int64_t pcmTotal = op_pcm_total(of, 0);
+	ogg_int64_t pcmTotal = op_pcm_total(of, -1);
 	ogg_int64_t dataLength = pcmTotal * channels;
 	auto data = new float[dataLength];
 	int link;
 	long offset = 0;
 
-	while (offset < dataLength)
-	{
+	while (offset < dataLength) {
 		auto result = op_read_float(of, data + offset, dataLength - offset, &link);
-		if (result < 0)
-		{
+		if (result < 0) {
 			op_free(of);
 			delete[] data;
 			throw string("Error while decoding opus file: " + filename);
@@ -230,8 +264,7 @@ ALBuffer SoundMain::loadOpusData(string filename)
 	ALBuffer buf = 0;
 	alGenBuffers(1, &buf);
 
-	switch (channels)
-	{
+	switch (channels) {
 	case 1:
 		alBufferData(buf, AL_FORMAT_MONO_FLOAT32, (ALvoid*)data, sizeof(ALfloat) * pcmTotal, 48000);
 		break;
@@ -257,20 +290,18 @@ ALSource SoundMain::activateSource ()
 {
 	ALSource src = 0;
 
-	if (idleSources.size() > 0)
-	{
+	if (idleSources.size() > 0) {
 		src = idleSources[idleSources.size() - 1];
 		idleSources.pop_back();
-	}
-	else
+	} else
 		alGenSources(1, &src);
 
-	activeSources.push_back(src);
+	activeSources.insert(src);
 	return src;
 }
 
 
-ALSource SoundMain::play3D(ALBuffer sound, const Vector3& pos, bool looping, bool startPaused, bool sfx)
+ALSource SoundMain::play3D(ALBuffer sound, const Vector3& pos, bool looping, bool startPaused, bool efx)
 {
 #if DEBUG
 	log(string("[Sound] Creating 3D sound: ") + bufferNames[sound] + " Looping: " + (looping ? "true" : "false"));
@@ -291,9 +322,25 @@ ALSource SoundMain::play3D(ALBuffer sound, const Vector3& pos, bool looping, boo
 }
 
 
+SoundMain::MusicSourcePtr SoundMain::PlayMusic (const string filename, bool startPaused, bool efx)
+{
+	auto musicSrc = new MusicSource(filename, startPaused);
+
+	lock_guard<mutex> musicGuard(musicLock);
+	musicSources.insert(musicSrc);
+
+	return MusicSourcePtr(musicSrc, [this](MusicSource *ms) {
+		lock_guard<mutex> musicGuard(musicLock);
+		musicSources.erase(ms);
+		delete ms;
+	});
+}
+
+
 void SoundMain::pauseEvent(PausingState state)
 {
-	alSourcePausev(activeSources.size(), activeSources.data());
+	for (auto src : activeSources)
+		alSourcePause(src);
 }
 
 
@@ -346,67 +393,61 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 	if (!found)
 		throw string("SoundMain::onLevelUnload: Couldn't unregister from event onEveryUnpausedTenthOfASecondEvent");
 
+	stopAllSources();
 	alListener3f(AL_POSITION, 0, 0, 0);
 	alListener3f(AL_DIRECTION, 0, 0, -1);
 	alListener3f(AL_VELOCITY, 0, 0, 0);
 
-	alSourceStopv(activeSources.size(), activeSources.data());
-	for (auto src : activeSources)
-		alSourcei(src, AL_BUFFER, 0);
-	idleSources.insert(idleSources.end(), activeSources.begin(), activeSources.end());
-	activeSources.clear();
-	alDeleteBuffers(buffers.size(), buffers.data());
-	buffers.clear();
-
-	musicSources.clear(); // TODO: Music
 	components.clear();
 }
 
 
 void SoundMain::everyTenth(void* o)
 {
-	std::remove_if(activeSources.begin(), activeSources.end(), [this](ALSource src) {
+	for (auto it = activeSources.begin(); it != activeSources.end();) {
 		ALint state = 0;
+		auto src = *it;
 		alGetSourcei(src, AL_SOURCE_STATE, &state);
 		if (state == AL_STOPPED)
 		{
 			alSourcei(src, AL_BUFFER, 0);
 			idleSources.push_back(src);
-			return true;
+			it = activeSources.erase(it);
 		}
 		else
-			return false;
-	});
-
-	if (playerManager->getMainPlayer() == nullptr) 
-		return;
-
-	const LCamera* cam = cameraManager->getCurrentCamera();
-	const btRigidBody* body = playerManager->getMainPlayer()->getBody();
-
-	// Enjoy your RTTI
-	const PlayerCamera* PCam = dynamic_cast<const PlayerCamera*>(cam);
-	const KnightyCamera* KCam = dynamic_cast<const KnightyCamera*>(cam);
-	Vector3 pos, rot;
-	btVector3 vel;
-	if (PCam || KCam) 
-	{
-		pos = toOgreVector3(body->getCenterOfMassPosition());
-		rot = toOgreQuaternion(body->getOrientation()).yAxis();
-		vel = body->getLinearVelocity();
-	}
-	else 
-	{
-		const Quaternion& derivedOrientation = cam->getCamera()->getDerivedOrientation();
-		pos = cam->getCamera()->getDerivedPosition();
-		rot = derivedOrientation.yAxis();
-		vel = body->getLinearVelocity();
+			it++;
 	}
 
-	// TODO: BUG:? Is everyone using the same axes ?
-	alListener3f(AL_POSITION, pos.x, pos.y, pos.z);
-	alListener3f(AL_DIRECTION, rot.x, rot.y, rot.z);
-	alListener3f(AL_VELOCITY, vel.x(), vel.y(), vel.z());
+// TODO: Fix PlayerManager
+//	if (playerManager->getMainPlayer() == nullptr)
+//		return;
+
+//	const LCamera* cam = cameraManager->getCurrentCamera();
+//	const btRigidBody* body = playerManager->getMainPlayer()->getBody();
+
+//	// Enjoy your RTTI
+//	const PlayerCamera* PCam = dynamic_cast<const PlayerCamera*>(cam);
+//	const KnightyCamera* KCam = dynamic_cast<const KnightyCamera*>(cam);
+//	Vector3 pos, rot;
+//	btVector3 vel;
+//	if (PCam || KCam)
+//	{
+//		pos = toOgreVector3(body->getCenterOfMassPosition());
+//		rot = toOgreQuaternion(body->getOrientation()).yAxis();
+//		vel = body->getLinearVelocity();
+//	}
+//	else
+//	{
+//		const Quaternion& derivedOrientation = cam->getCamera()->getDerivedOrientation();
+//		pos = cam->getCamera()->getDerivedPosition();
+//		rot = derivedOrientation.yAxis();
+//		vel = body->getLinearVelocity();
+//	}
+
+//	// TODO: BUG:? Is everyone using the same axes ?
+//	alListener3f(AL_POSITION, pos.x, pos.y, pos.z);
+//	alListener3f(AL_DIRECTION, rot.x, rot.y, rot.z);
+//	alListener3f(AL_VELOCITY, vel.x(), vel.y(), vel.z());
 
 	for (auto component : components) 
 	{

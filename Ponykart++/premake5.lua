@@ -99,7 +99,6 @@ solution "Ponykart++"
 				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
-				"BulletSoftBody", -- TODO: Not required on Windows. Check if we can remove it on *nix too.
 				"BulletWorldImporter",
 				"LinearMath",
 				"openal",
@@ -122,7 +121,6 @@ solution "Ponykart++"
 				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
-				--"BulletSoftBody",
 				"BulletFileLoader",
 				"BulletWorldImporter",
 				"LinearMath",
