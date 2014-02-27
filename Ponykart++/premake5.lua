@@ -10,7 +10,8 @@ solution "Ponykart++"
 		flags { "Symbols" }
 		targetsuffix "-d"
 	configuration { "Release" }
-		flags { "Symbols", "Optimize" }
+		flags { "Symbols" }
+		optimize "Speed"
 	configuration {}
 
 	configuration { "Unix" }
