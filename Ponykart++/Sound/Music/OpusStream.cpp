@@ -63,8 +63,10 @@ int OpusStream::readSegment (ALBuffer buf)
 			op_pcm_seek(of, loopStart);
 			result = op_read_float(of, data, DATA_LENGTH, &link);
 		}
-		else
+		else {
 			return 0;
+			finishedFlag = true;
+		}
 	}
 
 	switch (channels) {
@@ -83,4 +85,5 @@ int OpusStream::readSegment (ALBuffer buf)
 void OpusStream::reset ()
 {
 	op_pcm_seek(of, 0);
+	finishedFlag = false;
 }

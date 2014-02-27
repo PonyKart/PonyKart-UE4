@@ -61,8 +61,10 @@ int VorbisStream::readSegment (ALBuffer buf)
 		if (loopStart >= 0) {
 			ov_pcm_seek(&vf, loopStart);
 			result = ov_read(&vf, data, DATA_SIZE, false, 2, true, &bitstream);
-		} else
+		} else {
+			finishedFlag = true;
 			return 0;
+		}
 	}
 
 	switch (info->channels) {
@@ -81,4 +83,5 @@ int VorbisStream::readSegment (ALBuffer buf)
 void VorbisStream::reset ()
 {
 	ov_pcm_seek(&vf, 0);
+	finishedFlag = false;
 }

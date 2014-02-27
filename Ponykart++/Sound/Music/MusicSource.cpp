@@ -95,6 +95,21 @@ void MusicSource::stop ()
 }
 
 
+bool MusicSource::finished ()
+{
+	if (source < 0)
+		return true;
+
+	int state;
+	alGetSourcei(source, AL_SOURCE_STATE, &state);
+	if (state == AL_PLAYING || state == AL_PAUSED)
+		return false;
+
+	lock_guard<mutex> pumpGuard(pumpLock);
+	return stream->finished();
+}
+
+
 void MusicSource::destroy ()
 {
 	if (source < 0)
@@ -114,21 +129,26 @@ void MusicSource::destroy ()
 void MusicSource::pump ()
 {
 	lock_guard<mutex> pumpGuard(pumpLock);
-	if (source < 0)
+	if (source < 0 || finishedFlag)
 		return;
 
 	int processed = 0;
-	int state = AL_INITIAL;
-	alGetSourcei(source, AL_SOURCE_STATE, &state);
-	if (state == AL_INITIAL || state == AL_STOPPED)
-		return;
-
 	alGetSourcei(source, AL_BUFFERS_PROCESSED, &processed);
+	bool queuedMore = false;
 	for (; processed > 0; processed--) {
 		ALBuffer buf;
 		alSourceUnqueueBuffers(source, 1, &buf);
-		if (stream->readSegment(buf) > 0)
+		if (stream->readSegment(buf) > 0) {
 			alSourceQueueBuffers(source, 1, &buffers[bufCursor++]);
-		bufCursor %= buffers.size();
+			bufCursor %= buffers.size();
+			queuedMore = true;
+		}
+	}
+
+	if (queuedMore) {
+		int state;
+		alGetSourcei(source, AL_SOURCE_STATE, &state);
+		if (state == AL_STOPPED)
+			alSourcePlay(source);
 	}
 }

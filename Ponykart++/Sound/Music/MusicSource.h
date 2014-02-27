@@ -1,6 +1,7 @@
 #ifndef MUSICSOURCE_H_INCLUDED
 #define MUSICSOURCE_H_INCLUDED
 
+#include <atomic>
 #include <mutex>
 #include <string>
 #include <array>
@@ -27,6 +28,7 @@ public:
 	void pause ();
 	bool play ();
 	void stop ();
+	bool finished ();
 	void destroy ();
 
 private:
@@ -36,6 +38,7 @@ private:
 	void fill ();
 	void pump ();
 
+	std::atomic_bool finishedFlag;
 	std::mutex pumpLock;
 	Extensions::ALSource source;
 	std::array<Extensions::ALBuffer, 4> buffers;

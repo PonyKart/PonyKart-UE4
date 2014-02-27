@@ -59,8 +59,9 @@ SoundMain::SoundMain()
 
 	alDistanceModel(AL_INVERSE_DISTANCE_CLAMPED);
 
-	idleSources.resize(32);
-	alGenSources(idleSources.size(), idleSources.data());
+	idleSoundSources.resize(32);
+	alGenSources(idleSoundSources.size(), idleSoundSources.data());
+	forgottenSoundSources.reserve(32);
 
 	musicQuit = false;
 	musicThread = thread([this]() {
@@ -85,7 +86,7 @@ SoundMain::~SoundMain ()
 	musicQuit = true;
 	musicThread.join();
 
-	alDeleteSources(idleSources.size(), idleSources.data());
+	alDeleteSources(idleSoundSources.size(), idleSoundSources.data());
 
 	alcMakeContextCurrent(nullptr);
 	alcDestroyContext(context);
@@ -97,12 +98,13 @@ SoundMain::~SoundMain ()
 
 void SoundMain::stopAllSources ()
 {
-	for (auto src : activeSources) {
+	for (auto src : activeSoundSources) {
 		alSourceStop(src);
 		alSourcei(src, AL_BUFFER, 0);
 	}
-	idleSources.insert(idleSources.end(), activeSources.begin(), activeSources.end());
-	activeSources.clear();
+	idleSoundSources.insert(idleSoundSources.end(), activeSoundSources.begin(), activeSoundSources.end());
+	activeSoundSources.clear();
+	forgottenSoundSources.clear();
 	for (auto buf : buffers)
 		alDeleteBuffers(1, &buf);
 	buffers.clear();
@@ -290,18 +292,18 @@ ALSource SoundMain::activateSource ()
 {
 	ALSource src = 0;
 
-	if (idleSources.size() > 0) {
-		src = idleSources[idleSources.size() - 1];
-		idleSources.pop_back();
+	if (idleSoundSources.size() > 0) {
+		src = idleSoundSources[idleSoundSources.size() - 1];
+		idleSoundSources.pop_back();
 	} else
 		alGenSources(1, &src);
 
-	activeSources.insert(src);
+	activeSoundSources.insert(src);
 	return src;
 }
 
 
-ALSource SoundMain::play3D(ALBuffer sound, const Vector3& pos, bool looping, bool startPaused, bool efx)
+SoundSource SoundMain::play3D(ALBuffer sound, const Vector3& pos, bool looping, bool startPaused, bool efx)
 {
 #if DEBUG
 	log(string("[Sound] Creating 3D sound: ") + bufferNames[sound] + " Looping: " + (looping ? "true" : "false"));
@@ -318,7 +320,16 @@ ALSource SoundMain::play3D(ALBuffer sound, const Vector3& pos, bool looping, boo
 
 	// TODO: Look into EFX support.
 
-	return src;
+	return SoundSource(src, [this](ALSource src) {
+		int loop;
+		alGetSourcei(src, AL_LOOPING, &loop);
+		if (loop) {
+			alSourceStop(src);
+			activeSoundSources.erase(src);
+			idleSoundSources.push_back(src);
+		} else
+			forgottenSoundSources.push_back(src);
+	});
 }
 
 
@@ -339,7 +350,7 @@ SoundMain::MusicSourcePtr SoundMain::PlayMusic (const string filename, bool star
 
 void SoundMain::pauseEvent(PausingState state)
 {
-	for (auto src : activeSources)
+	for (auto src : activeSoundSources)
 		alSourcePause(src);
 }
 
@@ -404,15 +415,16 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 
 void SoundMain::everyTenth(void* o)
 {
-	for (auto it = activeSources.begin(); it != activeSources.end();) {
+	for (auto it = forgottenSoundSources.begin(); it != forgottenSoundSources.end();) {
 		ALint state = 0;
 		auto src = *it;
 		alGetSourcei(src, AL_SOURCE_STATE, &state);
 		if (state == AL_STOPPED)
 		{
 			alSourcei(src, AL_BUFFER, 0);
-			idleSources.push_back(src);
-			it = activeSources.erase(it);
+			idleSoundSources.push_back(src);
+			activeSoundSources.erase(src);
+			it = forgottenSoundSources.erase(it);
 		}
 		else
 			it++;

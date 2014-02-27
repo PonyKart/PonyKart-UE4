@@ -13,6 +13,7 @@
 #include <alc.h>
 #include <Ogre.h>
 #include "Core/Pauser.h"
+#include "SoundSource.h"
 #include "Sound/Music/MusicSource.h"
 #include "Kernel/LKernelObject.h"
 #include "Misc/alExtensions.h"
@@ -37,8 +38,8 @@ public:
 	~SoundMain();
 	float getDefaultReferenceDistance ();
 	float setDefaultReferenceDistance (float value);
-	Extensions::ALSource play3D(const std::string filename, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool efx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
-	Extensions::ALSource play3D(Extensions::ALBuffer sound, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool efx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
+	SoundSource play3D(const std::string filename, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool efx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
+	SoundSource play3D(Extensions::ALBuffer sound, const Ogre::Vector3& pos, bool looping, bool startPaused = false, bool efx = false); // Creates an object sound. These sounds do have a 3D position and are attached to SceneNodes. Use these for sound effects and stuff.
 	MusicSourcePtr PlayMusic (const std::string filename, bool startPaused = false, bool efx = false);
 	void addSoundComponent(Actors::SoundComponent* sc);
 	// Getters
@@ -62,8 +63,9 @@ private:
 	float defaultReferenceDistance;
 	std::unordered_set<Extensions::ALBuffer> buffers;
 	std::unordered_set<MusicSource*> musicSources;
-	std::vector<Extensions::ALSource> idleSources;
-	std::unordered_set<Extensions::ALSource> activeSources;
+	std::vector<Extensions::ALSource> idleSoundSources;
+	std::unordered_set<Extensions::ALSource> activeSoundSources;
+	std::vector<Extensions::ALSource> forgottenSoundSources;
 	std::set<Actors::SoundComponent*> components;
 
 	bool enableMusic;
