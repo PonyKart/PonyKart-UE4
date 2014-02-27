@@ -93,6 +93,9 @@ solution "Ponykart++"
 			"../PonykartParsers++/"
 		}
 
+		pchheader "pch.h"
+		pchsource "pch.cpp"
+
 		configuration { "Unix" }
 			links {
 				"PonykartParsers++",
