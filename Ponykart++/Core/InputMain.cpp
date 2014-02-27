@@ -18,19 +18,22 @@ InputMain::InputMain()
 {
 	log("[Loading] Initialising OIS input system");
 
-	OIS::ParamList* pl = new OIS::ParamList();
-	int* windowHnd=new int;
-	LKernel::getG<Ogre::RenderWindow>()->getCustomAttribute("WINDOW", windowHnd); // window is your RenderWindow!
-	ostringstream oss; oss << *windowHnd;
-	pl->insert(std::pair<std::string,std::string> ("WINDOW", oss.str())); // TODO: Find another way to give the window to OIS. It needs to be portable.
+	OIS::ParamList pl = OIS::ParamList();
+	int windowHnd = 0;
+	LKernel::getG<Ogre::RenderWindow>()->getCustomAttribute("WINDOW", &windowHnd); // window is your RenderWindow!
+	ostringstream oss; oss << windowHnd;
+	pl.insert(std::pair<std::string,std::string> ("WINDOW", oss.str())); // TODO: Find another way to give the window to OIS. It needs to be portable.
 
-	//#if DEBUG
 	// this stops OIS from swallowing the mouse
-	pl->insert(std::pair<std::string,std::string> ("w32_mouse", "DISCL_NONEXCLUSIVE"));
-	pl->insert(std::pair<std::string,std::string> ("w32_mouse", "DISCL_FOREGROUND"));
-	//#endif
+#if defined OIS_LINUX_PLATFORM
+	pl.insert(make_pair(string("x11_mouse_grab"), std::string("false")));
+	pl.insert(make_pair(string("x11_mouse_hide"), std::string("false")));
+#elif defined OIS_WIN32_PLATFORM
+	pl.insert(make_pair(string("w32_mouse"), string("DISCL_NONEXCLUSIVE")));
+	pl.insert(make_pair(string("w32_mouse"), string("DISCL_FOREGROUND")));
+#endif
 
-	inputManager = OIS::InputManager::createInputSystem(*pl);
+	inputManager = OIS::InputManager::createInputSystem(pl);
 
 	// Create all devices (except joystick, as most people have Keyboard/Mouse) using buffered input.
 	inputKeyboard = (OIS::Keyboard*) inputManager->createInputObject(OIS::Type::OISKeyboard, true);
@@ -46,7 +49,7 @@ InputMain::InputMain()
 
 	createEventHandlers(); // TODO: Implement
 
-	log("[Loading] OIS input system loaded!");
+	log("[Loading] OIS input system loaded.");
 }
 
 void InputMain::createEventHandlers()
