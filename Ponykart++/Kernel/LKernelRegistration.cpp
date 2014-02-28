@@ -12,6 +12,7 @@
 #include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
+#include "Physics/TriggerRegions/TriggerReporter.h"
 #include "Sound/SoundMain.h"
 
 using namespace Ogre;
@@ -39,7 +40,7 @@ void LKernel::loadInitialObjects(Splash& splash)
 		addGlobalObject(new PhysicsMain());
 		addGlobalObject(new CollisionShapeManager());
 		addGlobalObject(new CollisionReporter());
-		//addGlobalObject(new TriggerReporter());
+		addGlobalObject(new TriggerReporter());
 		//addGlobalObject(new PhysicsMaterialFactory());
 	}
 	catch (...)
