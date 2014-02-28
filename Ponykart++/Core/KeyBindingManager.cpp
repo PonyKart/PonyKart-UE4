@@ -10,8 +10,8 @@ using namespace Ponykart::Core;
 using namespace Ponykart::LKernel;
 
 // Define our static members
-std::map<LKey, OIS::KeyCode> KeyBindingManager::lKeysDict;
-std::map<OIS::KeyCode, LKey> KeyBindingManager::oisKeysDict;
+std::map<LKey, SDL_Keycode> KeyBindingManager::lKeysDict;
+std::map<SDL_Keycode, LKey> KeyBindingManager::oisKeysDict;
 std::map<ControllerButtons, LKey> KeyBindingManager::lButtonsDict;
 std::map<ControllerAxis, LKey> KeyBindingManager::lAxisDict;
 std::map<LKey, std::function<void ()>> KeyBindingManager::pressEventsDict;
@@ -41,18 +41,18 @@ KeyBindingManager::KeyBindingManager()
 // TODO read these from a file
 void KeyBindingManager::setupInitialBindings()
 {
-	lKeysDict[LKey::Accelerate] = OIS::KeyCode::KC_W;
-	lKeysDict[LKey::TurnLeft] = OIS::KeyCode::KC_A;
-	lKeysDict[LKey::TurnRight] = OIS::KeyCode::KC_D;
-	lKeysDict[LKey::Drift] = OIS::KeyCode::KC_SPACE;
-	lKeysDict[LKey::Reverse] = OIS::KeyCode::KC_S;
-	lKeysDict[LKey::Item] = OIS::KeyCode::KC_LSHIFT;
-	oisKeysDict[OIS::KeyCode::KC_W] = LKey::Accelerate;
-	oisKeysDict[OIS::KeyCode::KC_A] = LKey::TurnLeft;
-	oisKeysDict[OIS::KeyCode::KC_D] = LKey::TurnRight;
-	oisKeysDict[OIS::KeyCode::KC_SPACE] = LKey::Drift;
-	oisKeysDict[OIS::KeyCode::KC_S] = LKey::Reverse;
-	oisKeysDict[OIS::KeyCode::KC_LSHIFT] = LKey::Item;
+	lKeysDict[LKey::Accelerate] = SDLK_w;
+	lKeysDict[LKey::TurnLeft] = SDLK_a;
+	lKeysDict[LKey::TurnRight] = SDLK_d;
+	lKeysDict[LKey::Drift] = SDLK_SPACE;
+	lKeysDict[LKey::Reverse] = SDLK_s;
+	lKeysDict[LKey::Item] = SDLK_LSHIFT;
+	oisKeysDict[SDLK_w] = LKey::Accelerate;
+	oisKeysDict[SDLK_a] = LKey::TurnLeft;
+	oisKeysDict[SDLK_d] = LKey::TurnRight;
+	oisKeysDict[SDLK_SPACE] = LKey::Drift;
+	oisKeysDict[SDLK_s] = LKey::Reverse;
+	oisKeysDict[SDLK_LSHIFT] = LKey::Item;
 	lButtonsDict[ControllerButtons::A] = LKey::Drift;
 	lAxisDict[ControllerAxis::LeftX] = LKey::SteeringAxis;
 
@@ -71,25 +71,25 @@ void KeyBindingManager::setupInitialBindings()
 	releaseEventsDict.insert(pair<LKey,function<void()>>(LKey::Item, function<void ()>()));
 }
 
-void KeyBindingManager::onKeyboardPressAnything(OIS::KeyEvent ke)
+void KeyBindingManager::onKeyboardPressAnything(const SDL_KeyboardEvent &ke)
 {
 	// don't do anything if it's swallowed
 	if (LKernel::getG<InputSwallowerManager>()->isSwallowed())
 		return;
 
 	LKey key;
-	if (oisKeysDict.find(ke.key) != oisKeysDict.end()) // TODO: Check if this is correct. I'm not sure of the translation.
+	if (oisKeysDict.find(ke.keysym.scancode) != oisKeysDict.end()) // TODO: Check if this is correct. I'm not sure of the translation.
 		invoke(pressEventsDict[key]);
 }
 
-void KeyBindingManager::onKeyboardReleaseAnything(OIS::KeyEvent ke)
+void KeyBindingManager::onKeyboardReleaseAnything(const SDL_KeyboardEvent &ke)
 {
 	// don't do anything if it's swallowed
 	if (LKernel::getG<InputSwallowerManager>()->isSwallowed())
 		return;
 
 	LKey key;
-	if (oisKeysDict.find(ke.key) != oisKeysDict.end()) // TODO: Check if this is correct. I'm not sure of the translation.
+	if (oisKeysDict.find(ke.keysym.scancode) != oisKeysDict.end()) // TODO: Check if this is correct. I'm not sure of the translation.
 		invoke(releaseEventsDict[key]);
 }
 
@@ -101,36 +101,36 @@ void KeyBindingManager::input_OnLeftXAxisMoved(void* sender, ControllerAxisArgum
 	invoke(axisEvents[lAxisDict[e.Axis]] );
 }
 
-void KeyBindingManager::onMousePress_Anything(OIS::MouseEvent e, OIS::MouseButtonID id)
+void KeyBindingManager::onMousePress_Anything(const SDL_MouseButtonEvent &mbe)
 {
 	if (LKernel::getG<InputSwallowerManager>()->isSwallowed())
 		return;
 
-	switch (id)
+	switch (mbe.button)
 	{
-		case OIS::MouseButtonID::MB_Left:
+		case SDL_BUTTON_LEFT:
 			invoke(pressEventsDict[LKey::Accelerate]); break;
-		case OIS::MouseButtonID::MB_Button3:
+		case SDL_BUTTON_X1:
 			invoke(pressEventsDict[LKey::TurnLeft]); break;
-		case OIS::MouseButtonID::MB_Button4:
+		case SDL_BUTTON_X2:
 			invoke(pressEventsDict[LKey::TurnRight]); break;
-		case OIS::MouseButtonID::MB_Middle:
+		case SDL_BUTTON_MIDDLE:
 			invoke(pressEventsDict[LKey::Drift]); break;
 		default:;
 	}
 }
 
-void KeyBindingManager::onMouseRelease_Anything(OIS::MouseEvent e, OIS::MouseButtonID id)
+void KeyBindingManager::onMouseRelease_Anything(const SDL_MouseButtonEvent &mbe)
 {
-	switch (id)
+	switch (mbe.button)
 	{
-	case OIS::MouseButtonID::MB_Left:
+	case SDL_BUTTON_LEFT:
 		invoke(releaseEventsDict[LKey::Accelerate]); break;
-	case OIS::MouseButtonID::MB_Button3:
+	case SDL_BUTTON_X1:
 		invoke(releaseEventsDict[LKey::TurnLeft]); break;
-	case OIS::MouseButtonID::MB_Button4:
+	case SDL_BUTTON_X2:
 		invoke(releaseEventsDict[LKey::TurnRight]); break;
-	case OIS::MouseButtonID::MB_Middle:
+	case SDL_BUTTON_MIDDLE:
 		invoke(releaseEventsDict[LKey::Drift]); break;
 	default:;
 	}

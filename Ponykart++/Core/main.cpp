@@ -18,7 +18,8 @@ using namespace Ponykart::LKernel;
 using Ponykart::Core::Options;
 using Ponykart::Splash;
 
-int main()
+
+int main (int argc, char *argv[])
 {
 	try
 	{

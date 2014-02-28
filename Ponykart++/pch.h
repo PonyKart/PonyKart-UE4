@@ -18,8 +18,8 @@
 // Ogre
 #include <Ogre.h>
 
-// OIS
-#include <OIS.h>
+// SDL2
+#include <SDL.h>
 
 // Bullet
 #include <BulletDynamics/btBulletDynamicsCommon.h>

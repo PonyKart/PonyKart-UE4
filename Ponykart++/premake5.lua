@@ -17,10 +17,10 @@ solution "Ponykart++"
 	configuration { "Unix" }
 		buildoptions "-std=c++11 -pthread"
 		includedirs {
+			"/usr/local/include/SDL2/",
+			"/usr/include/SDL2/",
 			"/usr/local/include/OGRE/",
 			"/usr/include/OGRE/",
-			"/usr/local/include/OIS/",
-			"/usr/include/OIS/",
 			"/usr/local/include/bullet/",
 			"/usr/include/bullet/",
 			"/usr/local/include/luajit-2.0/",
@@ -99,8 +99,8 @@ solution "Ponykart++"
 		configuration { "Unix" }
 			links {
 				"PonykartParsers++",
+				"SDL2",
 				"OgreMain",
-				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
 				"BulletWorldImporter",

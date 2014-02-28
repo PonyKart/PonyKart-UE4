@@ -17,16 +17,14 @@ Pauser::Pauser()
 {
 	log("[Loading] Creating Pauser");
 
-	typedef void(*ftype)(OIS::KeyEvent); // For disanbiguanting the overloads of invokePauseEvent
-
 	// if we press `, then pause
-	LKernel::getG<InputMain>()->onKeyboardPress_Anything.push_back(static_cast<ftype>(invokePauseEvent));
+	LKernel::getG<InputMain>()->onKeyboardPress_Anything.push_back(keyInvokePauseEvent);
 	LKernel::getG<InputSwallowerManager>()->addSwallower(&isPaused, this);
 }
 
-void Pauser::invokePauseEvent(OIS::KeyEvent ke)
+void Pauser::keyInvokePauseEvent(const SDL_KeyboardEvent &ke)
 {
-	if (ke.key == OIS::KeyCode::KC_GRAVE)
+	if (ke.keysym.sym == SDLK_BACKQUOTE)
 		invokePauseEvent();
 }
 
