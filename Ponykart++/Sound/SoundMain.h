@@ -56,7 +56,7 @@ private:
 	void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs); // prepares file locations
 	void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Delete all of the sound sources
 	void stopAllSources ();
-	void everyTenth(void* o);
+	void everyTenth (void *p);
 
 	ALCdevice *device;
 	ALCcontext *context;

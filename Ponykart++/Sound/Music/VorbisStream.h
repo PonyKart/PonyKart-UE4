@@ -1,10 +1,9 @@
 #ifndef VORBISSTREAM_H_INCLUDED
 #define VORBISSTREAM_H_INCLUDED
 
+#include <array>
 #include <vorbisfile.h>
 #include "MusicStream.h"
-
-#define DATA_SIZE 4096
 
 
 namespace Ponykart
@@ -16,7 +15,7 @@ namespace Sound
 class VorbisStream : public MusicStream
 {
 public:
-	VorbisStream (std::string filename);
+	VorbisStream (const std::string &filename);
 	virtual ~VorbisStream ();
 
 	virtual int readSegment (Extensions::ALBuffer buf);
@@ -26,7 +25,7 @@ private:
 	OggVorbis_File vf;
 	vorbis_info *info;
 	ogg_int64_t loopStart;
-	char data[DATA_SIZE];
+	std::array<char, 16384> data;
 };
 
 

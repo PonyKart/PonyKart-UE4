@@ -22,7 +22,7 @@ namespace LKernel
 	extern Ogre::RenderSystem* gRenderSystem;
 	extern Ogre::SceneManager* gSceneManager;
 	extern Ogre::Viewport* gViewport;
-	extern std::vector<std::function<void (LKernelObject*)>> onEveryUnpausedTenthOfASecondEvent;
+	extern std::vector<std::function<void (void*)>> onEveryUnpausedTenthOfASecondEvent;
 
 	/// Implementation details that are not part of the interface.
 	namespace details

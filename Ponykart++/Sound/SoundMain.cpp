@@ -65,14 +65,14 @@ SoundMain::SoundMain()
 
 	musicQuit = false;
 	musicThread = thread([this]() {
-		musicLock.lock();
-		for (auto m : musicSources)
-			m->pump();
-		musicLock.unlock();
+		while (!musicQuit) {
+			musicLock.lock();
+			for (auto m : musicSources)
+				m->pump();
+			musicLock.unlock();
 
-		this_thread::sleep_for(chrono::milliseconds(100));
-		if (musicQuit)
-			return;
+			this_thread::sleep_for(chrono::milliseconds(100));
+		}
 	});
 
 	log("[Loading] OpenAL and SoundMain initialised.");
@@ -81,6 +81,8 @@ SoundMain::SoundMain()
 
 SoundMain::~SoundMain ()
 {
+	log("[Shutdown] OpenAL and SoundMain shutting down...");
+
 	stopAllSources();
 
 	musicQuit = true;
@@ -92,7 +94,7 @@ SoundMain::~SoundMain ()
 	alcDestroyContext(context);
 	alcCloseDevice(device);
 
-	log("[Shutdown] OpenAL and SoundMain shutdown.");
+	log("[Shutdown] OpenAL and SoundMain terminated.");
 }
 
 
@@ -413,7 +415,7 @@ void SoundMain::onLevelUnload(LevelChangedEventArgs* eventArgs)
 }
 
 
-void SoundMain::everyTenth(void* o)
+void SoundMain::everyTenth (void *p)
 {
 	for (auto it = forgottenSoundSources.begin(); it != forgottenSoundSources.end();) {
 		ALint state = 0;

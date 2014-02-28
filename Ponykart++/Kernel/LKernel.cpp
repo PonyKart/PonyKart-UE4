@@ -12,7 +12,7 @@ Ogre::RenderWindow* LKernel::gWindow;
 Ogre::RenderSystem* LKernel::gRenderSystem;
 Ogre::SceneManager* LKernel::gSceneManager;
 Ogre::Viewport* LKernel::gViewport;
-std::vector<std::function<void(LKernelObject*)>> LKernel::onEveryUnpausedTenthOfASecondEvent;
+std::vector<std::function<void (void*)>> LKernel::onEveryUnpausedTenthOfASecondEvent;
 std::unordered_map<std::string, LKernelObject*> LKernel::details::globalObjects;
 std::unordered_map<std::string, LKernelObject*> LKernel::details::levelObjects;
 

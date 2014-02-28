@@ -12,7 +12,7 @@ using namespace Ponykart::Sound;
 using namespace Ponykart::LKernel;
 
 
-VorbisStream::VorbisStream (string filename)
+VorbisStream::VorbisStream (const string &filename)
 	: MusicStream(filename)
 {
 	if (ov_fopen(filename.c_str(), &vf) < 0)
@@ -52,31 +52,39 @@ VorbisStream::~VorbisStream ()
 int VorbisStream::readSegment (ALBuffer buf)
 {
 	int bitstream;
-	auto result = ov_read(&vf, data, DATA_SIZE, false, 2, true, &bitstream);
-	if (result < 0) {
-		ov_clear(&vf);
-		throw string("Error while decoding vorbis file: " + filename);
+
+	int total = 0;
+	while (total < data.size()) {
+		auto result = ov_read(&vf, data.data() + total, data.size() - total, false, 2, true, &bitstream);
+		if (result < 0) {
+			ov_clear(&vf);
+			throw string("Error while decoding vorbis file: " + filename);
+		}
+		else if (result == 0) {
+			if (loopStart >= 0) {
+				ov_pcm_seek(&vf, loopStart);
+				result = ov_read(&vf, data.data() + total, data.size() - total, false, 2, true, &bitstream);
+			} else {
+				finishedFlag = true;
+				break;;
+			}
+		}
+
+		total += result;
 	}
-	else if (result == 0) {
-		if (loopStart >= 0) {
-			ov_pcm_seek(&vf, loopStart);
-			result = ov_read(&vf, data, DATA_SIZE, false, 2, true, &bitstream);
-		} else {
-			finishedFlag = true;
-			return 0;
+
+	if (total > 0) {
+		switch (info->channels) {
+		case 1:
+			alBufferData(buf, AL_FORMAT_MONO16, (ALvoid*)data.data(), total, info->rate);
+			break;
+		case 2:
+			alBufferData(buf, AL_FORMAT_STEREO16, (ALvoid*)data.data(), total, info->rate);
+			break;
 		}
 	}
 
-	switch (info->channels) {
-	case 1:
-		alBufferData(buf, AL_FORMAT_MONO16, (ALvoid*)data, result, info->rate);
-		break;
-	case 2:
-		alBufferData(buf, AL_FORMAT_STEREO16, (ALvoid*)data, result, info->rate);
-		break;
-	}
-
-	return result >> (1 + (info->channels - 1));
+	return total >> (1 + (info->channels - 1));
 }
 
 

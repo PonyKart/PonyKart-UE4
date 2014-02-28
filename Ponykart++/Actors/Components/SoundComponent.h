@@ -6,6 +6,7 @@
 #include <string>
 #include <Ogre.h>
 #include <al.h>
+#include "Sound/SoundSource.h"
 #include "Misc/alExtensions.h"
 
 namespace PonykartParsers
@@ -21,7 +22,7 @@ namespace Actors
 
 class LThing;
 
-using SoundFrameEvent = std::vector<std::function<void (LThing*, Extensions::ALSource)>>;
+using SoundFrameEvent = std::vector<std::function<void (LThing*, Ponykart::Sound::SoundSource&)>>;
 
 class SoundComponent // TODO: Implement SoundComponent properly
 {
@@ -29,14 +30,14 @@ public:
 	SoundComponent(LThing* lthing, PonykartParsers::ThingBlock *thingTemplate, PonykartParsers::SoundBlock* block);
 	void update();
 	// Getters
-	Extensions::ALSource getSound();
+	Ponykart::Sound::SoundSource &getSound();
 	std::string getName() const;
 
 public:
 	bool needUpdate;
 	SoundFrameEvent onUpdate;
 protected:
-	Extensions::ALSource sound;
+	Ponykart::Sound::SoundSource sound;
 	std::string name;
 private:
 	Ogre::Vector3 relativePosition;

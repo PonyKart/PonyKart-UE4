@@ -10,7 +10,7 @@ using namespace Ponykart::Sound;
 using namespace Extensions;
 
 
-MusicSource::MusicSource (const string filename, bool startPaused)
+MusicSource::MusicSource (const string &filename, bool startPaused)
 {
 	auto ext = getFileExtension(filename);
 	for (char &c : ext)
@@ -129,7 +129,7 @@ void MusicSource::destroy ()
 void MusicSource::pump ()
 {
 	lock_guard<mutex> pumpGuard(pumpLock);
-	if (source < 0 || finishedFlag)
+	if (source < 0)
 		return;
 
 	int processed = 0;

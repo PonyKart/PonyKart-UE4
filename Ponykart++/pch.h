@@ -8,6 +8,7 @@
 #include <atomic>
 #include <mutex>
 #include <string>
+#include <array>
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>

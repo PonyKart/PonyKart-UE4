@@ -91,7 +91,7 @@ void SoundComponent::update()
 	}
 }
 
-ALSource SoundComponent::getSound()
+SoundSource &SoundComponent::getSound()
 {
 	return sound;
 }

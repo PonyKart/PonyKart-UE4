@@ -15,7 +15,7 @@ solution "Ponykart++"
 	configuration {}
 
 	configuration { "Unix" }
-		buildoptions "-std=c++11"
+		buildoptions "-std=c++11 -pthread"
 		includedirs {
 			"/usr/local/include/OGRE/",
 			"/usr/include/OGRE/",
@@ -114,7 +114,7 @@ solution "Ponykart++"
 				"ogg",
 				"boost_system",
 			}
-			linkoptions  "-lluajit-5.1"
+			linkoptions  "-pthread -lluajit-5.1"
 		configuration { "MacOSX" }
 		configuration { "Windows" }
 			flags { "StaticRuntime" } -- We need the /MT CRT, since that's what our dependencies are using

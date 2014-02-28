@@ -11,7 +11,7 @@ using namespace Ponykart::Sound;
 using namespace Ponykart::LKernel;
 
 
-OpusStream::OpusStream (string filename)
+OpusStream::OpusStream (const string &filename)
 	: MusicStream(filename)
 {
 	int err = 0;
@@ -53,32 +53,40 @@ OpusStream::~OpusStream ()
 int OpusStream::readSegment (ALBuffer buf)
 {
 	int link;
-	auto result = op_read_float(of, data, DATA_LENGTH, &link);
-	if (result < 0) {
-		op_free(of);
-		throw string("Error while decoding opus file: " + filename);
-	}
-	else if (result == 0) {
-		if (loopStart >= 0) {
-			op_pcm_seek(of, loopStart);
-			result = op_read_float(of, data, DATA_LENGTH, &link);
+
+	int total;
+	while (total < data.size()) {
+		auto result = op_read_float(of, data.data() + total, data.size() - total, &link);
+		if (result < 0) {
+			op_free(of);
+			throw string("Error while decoding opus file: " + filename);
 		}
-		else {
-			return 0;
-			finishedFlag = true;
+		else if (result == 0) {
+			if (loopStart >= 0) {
+				op_pcm_seek(of, loopStart);
+				result = op_read_float(of, data.data() + total, data.size() - total, &link);
+			}
+			else {
+				finishedFlag = true;
+				break;
+			}
+		}
+
+		total += result;
+	}
+
+	if (total > 0) {
+		switch (channels) {
+		case 1:
+			alBufferData(buf, AL_FORMAT_MONO_FLOAT32, (ALvoid*)data.data(), total * sizeof(float) * channels, 48000);
+			break;
+		case 2:
+			alBufferData(buf, AL_FORMAT_STEREO_FLOAT32, (ALvoid*)data.data(), total * sizeof(float) * channels, 48000);
+			break;
 		}
 	}
 
-	switch (channels) {
-	case 1:
-		alBufferData(buf, AL_FORMAT_MONO_FLOAT32, (ALvoid*)data, result * sizeof(float) * channels, 48000);
-		break;
-	case 2:
-		alBufferData(buf, AL_FORMAT_STEREO_FLOAT32, (ALvoid*)data, result * sizeof(float) * channels, 48000);
-		break;
-	}
-
-	return result;
+	return total;
 }
 
 

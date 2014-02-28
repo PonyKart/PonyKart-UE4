@@ -14,7 +14,7 @@ namespace Sound
 class MusicStream
 {
 public:
-	MusicStream (std::string filename) : filename(filename), finishedFlag(false) { }
+	MusicStream (const std::string &filename) : filename(filename), finishedFlag(false) { }
 	virtual ~MusicStream () { }
 
 	bool finished () { return finishedFlag; }

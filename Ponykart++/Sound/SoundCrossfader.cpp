@@ -33,6 +33,8 @@ bool SoundCrossfader::frameEnded(const Ogre::FrameEvent& evt)
 	if (Pauser::isPaused)
 		return true;
 
+	// TODO: Revisit this once the use-case for this class is better understood.
+
 	progress += evt.timeSinceLastFrame;
 	// if the progress is over the duration, or sounds don't exist, we've finished
 	if (progress > duration || soundToFadeOut == -1 || soundToFadeIn == -1)

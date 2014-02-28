@@ -19,7 +19,7 @@ class SoundMain;
 class MusicSource
 {
 public:
-	MusicSource (const std::string filename, bool startPaused = false);
+	MusicSource (const std::string &filename, bool startPaused = false);
 	MusicSource (const MusicSource &) = delete;
 	MusicSource &operator= (const MusicSource &) = delete;
 
@@ -38,7 +38,6 @@ private:
 	void fill ();
 	void pump ();
 
-	std::atomic_bool finishedFlag;
 	std::mutex pumpLock;
 	Extensions::ALSource source;
 	std::array<Extensions::ALBuffer, 4> buffers;
