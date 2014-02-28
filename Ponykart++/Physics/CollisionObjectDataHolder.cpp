@@ -22,3 +22,13 @@ CollisionObjectDataHolder::CollisionObjectDataHolder(btCollisionObject* Owner, P
 {
 	id = IDs::random();
 }
+
+PonykartCollisionGroups CollisionObjectDataHolder::getCollisionGroup()
+{
+	return collisionGroup;
+}
+
+std::string CollisionObjectDataHolder::getName()
+{
+	return name;
+}

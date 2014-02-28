@@ -28,6 +28,10 @@ namespace Physics
 		bool removeEvent(std::string& regionName, TriggerReportEvent handler);
 		std::unordered_map<std::string, TriggerRegion*>& getRegions();
 
+		TriggerReportEvent onTriggerContact;
+		TriggerReportEvent onTriggerEnter;
+		TriggerReportEvent onTriggerLeave;
+
 	private:
 		std::unordered_map<std::string, TriggerRegion*> regions;
 	};
