@@ -1,6 +1,5 @@
 #ifndef PCH_H_INCLUDED
 #define PCH_H_INCLUDED
-
 // Stdlib
 #include <functional>
 #include <memory>

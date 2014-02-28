@@ -1,3 +1,6 @@
+#ifndef TRIGGERREPORTFLAGS_H_INCLUDED
+#define TRIGGERREPORTFLAGS_H_INCLUDED
+
 namespace Ponykart
 {
 namespace Physics
@@ -14,3 +17,4 @@ namespace Physics
 	};
 }
 }
+#endif TRIGGERREPORTFLAGS_H_INCLUDED

@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Core/Cameras/CameraManager.h"
 
 using namespace Ponykart::Core;

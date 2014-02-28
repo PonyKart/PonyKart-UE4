@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Core/Pauser.h"
 #include "Core/InputMain.h"
 #include "Kernel/LKernel.h"

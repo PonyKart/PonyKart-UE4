@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "UI/LuaConsoleManager.h"
 
 using namespace std;

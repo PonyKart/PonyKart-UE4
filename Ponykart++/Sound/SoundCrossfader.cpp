@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <al.h>
 #include <OgreRoot.h>
 #include "Core/Pauser.h"

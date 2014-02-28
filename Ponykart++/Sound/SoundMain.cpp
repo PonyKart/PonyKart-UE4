@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Sound/SoundMain.h"
 
 #include <cctype>

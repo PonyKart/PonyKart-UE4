@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <OgreQuaternion.h>
 #include <OgreSceneNode.h>
 #include <OgreVector3.h>

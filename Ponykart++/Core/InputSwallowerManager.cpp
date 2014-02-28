@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Core/InputSwallowerManager.h"
 
 using namespace std;

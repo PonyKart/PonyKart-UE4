@@ -34,6 +34,7 @@ solution "Ponykart++"
 		}
 	configuration { "MacOSX" }
 		buildoptions "-std=c++11"
+		
 	configuration { "Windows" }
 		libdirs { 
 			-- Try the default paths
@@ -48,22 +49,18 @@ solution "Ponykart++"
 			os.findlib("vorbis"),
 			os.findlib("vorbisfile"),
 			os.findlib("sndfile"),
+			os.findlib("opus"), 		
+			os.findlib("opusfile"), 		
 			os.findlib("ogg"),
-			os.findlib("openal"),
+			os.findlib("openal-soft"),
 			os.findlib("boost_system"), 		
 			-- Try in C:/
 			"C:/OGRE/lib/release",
 			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/Lua/5.1/lib",
 			"C:/irrKlang-1.4.0/lib/Win32-visualStudio",
-			"C:/OpenAL1.1/libs/Win64",
-			"C:/OpenAL1.1/libs/Win32",
 			"C:/libsndfile32/lib",
 			"C:/libsndfile64/lib",
-			"C:/libvorbis-1.3.4/lib/x32",
-			"C:/libvorbis-1.3.4/lib/x64",
-			"C:/libogg-1.3.1/lib/x32",
-			"C:/libogg-1.3.1/lib/x64",
 		}
 		includedirs {
 			"C:/Lua/5.1/include",
@@ -71,13 +68,41 @@ solution "Ponykart++"
 			"C:/OGRE/include/OIS",
 			"C:/irrKlang-1.4.0/include",
 			"C:/BULLET_PHYSICS/include/bullet",
-			"C:/OpenAL1.1/include",
 			"C:/libvorbis-1.3.4/include/vorbis",
 			"C:/libvorbis-1.3.4/include",
 			"C:/libogg-1.3.1/include/ogg",
 			"C:/libogg-1.3.1/include",
 			"C:/libsndfile32/include",
 			"C:/libsndfile64/include",
+			"C:/libopus-1.1/include",
+			"C:/libopusfile-0.5/include",
+			-- Creative's OpenAL is dead, we'll use OpenAL-soft as a drop-in replacement.
+			--"C:/OpenAL1.1/include", 
+			"C:/openal-soft-1.15.1-bin/include/AL/",
+		}
+	configuration { "Windows", "Debug" }	
+		libdirs { 
+			"C:/libvorbis-1.3.4/lib/Win32/Debug",
+			"C:/libvorbis-1.3.4/lib/x64/Debug",
+			"C:/libogg-1.3.1/lib/Win32/Debug",
+			"C:/libogg-1.3.1/lib/x64/Debug",
+			"C:/libopus-1.1/lib/Win32/Debug",
+			"C:/libopus-1.1/lib/x64/Debug",
+			"C:/libopusfile-0.5/lib/Win32-Debug",
+			-- Creative's OpenAL is dead, we'll use OpenAL-soft as a drop-in replacement.
+			"C:/openal-soft-1.15.1-bin/lib/Win32-MSVC12-Debug",
+		}
+	configuration { "Windows", "Release" }	
+		libdirs { 
+			"C:/libvorbis-1.3.4/lib/Win32/Release",
+			"C:/libvorbis-1.3.4/lib/x64/Release",
+			"C:/libogg-1.3.1/lib/Win32/Release",
+			"C:/libogg-1.3.1/lib/x64/Release",
+			"C:/libopus-1.1/lib/Win32/Release",
+			"C:/libopus-1.1/lib/x64/Release",
+			"C:/libopusfile-0.5/lib/Win32-Release",
+			-- Creative's OpenAL is dead, we'll use OpenAL-soft as a drop-in replacement.
+			"C:/openal-soft-1.15.1-bin/lib/Win32-MSVC12-Release",
 		}
 	configuration {}
 
@@ -119,6 +144,7 @@ solution "Ponykart++"
 		configuration { "Windows" }
 			flags { "StaticRuntime" } -- We need the /MT CRT, since that's what our dependencies are using
 			buildoptions { "/W0" } -- Disable warnings for speed. Visual generates ~2500 warnings for Ogre only. 
+			buildoptions { "/Zm500" } -- Increase MSVC's internal heap limit for PCHs
 			links {
 				"PonykartParsers++",
 				"OgreMain",
@@ -134,6 +160,10 @@ solution "Ponykart++"
 				"libvorbis_static",
 				"libogg_static",
 				"lua51",
+				"opus",
+				"celt",
+				"silk_common",
+				"opusfile",
 			}
 		configuration {}
 
@@ -152,4 +182,5 @@ solution "Ponykart++"
 		configuration { "Windows" }
 			flags { "StaticRuntime" } -- We need the /MT CRT, since that's what our dependencies are using
 			buildoptions { "/W0" } -- Disable warnings for speed. Visual generates ~2500 warnings for Ogre only. 
+			buildoptions { "/Zm500" } -- Increase MSVC's internal heap limit for PCHs
 
