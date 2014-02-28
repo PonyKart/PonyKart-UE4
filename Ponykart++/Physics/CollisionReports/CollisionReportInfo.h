@@ -1,3 +1,5 @@
+#ifndef COLLISIONREPORTINFO_H_INCLUDED
+#define COLLISIONREPORTINFO_H_INCLUDED
 #include "Physics/CollisionGroups.h"
 
 class btCollisionObject;
@@ -40,3 +42,4 @@ namespace Physics
 	};
 }
 }
+#endif // COLLISIONREPORTINFO_H_INCLUDED

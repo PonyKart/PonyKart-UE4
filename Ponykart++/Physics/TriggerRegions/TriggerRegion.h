@@ -26,15 +26,15 @@ namespace Physics
 {
 	class CollisionObjectDataHolder;
 	class TriggerRegion;
-	using TriggerReportEvent = std::vector<std::function<void(TriggerRegion& region, btRigidBody* otherBody, 
-															TriggerReportFlags flags, CollisionReportInfo& info)>>;
+	using TriggerReportEvent = std::vector<std::function<void(TriggerRegion* region, btRigidBody* otherBody, 
+															TriggerReportFlags flags, CollisionReportInfo* info)>>;
 
 	class TriggerRegion
 	{
 	public:
 		TriggerRegion(const std::string& Name, const Ogre::Vector3& position, btCollisionShape* shape);
 		TriggerRegion(const std::string& Name, const Ogre::Vector3& position, const Ogre::Quaternion& orientation, btCollisionShape* shape);
-		void invokeTrigger(btRigidBody* otherBody, TriggerReportFlags flags, CollisionReportInfo& info); ///< Run the enter event
+		void invokeTrigger(btRigidBody* otherBody, TriggerReportFlags flags, CollisionReportInfo* info); ///< Run the enter event
 		void cycleToNextColor(); ///< Changes the region's color to the next one in the cycle
 		std::string toString();
 		int getHashCode();
@@ -45,7 +45,7 @@ namespace Physics
 		std::unordered_set<btRigidBody*> currentlyCollidingWith;
 		TriggerReportEvent onTrigger; ///< Invoked by TriggerReporter
 	protected:
-		std::pair<btGhostObject*, CollisionObjectDataHolder*> ghost;
+		btGhostObject* ghost;
 		std::string name;
 		Ogre::SceneNode* node;
 		Ogre::Entity* entity;

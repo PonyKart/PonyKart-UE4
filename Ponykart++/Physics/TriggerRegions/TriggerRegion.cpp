@@ -13,6 +13,7 @@
 #include <OgreSceneManager.h>
 #include "Core/Settings.h"
 #include "Kernel/LKernel.h"
+#include "Kernel/LKernelOgre.h"
 #include "Misc/bulletExtensions.h"
 #include "Misc/ogreExtensions.h"
 #include "Physics/CollisionObjectDataHolder.h"
@@ -92,15 +93,15 @@ TriggerRegion::TriggerRegion(const std::string& Name, const Ogre::Vector3& posit
 	motionState->setWorldTransform(transform);
 
 	// thanks to kloplop321 in #ogre3d for his help with this
-	ghost.first = new btGhostObject();
-	ghost.first->setCollisionShape(shape);
-	ghost.first->setWorldTransform(transform);
-	ghost.second = new CollisionObjectDataHolder(ghost.first, PonykartCollisionGroups::Triggers, name);
+	ghost = new btGhostObject();
+	ghost->setCollisionShape(shape);
+	ghost->setWorldTransform(transform);
+	ghost->setUserPointer(new CollisionObjectDataHolder(ghost, PonykartCollisionGroups::Triggers, name));
 
-	int flags = ghost.first->getCollisionFlags();
-	ghost.first->setCollisionFlags(flags | (btCollisionObject::CF_NO_CONTACT_RESPONSE 
+	int flags = ghost->getCollisionFlags();
+	ghost->setCollisionFlags(flags | (btCollisionObject::CF_NO_CONTACT_RESPONSE 
 											| btCollisionObject::CF_CUSTOM_MATERIAL_CALLBACK));
-	LKernel::getG<PhysicsMain>()->getWorld()->addCollisionObject(ghost.first, (short)PonykartCollisionGroups::Triggers, 
+	LKernel::getG<PhysicsMain>()->getWorld()->addCollisionObject(ghost, (short)PonykartCollisionGroups::Triggers, 
 																(short)PonykartCollidesWithGroups::Triggers);
 
 
@@ -118,4 +119,23 @@ void TriggerRegion::setGlowColor(BalloonGlowColour color)
 	_balloonColor = color;
 	if (Settings::EnableGlowyRegions)
 		entity->setMaterialName(string("BalloonGlow_") + ballonGlowColorNames[(unsigned)color]);
+}
+
+void TriggerRegion::invokeTrigger(btRigidBody* otherBody, TriggerReportFlags flags, CollisionReportInfo* info)
+{
+	// at the moment this only triggers when the "main" shape of an actor enters. Do we want to change this?
+	if (onTrigger.size()) 
+	{
+#if DEBUG
+		try {
+#endif
+			for (auto& fun : onTrigger)
+				fun(this, otherBody, flags, info);
+#if DEBUG
+		}
+		catch (std::exception& e) {
+			LKernel::log("Exception at TriggerRegion.InvokeTrigger: " + *e.what());
+		}
+#endif
+	}
 }
