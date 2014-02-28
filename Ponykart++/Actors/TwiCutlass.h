@@ -29,7 +29,7 @@ namespace Actors
 	private:
         const float topSpeedKmHour;
         Sound::SoundMain* soundMain;
-		Extensions::ALsource idleSound, fullSound;
+		Extensions::ALSource idleSound, fullSound;
         bool idleState;
 	};
 } // Actors

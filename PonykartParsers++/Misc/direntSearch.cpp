@@ -39,6 +39,16 @@ namespace Extensions
 		return result;
 	}
 
+
+	std::string __cdecl getFileExtension(const std::string& path) // TODO: Check if this is correct (getFileExtension)
+	{
+		auto pos = path.rfind('.');
+		if (pos != std::string::npos)
+			return std::string(path, pos);
+		else
+			return std::string();
+	}
+
 	std::vector<std::string> __cdecl direntSearch(const std::string& directory, const std::string& extension) // recursive search algorithm
 	{
 		std::vector<std::string> results;

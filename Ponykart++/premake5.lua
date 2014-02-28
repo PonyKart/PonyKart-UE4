@@ -10,11 +10,12 @@ solution "Ponykart++"
 		flags { "Symbols" }
 		targetsuffix "-d"
 	configuration { "Release" }
-		flags { "Symbols", "Optimize" }
+		flags { "Symbols" }
+		optimize "Speed"
 	configuration {}
 
 	configuration { "Unix" }
-		buildoptions "-std=c++11"
+		buildoptions "-std=c++11 -pthread"
 		includedirs {
 			"/usr/local/include/OGRE/",
 			"/usr/include/OGRE/",
@@ -28,6 +29,8 @@ solution "Ponykart++"
 			"/usr/include/AL",
 			"/usr/local/include/vorbis",
 			"/usr/include/vorbis",
+			"/usr/local/include/opus",
+			"/usr/include/opus",
 		}
 	configuration { "MacOSX" }
 		buildoptions "-std=c++11"
@@ -90,6 +93,9 @@ solution "Ponykart++"
 			"../PonykartParsers++/"
 		}
 
+		pchheader "pch.h"
+		pchsource "pch.cpp"
+
 		configuration { "Unix" }
 			links {
 				"PonykartParsers++",
@@ -97,17 +103,18 @@ solution "Ponykart++"
 				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
-				"BulletSoftBody", -- TODO: Not required on Windows. Check if we can remove it on *nix too.
 				"BulletWorldImporter",
 				"LinearMath",
 				"openal",
 				"sndfile",
 				"vorbisfile",
 				"vorbis",
+				"opusfile",
+				"opus",
 				"ogg",
 				"boost_system",
 			}
-			linkoptions  "-lluajit-5.1"
+			linkoptions  "-pthread -lluajit-5.1"
 		configuration { "MacOSX" }
 		configuration { "Windows" }
 			flags { "StaticRuntime" } -- We need the /MT CRT, since that's what our dependencies are using
@@ -118,7 +125,6 @@ solution "Ponykart++"
 				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
-				--"BulletSoftBody",
 				"BulletFileLoader",
 				"BulletWorldImporter",
 				"LinearMath",

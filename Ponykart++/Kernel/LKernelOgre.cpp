@@ -19,7 +19,6 @@ void LKernel::initOgreRoot()
 #else
 	gRoot = new Ogre::Root("media/config/plugins.cfg", "", "Ponykart.log");
 #endif
-	addGlobalObject(gRoot);
 }
 
 void LKernel::initOgreRenderSystem()
@@ -33,7 +32,6 @@ void LKernel::initOgreRenderSystem()
 	gRenderSystem->setConfigOption("Video Mode", Options::get("Video Mode"));
 	gRenderSystem->setConfigOption("sRGB Gamma Conversion", Options::get("sRGB Gamma Conversion"));
 	gRoot->setRenderSystem(gRenderSystem); // Add to global objects
-	addGlobalObject(gRenderSystem);
 #if DEBUG
 	// print out the things we can support
 	auto renderList = gRoot->getAvailableRenderers();
@@ -55,19 +53,16 @@ void LKernel::initOgreRenderWindow()
 {
 	gWindow = gRoot->initialise(true, "Ponykart");
 	gWindow->setDeactivateOnFocusChange(false);
-	addGlobalObject(gWindow);
 }
 
 void LKernel::initOgreSceneManager()
 {
 	gSceneManager = gRoot->createSceneManager("OctreeSceneManager","sceneMgr");
-	addGlobalObject(gSceneManager);
 }
 
 void LKernel::initOgreViewportCam()
 {
 	gViewport = gWindow->addViewport(gSceneManager->createCamera("tempCam"));
-	addGlobalObject(gViewport);
 }
 
 void LKernel::details::initOgreResources()

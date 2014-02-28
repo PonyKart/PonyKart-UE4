@@ -4,7 +4,9 @@
 #include <map>
 #include <functional>
 #include <OIS.h>
+#include "Kernel/LKernelObject.h"
 #include "Core/ControllerManager.h"
+
 
 namespace Ponykart
 {
@@ -28,7 +30,7 @@ enum LKey
 
 /// This class provides an interface between game commands (accelerate, etc) and key presses (WASD, etc).
 /** This way we can change which keys do things at runtime */
-class KeyBindingManager
+class KeyBindingManager : public LKernel::LKernelObject
 {
 public:
 	KeyBindingManager();

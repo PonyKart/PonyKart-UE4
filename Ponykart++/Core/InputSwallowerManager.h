@@ -2,6 +2,8 @@
 #define INPUTSWALLOWERMANAGER_H_INCLUDED
 
 #include <map>
+#include "Kernel/LKernelObject.h"
+
 
 namespace Ponykart
 {
@@ -12,7 +14,7 @@ namespace Ponykart
 // Sexual references ahoy.
 //
 // Oh and pausing also swallows input. Might want to do something about that later. */
-class InputSwallowerManager
+class InputSwallowerManager : public LKernel::LKernelObject
 {
 public:
 	/// Add an object that has something that can be swallowed.

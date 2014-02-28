@@ -11,12 +11,14 @@
 #include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
+#include "Sound/SoundMain.h"
 
 using namespace Ogre;
 using namespace Ponykart;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Physics;
+using namespace Ponykart::Sound;
 using namespace LKernel::details;
 
 void LKernel::loadInitialObjects(Splash& splash)
@@ -66,4 +68,8 @@ void LKernel::loadInitialObjects(Splash& splash)
 	//addGlobalObject(new ThingDatabase());
 	//addGlobalObject(new Spawner());
 	//addGlobalObject(new AnimationManager());
+
+	// Sound
+	addGlobalObject(new SoundMain());
+
 }

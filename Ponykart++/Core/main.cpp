@@ -1,10 +1,19 @@
+#include "Core/main.h"
+
 #include <string>
 #include <fstream>
+#include <cstdio>
+#include <Ogre.h>
+#include <OgreWindowEventUtilities.h>
 #include "Core/Options.h"
 #include "UI/Splash.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 
+#include "Sound/SoundMain.h"
+#include "Sound/Music/MusicSource.h"
+
+using namespace Ponykart::Launch;
 using namespace Ponykart::LKernel;
 using Ponykart::Core::Options;
 using Ponykart::Splash;
@@ -59,13 +68,16 @@ int main()
 		log("Creating player camera and viewport...");
 		initOgreViewportCam();
 
-		Splash splash;
+		// Splash screen
+		{
+			Splash splash;
+			loadInitialObjects(splash);
+		}
+		enterGameLoop();
 
-		loadInitialObjects(splash);
-
-		//startRendering();
-
-		log("End of code. Exited successfully.");
+		log("End of code. Shutting down...");
+		shutdown();
+		std::printf("Shutdown complete.\n");
 		return EXIT_SUCCESS;
 	}
 	catch (std::string e) // If you can't guarantee that someone will catch your exceptions, throw a string.
@@ -74,5 +86,27 @@ int main()
 	}
 	// TODO: Catch standard exceptions too. Log e.what()
 
+	log ("Exception thrown! Shutting down...");
+	shutdown();
+	std::printf("Post-exception shutdown complete.\n");
 	return EXIT_FAILURE; // If we're here, we came from a catch
+}
+
+
+void Ponykart::Launch::enterGameLoop ()
+{
+	auto root = getG<Ogre::Root>();
+	auto window = LKernel::getG<Ogre::RenderWindow>();
+
+	auto soundMain = getG<Ponykart::Sound::SoundMain>();
+	auto music = soundMain->PlayMusic("./media/music/Sweet Apple Acres 128bpm.ogg");
+
+	while (!window->isClosed()) {
+		root->renderOneFrame();
+
+		Ogre::WindowEventUtilities::messagePump();
+
+		for (auto &f : onEveryUnpausedTenthOfASecondEvent)
+			f(nullptr);
+	}
 }
