@@ -1,16 +1,17 @@
-#ifndef LAUNCH_H_INCLUDED
-#define LAUNCH_H_INCLUDED
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
 #include <string>
-#include <Ogre.h>
 
 namespace Ponykart
 {
 namespace Launch
 {
+	void enterGameLoop ();
+
 
 //	static bool quit;
 };
 }
 
-#endif // LAUNCH_H_INCLUDED
+#endif // MAIN_H_INCLUDED

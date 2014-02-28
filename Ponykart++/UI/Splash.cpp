@@ -49,10 +49,7 @@ Splash::Splash()
 
 Splash::~Splash()
 {
-	delete overlay;
-	delete progressBG;
-	delete progressFG;
-	delete progressText;
+	overlayManager->destroy(overlay);
 }
 
 void Splash::updateGUI()

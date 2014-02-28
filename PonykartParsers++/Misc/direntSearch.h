@@ -24,6 +24,7 @@ namespace Extensions
 {
 	DLLEXPORT std::string __cdecl getFilename(const std::string& path); ///< Keep everything after the last /
 	DLLEXPORT std::string __cdecl getFilenameWithoutExtension(const std::string& path); ///< Keep everything between the last / and the last .
+	DLLEXPORT std::string __cdecl getFileExtension(const std::string& path); ///< Keep everything from the last . onward
 	DLLEXPORT std::vector<std::string> __cdecl direntSearch(const std::string& directory, const std::string& extension); ///< Search only inside directory
 	DLLEXPORT std::vector<std::string> __cdecl direntSearchRec(const std::string& directory, const std::string& extension); ///< Search recursively
 } // Extensions

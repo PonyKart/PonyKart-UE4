@@ -3,6 +3,8 @@
 
 #include <unordered_map>
 #include <string>
+#include "Kernel/LKernelObject.h"
+
 
 class btCollisionShape;
 
@@ -25,7 +27,7 @@ namespace Levels{class LevelChangedEventArgs;}
 
 namespace Physics
 {
-	class CollisionShapeManager
+	class CollisionShapeManager : public LKernel::LKernelObject
 	{
 	public:
 		CollisionShapeManager();

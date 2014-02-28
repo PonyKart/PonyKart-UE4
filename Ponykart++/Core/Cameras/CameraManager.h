@@ -2,14 +2,16 @@
 #define CAMERAMANAGER_H_INCLUDED
 
 #include <vector>
+#include "Kernel/LKernelObject.h"
 #include "Core/Cameras/LCamera.h"
+
 
 namespace Ponykart
 {
 namespace Core
 {
 /// Manages all of our cameras and handles switching between them as necessary.
-class CameraManager
+class CameraManager : public LKernel::LKernelObject
 {
 public:
 	CameraManager();

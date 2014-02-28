@@ -5,6 +5,7 @@
 #include <vector>
 #include <string>
 #include <Ogre.h>
+#include "Kernel/LKernelObject.h"
 #include "Actors/Kart.h"
 #include "Actors/Wheels/Wheel.h"
 
@@ -13,7 +14,7 @@ namespace Ponykart
 namespace Actors
 {
 /// A class to read .wheel files and stick them into a wheel object
-class WheelFactory
+class WheelFactory : public LKernel::LKernelObject
 {
 public:
 	WheelFactory();
