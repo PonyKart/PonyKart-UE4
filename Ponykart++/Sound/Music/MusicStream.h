@@ -18,7 +18,7 @@ public:
 	virtual ~MusicStream () { }
 
 	bool finished () { return finishedFlag; }
-	virtual int readSegment (Extensions::ALBuffer buf) = 0;
+	virtual int readPCMChunk (Extensions::ALBuffer buf) = 0;
 	virtual void reset () = 0;
 
 protected:

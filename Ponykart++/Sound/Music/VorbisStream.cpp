@@ -49,7 +49,7 @@ VorbisStream::~VorbisStream ()
 }
 
 
-int VorbisStream::readSegment (ALBuffer buf)
+int VorbisStream::readPCMChunk (ALBuffer buf)
 {
 	int total = 0;
 

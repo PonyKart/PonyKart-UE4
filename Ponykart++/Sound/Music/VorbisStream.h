@@ -18,7 +18,7 @@ public:
 	VorbisStream (const std::string &filename);
 	virtual ~VorbisStream ();
 
-	virtual int readSegment (Extensions::ALBuffer buf);
+	virtual int readPCMChunk (Extensions::ALBuffer buf);
 	virtual void reset ();
 
 private:

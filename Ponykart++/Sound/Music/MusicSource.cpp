@@ -50,7 +50,7 @@ void MusicSource::fill ()
 {
 	clear();
 	for (auto buf : buffers)
-		if (stream->readSegment(buf) > 0)
+		if (stream->readPCMChunk(buf) > 0)
 			alSourceQueueBuffers(source, 1, &buf);
 	bufCursor = 0;
 }
@@ -138,7 +138,7 @@ void MusicSource::pump ()
 	for (; processed > 0; processed--) {
 		ALBuffer buf;
 		alSourceUnqueueBuffers(source, 1, &buf);
-		if (stream->readSegment(buf) > 0) {
+		if (stream->readPCMChunk(buf) > 0) {
 			alSourceQueueBuffers(source, 1, &buffers[bufCursor++]);
 			bufCursor %= buffers.size();
 			queuedMore = true;

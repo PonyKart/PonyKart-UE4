@@ -18,7 +18,7 @@ public:
 	OpusStream (const std::string &filename);
 	virtual ~OpusStream ();
 
-	virtual int readSegment (Extensions::ALBuffer buf);
+	virtual int readPCMChunk (Extensions::ALBuffer buf);
 	virtual void reset ();
 
 private:

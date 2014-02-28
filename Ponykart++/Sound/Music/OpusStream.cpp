@@ -50,7 +50,7 @@ OpusStream::~OpusStream ()
 }
 
 
-int OpusStream::readSegment (ALBuffer buf)
+int OpusStream::readPCMChunk (ALBuffer buf)
 {
 	int total = 0;
 
