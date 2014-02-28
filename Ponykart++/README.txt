@@ -13,9 +13,8 @@
 
 # Build instructions :
 - Checkout a branch. master should always work, dev may not always compile successfully.
-- Install the dependencies (use the same compiler for all the dependencies and the project)
-  The dependencies must compiled for a 32bit architecture, because irrKlang is 32bit only.
-- Compile the project, a Visual Studio 2013 and Code::Blocks project files are provided for Windows and Linux
+- Install the dependencies (use the same compiler toolchain for the dependencies and the project)
+- Compile the project, you can generate project files using premake5.
 - Copy the media/ folder in the build/ folder
 - Run from the build/ folder
 
@@ -27,10 +26,9 @@ The use of precompiled SDKs is not recommended, build from source instead.
 Failure to follow these instruction will result in cryptic errors at run-time and (hopefully) compile-time.
 - Compile all the dependencies with MSVC 2013
 - Install them in C:\ in their respective folders or in the default locations (as defined in premake5.lua)
+- Create the project files with premake5 (run the command "premake5 vs2013")
 - Open the Visual Studio project, build and run.
 
 ## Linux :
-If you use a package manager, installing the 32bit dependencies on a 64bit system is tricky (but possible).
-It's easier to either use a 32bit kernel, or compile the dependencies yourself.
 - Install the dependencies with your package manager, or manually in /usr/local/
-- Open the Code::Blocks project, build and run.
+- Generate project files with premake5, build and run.
