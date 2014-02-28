@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <string>
 #include <OgreCamera.h>
 #include <OgreSceneNode.h>

@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <fstream>
 #include <OgreConfigFile.h>
 #include "Core/Options.h"

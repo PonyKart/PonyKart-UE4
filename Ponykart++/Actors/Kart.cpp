@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Actors/Kart.h"
 #include "Misc/ogreExtensions.h"
 #include "Physics/MotionStates/KartMotionState.h"

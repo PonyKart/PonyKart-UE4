@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Actors/LThing.h"
 #include "Core/IDs.h"
 #include "Physics/CollisionObjectDataHolder.h"

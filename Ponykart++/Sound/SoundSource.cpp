@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "SoundSource.h"
 
 using namespace std;

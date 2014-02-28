@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Core/KeyBindingManager.h"

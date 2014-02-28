@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <BulletCollision/CollisionDispatch/btCollisionObject.h>
 #include <BulletCollision/CollisionDispatch/btGhostObject.h>
 #include "Kernel/LKernel.h"

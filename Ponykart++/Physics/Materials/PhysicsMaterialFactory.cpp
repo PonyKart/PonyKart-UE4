@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <vector>
 #include <OgreConfigFile.h>
 #include "Kernel/LKernelOgre.h"

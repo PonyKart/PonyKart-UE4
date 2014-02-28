@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <OgreConfigFile.h>
 #include <OgreMaterialManager.h>
 #include <OgreOverlay.h>

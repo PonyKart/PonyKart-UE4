@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <al.h>
 #include "Actors/LThing.h"
 #include "Actors/Components/SoundComponent.h"

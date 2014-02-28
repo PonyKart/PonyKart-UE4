@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Actors/Components/ShapeComponent.h"
 #include "Kernel/LKernel.h"
 #include "Thing/Blocks/ShapeBlock.h"

@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <string>
 #include <OgreConfigFile.h>
 #include <OgreMeshManager.h>

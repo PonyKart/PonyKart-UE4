@@ -1,3 +1,4 @@
+#include "pch.h"
 /*************************************************
 *                                                *
 *  EasyBMP Cross-Platform Windows Bitmap Library * 

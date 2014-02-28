@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <OgreFrameListener.h>
 #include "Core/Pauser.h"
 #include "Core/Animation/AnimationBlender.h"

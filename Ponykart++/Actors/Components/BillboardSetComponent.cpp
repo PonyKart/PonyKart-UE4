@@ -1,3 +1,4 @@
+#include "pch.h"
 #ifdef _WIN32
 	#include <cstdint>
 #endif

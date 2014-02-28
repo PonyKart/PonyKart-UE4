@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Actors/DashJavelin.h"
 #include "Actors/Components/ModelComponent.h"
 #include "Actors/Components/RibbonComponent.h"

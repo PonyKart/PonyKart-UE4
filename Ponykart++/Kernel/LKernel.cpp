@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <OgreRoot.h>
 #include <OgreLogManager.h>
 #include "Kernel/LKernel.h"
@@ -27,11 +28,11 @@ LKernelObject* Ponykart::LKernel::addGlobalObject(LKernelObject* object, const s
 	return object;
 }
 
-template<> Ogre::Root *getG<Ogre::Root> () { return gRoot; }
-template<> Ogre::RenderWindow *getG<Ogre::RenderWindow> () { return gWindow; }
-template<> Ogre::RenderSystem *getG<Ogre::RenderSystem> () { return gRenderSystem; }
-template<> Ogre::SceneManager *getG<Ogre::SceneManager> () { return gSceneManager; }
-template<> Ogre::Viewport *getG<Ogre::Viewport> () { return gViewport; }
+template<> Ogre::Root *LKernel::getG<Ogre::Root> () { return gRoot; }
+template<> Ogre::RenderWindow *LKernel::getG<Ogre::RenderWindow>() { return gWindow; }
+template<> Ogre::RenderSystem *LKernel::getG<Ogre::RenderSystem>() { return gRenderSystem; }
+template<> Ogre::SceneManager *LKernel::getG<Ogre::SceneManager>() { return gSceneManager; }
+template<> Ogre::Viewport *LKernel::getG<Ogre::Viewport>() { return gViewport; }
 
 void Ponykart::LKernel::shutdown ()
 {

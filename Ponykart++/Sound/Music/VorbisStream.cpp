@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "VorbisStream.h"
 
 #include <string>
