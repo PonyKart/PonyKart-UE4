@@ -51,10 +51,10 @@ VorbisStream::~VorbisStream ()
 
 int VorbisStream::readSegment (ALBuffer buf)
 {
-	int bitstream;
-
 	int total = 0;
+
 	while (total < data.size()) {
+		int bitstream;
 		auto result = ov_read(&vf, data.data() + total, data.size() - total, false, 2, true, &bitstream);
 		if (result < 0) {
 			ov_clear(&vf);

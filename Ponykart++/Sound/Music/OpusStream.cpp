@@ -52,10 +52,10 @@ OpusStream::~OpusStream ()
 
 int OpusStream::readSegment (ALBuffer buf)
 {
-	int link;
+	int total = 0;
 
-	int total;
 	while (total < data.size()) {
+		int link;
 		auto result = op_read_float(of, data.data() + total, data.size() - total, &link);
 		if (result < 0) {
 			op_free(of);

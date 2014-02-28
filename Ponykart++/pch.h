@@ -7,6 +7,8 @@
 #include <thread>
 #include <atomic>
 #include <mutex>
+#include <chrono>
+#include <algorithm>
 #include <string>
 #include <array>
 #include <vector>
