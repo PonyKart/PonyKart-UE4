@@ -7,7 +7,7 @@
 class btCollisionObject;
 namespace Extensions
 {
-	Ponykart::Physics::PonykartCollisionGroups getCollisionGroup(btCollisionObject* obj);
+	Ponykart::Physics::PonykartCollisionGroups getCollisionGroup(const btCollisionObject* const obj);
 	std::string getName(btCollisionObject* obj);
 }
 

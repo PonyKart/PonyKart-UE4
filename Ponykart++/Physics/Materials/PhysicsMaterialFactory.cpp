@@ -23,29 +23,46 @@ void PhysicsMaterialFactory::readMaterialsFromFiles()
 	materials.clear();
 
 	// get all of the filenames of the files in media/physicsmaterials
-	vector<string> files = direntSearch("media/physicsmaterials/", ".physmat");
+	std::string path = "media/physicsmaterials/";
+	vector<string> files = direntSearch(path, ".physmat");
 
 	for (string filename : files)
 	{
 		// rev up those files
 		Ogre::ConfigFile cfile;
-		cfile.load(filename, "=", true);
+		cfile.load(path+filename, "=", true);
 
 		auto sectionIterator = cfile.getSectionIterator();
 		while (sectionIterator.hasMoreElements())
 		{
 			string matname = sectionIterator.peekNextKey();
+			sectionIterator.moveNext();
+			//if (matname.empty()) continue;
+
 			ostringstream ssF,ssB,ssAD,ssLD;
 			ssF << PhysicsMaterial::DEFAULT_FRICTION;
 			ssB << PhysicsMaterial::DEFAULT_BOUNCINESS;
 			ssAD << PhysicsMaterial::DEFAULT_ANGULAR_DAMPING;
 			ssLD << PhysicsMaterial::DEFAULT_LINEAR_DAMPING;
 
+			static const string strF = "Friction";
+			static const string strB = "Bounciness";
+			static const string strAD = "AngularDamping";
+			static const string strLD = "LinearDamping";
+			string strSsF = ssF.str();
+			string strSsB = ssB.str();
+			string strSsAD = ssAD.str();
+			string strSsLD = ssLD.str();
+			string a = cfile.getSetting(strF, matname, strSsF);
+			string b = cfile.getSetting(strB, matname, strSsB);
+			string c = cfile.getSetting(strAD, matname, strSsAD);
+			string d = cfile.getSetting(strLD, matname, strSsLD);
+
 			PhysicsMaterial *mat = new PhysicsMaterial(
-				(float)atof(cfile.getSetting("Friction", matname, ssF.str()).c_str()),
-				(float)atof(cfile.getSetting("Bounciness", matname, ssB.str()).c_str()),
-				(float)atof(cfile.getSetting("AngularDamping", matname, ssAD.str()).c_str()),
-				(float)atof(cfile.getSetting("LinearDamping", matname, ssLD.str()).c_str())
+				(float)atof(a.c_str()),
+				(float)atof(b.c_str()),
+				(float)atof(c.c_str()),
+				(float)atof(d.c_str())
 			);
 
 			materials[matname] = mat;

@@ -3,6 +3,7 @@
 
 #include <string>
 #include <unordered_map>
+#include "Kernel/LKernelObject.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
 #include "Physics/TriggerRegions/TriggerRegion.h"
 
@@ -18,7 +19,7 @@ namespace Physics
 	/// (You can use the extension methods IsLeaveFlag and IsEnterFlag on TriggerFlags to help with this)
 	/// 
 	/// If you're using a handler class thingy, don't forget to add RemoveEvent in its Dispose method.
-	class TriggerReporter
+	class TriggerReporter : public LKernel::LKernelObject
 	{
 	public:
 		TriggerReporter();

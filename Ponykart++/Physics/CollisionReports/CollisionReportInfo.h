@@ -26,9 +26,9 @@ namespace Physics
 		/// Collision group of our second object
 		PonykartCollisionGroups secondGroup;
 		/// First object
-		btCollisionObject* firstObject;
+		const btCollisionObject* firstObject;
 		/// Second object
-		btCollisionObject* secondObject;
+		const btCollisionObject* secondObject;
 		/// Where the two objects first collided. Note that if A started touching B in some other place while still touching B in the same place
 		/// as before, we would not fire a new event for that. Why? Because things are gonna be sliding around a lot so that would make
 		/// far too many events.

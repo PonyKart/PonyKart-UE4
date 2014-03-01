@@ -6,6 +6,7 @@
 #include <unordered_set>
 #include <vector>
 #include "Physics/CollisionGroups.h"
+#include "Physics/CollisionReports/CollisionReportInfo.h"
 #include "Kernel/LKernelObject.h"
 
 class btCollisionObject;
@@ -42,18 +43,29 @@ namespace Physics
 		void addEvent(PonykartCollisionGroups firstType, PonykartCollisionGroups secondType, CollisionReportEvent handler);
 		void addEvent(int firstType, int secondType, CollisionReportEvent handler);
 	private:
+		/// Clear the dictionary whenever we unload a level
 		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
+		/// Sets up a contact event and then invokes it.
+		/// @param position Optional, can be nullptr.
+		/// @param normal Optional, can be nullptr.
+		void setupAndFireEvent(const btCollisionObject* const objectA, const btCollisionObject* const objectB, 
+								Ogre::Vector3* position, Ogre::Vector3* normal, ObjectTouchingFlags flags);
+		std::unordered_set<const btCollisionObject*> getCollisionListForObject(const btCollisionObject* const colObj, 
+									std::unordered_map<const btCollisionObject*, std::unordered_set<const btCollisionObject*>>& dict);
+		/// invoke an event.
+		/// note that it only invokes [a,b] and not [b,a] - if it invokes both, errors will happen
+		void fireEvent(CollisionReportInfo* info);
 
 	private:
 		CollisionReportEvent** reporters; ///< our 2D array of contact report delegates
 		/// Our map of collision objects, with a set containing the objects it collided with last frame.
 		/// Why a hash set? They prevent having multiple identical objects, but also don't throw an error if they already contain it.
 		/// They just silently ignore it (though .Add does return whether the adding was successful or not)
-		std::unordered_map<btCollisionObject*, std::unordered_set<btCollisionObject*>> CurrentlyCollidingWith;
+		std::unordered_map<const btCollisionObject*, std::unordered_set<const btCollisionObject*>> currentlyCollidingWith;
 		/// This map contains objects that collided *this* frame.
-		std::unordered_map<btCollisionObject*, std::unordered_set<btCollisionObject*>> NewCollidingWith;
+		std::unordered_map<const btCollisionObject*, std::unordered_set<const btCollisionObject*>> newCollidingWith;
 	};
 }
 }
 
-#endif // COLLISIONREPORTER_H_INCLUDED
+#endif // COLLISIONREPORTER_H_INCLUDED4

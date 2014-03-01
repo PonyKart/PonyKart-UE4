@@ -10,7 +10,6 @@
 #include "UI/Splash.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
-
 #include "Sound/SoundMain.h"
 #include "Sound/Music/MusicSource.h"
 

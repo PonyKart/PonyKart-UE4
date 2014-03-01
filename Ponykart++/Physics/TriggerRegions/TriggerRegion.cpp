@@ -119,7 +119,7 @@ void TriggerRegion::setGlowColor(BalloonGlowColour color)
 {
 	_balloonColor = color;
 	if (Settings::EnableGlowyRegions)
-		entity->setMaterialName(string("BalloonGlow_") + ballonGlowColorNames[(unsigned)color]);
+		entity->setMaterialName(string("BalloonGlow_") + balloonGlowColorNames[(unsigned)color]);
 }
 
 void TriggerRegion::invokeTrigger(btRigidBody* otherBody, TriggerReportFlags flags, CollisionReportInfo* info)

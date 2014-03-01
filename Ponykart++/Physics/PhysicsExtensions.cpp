@@ -8,7 +8,7 @@ namespace Extensions
 {
 	/// Helper method for getting a collision group from a collision object
 	/// @return The group of the collision object if it has one
-	PonykartCollisionGroups getCollisionGroup(btCollisionObject* obj) 
+	PonykartCollisionGroups getCollisionGroup(const btCollisionObject* const obj) 
 	{
 		// No RTTI, we assume that all user pointers of obj will be either CollisionObjectDataHolder* or nullptr_t
 		CollisionObjectDataHolder* holder = static_cast<CollisionObjectDataHolder*>(obj->getUserPointer());
