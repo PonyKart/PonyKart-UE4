@@ -12,10 +12,8 @@ namespace LKernel
 	} // details
 
 	void initOgreRoot();
-	void initOgreRenderSystem();
-	void initOgreRenderWindow();
-	void initOgreSceneManager();
-	void initOgreViewportCam();
+	void initOgreGraphics ();
+	void shutdownOgre ();
 
 	void log(const std::string& message); ///< Logs a message with Ogre. Ogre must be initialized.
 } // LKernel

@@ -2,9 +2,11 @@
 #include <fstream>
 #include <OgreConfigFile.h>
 #include "Core/Options.h"
+#include "Kernel/LKernelOgre.h"
 
 using namespace Ponykart;
 using namespace Ponykart::Core;
+using namespace Ponykart::LKernel;
 using namespace Ogre;
 using namespace std;
 
@@ -38,6 +40,8 @@ void Options::setupDictionaries()
 
 void Options::initialize()
 {
+	log("[Loading] Loading configuration...");
+
 	setupDictionaries();
 
 	static const char optionsPath[] = "media/config/ponykart.cfg";
@@ -74,6 +78,8 @@ void Options::initialize()
 	// since we sometimes add new options, we want to make sure the .ini file has all of them
 	save();
 #endif
+
+	log("[Loading] Configuration loaded.");
 }
 
 void Options::save()

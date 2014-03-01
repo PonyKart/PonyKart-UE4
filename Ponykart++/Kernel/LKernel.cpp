@@ -1,7 +1,7 @@
 #include "pch.h"
+#include "Kernel/LKernel.h"
 #include <OgreRoot.h>
 #include <OgreLogManager.h>
-#include "Kernel/LKernel.h"
 
 using namespace Ponykart;
 using namespace LKernel;
@@ -9,7 +9,8 @@ using namespace LKernel::details;
 
 // Define the globals
 Ogre::Root* LKernel::gRoot;
-Ogre::RenderWindow* LKernel::gWindow;
+SDL_Window *LKernel::gSDLWindow;
+Ogre::RenderWindow* LKernel::gOgreWindow;
 Ogre::RenderSystem* LKernel::gRenderSystem;
 Ogre::SceneManager* LKernel::gSceneManager;
 Ogre::Viewport* LKernel::gViewport;
@@ -29,16 +30,9 @@ LKernelObject* Ponykart::LKernel::addGlobalObject(LKernelObject* object, const s
 }
 
 template<> Ogre::Root *LKernel::getG<Ogre::Root> () { return gRoot; }
-template<> Ogre::RenderWindow *LKernel::getG<Ogre::RenderWindow>() { return gWindow; }
+template<> SDL_Window *LKernel::getG<SDL_Window>() { return gSDLWindow; }
+template<> Ogre::RenderWindow *LKernel::getG<Ogre::RenderWindow>() { return gOgreWindow; }
 template<> Ogre::RenderSystem *LKernel::getG<Ogre::RenderSystem>() { return gRenderSystem; }
 template<> Ogre::SceneManager *LKernel::getG<Ogre::SceneManager>() { return gSceneManager; }
 template<> Ogre::Viewport *LKernel::getG<Ogre::Viewport>() { return gViewport; }
 
-void Ponykart::LKernel::shutdown ()
-{
-	for (auto obj : globalObjects)
-		delete obj.second;
-	globalObjects.clear();
-
-	delete gRoot;
-}
