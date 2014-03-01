@@ -68,4 +68,4 @@ namespace Physics
 }
 }
 
-#endif // COLLISIONREPORTER_H_INCLUDED4
+#endif // COLLISIONREPORTER_H_INCLUDED
