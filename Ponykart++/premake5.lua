@@ -55,8 +55,6 @@ solution "Ponykart++"
 			os.findlib("openal-soft"),
 			os.findlib("boost_system"), 		
 			-- Try in C:/
-			"C:/OGRE/lib/release",
-			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/Lua/5.1/lib",
 			"C:/irrKlang-1.4.0/lib/Win32-visualStudio",
 			"C:/libsndfile32/lib",
@@ -82,6 +80,8 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Debug" }	
 		libdirs { 
+			"C:/OGRE/lib/debug",
+			"C:/BULLET_PHYSICS/lib/Debug",
 			"C:/libvorbis-1.3.4/lib/Win32/Debug",
 			"C:/libvorbis-1.3.4/lib/x64/Debug",
 			"C:/libogg-1.3.1/lib/Win32/Debug",
@@ -94,6 +94,8 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Release" }	
 		libdirs { 
+			"C:/OGRE/lib/release",
+			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/libvorbis-1.3.4/lib/Win32/Release",
 			"C:/libvorbis-1.3.4/lib/x64/Release",
 			"C:/libogg-1.3.1/lib/Win32/Release",
