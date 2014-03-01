@@ -12,6 +12,7 @@
 #include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
+#include "Physics/Materials/PhysicsMaterialFactory.h"
 #include "Physics/TriggerRegions/TriggerReporter.h"
 #include "Sound/SoundMain.h"
 
@@ -41,7 +42,7 @@ void LKernel::loadInitialObjects(Splash& splash)
 		addGlobalObject(new CollisionShapeManager());
 		addGlobalObject(new CollisionReporter());
 		addGlobalObject(new TriggerReporter());
-		//addGlobalObject(new PhysicsMaterialFactory());
+		addGlobalObject(new PhysicsMaterialFactory());
 	}
 	catch (...)
 	{

@@ -1,4 +1,7 @@
 #include "pch.h"
 #include "GlowColours.h"
 
-const char* ballonGlowColorNames[] = { "red", "blue", "yellow", "green", "orange", "magenta", "purple", "cyan", "white" };
+namespace Ponykart
+{
+	const char* balloonGlowColorNames[] = { "red", "blue", "yellow", "green", "orange", "magenta", "purple", "cyan", "white" };
+}

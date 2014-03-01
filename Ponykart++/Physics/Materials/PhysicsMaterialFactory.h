@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <string>
 #include <BulletDynamics/Dynamics/btRigidBody.h>
+#include "Kernel/LKernelObject.h"
 
 namespace Ponykart
 {
@@ -11,7 +12,7 @@ namespace Physics
 {
 	struct PhysicsMaterial;
 
-	class PhysicsMaterialFactory
+	class PhysicsMaterialFactory : public LKernel::LKernelObject
 	{
 	public:
 		PhysicsMaterialFactory();

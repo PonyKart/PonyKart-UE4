@@ -16,7 +16,7 @@ namespace Ponykart
 		cyan = 7,
 		white = 8
 	};
-	extern const char* ballonGlowColorNames[]; // Don't forget to update it if BalloonGlowColour changes !
+	extern const char* balloonGlowColorNames[]; // Don't forget to update it if BalloonGlowColour changes !
 
 	/// Colours available for flat glow.
 	/// 
