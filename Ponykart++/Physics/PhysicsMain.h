@@ -28,6 +28,7 @@ namespace Physics
 	public:
 		PhysicsMain();
 		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Deletes the world
+		void loadPhysicsLevel(std::string& levelName);
 		// Getters
 		btDiscreteDynamicsWorld* getWorld();
 

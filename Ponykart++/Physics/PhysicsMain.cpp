@@ -91,3 +91,50 @@ bool PhysicsMain::frameEnded(const Ogre::FrameEvent& evt)
 
 	return true;
 }
+
+void PhysicsMain::loadPhysicsLevel(std::string& levelName) 
+{
+	log("[Loading] Setting up Physics world and loading shapes from .scene file");
+
+	createWorld(levelName);
+
+	// creates collision meshes out of static objects
+	// get the scene manager
+	SceneManager* sceneMgr = LKernel::getG<SceneManager>();
+	// parse our .scene file
+
+	if (System.IO.File.Exists(Settings.Default.WorldFileLocation + levelName + ".scene")) 
+	{
+		DotSceneLoader dsl = new DotSceneLoader();
+		dsl.ParseDotScene(levelName + ".scene", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, sceneMgr->getRootSceneNode());
+
+		// then go through each of the static objects and turn them into trimeshes.
+		for (std::string& s : dsl.StaticObjects) 
+		{
+			// apparently triangle meshes only screw up if you turn on debug drawing for them. No I don't know why the fuck that should matter.
+			Entity* dslEnt = sceneMgr->getEntity(s);
+			SceneNode* dslNode = sceneMgr->getSceneNode(s);
+
+			btCollisionShape* shape;
+
+			std::string bulletFilePath = dslNode->getName() + ".bullet";
+
+			shape = LKernel::getG<CollisionShapeManager>()->getShapeFromFile(bulletFilePath, dslEnt, dslNode);
+
+			// then do the rest as usual
+			auto info = new btRigidBodyConstructionInfo(0, new DefaultMotionState(), shape, Vector3::ZERO);
+			auto body = new btRigidBody(info);
+			body->setCollisionFlags(btCollisionObject::CF_STATIC_OBJECT | btCollisionObject::CF_DISABLE_VISUALIZE_OBJECT);
+			body->setUserPointer(new CollisionObjectDataHolder(body, PonykartCollisionGroups::Road, dslNode->getName());
+			world->addRigidBody(body, PonykartCollisionGroups::Road, PonykartCollidesWithGroups::Road);
+		}
+	}
+
+	// make a ground plane for us
+	createGroundPlane(-15);
+
+	// run some events
+	if (postCreateWorld.size())
+		for (auto& fun : postCreateWorld)
+			fun(world);
+}
