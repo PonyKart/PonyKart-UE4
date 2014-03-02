@@ -18,8 +18,8 @@ public:
 	OpusStream (const std::string &filename);
 	virtual ~OpusStream ();
 
-	virtual int readPCMChunk (Extensions::ALBuffer buf);
-	virtual void reset ();
+	virtual int readPCMChunk (Extensions::ALBuffer buf) override;
+	virtual void reset () override;
 
 private:
 	OggOpusFile *of;

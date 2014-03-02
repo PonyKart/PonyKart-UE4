@@ -18,8 +18,8 @@ public:
 	VorbisStream (const std::string &filename);
 	virtual ~VorbisStream ();
 
-	virtual int readPCMChunk (Extensions::ALBuffer buf);
-	virtual void reset ();
+	virtual int readPCMChunk (Extensions::ALBuffer buf) override;
+	virtual void reset () override;
 
 private:
 	OggVorbis_File vf;
