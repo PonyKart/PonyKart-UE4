@@ -61,6 +61,7 @@ solution "Ponykart++"
 			"C:/libsndfile64/lib",
 		}
 		includedirs {
+			"C:/SDL2/include/SDL2",
 			"C:/Lua/5.1/include",
 			"C:/OGRE/include/OGRE",
 			"C:/OGRE/include/OIS",
@@ -80,6 +81,7 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Debug" }	
 		libdirs { 
+			"C:/SDL2/lib/Debug",
 			"C:/OGRE/lib/debug",
 			"C:/BULLET_PHYSICS/lib/Debug",
 			"C:/libvorbis-1.3.4/lib/Win32/Debug",
@@ -94,6 +96,7 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Release" }	
 		libdirs { 
+			"C:/SDL2/lib/Release",
 			"C:/OGRE/lib/release",
 			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/libvorbis-1.3.4/lib/Win32/Release",
@@ -149,6 +152,8 @@ solution "Ponykart++"
 			buildoptions { "/Zm500" } -- Increase MSVC's internal heap limit for PCHs
 			links {
 				"PonykartParsers++",
+				"SDL2main",
+				"SDL2",
 				"OgreMain",
 				"OIS",
 				"BulletDynamics",

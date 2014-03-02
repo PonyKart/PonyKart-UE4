@@ -108,7 +108,7 @@ void LKernel::initOgreGraphics ()
 	SDL_SysWMinfo wmInfo;
 	SDL_VERSION(&wmInfo.version);
 	if (SDL_GetWindowWMInfo(gSDLWindow, &wmInfo)) {
-		ogreWindowParams["externalWindowHandle"] = StringConverter::toString(wmInfo.info.win.window);
+		ogreWindowParams["externalWindowHandle"] = StringConverter::toString(reinterpret_cast<size_t>(wmInfo.info.win.window));
 		ogreWindowParams["externalGLContext"] = StringConverter::toString(reinterpret_cast<size_t>(context));
 		ogreWindowParams["externalGLControl"] = String("true");
 	} else
