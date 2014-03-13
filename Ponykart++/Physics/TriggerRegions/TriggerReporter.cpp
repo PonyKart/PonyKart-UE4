@@ -3,7 +3,7 @@
 #include <BulletCollision/CollisionDispatch/btGhostObject.h>
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
-#include "Levels/LevelManager.H"
+#include "Levels/LevelManager.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
 #include "Physics/CollisionReports/CollisionReportInfo.h"
 #include "Physics/PhysicsExtensions.h"
