@@ -27,14 +27,18 @@ namespace Physics
 	{
 	public:
 		PhysicsMain();
-		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); // Deletes the world
-		void loadPhysicsLevel(std::string& levelName);
+		void createWorld(const std::string& levelName); ///< Creates the world
+		/// Creates a static ground plane facing upwards.
+		/// @param yposition The Y position that the plane is located at.
+		void createGroundPlane(float yposition);
+		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); ///< Deletes the world
+		void loadPhysicsLevel(const std::string& levelName);
 		// Getters
 		btDiscreteDynamicsWorld* getWorld();
 
 	private:
-		// Runs just before every frame. Simulates one frame of physics.
-		// Physics simulation should be the only thing that's using FrameEnded!
+		/// Runs just before every frame. Simulates one frame of physics.
+		/// Physics simulation should be the only thing that's using FrameEnded!
 		bool frameEnded(const Ogre::FrameEvent& evt) override;
 
 	private:

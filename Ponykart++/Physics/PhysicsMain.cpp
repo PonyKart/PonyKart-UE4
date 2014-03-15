@@ -1,12 +1,17 @@
 #include "pch.h"
+#include <fstream>
 #include <BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h>
+#include <BulletDynamics/Dynamics/btRigidBody.h>
 #include <BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h>
 #include <BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h>
 #include "Core/Pauser.h"
 #include "Kernel/LKernelOgre.h"
 #include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
+#include "Physics/CollisionObjectDataHolder.h"
+#include "Physics/CollisionShapeManager.h"
 #include "Physics/PhysicsMain.h"
+#include "Physics/DotSceneLoader/DotSceneLoader.h"
 
 using namespace Ogre;
 using namespace Ponykart::Core;
@@ -92,7 +97,7 @@ bool PhysicsMain::frameEnded(const Ogre::FrameEvent& evt)
 	return true;
 }
 
-void PhysicsMain::loadPhysicsLevel(std::string& levelName) 
+void PhysicsMain::loadPhysicsLevel(const std::string& levelName) 
 {
 	log("[Loading] Setting up Physics world and loading shapes from .scene file");
 
@@ -103,13 +108,17 @@ void PhysicsMain::loadPhysicsLevel(std::string& levelName)
 	SceneManager* sceneMgr = LKernel::getG<SceneManager>();
 	// parse our .scene file
 
-	if (System.IO.File.Exists(Settings.Default.WorldFileLocation + levelName + ".scene")) 
+	// No standard way to check if a file exists without opening it.
+	std::ifstream fileExistsCheck(Settings::WorldFileLocation + levelName + ".scene");
+	if (fileExistsCheck)
 	{
-		DotSceneLoader dsl = new DotSceneLoader();
-		dsl.ParseDotScene(levelName + ".scene", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, sceneMgr->getRootSceneNode());
+		fileExistsCheck.close();
+		DotSceneLoader dsl;
+		dsl.parseDotScene(levelName + ".scene", ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, 
+							sceneMgr, sceneMgr->getRootSceneNode());
 
 		// then go through each of the static objects and turn them into trimeshes.
-		for (std::string& s : dsl.StaticObjects) 
+		for (const std::string& s : dsl.staticObjects) 
 		{
 			// apparently triangle meshes only screw up if you turn on debug drawing for them. No I don't know why the fuck that should matter.
 			Entity* dslEnt = sceneMgr->getEntity(s);
@@ -122,11 +131,11 @@ void PhysicsMain::loadPhysicsLevel(std::string& levelName)
 			shape = LKernel::getG<CollisionShapeManager>()->getShapeFromFile(bulletFilePath, dslEnt, dslNode);
 
 			// then do the rest as usual
-			auto info = new btRigidBodyConstructionInfo(0, new DefaultMotionState(), shape, Vector3::ZERO);
+			btRigidBody::btRigidBodyConstructionInfo info{ 0, new btDefaultMotionState(), shape };
 			auto body = new btRigidBody(info);
 			body->setCollisionFlags(btCollisionObject::CF_STATIC_OBJECT | btCollisionObject::CF_DISABLE_VISUALIZE_OBJECT);
-			body->setUserPointer(new CollisionObjectDataHolder(body, PonykartCollisionGroups::Road, dslNode->getName());
-			world->addRigidBody(body, PonykartCollisionGroups::Road, PonykartCollidesWithGroups::Road);
+			body->setUserPointer(new CollisionObjectDataHolder(body, PonykartCollisionGroups::Road, dslNode->getName()));
+			world->addRigidBody(body, (short)PonykartCollisionGroups::Road, (short)PonykartCollidesWithGroups::Road);
 		}
 	}
 

@@ -17,10 +17,10 @@ solution "Ponykart++"
 	configuration { "Unix" }
 		buildoptions "-std=c++11 -pthread"
 		includedirs {
+			"/usr/local/include/SDL2/",
+			"/usr/include/SDL2/",
 			"/usr/local/include/OGRE/",
 			"/usr/include/OGRE/",
-			"/usr/local/include/OIS/",
-			"/usr/include/OIS/",
 			"/usr/local/include/bullet/",
 			"/usr/include/bullet/",
 			"/usr/local/include/luajit-2.0/",
@@ -55,14 +55,13 @@ solution "Ponykart++"
 			os.findlib("openal-soft"),
 			os.findlib("boost_system"), 		
 			-- Try in C:/
-			"C:/OGRE/lib/release",
-			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/Lua/5.1/lib",
 			"C:/irrKlang-1.4.0/lib/Win32-visualStudio",
 			"C:/libsndfile32/lib",
 			"C:/libsndfile64/lib",
 		}
 		includedirs {
+			"C:/SDL2/include/SDL2",
 			"C:/Lua/5.1/include",
 			"C:/OGRE/include/OGRE",
 			"C:/OGRE/include/OIS",
@@ -82,6 +81,9 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Debug" }	
 		libdirs { 
+			"C:/SDL2/lib/Debug",
+			"C:/OGRE/lib/debug",
+			"C:/BULLET_PHYSICS/lib/Debug",
 			"C:/libvorbis-1.3.4/lib/Win32/Debug",
 			"C:/libvorbis-1.3.4/lib/x64/Debug",
 			"C:/libogg-1.3.1/lib/Win32/Debug",
@@ -94,6 +96,9 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Release" }	
 		libdirs { 
+			"C:/SDL2/lib/Release",
+			"C:/OGRE/lib/release",
+			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/libvorbis-1.3.4/lib/Win32/Release",
 			"C:/libvorbis-1.3.4/lib/x64/Release",
 			"C:/libogg-1.3.1/lib/Win32/Release",
@@ -124,8 +129,8 @@ solution "Ponykart++"
 		configuration { "Unix" }
 			links {
 				"PonykartParsers++",
+				"SDL2",
 				"OgreMain",
-				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
 				"BulletWorldImporter",
@@ -147,6 +152,8 @@ solution "Ponykart++"
 			buildoptions { "/Zm500" } -- Increase MSVC's internal heap limit for PCHs
 			links {
 				"PonykartParsers++",
+				"SDL2main",
+				"SDL2",
 				"OgreMain",
 				"OIS",
 				"BulletDynamics",
