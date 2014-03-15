@@ -1,4 +1,5 @@
 #include "pch.h"
+#include <fstream>
 #include <BulletCollision/CollisionShapes/btCompoundShape.h>
 #include <BulletCollision/CollisionShapes/btBoxShape.h>
 #include <BulletCollision/CollisionShapes/btCapsuleShape.h>
@@ -296,4 +297,24 @@ btCollisionShape* CollisionShapeManager::getShapeFromFile(const std::string& fil
 	}
 
 	return shape;
+}
+
+void CollisionShapeManager::serializeShape(btCollisionShape* shape, const std::string& name)
+{
+	LKernel::log(string("[PhysicsMain] Serializing new bullet mesh: ") + "media/" + name + ".bullet...");
+	// so we don't have to do this in the future, we make a .bullet file out of it
+	btDefaultSerializer serializer;
+	serializer.startSerialization();
+	shape->serializeSingleShape(&serializer);
+	serializer.finishSerialization();
+
+	// export it
+	ofstream filestream("media/" + name + ".bullet", ios_base::trunc | ios_base::binary | ios_base::out);
+	if (filestream.is_open())
+	{
+		filestream.write(reinterpret_cast<const char*>(serializer.getBufferPointer()), serializer.getCurrentBufferSize());
+		filestream.close();
+	}
+	else
+		throw string("Unable to serialize shape \"" + name + "\"");
 }
