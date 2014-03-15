@@ -20,7 +20,7 @@ CollisionReporter::CollisionReporter()
 
 	PhysicsMain::preSimulate.push_back(bind(&CollisionReporter::preSimulate, this, placeholders::_1, placeholders::_2));
 	PhysicsMain::postSimulate.push_back(bind(&CollisionReporter::postSimulate, this,placeholders::_1, placeholders::_2));
-	PhysicsMain::contactAdded.push_back(bind(&CollisionReporter::contactAdded,this,placeholders::_1,placeholders::_2,placeholders::_3,placeholders::_4,placeholders::_5,placeholders::_6,placeholders::_7));
+	PhysicsMain::contactAdded = bind(&CollisionReporter::contactAdded,this,placeholders::_1,placeholders::_2,placeholders::_3,placeholders::_4,placeholders::_5,placeholders::_6,placeholders::_7);
 	LevelManager::onLevelUnload.push_back(bind(&CollisionReporter::onLevelUnload, this, placeholders::_1));
 }
 

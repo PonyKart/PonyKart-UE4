@@ -147,3 +147,26 @@ void PhysicsMain::loadPhysicsLevel(const std::string& levelName)
 		for (auto& fun : postCreateWorld)
 			fun(world);
 }
+
+void PhysicsMain::createWorld(const std::string& levelName)
+{
+	log("[PhysicsMain] Creating new world...");
+	// have to make more of these every level because disposing the world apparently disposes of them too.
+	broadphase = new btDbvtBroadphase();
+	solver = new btSequentialImpulseConstraintSolver();
+	dcc = new btDefaultCollisionConfiguration();
+	dispatcher = new btCollisionDispatcher(dcc);
+	// set up this stuff... not quite sure what it's for, but you need it if you want the CCD to work for the karts
+	dispatcher->registerCollisionCreateFunc(CONVEX_HULL_SHAPE_PROXYTYPE, CONVEX_HULL_SHAPE_PROXYTYPE,
+		dcc->getCollisionAlgorithmCreateFunc(TRIANGLE_MESH_SHAPE_PROXYTYPE, TRIANGLE_MESH_SHAPE_PROXYTYPE));
+	dispatcher->registerCollisionCreateFunc(CONVEX_HULL_SHAPE_PROXYTYPE, CONVEX_HULL_SHAPE_PROXYTYPE,
+		dcc->getCollisionAlgorithmCreateFunc(CONVEX_HULL_SHAPE_PROXYTYPE, CONVEX_HULL_SHAPE_PROXYTYPE));
+
+	world = new btDiscreteDynamicsWorld(dispatcher, broadphase, solver, dcc);
+	// and then turn on CCD
+	world->getDispatchInfo().m_useContinuous = true;
+
+	world->setGravity(btVector3(0, Settings::Gravity, 0));
+
+	gContactAddedCallback = *contactAdded.target<ContactAddedCallback>();
+}
