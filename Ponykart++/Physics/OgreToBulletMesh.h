@@ -13,6 +13,9 @@ namespace Physics
 		static btTriangleMesh* convert(Ogre::MeshPtr mesh, const Ogre::Vector3& pos,
 									const Ogre::Quaternion& orientation, const Ogre::Vector3& scale);
 		static btTriangleMesh* convert(Ogre::Entity* ent, Ogre::SceneNode* node);
+		static void getMeshInformation(Ogre::MeshPtr mesh, unsigned& vertex_count, std::vector<Ogre::Vector3>& vertices,
+									unsigned& index_count, std::vector<unsigned>& indices, const Ogre::Vector3& position,
+									const Ogre::Quaternion& orientation, const Ogre::Vector3& scale);
 	};
 }
 }
