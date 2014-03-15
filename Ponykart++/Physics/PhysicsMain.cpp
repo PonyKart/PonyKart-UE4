@@ -8,12 +8,14 @@
 #include "Kernel/LKernelOgre.h"
 #include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
+#include "Misc/bulletExtensions.h"
 #include "Physics/CollisionObjectDataHolder.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Physics/PhysicsMain.h"
 #include "Physics/DotSceneLoader/DotSceneLoader.h"
 
 using namespace Ogre;
+using namespace Extensions;
 using namespace Ponykart::Core;
 using namespace Ponykart::Physics;
 using namespace Ponykart::LKernel;
@@ -169,4 +171,17 @@ void PhysicsMain::createWorld(const std::string& levelName)
 	world->setGravity(btVector3(0, Settings::Gravity, 0));
 
 	gContactAddedCallback = *contactAdded.target<ContactAddedCallback>();
+}
+
+void PhysicsMain::createGroundPlane(float yposition) 
+{
+	// make an infinite plane so we don't fall forever. TODO: hook up an event so when we collide with this, we respawn back on the track
+	btTransform matrix(toBtQuaternion(Quaternion(0, 0, 0, 1)), toBtVector3(Vector3(0, yposition, 0)));
+
+	btCollisionShape* groundShape = new btStaticPlaneShape(toBtVector3(Vector3::NEGATIVE_UNIT_Y), 1);
+	btRigidBody::btRigidBodyConstructionInfo groundInfo{ 0, new btDefaultMotionState(matrix), groundShape };
+	auto groundBody = new btRigidBody(groundInfo);
+	groundBody->setUserPointer(new CollisionObjectDataHolder(groundBody, PonykartCollisionGroups::Environment, "ground"));
+	groundBody->setCollisionFlags(btCollisionObject::CF_STATIC_OBJECT | btCollisionObject::CF_DISABLE_VISUALIZE_OBJECT);
+	world->addRigidBody(groundBody, (short)PonykartCollisionGroups::Environment, (short)PonykartCollidesWithGroups::Environment);
 }
