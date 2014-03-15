@@ -15,8 +15,9 @@
 #include "Kernel/LKernelOgre.h"
 #include "Misc/direntSearch.h"
 #include "Misc/bulletExtensions.h"
-#include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
+#include "Physics/OgreToBulletMesh.h"
+#include "Physics/PhysicsMain.h"
 #include "Thing/ThingDefinition.h"
 
 using namespace std;
@@ -262,4 +263,37 @@ btCollisionShape* CollisionShapeManager::importCollisionShape(const std::string&
 	}
 	else
 		throw string("That .bullet file was not found : " + bulletfile);
+}
+
+btCollisionShape* CollisionShapeManager::getShapeFromFile(const std::string& filename, 
+												Ogre::Entity* ent, Ogre::SceneNode* node)
+{
+	btCollisionShape* shape;
+	auto it = shapes.find(filename);
+
+	if (it != end(shapes)) 
+	{
+		shape = it->second;
+		// check to see if the .bullet file exists
+		string bulletfile = getBulletFile(filename);
+		if (!bulletfile.empty()) 
+		{
+			// if it does, import it (make sure we get rid of the extension first)
+			shape = importCollisionShape(getFilenameWithoutExtension(bulletfile));
+		}
+		else 
+		{
+			LKernel::log("[PhysicsMain] " + filename + " does not exist, converting Ogre mesh into physics trimesh and exporting new .bullet file...");
+			// it does not have a file, so we need to convert our ogre mesh
+			shape = new btBvhTriangleMeshShape(OgreToBulletMesh::convert(ent, node), true, true);
+			((btBvhTriangleMeshShape*)shape)->buildOptimizedBvh();
+			// and then export it as a .bullet file
+			serializeShape(shape, node->getName());
+		}
+
+		// add the shape to the dictionary, including the .bullet extension
+		shapes.emplace(filename, shape);
+	}
+
+	return shape;
 }
