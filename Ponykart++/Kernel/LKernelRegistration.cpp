@@ -11,6 +11,7 @@
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
+#include "Networking/NetworkManager.h"
 #include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
@@ -23,6 +24,7 @@ using namespace Ogre;
 using namespace Ponykart;
 using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
+using namespace Ponykart::Networking;
 using namespace Ponykart::Physics;
 using namespace Ponykart::Sound;
 using namespace PonykartParsers;
@@ -77,8 +79,8 @@ void LKernel::loadInitialObjects(Splash& splash)
 	addGlobalObject(new AnimationManager());
 
 	// networking
-	//splash.increment("Creating Network manager...");
-	//addGlobalObject(new NetworkManager());
+	splash.increment("Creating Network manager...");
+	addGlobalObject(new NetworkManager());
 
 	// GUI
 	//splash.increment("Initialising Miyagi...");
