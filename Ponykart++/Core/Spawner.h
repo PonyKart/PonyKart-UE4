@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #include <Ogre.h>
+#include "Kernel/LKernelObject.h"
 
 namespace PonykartParsers
 {
@@ -33,7 +34,7 @@ namespace Core
 
 template<typename T> using SpawnEvent = typename std::vector<std::function<void (T thing)>>; ///< Can take arguments of any type
 
-class Spawner
+class Spawner : public LKernel::LKernelObject
 {
 public:
 	Spawner();

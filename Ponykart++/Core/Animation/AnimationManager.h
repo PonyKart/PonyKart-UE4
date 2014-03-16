@@ -5,6 +5,7 @@
 #include <vector>
 #include <unordered_map>
 #include <OgreFrameListener.h>
+#include "Kernel/LKernelObject.h"
 
 namespace Ogre
 {
@@ -24,7 +25,7 @@ namespace Core
 {
 	/// Instead of each ModelComponent hooking up to FrameStarted to update any animation it might have, we just give it
 	/// to this class to update it for us. This means we only have to hook one FrameStarted method up instead of loads of them.
-	class AnimationManager : public Ogre::FrameListener
+	class AnimationManager : public Ogre::FrameListener, public LKernel::LKernelObject
 	{
 	public:
 		AnimationManager();

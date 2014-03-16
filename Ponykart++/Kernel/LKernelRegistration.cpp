@@ -1,11 +1,13 @@
 #include "pch.h"
 #include "Actors/Wheels/WheelFactory.h"
+#include "Core/Animation/AnimationManager.h"
 #include "Core/Cameras/CameraManager.h"
 #include "Core/Settings.h"
 #include "Core/InputMain.h"
 #include "Core/KeyBindingManager.h"
 #include "Core/InputSwallowerManager.h"
 #include "Core/Pauser.h"
+#include "Core/Spawner.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
@@ -15,6 +17,7 @@
 #include "Physics/Materials/PhysicsMaterialFactory.h"
 #include "Physics/TriggerRegions/TriggerReporter.h"
 #include "Sound/SoundMain.h"
+#include "Thing/ThingDatabase.h"
 
 using namespace Ogre;
 using namespace Ponykart;
@@ -22,6 +25,7 @@ using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Physics;
 using namespace Ponykart::Sound;
+using namespace PonykartParsers;
 using namespace LKernel::details;
 
 void LKernel::loadInitialObjects(Splash& splash)
@@ -68,9 +72,9 @@ void LKernel::loadInitialObjects(Splash& splash)
 	// spawner
 	splash.increment("Creating spawners...");
 	addGlobalObject(new WheelFactory());
-	//addGlobalObject(new ThingDatabase());
-	//addGlobalObject(new Spawner());
-	//addGlobalObject(new AnimationManager());
+	addGlobalObject(new ThingDatabase());
+	addGlobalObject(new Spawner());
+	addGlobalObject(new AnimationManager());
 
 	// networking
 	//splash.increment("Creating Network manager...");
