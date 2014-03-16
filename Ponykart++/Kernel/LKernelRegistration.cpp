@@ -17,6 +17,7 @@
 #include "Physics/CollisionReports/CollisionReporter.h"
 #include "Physics/Materials/PhysicsMaterialFactory.h"
 #include "Physics/TriggerRegions/TriggerReporter.h"
+#include "Players/PlayerManager.h"
 #include "Sound/SoundMain.h"
 #include "Thing/ThingDatabase.h"
 
@@ -26,6 +27,7 @@ using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Networking;
 using namespace Ponykart::Physics;
+using namespace Ponykart::Players;
 using namespace Ponykart::Sound;
 using namespace PonykartParsers;
 using namespace LKernel::details;
@@ -100,7 +102,7 @@ void LKernel::loadInitialObjects(Splash& splash)
 
 	// players
 	//splash.increment("Spawning players...");
-	//addGlobalObject(new PlayerManager());
+	addGlobalObject(new PlayerManager());
 	//addGlobalObject(new RaceCountdown());
 	//addGlobalObject(new LapCounter());
 	//addGlobalObject(new LThingHelperManager());
