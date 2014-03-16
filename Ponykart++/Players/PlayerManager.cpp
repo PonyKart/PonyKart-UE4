@@ -30,3 +30,20 @@ void PlayerManager::raceCountdown_onCountdown(RaceCountdownState state)
 		for (auto player : players)
 			player->isControlEnabled = true;
 }
+
+void PlayerManager::onLevelUnload(LevelChangedEventArgs* eventArgs)
+{
+	if (eventArgs->oldLevel.getType() == LevelType::Race) 
+	{
+		for (int a = 0; a < players.size(); a++) 
+		{
+			if (players[a] != nullptr) 
+			{
+				players[a]->detach();
+				delete players[a];
+				players[a] = nullptr;
+			}
+		}
+		mainPlayer = nullptr;
+	}
+}

@@ -25,8 +25,9 @@ public:
 	const std::vector<Player*>* const getPlayers() const;
 public:
 	PlayerEvent onPostPlayerCreation;
+	/// When a level loads, we create the players. For now, we just have one human player and 7 computer-controlled ones
 	void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs);
-	void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
+	void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); ///< Delete all of the players
 	void raceCountdown_onCountdown(Core::RaceCountdownState state);
 private:
 	Player* mainPlayer;
