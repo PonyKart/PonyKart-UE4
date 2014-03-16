@@ -34,12 +34,13 @@ public:
 protected:
 	Player(); // Set some default values
 	virtual void useItem()=0; // Uses an item
+public:
+	bool isControlEnabled; // Can the player control his kart?
 protected:
 	Actors::Kart* kart; // The kart that this player is driving
 	Actors::Driver* driver; // The driver in the kart
 	int id; // id number. Same thing that's used as the array index in PlayerManager.
 	std::string character;
-	bool isControlEnabled; // Can the player control his kart?
 	bool hasItem;
 	std::string heldItem;
 private:

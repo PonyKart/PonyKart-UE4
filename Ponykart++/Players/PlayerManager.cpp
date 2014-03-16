@@ -23,3 +23,10 @@ const Player* const PlayerManager::getMainPlayer() const
 {
 	return mainPlayer;
 }
+
+void PlayerManager::raceCountdown_onCountdown(RaceCountdownState state)
+{
+	if (state == RaceCountdownState::Go)
+		for (auto player : players)
+			player->isControlEnabled = true;
+}
