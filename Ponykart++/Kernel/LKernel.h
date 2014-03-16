@@ -5,7 +5,7 @@
 #include <vector>
 #include <unordered_map>
 #include <typeinfo>
-
+#include <SDL.h>
 #include <OgreTextAreaOverlayElement.h>
 #include <OgreFontManager.h>
 
@@ -18,7 +18,8 @@ namespace LKernel
 {
 	// Anyone can get those from ogre's interface, but accessing them throught LKernel is faster.
 	extern Ogre::Root* gRoot;
-	extern Ogre::RenderWindow* gWindow;
+	extern SDL_Window *gSDLWindow;
+	extern Ogre::RenderWindow* gOgreWindow;
 	extern Ogre::RenderSystem* gRenderSystem;
 	extern Ogre::SceneManager* gSceneManager;
 	extern Ogre::Viewport* gViewport;
@@ -38,11 +39,10 @@ namespace LKernel
 	template<typename T> T* getG() {return (T*)details::globalObjects[typeid(T).name()];} ///< Get a singleton from LKernel's map.
 	template<> Ogre::Root *getG<Ogre::Root> ();
 	template<> Ogre::RenderWindow *getG<Ogre::RenderWindow> ();
+	template<> SDL_Window *getG<SDL_Window> ();
 	template<> Ogre::RenderSystem *getG<Ogre::RenderSystem> ();
 	template<> Ogre::SceneManager *getG<Ogre::SceneManager> ();
 	template<> Ogre::Viewport *getG<Ogre::Viewport> ();
-
-	void shutdown ();
 } // LKernel
 } // Ponykart
 

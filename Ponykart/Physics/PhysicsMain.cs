@@ -82,7 +82,9 @@ namespace Ponykart.Physics {
 
 
 		const int _maxSubsteps = 60; //45;
-		const float _fixedTimestep = 1f / 60f; //1f / 45f;
+        // The fixed timestep is not in sync with the rest. Higher values make it somewhat smoother. 
+        //1/300 is playable with the occasional blink half a meter backward
+		const float _fixedTimestep = 1f / 80f;
 		/// <summary>
 		/// Runs just before every frame. Simulates one frame of physics.
 		/// Physics simulation should be the only thing that's using FrameEnded!

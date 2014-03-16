@@ -1,4 +1,5 @@
 #include "pch.h"
+#include <SDL.h>
 #include <OgreConfigFile.h>
 #include <OgreMaterialManager.h>
 #include <OgreOverlay.h>
@@ -55,8 +56,16 @@ Splash::~Splash()
 
 void Splash::updateGUI()
 {
-	gRoot->renderOneFrame();
-	WindowEventUtilities::messagePump();
+	gRoot->_fireFrameStarted();
+	gOgreWindow->update(false);
+	gRoot->_fireFrameRenderingQueued();
+	gRoot->_fireFrameEnded();
+	SDL_GL_SwapWindow(gSDLWindow);
+
+	SDL_Event event;
+	while (SDL_PollEvent(&event)) {
+		// TODO: Maybe Allow quitting during load?
+	}
 }
 
 /// Increments the progress bar's internal counter and update the GUI/message queue.

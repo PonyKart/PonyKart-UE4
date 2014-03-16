@@ -3,7 +3,7 @@
 
 #include <map>
 #include <functional>
-#include <OIS.h>
+#include <SDL.h>
 #include "Kernel/LKernelObject.h"
 #include "Core/ControllerManager.h"
 
@@ -35,11 +35,11 @@ class KeyBindingManager : public LKernel::LKernelObject
 public:
 	KeyBindingManager();
 	void setupInitialBindings(); ///< Set up some initial key bindings
-	static void onKeyboardPressAnything(OIS::KeyEvent ke);
-	static void onKeyboardReleaseAnything(OIS::KeyEvent ke);
+	static void onKeyboardPressAnything(const SDL_KeyboardEvent &ke);
+	static void onKeyboardReleaseAnything(const SDL_KeyboardEvent &ke);
 	static void input_OnLeftXAxisMoved(void* sender, Core::ControllerAxisArgument e);
-	static void onMousePress_Anything(OIS::MouseEvent e, OIS::MouseButtonID id);
-	static void onMouseRelease_Anything(OIS::MouseEvent e, OIS::MouseButtonID id);
+	static void onMousePress_Anything(const SDL_MouseButtonEvent &mbe);
+	static void onMouseRelease_Anything(const SDL_MouseButtonEvent &mbe);
 	static void invoke(std::function<void ()> e);
 	// Getters
 	const std::map<LKey, std::function<void ()>>& getPressEventsDict();
@@ -48,8 +48,8 @@ public:
 
 private:
 	// The maps that converts our key commands into OIS keys
-	static std::map<LKey, OIS::KeyCode> lKeysDict;
-	static std::map<OIS::KeyCode, LKey> oisKeysDict;
+	static std::map<LKey, SDL_Keycode> lKeysDict;
+	static std::map<SDL_Keycode, LKey> oisKeysDict;
 	static std::map<ControllerButtons, LKey> lButtonsDict;
 	static std::map<ControllerAxis, LKey> lAxisDict;
 

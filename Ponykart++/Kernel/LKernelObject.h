@@ -10,7 +10,7 @@ namespace LKernel
 	protected:
 		virtual ~LKernelObject () { }
 
-		friend void shutdown ();
+		friend void shutdownOgre ();
 	};
 
 } // LKernel

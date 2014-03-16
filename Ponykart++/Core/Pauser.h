@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <functional>
-#include <OIS.h>
+#include <SDL.h>
 #include "Kernel/LKernelObject.h"
 
 namespace Ponykart
@@ -20,7 +20,7 @@ class Pauser : public LKernel::LKernelObject
 {
 public:
 	Pauser();
-	static void invokePauseEvent(OIS::KeyEvent ke); ///< Checks to make sure the key pressed matches the pause key (`) then checks to make sure we aren't on the main menu
+	static void keyInvokePauseEvent(const SDL_KeyboardEvent &ke); ///< Checks to make sure the key pressed matches the pause key (`) then checks to make sure we aren't on the main menu
 	static void invokePauseEvent(); ///< Checks to make sure we aren't on the main menu (don't want to unpause that!). This is a separate method so we can call it from e.g. Lua.
 	static void pauseWithEvent(); ///< Use this to pause things but it also fires off a pause event, which may cause other things to happen that you don't want.
 

@@ -17,10 +17,10 @@ solution "Ponykart++"
 	configuration { "Unix" }
 		buildoptions "-std=c++11 -pthread"
 		includedirs {
+			"/usr/local/include/SDL2/",
+			"/usr/include/SDL2/",
 			"/usr/local/include/OGRE/",
 			"/usr/include/OGRE/",
-			"/usr/local/include/OIS/",
-			"/usr/include/OIS/",
 			"/usr/local/include/bullet/",
 			"/usr/include/bullet/",
 			"/usr/local/include/luajit-2.0/",
@@ -61,6 +61,7 @@ solution "Ponykart++"
 			"C:/libsndfile64/lib",
 		}
 		includedirs {
+			"C:/SDL2/include/SDL2",
 			"C:/Lua/5.1/include",
 			"C:/OGRE/include/OGRE",
 			"C:/OGRE/include/OIS",
@@ -80,6 +81,7 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Debug" }	
 		libdirs { 
+			"C:/SDL2/lib/Debug",
 			"C:/OGRE/lib/debug",
 			"C:/BULLET_PHYSICS/lib/Debug",
 			"C:/libvorbis-1.3.4/lib/Win32/Debug",
@@ -94,6 +96,7 @@ solution "Ponykart++"
 		}
 	configuration { "Windows", "Release" }	
 		libdirs { 
+			"C:/SDL2/lib/Release",
 			"C:/OGRE/lib/release",
 			"C:/BULLET_PHYSICS/lib/Release",
 			"C:/libvorbis-1.3.4/lib/Win32/Release",
@@ -126,8 +129,8 @@ solution "Ponykart++"
 		configuration { "Unix" }
 			links {
 				"PonykartParsers++",
+				"SDL2",
 				"OgreMain",
-				"OIS",
 				"BulletDynamics",
 				"BulletCollision",
 				"BulletWorldImporter",
@@ -144,11 +147,12 @@ solution "Ponykart++"
 			linkoptions  "-pthread -lluajit-5.1"
 		configuration { "MacOSX" }
 		configuration { "Windows" }
-			flags { "StaticRuntime" } -- We need the /MT CRT, since that's what our dependencies are using
 			buildoptions { "/W0" } -- Disable warnings for speed. Visual generates ~2500 warnings for Ogre only. 
 			buildoptions { "/Zm500" } -- Increase MSVC's internal heap limit for PCHs
 			links {
 				"PonykartParsers++",
+				"SDL2main",
+				"SDL2",
 				"OgreMain",
 				"OIS",
 				"BulletDynamics",
@@ -182,7 +186,6 @@ solution "Ponykart++"
 		includedirs { "../PonykartParsers++/" }
 		
 		configuration { "Windows" }
-			flags { "StaticRuntime" } -- We need the /MT CRT, since that's what our dependencies are using
 			buildoptions { "/W0" } -- Disable warnings for speed. Visual generates ~2500 warnings for Ogre only. 
 			buildoptions { "/Zm500" } -- Increase MSVC's internal heap limit for PCHs
 

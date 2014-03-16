@@ -12,27 +12,45 @@
 #include "Kernel/LKernelOgre.h"
 #include "Sound/SoundMain.h"
 #include "Sound/Music/MusicSource.h"
+#include "Misc/sdl2Extensions.h"
 
 using namespace Ponykart::Launch;
 using namespace Ponykart::LKernel;
+using namespace Extensions;
 using Ponykart::Core::Options;
 using Ponykart::Splash;
 
-int main()
+
+int main (int argc, char *argv[])
 {
 	try
 	{
 		initOgreRoot();
 	}
-	catch (std::bad_alloc e)
+	catch (SDL2Exception e)
 	{
 		std::ofstream logfile;
-		std::cerr << "Error initializing ogre. Are you using the correct DLLs ?";
+		auto logStr = std::string("Error initializing SDL2: ") + e.what();
+		std::cerr << logStr << std::endl;
 		logfile.open("Ponykart.log", std::ios::out);
 		if (logfile.is_open())
 		{
 			logfile.clear();
-			logfile << "Error initializing ogre. Are you using the correct DLLs ?\n";
+			logfile << logStr;
+			logfile.close();
+		}
+		abort();
+	}
+	catch (std::bad_alloc e)
+	{
+		std::ofstream logfile;
+		auto logStr = "Error initializing ogre. Are you using the correct DLLs ?";
+		std::cerr << logStr << std::endl;
+		logfile.open("Ponykart.log", std::ios::out);
+		if (logfile.is_open())
+		{
+			logfile.clear();
+			logfile << logStr << std::endl;
 			logfile.close();
 		}
 		abort();
@@ -53,20 +71,8 @@ int main()
 	
 	try
 	{
-		log("[Loading] Loading configuration...");
 		Options::initialize();
-
-		log("[Loading] Loading the render system...");
-		initOgreRenderSystem();
-
-		log("[Loading] Creating the render window...");
-		initOgreRenderWindow();
-
-		log("Creating scene manager...");
-		initOgreSceneManager();
-
-		log("Creating player camera and viewport...");
-		initOgreViewportCam();
+		initOgreGraphics();
 
 		// Splash screen
 		{
@@ -76,7 +82,7 @@ int main()
 		enterGameLoop();
 
 		log("End of code. Shutting down...");
-		shutdown();
+		shutdownOgre();
 		std::printf("Shutdown complete.\n");
 		return EXIT_SUCCESS;
 	}
@@ -87,7 +93,7 @@ int main()
 	// TODO: Catch standard exceptions too. Log e.what()
 
 	log ("Exception thrown! Shutting down...");
-	shutdown();
+	shutdownOgre();
 	std::printf("Post-exception shutdown complete.\n");
 	return EXIT_FAILURE; // If we're here, we came from a catch
 }
@@ -95,16 +101,27 @@ int main()
 
 void Ponykart::Launch::enterGameLoop ()
 {
-	auto root = getG<Ogre::Root>();
-	auto window = LKernel::getG<Ogre::RenderWindow>();
+	auto ogreRoot = getG<Ogre::Root>();
+	auto sdlWindow = getG<SDL_Window>();
+	auto ogreWindow = getG<Ogre::RenderWindow>();
 
 	auto soundMain = getG<Ponykart::Sound::SoundMain>();
 	auto music = soundMain->PlayMusic("./media/music/Sweet Apple Acres 128bpm.ogg");
 
-	while (!window->isClosed()) {
-		root->renderOneFrame();
+	while (!ogreWindow->isClosed()) {
+		ogreRoot->_fireFrameStarted();
+		ogreWindow->update(false);
+		ogreRoot->_fireFrameRenderingQueued();
+		ogreRoot->_fireFrameEnded();
+		SDL_GL_SwapWindow(sdlWindow);
 
-		Ogre::WindowEventUtilities::messagePump();
+		SDL_Event event;
+		while (SDL_PollEvent(&event)) {
+			switch (event.type) {
+			case SDL_QUIT:
+				return;
+			}
+		}
 
 		for (auto &f : onEveryUnpausedTenthOfASecondEvent)
 			f(nullptr);
