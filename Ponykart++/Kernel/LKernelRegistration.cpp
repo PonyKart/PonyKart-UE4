@@ -55,10 +55,10 @@ void LKernel::loadInitialObjects(Splash& splash)
 
 	// level
 	splash.increment("Loading first level physics...");
-	getG<PhysicsMain>()->loadPhysicsLevel(Settings::MainMenuName); // TODO: Implement LoadPhysicsLevel
+	getG<PhysicsMain>()->loadPhysicsLevel(Settings::MainMenuName);
 	addGlobalObject(new CameraManager());
 
-	// OIS and input
+	// Input
 	splash.increment("Starting input system...");
 	addGlobalObject(new InputMain());
 	addGlobalObject(new KeyBindingManager());
