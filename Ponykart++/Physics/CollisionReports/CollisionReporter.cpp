@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "Kernel/LKernel.h"
 #include "Levels/LevelManager.h"
 #include "Misc/ogreExtensions.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
@@ -8,6 +9,7 @@
 using namespace std;
 using namespace std::placeholders;
 using namespace Extensions;
+using namespace Ponykart::LKernel;
 using namespace Ponykart::Levels;
 using namespace Ponykart::Physics;
 
@@ -20,7 +22,7 @@ CollisionReporter::CollisionReporter()
 
 	PhysicsMain::preSimulate.push_back(bind(&CollisionReporter::preSimulate, this, placeholders::_1, placeholders::_2));
 	PhysicsMain::postSimulate.push_back(bind(&CollisionReporter::postSimulate, this,placeholders::_1, placeholders::_2));
-	PhysicsMain::contactAdded.push_back(bind(&CollisionReporter::contactAdded,this,placeholders::_1,placeholders::_2,placeholders::_3,placeholders::_4,placeholders::_5,placeholders::_6,placeholders::_7));
+	PhysicsMain::contactAdded = &CollisionReporter::contactAddedWrapper;
 	LevelManager::onLevelUnload.push_back(bind(&CollisionReporter::onLevelUnload, this, placeholders::_1));
 }
 
@@ -94,8 +96,8 @@ void CollisionReporter::postSimulate(btDiscreteDynamicsWorld* world, const Ogre:
 	currentlyCollidingWith = newCollidingWith;
 }
 
-bool CollisionReporter::contactAdded(btManifoldPoint& point, btCollisionObjectWrapper* objectA, int partId0, 
-									 int index0, btCollisionObjectWrapper* objectB, int partId1, int index1) 
+bool CollisionReporter::contactAdded(btManifoldPoint& point, const btCollisionObjectWrapper* objectA, int partId0, 
+									 int index0, const btCollisionObjectWrapper* objectB, int partId1, int index1) 
 {
 	// if one of the two objects is deactivated, we don't care
 	if (!objectA->getCollisionObject()->isActive() && !objectB->getCollisionObject()->isActive())
@@ -209,4 +211,12 @@ std::unordered_set<const btCollisionObject*> CollisionReporter::getCollisionList
 	else
 		colSet = it->second;
 	return colSet;
+}
+
+bool CollisionReporter::contactAddedWrapper(btManifoldPoint& point, const btCollisionObjectWrapper* objectA, int partId0, int index0,
+	const btCollisionObjectWrapper* objectB, int partId1, int index1)
+{
+	// Forward the callback's call to the CollisionReporter singleton.
+	CollisionReporter* cr = getG<CollisionReporter>();
+	return cr->contactAdded(point, objectA, partId0, index0, objectB, partId1, index1);
 }

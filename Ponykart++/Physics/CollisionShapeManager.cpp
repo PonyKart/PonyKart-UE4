@@ -1,4 +1,5 @@
 #include "pch.h"
+#include <fstream>
 #include <BulletCollision/CollisionShapes/btCompoundShape.h>
 #include <BulletCollision/CollisionShapes/btBoxShape.h>
 #include <BulletCollision/CollisionShapes/btCapsuleShape.h>
@@ -15,8 +16,9 @@
 #include "Kernel/LKernelOgre.h"
 #include "Misc/direntSearch.h"
 #include "Misc/bulletExtensions.h"
-#include "Physics/PhysicsMain.h"
 #include "Physics/CollisionShapeManager.h"
+#include "Physics/OgreToBulletMesh.h"
+#include "Physics/PhysicsMain.h"
 #include "Thing/ThingDefinition.h"
 
 using namespace std;
@@ -262,4 +264,57 @@ btCollisionShape* CollisionShapeManager::importCollisionShape(const std::string&
 	}
 	else
 		throw string("That .bullet file was not found : " + bulletfile);
+}
+
+btCollisionShape* CollisionShapeManager::getShapeFromFile(const std::string& filename, 
+												Ogre::Entity* ent, Ogre::SceneNode* node)
+{
+	btCollisionShape* shape;
+	auto it = shapes.find(filename);
+
+	if (it != end(shapes)) 
+	{
+		shape = it->second;
+		// check to see if the .bullet file exists
+		string bulletfile = getBulletFile(filename);
+		if (!bulletfile.empty()) 
+		{
+			// if it does, import it (make sure we get rid of the extension first)
+			shape = importCollisionShape(getFilenameWithoutExtension(bulletfile));
+		}
+		else 
+		{
+			LKernel::log("[PhysicsMain] " + filename + " does not exist, converting Ogre mesh into physics trimesh and exporting new .bullet file...");
+			// it does not have a file, so we need to convert our ogre mesh
+			shape = new btBvhTriangleMeshShape(OgreToBulletMesh::convert(ent, node), true, true);
+			((btBvhTriangleMeshShape*)shape)->buildOptimizedBvh();
+			// and then export it as a .bullet file
+			serializeShape(shape, node->getName());
+		}
+
+		// add the shape to the dictionary, including the .bullet extension
+		shapes.emplace(filename, shape);
+	}
+
+	return shape;
+}
+
+void CollisionShapeManager::serializeShape(btCollisionShape* shape, const std::string& name)
+{
+	LKernel::log(string("[PhysicsMain] Serializing new bullet mesh: ") + "media/" + name + ".bullet...");
+	// so we don't have to do this in the future, we make a .bullet file out of it
+	btDefaultSerializer serializer;
+	serializer.startSerialization();
+	shape->serializeSingleShape(&serializer);
+	serializer.finishSerialization();
+
+	// export it
+	ofstream filestream("media/" + name + ".bullet", ios_base::trunc | ios_base::binary | ios_base::out);
+	if (filestream.is_open())
+	{
+		filestream.write(reinterpret_cast<const char*>(serializer.getBufferPointer()), serializer.getCurrentBufferSize());
+		filestream.close();
+	}
+	else
+		throw string("Unable to serialize shape \"" + name + "\"");
 }
