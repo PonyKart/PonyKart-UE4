@@ -38,7 +38,8 @@ void PhysicsMaterialFactory::readMaterialsFromFiles()
 			string matname = sectionIterator.peekNextKey();
 			sectionIterator.moveNext();
 			//if (matname.empty()) continue;
-
+			
+			// TODO: Clean this function, now that the free() bug is fixed.
 			ostringstream ssF,ssB,ssAD,ssLD;
 			ssF << PhysicsMaterial::DEFAULT_FRICTION;
 			ssB << PhysicsMaterial::DEFAULT_BOUNCINESS;

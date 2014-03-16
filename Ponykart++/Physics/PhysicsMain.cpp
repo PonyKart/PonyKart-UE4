@@ -170,7 +170,10 @@ void PhysicsMain::createWorld(const std::string& levelName)
 
 	world->setGravity(btVector3(0, Settings::Gravity, 0));
 
-	gContactAddedCallback = *contactAdded.target<ContactAddedCallback>();
+	if (!contactAdded.target<ContactAddedCallback>())
+		throw std::string("PhysicsMain::contactAdded's target is null");
+	else
+		gContactAddedCallback = *contactAdded.target<ContactAddedCallback>();
 }
 
 void PhysicsMain::createGroundPlane(float yposition) 

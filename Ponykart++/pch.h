@@ -22,7 +22,7 @@
 #include <Ogre.h>
 
 // OIS
-#include <OIS.h>
+//#include <OIS.h>
 
 // Bullet
 #include <BulletDynamics/btBulletDynamicsCommon.h>

@@ -38,11 +38,15 @@ namespace Physics
 		void preSimulate(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt);
 		void postSimulate(btDiscreteDynamicsWorld* world, const Ogre::FrameEvent& evt);
 		/// Fired every frame when an object is inside another object.
-		bool contactAdded(btManifoldPoint& point, btCollisionObjectWrapper* objectA, int partId0, int index0, 
-												btCollisionObjectWrapper* objectB, int partId1, int index1);
+		bool contactAdded(btManifoldPoint& point, const btCollisionObjectWrapper* objectA, int partId0, int index0, 
+												const btCollisionObjectWrapper* objectB, int partId1, int index1);
 		void addEvent(PonykartCollisionGroups firstType, PonykartCollisionGroups secondType, CollisionReportEvent handler);
 		void addEvent(int firstType, int secondType, CollisionReportEvent handler);
 	private:
+		/// We can't demote a bound function<> to a C-style raw pointer directly, it's just not possible
+		/// So we'll have to use a wrapper that'll forward our call to the CollisionReporter kernel singleton.
+		static bool contactAddedWrapper(btManifoldPoint& point, const btCollisionObjectWrapper* objectA, int partId0, int index0,
+			const btCollisionObjectWrapper* objectB, int partId1, int index1);
 		/// Clear the dictionary whenever we unload a level
 		void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs);
 		/// Sets up a contact event and then invokes it.
