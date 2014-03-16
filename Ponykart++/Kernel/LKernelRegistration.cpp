@@ -72,7 +72,51 @@ void LKernel::loadInitialObjects(Splash& splash)
 	//addGlobalObject(new Spawner());
 	//addGlobalObject(new AnimationManager());
 
+	// networking
+	//splash.increment("Creating Network manager...");
+	//addGlobalObject(new NetworkManager());
+
+	// GUI
+	//splash.increment("Initialising Miyagi...");
+	//addGlobalObject(new DebugOverlayManager());
+	//addGlobalObject(new UIMain());
+	//addGlobalObject(new LuaConsoleManager());
+	//addGlobalObject(new MainMenuManager());
+	//addGlobalObject(new GameUIManager());
+
+	// lua
+	//splash.increment("Registering handlers and wrappers...");
+	//setupHandlers();
+	//splash.increment("Setting up Lua engine and wrappers...");
+	//auto lua = addGlobalObject(new LuaMain());
+	//loadLuaWrappers();
+	//lua->runRegisterEvent();
+
+	// players
+	//splash.increment("Spawning players...");
+	//addGlobalObject(new PlayerManager());
+	//addGlobalObject(new RaceCountdown());
+	//addGlobalObject(new LapCounter());
+	//addGlobalObject(new LThingHelperManager());
+
+	//items
+	//splash.increment("Loading items...");
+	//addGlobalObject(new ItemManager());
+
+	// Ogre : electric boogaloo
+	//splash.increment("Setting up static and instanced geometry managers...");
+	//addGlobalObject(new StaticGeometryManager());
+	//addGlobalObject(new InstancedGeometryManager());
+	//addGlobalObject(new ImposterBillboarder());
+
 	// Sound
 	addGlobalObject(new SoundMain());
 
+	// handlers
+	//splash.increment("Loading global handlers...");
+	//LoadGlobalHandlers();
+
+	// Post-init
+	//splash.increment("Running post-initialisation events...");
+	//levelManager->runPostInitEvents();
 }
