@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "Kernel/LKernel.h"
-#include "Kernel/LKernelOgre.h"
 #include "Levels/LevelManager.h"
 #include "Misc/ogreExtensions.h"
 #include "Physics/CollisionReports/CollisionReporter.h"
