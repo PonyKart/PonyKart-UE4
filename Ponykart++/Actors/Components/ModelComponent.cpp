@@ -103,6 +103,11 @@ string ModelComponent::getName() const
 	return name;
 }
 
+Ogre::SceneNode* ModelComponent::getNode()
+{
+	return node;
+}
+
 const LThing* const ModelComponent::getOwner() const
 {
 	return owner;

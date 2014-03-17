@@ -30,7 +30,7 @@ public:
 	const Ogre::Quaternion* const getOrientation(); // Gets the kart's SceneNode's orientation
 	// Gets the kart's Node's position. No setter because it's automatically changed to whatever the position of its body is
 	// Use the Bullet RigidBody if you want to change the kart's position!
-	const Ogre::Vector3* const getNodePosition();
+	const Ogre::Vector3 const getNodePosition();
 protected:
 	Player(); // Set some default values
 	virtual void useItem()=0; // Uses an item

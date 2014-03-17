@@ -85,3 +85,42 @@ template<typename T> void Spawner::invoke(SpawnEvent<T> evt, T actor)
 		for (auto fun : evt)
 			fun(actor);
 }
+
+/// Spawns something! This takes a string instead of an enum for the type, but if the string is not a valid type,
+/// then an exception gets thrown, so be careful! Note that it is not case sensitive.
+/// @param thingName The type (class name) for the thing you want to spawn
+/// @param spawnPos Where should it spawn?
+/// @return The thing you spawned
+LThing* Spawner::spawn(std::string thingName, Ogre::Vector3 spawnPos)
+{
+	auto tt = new ThingBlock(thingName, spawnPos);
+
+	return spawn(thingName, tt);
+}
+
+/// Spawns something!
+/// @param thingName What do you want to spawn? This is the filename of the .thing file to use, minus the extension.
+/// @param template The template for the thing you want to spawn
+/// @return The thing you just spawned. Returns nullptr if you are paused.
+LThing* Spawner::spawn(std::string thingName, PonykartParsers::ThingBlock* thingTemplate)
+{
+	if (Pauser::isPaused)
+		throw string("Attempted to spawn \"" + thingName + "\" while paused!");
+
+	_spawnLock.lock();
+	try
+	{
+		auto definition = database->getThingDefinition(thingName);
+		LThing* thing = new LThing(thingTemplate, definition);
+
+		levelManager->getCurrentLevel()->addThing(thing);
+
+		invoke(onThingCreation, thing);
+		_spawnLock.unlock();
+		return thing;
+	}
+	catch (...)
+	{
+		_spawnLock.unlock();
+	}
+}

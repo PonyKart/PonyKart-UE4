@@ -338,3 +338,8 @@ float Wheel::getMotorForceForDriftState(WheelID id, WheelDriftState driftState, 
 	}
 	return 0.f;
 }
+
+WheelID Wheel::getId() const
+{
+	return id;
+}

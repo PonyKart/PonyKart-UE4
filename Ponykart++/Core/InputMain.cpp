@@ -164,3 +164,8 @@ bool InputMain::frameStarted(const Ogre::FrameEvent &evt)
 
 	return true;
 }
+
+OIS::Keyboard* InputMain::getInputKeyboard()
+{
+	return inputKeyboard;
+}

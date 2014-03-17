@@ -38,8 +38,9 @@ class Spawner : public LKernel::LKernelObject
 {
 public:
 	Spawner();
-	Actors::LThing* Spawn(std::string thingName, PonykartParsers::ThingBlock* thingTemplate); ///< Spawns something. Returns nullptr is you're paused.
-	Actors::LThing* Spawn(std::string thingName, Ogre::Vector3 spawnPos);
+	Actors::LThing* spawn(std::string thingName, PonykartParsers::ThingBlock* thingTemplate);
+	Actors::LThing* spawn(std::string thingName, Ogre::Vector3 spawnPos);
+
 	// TODO: The templated Spawn
 	// Specific spawners
 	Actors::Kart* spawnKart(std::string thingName, PonykartParsers::ThingBlock* thingTemplate); ///< Spawns a kart

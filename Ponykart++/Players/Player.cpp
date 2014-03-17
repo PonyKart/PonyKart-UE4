@@ -10,6 +10,7 @@
 
 using namespace std;
 using namespace Ogre;
+using namespace Ponykart::Actors;
 using namespace Ponykart::Core;
 using namespace Ponykart::Levels;
 using namespace Ponykart::LKernel;
@@ -92,4 +93,14 @@ void Player::detach()
 const btRigidBody* const Player::getBody() const
 {
 	return kart->getBody();
+}
+
+const Ogre::Vector3 const Player::getNodePosition()
+{
+	return kart->getRootNode()->_getDerivedPosition();
+}
+
+const Kart* const Player::getKart() const
+{
+	return kart;
 }

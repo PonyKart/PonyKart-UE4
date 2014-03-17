@@ -1,3 +1,5 @@
+#ifndef NETWORKENTITY_H_INCLUDED
+#define NETWORKENTITY_H_INCLUDED
 #include <string>
 
 namespace Ponykart
@@ -32,3 +34,4 @@ namespace Networking
 	};
 }
 }
+#endif // NETWORKENTITY_H_INCLUDED

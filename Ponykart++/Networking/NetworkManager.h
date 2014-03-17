@@ -1,3 +1,5 @@
+#ifndef NETWORKMANAGER_H_INCLUDED
+#define NETWORKMANAGER_H_INCLUDED
 #include <stdint.h>
 #include <list>
 #include "Kernel/LKernelObject.h"
@@ -64,3 +66,4 @@ namespace Networking
 
 }
 }
+#endif // NETWORKMANAGER_H_INCLUDED

@@ -1,3 +1,5 @@
+#ifndef WIIMOTEPLAYER_H_INCLUDED
+#define WIIMOTEPLAYER_H_INCLUDED
 #include "Players/Player.h"
 
 namespace Ponykart
@@ -15,3 +17,4 @@ namespace Ponykart
 		};
 	}
 }
+#endif // WIIMOTEPLAYER_H_INCLUDED

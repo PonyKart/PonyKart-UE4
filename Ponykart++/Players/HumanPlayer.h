@@ -1,3 +1,5 @@
+#ifndef HUMANPLAYER_H_INCLUDED
+#define HUMANPLAYER_H_INCLUDED
 #include "Players/Player.h"
 
 // comment this out if you want drifting to be disabled for human-controlled karts.
@@ -32,3 +34,4 @@ namespace Players
 	};
 }
 }
+#endif // HUMANPLAYER_H_INCLUDED
