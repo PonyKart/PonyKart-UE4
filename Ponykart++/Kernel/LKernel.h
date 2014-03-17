@@ -34,15 +34,19 @@ namespace LKernel
 
 	// Interface
 	void loadInitialObjects(Splash& splash);
-	LKernelObject* addGlobalObject(LKernelObject* object, const std::string& typeName); ///< Add a singleton to LKernel's map.
-	template<typename T> inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());} ///< Add a singleton to LKernel's map.
-	template<typename T> T* getG() {return (T*)details::globalObjects[typeid(T).name()];} ///< Get a singleton from LKernel's map.
+	LKernelObject* addGlobalObject(LKernelObject* object, const std::string& typeName); ///< Add a singleton to LKernel's global map.
+	template<typename T> inline T* addGlobalObject(T* object) {return (T*)addGlobalObject(object,typeid(T).name());} ///< Add a singleton to LKernel's global map.
+	template<typename T> T* getG();
 	template<> Ogre::Root *getG<Ogre::Root> ();
 	template<> Ogre::RenderWindow *getG<Ogre::RenderWindow> ();
 	template<> SDL_Window *getG<SDL_Window> ();
 	template<> Ogre::RenderSystem *getG<Ogre::RenderSystem> ();
 	template<> Ogre::SceneManager *getG<Ogre::SceneManager> ();
 	template<> Ogre::Viewport *getG<Ogre::Viewport> ();
+	template<typename T> T* getL();
+	template<typename T> T* get();
+
+	
 } // LKernel
 } // Ponykart
 

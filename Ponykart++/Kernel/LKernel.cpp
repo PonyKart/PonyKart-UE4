@@ -29,6 +29,17 @@ LKernelObject* Ponykart::LKernel::addGlobalObject(LKernelObject* object, const s
 	return object;
 }
 
+/// Get a singleton from LKernel's global map.
+/// @return The requested singleton or nullptr on error.
+template<typename T> T* LKernel::getG()
+try
+{
+	return (T*)details::globalObjects[typeid(T).name()];
+}
+catch (...)
+{
+	return nullptr;
+}
 template<> Ogre::Root *LKernel::getG<Ogre::Root> () { return gRoot; }
 template<> SDL_Window *LKernel::getG<SDL_Window>() { return gSDLWindow; }
 template<> Ogre::RenderWindow *LKernel::getG<Ogre::RenderWindow>() { return gOgreWindow; }
@@ -36,3 +47,27 @@ template<> Ogre::RenderSystem *LKernel::getG<Ogre::RenderSystem>() { return gRen
 template<> Ogre::SceneManager *LKernel::getG<Ogre::SceneManager>() { return gSceneManager; }
 template<> Ogre::Viewport *LKernel::getG<Ogre::Viewport>() { return gViewport; }
 
+/// Get a singleton from LKernel's level map.
+/// @return The requested singleton or nullptr on error.
+template<typename T> T* LKernel::getL()
+try
+{
+	return (T*)details::levelObjects[typeid(T).name()];
+}
+catch (...)
+{
+	return nullptr;
+}
+
+/// Get a singleton from LKernel's level map, or LKernel's global map.
+/// @return The requested singleton or throws on error.
+template<typename T> T* LKernel::get()
+{
+	T* obj;
+	obj = getL<T>();
+	if (obj == nullptr)
+		obj = getG<T>();
+	if (obj == nullptr)
+		throw string("The class \"" + typeid(T).name() + "\" is not registered to the kernel.");
+	return obj;
+}
