@@ -14,7 +14,7 @@ namespace Core
 {
 
 /// Our key commands - these are for things that need to be polled.
-/** If you want to just respond to events, use the ones in InputMain. */
+/// If you want to just respond to events, use the ones in InputMain.
 enum LKey
 {
 	Accelerate,
@@ -41,21 +41,19 @@ public:
 	static void onMousePress_Anything(const SDL_MouseButtonEvent &mbe);
 	static void onMouseRelease_Anything(const SDL_MouseButtonEvent &mbe);
 	static void invoke(std::function<void ()> e);
-	// Getters
-	const std::map<LKey, std::function<void ()>>& getPressEventsDict();
-	const std::map<LKey, std::function<void ()>>& getReleaseEventsDict();
-	const std::map<LKey, std::function<void ()>>& getAxisEvents();
+	bool isKeyPressed(LKey key);
+
+public:
+	static std::map<LKey, std::function<void()>> pressEventsMap;
+	static std::map<LKey, std::function<void()>> releaseEventsMap;
+	static std::map<LKey, std::function<void()>> axisEvents;
 
 private:
 	// The maps that converts our key commands into OIS keys
-	static std::map<LKey, SDL_Keycode> lKeysDict;
-	static std::map<SDL_Keycode, LKey> oisKeysDict;
-	static std::map<ControllerButtons, LKey> lButtonsDict;
-	static std::map<ControllerAxis, LKey> lAxisDict;
-
-	static std::map<LKey, std::function<void ()>> pressEventsDict;
-	static std::map<LKey, std::function<void ()>> releaseEventsDict;
-	static std::map<LKey, std::function<void ()>> axisEvents;
+	static std::map<LKey, SDL_Keycode> lKeysMap;
+	static std::map<SDL_Keycode, LKey> oisKeysMap;
+	static std::map<ControllerButtons, LKey> lButtonsMap;
+	static std::map<ControllerAxis, LKey> lAxisMap;
 };
 
 } // Core

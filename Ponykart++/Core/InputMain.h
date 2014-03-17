@@ -3,8 +3,10 @@
 
 #include <vector>
 #include <functional>
+#include <unordered_map>
 #include <SDL.h>
 #include <OgreFrameListener.h>
+#include <OIS.h>
 #include "Kernel/LKernelObject.h"
 #include "Core/ControllerManager.h"
 
@@ -33,6 +35,7 @@ public:
 	InputMain();
 	// Getters
 	const Core::ControllerManager* const getInputController();
+	OIS::Keyboard* getInputKeyboard();
 	// Event handlers
 	bool keyPressed(const SDL_KeyboardEvent &ke); ///< Handles key pressing and fires appropriate events
 	bool keyReleased(const SDL_KeyboardEvent &ke); ///< Handles key releasing and fires appropriate events
@@ -50,6 +53,7 @@ private:
 
 private:
 	Core::ControllerManager* inputController;
+	OIS::Keyboard* inputKeyboard;
 
 public: // Events
 	std::vector<std::function<void (const SDL_KeyboardEvent&)>> onKeyboardPress_Anything; ///< When any keyboard button is pressed. This should eventually be removed once we know what all of the keys are.

@@ -12,15 +12,16 @@
 
 #include <unordered_map>
 #include <string>
+#include "Kernel/LKernelObject.h"
 #include "Thing/ThingDefinition.h"
 
 namespace PonykartParsers
 {
 
-class ThingDatabase
+class ThingDatabase : public Ponykart::LKernel::LKernelObject
 {
 public:
-	DLLEXPORT ThingDatabase();
+	DLLEXPORT ThingDatabase() = default;
 	DLLEXPORT ThingDefinition* getThingDefinition(const std::string& name);
 public:
 	std::unordered_map<std::string, ThingDefinition*> definitions;

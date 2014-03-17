@@ -24,7 +24,7 @@ class ModelComponent
 public:
 	ModelComponent(LThing* lthing, PonykartParsers::ThingBlock* thingTemplate, PonykartParsers::ModelBlock* block, PonykartParsers::ThingDefinition* def); ///< Creates a model component for a Thing.
 	// Getters
-	const Ogre::SceneNode* const getNode() const;
+	Ogre::SceneNode* getNode();
 	Ogre::Entity* getEntity();
 	unsigned getId() const;
 	std::string getName() const;

@@ -35,8 +35,9 @@ public:
 	float calculateTurnAngleMultiplier(float currentSpeed); ///< Same as CalculateTurnMultipliers(), but only does the Angle part.
 	float calculateTurnAngle(float turnAngleMultiplier); ///< Calculates the angle the wheel should try to be at (in radians). // Use this one if you already know what the turnAngleMultiplier is.
 	// Getters
-	const Ogre::SceneNode* const getNode();
-	const Ogre::Entity* const getEntity();
+	const Ogre::SceneNode* const getNode() const;
+	const Ogre::Entity* const getEntity() const;
+	WheelID getId() const;
 protected:
 	void changeFriction(btWheelInfo* info, float currentSpeed); ///< Changes wheel friction depending on our current speed
 	void accelerate(float currentSpeed); ///< Apply some torque to the engine.

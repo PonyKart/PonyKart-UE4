@@ -119,7 +119,7 @@ solution "Ponykart++"
 		files { "**.cpp", "**.h" }
 
 		includedirs {
-			".",
+			"../Ponykart++/",
 			"../PonykartParsers++/"
 		}
 
@@ -183,7 +183,10 @@ solution "Ponykart++"
 			"../PonykartParsers++/**.h",
 		}
 
-		includedirs { "../PonykartParsers++/" }
+		includedirs {
+			"../Ponykart++/",
+			"../PonykartParsers++/"
+		}
 		
 		configuration { "Windows" }
 			buildoptions { "/W0" } -- Disable warnings for speed. Visual generates ~2500 warnings for Ogre only. 

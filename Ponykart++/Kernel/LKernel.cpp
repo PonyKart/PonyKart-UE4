@@ -35,4 +35,3 @@ template<> Ogre::RenderWindow *LKernel::getG<Ogre::RenderWindow>() { return gOgr
 template<> Ogre::RenderSystem *LKernel::getG<Ogre::RenderSystem>() { return gRenderSystem; }
 template<> Ogre::SceneManager *LKernel::getG<Ogre::SceneManager>() { return gSceneManager; }
 template<> Ogre::Viewport *LKernel::getG<Ogre::Viewport>() { return gViewport; }
-
