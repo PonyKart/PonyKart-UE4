@@ -17,7 +17,7 @@ namespace Networking
 		/// Generate a new local NetworkEntity at this host.
 		NetworkEntity();
 		// Getters
-		int inline getGlobalId() { return globalId };
+		int inline getGlobalId() { return globalId; };
 		
 	public:
 		Players::Player* player;
