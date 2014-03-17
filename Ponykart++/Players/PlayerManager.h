@@ -31,6 +31,9 @@ public:
 	void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); ///< Delete all of the players
 	void raceCountdown_onCountdown(Core::RaceCountdownState state);
 	std::vector<std::string> fillCharacterString(std::vector<std::string> characters);
+public:
+	static const std::string availableCharacters[];
+	static const std::string defaultCharacter;
 private:
 	Player* mainPlayer;
 	std::vector<Player*> players;

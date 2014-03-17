@@ -21,6 +21,10 @@ using namespace Ponykart::LKernel;
 using namespace Ponykart::Networking;
 using namespace Ponykart::Players;
 
+// Static members
+const string PlayerManager::availableCharacters[] = { "Twilight Sparkle", "Rainbow Dash", "Applejack", "Pinkie Pie", "Fluttershy", "Rarity" };
+const string PlayerManager::defaultCharacter = "Twilight Sparkle";
+
 PlayerManager::PlayerManager()
 {
 	log("[Loading] Creating PlayerManager...");
@@ -131,4 +135,36 @@ void PlayerManager::onLevelLoad(LevelChangedEventArgs* eventArgs)
 					fun();
 		}
 	}
+}
+
+/// Fills up the character input string with other characters, since for most of the quick keyboard commands and stuff,
+/// we only care about what the player character is, so that's all the array has.
+/// Obviously that's going to result in array out of bounds errors if we don't fill the rest of the array up
+std::vector<std::string> PlayerManager::fillCharacterString(std::vector<std::string> characters)
+{
+	int numPlayers = Settings::NumberOfPlayers;
+	if (numPlayers == 1) // don't need to fill it if we've only got one character
+		return characters;
+
+	vector<string> newChars;
+	newChars.resize(numPlayers);
+
+	// the first character must always be filled
+	newChars[0] = characters[0];
+
+	for (int a = 1; a < numPlayers; a++)
+	{
+		newChars[a] = defaultCharacter;
+		// Name is the first name of available that isnt already in newChars
+		for (const string& s : availableCharacters)
+		{
+			if (find(begin(newChars), end(newChars), s) == end(newChars))
+			{
+				newChars[a] = s;
+				break;
+			}
+		}
+	}
+
+	return newChars;
 }
