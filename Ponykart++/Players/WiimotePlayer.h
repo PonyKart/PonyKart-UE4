@@ -12,8 +12,6 @@ namespace Ponykart
 			WiimotePlayer(Levels::LevelChangedEventArgs* eventArgs, int id);
 		protected:
 			virtual void useItem() override;
-		public:
-			Core::KeyBindingManager* bindings;
 		};
 	}
 }
