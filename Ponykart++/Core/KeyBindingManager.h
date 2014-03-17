@@ -41,10 +41,11 @@ public:
 	static void onMousePress_Anything(const SDL_MouseButtonEvent &mbe);
 	static void onMouseRelease_Anything(const SDL_MouseButtonEvent &mbe);
 	static void invoke(std::function<void ()> e);
-	// Getters
-	const std::map<LKey, std::function<void ()>>& getPressEventsDict();
-	const std::map<LKey, std::function<void ()>>& getReleaseEventsDict();
-	const std::map<LKey, std::function<void ()>>& getAxisEvents();
+
+public:
+	static std::map<LKey, std::function<void()>> pressEventsDict;
+	static std::map<LKey, std::function<void()>> releaseEventsDict;
+	static std::map<LKey, std::function<void()>> axisEvents;
 
 private:
 	// The maps that converts our key commands into OIS keys
@@ -52,10 +53,6 @@ private:
 	static std::map<SDL_Keycode, LKey> oisKeysDict;
 	static std::map<ControllerButtons, LKey> lButtonsDict;
 	static std::map<ControllerAxis, LKey> lAxisDict;
-
-	static std::map<LKey, std::function<void ()>> pressEventsDict;
-	static std::map<LKey, std::function<void ()>> releaseEventsDict;
-	static std::map<LKey, std::function<void ()>> axisEvents;
 };
 
 } // Core
