@@ -2,6 +2,7 @@
 #define PLAYERMANAGER_H_INCLUDED
 
 #include <functional>
+#include <string>
 #include <vector>
 #include "Core/RaceCountdown.h"
 #include "Kernel/LKernelObject.h"
@@ -29,6 +30,7 @@ public:
 	void onLevelLoad(Levels::LevelChangedEventArgs* eventArgs);
 	void onLevelUnload(Levels::LevelChangedEventArgs* eventArgs); ///< Delete all of the players
 	void raceCountdown_onCountdown(Core::RaceCountdownState state);
+	std::vector<std::string> fillCharacterString(std::vector<std::string> characters);
 private:
 	Player* mainPlayer;
 	std::vector<Player*> players;
