@@ -10,6 +10,7 @@
 #include "Players/HumanPlayer.h"
 #include "Players/Player.h"
 #include "Players/PlayerManager.h"
+#include "Players/WiimotePlayer.h"
 
 using namespace std;
 using namespace Ponykart;
@@ -72,7 +73,7 @@ void PlayerManager::onLevelLoad(LevelChangedEventArgs* eventArgs)
 			if (controllerOption == "keyboard")
 				mainPlayer = new HumanPlayer(eventArgs, 0);
 			else if (controllerOption == "wiimote")
-				mainPlayer = new WiiMotePlayer(eventArgs, 0);
+				mainPlayer = new WiimotePlayer(eventArgs, 0);
 			else
 				throw string("Illegal Controller type : " + controllerOption);
 			players[0] = mainPlayer;
@@ -111,7 +112,7 @@ void PlayerManager::onLevelLoad(LevelChangedEventArgs* eventArgs)
 			if (controllerOption == "keyboard")
 				mainPlayer = new HumanPlayer(eventArgs, localid);
 			else if (controllerOption == "wiimote")
-				mainPlayer = new WiiMotePlayer(eventArgs, localid);
+				mainPlayer = new WiimotePlayer(eventArgs, localid);
 			else
 				throw string("Illegal Controller type : " + controllerOption);
 
