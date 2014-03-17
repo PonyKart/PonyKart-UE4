@@ -4,18 +4,18 @@
 #include <string>
 #include "Actors/Driver.h"
 #include "Actors/Kart.h"
-#include "Levels/LevelChangedEventArgs.h"
 
 
 namespace Ponykart
 {
+namespace Levels{ class LevelChangedEventArgs; }
 namespace Players
 {
 // Abstract class for players - each player controls a kart, and abstracting away the player will help when it comes to things like AI and/or networking
 class Player // TODO: Implement shortcuts and key events. Finish implementing the rest.
 {
 public:
-	Player(Levels::LevelChangedEventArgs eventArgs, int Id, bool IsComputerControlled);
+	Player(Levels::LevelChangedEventArgs* eventArgs, int Id, bool IsComputerControlled);
 	virtual void detach();
 	// Getters
 	const Actors::Kart* const getKart() const;
@@ -34,6 +34,17 @@ public:
 protected:
 	Player(); // Set some default values
 	virtual void useItem()=0; // Uses an item
+	// Key events : it's very important that these are run before any of the "override" methods do anything else
+	virtual void onStartAccelerate() {}
+	virtual void onStopAccelerate() {}
+	virtual void onStartDrift() {}
+	virtual void onStopDrift() {}
+	virtual void onStartReverse() {}
+	virtual void onStopReverse() {}
+	virtual void onStartTurnLeft() {}
+	virtual void onStopTurnLeft() {}
+	virtual void onStartTurnRight() {}
+	virtual void onStopTurnRight() {}
 public:
 	bool isControlEnabled; // Can the player control his kart?
 protected:

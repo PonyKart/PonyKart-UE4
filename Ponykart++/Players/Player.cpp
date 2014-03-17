@@ -4,6 +4,7 @@
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
 #include "Players/Player.h"
+#include "Levels/LevelChangedEventArgs.h"
 #include "Muffin/MuffinDefinition.h"
 #include "Thing/Blocks/ThingBlock.h"
 
@@ -19,7 +20,7 @@ Player::Player() : hasItem(false)
 {
 }
 
-Player::Player(LevelChangedEventArgs eventArgs, int Id, bool IsComputerControlled) : Player()
+Player::Player(LevelChangedEventArgs* eventArgs, int Id, bool IsComputerControlled) : Player()
 {
 	// don't want to create a player if it's ID isn't valid
 	if (Id < 0 || Id >= Settings::NumberOfPlayers)
@@ -30,13 +31,13 @@ Player::Player(LevelChangedEventArgs eventArgs, int Id, bool IsComputerControlle
 	isComputerControlled = IsComputerControlled;
 
 	// set up the spawn position/orientation
-	Vector3 spawnPos = eventArgs.newLevel.getDefinition()->getVectorProperty("KartSpawnPosition" + id);
-	Quaternion spawnOrient = eventArgs.newLevel.getDefinition()->getQuatProperty("KartSpawnOrientation" + id, Quaternion::IDENTITY);
+	Vector3 spawnPos = eventArgs->newLevel.getDefinition()->getVectorProperty("KartSpawnPosition" + id);
+	Quaternion spawnOrient = eventArgs->newLevel.getDefinition()->getQuatProperty("KartSpawnOrientation" + id, Quaternion::IDENTITY);
 
 	ThingBlock* block = new ThingBlock("TwiCutlass", spawnPos, spawnOrient);
 
 	string driverName, kartName;
-	string charName = eventArgs.request.characterNames[id];
+	string charName = eventArgs->request.characterNames[id];
 	if (charName == "Twilight Sparkle")
 	{
 		driverName = "Twilight";
@@ -76,7 +77,7 @@ Player::Player(LevelChangedEventArgs eventArgs, int Id, bool IsComputerControlle
 	kart->player = this;
 	driver->player = this;
 
-	character = eventArgs.request.characterNames[id];
+	character = eventArgs->request.characterNames[id];
 
 	kart->ownerID = Id;
 	id = Id;

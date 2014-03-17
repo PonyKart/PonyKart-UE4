@@ -3,9 +3,11 @@
 #include "Core/Options.h"
 #include "Kernel/LKernel.h"
 #include "Kernel/LKernelOgre.h"
+#include "Levels/LevelChangedEventArgs.h"
 #include "Levels/LevelManager.h"
 #include "Networking/NetworkEntity.h"
 #include "Networking/NetworkManager.h"
+#include "Players/HumanPlayer.h"
 #include "Players/Player.h"
 #include "Players/PlayerManager.h"
 
