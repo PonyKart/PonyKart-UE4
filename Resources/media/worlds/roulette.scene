@@ -1,7 +1,0 @@
-<scene formatVersion="1.0" upAxis="y" unitsPerMeter="39.3701" minOgreVersion="1.7" author="Ponykart's muffin to scene converter">
-	<environment>
-		<colourAmbient r="0.8" g="0.8" b="0.8" />
-	</environment>
-	<nodes>
-	</nodes>
-</scene>

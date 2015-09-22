@@ -1,7 +1,0 @@
-Physics = None
-
-Model {
-	Mesh = "BgStands.mesh"
-	Position = 0, 0, 0
-	CastsShadows = Some
-}

@@ -1,6 +1,0 @@
-Basisa
-Hover
-MoveForward
-MoveBackward
-TurnLeft
-TurnRight

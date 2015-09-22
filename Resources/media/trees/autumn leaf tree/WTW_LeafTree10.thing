@@ -1,9 +1,0 @@
-Physics = None
-Static = true
-
-// main tree model
-Model {
-	Mesh = "LeafTree10.mesh"
-	Position = 0, 0, 0
-	CastsShadows = None
-}

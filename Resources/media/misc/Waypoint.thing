@@ -1,7 +1,0 @@
-Physics = None
-
-Model {
-	Mesh = "primitives/sphere.mesh"
-	Material = "brick"
-	Scale = 2.5, 2.5, 2.5
-}

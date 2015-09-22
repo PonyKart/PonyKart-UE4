@@ -1,9 +1,0 @@
-Physics = None
-
-Model {
-	Mesh = "SAA_CornRows.mesh"
-	Material = "SAA_CornRows"
-	Position = -127.7202, 6.5168, -72.0662
-	Orientation = 0.5, 0.5, -0.5, 0.5
-	CastsShadows = None
-}

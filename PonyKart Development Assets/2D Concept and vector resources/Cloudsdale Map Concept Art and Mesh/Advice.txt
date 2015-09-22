@@ -1,0 +1,4 @@
+If you make a short straight path that curves at the sides, add an array modifier and a curve modifier, you can shape it to a curve to fit a base for making the track, using CTRL-T to tilt the track and S so widen it in some areas.
+Add a SubSurf at 1 level
+Then make a clouds texture and add a displace modifier to the mesh.
+Mess around with some settings and tou should have a cloudy path 

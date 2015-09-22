@@ -1,8 +1,0 @@
-Type = Race
-LoadFile = "default spawn positions"
-
-Background = 0.7373, 0.8902, 0.9490
-Ambient = 1, 1, 1
-FogType = "None"
-SunlightDirection = 0.1, -1, 0.1
-Skybox = "saa_sky"

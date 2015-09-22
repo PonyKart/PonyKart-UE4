@@ -1,0 +1,14 @@
+Physics = None
+
+//Pony who is a pone
+Model {
+	Mesh = "Rarity.mesh"
+	Position = 0, 0, 0
+	Orientation = 0, 0, 0, 1
+	Scale = 1, 1, 1
+	CastsShadows = true
+	
+	Animated = true
+	AnimationName = "Idle"
+	AnimationLooping = true
+}

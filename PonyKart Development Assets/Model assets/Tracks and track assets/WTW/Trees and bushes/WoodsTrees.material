@@ -1,0 +1,55 @@
+material WoodsTrunk
+{
+	technique OgreMaxTechnique2
+	{
+		pass OgreMaxPass2
+		{
+			vertex_program_ref fresnelTex_vp {
+			}
+			fragment_program_ref fresnelTex_Self_fp {
+				param_named GlowExpon float 2
+				param_named Alpha float 0.5
+			}
+
+			texture_unit OgreMaxTextureUnit2
+			{
+				texture WTW_Tree_Woods_color.dds
+				
+			}
+		}
+
+	}
+
+
+}
+
+
+
+material WoodsFoliage
+{
+	transparency_casts_shadows on
+	technique OgreMaxTechnique4
+	{
+		pass OgreMaxPass1
+		{
+
+			vertex_program_ref fresnelTex_vp {
+			}
+			fragment_program_ref fresnelTex_Self_fp {
+				param_named GlowExpon float 2
+				param_named Alpha float 0.5
+			}
+
+			alpha_rejection greater 225
+
+			texture_unit OgreMaxTextureUnit1
+			{
+				texture WTW_Foliage_Woods_color.dds alpha
+				
+			}
+		}
+
+	}
+
+
+}

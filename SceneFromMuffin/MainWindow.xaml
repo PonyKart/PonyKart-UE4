@@ -1,9 +1,0 @@
-﻿<Window x:Class="MuffinToScene.MainWindow"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		Title="MuffinToScene" Height="94" Width="303" Background="WhiteSmoke" ResizeMode="CanMinimize">
-	<Grid>
-		<Button Content="Import .muffin" Height="31" HorizontalAlignment="Left" Margin="12,12,0,0" Name="importButton" VerticalAlignment="Top" Width="132" Click="importButton_Click" />
-		<Button Content="Export .scene" Height="31" HorizontalAlignment="Left" Margin="150,12,0,0" Name="exportButton" VerticalAlignment="Top" Width="119" Click="exportButton_Click" />
-	</Grid>
-</Window>

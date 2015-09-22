@@ -1,0 +1,1309 @@
+﻿[2015.09.17-14.14.46:874][  0]Log file open, 09/17/15 10:14:46
+[2015.09.17-14.14.46:874][  0]LogInit:Display: Running engine for game: PonyKart
+[2015.09.17-14.14.46:874][  0]LogInit:Display: RandInit(-655783663) SRandInit(-655783642).
+[2015.09.17-14.14.46:874][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.09.17-14.14.46:874][  0]LogStats: Stats thread started at 0.104387
+[2015.09.17-14.14.46:874][  0]LogInit: Version: 4.9.1-2689999+++depot+UE4-Releases+4.9
+[2015.09.17-14.14.46:874][  0]LogInit: API Version: 2672455
+[2015.09.17-14.14.46:874][  0]LogInit: Compiled (64-bit): Sep 14 2015 04:12:03
+[2015.09.17-14.14.46:874][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.09.17-14.14.46:874][  0]LogInit: Build Configuration: Development
+[2015.09.17-14.14.46:874][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.09.17-14.14.46:874][  0]LogInit: Command line: 
+[2015.09.17-14.14.46:874][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.9/Engine/Binaries/Win64/
+[2015.09.17-14.14.46:874][  0]LogInit: Rocket: 1
+[2015.09.17-14.14.46:887][  0]LogInit: Using libcurl 7.41.0
+[2015.09.17-14.14.46:887][  0]LogInit:  - built for x86_64-pc-win32
+[2015.09.17-14.14.46:887][  0]LogInit:  - supports SSL with WinSSL
+[2015.09.17-14.14.46:887][  0]LogInit:  - other features:
+[2015.09.17-14.14.46:887][  0]LogInit:      CURL_VERSION_SSL
+[2015.09.17-14.14.46:887][  0]LogInit:      CURL_VERSION_IPV6
+[2015.09.17-14.14.46:887][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.09.17-14.14.46:887][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.09.17-14.14.46:887][  0]LogInit:      CURL_VERSION_IDN
+[2015.09.17-14.14.46:888][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.09.17-14.14.46:888][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.09.17-14.14.46:888][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.09.17-14.14.46:888][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.09.17-14.14.46:888][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.09.17-14.14.46:900][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.09.17-14.14.46:911][  0]LogInit: Object subsystem initialized
+[2015.09.17-14.14.46:913][  0]LogInit: Selected Device Profile: [Windows]
+[2015.09.17-14.14.46:913][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.09.17-14.14.46:977][  0]LogInit: Computer: HP-PC
+[2015.09.17-14.14.46:977][  0]LogInit: User: Amber
+[2015.09.17-14.14.46:977][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.09.17-14.14.46:977][  0]LogInit: High frequency timer resolution =14.318180 MHz
+[2015.09.17-14.14.46:978][  0]LogMemory: Memory total: Physical=6.0GB (6GB approx)
+[2015.09.17-14.14.46:978][  0]LogMemory: Platform Memory Stats for Windows
+[2015.09.17-14.14.46:978][  0]LogMemory: Process Physical Memory: 53.80 MB used, 53.80 MB peak
+[2015.09.17-14.14.46:978][  0]LogMemory: Process Virtual Memory: 56.27 MB used, 56.27 MB peak
+[2015.09.17-14.14.46:978][  0]LogMemory: Physical Memory: 3639.41 MB used, 6141.22 MB total
+[2015.09.17-14.14.46:978][  0]LogMemory: Virtual Memory: 365.93 MB used, 134217728.00 MB total
+[2015.09.17-14.14.47:092][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2015.09.17-14.14.48:303][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 550 Ti (Feature Level 11_0)
+[2015.09.17-14.14.48:303][  0]LogD3D11RHI: Adapter has 972MB of dedicated video memory, 0MB of dedicated system memory, and 3070MB of shared system memory, 2 output[s]
+[2015.09.17-14.14.48:306][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2015.09.17-14.14.48:306][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 3070MB of shared system memory, 0 output[s]
+[2015.09.17-14.14.48:307][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.09.17-14.14.48:315][  0]LogD3D11RHI: !Direct3DDevice
+[2015.09.17-14.14.48:315][  0]LogRHI: Texture pool is 680 MB (70% of 972 MB)
+[2015.09.17-14.14.48:331][  0]LogD3D11RHI: Async texture creation enabled
+[2015.09.17-14.14.48:353][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Intermediate/Shaders/WorkingDirectory/13380/).
+[2015.09.17-14.14.48:353][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Intermediate/Shaders/tmp/98560C7D45E0D73F224188AB9525C989/'.
+[2015.09.17-14.14.48:353][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.09.17-14.14.52:742][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.09.17-14.14.52:752][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.09.17-14.14.52:762][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.09.17-14.14.52:771][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.09.17-14.14.52:780][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.09.17-14.14.52:787][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.09.17-14.14.52:793][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.09.17-14.14.52:800][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.09.17-14.14.52:807][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.09.17-14.14.52:813][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.09.17-14.14.52:820][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.09.17-14.14.52:827][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.09.17-14.14.52:829][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2015.09.17-14.14.52:854][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.09.17-14.14.52:860][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.09.17-14.14.52:867][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.09.17-14.14.52:875][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.09.17-14.14.52:875][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.09.17-14.14.53:012][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.09.17-14.14.53:188][  0]LogDerivedDataCache: Loaded boot cache 0.18s 41MB C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.09.17-14.14.53:188][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2015.09.17-14.14.53:188][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.09.17-14.14.53:188][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.09.17-14.14.53:188][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.09.17-14.14.53:188][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.09.17-14.14.53:374][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.09.17-14.14.53:387][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Amber/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.09.17-14.14.53:702][  0]LogInit: Selected Device Profile: [Windows]
+[2015.09.17-14.14.53:707][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.09.17-14.14.53:921][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.09.17-14.14.53:921][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.09.17-14.14.53:981][  0]LogEnum:Warning: Enum Text 2 for Enum EViewModeIndex failed to resolve to any value
+[2015.09.17-14.14.54:476][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.09.17-14.15.01:299][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.09.17-14.15.01:865][  0]LogAssetRegistry: FAssetRegistry took 0.0120 seconds to start up
+[2015.09.17-14.15.02:144][  0]SourceControl: Info Source control is disabled
+[2015.09.17-14.15.02:145][  0]SourceControl: Info Source control is disabled
+[2015.09.17-14.15.02:162][  0]SourceControl: Info Source control is disabled
+[2015.09.17-14.15.02:178][  0]SourceControl: Info Source control is disabled
+[2015.09.17-14.15.02:624][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.09.17-14.15.02:750][  0]LogObj: 28361 objects as part of root set at end of initial load.
+[2015.09.17-14.15.02:750][  0]LogUObjectAllocator: 6038872 out of 0 bytes used by permanent object pool.
+[2015.09.17-14.15.02:857][  0]LogEngine: Initializing Engine...
+[2015.09.17-14.15.02:861][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2015.09.17-14.15.02:871][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2015.09.17-14.15.03:093][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.09.17-14.15.03:105][  0]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.15.03:118][  0]LogInit: FAudioDevice initialized.
+[2015.09.17-14.15.03:163][  0]LogDerivedDataCache: Saved boot cache 0.04s 41MB C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.09.17-14.15.03:177][  0]LogInit: Texture streaming: Enabled
+[2015.09.17-14.15.03:186][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.09.17-14.15.03:186][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.1-2689999+++depot+UE4-Releases+4.9
+[2015.09.17-14.15.03:187][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId fe48c13c4235ff87278523820fd1a74f|128e7d1d796a429f9247afe84ab758e1|a78d9d35-53ca-49d3-80af-52a3ac8256d6
+[2015.09.17-14.15.03:187][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.09.17-14.15.03:243][  0]LogInit: Transaction tracking system initialized
+[2015.09.17-14.15.03:292][  0]BlueprintLog: New page: Editor Load
+[2015.09.17-14.15.03:516][  0]LocalizationService: Info Localization service is disabled
+[2015.09.17-14.15.03:863][  0]LogConsoleResponse:Display: 
+[2015.09.17-14.15.04:249][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/' took 0.04s
+[2015.09.17-14.15.04:249][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.09.17-14.15.04:341][  0]SourceControl: Info Source control is disabled
+[2015.09.17-14.15.04:341][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.09.17-14.15.04:342][  0]LightingResults: New page: Lighting Build
+[2015.09.17-14.15.04:347][  0]MapCheck: New page: Map Check
+[2015.09.17-14.15.04:347][  0]LightingResults: New page: Lighting Build
+[2015.09.17-14.15.04:365][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000988CBD2160
+[2015.09.17-14.15.04:827][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.15.04:837][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.09.17-14.15.04:847][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.09.17-14.15.04:930][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 82.706ms to complete.
+[2015.09.17-14.15.04:930][  0]LogFileHelpers: Loading map 'Template_Default' took 0.589
+[2015.09.17-14.15.05:652][  0]LogCollectionManager: Loaded 0 collections in 0.003735 seconds
+[2015.09.17-14.15.05:752][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Collections/' took 0.01s
+[2015.09.17-14.15.05:752][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Developers/Amber/Collections/' took 0.01s
+[2015.09.17-14.15.05:752][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Collections/' took 0.01s
+[2015.09.17-14.15.05:752][  0]LogContentBrowser: Native class hierarchy populated in 0.0527 seconds. Added 1867 classes and 333 folders.
+[2015.09.17-14.15.06:099][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
+[2015.09.17-14.15.06:338][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2015.09.17-14.15.10:701][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2015.09.17-14.15.10:794][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2015.09.17-14.15.12:153][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.09.17-14.15.12:207][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.09.17-14.15.12:283][  0]LogLoad: Full Startup: 27.15 seconds (BP compile: 0.15 seconds)
+[2015.09.17-14.15.13:098][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2015.09.17-14.15.13:405][  0]LogRenderer: Reallocating scene render targets to support 1208x520 (Frame:2).
+[2015.09.17-14.15.14:278][  4]LogAssetRegistry: Asset discovery search completed in 12.4244 seconds
+[2015.09.17-14.15.14:278][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
+[2015.09.17-14.15.14:278][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000038 seconds (updated 0 objects)
+[2015.09.17-14.15.46:470][787]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.09.17-14.15.48:148][787]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0257 seconds. Added 107 classes and 0 folders.
+[2015.09.17-14.15.49:455][787]LogActor:Warning: GameNetworkManager /Engine/Transient.World_2:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.16.35:013][202]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.16.35:063][202]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:16:35 AM)
+[2015.09.17-14.16.35:063][202]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.16.35:068][202]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004005s)
+[2015.09.17-14.16.35:069][202]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.16.35:070][202]LogPlayLevel: PIE: World Init took: (0.001939s)
+[2015.09.17-14.16.35:070][202]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006260s)
+[2015.09.17-14.16.35:108][202]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098FC1B7A60
+[2015.09.17-14.16.35:129][202]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.16.35:140][202]LogInit: FAudioDevice initialized.
+[2015.09.17-14.16.35:203][202]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.16.35:203][202]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.16.35:227][202]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.16.35
+[2015.09.17-14.16.35:227][202]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.16.35:228][202]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.16.35:228][202]LogWorld: Bringing up level for play took: 0.003356
+[2015.09.17-14.16.35:311][202]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.205
+[2015.09.17-14.16.44:916][790]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098BF53B4C0
+[2015.09.17-14.16.48:031][961]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.17.16:390][564]Cmd: UpdateLandscapeSetup
+[2015.09.17-14.17.35:933][566]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.17.35:933][566]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:17:35 AM)
+[2015.09.17-14.17.35:933][566]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.17.35:937][566]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004274s)
+[2015.09.17-14.17.35:939][566]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.17.35:939][566]LogPlayLevel: PIE: World Init took: (0.001939s)
+[2015.09.17-14.17.35:940][566]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006519s)
+[2015.09.17-14.17.36:019][566]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.17.36:030][566]LogInit: FAudioDevice initialized.
+[2015.09.17-14.17.36:078][566]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.17.36:083][566]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.17.36
+[2015.09.17-14.17.36:083][566]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.17.36:083][566]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.17.36:084][566]LogWorld: Bringing up level for play took: 0.004047
+[2015.09.17-14.17.36:088][566]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.981
+[2015.09.17-14.17.37:794][673]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000988549A5C0
+[2015.09.17-14.17.44:126][961]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.17.44:126][961]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:17:44 AM)
+[2015.09.17-14.17.44:126][961]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.17.44:130][961]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004447s)
+[2015.09.17-14.17.44:132][961]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.17.44:132][961]LogPlayLevel: PIE: World Init took: (0.001851s)
+[2015.09.17-14.17.44:133][961]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006612s)
+[2015.09.17-14.17.44:204][961]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.17.44:217][961]LogInit: FAudioDevice initialized.
+[2015.09.17-14.17.44:263][961]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.17.44:268][961]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.17.44
+[2015.09.17-14.17.44:268][961]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.17.44:269][961]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.17.44:270][961]LogWorld: Bringing up level for play took: 0.004031
+[2015.09.17-14.17.44:273][961]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.834
+[2015.09.17-14.17.45:790][ 55]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000009885475940
+[2015.09.17-14.17.47:339][122]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.17.48:205][168]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2015.09.17-14.17.53:063][440]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2015.09.17-14.17.58:353][736]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2015.09.17-14.17.59:066][774]LogEditorViewport: Clicking on Actor (LMB): CameralPawn_C (CameralPawn)
+[2015.09.17-14.18.00:131][823]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.18.00:132][823]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:18:00 AM)
+[2015.09.17-14.18.00:132][823]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.18.00:136][823]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004568s)
+[2015.09.17-14.18.00:138][823]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.18.00:138][823]LogPlayLevel: PIE: World Init took: (0.001978s)
+[2015.09.17-14.18.00:139][823]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006818s)
+[2015.09.17-14.18.00:214][823]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.18.00:226][823]LogInit: FAudioDevice initialized.
+[2015.09.17-14.18.00:273][823]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.18.00:278][823]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.18.00
+[2015.09.17-14.18.00:278][823]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.00:279][823]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.00:280][823]LogWorld: Bringing up level for play took: 0.004014
+[2015.09.17-14.18.00:283][823]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.824
+[2015.09.17-14.18.03:110][  4]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098854C1800
+[2015.09.17-14.18.05:310][101]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2015.09.17-14.18.12:944][538]Cmd: DELETE
+[2015.09.17-14.18.12:944][538]Cmd: ACTOR DELETE
+[2015.09.17-14.18.13:051][538]LogEditorActor: Deleted Actor: PlayerStart
+[2015.09.17-14.18.13:095][538]LogEditorActor: Deleted 1 Actors (0.068 secs)
+[2015.09.17-14.18.41:598][  5]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.18.41:598][  5]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:18:41 AM)
+[2015.09.17-14.18.41:599][  5]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.18.41:603][  5]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004139s)
+[2015.09.17-14.18.41:604][  5]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.18.41:605][  5]LogPlayLevel: PIE: World Init took: (0.002022s)
+[2015.09.17-14.18.41:605][  5]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006474s)
+[2015.09.17-14.18.41:677][  5]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.18.41:689][  5]LogInit: FAudioDevice initialized.
+[2015.09.17-14.18.41:737][  5]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.18.41:741][  5]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.18.41
+[2015.09.17-14.18.41:741][  5]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.41:742][  5]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.41:742][  5]LogWorld: Bringing up level for play took: 0.003330
+[2015.09.17-14.18.41:746][  5]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.64
+[2015.09.17-14.18.42:964][ 84]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098A1F711C0
+[2015.09.17-14.18.43:585][113]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.18.43:585][113]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:18:43 AM)
+[2015.09.17-14.18.43:586][113]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.18.43:590][113]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004160s)
+[2015.09.17-14.18.43:592][113]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.18.43:592][113]LogPlayLevel: PIE: World Init took: (0.001944s)
+[2015.09.17-14.18.43:592][113]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006390s)
+[2015.09.17-14.18.43:664][113]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.18.43:674][113]LogInit: FAudioDevice initialized.
+[2015.09.17-14.18.43:723][113]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.18.43:727][113]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.18.43
+[2015.09.17-14.18.43:727][113]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.43:728][113]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.43:729][113]LogWorld: Bringing up level for play took: 0.003363
+[2015.09.17-14.18.43:731][113]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.625
+[2015.09.17-14.18.44:416][158]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B916F920
+[2015.09.17-14.18.51:936][511]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.18.51:936][511]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:18:51 AM)
+[2015.09.17-14.18.51:937][511]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.18.51:941][511]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004038s)
+[2015.09.17-14.18.51:942][511]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.18.51:943][511]LogPlayLevel: PIE: World Init took: (0.001960s)
+[2015.09.17-14.18.51:943][511]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006385s)
+[2015.09.17-14.18.52:015][511]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.18.52:025][511]LogInit: FAudioDevice initialized.
+[2015.09.17-14.18.52:074][511]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.18.52:079][511]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.18.52
+[2015.09.17-14.18.52:079][511]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.52:080][511]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.18.52:081][511]LogWorld: Bringing up level for play took: 0.003613
+[2015.09.17-14.18.52:084][511]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.978
+[2015.09.17-14.18.53:045][573]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B83C0C20
+[2015.09.17-14.25.38:629][596]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'CameralPawn', cached variable property's owner is '/Game/Blueprints/CameralPawn.SKEL_CameralPawn_C'
+[2015.09.17-14.25.58:702][533]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'CameralPawn', cached variable property's owner is '/Game/Blueprints/CameralPawn.SKEL_CameralPawn_C'
+[2015.09.17-14.25.59:798][564]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'CameralPawn', cached variable property's owner is '/Game/Blueprints/CameralPawn.SKEL_CameralPawn_C'
+[2015.09.17-14.26.04:833][807]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'CameralPawn', cached variable property's owner is '/Game/Blueprints/CameralPawn.SKEL_CameralPawn_C'
+[2015.09.17-14.26.05:959][857]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'CameralPawn', cached variable property's owner is '/Game/Blueprints/CameralPawn.SKEL_CameralPawn_C'
+[2015.09.17-14.26.10:606][ 78]LogBlueprintUserMessages: CustomizeDetails for Blueprint 'CameralPawn', cached variable property's owner is '/Game/Blueprints/CameralPawn.SKEL_CameralPawn_C'
+[2015.09.17-14.27.03:132][994]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.27.36:433][180]LogSavePackage: Save=76.630898ms
+[2015.09.17-14.27.36:433][180]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Untitled_1_Auto19D3B8E864E23EB2317F2268CE1CBA8A9.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
+[2015.09.17-14.27.36:436][180]LogSavePackage: Total save time: 79.520233ms
+[2015.09.17-14.27.36:436][180]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Temp/Untitled_1_Auto1.umap
+[2015.09.17-14.27.36:439][180]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.133
+[2015.09.17-14.27.36:439][180]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.133
+[2015.09.17-14.27.36:450][180]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MyGameMode] ([1] browsable assets)...
+[2015.09.17-14.27.36:450][180]OBJ SavePackage: Finished generating thumbnails for package [/Game/MyGameMode]
+[2015.09.17-14.27.36:450][180]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyGameMode" FILE="../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/MyGameMode_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2015.09.17-14.27.36:514][180]LogSavePackage: Save=44.299206ms
+[2015.09.17-14.27.36:514][180]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/MyGameMode_Auto14521BB7C44F577767C488C8CD56FD714.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/MyGameMode_Auto1.uasset'
+[2015.09.17-14.27.36:531][180]LogSavePackage: Total save time: 77.937700ms
+[2015.09.17-14.27.36:531][180]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/MyGameMode_Auto1.uasset
+[2015.09.17-14.27.36:537][180]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/CameralPawn] ([1] browsable assets)...
+[2015.09.17-14.27.36:537][180]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/CameralPawn]
+[2015.09.17-14.27.36:574][180]LogSavePackage: Save=21.545824ms
+[2015.09.17-14.27.36:574][180]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/CameralPawn_Auto1801721104775BB4F1DA7449C072D1AEC.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Blueprints/CameralPawn_Auto1.uasset'
+[2015.09.17-14.27.36:575][180]LogSavePackage: Total save time: 35.824802ms
+[2015.09.17-14.27.36:575][180]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Blueprints/CameralPawn_Auto1.uasset
+[2015.09.17-14.27.36:576][180]LogFileHelpers: Auto-saving content packages took 0.133
+[2015.09.17-14.30.32:098][813]LogEditorActor: Deleted Actor: CameralPawn_C
+[2015.09.17-14.30.32:136][813]LogEditorActor: Deleted 1 Actors (0.038 secs)
+[2015.09.17-14.30.54:801][164]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.31.08:778][815]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.31.09:689][864]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.31.31:950][915]LogEditorViewport: Clicking on Actor (context menu): CameraActor (CameraActor)
+[2015.09.17-14.31.34:903][ 88]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2015.09.17-14.31.36:534][187]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.31.38:812][294]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.31.46:996][782]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.31.52:476][985]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2015.09.17-14.31.53:058][ 11]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2015.09.17-14.32.09:108][656]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.32.30:222][758]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.30:242][758]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.30:588][774]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.30:588][774]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.30:876][788]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.30:876][788]LogEditorTransaction: Undo Clicking on Actors (context menu)
+[2015.09.17-14.32.31:151][799]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.31:151][799]LogEditorTransaction: Undo Clicking on Actors (context menu)
+[2015.09.17-14.32.31:462][819]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.31:462][819]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.31:752][835]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.31:752][835]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.32:023][852]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.32:023][852]LogEditorTransaction: Undo Clicking on Actors (context menu)
+[2015.09.17-14.32.32:310][870]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.32:310][870]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.32:565][881]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.32:566][881]LogEditorTransaction: Undo Clicking on Actors (context menu)
+[2015.09.17-14.32.32:870][898]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.32:870][898]LogEditorTransaction: Undo Clicking on Actors (context menu)
+[2015.09.17-14.32.33:164][917]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.33:164][917]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.33:423][932]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.33:423][932]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.33:715][949]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.33:715][949]LogEditorTransaction: Undo Rotate Actors
+[2015.09.17-14.32.34:076][969]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.34:076][969]LogEditorTransaction: Undo Move Actors
+[2015.09.17-14.32.34:399][988]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.34:399][988]LogEditorTransaction: Undo Move Actors
+[2015.09.17-14.32.34:710][  8]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.34:710][  8]LogEditorTransaction: Undo Move Actors
+[2015.09.17-14.32.35:009][ 27]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.35:010][ 27]LogEditorTransaction: Undo Create Actors
+[2015.09.17-14.32.35:273][ 41]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.35:273][ 41]LogEditorTransaction: Undo Delete selection
+[2015.09.17-14.32.35:538][ 50]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.35:538][ 50]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.36:005][ 70]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.36:005][ 70]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.36:377][ 90]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.36:378][ 90]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.36:939][115]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.36:939][115]LogEditorTransaction: Undo Modify Component(s)
+[2015.09.17-14.32.37:417][136]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.37:417][136]LogEditorTransaction: Undo Modify Component(s)
+[2015.09.17-14.32.37:841][156]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.37:842][156]LogEditorTransaction: Undo Move Actors
+[2015.09.17-14.32.38:340][179]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.38:340][179]LogEditorTransaction: Undo Move Actors
+[2015.09.17-14.32.38:921][206]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.38:921][206]LogEditorTransaction: Undo Edit Base Eye Height
+[2015.09.17-14.32.39:428][229]Cmd: TRANSACTION UNDO
+[2015.09.17-14.32.39:428][229]LogEditorTransaction: Undo Clicking on Actors
+[2015.09.17-14.32.41:681][349]LogEditorActor: Deleted Actor: CameralPawn_C
+[2015.09.17-14.32.41:716][349]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000989999EAC0
+[2015.09.17-14.32.41:723][349]LogEditorActor: Deleted 1 Actors (0.043 secs)
+[2015.09.17-14.32.45:796][592]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.09.17-14.32.55:609][176]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2015.09.17-14.33.36:856][208]LogEditorViewport: Clicking on Actor (context menu): CameraActor (CameraActor)
+[2015.09.17-14.34.11:125][941]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.34.11:126][941]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.37.39:036][ 76]LogSavePackage: Save=146.362595ms
+[2015.09.17-14.37.39:038][ 76]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Untitled_1_Auto2A730554D4757FF6ECFF87F83A02570EE.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Temp/Untitled_1_Auto2.umap'
+[2015.09.17-14.37.39:041][ 76]LogSavePackage: Total save time: 151.371263ms
+[2015.09.17-14.37.39:041][ 76]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Temp/Untitled_1_Auto2.umap
+[2015.09.17-14.37.39:050][ 76]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.216
+[2015.09.17-14.37.39:050][ 76]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.216
+[2015.09.17-14.37.56:098][128]BlueprintLog: New page: Compile Untitled
+[2015.09.17-14.37.56:210][128]BlueprintEditorCompileResults: Info [1391.08] Compile of Untitled successful! [in 111 ms]
+[2015.09.17-14.38.04:453][492]BlueprintLog: New page: Compile Untitled
+[2015.09.17-14.38.04:563][492]BlueprintEditorCompileResults: Info [1399.43] Compile of Untitled successful! [in 109 ms]
+[2015.09.17-14.38.12:199][841]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.12:199][841]BlueprintLog: New page: Pre-Play auto-recompile
+[2015.09.17-14.38.12:201][841]LogPlayLevel: [PlayLevel] Compiling CameralPawn before play...
+[2015.09.17-14.38.12:268][841]LogPlayLevel: PlayLevel: Blueprint regeneration took 68 ms (1 blueprints)
+[2015.09.17-14.38.12:307][841]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B862C400
+[2015.09.17-14.38.12:312][841]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:38:12 AM)
+[2015.09.17-14.38.12:312][841]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.38.12:319][841]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006538s)
+[2015.09.17-14.38.12:320][841]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.38.12:320][841]LogPlayLevel: PIE: World Init took: (0.001693s)
+[2015.09.17-14.38.12:322][841]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.008531s)
+[2015.09.17-14.38.12:392][841]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.38.12:403][841]LogInit: FAudioDevice initialized.
+[2015.09.17-14.38.12:462][841]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.38.12:468][841]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.38.12
+[2015.09.17-14.38.12:469][841]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.38.12:469][841]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.38.12:469][841]LogWorld: Bringing up level for play took: 0.003133
+[2015.09.17-14.38.12:490][841]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.617
+[2015.09.17-14.38.12:490][841]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.24:327][735]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.24:396][735]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.24:458][735]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098A2011EE0
+[2015.09.17-14.38.28:158][904]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.28:158][904]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.38.28:158][904]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:38:28 AM)
+[2015.09.17-14.38.28:158][904]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.38.28:165][904]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006946s)
+[2015.09.17-14.38.28:167][904]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.38.28:167][904]LogPlayLevel: PIE: World Init took: (0.001739s)
+[2015.09.17-14.38.28:167][904]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.009007s)
+[2015.09.17-14.38.28:238][904]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.38.28:249][904]LogInit: FAudioDevice initialized.
+[2015.09.17-14.38.28:310][904]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.38.28:314][904]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.38.28
+[2015.09.17-14.38.28:315][904]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.38.28:315][904]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.38.28:315][904]LogWorld: Bringing up level for play took: 0.003156
+[2015.09.17-14.38.28:318][904]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.787
+[2015.09.17-14.38.28:319][904]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.30:959][101]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.31:027][101]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.31:091][101]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B8EA31A0
+[2015.09.17-14.38.36:383][326]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.36:383][326]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.38.36:383][326]PIE: New page: PIE session: Untitled_1 (Sep 17, 2015, 6:38:36 AM)
+[2015.09.17-14.38.36:383][326]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2015.09.17-14.38.36:390][326]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006857s)
+[2015.09.17-14.38.36:391][326]LogAIModule: Creating AISystem for world Untitled_1
+[2015.09.17-14.38.36:392][326]LogPlayLevel: PIE: World Init took: (0.001720s)
+[2015.09.17-14.38.36:392][326]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.008967s)
+[2015.09.17-14.38.36:465][326]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.38.36:476][326]LogInit: FAudioDevice initialized.
+[2015.09.17-14.38.36:536][326]LogWorld: Game class is 'MyGameMode_C'
+[2015.09.17-14.38.36:542][326]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.09.17-10.38.36
+[2015.09.17-14.38.36:542][326]LogActor:Warning: GameSession /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.38.36:542][326]LogActor:Warning: GameNetworkManager /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.38.36:542][326]LogWorld: Bringing up level for play took: 0.003408
+[2015.09.17-14.38.36:545][326]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.561
+[2015.09.17-14.38.36:546][326]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.39:108][519]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.39:144][519]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2015.09.17-14.38.39:207][520]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B8EA20C0
+[2015.09.17-14.38.43:407][755]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.38.43:408][755]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.38.47:539][121]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.38.47:540][121]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.39.02:208][ 56]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B846F920
+[2015.09.17-14.39.10:849][323]Cmd: MAP LOAD FILE="../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.09.17-14.39.10:875][323]LightingResults: New page: Lighting Build
+[2015.09.17-14.39.10:955][323]LoadErrors: New page: Loading map: Test.umap
+[2015.09.17-14.39.10:957][323]MapCheck: New page: Map Check
+[2015.09.17-14.39.10:957][323]LightingResults: New page: Lighting Build
+[2015.09.17-14.39.10:990][323]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098FA32CD60
+[2015.09.17-14.39.14:194][323]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.39.14:353][323]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.09.17-14.39.14:414][323]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.09.17-14.39.14:524][323]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 110.189ms to complete.
+[2015.09.17-14.39.14:524][323]LogFileHelpers: Loading map 'Test' took 3.683
+[2015.09.17-14.39.16:795][443]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-14.39.26:761][722]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_CameralPawn_C_0' or package '/Engine/Transient'.
+[2015.09.17-14.39.26:762][722]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_CameralPawn_C_1' or package '/Engine/Transient'.
+[2015.09.17-14.39.26:762][722]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_CameralPawn_C_56' or package '/Engine/Transient'.
+[2015.09.17-14.39.26:762][722]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_CameralPawn_C_55' or package '/Engine/Transient'.
+[2015.09.17-14.39.34:381][ 49]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyGameMode_C_2' or package '/Engine/Transient'.
+[2015.09.17-14.39.34:381][ 49]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_MyGameMode_C_3' or package '/Engine/Transient'.
+[2015.09.17-14.39.34:381][ 49]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_MyGameMode_C_58' or package '/Engine/Transient'.
+[2015.09.17-14.39.34:381][ 49]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_MyGameMode_C_57' or package '/Engine/Transient'.
+[2015.09.17-14.39.37:547][205]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.39.41:134][361]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.39.41:135][361]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.39.48:825][987]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.39.48:826][987]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.39.57:458][839]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2228.EdGraphPin_21087''
+[2015.09.17-14.39.57:458][839]LogLinker:Warning: Can't find file '/Temp/Untitled_1'
+[2015.09.17-14.39.57:460][839]LogLinker: Can't find file '/Temp/Untitled_1'
+[2015.09.17-14.39.57:461][839]LogProperty:Warning: ObjectProperty /Script/BlueprintGraph.K2Node_Literal:ObjectRef: unresolved reference to 'CameraActor'/Temp/Untitled_1.Untitled_1:PersistentLevel.CameraActor_10''
+[2015.09.17-14.39.57:461][839]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2228.EdGraphPin_21084''
+[2015.09.17-14.39.57:462][839]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2228.EdGraphPin_21086''
+[2015.09.17-14.40.02:332][416]BlueprintLog: New page: Compile Test
+[2015.09.17-14.40.02:377][416]LogBlueprint:Warning: [compiler Test] Warning Node  Unknown  is not referencing a valid level actor
+[2015.09.17-14.40.02:484][416]LogBlueprint:Warning: [compiler Test] Warning [1517.35] Compile of Test successful, but with 1 Warning(s) [in 151 ms]
+[2015.09.17-14.40.02:484][416]BlueprintEditorCompileResults:Warning: Warning Node  Unknown  is not referencing a valid level actor
+[2015.09.17-14.40.02:484][416]BlueprintEditorCompileResults:Warning: Warning [1517.35] Compile of Test successful, but with 1 Warning(s) [in 151 ms]
+[2015.09.17-14.42.00:827][150]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CloudsdaleTrackUE_Export)
+[2015.09.17-14.42.01:643][183]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.42.06:061][384]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.42.06:062][384]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.43.36:070][  3]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.43.38:081][ 91]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition2)
+[2015.09.17-14.43.41:880][261]Cmd: DELETE
+[2015.09.17-14.43.41:880][261]Cmd: ACTOR DELETE
+[2015.09.17-14.43.41:882][261]LogEditorActor: Deleted Actor: Actor
+[2015.09.17-14.43.41:985][261]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B8A02700
+[2015.09.17-14.43.41:990][261]LogEditorActor: Deleted 1 Actors (0.109 secs)
+[2015.09.17-14.43.42:991][323]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.43.44:792][405]Cmd: DELETE
+[2015.09.17-14.43.44:792][405]Cmd: ACTOR DELETE
+[2015.09.17-14.43.44:793][405]LogEditorActor: Deleted Actor: CameraActor
+[2015.09.17-14.43.44:876][405]LogEditorActor: Deleted 1 Actors (0.084 secs)
+[2015.09.17-14.43.45:301][432]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.44.07:078][444]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.44.07:080][444]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.44.52:798][541]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.44.52:799][541]BlueprintLog: New page: Pre-Play auto-recompile
+[2015.09.17-14.44.52:802][541]LogPlayLevel: [PlayLevel] Compiling Test before play...
+[2015.09.17-14.44.52:876][541]LogPlayLevel: PlayLevel: Blueprint regeneration took 77 ms (1 blueprints)
+[2015.09.17-14.44.52:916][541]PIE: New page: PIE session: Test (Sep 17, 2015, 6:44:52 AM)
+[2015.09.17-14.44.52:916][541]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.44.52:926][541]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010025s)
+[2015.09.17-14.44.52:928][541]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.44.52:928][541]LogPlayLevel: PIE: World Init took: (0.001786s)
+[2015.09.17-14.44.52:929][541]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.012119s)
+[2015.09.17-14.44.53:004][541]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.44.53:016][541]LogInit: FAudioDevice initialized.
+[2015.09.17-14.44.53:127][541]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.44.53:127][541]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.44.53:134][541]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.44.53
+[2015.09.17-14.44.53:134][541]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.44.53:134][541]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.44.53:135][541]LogWorld: Bringing up level for play took: 0.005215
+[2015.09.17-14.44.53:136][541]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2015.09.17-14.44.53:173][541]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.067
+[2015.09.17-14.44.53:174][541]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.44.53:241][542]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:59122).
+[2015.09.17-14.44.56:467][697]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.44.56:592][697]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.44.56:663][698]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098E56FA7A0
+[2015.09.17-14.45.01:857][216]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.45.08:435][505]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.45.09:788][562]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.45.10:942][610]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.45.12:087][657]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.45.19:289][973]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.45.27:841][408]LogEditorViewport: Clicking on Actor (LMB): Actor (CamPosition)
+[2015.09.17-14.46.06:779][920]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.06:779][920]BlueprintLog: New page: Pre-Play auto-recompile
+[2015.09.17-14.46.06:783][920]LogPlayLevel: [PlayLevel] Compiling Test before play...
+[2015.09.17-14.46.06:854][920]LogPlayLevel: PlayLevel: Blueprint regeneration took 75 ms (1 blueprints)
+[2015.09.17-14.46.06:895][920]PIE: New page: PIE session: Test (Sep 17, 2015, 6:46:06 AM)
+[2015.09.17-14.46.06:895][920]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.46.06:906][920]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010844s)
+[2015.09.17-14.46.06:908][920]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.46.06:908][920]LogPlayLevel: PIE: World Init took: (0.001714s)
+[2015.09.17-14.46.06:908][920]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.012961s)
+[2015.09.17-14.46.06:985][920]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.46.06:996][920]LogInit: FAudioDevice initialized.
+[2015.09.17-14.46.07:039][920]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.46.07:039][920]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.46.07:045][920]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.46.07
+[2015.09.17-14.46.07:046][920]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.07:046][920]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.07:047][920]LogWorld: Bringing up level for play took: 0.005449
+[2015.09.17-14.46.07:048][920]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2015.09.17-14.46.07:067][920]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.04
+[2015.09.17-14.46.07:067][920]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.12:954][179]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.13:036][179]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.13:107][180]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098A19FBCE0
+[2015.09.17-14.46.15:719][389]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2015.09.17-14.46.16:640][426]Cmd: DELETE
+[2015.09.17-14.46.16:640][426]Cmd: ACTOR DELETE
+[2015.09.17-14.46.16:641][426]LogEditorActor: Deleted Actor: CameraActor
+[2015.09.17-14.46.16:726][426]LogEditorActor: Deleted 1 Actors (0.086 secs)
+[2015.09.17-14.46.40:321][100]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.40:321][100]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.46.40:321][100]PIE: New page: PIE session: Test (Sep 17, 2015, 6:46:40 AM)
+[2015.09.17-14.46.40:321][100]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.46.40:332][100]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010645s)
+[2015.09.17-14.46.40:333][100]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.46.40:334][100]LogPlayLevel: PIE: World Init took: (0.001500s)
+[2015.09.17-14.46.40:334][100]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.012431s)
+[2015.09.17-14.46.40:381][100]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.46.40:392][100]LogInit: FAudioDevice initialized.
+[2015.09.17-14.46.40:437][100]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.46.40:437][100]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.46.40:443][100]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.46.40
+[2015.09.17-14.46.40:443][100]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.40:443][100]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.40:444][100]LogWorld: Bringing up level for play took: 0.004829
+[2015.09.17-14.46.40:448][100]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.659
+[2015.09.17-14.46.40:448][100]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.43:881][308]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.43:919][308]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.43:988][309]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B94F3D80
+[2015.09.17-14.46.52:778][780]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.52:778][780]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.46.52:778][780]PIE: New page: PIE session: Test (Sep 17, 2015, 6:46:52 AM)
+[2015.09.17-14.46.52:778][780]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.46.52:790][780]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011635s)
+[2015.09.17-14.46.52:791][780]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.46.52:791][780]LogPlayLevel: PIE: World Init took: (0.001628s)
+[2015.09.17-14.46.52:792][780]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.013594s)
+[2015.09.17-14.46.52:840][780]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.46.52:851][780]LogInit: FAudioDevice initialized.
+[2015.09.17-14.46.52:896][780]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.46.52:896][780]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.46.52:902][780]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.46.52
+[2015.09.17-14.46.52:902][780]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.52:903][780]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.52:904][780]LogWorld: Bringing up level for play took: 0.005057
+[2015.09.17-14.46.52:907][780]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.199
+[2015.09.17-14.46.52:908][780]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.55:019][909]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.55:061][909]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.55:131][910]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098A6947B00
+[2015.09.17-14.46.59:071][112]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.46.59:071][112]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.46.59:071][112]PIE: New page: PIE session: Test (Sep 17, 2015, 6:46:59 AM)
+[2015.09.17-14.46.59:071][112]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.46.59:083][112]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011135s)
+[2015.09.17-14.46.59:084][112]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.46.59:085][112]LogPlayLevel: PIE: World Init took: (0.002038s)
+[2015.09.17-14.46.59:085][112]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.013488s)
+[2015.09.17-14.46.59:134][112]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.46.59:146][112]LogInit: FAudioDevice initialized.
+[2015.09.17-14.46.59:197][112]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.46.59:197][112]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.46.59:202][112]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.46.59
+[2015.09.17-14.46.59:203][112]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.59:203][112]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.46.59:204][112]LogWorld: Bringing up level for play took: 0.004990
+[2015.09.17-14.46.59:207][112]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.101
+[2015.09.17-14.46.59:208][112]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.02:649][323]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.02:690][323]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.02:759][324]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098CFEC6D40
+[2015.09.17-14.47.08:415][617]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.08:415][617]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.47.08:415][617]PIE: New page: PIE session: Test (Sep 17, 2015, 6:47:08 AM)
+[2015.09.17-14.47.08:416][617]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.47.08:427][617]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010952s)
+[2015.09.17-14.47.08:428][617]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.47.08:428][617]LogPlayLevel: PIE: World Init took: (0.001742s)
+[2015.09.17-14.47.08:429][617]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.013125s)
+[2015.09.17-14.47.08:475][617]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.47.08:486][617]LogInit: FAudioDevice initialized.
+[2015.09.17-14.47.08:532][617]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.47.08:532][617]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.47.08:539][617]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.47.08
+[2015.09.17-14.47.08:539][617]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.47.08:539][617]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.47.08:540][617]LogWorld: Bringing up level for play took: 0.004779
+[2015.09.17-14.47.08:543][617]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.563
+[2015.09.17-14.47.08:544][617]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.35:401][320]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.35:441][320]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.47.35:510][321]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098A69463E0
+[2015.09.17-14.47.42:427][664]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.47.45:515][823]LogEditorViewport: Clicking Background
+[2015.09.17-14.47.47:330][917]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (Fluttershy)
+[2015.09.17-14.47.47:434][918]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.47.50:469][ 70]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.47.59:250][514]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.48.04:847][803]LogEditorViewport: Clicking Background
+[2015.09.17-14.48.47:525][945]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.48.47:525][945]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.48.47:525][945]PIE: New page: PIE session: Test (Sep 17, 2015, 6:48:47 AM)
+[2015.09.17-14.48.47:526][945]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.48.47:536][945]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010823s)
+[2015.09.17-14.48.47:538][945]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.48.47:538][945]LogPlayLevel: PIE: World Init took: (0.001981s)
+[2015.09.17-14.48.47:539][945]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.013122s)
+[2015.09.17-14.48.47:586][945]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.48.47:598][945]LogInit: FAudioDevice initialized.
+[2015.09.17-14.48.47:646][945]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.48.47:646][945]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.48.47:652][945]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.48.47
+[2015.09.17-14.48.47:652][945]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.48.47:653][945]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.48.47:653][945]LogWorld: Bringing up level for play took: 0.005227
+[2015.09.17-14.48.47:672][945]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.566
+[2015.09.17-14.48.47:673][945]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.50.10:139][459]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.50.10:182][459]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.50.10:251][460]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098845E8900
+[2015.09.17-14.50.36:524][817]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-14.51.19:482][473]LogSavePackage: Save=153.586426ms
+[2015.09.17-14.51.19:482][473]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Test_Auto38D406ACE42481639955DCE856E49607E.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Levels/Test_Auto3.umap'
+[2015.09.17-14.51.19:496][473]LogSavePackage: Total save time: 187.159404ms
+[2015.09.17-14.51.19:496][473]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Levels/Test_Auto3.umap
+[2015.09.17-14.51.19:500][473]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Test' took 0.269
+[2015.09.17-14.51.19:500][473]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.269
+[2015.09.17-14.51.32:564][515]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CloudsdaleTrackUE_Export)
+[2015.09.17-14.51.32:798][521]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.51.35:795][693]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-14.51.38:130][819]LogEditorViewport: Clicking Background
+[2015.09.17-14.51.56:011][391]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-14.51.56:165][394]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.51.56:772][425]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.51.56:924][430]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (TwilightKart)
+[2015.09.17-14.51.57:662][468]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-14.51.57:796][472]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.51.58:417][504]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.51.58:565][509]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (TwilightKart)
+[2015.09.17-14.51.59:138][538]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-14.51.59:289][543]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.52.00:935][630]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.52.01:087][635]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (TwilightKart)
+[2015.09.17-14.52.03:256][749]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-14.52.03:381][753]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2015.09.17-14.52.46:267][566]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.52.46:267][566]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.52.46:267][566]PIE: New page: PIE session: Test (Sep 17, 2015, 6:52:46 AM)
+[2015.09.17-14.52.46:268][566]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.52.46:278][566]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010668s)
+[2015.09.17-14.52.46:280][566]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.52.46:280][566]LogPlayLevel: PIE: World Init took: (0.001954s)
+[2015.09.17-14.52.46:280][566]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.012934s)
+[2015.09.17-14.52.46:362][566]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.52.46:374][566]LogInit: FAudioDevice initialized.
+[2015.09.17-14.52.46:425][566]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.52.46:425][566]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.52.46:431][566]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.52.46
+[2015.09.17-14.52.46:431][566]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.52.46:432][566]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.52.46:433][566]LogWorld: Bringing up level for play took: 0.005256
+[2015.09.17-14.52.46:436][566]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.67
+[2015.09.17-14.52.46:437][566]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.52.56:202][158]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.52.56:251][158]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.52.56:290][158]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098FC2345E0
+[2015.09.17-14.53.53:676][335]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.53.53:676][335]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-14.53.53:676][335]PIE: New page: PIE session: Test (Sep 17, 2015, 6:53:53 AM)
+[2015.09.17-14.53.53:676][335]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-14.53.53:687][335]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011024s)
+[2015.09.17-14.53.53:689][335]LogAIModule: Creating AISystem for world Test
+[2015.09.17-14.53.53:689][335]LogPlayLevel: PIE: World Init took: (0.002070s)
+[2015.09.17-14.53.53:690][335]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.013404s)
+[2015.09.17-14.53.53:764][335]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-14.53.53:778][335]LogInit: FAudioDevice initialized.
+[2015.09.17-14.53.53:827][335]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-14.53.53:827][335]LogWorld: Game class is 'GameMode'
+[2015.09.17-14.53.53:833][335]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-10.53.53
+[2015.09.17-14.53.53:833][335]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.53.53:834][335]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-14.53.53:834][335]LogWorld: Bringing up level for play took: 0.005410
+[2015.09.17-14.53.53:881][335]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.775
+[2015.09.17-14.53.53:881][335]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.54.10:431][ 41]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.54.10:533][ 41]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-14.54.10:596][ 41]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098E56FB4C0
+[2015.09.17-15.00.34:823][ 69]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart Development Assets/Model assets/Tracks and track assets/Ponyville/Tall House.fbx)
+[2015.09.17-15.00.35:208][ 69]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2015.09.17-15.00.35:208][ 69]LogFbx: ItemName: Geometry, ItemCount : 1
+[2015.09.17-15.00.35:208][ 69]LogFbx: ItemName: Model, ItemCount : 1
+[2015.09.17-15.00.35:208][ 69]LogFbx: ItemName: Material, ItemCount : 1
+[2015.09.17-15.00.35:208][ 69]LogFbx: ItemName: Texture, ItemCount : 1
+[2015.09.17-15.00.35:208][ 69]LogFbx: ItemName: Video, ItemCount : 1
+[2015.09.17-15.00.35:241][ 69]LogFbx: Loading FBX Scene from ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart Development Assets/Model assets/Tracks and track assets/Ponyville/Tall House.fbx
+[2015.09.17-15.00.35:284][ 69]LogFbx: FBX Scene Loaded Succesfully
+[2015.09.17-15.00.41:108][ 69]LogFbx: Loading FBX Scene from ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart Development Assets/Model assets/Tracks and track assets/Ponyville/Tall House.fbx
+[2015.09.17-15.00.41:118][ 69]LogFbx: FBX Scene Loaded Succesfully
+[2015.09.17-15.00.41:205][ 69]LogFbx:Warning: Triangulating static mesh Cube
+[2015.09.17-15.00.41:372][ 69]LogStaticMesh: Building static mesh Tall_House...
+[2015.09.17-15.00.41:414][ 69]LogStaticMesh: Built static mesh [0.042080.2s] /Game/Models/TallHouse/Tall_House.Tall_House
+[2015.09.17-15.00.41:513][ 69]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2015.09.17-15.01.21:358][576]LogActorFactory: Actor Factory created Tall_House
+[2015.09.17-15.01.22:316][617]LogActorFactory: Actor Factory created Tall_House
+[2015.09.17-15.02.00:986][611]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000009881ABEA20
+[2015.09.17-15.02.01:174][611]LogSavePackage: Save=149.500290ms
+[2015.09.17-15.02.01:174][611]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Test_Auto47E2634EE40F4362CC8E5AE96620B7920.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Levels/Test_Auto4.umap'
+[2015.09.17-15.02.01:183][611]LogSavePackage: Total save time: 177.818689ms
+[2015.09.17-15.02.01:183][611]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Levels/Test_Auto4.umap
+[2015.09.17-15.02.01:186][611]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Test' took 0.238
+[2015.09.17-15.02.01:186][611]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.238
+[2015.09.17-15.02.01:209][611]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/TallHouse/Tall_House] ([1] browsable assets)...
+[2015.09.17-15.02.01:240][611]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Models/TallHouse/Tall_House.Tall_House]
+[2015.09.17-15.02.01:240][611]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/TallHouse/Tall_House]
+[2015.09.17-15.02.01:263][611]LogSavePackage: Save=19.627914ms
+[2015.09.17-15.02.01:263][611]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Tall_House_Auto4F7FCD09A4302BFB8F72CFDB140B5F19B.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/Tall_House_Auto4.uasset'
+[2015.09.17-15.02.01:265][611]LogSavePackage: Total save time: 22.639468ms
+[2015.09.17-15.02.01:265][611]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/Tall_House_Auto4.uasset
+[2015.09.17-15.02.01:272][611]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/TallHouse/Tall_HouseMaterial] ([1] browsable assets)...
+[2015.09.17-15.02.01:302][611]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Models/TallHouse/Tall_HouseMaterial.Tall_HouseMaterial]
+[2015.09.17-15.02.01:302][611]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/TallHouse/Tall_HouseMaterial]
+[2015.09.17-15.02.01:325][611]LogSavePackage: Save=20.216536ms
+[2015.09.17-15.02.01:326][611]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Tall_HouseMaterial_Auto461C96F854ABDB913F2A95E993180CF6A.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/Tall_HouseMaterial_Auto4.uasset'
+[2015.09.17-15.02.01:328][611]LogSavePackage: Total save time: 23.095604ms
+[2015.09.17-15.02.01:328][611]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/Tall_HouseMaterial_Auto4.uasset
+[2015.09.17-15.02.01:328][611]LogFileHelpers: Auto-saving content packages took 0.139
+[2015.09.17-15.03.05:575][388]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart Development Assets/Model assets/Tracks and track assets/Ponyville/TallHouseTexture.png)
+[2015.09.17-15.03.05:676][388]LogTexture:Display: Building textures: TallHouseTexture (AutoDXT)
+[2015.09.17-15.03.13:974][785]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.03.14:276][785]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.03.14:286][785]LogMaterial: 0.000232 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.03.19:666][  9]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.09.17-15.03.19:666][  9]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.09.17-15.03.19:666][  9]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.09.17-15.03.24:896][301]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.03.24:906][301]LogMaterial: 0.000124 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.03.24:932][301]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.09.17-15.03.27:684][423]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.09.17-15.03.27:684][423]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.09.17-15.03.27:684][423]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.09.17-15.03.31:568][616]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.03.31:569][616]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Tall_HouseMaterial for platform PCD3D_SM5, Default Material will be used in game.
+[2015.09.17-15.03.31:569][616]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2015.09.17-15.03.31:569][616]LogMaterial: 0.000186 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.03.31:600][616]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.09.17-15.03.31:602][616]MaterialEditorStats:Error: Error [SM5] (Node TextureSample) TextureSample> Missing input texture
+[2015.09.17-15.03.55:185][735]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.03.55:194][735]LogMaterial: 0.000146 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.03.55:223][735]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.09.17-15.03.59:418][897]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.09.17-15.03.59:418][897]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.09.17-15.03.59:418][897]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.09.17-15.04.06:979][290]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.04.06:989][290]LogMaterial: 0.000191 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.04.07:020][290]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.09.17-15.04.08:919][373]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.04.08:929][373]LogMaterial: 0.000105 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.04.08:955][373]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.09.17-15.04.10:885][461]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.04.10:895][461]LogMaterial: 0.000092 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.04.10:927][461]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.09.17-15.04.12:021][506]LogMaterialEditor: Applying material Tall_HouseMaterial
+[2015.09.17-15.04.14:844][506]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.04.14:880][506]LogMaterial: 0.000137 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.04.14:924][506]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.04.14:974][506]LogMaterial: Missing cached shader map for material Tall_HouseMaterial, compiling. 
+[2015.09.17-15.04.14:989][506]LogMaterial: 0.001017 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.09.17-15.04.48:332][128]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (TwilightSparkleHighRes)
+[2015.09.17-15.05.03:636][847]LogEditorViewport: Clicking Background
+[2015.09.17-15.05.08:566][ 93]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tall_House)
+[2015.09.17-15.05.45:288][781]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.05.45:288][781]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-15.05.45:288][781]PIE: New page: PIE session: Test (Sep 17, 2015, 7:05:45 AM)
+[2015.09.17-15.05.45:289][781]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-15.05.45:300][781]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011069s)
+[2015.09.17-15.05.45:301][781]LogAIModule: Creating AISystem for world Test
+[2015.09.17-15.05.45:302][781]LogPlayLevel: PIE: World Init took: (0.001855s)
+[2015.09.17-15.05.45:302][781]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.013311s)
+[2015.09.17-15.05.45:337][781]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000009897536200
+[2015.09.17-15.05.45:353][781]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-15.05.45:366][781]LogInit: FAudioDevice initialized.
+[2015.09.17-15.05.45:416][781]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-15.05.45:416][781]LogWorld: Game class is 'GameMode'
+[2015.09.17-15.05.45:422][781]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-11.05.45
+[2015.09.17-15.05.45:422][781]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.05.45:422][781]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.05.45:423][781]LogWorld: Bringing up level for play took: 0.005117
+[2015.09.17-15.05.45:473][781]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.367
+[2015.09.17-15.05.45:473][781]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.05.57:581][188]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CloudsdaleTrackUE_Export)
+[2015.09.17-15.05.58:749][230]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CloudsdaleTrackUE_Export)
+[2015.09.17-15.05.59:485][259]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CloudsdaleTrackUE_Export)
+[2015.09.17-15.06.04:305][404]LogSelection:Warning: PIE object was selected: "SkeletalMeshActor /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.Fluttershy"
+[2015.09.17-15.06.04:890][429]LogSelection:Warning: PIE object was selected: "StaticMeshActor /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.TwilightKart_8"
+[2015.09.17-15.06.05:469][455]LogSelection:Warning: PIE object was selected: "SkeletalMeshActor /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.TwilightSparkle"
+[2015.09.17-15.06.07:858][558]LogSelection:Warning: PIE object was selected: "StaticMeshActor /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.TwilightKart_8"
+[2015.09.17-15.06.17:927][ 24]Cmd: TRANSACTION UNDO
+[2015.09.17-15.06.17:927][ 24]LogEditorTransaction: Undo Set actor rotation
+[2015.09.17-15.06.19:344][ 82]Cmd: TRANSACTION UNDO
+[2015.09.17-15.06.19:344][ 82]LogEditorTransaction: Undo Set actor rotation
+[2015.09.17-15.06.47:207][524]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.47:318][524]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.47:356][524]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098CBBF9B20
+[2015.09.17-15.06.49:683][651]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.49:683][651]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-15.06.49:683][651]PIE: New page: PIE session: Test (Sep 17, 2015, 7:06:49 AM)
+[2015.09.17-15.06.49:683][651]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-15.06.49:696][651]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012861s)
+[2015.09.17-15.06.49:698][651]LogAIModule: Creating AISystem for world Test
+[2015.09.17-15.06.49:698][651]LogPlayLevel: PIE: World Init took: (0.001822s)
+[2015.09.17-15.06.49:698][651]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.015040s)
+[2015.09.17-15.06.49:749][651]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-15.06.49:760][651]LogInit: FAudioDevice initialized.
+[2015.09.17-15.06.49:811][651]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-15.06.49:811][651]LogWorld: Game class is 'GameMode'
+[2015.09.17-15.06.49:818][651]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-11.06.49
+[2015.09.17-15.06.49:818][651]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.06.49:818][651]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.06.49:819][651]LogWorld: Bringing up level for play took: 0.004994
+[2015.09.17-15.06.49:867][651]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.761
+[2015.09.17-15.06.49:867][651]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.51:956][740]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.52:066][740]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.52:160][741]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000009897BA2700
+[2015.09.17-15.06.56:803][ 47]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.56:803][ 47]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-15.06.56:803][ 47]PIE: New page: PIE session: Test (Sep 17, 2015, 7:06:56 AM)
+[2015.09.17-15.06.56:803][ 47]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-15.06.56:814][ 47]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010526s)
+[2015.09.17-15.06.56:815][ 47]LogAIModule: Creating AISystem for world Test
+[2015.09.17-15.06.56:816][ 47]LogPlayLevel: PIE: World Init took: (0.001874s)
+[2015.09.17-15.06.56:816][ 47]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.012770s)
+[2015.09.17-15.06.56:865][ 47]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-15.06.56:876][ 47]LogInit: FAudioDevice initialized.
+[2015.09.17-15.06.56:924][ 47]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-15.06.56:924][ 47]LogWorld: Game class is 'GameMode'
+[2015.09.17-15.06.56:931][ 47]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-11.06.56
+[2015.09.17-15.06.56:931][ 47]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.06.56:932][ 47]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.06.56:932][ 47]LogWorld: Bringing up level for play took: 0.005478
+[2015.09.17-15.06.56:936][ 47]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.17
+[2015.09.17-15.06.56:936][ 47]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.58:097][118]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.58:179][118]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.06.58:265][119]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098C70F1080
+[2015.09.17-15.07.08:406][583]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.07.08:406][583]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-15.07.08:406][583]PIE: New page: PIE session: Test (Sep 17, 2015, 7:07:08 AM)
+[2015.09.17-15.07.08:407][583]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-15.07.08:418][583]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010811s)
+[2015.09.17-15.07.08:419][583]LogAIModule: Creating AISystem for world Test
+[2015.09.17-15.07.08:419][583]LogPlayLevel: PIE: World Init took: (0.001798s)
+[2015.09.17-15.07.08:420][583]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.012945s)
+[2015.09.17-15.07.08:498][583]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-15.07.08:510][583]LogInit: FAudioDevice initialized.
+[2015.09.17-15.07.08:559][583]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-15.07.08:559][583]LogWorld: Game class is 'GameMode'
+[2015.09.17-15.07.08:565][583]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-11.07.08
+[2015.09.17-15.07.08:565][583]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.07.08:565][583]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-15.07.08:566][583]LogWorld: Bringing up level for play took: 0.004904
+[2015.09.17-15.07.08:569][583]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.537
+[2015.09.17-15.07.08:570][583]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.07.15:314][989]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.07.15:366][989]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-15.07.15:405][989]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098FC234A40
+[2015.09.17-15.07.47:684][315]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Test" FILE="../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2015.09.17-15.07.47:915][315]LogSavePackage: Save=151.711044ms
+[2015.09.17-15.07.47:916][315]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/TestC9C3DFC5494BF3DE09A1229ECDE00E4F.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap'
+[2015.09.17-15.07.47:925][315]LogSavePackage: Total save time: 177.846558ms
+[2015.09.17-15.07.47:925][315]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap
+[2015.09.17-15.17.51:262][231]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Test' took 0.083
+[2015.09.17-15.17.52:944][231]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/TallHouse/Tall_HouseMaterial] ([1] browsable assets)...
+[2015.09.17-15.17.53:024][231]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Models/TallHouse/Tall_HouseMaterial.Tall_HouseMaterial]
+[2015.09.17-15.17.53:024][231]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/TallHouse/Tall_HouseMaterial]
+[2015.09.17-15.17.55:418][231]LogSavePackage: Save=1529.227051ms
+[2015.09.17-15.17.55:436][231]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Tall_HouseMaterial_Auto56C903ECF412DFDE73A59FA897845FC9E.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/Tall_HouseMaterial_Auto5.uasset'
+[2015.09.17-15.17.55:924][231]LogSavePackage: Total save time: 2502.291560ms
+[2015.09.17-15.17.55:924][231]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/Tall_HouseMaterial_Auto5.uasset
+[2015.09.17-15.17.55:931][231]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/TallHouse/TallHouseTexture] ([1] browsable assets)...
+[2015.09.17-15.17.55:951][231]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Models/TallHouse/TallHouseTexture.TallHouseTexture]
+[2015.09.17-15.17.55:951][231]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/TallHouse/TallHouseTexture]
+[2015.09.17-15.17.57:106][231]LogSavePackage: Save=511.346069ms
+[2015.09.17-15.17.57:319][231]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/TallHouseTexture_Auto56C6E8B5544F5478BB093BA8FD0CF65F5.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/TallHouseTexture_Auto5.uasset'
+[2015.09.17-15.17.58:027][231]LogSavePackage: Total save time: 1433.781739ms
+[2015.09.17-15.17.58:027][231]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Models/TallHouse/TallHouseTexture_Auto5.uasset
+[2015.09.17-15.17.58:028][231]LogFileHelpers: Auto-saving content packages took 5.910
+[2015.09.17-16.37.11:368][454]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.11:369][454]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-16.37.11:370][454]PIE: New page: PIE session: Test (Sep 17, 2015, 8:37:11 AM)
+[2015.09.17-16.37.11:372][454]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-16.37.11:453][454]LogPlayLevel: PIE: StaticDuplicateObject took: (0.081086s)
+[2015.09.17-16.37.11:527][454]LogAIModule: Creating AISystem for world Test
+[2015.09.17-16.37.11:529][454]LogPlayLevel: PIE: World Init took: (0.075659s)
+[2015.09.17-16.37.11:531][454]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.158670s)
+[2015.09.17-16.37.11:733][454]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-16.37.11:748][454]LogInit: FAudioDevice initialized.
+[2015.09.17-16.37.11:981][454]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-16.37.11:981][454]LogWorld: Game class is 'GameMode'
+[2015.09.17-16.37.12:012][454]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-12.37.12
+[2015.09.17-16.37.12:013][454]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.37.12:013][454]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.37.12:014][454]LogWorld: Bringing up level for play took: 0.008286
+[2015.09.17-16.37.12:072][454]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.966
+[2015.09.17-16.37.12:072][454]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.16:780][897]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.16:868][897]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.16:932][897]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000009881ABEC00
+[2015.09.17-16.37.22:545][232]LogEditorViewport: Clicking Background
+[2015.09.17-16.37.23:402][300]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.23:402][300]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-16.37.23:402][300]PIE: New page: PIE session: Test (Sep 17, 2015, 8:37:23 AM)
+[2015.09.17-16.37.23:402][300]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-16.37.23:416][300]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014089s)
+[2015.09.17-16.37.23:419][300]LogAIModule: Creating AISystem for world Test
+[2015.09.17-16.37.23:419][300]LogPlayLevel: PIE: World Init took: (0.002409s)
+[2015.09.17-16.37.23:419][300]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.016948s)
+[2015.09.17-16.37.23:469][300]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-16.37.23:480][300]LogInit: FAudioDevice initialized.
+[2015.09.17-16.37.23:525][300]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-16.37.23:525][300]LogWorld: Game class is 'GameMode'
+[2015.09.17-16.37.23:532][300]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-12.37.23
+[2015.09.17-16.37.23:532][300]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.37.23:533][300]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.37.23:534][300]LogWorld: Bringing up level for play took: 0.006368
+[2015.09.17-16.37.23:538][300]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.432
+[2015.09.17-16.37.23:538][300]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.24:657][401]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.24:698][401]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.24:767][402]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000009897BA1080
+[2015.09.17-16.37.26:788][569]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.26:788][569]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-16.37.26:788][569]PIE: New page: PIE session: Test (Sep 17, 2015, 8:37:26 AM)
+[2015.09.17-16.37.26:788][569]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-16.37.26:801][569]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013008s)
+[2015.09.17-16.37.26:803][569]LogAIModule: Creating AISystem for world Test
+[2015.09.17-16.37.26:803][569]LogPlayLevel: PIE: World Init took: (0.001928s)
+[2015.09.17-16.37.26:803][569]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.015301s)
+[2015.09.17-16.37.26:851][569]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-16.37.26:862][569]LogInit: FAudioDevice initialized.
+[2015.09.17-16.37.26:915][569]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-16.37.26:915][569]LogWorld: Game class is 'GameMode'
+[2015.09.17-16.37.26:922][569]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-12.37.26
+[2015.09.17-16.37.26:923][569]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.37.26:923][569]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.37.26:924][569]LogWorld: Bringing up level for play took: 0.006581
+[2015.09.17-16.37.26:929][569]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.177
+[2015.09.17-16.37.26:930][569]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.29:427][808]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.29:467][808]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.37.29:536][809]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098979E9260
+[2015.09.17-16.42.52:239][ 46]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.42.52:239][ 46]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-16.42.52:239][ 46]PIE: New page: PIE session: Test (Sep 17, 2015, 8:42:52 AM)
+[2015.09.17-16.42.52:239][ 46]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-16.42.52:252][ 46]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012506s)
+[2015.09.17-16.42.52:254][ 46]LogAIModule: Creating AISystem for world Test
+[2015.09.17-16.42.52:254][ 46]LogPlayLevel: PIE: World Init took: (0.002296s)
+[2015.09.17-16.42.52:254][ 46]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.015172s)
+[2015.09.17-16.42.52:362][ 46]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-16.42.52:374][ 46]LogInit: FAudioDevice initialized.
+[2015.09.17-16.42.52:470][ 46]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-16.42.52:470][ 46]LogWorld: Game class is 'GameMode'
+[2015.09.17-16.42.52:477][ 46]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-12.42.52
+[2015.09.17-16.42.52:477][ 46]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.42.52:478][ 46]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-16.42.52:479][ 46]LogWorld: Bringing up level for play took: 0.006298
+[2015.09.17-16.42.52:484][ 46]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test -0.623
+[2015.09.17-16.42.52:484][ 46]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.42.59:452][710]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.42.59:495][710]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-16.42.59:568][711]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098CF38A980
+[2015.09.17-18.15.20:745][145]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-18.15.20:747][145]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-18.16.32:190][189]LogSavePackage: Save=310.365784ms
+[2015.09.17-18.16.32:190][189]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Test_Auto6659E59BB40FC00FAED421581B86B2EEE.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Levels/Test_Auto6.umap'
+[2015.09.17-18.16.32:201][189]LogSavePackage: Total save time: 1134.766012ms
+[2015.09.17-18.16.32:201][189]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Autosaves/Game/Levels/Test_Auto6.umap
+[2015.09.17-18.16.32:292][189]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Test' took 1.709
+[2015.09.17-18.16.32:292][189]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.709
+[2015.09.17-18.19.31:947][569]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tall_House)
+[2015.09.17-18.19.33:146][639]Cmd: DELETE
+[2015.09.17-18.19.33:146][639]Cmd: ACTOR DELETE
+[2015.09.17-18.19.33:148][639]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.09.17-18.19.33:190][639]LogEditorActor: Deleted 1 Actors (0.044 secs)
+[2015.09.17-18.19.35:215][834]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (TwilightSparkleHighRes)
+[2015.09.17-18.19.35:641][859]Cmd: DELETE
+[2015.09.17-18.19.35:641][859]Cmd: ACTOR DELETE
+[2015.09.17-18.19.35:643][859]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2015.09.17-18.19.35:683][859]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2015.09.17-18.19.38:547][134]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2015.09.17-18.19.39:743][234]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.09.17-18.19.41:841][408]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-18.19.41:841][408]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.09.17-18.19.41:842][408]PIE: New page: PIE session: Test (Sep 17, 2015, 10:19:41 AM)
+[2015.09.17-18.19.41:842][408]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test
+[2015.09.17-18.19.41:857][408]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014821s)
+[2015.09.17-18.19.41:860][408]LogAIModule: Creating AISystem for world Test
+[2015.09.17-18.19.41:860][408]LogPlayLevel: PIE: World Init took: (0.003304s)
+[2015.09.17-18.19.41:861][408]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test.Test to /Game/Levels/UEDPIE_0_Test.Test (0.018595s)
+[2015.09.17-18.19.41:910][408]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.09.17-18.19.41:926][408]LogInit: FAudioDevice initialized.
+[2015.09.17-18.19.41:995][408]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/NewGameMode.NewGameMode_C'
+[2015.09.17-18.19.41:995][408]LogWorld: Game class is 'GameMode'
+[2015.09.17-18.19.42:003][408]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test.Test up for play (max tick rate 0) at 2015.09.17-14.19.42
+[2015.09.17-18.19.42:003][408]LogActor:Warning: GameSession /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameSession_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-18.19.42:004][408]LogActor:Warning: GameNetworkManager /Game/Levels/UEDPIE_0_Test.Test:PersistentLevel.GameNetworkManager_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.09.17-18.19.42:004][408]LogWorld: Bringing up level for play took: 0.005985
+[2015.09.17-18.19.42:010][408]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test 0.903
+[2015.09.17-18.19.42:010][408]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-18.19.48:279][ 36]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-18.19.48:362][ 36]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/Test.Test:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/Test.Test:PersistentLevel.Test' with GeneratedClass '/Game/Levels/Test.Test_C' with ClassGeneratedBy '/Game/Levels/Test.Test:PersistentLevel.Test'
+[2015.09.17-18.19.48:445][ 37]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098FBF5C2C0
+[2015.09.17-18.20.00:097][283]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Test" FILE="../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2015.09.17-18.20.00:301][283]LogSavePackage: Save=148.677002ms
+[2015.09.17-18.20.00:301][283]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/TestC7079241427C0F75B0D64484C3FDB338.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap'
+[2015.09.17-18.20.00:324][283]LogSavePackage: Total save time: 183.168601ms
+[2015.09.17-18.20.00:324][283]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Levels/Test.umap
+[2015.09.17-18.20.00:380][283]LogFileHelpers: Saving map 'Test' took 8.832
+[2015.09.17-18.20.00:421][283]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/TallHouse/Tall_House" FILE="../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/Tall_House.uasset" SILENT=true
+[2015.09.17-18.20.00:444][283]LogSavePackage: Save=19.712002ms
+[2015.09.17-18.20.00:444][283]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Tall_House2FAD25464DA72B486D8AAFB8B657B4B1.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/Tall_House.uasset'
+[2015.09.17-18.20.00:450][283]LogSavePackage: Total save time: 25.970273ms
+[2015.09.17-18.20.00:450][283]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/Tall_House.uasset
+[2015.09.17-18.20.00:517][283]LogSavePackage: Save=20.158848ms
+[2015.09.17-18.20.00:517][283]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/Tall_HouseMaterialAC124F1B49F59F5A62F08D8EE0CF317A.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/Tall_HouseMaterial.uasset'
+[2015.09.17-18.20.00:532][283]LogSavePackage: Total save time: 36.524896ms
+[2015.09.17-18.20.00:532][283]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/Tall_HouseMaterial.uasset
+[2015.09.17-18.20.00:606][283]LogSavePackage: Save=40.622761ms
+[2015.09.17-18.20.00:606][283]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Saved/TallHouseTexture5C81C89A45B4434940210A874A6D6245.tmp' to '../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/TallHouseTexture.uasset'
+[2015.09.17-18.20.00:621][283]LogSavePackage: Total save time: 55.888806ms
+[2015.09.17-18.20.00:621][283]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/PonyKart Package/PonyKart/PonyKart/Content/Models/TallHouse/TallHouseTexture.uasset
+[2015.09.17-18.20.05:369][722]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098CB893C40
+[2015.09.17-18.20.05:741][722]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2015.09.17-18.20.06:265][723]Cmd: QUIT_EDITOR
+[2015.09.17-18.20.07:434][723]LogExit: Preparing to exit.
+[2015.09.17-18.20.09:800][723]LogExit: Editor shut down
+[2015.09.17-18.20.09:802][723]LogExit: Transaction tracking system shut down
+[2015.09.17-18.20.09:805][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098E001E3E0
+[2015.09.17-18.20.09:892][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B8F00180
+[2015.09.17-18.20.09:894][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098FC1B5E40
+[2015.09.17-18.20.09:896][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098A2013A60
+[2015.09.17-18.20.09:896][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098C463B7E0
+[2015.09.17-18.20.09:900][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B9E68A40
+[2015.09.17-18.20.09:901][723]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000098B96828E0
+[2015.09.17-18.20.11:836][723]LogExit: Object subsystem successfully closed.
+[2015.09.17-18.20.12:194][723]LogD3D11RHI: Shutdown
+[2015.09.17-18.20.12:194][723]LogD3D11RHI: CleanupD3DDevice
+[2015.09.17-18.20.12:557][723]LogD3D11RHI: ~FD3D11DynamicRHI
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module MaterialEditor (200)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (199)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module BlueprintGraph (198)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module CrashTracker (197)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module SceneOutliner (196)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module SuperSearch (195)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module WidgetCarousel (194)
+[2015.09.17-18.20.14:443][723]LogModuleManager: Shutting down and abandoning module AddContentDialog (193)
+[2015.09.17-18.20.14:469][723]LogModuleManager: Shutting down and abandoning module EditorWidgets (192)
+[2015.09.17-18.20.14:469][723]LogModuleManager: Shutting down and abandoning module CollectionManager (191)
+[2015.09.17-18.20.14:477][723]LogModuleManager: Shutting down and abandoning module StatsViewer (190)
+[2015.09.17-18.20.14:498][723]LogModuleManager: Shutting down and abandoning module FoliageEdit (189)
+[2015.09.17-18.20.14:501][723]LogModuleManager: Shutting down and abandoning module LandscapeEditor (188)
+[2015.09.17-18.20.14:528][723]LogModuleManager: Shutting down and abandoning module ActorPickerMode (187)
+[2015.09.17-18.20.14:528][723]LogModuleManager: Shutting down and abandoning module GeometryMode (186)
+[2015.09.17-18.20.14:528][723]LogModuleManager: Shutting down and abandoning module TextureAlignMode (185)
+[2015.09.17-18.20.14:528][723]LogModuleManager: Shutting down and abandoning module BspMode (184)
+[2015.09.17-18.20.14:528][723]LogModuleManager: Shutting down and abandoning module PlacementMode (183)
+[2015.09.17-18.20.14:528][723]LogModuleManager: Shutting down and abandoning module AutomationWorker (182)
+[2015.09.17-18.20.14:535][723]LogModuleManager: Shutting down and abandoning module CharacterAI (181)
+[2015.09.17-18.20.14:535][723]LogModuleManager: Shutting down and abandoning module SmartSnapping (180)
+[2015.09.17-18.20.14:535][723]LogModuleManager: Shutting down and abandoning module ViewportSnapping (179)
+[2015.09.17-18.20.14:535][723]LogModuleManager: Shutting down and abandoning module LogVisualizer (178)
+[2015.09.17-18.20.14:551][723]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (177)
+[2015.09.17-18.20.14:559][723]LogModuleManager: Shutting down and abandoning module IntroTutorials (176)
+[2015.09.17-18.20.14:576][723]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (175)
+[2015.09.17-18.20.14:576][723]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (174)
+[2015.09.17-18.20.14:579][723]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (173)
+[2015.09.17-18.20.14:579][723]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (172)
+[2015.09.17-18.20.15:566][723]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (171)
+[2015.09.17-18.20.15:566][723]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (170)
+[2015.09.17-18.20.15:566][723]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (169)
+[2015.09.17-18.20.15:566][723]LogModuleManager: Shutting down and abandoning module MergeActors (168)
+[2015.09.17-18.20.15:585][723]LogModuleManager: Shutting down and abandoning module SizeMap (167)
+[2015.09.17-18.20.15:585][723]LogModuleManager: Shutting down and abandoning module TreeMap (166)
+[2015.09.17-18.20.15:592][723]LogModuleManager: Shutting down and abandoning module ReferenceViewer (165)
+[2015.09.17-18.20.15:592][723]LogModuleManager: Shutting down and abandoning module LocalizationService (164)
+[2015.09.17-18.20.15:595][723]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (163)
+[2015.09.17-18.20.15:600][723]LogModuleManager: Shutting down and abandoning module HardwareTargeting (162)
+[2015.09.17-18.20.15:600][723]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (161)
+[2015.09.17-18.20.15:600][723]LogModuleManager: Shutting down and abandoning module UndoHistory (160)
+[2015.09.17-18.20.15:608][723]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (159)
+[2015.09.17-18.20.15:608][723]LogModuleManager: Shutting down and abandoning module UserFeedback (158)
+[2015.09.17-18.20.15:608][723]LogModuleManager: Shutting down and abandoning module XmlParser (157)
+[2015.09.17-18.20.15:612][723]LogModuleManager: Shutting down and abandoning module Blutility (156)
+[2015.09.17-18.20.15:612][723]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (155)
+[2015.09.17-18.20.15:619][723]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (154)
+[2015.09.17-18.20.15:619][723]LogModuleManager: Shutting down and abandoning module InputBindingEditor (153)
+[2015.09.17-18.20.15:630][723]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (152)
+[2015.09.17-18.20.15:630][723]LogModuleManager: Shutting down and abandoning module SettingsEditor (151)
+[2015.09.17-18.20.15:630][723]LogModuleManager: Shutting down and abandoning module ProjectLauncher (150)
+[2015.09.17-18.20.15:648][723]LogModuleManager: Shutting down and abandoning module SessionFrontend (149)
+[2015.09.17-18.20.15:656][723]LogModuleManager: Shutting down and abandoning module ProfilerClient (148)
+[2015.09.17-18.20.15:664][723]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (147)
+[2015.09.17-18.20.15:664][723]LogModuleManager: Shutting down and abandoning module DeviceManager (146)
+[2015.09.17-18.20.15:671][723]LogModuleManager: Shutting down and abandoning module AutomationController (145)
+[2015.09.17-18.20.15:680][723]LogModuleManager: Shutting down and abandoning module AutomationWindow (144)
+[2015.09.17-18.20.15:694][723]LogModuleManager: Shutting down and abandoning module Layers (143)
+[2015.09.17-18.20.15:705][723]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (142)
+[2015.09.17-18.20.15:705][723]LogModuleManager: Shutting down and abandoning module DetailCustomizations (141)
+[2015.09.17-18.20.15:716][723]LogModuleManager: Shutting down and abandoning module PackagesDialog (140)
+[2015.09.17-18.20.15:716][723]LogModuleManager: Shutting down and abandoning module Persona (139)
+[2015.09.17-18.20.15:736][723]LogModuleManager: Shutting down and abandoning module Kismet (138)
+[2015.09.17-18.20.15:744][723]LogModuleManager: Shutting down and abandoning module GraphEditor (137)
+[2015.09.17-18.20.15:745][723]LogModuleManager: Shutting down and abandoning module ClassViewer (136)
+[2015.09.17-18.20.15:747][723]LogModuleManager: Shutting down and abandoning module Toolbox (135)
+[2015.09.17-18.20.15:747][723]LogModuleManager: Shutting down and abandoning module ModuleUI (134)
+[2015.09.17-18.20.15:751][723]LogModuleManager: Shutting down and abandoning module MovieSceneTools (133)
+[2015.09.17-18.20.15:751][723]LogModuleManager: Shutting down and abandoning module OutputLog (132)
+[2015.09.17-18.20.15:755][723]LogModuleManager: Shutting down and abandoning module GammaUI (131)
+[2015.09.17-18.20.15:760][723]LogModuleManager: Shutting down and abandoning module Documentation (130)
+[2015.09.17-18.20.15:761][723]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (129)
+[2015.09.17-18.20.15:771][723]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (128)
+[2015.09.17-18.20.15:775][723]LogModuleManager: Shutting down and abandoning module AnalyticsET (127)
+[2015.09.17-18.20.15:775][723]LogModuleManager: Shutting down and abandoning module Analytics (126)
+[2015.09.17-18.20.15:775][723]LogModuleManager: Shutting down and abandoning module AITestSuite (125)
+[2015.09.17-18.20.15:786][723]LogModuleManager: Shutting down and abandoning module GameplayDebugger (124)
+[2015.09.17-18.20.15:786][723]LogModuleManager: Shutting down and abandoning module AIModule (123)
+[2015.09.17-18.20.15:786][723]LogModuleManager: Shutting down and abandoning module ProfilerService (122)
+[2015.09.17-18.20.15:833][723]LogModuleManager: Shutting down and abandoning module TaskGraph (121)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module SlateRemote (120)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module SteamVRController (119)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module SteamVR (118)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (117)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module OculusRift (116)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module OculusLibrary (115)
+[2015.09.17-18.20.15:845][723]LogModuleManager: Shutting down and abandoning module LeapMotionController (114)
+[2015.09.17-18.20.15:976][723]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (113)
+[2015.09.17-18.20.15:976][723]LogModuleManager: Shutting down and abandoning module CableComponent (112)
+[2015.09.17-18.20.15:976][723]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (111)
+[2015.09.17-18.20.15:976][723]LogModuleManager: Shutting down and abandoning module MessagingDebugger (110)
+[2015.09.17-18.20.15:989][723]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (109)
+[2015.09.17-18.20.16:022][723]LogModuleManager: Shutting down and abandoning module HTML5Networking (108)
+[2015.09.17-18.20.16:022][723]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (107)
+[2015.09.17-18.20.16:022][723]LogModuleManager: Shutting down and abandoning module PluginBrowser (106)
+[2015.09.17-18.20.16:033][723]LogModuleManager: Shutting down and abandoning module EpicSurvey (105)
+[2015.09.17-18.20.16:084][723]LogModuleManager: Shutting down and abandoning module DesktopPlatform (104)
+[2015.09.17-18.20.16:092][723]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (103)
+[2015.09.17-18.20.16:097][723]LogModuleManager: Shutting down and abandoning module UObjectPlugin (102)
+[2015.09.17-18.20.16:097][723]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (101)
+[2015.09.17-18.20.16:107][723]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (100)
+[2015.09.17-18.20.16:116][723]LogModuleManager: Shutting down and abandoning module SourceControl (99)
+[2015.09.17-18.20.16:124][723]LogModuleManager: Shutting down and abandoning module GitSourceControl (98)
+[2015.09.17-18.20.16:129][723]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (97)
+[2015.09.17-18.20.16:129][723]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (96)
+[2015.09.17-18.20.16:134][723]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (95)
+[2015.09.17-18.20.16:142][723]LogModuleManager: Shutting down and abandoning module MeshPaint (94)
+[2015.09.17-18.20.16:155][723]LogModuleManager: Shutting down and abandoning module SlateReflector (93)
+[2015.09.17-18.20.16:166][723]LogModuleManager: Shutting down and abandoning module HotReload (92)
+[2015.09.17-18.20.16:176][723]LogModuleManager: Shutting down and abandoning module MainFrame (91)
+[2015.09.17-18.20.16:177][723]LogModuleManager: Shutting down and abandoning module LevelEditor (90)
+[2015.09.17-18.20.16:200][723]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
+[2015.09.17-18.20.16:210][723]LogModuleManager: Shutting down and abandoning module AssetRegistry (88)
+[2015.09.17-18.20.16:390][723]LogModuleManager: Shutting down and abandoning module ContentBrowser (87)
+[2015.09.17-18.20.16:393][723]LogModuleManager: Shutting down and abandoning module Paper2DEditor (86)
+[2015.09.17-18.20.16:411][723]LogModuleManager: Shutting down and abandoning module UdpMessaging (85)
+[2015.09.17-18.20.16:512][723]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (84)
+[2015.09.17-18.20.16:512][723]LogModuleManager: Shutting down and abandoning module Paper2D (83)
+[2015.09.17-18.20.16:518][723]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (82)
+[2015.09.17-18.20.16:533][723]LogModuleManager: Shutting down and abandoning module Media (81)
+[2015.09.17-18.20.16:533][723]LogModuleManager: Shutting down and abandoning module WmfMedia (80)
+[2015.09.17-18.20.16:537][723]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (79)
+[2015.09.17-18.20.16:537][723]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (78)
+[2015.09.17-18.20.16:538][723]LogModuleManager: Shutting down and abandoning module PropertyEditor (77)
+[2015.09.17-18.20.16:538][723]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (76)
+[2015.09.17-18.20.16:554][723]LogModuleManager: Shutting down and abandoning module FunctionalTesting (75)
+[2015.09.17-18.20.16:554][723]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (74)
+[2015.09.17-18.20.16:561][723]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (73)
+[2015.09.17-18.20.16:561][723]LogModuleManager: Shutting down and abandoning module MessageLog (72)
+[2015.09.17-18.20.16:561][723]LogModuleManager: Shutting down and abandoning module Sequencer (71)
+[2015.09.17-18.20.16:582][723]LogModuleManager: Shutting down and abandoning module AssetTools (70)
+[2015.09.17-18.20.16:598][723]LogModuleManager: Shutting down and abandoning module UMGEditor (69)
+[2015.09.17-18.20.16:616][723]LogModuleManager: Shutting down and abandoning module UMG (68)
+[2015.09.17-18.20.16:621][723]LogModuleManager: Shutting down and abandoning module Slate (67)
+[2015.09.17-18.20.16:621][723]LogModuleManager: Shutting down and abandoning module EditorStyle (66)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module SessionServices (65)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (64)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (63)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module XAudio2 (62)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module Networking (60)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module Core (59)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module KismetCompiler (58)
+[2015.09.17-18.20.16:650][723]LogModuleManager: Shutting down and abandoning module PhysXFormats (57)
+[2015.09.17-18.20.16:676][723]LogModuleManager: Shutting down and abandoning module MeshUtilities (56)
+[2015.09.17-18.20.16:683][723]LogModuleManager: Shutting down and abandoning module CookingStats (55)
+[2015.09.17-18.20.16:688][723]LogModuleManager: Shutting down and abandoning module DerivedDataCache (54)
+[2015.09.17-18.20.16:780][723]LogDerivedDataCache: Shutdown
+[2015.09.17-18.20.16:780][723]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (53)
+[2015.09.17-18.20.16:822][723]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (52)
+[2015.09.17-18.20.16:829][723]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (51)
+[2015.09.17-18.20.16:833][723]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (50)
+[2015.09.17-18.20.16:833][723]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (49)
+[2015.09.17-18.20.16:843][723]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (48)
+[2015.09.17-18.20.16:848][723]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (47)
+[2015.09.17-18.20.16:848][723]LogModuleManager: Shutting down and abandoning module ImageWrapper (46)
+[2015.09.17-18.20.16:848][723]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (45)
+[2015.09.17-18.20.16:848][723]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (44)
+[2015.09.17-18.20.16:848][723]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (43)
+[2015.09.17-18.20.16:848][723]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (42)
+[2015.09.17-18.20.16:853][723]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (41)
+[2015.09.17-18.20.16:863][723]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (40)
+[2015.09.17-18.20.16:864][723]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (39)
+[2015.09.17-18.20.16:929][723]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (38)
+[2015.09.17-18.20.16:945][723]LogModuleManager: Shutting down and abandoning module Messaging (37)
+[2015.09.17-18.20.16:945][723]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (36)
+[2015.09.17-18.20.16:945][723]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (35)
+[2015.09.17-18.20.16:945][723]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (34)
+[2015.09.17-18.20.16:996][723]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (33)
+[2015.09.17-18.20.17:002][723]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (32)
+[2015.09.17-18.20.17:008][723]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (31)
+[2015.09.17-18.20.17:016][723]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (30)
+[2015.09.17-18.20.17:021][723]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (29)
+[2015.09.17-18.20.17:027][723]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (28)
+[2015.09.17-18.20.17:038][723]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (27)
+[2015.09.17-18.20.17:038][723]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (26)
+[2015.09.17-18.20.17:044][723]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (25)
+[2015.09.17-18.20.17:047][723]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (24)
+[2015.09.17-18.20.17:058][723]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (23)
+[2015.09.17-18.20.17:069][723]LogModuleManager: Shutting down and abandoning module TargetPlatform (22)
+[2015.09.17-18.20.17:069][723]LogModuleManager: Shutting down and abandoning module InputCore (21)
+[2015.09.17-18.20.17:070][723]LogModuleManager: Shutting down and abandoning module Settings (20)
+[2015.09.17-18.20.17:070][723]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2015.09.17-18.20.17:070][723]LogModuleManager: Shutting down and abandoning module HTTP (17)
+[2015.09.17-18.20.19:075][723]LogModuleManager: Shutting down and abandoning module XMPP (16)
+[2015.09.17-18.20.19:091][723]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2015.09.17-18.20.19:091][723]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2015.09.17-18.20.19:091][723]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2015.09.17-18.20.19:091][723]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2015.09.17-18.20.19:091][723]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2015.09.17-18.20.19:151][723]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2015.09.17-18.20.19:162][723]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2015.09.17-18.20.19:162][723]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2015.09.17-18.20.19:162][723]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2015.09.17-18.20.19:162][723]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2015.09.17-18.20.19:162][723]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2015.09.17-18.20.19:162][723]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2015.09.17-18.20.19:173][723]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2015.09.17-18.20.19:176][723]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2015.09.17-18.20.19:187][723]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2015.09.17-18.20.19:194][723]LogExit: Exiting.
+[2015.09.17-18.20.19:237][723]Log file closed, 09/17/15 14:20:19

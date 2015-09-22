@@ -1,0 +1,58 @@
+NAME			| COMPOSER	| PROGRESS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	MENU
+Title			| Overkillius	| WIP
+Menu Screen		| makkon	| WIP
+HUB - Skypalace		| Madgvox	| WIP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	APPLE CUP
+Sweet Apple Acres	| makkon	| FINISHED
+Locomotive Rush		| makkon	| FINISHED
+Whitetail Woods 	| Overkillius   | WIP
+Appleloosa      	| wherewolf	| WIP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?!> I RECOMMEND YOU DON'T START ANYTHING BELOW THIS LINE CAUSE WE DON'T KNOW WHAT THE FUCK WE'RE DOING
+<zorg> i'M COUNTING ON YOU TO MAKE A MIGHTY FINE GAME :3
+-------------------------------------------------------------------------------------------------------
+	NATURE RUN CUP
+?????			|		|
+Iron Ponyville Track	| ?!		| WIP
+Everfree Forest		| Makkon	| WIP
+Froggy Bottom Bog	| Makkon	| -
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	CRUSADERS CUP
+Manehattan Streets	| Senator Myth	| WIP
+Pie Rock Farms		|		|
+Crusaders Circuit	| zorg		| -
+Ponyville Square	|		|
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	DASH CUP
+Cloudsdale Skies	| ?!		| WIP
+Fight Camp Course	| Senator	| FINISHED
+Winter Storm		|		|
+Rainbow Dash Road	| penguindf12	| FINISHED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NIGHTMARE CUP
+Diamond Dog Mines	| makkon	| FINISHED
+The Magic Trick		| penguindf12	| WIP
+Ancient Ruins 		| Hooves	| ???
+Luna's Nightmare World	| Cyril		| WIP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	CELESTIA CUP
+Parasprite Chase	| zorg		| WIP
+Philomena Circuit	| 		| 
+Castle Canterlot	|		|
+Celestia Runway		| zorg		| FINISHED (the one with the "d" is the newest version fyi)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	MISC. RACING
+Boss Battle		| ?!		| -
+Final Boss Battle	| ?!		| -
+Invincibilty		| 		|
+Victory 		| 		|
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<?!> Feel free to add tracks as needed
+
+<pyr> I suggest you read the roadmap before taking anything on here
+
+<zorg> hooves, if it's you, then come to irc, i have progress on my remix of your remix :3
