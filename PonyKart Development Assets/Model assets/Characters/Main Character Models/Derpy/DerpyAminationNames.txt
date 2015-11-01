@@ -1,0 +1,22 @@
+Body animaitons:
+
+Stand
+Hover1
+Forward1
+Lift1
+Blink
+Blink2 (2 blinks spread out)
+Flap1
+Flap2 (Same as Flap 1 but 12 fames shorter)
+WingsRest
+
+
+Body/Flag animations:
+
+FlagWave1
+FlagWave2
+
+
+Body/StartLight animations:
+
+HoldStartLight1

@@ -1,0 +1,42 @@
+
+material Lily
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture lily.png
+			}
+		}
+
+	}
+
+}
+
+
+
+material LilyPads
+{
+	technique
+	{
+		pass
+		{
+			
+			scene_blend alpha_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture lilypad_001.png
+			}
+		}
+
+	}
+
+}
+
