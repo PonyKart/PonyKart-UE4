@@ -1,7 +1,0 @@
-Note: these positions are before they are re-scaled, so you will need to divide them by the scaling ratio
-
-BackWheel:
-x = 1.67206, z = 2.01116, y = -0.13449
-
-FrontWheel:
-x = 1.53076, z = -1.89821, y = -0.31831

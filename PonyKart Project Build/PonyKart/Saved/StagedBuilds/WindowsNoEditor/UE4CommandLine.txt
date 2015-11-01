@@ -1,1 +1,0 @@
-../../../PonyKart/PonyKart.uproject  /Game/Levels/Test -Messaging -SessionId=FBC3D4914EC3255EC6C665B8D7B9BB32 -SessionOwner=Amber -SessionName='Play On Device' -iterative

@@ -1,1 +1,0 @@
-Buttons created by Mougal Dash
