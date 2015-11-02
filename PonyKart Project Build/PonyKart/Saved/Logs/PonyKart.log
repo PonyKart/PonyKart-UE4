@@ -5311,4 +5311,490 @@
 [2015.11.02-08.50.44:181][890]LogSavePackage: Total save time: 19.157112ms
 [2015.11.02-08.50.44:181][890]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_Drive.uasset
 [2015.11.02-08.50.44:219][890]LogSavePackage: Save=14.254046ms
-[2015.11.02-08.50.44:219][890]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Rarity_Anim_TurnLeft0566B81D443BDAA991DC76A4EA90C62D.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rari
+[2015.11.02-08.50.44:219][890]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Rarity_Anim_TurnLeft0566B81D443BDAA991DC76A4EA90C62D.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_TurnLeft.uasset'
+[2015.11.02-08.50.44:223][890]LogSavePackage: Total save time: 18.567026ms
+[2015.11.02-08.50.44:223][890]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_TurnLeft.uasset
+[2015.11.02-08.50.44:262][890]LogSavePackage: Save=14.327868ms
+[2015.11.02-08.50.44:262][890]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Rarity_Anim_TurnRightC563B3DB4E736635293FF6985E9F7030.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_TurnRight.uasset'
+[2015.11.02-08.50.44:267][890]LogSavePackage: Total save time: 18.973779ms
+[2015.11.02-08.50.44:267][890]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_TurnRight.uasset
+[2015.11.02-08.50.44:306][890]LogSavePackage: Save=14.735113ms
+[2015.11.02-08.50.44:306][890]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Rarity_Anim_ReverseED1A0181494AE56360DC37BE47A5266B.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_Reverse.uasset'
+[2015.11.02-08.50.44:312][890]LogSavePackage: Total save time: 20.745024ms
+[2015.11.02-08.50.44:312][890]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_Reverse.uasset
+[2015.11.02-08.50.44:351][890]LogSavePackage: Save=14.158224ms
+[2015.11.02-08.50.44:351][890]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Rarity_Anim_DriftRight4084EBC04D7817FFE9DAEF9565248915.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_DriftRight.uasset'
+[2015.11.02-08.50.44:355][890]LogSavePackage: Total save time: 18.898983ms
+[2015.11.02-08.50.44:355][890]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_DriftRight.uasset
+[2015.11.02-08.50.44:394][890]LogSavePackage: Save=14.149913ms
+[2015.11.02-08.50.44:394][890]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Rarity_Anim_DriftLeftCDB3693A4EF3739985C538A1D7DE0FF0.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_DriftLeft.uasset'
+[2015.11.02-08.50.44:398][890]LogSavePackage: Total save time: 18.493202ms
+[2015.11.02-08.50.44:398][890]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Characters/Rarity/Rarity_Anim_DriftLeft.uasset
+[2015.11.02-12.33.31:713][704]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.02-12.33.31:714][704]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.02-12.33.31:715][704]PIE: New page: PIE session: KartTestMap (Nov 2, 2015, 2:33:31 AM)
+[2015.11.02-12.33.31:716][704]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_KartTestMap
+[2015.11.02-12.33.31:942][704]LogPlayLevel: PIE: StaticDuplicateObject took: (0.225486s)
+[2015.11.02-12.33.31:947][704]LogAIModule: Creating AISystem for world KartTestMap
+[2015.11.02-12.33.31:948][704]LogPlayLevel: PIE: World Init took: (0.006042s)
+[2015.11.02-12.33.31:949][704]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/KartTestMap.KartTestMap to /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap (0.233139s)
+[2015.11.02-12.33.32:080][704]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.02-12.33.32:094][704]LogInit: FAudioDevice initialized.
+[2015.11.02-12.33.32:188][704]LogLinker:Warning: Can't find file '/Game/Blueprints/KartTestGameMode'
+[2015.11.02-12.33.32:190][704]LogLinker:Warning: Can't find file '/Game/Blueprints/KartTestGameMode'
+[2015.11.02-12.33.32:190][704]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/Blueprints/KartTestGameMode.KartTestGameMode_C'
+[2015.11.02-12.33.32:190][704]LogWorld: Game class is 'GameMode'
+[2015.11.02-12.33.32:533][704]LogWorld: Bringing World /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap up for play (max tick rate 0) at 2015.11.02-07.33.32
+[2015.11.02-12.33.32:533][704]LogActor:Warning: GameSession /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap:PersistentLevel.GameSession_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.02-12.33.32:534][704]LogActor:Warning: GameNetworkManager /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap:PersistentLevel.GameNetworkManager_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.02-12.33.32:538][704]LogWorld: Bringing up level for play took: 0.344900
+[2015.11.02-12.33.32:543][704]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_KartTestMap 0.657
+[2015.11.02-12.33.32:543][704]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.02-12.33.33:516][756]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.02-12.33.33:580][756]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.02-12.33.33:641][756]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E09295C900
+[2015.11.02-12.33.35:018][840]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigMacKart)
+[2015.11.02-12.33.36:244][897]Cmd: DELETE
+[2015.11.02-12.33.36:244][897]Cmd: ACTOR DELETE
+[2015.11.02-12.33.36:249][897]LogEditorActor: Deleted Actor: StaticMeshActor
+[2015.11.02-12.33.36:295][897]LogEditorActor: Deleted 1 Actors (0.050 secs)
+[2015.11.02-12.33.58:810][835]LogMaterial: Missing cached shader map for material BigMacKartMat, compiling. 
+[2015.11.02-12.33.58:811][835]LogMaterial:Warning: Failed to compile Material /Game/Models/Karts/BigMacKart/BigMacKartMat.BigMacKartMat for platform PCD3D_SM5, Default Material will be used in game.
+[2015.11.02-12.33.58:811][835]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2015.11.02-12.33.58:833][835]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.33.58:834][835]LogMaterial:Warning: Failed to compile Material /Game/Models/Karts/BigMacKart/BigMacKartMetalMat.BigMacKartMetalMat for platform PCD3D_SM5, Default Material will be used in game.
+[2015.11.02-12.33.58:834][835]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2015.11.02-12.33.58:854][835]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.33.58:855][835]LogMaterial:Warning: Failed to compile Material /Game/Models/Karts/BigMacKart/BigMacKartWheelMat.BigMacKartWheelMat for platform PCD3D_SM5, Default Material will be used in game.
+[2015.11.02-12.33.58:855][835]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2015.11.02-12.34.00:545][835]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E0149737E0
+[2015.11.02-12.34.37:169][164]AssetReimport: New page: Outstanding source content changes 2:34:37 AM
+[2015.11.02-12.34.37:332][165]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartTex.jpg)
+[2015.11.02-12.34.44:664][166]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/test.png)
+[2015.11.02-12.35.03:524][167]LogSavePackage: Save=2001.987549ms
+[2015.11.02-12.35.03:524][167]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartTex4AC8EECB49CAF69B599E128F3383D6C9.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartTex.uasset'
+[2015.11.02-12.35.03:530][167]LogSavePackage: Total save time: 2008.330874ms
+[2015.11.02-12.35.03:530][167]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartTex.uasset
+[2015.11.02-12.35.05:090][167]LogSavePackage: Save=1524.803589ms
+[2015.11.02-12.35.05:090][167]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/test8EDC58C94BBCF1C0AE71049F6BB76823.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/test.uasset'
+[2015.11.02-12.35.05:118][167]LogSavePackage: Total save time: 1553.808864ms
+[2015.11.02-12.35.05:118][167]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/test.uasset
+[2015.11.02-12.35.05:138][168]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/mackartTex.jpg)
+[2015.11.02-12.35.11:936][169]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/AOtest.png)
+[2015.11.02-12.35.37:935][170]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/AOdespec.jpg)
+[2015.11.02-12.35.46:247][171]LogSavePackage: Save=1711.875000ms
+[2015.11.02-12.35.46:247][171]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/mackartTexC28C534D4B102C42A14CC5B650B6A6B5.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/mackartTex.uasset'
+[2015.11.02-12.35.46:251][171]LogSavePackage: Total save time: 1760.551199ms
+[2015.11.02-12.35.46:251][171]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/mackartTex.uasset
+[2015.11.02-12.35.48:251][171]LogSavePackage: Save=1964.588989ms
+[2015.11.02-12.35.48:251][171]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AOtest634E211C48ACE1D1AD36F3A1AB06908E.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/AOtest.uasset'
+[2015.11.02-12.35.48:256][171]LogSavePackage: Total save time: 1969.986342ms
+[2015.11.02-12.35.48:256][171]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/AOtest.uasset
+[2015.11.02-12.35.50:091][171]LogSavePackage: Save=1799.765015ms
+[2015.11.02-12.35.50:091][171]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AOdespec7F69483D4D4AF014607E38B32054511E.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/AOdespec.uasset'
+[2015.11.02-12.35.50:117][171]LogSavePackage: Total save time: 1826.379120ms
+[2015.11.02-12.35.50:117][171]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/AOdespec.uasset
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Importing new asset /Game/Models/Karts/BigMacKart/BigMacKartTex.
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Importing new asset /Game/Models/Karts/BigMacKart/test.
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Importing new asset /Game/Models/Karts/BigMacKart/mackartTex.
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Importing new asset /Game/Models/Karts/BigMacKart/AOtest.
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Importing new asset /Game/Models/Karts/BigMacKart/AOdespec.
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Attempting to delete AOtest (its source file has been removed).
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Attempting to delete AOdespec (its source file has been removed).
+[2015.11.02-12.36.50:169][149]AssetReimport: Info Attempting to delete mackartTex (its source file has been removed).
+[2015.11.02-12.38.47:857][120]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKart.fbx)
+[2015.11.02-12.38.47:870][120]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2015.11.02-12.38.47:870][120]LogFbx: ItemName: Geometry, ItemCount : 5
+[2015.11.02-12.38.47:870][120]LogFbx: ItemName: Model, ItemCount : 5
+[2015.11.02-12.38.47:870][120]LogFbx: ItemName: Material, ItemCount : 3
+[2015.11.02-12.38.47:880][120]LogFbx: Loading FBX Scene from ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKart.fbx
+[2015.11.02-12.38.48:036][120]LogFbx: FBX Scene Loaded Succesfully
+[2015.11.02-12.38.50:974][120]LogFbx: Loading FBX Scene from ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKart.fbx
+[2015.11.02-12.38.51:057][120]LogFbx: FBX Scene Loaded Succesfully
+[2015.11.02-12.38.51:062][120]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartWheelMat'
+[2015.11.02-12.38.51:062][120]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartWheelMat'
+[2015.11.02-12.38.51:101][120]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.38.51:154][120]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartMetalMat'
+[2015.11.02-12.38.51:154][120]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartMetalMat'
+[2015.11.02-12.38.51:242][120]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.38.51:291][120]LogFbx:Warning: Triangulating static mesh BigMacKartWheelBackRight
+[2015.11.02-12.38.52:219][120]LogFbx:Warning: Triangulating static mesh BigMacKartWheelFrontLeft
+[2015.11.02-12.38.53:178][120]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartBodyMat'
+[2015.11.02-12.38.53:178][120]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartBodyMat'
+[2015.11.02-12.38.53:210][120]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.38.53:259][120]LogFbx:Warning: Triangulating static mesh BigMacKartBody
+[2015.11.02-12.39.06:741][120]LogFbx:Warning: Triangulating static mesh BigMacKartWheelBackLeft
+[2015.11.02-12.39.07:602][120]LogFbx:Warning: Triangulating static mesh BigMacKartWheelFrontRight
+[2015.11.02-12.39.08:529][120]LogStaticMesh: Building static mesh BigMacKart...
+[2015.11.02-12.39.09:191][120]LogStaticMesh: Built static mesh [0.674058.2s] /Game/Models/Karts/BigMacKart/BigMacKart.BigMacKart
+[2015.11.02-12.39.09:276][120]LogStaticMesh:Warning: BigMacKart has degenerate tangent bases which will result in incorrect shading. 
+[2015.11.02-12.39.09:300][120]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2015.11.02-12.39.09:300][120]FBXImport:Warning: Warning BigMacKart has degenerate tangent bases which will result in incorrect shading.  
+[2015.11.02-12.39.16:324][360]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKartTex.jpg)
+[2015.11.02-12.39.17:102][360]LogTexture:Display: Building textures: BigMacKartTex (AutoDXT)
+[2015.11.02-12.39.30:585][912]LogActorFactory: Actor Factory created BigMacKart
+[2015.11.02-12.39.33:432][125]LogActorFactory: Actor Factory created BigMacKart
+[2015.11.02-12.39.43:781][824]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (LunaKart)
+[2015.11.02-12.39.44:816][887]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigMacKart)
+[2015.11.02-12.39.49:589][182]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.39.49:718][182]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_2, compiling. 
+[2015.11.02-12.39.49:730][182]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.39.49:740][182]LogMaterial: 0.000435 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.39.49:771][182]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_2, compiling. 
+[2015.11.02-12.39.52:963][306]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.39.52:974][306]LogMaterial: 0.000393 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.39.56:168][364]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.39.56:168][364]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.02-12.39.56:168][364]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.02-12.40.02:072][667]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.02:082][667]LogMaterial: 0.000503 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.02:112][667]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.11.02-12.40.02:118][667]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.02:119][667]LogMaterial:Warning: Failed to compile Material /Engine/Transient.BigMacKartBodyMat for platform PCD3D_SM5, Default Material will be used in game.
+[2015.11.02-12.40.02:119][667]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2015.11.02-12.40.02:119][667]LogMaterial: 0.000215 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.02:145][667]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.11.02-12.40.02:149][667]MaterialEditorStats:Error: Error [SM5] (Node TextureSample) TextureSample> Missing input texture
+[2015.11.02-12.40.10:701][ 47]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.10:711][ 47]LogMaterial: 0.000268 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.10:737][ 47]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2015.11.02-12.40.13:759][177]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.40.13:759][177]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.40.13:759][177]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.40.21:135][492]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.21:145][492]LogMaterial: 0.000318 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.21:175][492]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.21:184][492]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.21:194][492]LogMaterial: 0.000242 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.21:247][492]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.23:587][597]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.23:598][597]LogMaterial: 0.000431 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.23:627][597]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.27:158][751]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.40.27:158][751]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.40.27:158][751]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.40.28:270][807]LogMaterialEditor: Applying material BigMacKartBodyMat
+[2015.11.02-12.40.30:378][807]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.30:412][807]LogMaterial: 0.000374 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.30:462][807]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.30:497][807]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.30:519][807]LogMaterial: 0.007671 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.37:067][110]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.37:077][110]LogMaterial: 0.000443 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.37:107][110]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.37:116][110]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.37:127][110]LogMaterial: 0.000419 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.37:154][110]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.41:086][283]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.40.41:086][283]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.40.41:086][283]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.40.45:904][502]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.45:913][502]LogMaterial: 0.000439 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.45:944][502]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.45:953][502]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.45:963][502]LogMaterial: 0.000393 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.45:991][502]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.49:968][676]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.40.49:968][676]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.40.49:968][676]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.40.51:282][729]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.51:292][729]LogMaterial: 0.000327 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.51:323][729]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.54:958][885]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.40.54:958][885]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.40.54:958][885]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.40.56:285][939]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.40.56:294][939]LogMaterial: 0.000292 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.40.56:323][939]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.40.59:874][ 95]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.40.59:874][ 95]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.40.59:874][ 95]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.41.02:711][199]LogMaterialEditor: Applying material BigMacKartBodyMat
+[2015.11.02-12.41.04:201][199]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.41.04:236][199]LogMaterial: 0.000419 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.04:280][199]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.41.04:317][199]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.41.04:342][199]LogMaterial: 0.008514 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.08:715][392]LogMaterialEditor: Saving and Compiling material BigMacKartBodyMat
+[2015.11.02-12.41.10:257][392]LogSavePackage: Save=22.633114ms
+[2015.11.02-12.41.10:257][392]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartBodyMatCC9225724D6A63EFBADDD1B6168C5305.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartBodyMat.uasset'
+[2015.11.02-12.41.10:264][392]LogSavePackage: Total save time: 29.438939ms
+[2015.11.02-12.41.10:264][392]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartBodyMat.uasset
+[2015.11.02-12.41.10:272][392]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 61 instructions
+[2015.11.02-12.41.10:272][392]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.10:272][392]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.41.13:423][556]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.13:506][556]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2015.11.02-12.41.13:518][556]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.13:529][556]LogMaterial: 0.000376 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.13:559][556]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2015.11.02-12.41.16:498][813]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.41.16:498][813]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.02-12.41.16:498][813]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.02-12.41.16:808][835]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.16:819][835]LogMaterial: 0.000528 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.17:941][933]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.17:951][933]LogMaterial: 0.000246 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.17:980][933]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.20:727][190]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.20:738][190]LogMaterial: 0.000382 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.20:770][190]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.20:914][201]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.41.20:914][201]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.02-12.41.20:914][201]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.02-12.41.22:194][312]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.22:205][312]LogMaterial: 0.000439 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.22:231][312]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.23:778][455]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.23:788][455]LogMaterial: 0.000356 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.23:814][455]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.25:279][590]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.25:289][590]LogMaterial: 0.000373 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.25:320][590]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.28:344][868]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.41.28:344][868]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.28:344][868]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.41.30:595][ 54]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.30:605][ 54]LogMaterial: 0.000449 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.30:637][ 54]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.33:306][299]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.41.33:306][299]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.33:306][299]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.41.38:274][718]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.38:283][718]LogMaterial: 0.000318 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.38:311][718]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.41:064][975]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 35 instructions
+[2015.11.02-12.41.41:064][975]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.41:064][975]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.41.41:579][ 13]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.41:589][ 13]LogMaterial: 0.000293 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.41:623][ 13]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.42:838][124]LogMaterialEditor: Applying material BigMacKartMetalMat
+[2015.11.02-12.41.44:336][124]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.44:370][124]LogMaterial: 0.000366 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.44:414][124]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.44:449][124]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.44:469][124]LogMaterial: 0.007392 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.51:569][743]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 64 instructions
+[2015.11.02-12.41.51:569][743]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.51:569][743]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.41.53:362][911]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.53:371][911]LogMaterial: 0.000418 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.53:411][911]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.56:015][163]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.41.56:015][163]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.56:015][163]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.41.57:217][252]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.41.57:227][252]LogMaterial: 0.000532 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.41.57:293][252]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.41.59:897][499]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.41.59:897][499]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.41.59:897][499]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.42.09:519][277]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.42.09:529][277]LogMaterial: 0.000350 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.42.09:559][277]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.42.12:228][529]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 35 instructions
+[2015.11.02-12.42.12:228][529]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.42.12:228][529]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.42.19:328][102]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.42.19:338][102]LogMaterial: 0.000320 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.42.19:364][102]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.42.21:323][287]LogMaterialEditor: Applying material BigMacKartMetalMat
+[2015.11.02-12.42.22:802][287]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.42.22:836][287]LogMaterial: 0.000389 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.42.22:883][287]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.42.22:919][287]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.42.22:939][287]LogMaterial: 0.007631 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.42.23:570][340]LogMaterialEditor: Saving and Compiling material BigMacKartMetalMat
+[2015.11.02-12.42.26:817][340]LogSavePackage: Save=31.642359ms
+[2015.11.02-12.42.26:817][340]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartMetalMat53FFC7CE4F7C06261E8C80858690C9C2.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartMetalMat.uasset'
+[2015.11.02-12.42.26:821][340]LogSavePackage: Total save time: 35.872225ms
+[2015.11.02-12.42.26:821][340]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartMetalMat.uasset
+[2015.11.02-12.42.26:829][340]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 64 instructions
+[2015.11.02-12.42.26:829][340]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.42.26:829][340]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.42.30:049][569]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.42.30:143][569]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2015.11.02-12.42.30:153][569]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.42.30:163][569]LogMaterial: 0.000357 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.42.30:190][569]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2015.11.02-12.42.33:539][714]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.42.33:539][714]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.02-12.42.33:539][714]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.02-12.42.35:392][841]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2015.11.02-12.43.01:351][720]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E00064B740
+[2015.11.02-12.43.01:354][720]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E092AD2F20
+[2015.11.02-12.43.07:991][720]LogSavePackage: Save=6363.704590ms
+[2015.11.02-12.43.07:991][720]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartTestMap_Auto26863808E44523A1209FFD0965A217BBA.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/KartTestMap_Auto2.umap'
+[2015.11.02-12.43.07:996][720]LogSavePackage: Total save time: 6623.220131ms
+[2015.11.02-12.43.07:996][720]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/KartTestMap_Auto2.umap
+[2015.11.02-12.43.08:003][720]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/KartTestMap' took 6.706
+[2015.11.02-12.43.08:004][720]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 6.706
+[2015.11.02-12.43.08:018][720]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacKartTex] ([1] browsable assets)...
+[2015.11.02-12.43.08:031][720]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Models/Karts/BigMacKart/BigMacKartTex.BigMacKartTex]
+[2015.11.02-12.43.08:031][720]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacKartTex]
+[2015.11.02-12.43.08:098][720]LogSavePackage: Save=64.129517ms
+[2015.11.02-12.43.08:098][720]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartTex_Auto24701288D4D946FFE44056FB933042305.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartTex_Auto2.uasset'
+[2015.11.02-12.43.08:101][720]LogSavePackage: Total save time: 67.488186ms
+[2015.11.02-12.43.08:101][720]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartTex_Auto2.uasset
+[2015.11.02-12.43.08:109][720]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacKartWheelMat] ([1] browsable assets)...
+[2015.11.02-12.43.08:132][720]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Models/Karts/BigMacKart/BigMacKartWheelMat.BigMacKartWheelMat]
+[2015.11.02-12.43.08:132][720]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacKartWheelMat]
+[2015.11.02-12.43.08:155][720]LogSavePackage: Save=19.875292ms
+[2015.11.02-12.43.08:155][720]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartWheelMat_Auto213BDAD1D45176EDE8A4856971DDD84C2.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartWheelMat_Auto2.uasset'
+[2015.11.02-12.43.08:158][720]LogSavePackage: Total save time: 23.149870ms
+[2015.11.02-12.43.08:158][720]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartWheelMat_Auto2.uasset
+[2015.11.02-12.43.08:166][720]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacKart] ([1] browsable assets)...
+[2015.11.02-12.43.08:191][720]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Models/Karts/BigMacKart/BigMacKart.BigMacKart]
+[2015.11.02-12.43.08:191][720]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacKart]
+[2015.11.02-12.43.08:218][720]LogSavePackage: Save=23.803024ms
+[2015.11.02-12.43.08:218][720]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKart_Auto29F5BE3954ABBAF84659413BC2D25E292.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKart_Auto2.uasset'
+[2015.11.02-12.43.08:221][720]LogSavePackage: Total save time: 27.048759ms
+[2015.11.02-12.43.08:221][720]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKart_Auto2.uasset
+[2015.11.02-12.43.08:221][720]LogFileHelpers: Auto-saving content packages took 0.211
+[2015.11.02-12.43.51:027][246]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.43.51:036][246]LogMaterial: 0.000355 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.43.52:164][351]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.43.52:174][351]LogMaterial: 0.000179 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.43.52:205][351]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.43.55:018][611]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.43.55:028][611]LogMaterial: 0.000327 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.43.55:059][611]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.43.55:121][615]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.43.55:121][615]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2015.11.02-12.43.55:121][615]MaterialEditorStats: Info Texture samplers: 0/16
+[2015.11.02-12.43.57:065][784]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.43.57:075][784]LogMaterial: 0.000445 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.43.57:105][784]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.43.58:846][944]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.43.58:856][944]LogMaterial: 0.000378 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.43.58:887][944]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.44.00:526][ 92]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.44.00:536][ 92]LogMaterial: 0.000405 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.00:563][ 92]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.44.03:613][363]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.44.03:613][363]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.44.03:613][363]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.44.03:695][369]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.44.03:705][369]LogMaterial: 0.000435 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.03:733][369]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.44.05:880][566]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.44.05:890][566]LogMaterial: 0.000421 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.05:917][566]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.44.07:584][721]LogMaterialEditor: Applying material BigMacKartWheelMat
+[2015.11.02-12.44.09:099][721]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.44.09:134][721]LogMaterial: 0.000362 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.09:183][721]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.44.09:217][721]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.44.09:238][721]LogMaterial: 0.007360 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.20:317][421]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 60 instructions
+[2015.11.02-12.44.20:317][421]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.44.20:317][421]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.44.37:974][526]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2015.11.02-12.44.38:130][526]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.44.38:141][526]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2015.11.02-12.44.38:154][526]LogMaterial: 0.000462 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.38:184][526]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.44.42:255][894]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.44.42:255][894]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.44.42:255][894]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.44.54:097][127]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2015.11.02-12.44.54:107][127]LogMaterial: 0.000319 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.54:137][127]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.44.54:178][127]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2015.11.02-12.44.54:188][127]LogMaterial: 0.000386 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.54:219][127]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.44.57:701][411]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2015.11.02-12.44.57:701][411]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2015.11.02-12.44.57:701][411]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.44.58:280][450]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2015.11.02-12.44.58:290][450]LogMaterial: 0.000448 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.44.58:320][450]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.44.59:903][572]LogMaterialEditor: Applying material BigMacKartBodyMat
+[2015.11.02-12.45.01:424][572]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2015.11.02-12.45.01:458][572]LogMaterial: 0.000286 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.01:503][572]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.45.01:537][572]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.45.01:557][572]LogMaterial: 0.007252 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.10:379][ 90]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 61 instructions
+[2015.11.02-12.45.10:379][ 90]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.11.02-12.45.10:379][ 90]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.45.27:416][236]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.45.27:426][236]LogMaterial: 0.000297 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.27:456][236]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.45.29:354][401]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.45.29:364][401]LogMaterial: 0.000394 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.29:393][401]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2015.11.02-12.45.33:025][644]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2015.11.02-12.45.33:025][644]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.11.02-12.45.33:025][644]MaterialEditorStats: Info Texture samplers: 1/16
+[2015.11.02-12.45.36:612][859]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2015.11.02-12.45.36:762][859]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.45.36:785][859]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2015.11.02-12.45.36:795][859]LogMaterial: 0.000339 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.36:822][859]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.45.39:246][ 29]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2015.11.02-12.45.39:256][ 29]LogMaterial: 0.000200 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.39:283][ 29]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.45.41:741][233]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2015.11.02-12.45.41:751][233]LogMaterial: 0.000426 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.41:780][233]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2015.11.02-12.45.43:061][320]LogMaterialEditor: Applying material BigMacKartMetalMat
+[2015.11.02-12.45.44:560][320]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2015.11.02-12.45.44:594][320]LogMaterial: 0.000369 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.44:636][320]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.45.44:669][320]LogMaterial: Missing cached shader map for material BigMacKartMetalMat, compiling. 
+[2015.11.02-12.45.44:689][320]LogMaterial: 0.007012 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.45:390][367]LogMaterialEditor: Saving and Compiling material BigMacKartMetalMat
+[2015.11.02-12.45.48:811][367]LogSavePackage: Save=50.934895ms
+[2015.11.02-12.45.48:811][367]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartMetalMat336152334DBC82FFE6CE198685249987.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartMetalMat.uasset'
+[2015.11.02-12.45.48:816][367]LogSavePackage: Total save time: 74.217740ms
+[2015.11.02-12.45.48:816][367]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartMetalMat.uasset
+[2015.11.02-12.45.48:827][367]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 64 instructions
+[2015.11.02-12.45.48:827][367]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.11.02-12.45.48:827][367]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.45.50:593][484]LogMaterialEditor: Saving and Compiling material BigMacKartBodyMat
+[2015.11.02-12.45.50:702][484]LogSavePackage: Save=21.602535ms
+[2015.11.02-12.45.50:702][484]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartBodyMat5D82C8A647EC881246D843A7C3B51033.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartBodyMat.uasset'
+[2015.11.02-12.45.50:706][484]LogSavePackage: Total save time: 40.798273ms
+[2015.11.02-12.45.50:706][484]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartBodyMat.uasset
+[2015.11.02-12.45.52:381][591]LogMaterialEditor: Applying material BigMacKartWheelMat
+[2015.11.02-12.45.53:879][591]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.45.53:912][591]LogMaterial: 0.000385 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.53:955][591]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.45.53:989][591]LogMaterial: Missing cached shader map for material BigMacKartWheelMat, compiling. 
+[2015.11.02-12.45.54:010][591]LogMaterial: 0.007324 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.45.55:213][668]LogMaterialEditor: Saving and Compiling material BigMacKartWheelMat
+[2015.11.02-12.45.58:250][668]LogSavePackage: Save=23.625071ms
+[2015.11.02-12.45.58:250][668]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartWheelMat32C1D3B146C7A4837016C7A7DE74F071.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartWheelMat.uasset'
+[2015.11.02-12.45.58:259][668]LogSavePackage: Total save time: 32.558046ms
+[2015.11.02-12.45.58:259][668]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartWheelMat.uasset
+[2015.11.02-12.45.58:267][668]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 60 instructions
+[2015.11.02-12.45.58:267][668]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.11.02-12.45.58:267][668]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.47.08:016][771]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (BigMacKart)
+[2015.11.02-12.47.08:872][825]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2015.11.02-12.48.04:363][393]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2015.11.02-12.48.04:519][393]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.48.04:531][393]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2015.11.02-12.48.04:541][393]LogMaterial: 0.000387 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.48.04:573][393]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.48.08:281][708]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2015.11.02-12.48.08:292][708]LogMaterial: 0.000437 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.48.08:318][708]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2015.11.02-12.48.09:868][849]LogMaterialEditor: Applying material BigMacKartBodyMat
+[2015.11.02-12.48.11:363][849]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2015.11.02-12.48.11:397][849]LogMaterial: 0.000404 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.48.11:441][849]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.48.11:474][849]LogMaterial: Missing cached shader map for material BigMacKartBodyMat, compiling. 
+[2015.11.02-12.48.11:494][849]LogMaterial: 0.007478 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2015.11.02-12.48.21:052][476]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 60 instructions
+[2015.11.02-12.48.21:052][476]MaterialEditorStats: Info Vertex shader: 32 instructions
+[2015.11.02-12.48.21:052][476]MaterialEditorStats: Info Texture samplers: 4/16
+[2015.11.02-12.49.26:924][386]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.11.02-12.49.37:121][ 14]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E0AE470400
+[2015.11.02-12.49.37:126][ 14]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E0AF386CA0
+[2015.11.02-12.49.37:129][ 14]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E057AC44A0
+[2015.11.02-12.49.37:131][ 14]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E01EB57920
+[2015.11.02-12.49.48:414][ 14]LogSavePackage: Save=7667.642578ms
+[2015.11.02-12.49.48:414][ 14]LogSavePackage: Moving '../../../../../../Users/Ambe
