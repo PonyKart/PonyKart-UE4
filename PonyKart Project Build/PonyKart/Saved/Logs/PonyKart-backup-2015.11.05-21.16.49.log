@@ -1,0 +1,489 @@
+﻿[2015.11.06-02.12.03:755][  0]Log file open, 11/05/15 21:12:03
+[2015.11.06-02.12.03:755][  0]LogInit:Display: Running engine for game: PonyKart
+[2015.11.06-02.12.03:755][  0]LogInit:Display: RandInit(463357258) SRandInit(463357279).
+[2015.11.06-02.12.03:756][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.11.06-02.12.03:756][  0]LogStats: Stats thread started at 0.097384
+[2015.11.06-02.12.03:756][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.06-02.12.03:756][  0]LogInit: API Version: 2672455
+[2015.11.06-02.12.03:756][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2015.11.06-02.12.03:756][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.11.06-02.12.03:756][  0]LogInit: Build Configuration: Development
+[2015.11.06-02.12.03:756][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.11.06-02.12.03:756][  0]LogInit: Command line:  
+[2015.11.06-02.12.03:756][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.9/Engine/Binaries/Win64/
+[2015.11.06-02.12.03:756][  0]LogInit: Rocket: 1
+[2015.11.06-02.12.03:772][  0]LogInit: Using libcurl 7.41.0
+[2015.11.06-02.12.03:772][  0]LogInit:  - built for x86_64-pc-win32
+[2015.11.06-02.12.03:772][  0]LogInit:  - supports SSL with WinSSL
+[2015.11.06-02.12.03:772][  0]LogInit:  - other features:
+[2015.11.06-02.12.03:772][  0]LogInit:      CURL_VERSION_SSL
+[2015.11.06-02.12.03:772][  0]LogInit:      CURL_VERSION_IPV6
+[2015.11.06-02.12.03:772][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.11.06-02.12.03:772][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.11.06-02.12.03:772][  0]LogInit:      CURL_VERSION_IDN
+[2015.11.06-02.12.03:772][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.11.06-02.12.03:772][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.11.06-02.12.03:772][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.11.06-02.12.03:772][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.11.06-02.12.03:772][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.11.06-02.12.03:784][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.11.06-02.12.03:795][  0]LogInit: Object subsystem initialized
+[2015.11.06-02.12.03:798][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.06-02.12.03:798][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.11.06-02.12.03:825][  0]LogInit: Computer: HP-PC
+[2015.11.06-02.12.03:825][  0]LogInit: User: Amber
+[2015.11.06-02.12.03:825][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.11.06-02.12.03:825][  0]LogInit: High frequency timer resolution =14.318180 MHz
+[2015.11.06-02.12.03:825][  0]LogMemory: Memory total: Physical=6.0GB (6GB approx)
+[2015.11.06-02.12.03:825][  0]LogMemory: Platform Memory Stats for Windows
+[2015.11.06-02.12.03:825][  0]LogMemory: Process Physical Memory: 54.84 MB used, 54.84 MB peak
+[2015.11.06-02.12.03:825][  0]LogMemory: Process Virtual Memory: 55.39 MB used, 55.39 MB peak
+[2015.11.06-02.12.03:825][  0]LogMemory: Physical Memory: 2443.03 MB used, 6141.22 MB total
+[2015.11.06-02.12.03:825][  0]LogMemory: Virtual Memory: 364.01 MB used, 134217728.00 MB total
+[2015.11.06-02.12.04:020][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2015.11.06-02.12.05:309][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 550 Ti (Feature Level 11_0)
+[2015.11.06-02.12.05:309][  0]LogD3D11RHI: Adapter has 972MB of dedicated video memory, 0MB of dedicated system memory, and 3070MB of shared system memory, 1 output[s]
+[2015.11.06-02.12.05:311][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2015.11.06-02.12.05:311][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 3070MB of shared system memory, 0 output[s]
+[2015.11.06-02.12.05:311][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.11.06-02.12.05:319][  0]LogD3D11RHI: !Direct3DDevice
+[2015.11.06-02.12.05:319][  0]LogRHI: Texture pool is 680 MB (70% of 972 MB)
+[2015.11.06-02.12.05:393][  0]LogD3D11RHI: Async texture creation enabled
+[2015.11.06-02.12.05:415][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/12996/).
+[2015.11.06-02.12.05:415][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/tmp/74B6F1AE4A11FB70DD2691BD4E3B47D8/'.
+[2015.11.06-02.12.05:415][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.11.06-02.12.09:696][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.11.06-02.12.09:706][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.11.06-02.12.09:717][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.11.06-02.12.09:727][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.11.06-02.12.09:736][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.11.06-02.12.09:747][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.11.06-02.12.09:754][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.11.06-02.12.09:762][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.11.06-02.12.09:770][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.11.06-02.12.09:777][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.11.06-02.12.09:785][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.11.06-02.12.09:793][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.11.06-02.12.09:794][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2015.11.06-02.12.09:844][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.11.06-02.12.09:851][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.11.06-02.12.09:858][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.11.06-02.12.09:919][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.11.06-02.12.09:919][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.11.06-02.12.10:678][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.11.06-02.12.15:743][  0]LogDerivedDataCache: Loaded boot cache 5.07s 41MB C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.06-02.12.15:744][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2015.11.06-02.12.15:744][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.11.06-02.12.15:744][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.11.06-02.12.15:744][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.11.06-02.12.15:744][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.11.06-02.12.16:109][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.11.06-02.12.16:122][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Amber/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.11.06-02.12.31:008][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.06-02.12.31:012][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.11.06-02.12.31:252][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.11.06-02.12.31:252][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.11.06-02.12.31:957][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.11.06-02.13.13:420][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.11.06-02.13.15:491][  0]LogAssetRegistry: FAssetRegistry took 0.0120 seconds to start up
+[2015.11.06-02.13.16:518][  0]SourceControl: Info Source control is disabled
+[2015.11.06-02.13.16:532][  0]SourceControl: Info Source control is disabled
+[2015.11.06-02.13.16:574][  0]SourceControl: Info Source control is disabled
+[2015.11.06-02.13.16:659][  0]SourceControl: Info Source control is disabled
+[2015.11.06-02.13.19:080][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.06-02.13.19:669][  0]LogObj: 28361 objects as part of root set at end of initial load.
+[2015.11.06-02.13.19:669][  0]LogUObjectAllocator: 6038872 out of 0 bytes used by permanent object pool.
+[2015.11.06-02.13.20:048][  0]LogEngine: Initializing Engine...
+[2015.11.06-02.13.20:052][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2015.11.06-02.13.21:255][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2015.11.06-02.13.21:530][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.11.06-02.13.21:623][  0]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.06-02.13.21:641][  0]LogInit: FAudioDevice initialized.
+[2015.11.06-02.13.21:694][  0]LogDerivedDataCache: Saved boot cache 0.05s 41MB C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.06-02.13.21:710][  0]LogInit: Texture streaming: Enabled
+[2015.11.06-02.13.21:754][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.11.06-02.13.21:754][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.06-02.13.21:755][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId fe48c13c4235ff87278523820fd1a74f|128e7d1d796a429f9247afe84ab758e1|a78d9d35-53ca-49d3-80af-52a3ac8256d6
+[2015.11.06-02.13.21:755][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.11.06-02.13.22:213][  0]LogInit: Transaction tracking system initialized
+[2015.11.06-02.13.22:962][  0]BlueprintLog: New page: Editor Load
+[2015.11.06-02.13.29:429][  0]LocalizationService: Info Localization service is disabled
+[2015.11.06-02.13.30:544][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
+[2015.11.06-02.13.30:544][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
+[2015.11.06-02.13.30:544][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/VehicleBP/VehicleOverview.VehicleOverview_C'
+[2015.11.06-02.13.31:091][  0]LogConsoleResponse:Display: 
+[2015.11.06-02.13.32:728][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.11.06-02.13.34:193][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 0.02s
+[2015.11.06-02.13.34:345][  0]SourceControl: Info Source control is disabled
+[2015.11.06-02.13.34:345][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.11.06-02.13.34:346][  0]LightingResults: New page: Lighting Build
+[2015.11.06-02.13.34:350][  0]MapCheck: New page: Map Check
+[2015.11.06-02.13.34:350][  0]LightingResults: New page: Lighting Build
+[2015.11.06-02.13.34:368][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E46BEB6160
+[2015.11.06-02.13.34:708][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:708][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:708][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:708][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:710][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:710][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:717][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:717][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:717][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:954][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:955][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:955][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:955][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:955][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:955][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:959][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:959][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:959][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:959][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:959][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap.
+[2015.11.06-02.13.34:959][  0]LoadErrors:Error: Error /Game/Maps/KartTestMap : Can't find file for asset. /Game/Blueprints/KartPawn2
+[2015.11.06-02.13.34:963][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:963][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:963][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:963][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:963][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:964][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:964][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:964][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:964][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:964][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:965][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:965][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:965][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:965][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:977][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:977][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:977][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:977][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:978][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:978][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:979][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:979][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:990][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:990][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:990][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:990][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:991][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:991][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:991][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:991][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:997][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:997][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:997][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:998][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:998][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:998][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.34:998][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.34:998][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.35:015][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.35:015][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.35:015][  0]LogLinker:Warning: Can't find file '/Game/Blueprints/KartPawn2'
+[2015.11.06-02.13.35:015][  0]LoadErrors: Info Failed to load /Game/Blueprints/KartPawn2.KartPawn2_C Referenced by PersistentLevel
+[2015.11.06-02.13.35:015][  0]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/KartPawn2' while loading NULL.
+[2015.11.06-02.13.35:015][  0]LoadErrors: Info Failed to load /Game/Blueprints/KartPawn2.KartPawn2_C Referenced by PersistentLevel
+[2015.11.06-02.13.59:859][  0]LogAIModule: Creating AISystem for world KartTestMap
+[2015.11.06-02.13.59:926][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.11.06-02.13.59:927][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.11.06-02.14.00:075][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 148.292ms to complete.
+[2015.11.06-02.14.00:076][  0]LogFileHelpers: Loading map 'KartTestMap' took 25.731
+[2015.11.06-02.14.00:523][  0]LogCollectionManager: Loaded 0 collections in 0.003655 seconds
+[2015.11.06-02.14.00:570][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' took 0.01s
+[2015.11.06-02.14.00:571][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Amber/Collections/' took 0.01s
+[2015.11.06-02.14.00:571][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' took 0.01s
+[2015.11.06-02.14.00:571][  0]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 1867 classes and 333 folders.
+[2015.11.06-02.14.00:577][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2015.11.06-02.14.00:588][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2015.11.06-02.14.07:973][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2015.11.06-02.14.08:009][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2015.11.06-02.14.08:430][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.11.06-02.14.08:439][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.11.06-02.14.08:462][  0]LogLoad: Full Startup: 126.08 seconds (BP compile: 0.21 seconds)
+[2015.11.06-02.14.08:803][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Camera': KartPawn2_C /Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartPawn2_C_3
+[2015.11.06-02.14.08:803][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Character': KartPawn2_C /Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartPawn2_C_3
+[2015.11.06-02.14.08:803][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SpringArm': KartPawn2_C /Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartPawn2_C_3
+[2015.11.06-02.14.08:803][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'CollisionMesh': KartPawn2_C /Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartPawn2_C_3
+[2015.11.06-02.14.08:803][  0]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'StaticMesh': KartPawn2_C /Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartPawn2_C_3
+[2015.11.06-02.14.08:882][  0]LogContentStreaming: Texture pool size now 200 MB
+[2015.11.06-02.14.09:149][  0]LogRenderer: Reallocating scene render targets to support 1160x484 (Frame:2).
+[2015.11.06-02.14.09:220][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2015.11.06-02.14.10:570][  5]LogAssetRegistry: Asset discovery search completed in 55.0899 seconds
+[2015.11.06-02.14.10:570][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
+[2015.11.06-02.14.10:570][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000042 seconds (updated 0 objects)
+[2015.11.06-02.14.24:941][723]LogSavePackage: Save=351.144501ms
+[2015.11.06-02.14.24:941][723]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartPawn8490AA6B42B4B4789AFEBFABDBD44C6C.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn.uasset'
+[2015.11.06-02.14.24:948][723]LogSavePackage: Total save time: 381.297693ms
+[2015.11.06-02.14.24:948][723]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn.uasset
+[2015.11.06-02.14.26:804][868]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.06-02.14.27:609][868]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 107 classes and 0 folders.
+[2015.11.06-02.14.47:260][447]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.14.47:260][447]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.06-02.14.47:261][447]PIE: New page: PIE session: KartTestMap (Nov 5, 2015, 4:14:47 PM)
+[2015.11.06-02.14.47:261][447]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_KartTestMap
+[2015.11.06-02.14.47:284][447]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023518s)
+[2015.11.06-02.14.47:286][447]LogAIModule: Creating AISystem for world KartTestMap
+[2015.11.06-02.14.47:286][447]LogPlayLevel: PIE: World Init took: (0.001767s)
+[2015.11.06-02.14.47:287][447]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/KartTestMap.KartTestMap to /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap (0.025657s)
+[2015.11.06-02.14.47:326][447]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E45E91DE40
+[2015.11.06-02.14.47:374][447]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.06-02.14.47:387][447]LogInit: FAudioDevice initialized.
+[2015.11.06-02.14.47:447][447]LogLinker:Warning: Can't find file '/Game/Blueprints/KartTestGameMode'
+[2015.11.06-02.14.47:448][447]LogLinker:Warning: Can't find file '/Game/Blueprints/KartTestGameMode'
+[2015.11.06-02.14.47:449][447]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/Blueprints/KartTestGameMode.KartTestGameMode_C'
+[2015.11.06-02.14.47:449][447]LogWorld: Game class is 'GameMode'
+[2015.11.06-02.14.47:478][447]LogWorld: Bringing World /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap up for play (max tick rate 0) at 2015.11.05-21.14.47
+[2015.11.06-02.14.47:479][447]LogActor:Warning: GameSession /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.06-02.14.47:479][447]LogActor:Warning: GameNetworkManager /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.06-02.14.47:481][447]LogWorld: Bringing up level for play took: 0.028656
+[2015.11.06-02.14.47:485][447]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_KartTestMap -0.401
+[2015.11.06-02.14.47:485][447]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.14.49:389][599]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.14.49:445][599]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.14.49:486][599]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E41D9C7920
+[2015.11.06-02.14.57:151][149]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.14.57:151][149]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.06-02.14.57:152][149]PIE: New page: PIE session: KartTestMap (Nov 5, 2015, 4:14:57 PM)
+[2015.11.06-02.14.57:152][149]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_KartTestMap
+[2015.11.06-02.14.57:177][149]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025261s)
+[2015.11.06-02.14.57:179][149]LogAIModule: Creating AISystem for world KartTestMap
+[2015.11.06-02.14.57:179][149]LogPlayLevel: PIE: World Init took: (0.002073s)
+[2015.11.06-02.14.57:179][149]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/KartTestMap.KartTestMap to /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap (0.027671s)
+[2015.11.06-02.14.57:254][149]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.06-02.14.57:265][149]LogInit: FAudioDevice initialized.
+[2015.11.06-02.14.57:317][149]LogLinker:Warning: Can't find file '/Game/Blueprints/KartTestGameMode'
+[2015.11.06-02.14.57:318][149]LogLinker:Warning: Can't find file '/Game/Blueprints/KartTestGameMode'
+[2015.11.06-02.14.57:319][149]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/Blueprints/KartTestGameMode.KartTestGameMode_C'
+[2015.11.06-02.14.57:319][149]LogWorld: Game class is 'GameMode'
+[2015.11.06-02.14.57:343][149]LogWorld: Bringing World /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap up for play (max tick rate 0) at 2015.11.05-21.14.57
+[2015.11.06-02.14.57:343][149]LogActor:Warning: GameSession /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.06-02.14.57:344][149]LogActor:Warning: GameNetworkManager /Game/Maps/UEDPIE_0_KartTestMap.KartTestMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.06-02.14.57:345][149]LogWorld: Bringing up level for play took: 0.024120
+[2015.11.06-02.14.57:347][149]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_KartTestMap -0.539
+[2015.11.06-02.14.57:347][149]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.15.05:912][ 47]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.15.05:961][ 47]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap' with GeneratedClass '/Game/Maps/KartTestMap.KartTestMap_C' with ClassGeneratedBy '/Game/Maps/KartTestMap.KartTestMap:PersistentLevel.KartTestMap'
+[2015.11.06-02.15.06:027][ 47]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E408E989A0
+[2015.11.06-02.15.09:985][331]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Blueprints/KartPawn.KartPawn2'
+[2015.11.06-02.15.12:821][536]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Blueprints/KartPawn.KartPawn2'
+[2015.11.06-02.15.14:612][668]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Blueprints/KartPawn.KartPawn2'
+[2015.11.06-02.15.17:146][852]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Blueprints/KartPawn.KartPawn2'
+[2015.11.06-02.15.34:727][ 90]LogSavePackage: Save=309.814301ms
+[2015.11.06-02.15.34:727][ 90]LogSavePackage: Moving '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartTestMap5D87FC20474773BF069B9B8539DA4482.tmp' to '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap'
+[2015.11.06-02.15.34:740][ 90]LogSavePackage: Total save time: 338.216797ms
+[2015.11.06-02.15.34:740][ 90]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap
+[2015.11.06-02.15.34:816][ 90]LogFileHelpers: Saving map 'KartTestMap' took 0.607
+[2015.11.06-02.15.37:319][268]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2015.11.06-02.15.37:694][269]Cmd: QUIT_EDITOR
+[2015.11.06-02.15.38:525][269]LogExit: Preparing to exit.
+[2015.11.06-02.15.39:580][269]LogExit: Editor shut down
+[2015.11.06-02.15.39:581][269]LogExit: Transaction tracking system shut down
+[2015.11.06-02.15.39:584][269]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E4723132E0
+[2015.11.06-02.15.39:586][269]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E47D9DA520
+[2015.11.06-02.15.39:586][269]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E47F8111C0
+[2015.11.06-02.15.39:586][269]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000E40772C0E0
+[2015.11.06-02.15.39:873][269]LogExit: Object subsystem successfully closed.
+[2015.11.06-02.15.39:897][269]LogD3D11RHI: Shutdown
+[2015.11.06-02.15.39:897][269]LogD3D11RHI: CleanupD3DDevice
+[2015.11.06-02.15.40:010][269]LogD3D11RHI: ~FD3D11DynamicRHI
+[2015.11.06-02.15.40:037][269]LogModuleManager: Shutting down and abandoning module BlueprintGraph (198)
+[2015.11.06-02.15.40:037][269]LogModuleManager: Shutting down and abandoning module CrashTracker (197)
+[2015.11.06-02.15.40:037][269]LogModuleManager: Shutting down and abandoning module SceneOutliner (196)
+[2015.11.06-02.15.40:037][269]LogModuleManager: Shutting down and abandoning module SuperSearch (195)
+[2015.11.06-02.15.40:037][269]LogModuleManager: Shutting down and abandoning module WidgetCarousel (194)
+[2015.11.06-02.15.40:037][269]LogModuleManager: Shutting down and abandoning module AddContentDialog (193)
+[2015.11.06-02.15.40:039][269]LogModuleManager: Shutting down and abandoning module EditorWidgets (192)
+[2015.11.06-02.15.40:039][269]LogModuleManager: Shutting down and abandoning module CollectionManager (191)
+[2015.11.06-02.15.40:039][269]LogModuleManager: Shutting down and abandoning module StatsViewer (190)
+[2015.11.06-02.15.40:039][269]LogModuleManager: Shutting down and abandoning module FoliageEdit (189)
+[2015.11.06-02.15.40:039][269]LogModuleManager: Shutting down and abandoning module LandscapeEditor (188)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module ActorPickerMode (187)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module GeometryMode (186)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module TextureAlignMode (185)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module BspMode (184)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module PlacementMode (183)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module AutomationWorker (182)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module CharacterAI (181)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module SmartSnapping (180)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module ViewportSnapping (179)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module LogVisualizer (178)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (177)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module IntroTutorials (176)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (175)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (174)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (173)
+[2015.11.06-02.15.40:040][269]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (172)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (171)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (170)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (169)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module MergeActors (168)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module SizeMap (167)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module TreeMap (166)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module ReferenceViewer (165)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module LocalizationService (164)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (163)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module HardwareTargeting (162)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (161)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module UndoHistory (160)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (159)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module UserFeedback (158)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module XmlParser (157)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module Blutility (156)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (155)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (154)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module InputBindingEditor (153)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (152)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module SettingsEditor (151)
+[2015.11.06-02.15.40:339][269]LogModuleManager: Shutting down and abandoning module ProjectLauncher (150)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module SessionFrontend (149)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module ProfilerClient (148)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (147)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module DeviceManager (146)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module AutomationController (145)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module AutomationWindow (144)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module Layers (143)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (142)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module DetailCustomizations (141)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module PackagesDialog (140)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module Persona (139)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module Kismet (138)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module GraphEditor (137)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module ClassViewer (136)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module Toolbox (135)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module ModuleUI (134)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module MovieSceneTools (133)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module OutputLog (132)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module GammaUI (131)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module Documentation (130)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (129)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (128)
+[2015.11.06-02.15.40:340][269]LogModuleManager: Shutting down and abandoning module AnalyticsET (127)
+[2015.11.06-02.15.40:341][269]LogModuleManager: Shutting down and abandoning module Analytics (126)
+[2015.11.06-02.15.40:341][269]LogModuleManager: Shutting down and abandoning module AITestSuite (125)
+[2015.11.06-02.15.40:341][269]LogModuleManager: Shutting down and abandoning module GameplayDebugger (124)
+[2015.11.06-02.15.40:341][269]LogModuleManager: Shutting down and abandoning module AIModule (123)
+[2015.11.06-02.15.40:341][269]LogModuleManager: Shutting down and abandoning module ProfilerService (122)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module TaskGraph (121)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module SlateRemote (120)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module SteamVRController (119)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module SteamVR (118)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (117)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module OculusRift (116)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module OculusLibrary (115)
+[2015.11.06-02.15.40:437][269]LogModuleManager: Shutting down and abandoning module LeapMotionController (114)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (113)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module CableComponent (112)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (111)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module MessagingDebugger (110)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (109)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module HTML5Networking (108)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (107)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module PluginBrowser (106)
+[2015.11.06-02.15.40:465][269]LogModuleManager: Shutting down and abandoning module EpicSurvey (105)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module DesktopPlatform (104)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (103)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module UObjectPlugin (102)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (101)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (100)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module SourceControl (99)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module GitSourceControl (98)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (97)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (96)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (95)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module MeshPaint (94)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module SlateReflector (93)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module HotReload (92)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module MainFrame (91)
+[2015.11.06-02.15.40:466][269]LogModuleManager: Shutting down and abandoning module LevelEditor (90)
+[2015.11.06-02.15.40:467][269]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
+[2015.11.06-02.15.40:469][269]LogModuleManager: Shutting down and abandoning module AssetRegistry (88)
+[2015.11.06-02.15.40:582][269]LogModuleManager: Shutting down and abandoning module ContentBrowser (87)
+[2015.11.06-02.15.40:583][269]LogModuleManager: Shutting down and abandoning module Paper2DEditor (86)
+[2015.11.06-02.15.40:583][269]LogModuleManager: Shutting down and abandoning module UdpMessaging (85)
+[2015.11.06-02.15.40:684][269]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (84)
+[2015.11.06-02.15.40:684][269]LogModuleManager: Shutting down and abandoning module Paper2D (83)
+[2015.11.06-02.15.40:684][269]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (82)
+[2015.11.06-02.15.40:690][269]LogModuleManager: Shutting down and abandoning module Media (81)
+[2015.11.06-02.15.40:690][269]LogModuleManager: Shutting down and abandoning module WmfMedia (80)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (79)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (78)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module PropertyEditor (77)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (76)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module FunctionalTesting (75)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (74)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (73)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module MessageLog (72)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module Sequencer (71)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module AssetTools (70)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module UMGEditor (69)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module UMG (68)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module Slate (67)
+[2015.11.06-02.15.40:691][269]LogModuleManager: Shutting down and abandoning module EditorStyle (66)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module SessionServices (65)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (64)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (63)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module XAudio2 (62)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module Networking (60)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module Core (59)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module KismetCompiler (58)
+[2015.11.06-02.15.40:694][269]LogModuleManager: Shutting down and abandoning module PhysXFormats (57)
+[2015.11.06-02.15.40:695][269]LogModuleManager: Shutting down and abandoning module MeshUtilities (56)
+[2015.11.06-02.15.40:695][269]LogModuleManager: Shutting down and abandoning module CookingStats (55)
+[2015.11.06-02.15.40:697][269]LogModuleManager: Shutting down and abandoning module DerivedDataCache (54)
+[2015.11.06-02.15.40:734][269]LogDerivedDataCache: Shutdown
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (53)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (52)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (51)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (50)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (49)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (48)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (47)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module ImageWrapper (46)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (45)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (44)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (43)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (42)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (41)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (40)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (39)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (38)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Messaging (37)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (36)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (35)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (34)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (33)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (32)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (31)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (30)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (29)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (28)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (27)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (26)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (25)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (24)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (23)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module TargetPlatform (22)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module InputCore (21)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module Settings (20)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2015.11.06-02.15.40:734][269]LogModuleManager: Shutting down and abandoning module HTTP (17)
+[2015.11.06-02.15.41:738][269]LogModuleManager: Shutting down and abandoning module XMPP (16)
+[2015.11.06-02.15.41:738][269]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2015.11.06-02.15.41:738][269]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2015.11.06-02.15.41:738][269]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2015.11.06-02.15.41:738][269]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2015.11.06-02.15.41:738][269]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2015.11.06-02.15.41:741][269]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2015.11.06-02.15.41:742][269]LogExit: Exiting.
+[2015.11.06-02.15.41:744][269]Log file closed, 11/05/15 21:15:41
