@@ -1,0 +1,123 @@
+﻿[2015.11.07-21.41.21:788][  0]Log file open, 11/07/15 16:41:21
+[2015.11.07-21.41.21:788][  0]LogInit:Display: Running engine for game: PonyKart
+[2015.11.07-21.41.21:788][  0]LogInit:Display: RandInit(1308704240) SRandInit(1308704261).
+[2015.11.07-21.41.21:788][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.11.07-21.41.21:788][  0]LogStats: Stats thread started at 0.829910
+[2015.11.07-21.41.21:788][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.07-21.41.21:788][  0]LogInit: API Version: 2672455
+[2015.11.07-21.41.21:788][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2015.11.07-21.41.21:788][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.11.07-21.41.21:788][  0]LogInit: Build Configuration: Development
+[2015.11.07-21.41.21:788][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.11.07-21.41.21:788][  0]LogInit: Command line:  
+[2015.11.07-21.41.21:788][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.9/Engine/Binaries/Win64/
+[2015.11.07-21.41.21:788][  0]LogInit: Rocket: 1
+[2015.11.07-21.41.22:179][  0]LogInit: Using libcurl 7.41.0
+[2015.11.07-21.41.22:179][  0]LogInit:  - built for x86_64-pc-win32
+[2015.11.07-21.41.22:179][  0]LogInit:  - supports SSL with WinSSL
+[2015.11.07-21.41.22:179][  0]LogInit:  - other features:
+[2015.11.07-21.41.22:179][  0]LogInit:      CURL_VERSION_SSL
+[2015.11.07-21.41.22:179][  0]LogInit:      CURL_VERSION_IPV6
+[2015.11.07-21.41.22:179][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.11.07-21.41.22:179][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.11.07-21.41.22:179][  0]LogInit:      CURL_VERSION_IDN
+[2015.11.07-21.41.22:180][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.11.07-21.41.22:180][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.11.07-21.41.22:180][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.11.07-21.41.22:180][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.11.07-21.41.22:180][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.11.07-21.41.22:933][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.11.07-21.41.22:945][  0]LogInit: Object subsystem initialized
+[2015.11.07-21.41.22:947][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.07-21.41.22:947][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.11.07-21.41.23:135][  0]LogInit: Computer: HP-PC
+[2015.11.07-21.41.23:135][  0]LogInit: User: Amber
+[2015.11.07-21.41.23:135][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.11.07-21.41.23:135][  0]LogInit: High frequency timer resolution =14.318180 MHz
+[2015.11.07-21.41.23:135][  0]LogMemory: Memory total: Physical=6.0GB (6GB approx)
+[2015.11.07-21.41.23:135][  0]LogMemory: Platform Memory Stats for Windows
+[2015.11.07-21.41.23:135][  0]LogMemory: Process Physical Memory: 54.47 MB used, 54.47 MB peak
+[2015.11.07-21.41.23:135][  0]LogMemory: Process Virtual Memory: 55.27 MB used, 55.27 MB peak
+[2015.11.07-21.41.23:135][  0]LogMemory: Physical Memory: 3720.15 MB used, 6141.22 MB total
+[2015.11.07-21.41.23:135][  0]LogMemory: Virtual Memory: 364.00 MB used, 134217728.00 MB total
+[2015.11.07-21.41.25:470][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2015.11.07-21.41.28:284][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 550 Ti (Feature Level 11_0)
+[2015.11.07-21.41.28:284][  0]LogD3D11RHI: Adapter has 972MB of dedicated video memory, 0MB of dedicated system memory, and 3070MB of shared system memory, 1 output[s]
+[2015.11.07-21.41.28:300][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2015.11.07-21.41.28:300][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 3070MB of shared system memory, 0 output[s]
+[2015.11.07-21.41.28:300][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.11.07-21.41.28:326][  0]LogD3D11RHI: !Direct3DDevice
+[2015.11.07-21.41.28:326][  0]LogRHI: Texture pool is 680 MB (70% of 972 MB)
+[2015.11.07-21.41.28:345][  0]LogD3D11RHI: Async texture creation enabled
+[2015.11.07-21.41.28:370][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/10264/).
+[2015.11.07-21.41.28:371][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/tmp/29BC28A545B8C211B4F830BCA2AF4C12/'.
+[2015.11.07-21.41.28:371][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.11.07-21.41.58:616][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.11.07-21.41.58:687][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.11.07-21.41.58:754][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.11.07-21.41.58:838][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.11.07-21.41.59:327][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.11.07-21.42.00:289][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.11.07-21.42.00:704][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.11.07-21.42.01:201][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.11.07-21.42.01:589][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.11.07-21.42.02:048][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.11.07-21.42.02:176][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.11.07-21.42.02:270][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.11.07-21.42.02:323][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2015.11.07-21.42.03:654][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.11.07-21.42.03:776][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.11.07-21.42.03:906][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.11.07-21.42.04:168][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.11.07-21.42.04:215][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.11.07-21.42.14:137][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.11.07-21.42.16:789][  0]LogDerivedDataCache: Loaded boot cache 2.56s 41MB C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.07-21.42.16:789][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2015.11.07-21.42.16:789][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.11.07-21.42.16:789][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.11.07-21.42.16:789][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.11.07-21.42.16:789][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.11.07-21.42.18:402][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.11.07-21.42.18:529][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Amber/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.11.07-21.45.25:247][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.07-21.45.26:793][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.11.07-21.45.38:870][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.11.07-21.45.38:870][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.11.07-21.46.09:002][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.11.07-21.48.56:909][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.11.07-21.49.03:465][  0]LogAssetRegistry: FAssetRegistry took 0.5420 seconds to start up
+[2015.11.07-21.49.22:314][  0]SourceControl: Info Source control is disabled
+[2015.11.07-21.49.22:532][  0]SourceControl: Info Source control is disabled
+[2015.11.07-21.49.23:830][  0]SourceControl: Info Source control is disabled
+[2015.11.07-21.49.24:944][  0]SourceControl: Info Source control is disabled
+[2015.11.07-21.49.41:140][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.07-21.49.47:925][  0]LogObj: 28361 objects as part of root set at end of initial load.
+[2015.11.07-21.49.47:925][  0]LogUObjectAllocator: 6038872 out of 0 bytes used by permanent object pool.
+[2015.11.07-21.49.59:511][  0]LogAutomationTest:Warning: Smoke tests took > 1s to run: 5.84s
+[2015.11.07-21.50.00:382][  0]LogEngine: Initializing Engine...
+[2015.11.07-21.50.00:425][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2015.11.07-21.50.14:334][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2015.11.07-21.50.37:287][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.11.07-21.50.45:845][  0]LogInit: XAudio2 using 'Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.07-21.50.46:548][  0]LogInit: FAudioDevice initialized.
+[2015.11.07-21.50.47:034][  0]LogDerivedDataCache: Saved boot cache 0.49s 41MB C:/Users/Amber/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.07-21.50.47:456][  0]LogInit: Texture streaming: Enabled
+[2015.11.07-21.50.49:455][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.11.07-21.50.49:551][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.07-21.50.49:551][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId fe48c13c4235ff87278523820fd1a74f|128e7d1d796a429f9247afe84ab758e1|a78d9d35-53ca-49d3-80af-52a3ac8256d6
+[2015.11.07-21.50.50:360][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.11.07-21.50.56:871][  0]LogInit: Transaction tracking system initialized
+[2015.11.07-21.51.11:657][  0]BlueprintLog: New page: Editor Load
+[2015.11.07-21.51.47:522][  0]LocalizationService: Info Localization service is disabled
+[2015.11.07-21.52.04:534][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
+[2015.11.07-21.52.04:585][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
+[2015.11.07-21.52.04:680][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/VehicleBP/VehicleOverview.VehicleOverview_C'
+[2015.11.07-21.52.15:270][  0]LogConsoleResponse:Display: 
+[2015.11.07-21.52.46:873][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.11.07-21.53.02:584][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 3.74s
+[2015.11.07-21.53.10:376][  0]SourceControl: Info Source control is disabled
+[2015.11.07-21.53.11:132][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Amber/Documents/Game Development/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/KartTestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.11.07-21.53.11:864][  0]LightingResults: New page: Lighting Build
+[2015.11.07-21.53.15:796][  0]MapCheck: New page: Map Check
+[2015.11.07-21.53.15:796][  0]LightingResults: New page: Lighting Build
+[2015.11.07-21.53.2
