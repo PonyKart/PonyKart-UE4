@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 0,
+	"VersionName": "",
+	"FriendlyName": "GeneratedBpCode",
+	"Description": "A programatically generated plugin which contains source files produced from Blueprint assets. The aim of this is to help performance by eliminating script overhead for the converted assets (using the source files in place of thier coresponding assets).",
+	"Category": "Intermediate",
+	"CreatedBy": "Epic Games, Inc.",
+	"CreatedByURL": "http://epicgames.com",
+	"DocsURL": "@TODO",
+	"MarketplaceURL": "",
+	"SupportURL": "https://answers.unrealengine.com/",
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GeneratedBpCode",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
