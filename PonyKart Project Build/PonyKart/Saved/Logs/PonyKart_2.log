@@ -1,0 +1,137 @@
+﻿Log file open, 04/13/16 19:59:46
+LogInit:Display: Running engine for game: PonyKart
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-4661867) SRandInit(-4661866).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.068338
+LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+LogInit: Version: 4.11.0-2927265+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Mar 30 2016 02:13:55
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.04.13-23.59.46:259][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.13-23.59.46:259][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.04.13-23.59.46:264][  0]LogInit: Computer: FULL_TOWER
+[2016.04.13-23.59.46:264][  0]LogInit: User: Sharpe
+[2016.04.13-23.59.46:264][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.04.13-23.59.46:264][  0]LogInit: High frequency timer resolution =3.418027 MHz
+[2016.04.13-23.59.46:264][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.04.13-23.59.46:264][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.13-23.59.46:264][  0]LogMemory: Process Physical Memory: 312.80 MB used, 312.80 MB peak
+[2016.04.13-23.59.46:264][  0]LogMemory: Process Virtual Memory: 316.87 MB used, 316.87 MB peak
+[2016.04.13-23.59.46:264][  0]LogMemory: Physical Memory: 4401.16 MB used, 8136.00 MB total
+[2016.04.13-23.59.46:264][  0]LogMemory: Virtual Memory: 618.05 MB used, 8388608.00 MB total
+[2016.04.13-23.59.46:291][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.04.13-23.59.46:628][  0]LogD3D11RHI: D3D11 adapters:
+[2016.04.13-23.59.46:646][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 770' (Feature Level 11_0)
+[2016.04.13-23.59.46:647][  0]LogD3D11RHI:       1989MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 1 output[s]
+[2016.04.13-23.59.46:647][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.04.13-23.59.46:649][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.04.13-23.59.46:650][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 770
+[2016.04.13-23.59.46:650][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.04.13-23.59.46:650][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.04.13-23.59.46:650][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.04.13-23.59.46:657][  0]LogD3D11RHI: Async texture creation enabled
+[2016.04.13-23.59.46:671][  0]LogShaderCompilers: Guid format shader working directory is -45 characters bigger than the processId version (../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/6364/).
+[2016.04.13-23.59.46:671][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Sharpe/AppData/Local/Temp/UnrealShaderWorkingDir/90157DF84FBC3C74DA62A996DF5C5044/'.
+[2016.04.13-23.59.46:671][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.13-23.59.47:736][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.13-23.59.47:739][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.04.13-23.59.47:742][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.04.13-23.59.47:745][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.04.13-23.59.47:748][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.04.13-23.59.47:750][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.04.13-23.59.47:752][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.04.13-23.59.47:755][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.04.13-23.59.47:757][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.04.13-23.59.47:759][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.04.13-23.59.47:761][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.04.13-23.59.47:765][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.04.13-23.59.47:765][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.04.13-23.59.47:766][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.04.13-23.59.47:780][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.04.13-23.59.47:782][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.04.13-23.59.47:784][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.13-23.59.47:786][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.13-23.59.47:788][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.13-23.59.47:788][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.04.13-23.59.47:830][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.13-23.59.47:878][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/Sharpe/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.13-23.59.47:878][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Sharpe/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.04.13-23.59.47:878][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.13-23.59.47:878][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.13-23.59.47:878][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.04.13-23.59.47:878][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.04.13-23.59.47:891][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.04.13-23.59.47:902][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Sharpe/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.04.13-23.59.48:070][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.13-23.59.48:071][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.04.13-23.59.48:089][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.04.13-23.59.48:818][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.13-23.59.48:818][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.13-23.59.48:818][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.04.13-23.59.49:177][  0]LogUObjectArray: 27674 objects as part of root set at end of initial load.
+[2016.04.13-23.59.49:177][  0]LogUObjectAllocator: 5590328 out of 0 bytes used by permanent object pool.
+[2016.04.13-23.59.49:177][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.04.13-23.59.49:181][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.04.13-23.59.49:234][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.13-23.59.49:234][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.13-23.59.49:300][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.13-23.59.49:300][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.13-23.59.49:300][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.13-23.59.49:300][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.13-23.59.49:300][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.13-23.59.49:300][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.13-23.59.49:748][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.04.13-23.59.49:836][  0]LogAssetRegistry: FAssetRegistry took 0.0201 seconds to start up
+[2016.04.13-23.59.50:420][  0]SourceControl: Info Source control is disabled
+[2016.04.13-23.59.50:421][  0]SourceControl: Info Source control is disabled
+[2016.04.13-23.59.50:428][  0]SourceControl: Info Source control is disabled
+[2016.04.13-23.59.50:435][  0]SourceControl: Info Source control is disabled
+[2016.04.13-23.59.50:558][  0]LogEngine: Initializing Engine...
+[2016.04.13-23.59.50:559][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.04.13-23.59.51:047][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.04.13-23.59.51:054][  0]LogInit: XAudio2 using 'Speakers (Turtle Beach PX22)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.13-23.59.51:074][  0]LogInit: FAudioDevice initialized.
+[2016.04.13-23.59.51:126][  0]LogDerivedDataCache: Saved boot cache 0.05s 67MB C:/Users/Sharpe/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.13-23.59.51:132][  0]LogInit: Texture streaming: Enabled
+[2016.04.13-23.59.51:147][  0]LogInit: Transaction tracking system initialized
+[2016.04.13-23.59.51:161][  0]BlueprintLog: New page: Editor Load
+[2016.04.13-23.59.51:203][  0]LocalizationService: Info Localization service is disabled
+[2016.04.13-23.59.51:246][  0]LogConsoleResponse:Display: 
+[2016.04.13-23.59.51:371][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.04.13-23.59.51:371][  0]LogCook:Display: Mobile HDR setting 1
+[2016.04.13-23.59.51:371][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.04.13-23.59.51:397][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 0.01s
+[2016.04.13-23.59.51:397][  0]SourceControl: Info Source control is disabled
+[2016.04.13-23.59.51:397][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Levels/KartTestLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.04.13-23.59.51:398][  0]LightingResults: New page: Lighting Build
+[2016.04.13-23.59.51:399][  0]MapCheck: New page: Map Check
+[2016.04.13-23.59.51:399][  0]LightingResults: New page: Lighting Build
+[2016.04.13-23.59.53:442][  0]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.04.13-23.59.53:462][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.13-23.59.53:462][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.13-23.59.53:503][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 40.491ms to complete.
+[2016.04.13-23.59.53:503][  0]LogFileHelpers: Loading map 'KartTestLevel' took 2.106
+[2016.04.13-23.59.53:
