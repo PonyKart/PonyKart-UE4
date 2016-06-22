@@ -1,0 +1,1247 @@
+﻿Log file open, 06/20/16 21:37:03
+LogInit:Display: Running engine for game: PonyKart
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1636892863) SRandInit(1636892864).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.076533
+LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+LogInit: Version: 4.11.0-2927265+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Mar 30 2016 02:13:55
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.21-01.37.03:869][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.21-01.37.03:869][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.21-01.37.03:875][  0]LogInit: Computer: FULL_TOWER
+[2016.06.21-01.37.03:875][  0]LogInit: User: Sharpe
+[2016.06.21-01.37.03:875][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.21-01.37.03:875][  0]LogInit: High frequency timer resolution =3.418027 MHz
+[2016.06.21-01.37.03:875][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.06.21-01.37.03:875][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.21-01.37.03:875][  0]LogMemory: Process Physical Memory: 313.40 MB used, 313.40 MB peak
+[2016.06.21-01.37.03:875][  0]LogMemory: Process Virtual Memory: 315.68 MB used, 315.68 MB peak
+[2016.06.21-01.37.03:875][  0]LogMemory: Physical Memory: 3353.24 MB used, 8136.00 MB total
+[2016.06.21-01.37.03:875][  0]LogMemory: Virtual Memory: 620.51 MB used, 8388608.00 MB total
+[2016.06.21-01.37.03:905][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.06.21-01.37.04:240][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.21-01.37.04:258][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 770' (Feature Level 11_0)
+[2016.06.21-01.37.04:258][  0]LogD3D11RHI:       1989MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 1 output[s]
+[2016.06.21-01.37.04:258][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.21-01.37.04:261][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.21-01.37.04:261][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 770
+[2016.06.21-01.37.04:261][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.21-01.37.04:261][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.21-01.37.04:261][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.21-01.37.04:268][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.21-01.37.04:282][  0]LogShaderCompilers: Guid format shader working directory is -45 characters bigger than the processId version (../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/2792/).
+[2016.06.21-01.37.04:282][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Sharpe/AppData/Local/Temp/UnrealShaderWorkingDir/E715584E41AC18569D9FC2A66C1C3128/'.
+[2016.06.21-01.37.04:282][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.21-01.37.05:537][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.21-01.37.05:541][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.21-01.37.05:544][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.21-01.37.05:548][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.21-01.37.05:551][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.21-01.37.05:553][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.21-01.37.05:556][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.21-01.37.05:558][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.21-01.37.05:560][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.21-01.37.05:563][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.21-01.37.05:565][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.21-01.37.05:569][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.21-01.37.05:569][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.21-01.37.05:570][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.21-01.37.05:584][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.21-01.37.05:587][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.21-01.37.05:589][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.21-01.37.05:591][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.21-01.37.05:593][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.21-01.37.05:593][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.21-01.37.05:642][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.21-01.37.05:689][  0]LogDerivedDataCache: Loaded boot cache 0.05s 46MB C:/Users/Sharpe/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.21-01.37.05:689][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Sharpe/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.21-01.37.05:690][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.21-01.37.05:690][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.21-01.37.05:690][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.21-01.37.05:690][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.21-01.37.05:703][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.21-01.37.05:714][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Sharpe/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.21-01.37.05:837][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.21-01.37.05:838][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.21-01.37.05:857][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.21-01.37.05:972][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.21-01.37.05:972][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.21-01.37.05:972][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.21-01.37.06:275][  0]LogUObjectArray: 27674 objects as part of root set at end of initial load.
+[2016.06.21-01.37.06:275][  0]LogUObjectAllocator: 5590336 out of 0 bytes used by permanent object pool.
+[2016.06.21-01.37.06:275][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.21-01.37.06:279][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.21-01.37.06:340][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.21-01.37.06:340][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.21-01.37.06:409][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.21-01.37.06:409][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.21-01.37.06:409][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.21-01.37.06:409][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.21-01.37.06:409][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.21-01.37.06:409][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.21-01.37.06:815][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.21-01.37.06:921][  0]LogAssetRegistry: FAssetRegistry took 0.0203 seconds to start up
+[2016.06.21-01.37.07:026][  0]SourceControl: Info Source control is disabled
+[2016.06.21-01.37.07:026][  0]SourceControl: Info Source control is disabled
+[2016.06.21-01.37.07:030][  0]SourceControl: Info Source control is disabled
+[2016.06.21-01.37.07:034][  0]SourceControl: Info Source control is disabled
+[2016.06.21-01.37.07:153][  0]LogEngine: Initializing Engine...
+[2016.06.21-01.37.07:154][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.06.21-01.37.07:279][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.21-01.37.07:284][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.37.07:293][  0]LogInit: FAudioDevice initialized.
+[2016.06.21-01.37.07:322][  0]LogDerivedDataCache: Saved boot cache 0.03s 46MB C:/Users/Sharpe/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.21-01.37.07:326][  0]LogInit: Texture streaming: Enabled
+[2016.06.21-01.37.07:340][  0]LogInit: Transaction tracking system initialized
+[2016.06.21-01.37.07:355][  0]BlueprintLog: New page: Editor Load
+[2016.06.21-01.37.07:398][  0]LocalizationService: Info Localization service is disabled
+[2016.06.21-01.37.07:433][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/AdvancedVehicleOverview'
+[2016.06.21-01.37.07:433][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/AdvancedVehicleOverview'
+[2016.06.21-01.37.07:433][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/VehicleAdvBP/AdvancedVehicleOverview.AdvancedVehicleOverview_C'
+[2016.06.21-01.37.07:442][  0]LogConsoleResponse:Display: 
+[2016.06.21-01.37.07:525][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.21-01.37.07:525][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.21-01.37.07:525][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.21-01.37.07:556][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 0.01s
+[2016.06.21-01.37.07:556][  0]SourceControl: Info Source control is disabled
+[2016.06.21-01.37.07:556][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Levels/KartTestLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.21-01.37.07:690][  0]LightingResults: New page: Lighting Build
+[2016.06.21-01.37.07:694][  0]MapCheck: New page: Map Check
+[2016.06.21-01.37.07:694][  0]LightingResults: New page: Lighting Build
+[2016.06.21-01.37.19:429][  0]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.37.19:437][  0]LogMaterial:Warning: Material /Game/Models/Karts/PinkiePieKart/rubber_dark.rubber_dark needed to have new flag set bUsedWithStaticLighting !
+[2016.06.21-01.37.19:444][  0]LogMaterial: Missing cached shader map for material rubber_dark, compiling. 
+[2016.06.21-01.37.19:484][  0]MapCheck:Warning: Warning rubber_dark Material /Game/Models/Karts/PinkiePieKart/rubber_dark.rubber_dark was missing the usage flag bUsedWithStaticLighting. If the material asset is not re-saved, it may not render correctly when run outside the editor. Fix
+[2016.06.21-01.37.19:484][  0]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.06.21-01.37.19:484][  0]LogMaterial:Warning: Material /Game/Models/Karts/PinkiePieKart/PinkiePieKartMaterial.PinkiePieKartMaterial needed to have new flag set bUsedWithStaticLighting !
+[2016.06.21-01.37.19:486][  0]LogMaterial: Missing cached shader map for material PinkiePieKartMaterial, compiling. 
+[2016.06.21-01.37.19:496][  0]MapCheck:Warning: Warning PinkiePieKartMaterial Material /Game/Models/Karts/PinkiePieKart/PinkiePieKartMaterial.PinkiePieKartMaterial was missing the usage flag bUsedWithStaticLighting. If the material asset is not re-saved, it may not render correctly when run outside the editor. Fix
+[2016.06.21-01.37.19:497][  0]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.06.21-01.37.23:292][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.21-01.37.23:292][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.21-01.37.23:347][  0]MapCheck: Info Map check complete: 0 Error(s), 2 Warning(s), took 54.873ms to complete.
+[2016.06.21-01.37.23:401][  0]LogFileHelpers: Loading map 'KartTestLevel' took 15.844
+[2016.06.21-01.37.23:587][  0]LogCollectionManager: Loaded 0 collections in 0.003883 seconds
+[2016.06.21-01.37.23:614][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' took 0.01s
+[2016.06.21-01.37.23:614][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Sharpe/Collections/' took 0.01s
+[2016.06.21-01.37.23:614][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' took 0.00s
+[2016.06.21-01.37.23:614][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.06.21-01.37.23:623][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 1978 classes and 343 folders.
+[2016.06.21-01.37.23:626][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.21-01.37.23:626][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.21-01.37.23:627][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.06.21-01.37.23:631][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.06.21-01.37.23:672][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.06.21-01.37.24:418][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2016.06.21-01.37.24:424][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2016.06.21-01.37.24:511][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.21-01.37.24:516][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.21-01.37.24:539][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.06.21-01.37.24:539][  0]LogLoad: Full Startup: 22.39 seconds (BP compile: 0.11 seconds)
+[2016.06.21-01.37.24:539][  0]LogExternalProfiler:Warning: No registered external profiler was matched with a command-line switch (or the DLL could not be loaded).  External profiling features will not be available.
+[2016.06.21-01.37.24:879][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.06.21-01.37.24:953][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.06.21-01.37.25:080][  0]LogRenderer: Reallocating scene render targets to support 720x464 (Frame:2).
+[2016.06.21-01.37.25:151][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.06.21-01.37.25:518][  1]LogAssetRegistry: Asset discovery search completed in 18.6177 seconds
+[2016.06.21-01.37.25:518][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.06.21-01.37.25:518][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000019 seconds (updated 0 objects)
+[2016.06.21-01.38.47:749][743]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 108 classes and 0 folders.
+[2016.06.21-01.41.33:456][398]LogRenderer: Reallocating scene render targets to support 1000x620 (Frame:5298).
+[2016.06.21-01.42.38:482][411]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.42.41:099][411]BlueprintEditorCompileResults: Info [0338.95] Compile of KartAnimationBlueprint successful! [in 2,617 ms]
+[2016.06.21-01.42.51:072][584]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.51:072][584]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.42.51:084][584]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:42:51 PM)
+[2016.06.21-01.42.51:084][584]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.42.51:173][584]LogPlayLevel: PIE: StaticDuplicateObject took: (0.088891s)
+[2016.06.21-01.42.51:174][584]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.42.51:174][584]LogPlayLevel: PIE: World Init took: (0.000974s)
+[2016.06.21-01.42.51:174][584]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.090074s)
+[2016.06.21-01.42.51:191][584]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.42.51:198][584]LogInit: FAudioDevice initialized.
+[2016.06.21-01.42.51:264][584]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.42.51:372][584]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.42.51
+[2016.06.21-01.42.51:374][584]LogWorld: Bringing up level for play took: 0.107666
+[2016.06.21-01.42.51:377][584]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 9 classes and 0 folders.
+[2016.06.21-01.42.51:377][584]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 1.24
+[2016.06.21-01.42.51:377][584]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.51:386][584]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.42.52:447][686]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.52:507][686]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.53:335][776]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.53:335][776]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.42.53:335][776]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:42:53 PM)
+[2016.06.21-01.42.53:335][776]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.42.53:425][776]LogPlayLevel: PIE: StaticDuplicateObject took: (0.090001s)
+[2016.06.21-01.42.53:426][776]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.42.53:426][776]LogPlayLevel: PIE: World Init took: (0.000958s)
+[2016.06.21-01.42.53:426][776]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.091173s)
+[2016.06.21-01.42.53:442][776]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.42.53:449][776]LogInit: FAudioDevice initialized.
+[2016.06.21-01.42.53:478][776]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.42.53:571][776]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.42.53
+[2016.06.21-01.42.53:573][776]LogWorld: Bringing up level for play took: 0.093160
+[2016.06.21-01.42.53:574][776]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.564
+[2016.06.21-01.42.53:574][776]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.53:576][776]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.42.54:368][869]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.54:404][869]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.42.55:185][958]LogEditorViewport: Clicking on Actor (LMB): KartPawn_C (KartPawn)
+[2016.06.21-01.42.55:434][981]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2016.06.21-01.43.10:348][717]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.43.10:348][717]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.43.10:348][717]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:43:10 PM)
+[2016.06.21-01.43.10:348][717]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.43.10:437][717]LogPlayLevel: PIE: StaticDuplicateObject took: (0.088709s)
+[2016.06.21-01.43.10:438][717]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.43.10:438][717]LogPlayLevel: PIE: World Init took: (0.001020s)
+[2016.06.21-01.43.10:438][717]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.089918s)
+[2016.06.21-01.43.10:479][717]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.43.10:486][717]LogInit: FAudioDevice initialized.
+[2016.06.21-01.43.10:520][717]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.43.10:621][717]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.43.10
+[2016.06.21-01.43.10:623][717]LogWorld: Bringing up level for play took: 0.100450
+[2016.06.21-01.43.10:625][717]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.487
+[2016.06.21-01.43.10:625][717]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.43.10:627][717]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.43.20:825][939]LogSelection:Warning: PIE object was selected: "KartPawn_C /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel:PersistentLevel.KartPawn_812"
+[2016.06.21-01.43.28:535][848]LogSelection:Warning: PIE object was selected: "SkeletalMeshComponent /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel:PersistentLevel.KartPawn_812.SkeletalMesh"
+[2016.06.21-01.43.39:378][141]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.43.39:452][141]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.43.59:537][460]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.43.59:659][460]BlueprintEditorCompileResults: Info [0417.50] Compile of KartAnimationBlueprint successful! [in 122 ms]
+[2016.06.21-01.44.01:804][714]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.44.01:804][714]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.21-01.44.01:808][714]LogPlayLevel: [PlayLevel] Compiling KartAnimationBlueprint before play...
+[2016.06.21-01.44.01:891][714]LogPlayLevel: PlayLevel: Blueprint regeneration took 86 ms (2 blueprints)
+[2016.06.21-01.44.01:897][714]LogPlayLevel: [PlayLevel] Compiling KartPawn before play...
+[2016.06.21-01.44.02:035][714]LogPlayLevel: PlayLevel: Blueprint regeneration took 231 ms (2 blueprints)
+[2016.06.21-01.44.02:055][714]BlueprintLog: Info Blueprint KartAnimationBlueprint failed to compile
+[2016.06.21-01.44.09:197][183]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.44.09:295][183]BlueprintEditorCompileResults: Info [0427.14] Compile of KartAnimationBlueprint successful! [in 98 ms]
+[2016.06.21-01.44.18:841][319]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.44.18:841][319]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.21-01.44.18:846][319]LogPlayLevel: [PlayLevel] Compiling KartAnimationBlueprint before play...
+[2016.06.21-01.44.18:935][319]LogPlayLevel: PlayLevel: Blueprint regeneration took 93 ms (2 blueprints)
+[2016.06.21-01.44.18:941][319]LogPlayLevel: [PlayLevel] Compiling KartPawn before play...
+[2016.06.21-01.44.19:080][319]LogPlayLevel: PlayLevel: Blueprint regeneration took 238 ms (2 blueprints)
+[2016.06.21-01.44.19:099][319]BlueprintLog: Info Blueprint KartAnimationBlueprint failed to compile
+[2016.06.21-01.44.27:100][715]LogSavePackage: Save=31.37ms
+[2016.06.21-01.44.27:100][715]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartAnimationBlueprint17993B8E4A95056898A693B4211C28C3.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/KartAnimationBlueprint.uasset'
+[2016.06.21-01.44.27:102][715]LogSavePackage: Total save time: 41.10ms
+[2016.06.21-01.44.27:102][715]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/KartAnimationBlueprint.uasset
+[2016.06.21-01.44.39:224][156]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.44.39:326][156]BlueprintEditorCompileResults: Info [0457.17] Compile of KartAnimationBlueprint successful! [in 101 ms]
+[2016.06.21-01.44.39:911][225]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.44.40:007][225]BlueprintEditorCompileResults: Info [0457.85] Compile of KartAnimationBlueprint successful! [in 95 ms]
+[2016.06.21-01.44.44:202][726]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.44.44:298][726]BlueprintEditorCompileResults: Info [0462.14] Compile of KartAnimationBlueprint successful! [in 96 ms]
+[2016.06.21-01.44.47:697][131]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.44.47:697][131]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.21-01.44.47:701][131]LogPlayLevel: [PlayLevel] Compiling KartAnimationBlueprint before play...
+[2016.06.21-01.44.47:783][131]LogPlayLevel: PlayLevel: Blueprint regeneration took 86 ms (2 blueprints)
+[2016.06.21-01.44.47:790][131]LogPlayLevel: [PlayLevel] Compiling KartPawn before play...
+[2016.06.21-01.44.47:930][131]LogPlayLevel: PlayLevel: Blueprint regeneration took 232 ms (2 blueprints)
+[2016.06.21-01.44.47:950][131]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:44:47 PM)
+[2016.06.21-01.44.47:950][131]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.44.48:041][131]LogPlayLevel: PIE: StaticDuplicateObject took: (0.091198s)
+[2016.06.21-01.44.48:042][131]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.44.48:042][131]LogPlayLevel: PIE: World Init took: (0.000929s)
+[2016.06.21-01.44.48:043][131]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.092390s)
+[2016.06.21-01.44.48:085][131]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.44.48:093][131]LogInit: FAudioDevice initialized.
+[2016.06.21-01.44.48:126][131]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.44.48:215][131]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.44.48
+[2016.06.21-01.44.48:217][131]LogWorld: Bringing up level for play took: 0.089450
+[2016.06.21-01.44.48:218][131]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.08
+[2016.06.21-01.44.48:219][131]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.44.48:221][131]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.44.50:642][400]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.44.50:686][400]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.45.37:634][958]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.45.37:775][958]BlueprintEditorCompileResults: Info [0515.62] Compile of KartAnimationBlueprint successful! [in 140 ms]
+[2016.06.21-01.45.39:981][216]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.45.39:981][216]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.45.39:981][216]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:45:39 PM)
+[2016.06.21-01.45.39:981][216]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.45.40:071][216]LogPlayLevel: PIE: StaticDuplicateObject took: (0.090124s)
+[2016.06.21-01.45.40:072][216]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.45.40:072][216]LogPlayLevel: PIE: World Init took: (0.000879s)
+[2016.06.21-01.45.40:072][216]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.091200s)
+[2016.06.21-01.45.40:116][216]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.45.40:123][216]LogInit: FAudioDevice initialized.
+[2016.06.21-01.45.40:154][216]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.45.40:249][216]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.45.40
+[2016.06.21-01.45.40:251][216]LogWorld: Bringing up level for play took: 0.095449
+[2016.06.21-01.45.40:253][216]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.113
+[2016.06.21-01.45.40:253][216]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.45.40:255][216]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.45.44:835][764]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.45.44:875][764]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.45.59:360][438]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.45.59:468][438]BlueprintEditorCompileResults: Info [0537.31] Compile of KartAnimationBlueprint successful! [in 107 ms]
+[2016.06.21-01.46.01:686][699]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.46.01:686][699]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.46.01:686][699]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:46:01 PM)
+[2016.06.21-01.46.01:686][699]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.46.01:779][699]LogPlayLevel: PIE: StaticDuplicateObject took: (0.093181s)
+[2016.06.21-01.46.01:780][699]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.46.01:780][699]LogPlayLevel: PIE: World Init took: (0.000888s)
+[2016.06.21-01.46.01:780][699]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.094277s)
+[2016.06.21-01.46.01:824][699]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.46.01:832][699]LogInit: FAudioDevice initialized.
+[2016.06.21-01.46.01:861][699]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.46.01:938][699]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.46.01
+[2016.06.21-01.46.01:940][699]LogWorld: Bringing up level for play took: 0.077267
+[2016.06.21-01.46.01:942][699]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.199
+[2016.06.21-01.46.01:942][699]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.46.01:944][699]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.46.08:374][469]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.46.08:413][469]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.48.37:097][146]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.48.37:210][146]BlueprintEditorCompileResults: Info [0695.05] Compile of KartAnimationBlueprint successful! [in 113 ms]
+[2016.06.21-01.48.44:788][ 42]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-01.48.44:870][ 42]BlueprintEditorCompileResults: Info [0702.71] Compile of KartAnimationBlueprint successful! [in 82 ms]
+[2016.06.21-01.48.50:281][681]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.48.50:281][681]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.48.50:281][681]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:48:50 PM)
+[2016.06.21-01.48.50:281][681]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.48.50:376][681]LogPlayLevel: PIE: StaticDuplicateObject took: (0.094661s)
+[2016.06.21-01.48.50:377][681]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.48.50:377][681]LogPlayLevel: PIE: World Init took: (0.000847s)
+[2016.06.21-01.48.50:377][681]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.095700s)
+[2016.06.21-01.48.50:418][681]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.48.50:427][681]LogInit: FAudioDevice initialized.
+[2016.06.21-01.48.50:454][681]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.48.50:532][681]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.48.50
+[2016.06.21-01.48.50:535][681]LogWorld: Bringing up level for play took: 0.079293
+[2016.06.21-01.48.50:536][681]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.393
+[2016.06.21-01.48.50:536][681]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.48.50:539][681]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.48.56:564][402]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.48.56:605][402]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.00:147][786]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.00:147][786]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.49.00:147][786]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:49:00 PM)
+[2016.06.21-01.49.00:147][786]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.49.00:242][786]LogPlayLevel: PIE: StaticDuplicateObject took: (0.094351s)
+[2016.06.21-01.49.00:243][786]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.49.00:243][786]LogPlayLevel: PIE: World Init took: (0.001048s)
+[2016.06.21-01.49.00:243][786]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.095612s)
+[2016.06.21-01.49.00:283][786]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.49.00:291][786]LogInit: FAudioDevice initialized.
+[2016.06.21-01.49.00:322][786]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.49.00:413][786]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.49.00
+[2016.06.21-01.49.00:415][786]LogWorld: Bringing up level for play took: 0.091409
+[2016.06.21-01.49.00:416][786]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.273
+[2016.06.21-01.49.00:417][786]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.00:419][786]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.49.01:107][867]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.01:172][867]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.06:722][516]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.06:722][516]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.49.06:722][516]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:49:06 PM)
+[2016.06.21-01.49.06:722][516]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.49.06:812][516]LogPlayLevel: PIE: StaticDuplicateObject took: (0.089594s)
+[2016.06.21-01.49.06:813][516]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.49.06:813][516]LogPlayLevel: PIE: World Init took: (0.001041s)
+[2016.06.21-01.49.06:813][516]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.090824s)
+[2016.06.21-01.49.06:854][516]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.49.06:861][516]LogInit: FAudioDevice initialized.
+[2016.06.21-01.49.06:893][516]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.49.06:985][516]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.49.06
+[2016.06.21-01.49.06:987][516]LogWorld: Bringing up level for play took: 0.091581
+[2016.06.21-01.49.06:988][516]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.845
+[2016.06.21-01.49.06:989][516]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.06:991][516]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.49.08:286][670]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.08:325][670]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.14:775][389]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.14:775][389]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-01.49.14:775][389]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:49:14 PM)
+[2016.06.21-01.49.14:775][389]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.49.14:868][389]LogPlayLevel: PIE: StaticDuplicateObject took: (0.092228s)
+[2016.06.21-01.49.14:868][389]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.49.14:869][389]LogPlayLevel: PIE: World Init took: (0.001018s)
+[2016.06.21-01.49.14:869][389]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.093450s)
+[2016.06.21-01.49.14:912][389]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.49.14:918][389]LogInit: FAudioDevice initialized.
+[2016.06.21-01.49.14:946][389]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.49.15:023][389]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.49.15
+[2016.06.21-01.49.15:025][389]LogWorld: Bringing up level for play took: 0.077269
+[2016.06.21-01.49.15:026][389]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.881
+[2016.06.21-01.49.15:026][389]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.49.15:028][389]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.50.55:578][451]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.50.55:648][451]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.51.23:967][631]LogSavePackage: Save=1161.39ms
+[2016.06.21-01.51.23:967][631]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartTestLevel_Auto1A4695799434521A7B505E8BE68C10107.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Levels/KartTestLevel_Auto1.umap'
+[2016.06.21-01.51.23:979][631]LogSavePackage: Total save time: 1193.46ms
+[2016.06.21-01.51.23:979][631]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Levels/KartTestLevel_Auto1.umap
+[2016.06.21-01.51.23:981][631]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/KartTestLevel' took 1.243
+[2016.06.21-01.51.23:981][631]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.243
+[2016.06.21-01.51.24:000][631]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/AJKart/KartAnimationBlueprint] ([1] browsable assets)...
+[2016.06.21-01.51.24:026][631]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint]
+[2016.06.21-01.51.24:026][631]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/AJKart/KartAnimationBlueprint]
+[2016.06.21-01.51.24:071][631]LogSavePackage: Save=41.79ms
+[2016.06.21-01.51.24:071][631]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartAnimationBlueprint_Auto1834CC70344E2B3BEB037B2BF59DA7B4A.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/AJKart/KartAnimationBlueprint_Auto1.uasset'
+[2016.06.21-01.51.24:077][631]LogSavePackage: Total save time: 50.14ms
+[2016.06.21-01.51.24:077][631]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/AJKart/KartAnimationBlueprint_Auto1.uasset
+[2016.06.21-01.51.24:081][631]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/KartPawn2] ([1] browsable assets)...
+[2016.06.21-01.51.24:108][631]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/KartPawn2.KartPawn]
+[2016.06.21-01.51.24:109][631]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/KartPawn2]
+[2016.06.21-01.51.24:484][631]LogSavePackage: Save=314.69ms
+[2016.06.21-01.51.24:484][631]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartPawn2_Auto1BC18FC5647103ED5B79A2F855D78485E.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/KartPawn2_Auto1.uasset'
+[2016.06.21-01.51.24:517][631]LogSavePackage: Total save time: 408.26ms
+[2016.06.21-01.51.24:517][631]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/KartPawn2_Auto1.uasset
+[2016.06.21-01.51.24:517][631]LogFileHelpers: Auto-saving content packages took 0.521
+[2016.06.21-01.52.33:941][959]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKartUE4.fbx)
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Model, ItemCount : 20
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Geometry, ItemCount : 5
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Material, ItemCount : 4
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Texture, ItemCount : 2
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Video, ItemCount : 2
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Deformer, ItemCount : 30
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: Pose, ItemCount : 1
+[2016.06.21-01.52.34:305][959]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.06.21-01.52.34:309][959]LogFbx: Loading FBX Scene from ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKartUE4.fbx
+[2016.06.21-01.52.34:626][959]LogFbx: FBX Scene Loaded Succesfully
+[2016.06.21-01.52.40:301][959]LogFbx: Loading FBX Scene from ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Development Assets/Model assets/Kart models/BigMac/BigMacKartUE4.fbx
+[2016.06.21-01.52.40:620][959]LogFbx: FBX Scene Loaded Succesfully
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartBody] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartBody (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartBody (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartBody]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelBR] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelBR (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelBR (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelBR]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelBL] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelBL (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelBL (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelBL]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelFL] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelFL (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelFL (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelFL]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelFR] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelFR (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelFR (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelFR]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartBody] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartBody (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartBody (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartBody]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelBR] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelBR (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelBR (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelBR]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelBL] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelBL (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelBL (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelBL]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelFL] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelFL (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelFL (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelFL]
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node START [BigMacKartWheelFR] 
+[2016.06.21-01.52.40:622][959]LogFbx: 	Total Deformer Count -1502205168.
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node 1] Skin BigMacKartWheelFR (Type Skin).
+[2016.06.21-01.52.40:622][959]LogFbx: =================================================
+[2016.06.21-01.52.40:622][959]LogFbx: 	Attribute () Type (4).
+[2016.06.21-01.52.40:622][959]LogFbx: 		[Node Attribute Child 1] BigMacKartWheelFR (Type Mesh).
+[2016.06.21-01.52.40:622][959]LogFbx: Dumping Node END [BigMacKartWheelFR]
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Not valid bind pose for Pose (BIND_POSES) - Node BigMacKartBody : The relative matrices do not match
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Not valid bind pose for Pose (BIND_POSES) - Node BigMacKartWheelBR : The relative matrices do not match
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Not valid bind pose for Pose (BIND_POSES) - Node BigMacKartWheelBL : The relative matrices do not match
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Not valid bind pose for Pose (BIND_POSES) - Node BigMacKartWheelFL : The relative matrices do not match
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Not valid bind pose for Pose (BIND_POSES) - Node BigMacKartWheelFR : The relative matrices do not match
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Getting valid bind pose failed. Try to recreate bind pose
+[2016.06.21-01.52.40:624][959]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - BigMacKartBody
+[2016.06.21-01.52.40:624][959]LogFbx:Warning: Recreating bind pose succeeded.
+[2016.06.21-01.52.40:625][959]LogFbx: Triangulating skeletal mesh BigMacKartBody
+[2016.06.21-01.52.41:999][959]LogFbx: Triangulating skeletal mesh BigMacKartWheelBR
+[2016.06.21-01.52.42:104][959]LogFbx: Triangulating skeletal mesh BigMacKartWheelBL
+[2016.06.21-01.52.42:210][959]LogFbx: Triangulating skeletal mesh BigMacKartWheelFL
+[2016.06.21-01.52.42:316][959]LogFbx: Triangulating skeletal mesh BigMacKartWheelFR
+[2016.06.21-01.52.42:434][959]LogFbx:Warning: Bones digested - 6  Depth of hierarchy - 3
+[2016.06.21-01.52.42:857][959]LogSkeletalMesh: Chunk 0: 8224 rigid vertices, 0 soft vertices, 1 active bones
+[2016.06.21-01.52.42:857][959]LogSkeletalMesh: Chunk 1: 4836 rigid vertices, 0 soft vertices, 1 active bones
+[2016.06.21-01.52.42:857][959]LogSkeletalMesh: Chunk 2: 5032 rigid vertices, 0 soft vertices, 4 active bones
+[2016.06.21-01.52.42:877][959]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 9237 triangles
+[2016.06.21-01.52.42:877][959]LogSkeletalMesh: Section 1: Material=1, Chunk=1, 5212 triangles
+[2016.06.21-01.52.42:877][959]LogSkeletalMesh: Section 2: Material=2, Chunk=2, 4912 triangles
+[2016.06.21-01.52.42:889][959]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartUE4_PhysicsAsset'
+[2016.06.21-01.52.42:889][959]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartUE4_PhysicsAsset'
+[2016.06.21-01.52.42:889][959]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Models/Karts/BigMacKart/BigMacKartUE4_PhysicsAsset.BigMacKartUE4_PhysicsAsset'
+[2016.06.21-01.52.42:904][959]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton'
+[2016.06.21-01.52.42:904][959]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton'
+[2016.06.21-01.52.42:904][959]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton.BigMacKartUE4_Skeleton'
+[2016.06.21-01.52.42:909][959]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.06.21-01.52.49:051][638]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2016.06.21-01.52.49:104][639]LogRenderer: Reallocating scene render targets to support 1000x880 (Frame:84558).
+[2016.06.21-01.58.04:737][607]LogAnimation:Warning: AnimBP KartAnimationBlueprint_C is incompatible with skeleton BigMacKartUE4_Skeleton, removing AnimBP from actor.
+[2016.06.21-01.58.04:738][607]LogAnimation:Warning: AnimBP KartAnimationBlueprint_C is incompatible with skeleton BigMacKartUE4_Skeleton, removing AnimBP from actor.
+[2016.06.21-01.58.04:739][607]LogAnimation:Warning: AnimBP KartAnimationBlueprint_C is incompatible with skeleton BigMacKartUE4_Skeleton, removing AnimBP from actor.
+[2016.06.21-01.58.17:546][961]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.21-01.58.29:676][161]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.58.29:676][161]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.21-01.58.29:709][161]LogPlayLevel: [PlayLevel] Compiling KartPawn before play...
+[2016.06.21-01.58.29:856][161]LogPlayLevel: PlayLevel: Blueprint regeneration took 180 ms (1 blueprints)
+[2016.06.21-01.58.29:878][161]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 4:58:29 PM)
+[2016.06.21-01.58.29:879][161]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-01.58.29:972][161]LogPlayLevel: PIE: StaticDuplicateObject took: (0.093718s)
+[2016.06.21-01.58.29:973][161]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-01.58.29:973][161]LogPlayLevel: PIE: World Init took: (0.000964s)
+[2016.06.21-01.58.29:973][161]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.094919s)
+[2016.06.21-01.58.30:015][161]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-01.58.30:024][161]LogInit: FAudioDevice initialized.
+[2016.06.21-01.58.30:051][161]LogWorld: Game class is 'GameMode'
+[2016.06.21-01.58.30:132][161]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-21.58.30
+[2016.06.21-01.58.30:134][161]LogWorld: Bringing up level for play took: 0.081614
+[2016.06.21-01.58.30:135][161]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.018
+[2016.06.21-01.58.30:135][161]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.58.30:138][161]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-01.58.31:873][366]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.58.31:917][366]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-01.58.33:063][491]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2016.06.21-02.01.28:633][935]LogSavePackage: Save=1214.28ms
+[2016.06.21-02.01.28:633][935]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartTestLevel_Auto2F4323563483957CE6DE362BF2AD03DCE.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Levels/KartTestLevel_Auto2.umap'
+[2016.06.21-02.01.28:665][935]LogSavePackage: Total save time: 1264.74ms
+[2016.06.21-02.01.28:665][935]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Levels/KartTestLevel_Auto2.umap
+[2016.06.21-02.01.28:666][935]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/KartTestLevel' took 1.295
+[2016.06.21-02.01.28:666][935]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.295
+[2016.06.21-02.01.28:672][935]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/KartPawn2] ([1] browsable assets)...
+[2016.06.21-02.01.28:699][935]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/KartPawn2.KartPawn]
+[2016.06.21-02.01.28:699][935]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/KartPawn2]
+[2016.06.21-02.01.29:182][935]LogSavePackage: Save=329.73ms
+[2016.06.21-02.01.29:182][935]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartPawn2_Auto2786FC77F49A2C7E29BFB89A4AA0CFD2C.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/KartPawn2_Auto2.uasset'
+[2016.06.21-02.01.29:183][935]LogSavePackage: Total save time: 483.34ms
+[2016.06.21-02.01.29:183][935]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/KartPawn2_Auto2.uasset
+[2016.06.21-02.01.29:186][935]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacKartUE4] ([1] browsable assets)...
+[2016.06.21-02.01.29:212][935]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/Models/Karts/BigMacKart/BigMacKartUE4.BigMacKartUE4]
+[2016.06.21-02.01.29:212][935]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacKartUE4]
+[2016.06.21-02.01.29:240][935]LogSavePackage: Save=27.25ms
+[2016.06.21-02.01.29:240][935]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartUE4_Auto21DFDE80345DFA0387ED832919A422BE6.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartUE4_Auto2.uasset'
+[2016.06.21-02.01.29:241][935]LogSavePackage: Total save time: 28.05ms
+[2016.06.21-02.01.29:241][935]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartUE4_Auto2.uasset
+[2016.06.21-02.01.29:243][935]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton] ([1] browsable assets)...
+[2016.06.21-02.01.29:243][935]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton]
+[2016.06.21-02.01.29:245][935]LogSavePackage: Save=0.87ms
+[2016.06.21-02.01.29:245][935]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartUE4_Skeleton_Auto2747E06D84D78EB79B35449A3C269B548.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton_Auto2.uasset'
+[2016.06.21-02.01.29:246][935]LogSavePackage: Total save time: 1.54ms
+[2016.06.21-02.01.29:246][935]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton_Auto2.uasset
+[2016.06.21-02.01.29:246][935]LogFileHelpers: Auto-saving content packages took 0.579
+[2016.06.21-02.02.25:922][115]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.21-02.02.57:526][882]LogSavePackage: Save=333.25ms
+[2016.06.21-02.02.57:526][882]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartPawn29EE1E99F4BDC2C4C7F2EB4B318E30923.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn2.uasset'
+[2016.06.21-02.02.57:529][882]LogSavePackage: Total save time: 340.65ms
+[2016.06.21-02.02.57:529][882]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn2.uasset
+[2016.06.21-02.11.29:824][648]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/KartTestLevel' took 0.016
+[2016.06.21-02.11.29:828][648]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacKartUE4] ([1] browsable assets)...
+[2016.06.21-02.11.29:855][648]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/Models/Karts/BigMacKart/BigMacKartUE4.BigMacKartUE4]
+[2016.06.21-02.11.29:855][648]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacKartUE4]
+[2016.06.21-02.11.29:885][648]LogSavePackage: Save=28.86ms
+[2016.06.21-02.11.29:885][648]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartUE4_Auto3BDBB3B7E4BAC930717483BA8E1FE422E.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartUE4_Auto3.uasset'
+[2016.06.21-02.11.29:901][648]LogSavePackage: Total save time: 45.08ms
+[2016.06.21-02.11.29:901][648]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacKartUE4_Auto3.uasset
+[2016.06.21-02.11.29:901][648]LogFileHelpers: Auto-saving content packages took 0.077
+[2016.06.21-02.14.13:414][ 87]LogSavePackage: Save=48.60ms
+[2016.06.21-02.14.13:414][ 87]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartAnimationBlueprint1D21CD604F20E85BEEB7F581F643B171.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/KartAnimationBlueprint.uasset'
+[2016.06.21-02.14.13:416][ 87]LogSavePackage: Total save time: 56.00ms
+[2016.06.21-02.14.13:416][ 87]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/KartAnimationBlueprint.uasset
+[2016.06.21-02.14.14:104][140]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.14.14:186][140]BlueprintEditorCompileResults: Info [2232.00] Compile of KartAnimationBlueprint successful! [in 82 ms]
+[2016.06.21-02.14.38:506][994]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.14.38:588][994]BlueprintEditorCompileResults: Info [2256.40] Compile of KartAnimationBlueprint successful! [in 82 ms]
+[2016.06.21-02.14.55:971][708]BlueprintLog: New page: Compile KartPawn
+[2016.06.21-02.14.56:135][708]BlueprintEditorCompileResults: Info [2273.95] Compile of KartPawn successful! [in 164 ms]
+[2016.06.21-02.14.58:437][958]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.14.58:437][958]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.14.58:438][958]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:14:58 PM)
+[2016.06.21-02.14.58:438][958]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.14.58:530][958]LogPlayLevel: PIE: StaticDuplicateObject took: (0.092200s)
+[2016.06.21-02.14.58:531][958]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.14.58:531][958]LogPlayLevel: PIE: World Init took: (0.001052s)
+[2016.06.21-02.14.58:531][958]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.093468s)
+[2016.06.21-02.14.58:574][958]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.14.58:581][958]LogInit: FAudioDevice initialized.
+[2016.06.21-02.14.58:616][958]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.14.58:723][958]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.14.58
+[2016.06.21-02.14.58:725][958]LogWorld: Bringing up level for play took: 0.106456
+[2016.06.21-02.14.58:726][958]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.555
+[2016.06.21-02.14.58:726][958]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.14.58:729][958]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.15.03:680][550]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.15.03:747][550]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.15.19:736][422]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.15.19:848][422]BlueprintEditorCompileResults: Info [2297.66] Compile of KartAnimationBlueprint successful! [in 111 ms]
+[2016.06.21-02.15.21:337][597]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.15.21:337][597]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.15.21:337][597]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:15:21 PM)
+[2016.06.21-02.15.21:337][597]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.15.21:429][597]LogPlayLevel: PIE: StaticDuplicateObject took: (0.091491s)
+[2016.06.21-02.15.21:430][597]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.15.21:430][597]LogPlayLevel: PIE: World Init took: (0.000954s)
+[2016.06.21-02.15.21:430][597]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.092630s)
+[2016.06.21-02.15.21:471][597]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.15.21:478][597]LogInit: FAudioDevice initialized.
+[2016.06.21-02.15.21:507][597]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.15.21:583][597]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.15.21
+[2016.06.21-02.15.21:585][597]LogWorld: Bringing up level for play took: 0.076221
+[2016.06.21-02.15.21:586][597]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.586
+[2016.06.21-02.15.21:586][597]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.15.21:588][597]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.15.46:955][639]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.15.46:996][639]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.16.15:925][ 59]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.16.16:039][ 59]BlueprintEditorCompileResults: Info [2353.85] Compile of KartAnimationBlueprint successful! [in 113 ms]
+[2016.06.21-02.16.18:046][294]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.16.18:046][294]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.16.18:046][294]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:16:18 PM)
+[2016.06.21-02.16.18:046][294]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.16.18:139][294]LogPlayLevel: PIE: StaticDuplicateObject took: (0.092727s)
+[2016.06.21-02.16.18:140][294]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.16.18:140][294]LogPlayLevel: PIE: World Init took: (0.001055s)
+[2016.06.21-02.16.18:140][294]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.093981s)
+[2016.06.21-02.16.18:181][294]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.16.18:188][294]LogInit: FAudioDevice initialized.
+[2016.06.21-02.16.18:217][294]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.16.18:295][294]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.16.18
+[2016.06.21-02.16.18:297][294]LogWorld: Bringing up level for play took: 0.079500
+[2016.06.21-02.16.18:298][294]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.125
+[2016.06.21-02.16.18:299][294]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.16.18:301][294]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.16.35:418][346]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.16.35:462][346]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.10:031][445]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.17.10:144][445]BlueprintEditorCompileResults: Info [2407.95] Compile of KartAnimationBlueprint successful! [in 112 ms]
+[2016.06.21-02.17.11:369][586]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.11:369][586]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.17.11:369][586]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:17:11 PM)
+[2016.06.21-02.17.11:369][586]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.17.11:460][586]LogPlayLevel: PIE: StaticDuplicateObject took: (0.091536s)
+[2016.06.21-02.17.11:461][586]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.17.11:461][586]LogPlayLevel: PIE: World Init took: (0.000935s)
+[2016.06.21-02.17.11:461][586]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.092693s)
+[2016.06.21-02.17.11:505][586]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.17.11:522][586]LogInit: FAudioDevice initialized.
+[2016.06.21-02.17.11:562][586]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.17.11:675][586]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.17.11
+[2016.06.21-02.17.11:677][586]LogWorld: Bringing up level for play took: 0.112749
+[2016.06.21-02.17.11:678][586]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.496
+[2016.06.21-02.17.11:678][586]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.11:680][586]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.17.12:815][699]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.12:857][699]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.13:285][738]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.13:285][738]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.17.13:285][738]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:17:13 PM)
+[2016.06.21-02.17.13:285][738]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.17.13:375][738]LogPlayLevel: PIE: StaticDuplicateObject took: (0.090152s)
+[2016.06.21-02.17.13:376][738]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.17.13:376][738]LogPlayLevel: PIE: World Init took: (0.000984s)
+[2016.06.21-02.17.13:376][738]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.091340s)
+[2016.06.21-02.17.13:420][738]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.17.13:427][738]LogInit: FAudioDevice initialized.
+[2016.06.21-02.17.13:463][738]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.17.13:576][738]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.17.13
+[2016.06.21-02.17.13:579][738]LogWorld: Bringing up level for play took: 0.111813
+[2016.06.21-02.17.13:580][738]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.595
+[2016.06.21-02.17.13:580][738]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.13:582][738]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.17.14:170][789]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.14:215][789]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.16:058][976]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.16:058][976]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.17.16:058][976]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:17:16 PM)
+[2016.06.21-02.17.16:058][976]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.17.16:148][976]LogPlayLevel: PIE: StaticDuplicateObject took: (0.089389s)
+[2016.06.21-02.17.16:149][976]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.17.16:149][976]LogPlayLevel: PIE: World Init took: (0.000979s)
+[2016.06.21-02.17.16:149][976]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.090587s)
+[2016.06.21-02.17.16:189][976]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.17.16:196][976]LogInit: FAudioDevice initialized.
+[2016.06.21-02.17.16:229][976]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.17.16:326][976]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.17.16
+[2016.06.21-02.17.16:328][976]LogWorld: Bringing up level for play took: 0.097530
+[2016.06.21-02.17.16:329][976]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.155
+[2016.06.21-02.17.16:329][976]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.16:331][976]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.17.22:353][695]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.22:394][695]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.38:374][552]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.17.38:486][552]BlueprintEditorCompileResults: Info [2436.30] Compile of KartAnimationBlueprint successful! [in 112 ms]
+[2016.06.21-02.17.40:144][744]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.40:144][744]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.21-02.17.40:144][744]PIE: New page: PIE session: KartTestLevel (Jun 20, 2016, 5:17:40 PM)
+[2016.06.21-02.17.40:144][744]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.06.21-02.17.40:236][744]LogPlayLevel: PIE: StaticDuplicateObject took: (0.091993s)
+[2016.06.21-02.17.40:237][744]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.06.21-02.17.40:237][744]LogPlayLevel: PIE: World Init took: (0.001162s)
+[2016.06.21-02.17.40:238][744]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.093344s)
+[2016.06.21-02.17.40:282][744]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.21-02.17.40:289][744]LogInit: FAudioDevice initialized.
+[2016.06.21-02.17.40:319][744]LogWorld: Game class is 'GameMode'
+[2016.06.21-02.17.40:398][744]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.06.20-22.17.40
+[2016.06.21-02.17.40:400][744]LogWorld: Bringing up level for play took: 0.079288
+[2016.06.21-02.17.40:401][744]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel 0.227
+[2016.06.21-02.17.40:401][744]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.17.40:403][744]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.06.21-02.20.49:772][460]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.20.49:818][460]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.06.21-02.21.55:315][278]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.21.55:406][278]BlueprintEditorCompileResults: Info [2693.21] Compile of KartAnimationBlueprint successful! [in 90 ms]
+[2016.06.21-02.21.56:252][369]LogSavePackage: Save=49.49ms
+[2016.06.21-02.21.56:252][369]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartAnimationBlueprint3BB265A741E6800387903B9D01747378.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/KartAnimationBlueprint.uasset'
+[2016.06.21-02.21.56:254][369]LogSavePackage: Total save time: 56.42ms
+[2016.06.21-02.21.56:254][369]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/KartAnimationBlueprint.uasset
+[2016.06.21-02.23.09:308][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2922
+[2016.06.21-02.23.09:308][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922.EdGraphPin_374) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_66.EdGraphPin_111).  Import failed...
+[2016.06.21-02.23.09:308][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2922.EdGraphPin_374''
+[2016.06.21-02.23.09:308][930]LogUObjectHash:Warning: Ambiguous search, could be AnimGraphNode_MeshRefPose /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_MeshRefPose_3 or AnimGraphNode_MeshRefPose /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_MeshRefPose_3
+[2016.06.21-02.23.09:308][930]LogUObjectHash:Warning: Ambiguous search, could be AnimGraphNode_MeshRefPose /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_MeshRefPose_3 or AnimGraphNode_MeshRefPose /Engine/Transient.PROTO_BP_AnimBlueprint_0:AnimGraph.AnimGraphNode_MeshRefPose_3
+[2016.06.21-02.23.09:308][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_MeshRefPose_3.EdGraphPin_152) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_66.EdGraphPin_113).  Import failed...
+[2016.06.21-02.23.09:308][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'AnimGraphNode_MeshRefPose_3.EdGraphPin_152''
+[2016.06.21-02.23.09:308][930]LogUObjectHash:Warning: Ambiguous search, could be AnimGraphNode_ModifyBone /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_1 or AnimGraphNode_ModifyBone /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_1
+[2016.06.21-02.23.09:308][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_1.EdGraphPin_95) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_66.EdGraphPin_115).  Import failed...
+[2016.06.21-02.23.09:308][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'AnimGraphNode_ModifyBone_1.EdGraphPin_95''
+[2016.06.21-02.23.09:309][930]LogUObjectHash:Warning: Ambiguous search, could be AnimGraphNode_ModifyBone /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_31 or AnimGraphNode_ModifyBone /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_31
+[2016.06.21-02.23.09:309][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_31.EdGraphPin_160) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ComponentToLocalSpace_30.EdGraphPin_128).  Import failed...
+[2016.06.21-02.23.09:309][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'AnimGraphNode_ModifyBone_31.EdGraphPin_160''
+[2016.06.21-02.23.09:309][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_Root_0.EdGraphPin_173) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ComponentToLocalSpace_30.EdGraphPin_129).  Import failed...
+[2016.06.21-02.23.09:309][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'AnimGraphNode_Root_0.EdGraphPin_173''
+[2016.06.21-02.23.09:310][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_VariableGet_215 or K2Node_VariableGet /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_VariableGet_215
+[2016.06.21-02.23.09:310][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_VariableGet_215.EdGraphPin_221) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_67.EdGraphPin_135).  Import failed...
+[2016.06.21-02.23.09:310][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_215.EdGraphPin_221''
+[2016.06.21-02.23.09:310][930]LogUObjectHash:Warning: Ambiguous search, could be AnimGraphNode_ModifyBone /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_1 or AnimGraphNode_ModifyBone /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_1
+[2016.06.21-02.23.09:310][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_1.EdGraphPin_97) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_67.EdGraphPin_137).  Import failed...
+[2016.06.21-02.23.09:310][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'AnimGraphNode_ModifyBone_1.EdGraphPin_97''
+[2016.06.21-02.23.09:310][930]LogUObjectHash:Warning: Ambiguous search, could be AnimGraphNode_ModifyBone /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_31 or AnimGraphNode_ModifyBone /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_31
+[2016.06.21-02.23.09:310][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_ModifyBone_31.EdGraphPin_158) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_67.EdGraphPin_139).  Import failed...
+[2016.06.21-02.23.09:310][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'AnimGraphNode_ModifyBone_31.EdGraphPin_158''
+[2016.06.21-02.23.09:311][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2917 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2917
+[2016.06.21-02.23.09:311][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2917.EdGraphPin_344) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_VariableGet_248.EdGraphPin_200).  Import failed...
+[2016.06.21-02.23.09:311][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2917.EdGraphPin_344''
+[2016.06.21-02.23.09:311][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_VariableGet_215 or K2Node_VariableGet /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_VariableGet_215
+[2016.06.21-02.23.09:311][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_VariableGet_215.EdGraphPin_221) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_31.EdGraphPin_156).  Import failed...
+[2016.06.21-02.23.09:311][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_215.EdGraphPin_221''
+[2016.06.21-02.23.09:313][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2922
+[2016.06.21-02.23.09:313][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922.EdGraphPin_374) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.AnimGraphNode_ModifyBone_1.EdGraphPin_93).  Import failed...
+[2016.06.21-02.23.09:313][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2922.EdGraphPin_374''
+[2016.06.21-02.23.09:313][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112 or K2Node_CommutativeAssociativeBinaryOperator /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.RenderToTextureMacros:Array to HLSL Float Array.K2Node_CommutativeAssociativeBinaryOperator_112
+[2016.06.21-02.23.09:313][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112 or K2Node_CommutativeAssociativeBinaryOperator /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.RenderToTextureMacros:Array to HLSL Int Array.K2Node_CommutativeAssociativeBinaryOperator_112
+[2016.06.21-02.23.09:314][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112 or K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112
+[2016.06.21-02.23.09:314][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112.EdGraphPin_360) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_VariableGet_233.EdGraphPin_227).  Import failed...
+[2016.06.21-02.23.09:314][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_112.EdGraphPin_360''
+[2016.06.21-02.23.09:314][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2922
+[2016.06.21-02.23.09:314][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922.EdGraphPin_371) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2917.EdGraphPin_345).  Import failed...
+[2016.06.21-02.23.09:314][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2922.EdGraphPin_371''
+[2016.06.21-02.23.09:314][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2922
+[2016.06.21-02.23.09:314][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922.EdGraphPin_372) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2917.EdGraphPin_346).  Import failed...
+[2016.06.21-02.23.09:314][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2922.EdGraphPin_372''
+[2016.06.21-02.23.09:315][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112 or K2Node_CommutativeAssociativeBinaryOperator /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.RenderToTextureMacros:Array to HLSL Float Array.K2Node_CommutativeAssociativeBinaryOperator_112
+[2016.06.21-02.23.09:315][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112 or K2Node_CommutativeAssociativeBinaryOperator /Engine/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.RenderToTextureMacros:Array to HLSL Int Array.K2Node_CommutativeAssociativeBinaryOperator_112
+[2016.06.21-02.23.09:315][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112 or K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112
+[2016.06.21-02.23.09:315][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112.EdGraphPin_359) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2917.EdGraphPin_347).  Import failed...
+[2016.06.21-02.23.09:315][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_112.EdGraphPin_359''
+[2016.06.21-02.23.09:315][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CallFunction_2922
+[2016.06.21-02.23.09:315][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.K2Node_CallFunction_2922.EdGraphPin_373) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:AnimGraph.K2Node_CommutativeAssociativeBinaryOperator_112.EdGraphPin_361).  Import failed...
+[2016.06.21-02.23.09:315][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2922.EdGraphPin_373''
+[2016.06.21-02.23.09:334][930]LogBlueprint:Warning: [BigMacAinBluePrint] CreatePinForVariable: 'DriveRotation' variable not found. Base class was probably changed.
+[2016.06.21-02.23.09:335][930]LogBlueprint:Warning: [BigMacAinBluePrint] CreatePinForVariable: 'TurnRotation' variable not found. Base class was probably changed.
+[2016.06.21-02.23.09:342][930]LogBlueprint:Warning: [BigMacAinBluePrint] CreatePinForVariable: 'DriveRotation' variable not found. Base class was probably changed.
+[2016.06.21-02.23.35:035][923]BlueprintLog: New page: Compile BigMacAinBluePrint
+[2016.06.21-02.23.35:045][923]LogBlueprint:Warning: [compiler BigMacAinBluePrint] Warning Could not find a variable named "TurnRotation" in 'BigMacAinBluePrint_C'.
+Make sure 'BigMacAinBluePrint_C' has been compiled for  Get TurnRotation 
+[2016.06.21-02.23.35:047][923]LogBlueprint:Warning: [compiler BigMacAinBluePrint] Warning Could not find a variable named "TurnRotation" in 'BigMacAinBluePrint_C'.
+Make sure 'BigMacAinBluePrint_C' has been compiled for  Get TurnRotation 
+[2016.06.21-02.23.35:048][923]LogBlueprint:Error: [compiler BigMacAinBluePrint] Error The property associated with  Turn Rotation  could not be found
+[2016.06.21-02.23.35:459][923]LogBlueprint:Warning: [compiler BigMacAinBluePrint] Warning [2793.26] Compile of BigMacAinBluePrint failed. 1 Fatal Issue(s) 2 Warning(s) [in 423 ms]
+[2016.06.21-02.23.35:459][923]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "TurnRotation" in 'BigMacAinBluePrint_C'.
+Make sure 'BigMacAinBluePrint_C' has been compiled for  Get TurnRotation 
+[2016.06.21-02.23.35:459][923]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "TurnRotation" in 'BigMacAinBluePrint_C'.
+Make sure 'BigMacAinBluePrint_C' has been compiled for  Get TurnRotation 
+[2016.06.21-02.23.35:459][923]BlueprintEditorCompileResults:Error: Error The property associated with  Turn Rotation  could not be found
+[2016.06.21-02.23.35:459][923]BlueprintEditorCompileResults:Warning: Warning [2793.26] Compile of BigMacAinBluePrint failed. 1 Fatal Issue(s) 2 Warning(s) [in 423 ms]
+[2016.06.21-02.23.40:137][459]BlueprintLog: New page: Compile BigMacAinBluePrint
+[2016.06.21-02.23.40:227][459]BlueprintEditorCompileResults: Info [2798.03] Compile of BigMacAinBluePrint successful! [in 89 ms]
+[2016.06.21-02.23.51:723][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_MacroInstance /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_MacroInstance_37 or K2Node_MacroInstance /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_MacroInstance_37
+[2016.06.21-02.23.51:723][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_MacroInstance_37.EdGraphPin_36493) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_Event_6.EdGraphPin_386).  Import failed...
+[2016.06.21-02.23.51:723][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_MacroInstance_37.EdGraphPin_36493''
+[2016.06.21-02.23.51:733][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_MacroInstance /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_MacroInstance_37 or K2Node_MacroInstance /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_MacroInstance_37
+[2016.06.21-02.23.51:733][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_MacroInstance_37.EdGraphPin_36494) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_375.EdGraphPin_395).  Import failed...
+[2016.06.21-02.23.51:733][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_MacroInstance_37.EdGraphPin_36494''
+[2016.06.21-02.23.51:733][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4023 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_4023
+[2016.06.21-02.23.51:733][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4023.EdGraphPin_36614) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_375.EdGraphPin_395).  Import failed...
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4023.EdGraphPin_36614''
+[2016.06.21-02.23.51:734][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_234 or K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_234
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_234.EdGraphPin_35747) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableSet_114.EdGraphPin_35086).  Import failed...
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_234.EdGraphPin_35747''
+[2016.06.21-02.23.51:734][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableSet_134 or K2Node_VariableSet /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_VariableSet_134
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_VariableSet_134.EdGraphPin_35737) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableSet_114.EdGraphPin_35085).  Import failed...
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_134.EdGraphPin_35737''
+[2016.06.21-02.23.51:734][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_MacroInstance /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_MacroInstance_37 or K2Node_MacroInstance /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_MacroInstance_37
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_MacroInstance_37.EdGraphPin_36495) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableSet_114.EdGraphPin_35084).  Import failed...
+[2016.06.21-02.23.51:734][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_MacroInstance_37.EdGraphPin_36495''
+[2016.06.21-02.23.51:735][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_3751 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3751
+[2016.06.21-02.23.51:735][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_3751.EdGraphPin_35752) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableSet_134.EdGraphPin_35739).  Import failed...
+[2016.06.21-02.23.51:735][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3751.EdGraphPin_35752''
+[2016.06.21-02.23.51:736][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_234 or K2Node_CommutativeAssociativeBinaryOperator /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_234
+[2016.06.21-02.23.51:736][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CommutativeAssociativeBinaryOperator_234.EdGraphPin_35745) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableGet_804.EdGraphPin_35742).  Import failed...
+[2016.06.21-02.23.51:736][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_234.EdGraphPin_35745''
+[2016.06.21-02.23.51:737][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_3753 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3753
+[2016.06.21-02.23.51:737][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_3753.EdGraphPin_35761) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3751.EdGraphPin_35750).  Import failed...
+[2016.06.21-02.23.51:737][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3753.EdGraphPin_35761''
+[2016.06.21-02.23.51:738][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_3753 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3753
+[2016.06.21-02.23.51:738][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_3753.EdGraphPin_35759) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3752.EdGraphPin_35756).  Import failed...
+[2016.06.21-02.23.51:738][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3753.EdGraphPin_35759''
+[2016.06.21-02.23.51:738][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_VariableGet_805 or K2Node_VariableGet /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_VariableGet_805
+[2016.06.21-02.23.51:738][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_VariableGet_805.EdGraphPin_35762) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3752.EdGraphPin_35754).  Import failed...
+[2016.06.21-02.23.51:738][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_805.EdGraphPin_35762''
+[2016.06.21-02.23.51:739][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4382 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_4382
+[2016.06.21-02.23.51:739][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4382.EdGraphPin_38332) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_3753.EdGraphPin_35760).  Import failed...
+[2016.06.21-02.23.51:739][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4382.EdGraphPin_38332''
+[2016.06.21-02.23.51:740][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4024 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_4024
+[2016.06.21-02.23.51:740][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4024.EdGraphPin_36617) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_4023.EdGraphPin_36615).  Import failed...
+[2016.06.21-02.23.51:740][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4024.EdGraphPin_36617''
+[2016.06.21-02.23.51:741][832]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4382 or K2Node_CallFunction /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_4382
+[2016.06.21-02.23.51:741][832]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_4382.EdGraphPin_38330) from referencer (EdGraphPin /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint:EventGraph.K2Node_CallFunction_4024.EdGraphPin_36618).  Import failed...
+[2016.06.21-02.23.51:741][832]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4382.EdGraphPin_38330''
+[2016.06.21-02.24.00:243][847]BlueprintLog: New page: Compile BigMacAinBluePrint
+[2016.06.21-02.24.00:332][847]BlueprintEditorCompileResults: Info [2818.13] Compile of BigMacAinBluePrint successful! [in 88 ms]
+[2016.06.21-02.24.18:287][984]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.24.18:406][984]BlueprintEditorCompileResults: Info [2836.21] Compile of KartAnimationBlueprint successful! [in 118 ms]
+[2016.06.21-02.24.29:569][322]BlueprintLog: New page: Compile KartAnimationBlueprint
+[2016.06.21-02.24.29:659][322]BlueprintEditorCompileResults: Info [2847.46] Compile of KartAnimationBlueprint successful! [in 90 ms]
+[2016.06.21-02.25.38:550][ 70]LogSavePackage: Save=1171.64ms
+[2016.06.21-02.25.38:550][ 70]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartTestLevel_Auto4B363779B4BCBE5EE6F6DF7B380D6A5C3.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Levels/KartTestLevel_Auto4.umap'
+[2016.06.21-02.25.38:600][ 70]LogSavePackage: Total save time: 1239.56ms
+[2016.06.21-02.25.38:600][ 70]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Levels/KartTestLevel_Auto4.umap
+[2016.06.21-02.25.38:602][ 70]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/KartTestLevel' took 1.264
+[2016.06.21-02.25.38:602][ 70]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.264
+[2016.06.21-02.25.38:615][ 70]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/AJKart/KartAnimationBlueprint] ([1] browsable assets)...
+[2016.06.21-02.25.38:644][ 70]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Models/Karts/AJKart/KartAnimationBlueprint.KartAnimationBlueprint]
+[2016.06.21-02.25.38:644][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/AJKart/KartAnimationBlueprint]
+[2016.06.21-02.25.38:694][ 70]LogSavePackage: Save=47.05ms
+[2016.06.21-02.25.38:694][ 70]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartAnimationBlueprint_Auto420869AB049771DCF1EE7E6B394FBBBCF.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/AJKart/KartAnimationBlueprint_Auto4.uasset'
+[2016.06.21-02.25.38:695][ 70]LogSavePackage: Total save time: 49.62ms
+[2016.06.21-02.25.38:695][ 70]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/AJKart/KartAnimationBlueprint_Auto4.uasset
+[2016.06.21-02.25.38:699][ 70]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/KartPawn2] ([1] browsable assets)...
+[2016.06.21-02.25.38:729][ 70]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/KartPawn2.KartPawn]
+[2016.06.21-02.25.38:729][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/KartPawn2]
+[2016.06.21-02.25.39:057][ 70]LogSavePackage: Save=322.29ms
+[2016.06.21-02.25.39:057][ 70]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartPawn2_Auto4BE7D93D94D8C16013D23F8BF36BAA4CA.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/KartPawn2_Auto4.uasset'
+[2016.06.21-02.25.39:057][ 70]LogSavePackage: Total save time: 327.68ms
+[2016.06.21-02.25.39:057][ 70]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/KartPawn2_Auto4.uasset
+[2016.06.21-02.25.39:061][ 70]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Models/Karts/BigMacKart/BigMacAinBluePrint] ([1] browsable assets)...
+[2016.06.21-02.25.39:087][ 70]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Models/Karts/BigMacKart/BigMacAinBluePrint.BigMacAinBluePrint]
+[2016.06.21-02.25.39:087][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Game/Models/Karts/BigMacKart/BigMacAinBluePrint]
+[2016.06.21-02.25.39:137][ 70]LogSavePackage: Save=49.22ms
+[2016.06.21-02.25.39:137][ 70]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacAinBluePrint_Auto4B7532EDB4D17D29921A273A8545A8C68.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacAinBluePrint_Auto4.uasset'
+[2016.06.21-02.25.39:138][ 70]LogSavePackage: Total save time: 50.12ms
+[2016.06.21-02.25.39:138][ 70]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Models/Karts/BigMacKart/BigMacAinBluePrint_Auto4.uasset
+[2016.06.21-02.25.39:138][ 70]LogFileHelpers: Auto-saving content packages took 0.526
+[2016.06.21-05.28.29:002][ 14]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartUE4'
+[2016.06.21-05.28.29:002][ 14]LogLinker:Warning: Can't find file for asset '/Game/Models/Karts/BigMacKart/BigMacKartUE4' while loading ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn2.uasset.
+[2016.06.21-05.28.29:002][ 14]LoadErrors:Error: Error /Game/Blueprints/KartPawn2 : Can't find file for asset. /Game/Models/Karts/BigMacKart/BigMacKartUE4
+[2016.06.21-05.28.29:005][ 14]LogLinker:Warning: Can't find file '/Game/Models/Karts/BigMacKart/BigMacKartUE4'
+[2016.06.21-05.28.29:005][ 14]LogLinker:Warning: Can't find file for asset '/Game/Models/Karts/BigMacKart/BigMacKartUE4' while loading ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn2.uasset.
+[2016.06.21-05.28.29:032][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint_C' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:032][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint_C:ExecuteUbergraph_KartAnimationBlueprint' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:032][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_Event_6' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:032][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint:EventGraph.K2Node_CallFunction_375' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:032][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint:AnimGraph.AnimGraphNode_Root_0' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint_C:DriveRotation' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.KartAnimationBlueprint_C:TurnRotation' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.SKEL_KartAnimationBlueprint_C' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.SKEL_KartAnimationBlueprint_C:ExecuteUbergraph_KartAnimationBlueprint' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.SKEL_KartAnimationBlueprint_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.SKEL_KartAnimationBlueprint_C:DriveRotation' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:033][ 14]LogMetaData: Removing '/Game/Models/Karts/AJKartOld/KartAnimationBlueprint.SKEL_KartAnimationBlueprint_C:TurnRotation' ref from Metadata '/Game/Models/Karts/AJKart/KartAnimationBlueprint.PackageMetaData'
+[2016.06.21-05.28.29:366][ 14]LogSavePackage: Save=54.85ms
+[2016.06.21-05.28.29:366][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartAnimationBlueprint2E82A21B4DE9D25E0ACFE09039DA572A.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/KartAnimationBlueprint.uasset'
+[2016.06.21-05.28.29:367][ 14]LogSavePackage: Total save time: 56.19ms
+[2016.06.21-05.28.29:367][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/KartAnimationBlueprint.uasset
+[2016.06.21-05.28.29:378][ 14]LogSavePackage: Save=1.14ms
+[2016.06.21-05.28.29:378][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJ_Kart6_Skeleton07BE4B92419F6C149E1CAB9D29D5EA8E.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJ_Kart6_Skeleton.uasset'
+[2016.06.21-05.28.29:378][ 14]LogSavePackage: Total save time: 2.19ms
+[2016.06.21-05.28.29:378][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJ_Kart6_Skeleton.uasset
+[2016.06.21-05.28.29:445][ 14]LogSavePackage: Save=53.59ms
+[2016.06.21-05.28.29:446][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJKart628404984041174DCB2212B2436C4637.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJKart.uasset'
+[2016.06.21-05.28.29:447][ 14]LogSavePackage: Total save time: 54.92ms
+[2016.06.21-05.28.29:447][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJKart.uasset
+[2016.06.21-05.28.29:480][ 14]LogSavePackage: Save=9.84ms
+[2016.06.21-05.28.29:480][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJKart_MatB4D486DA4B2269523976C1865FA34BD3.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJKart_Mat.uasset'
+[2016.06.21-05.28.29:481][ 14]LogSavePackage: Total save time: 11.15ms
+[2016.06.21-05.28.29:481][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJKart_Mat.uasset
+[2016.06.21-05.28.29:514][ 14]LogSavePackage: Save=9.78ms
+[2016.06.21-05.28.29:514][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJKartMat8C90CADB4AB3E348E3ED1797B96817F9.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJKartMat.uasset'
+[2016.06.21-05.28.29:515][ 14]LogSavePackage: Total save time: 10.96ms
+[2016.06.21-05.28.29:515][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJKartMat.uasset
+[2016.06.21-05.28.29:545][ 14]LogSavePackage: Save=13.63ms
+[2016.06.21-05.28.29:545][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJ_Kart63AF520DE450B49C7D336A9A00C619707.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJ_Kart6.uasset'
+[2016.06.21-05.28.29:546][ 14]LogSavePackage: Total save time: 14.80ms
+[2016.06.21-05.28.29:546][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJ_Kart6.uasset
+[2016.06.21-05.28.29:560][ 14]LogSavePackage: Save=1.17ms
+[2016.06.21-05.28.29:560][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJ_Kart6D038ED39491C449CB95039A3BA145003.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/AJ_Kart6.uasset'
+[2016.06.21-05.28.29:562][ 14]LogSavePackage: Total save time: 10.00ms
+[2016.06.21-05.28.29:562][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/AJ_Kart6.uasset
+[2016.06.21-05.28.29:593][ 14]LogSavePackage: Save=8.62ms
+[2016.06.21-05.28.29:593][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJ_Kart18725F4644493D14DF4B90887FCC8C1A.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJ_Kart.uasset'
+[2016.06.21-05.28.29:594][ 14]LogSavePackage: Total save time: 9.84ms
+[2016.06.21-05.28.29:594][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKartOld/AJ_Kart.uasset
+[2016.06.21-05.28.29:603][ 14]LogSavePackage: Save=0.81ms
+[2016.06.21-05.28.29:603][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/AJ_KartDB053E7442A1C8B60F6A878C9ED9A9F4.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/AJ_Kart.uasset'
+[2016.06.21-05.28.29:604][ 14]LogSavePackage: Total save time: 4.57ms
+[2016.06.21-05.28.29:604][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/AJKart/AJ_Kart.uasset
+[2016.06.21-05.28.30:468][ 14]LogSavePackage: Save=348.13ms
+[2016.06.21-05.28.30:468][ 14]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartPawn2ADA13FA248E72EC5BAC7D98486651634.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn2.uasset'
+[2016.06.21-05.28.30:470][ 14]LogSavePackage: Total save time: 354.55ms
+[2016.06.21-05.28.30:470][ 14]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/KartPawn2.uasset
+[2016.06.21-05.28.50:735][416]Cmd: DELETE
+[2016.06.21-05.28.50:735][416]Cmd: ACTOR DELETE
+[2016.06.21-05.28.50:745][416]LogEditorActor: Deleted Actor: KartPawn_C
+[2016.06.21-05.28.50:784][416]LogEditorActor: Deleted 1 Actors (0.049 secs)
+[2016.06.21-05.28.52:345][602]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (FlufflePuff)
+[2016.06.21-05.28.53:427][727]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2016.06.21-05.28.58:267][300]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (AJ_Kart6)
+[2016.06.21-05.28.59:112][396]Cmd: DELETE
+[2016.06.21-05.28.59:112][396]Cmd: ACTOR DELETE
+[2016.06.21-05.28.59:121][396]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2016.06.21-05.28.59:137][396]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2016.06.21-05.28.59:541][444]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (AJ_Kart)
+[2016.06.21-05.28.59:648][450]Cmd: DELETE
+[2016.06.21-05.28.59:648][450]Cmd: ACTOR DELETE
+[2016.06.21-05.28.59:658][450]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.28.59:673][450]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2016.06.21-05.29.00:159][507]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (DashKart)
+[2016.06.21-05.29.00:278][517]Cmd: DELETE
+[2016.06.21-05.29.00:278][517]Cmd: ACTOR DELETE
+[2016.06.21-05.29.00:287][517]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.00:302][517]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.06.21-05.29.00:805][577]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (FlutterKart_Mk1)
+[2016.06.21-05.29.01:199][620]Cmd: DELETE
+[2016.06.21-05.29.01:199][620]Cmd: ACTOR DELETE
+[2016.06.21-05.29.01:210][620]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.01:225][620]LogEditorActor: Deleted 1 Actors (0.026 secs)
+[2016.06.21-05.29.01:497][652]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (LunaKart)
+[2016.06.21-05.29.02:298][742]Cmd: DELETE
+[2016.06.21-05.29.02:298][742]Cmd: ACTOR DELETE
+[2016.06.21-05.29.02:307][742]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.02:323][742]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.06.21-05.29.02:651][781]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (PinkiePieKart)
+[2016.06.21-05.29.02:759][789]Cmd: DELETE
+[2016.06.21-05.29.02:759][789]Cmd: ACTOR DELETE
+[2016.06.21-05.29.02:768][789]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.02:784][789]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.06.21-05.29.03:085][825]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (RarityKart)
+[2016.06.21-05.29.03:225][837]Cmd: DELETE
+[2016.06.21-05.29.03:225][837]Cmd: ACTOR DELETE
+[2016.06.21-05.29.03:233][837]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.03:249][837]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.06.21-05.29.03:551][873]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SimpleKart)
+[2016.06.21-05.29.03:697][886]Cmd: DELETE
+[2016.06.21-05.29.03:697][886]Cmd: ACTOR DELETE
+[2016.06.21-05.29.03:706][886]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.03:722][886]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.06.21-05.29.04:116][933]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TwilightKart)
+[2016.06.21-05.29.04:260][946]Cmd: DELETE
+[2016.06.21-05.29.04:260][946]Cmd: ACTOR DELETE
+[2016.06.21-05.29.04:268][946]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.21-05.29.04:284][946]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.06.21-05.29.11:192][613]LogSavePackage: Save=1203.81ms
+[2016.06.21-05.29.11:192][613]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/KartTestLevel3F321A2E4E749A17D6A896BFE27CFC2C.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Levels/KartTestLevel.umap'
+[2016.06.21-05.29.11:225][613]LogSavePackage: Total save time: 1253.10ms
+[2016.06.21-05.29.11:225][613]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Levels/KartTestLevel.umap
+[2016.06.21-05.29.13:768][894]LogSavePackage: Save=27.83ms
+[2016.06.21-05.29.13:769][894]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartUE4EBDAD3EF4E0F1F7AAAA469A9504FC2D1.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartUE4.uasset'
+[2016.06.21-05.29.13:770][894]LogSavePackage: Total save time: 29.38ms
+[2016.06.21-05.29.13:770][894]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartUE4.uasset
+[2016.06.21-05.29.13:780][894]LogSavePackage: Save=0.94ms
+[2016.06.21-05.29.13:780][894]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacKartUE4_Skeleton7AF4D7BD4E608DDB292EB48BE5130726.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton.uasset'
+[2016.06.21-05.29.13:782][894]LogSavePackage: Total save time: 2.37ms
+[2016.06.21-05.29.13:782][894]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacKartUE4_Skeleton.uasset
+[2016.06.21-05.29.13:860][894]LogSavePackage: Save=56.59ms
+[2016.06.21-05.29.13:860][894]LogSavePackage: Moving '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/BigMacAinBluePrintD4D006C64DB7A7FFA448C69126721FD7.tmp' to '../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacAinBluePrint.uasset'
+[2016.06.21-05.29.13:862][894]LogSavePackage: Total save time: 59.41ms
+[2016.06.21-05.29.13:862][894]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sharpe/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Models/Karts/BigMacKart/BigMacAinBluePrint.uasset
+[2016.06.21-05.29.18:400][332]Cmd: QUIT_EDITOR
+[2016.06.21-05.29.18:516][332]LogExit: Preparing to exit.
+[2016.06.21-05.29.18:838][332]LogExit: Editor shut down
+[2016.06.21-05.29.18:838][332]LogExit: Transaction tracking system shut down
+[2016.06.21-05.29.19:044][332]LogObj: Freed 0b from 0 cluster array pools.
+[2016.06.21-05.29.19:044][332]LogExit: Object subsystem successfully closed.
+[2016.06.21-05.29.19:063][332]LogD3D11RHI: Shutdown
+[2016.06.21-05.29.19:063][332]LogD3D11RHI: CleanupD3DDevice
+[2016.06.21-05.29.19:210][332]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.06.21-05.29.19:253][332]LogDerivedDataCache: Shutdown
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (205)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module BlueprintGraph (204)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (203)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module CrashTracker (202)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module SceneOutliner (201)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module SuperSearch (200)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module WidgetCarousel (199)
+[2016.06.21-05.29.19:253][332]LogModuleManager: Shutting down and abandoning module AddContentDialog (198)
+[2016.06.21-05.29.19:254][332]LogModuleManager: Shutting down and abandoning module GameplayTags (197)
+[2016.06.21-05.29.19:254][332]LogModuleManager: Shutting down and abandoning module EditorWidgets (196)
+[2016.06.21-05.29.19:254][332]LogModuleManager: Shutting down and abandoning module CollectionManager (195)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module StatsViewer (194)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module FoliageEdit (193)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module LandscapeEditor (192)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module ActorPickerMode (191)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module GeometryMode (190)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module TextureAlignMode (189)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module BspMode (188)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module PlacementMode (187)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module AutomationWorker (186)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module CharacterAI (185)
+[2016.06.21-05.29.19:255][332]LogModuleManager: Shutting down and abandoning module SmartSnapping (184)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module ViewportSnapping (183)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module LogVisualizer (182)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (181)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module IntroTutorials (180)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (179)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (178)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (177)
+[2016.06.21-05.29.19:256][332]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (176)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (175)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (174)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (173)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module MergeActors (172)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module SizeMap (171)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module TreeMap (170)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module ReferenceViewer (169)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module LocalizationService (168)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (167)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module HardwareTargeting (166)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (165)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module UndoHistory (164)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module UserFeedback (163)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module XmlParser (162)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module Blutility (161)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (160)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (159)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module InputBindingEditor (158)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (157)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module SettingsEditor (156)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module ProjectLauncher (155)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module SessionFrontend (154)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module ProfilerClient (153)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (152)
+[2016.06.21-05.29.19:348][332]LogModuleManager: Shutting down and abandoning module DeviceManager (151)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module AutomationController (150)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module AutomationWindow (149)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module Layers (148)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (147)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module DetailCustomizations (146)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module PackagesDialog (145)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module Persona (144)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module Kismet (143)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module GraphEditor (142)
+[2016.06.21-05.29.19:379][332]LogModuleManager: Shutting down and abandoning module ClassViewer (141)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module Toolbox (140)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module ModuleUI (139)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module MovieSceneTools (138)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module OutputLog (137)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module GammaUI (136)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module Documentation (135)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (134)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module AnalyticsET (133)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module Analytics (132)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module PortalServices (131)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module PortalRpc (130)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module MessagingRpc (129)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module AITestSuite (128)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module GameplayDebugger (127)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module AIModule (126)
+[2016.06.21-05.29.19:380][332]LogModuleManager: Shutting down and abandoning module ProfilerService (125)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module TaskGraph (124)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module SlateRemote (123)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module SteamVRController (122)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module SteamVR (121)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (120)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module OculusLibrary (119)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module OculusInput (118)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (117)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module CableComponent (116)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (115)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (114)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module HTML5Networking (113)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (112)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module PluginBrowser (111)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module EpicSurvey (110)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module DesktopPlatform (109)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (108)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module UObjectPlugin (107)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (106)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (105)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module SourceControl (104)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module GitSourceControl (103)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (102)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (101)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (100)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module MeshPaint (99)
+[2016.06.21-05.29.19:595][332]LogModuleManager: Shutting down and abandoning module HotReload (98)
+[2016.06.21-05.29.19:596][332]LogModuleManager: Shutting down and abandoning module MainFrame (97)
+[2016.06.21-05.29.19:596][332]LogModuleManager: Shutting down and abandoning module LevelEditor (96)
+[2016.06.21-05.29.19:596][332]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (95)
+[2016.06.21-05.29.19:597][332]LogModuleManager: Shutting down and abandoning module AssetRegistry (94)
+[2016.06.21-05.29.19:764][332]LogModuleManager: Shutting down and abandoning module ContentBrowser (93)
+[2016.06.21-05.29.19:765][332]LogModuleManager: Shutting down and abandoning module Paper2DEditor (92)
+[2016.06.21-05.29.19:765][332]LogModuleManager: Shutting down and abandoning module UdpMessaging (91)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (90)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module Paper2D (89)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (88)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module Media (87)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module WmfMedia (86)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.06.21-05.29.19:865][332]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.06.21-05.29.19:867][332]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.06.21-05.29.19:871][332]LogDerivedDataCache: Shutdown
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.06.21-05.29.19:871][332]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.06.21-05.29.19:872][332]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.06.21-05.29.19:872][332]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.06.21-05.29.19:872][332]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.06.21-05.29.19:872][332]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.06.21-05.29.22:373][332]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.06.21-05.29.22:377][332]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.06.21-05.29.22:379][332]LogExit: Exiting.
+[2016.06.21-05.29.22:399][332]Log file closed, 06/21/16 01:29:22
