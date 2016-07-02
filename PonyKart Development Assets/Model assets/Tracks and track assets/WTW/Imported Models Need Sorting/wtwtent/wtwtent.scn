@@ -1,0 +1,21 @@
+# MaxToBlenderExport 1  author Silvio Falcinelli  wwww.rendering3d.net
+
+
+newlight Sky001
+	 from -56.6109 20.3783 0.0  
+	 to -56.6109 20.3783 -10.0 
+	 rot 0.0 0.0 0.0 
+	 color 0.95 0.95 1.0 
+	 power 1.0
+	 type HEMI
+	 samples 20 
+	 rot 0.0 0.0 0.0 
+
+
+newlight Spot001
+	 from -1005.9 183.722 731.714  
+	 to -1005.9 183.722 721.714 
+	 rot 54.4217 0.0 -100.435 
+	 type SPOT
+	 color 1.0 1.0 1.0 
+	 power 0.5
