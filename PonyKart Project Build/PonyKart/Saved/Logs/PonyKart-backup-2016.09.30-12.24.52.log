@@ -1,0 +1,525 @@
+﻿Log file open, 08/21/16 00:02:34
+LogInit:Display: Running engine for game: PonyKart
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(24223765) SRandInit(24223767).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.068681
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.21-04.02.34:391][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.21-04.02.34:391][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.21-04.02.34:403][  0]LogInit: Computer: FULLTOWER
+[2016.08.21-04.02.34:403][  0]LogInit: User: amber
+[2016.08.21-04.02.34:403][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.21-04.02.34:403][  0]LogInit: High frequency timer resolution =3.417982 MHz
+[2016.08.21-04.02.34:403][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.08.21-04.02.34:403][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.21-04.02.34:403][  0]LogMemory: Process Physical Memory: 189.94 MB used, 189.94 MB peak
+[2016.08.21-04.02.34:403][  0]LogMemory: Process Virtual Memory: 194.92 MB used, 194.92 MB peak
+[2016.08.21-04.02.34:403][  0]LogMemory: Physical Memory: 2382.86 MB used, 8136.01 MB total
+[2016.08.21-04.02.34:403][  0]LogMemory: Virtual Memory: 552.02 MB used, 134217728.00 MB total
+[2016.08.21-04.02.34:428][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.21-04.02.34:764][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.21-04.02.34:789][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 770' (Feature Level 11_0)
+[2016.08.21-04.02.34:789][  0]LogD3D11RHI:       2017/0/4068 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.08.21-04.02.34:791][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.21-04.02.34:791][  0]LogD3D11RHI:       0/0/4068 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.08.21-04.02.34:791][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.21-04.02.34:794][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.21-04.02.34:794][  0]LogD3D11RHI:     GPU DeviceId: 0x1184 (for the marketing name, search the web for "GPU Device Id")
+[2016.08.21-04.02.34:794][  0]LogWindows: EnumDisplayDevices:
+[2016.08.21-04.02.34:794][  0]LogWindows:    0. 'NVIDIA GeForce GTX 770' (P:1 D:1)
+[2016.08.21-04.02.34:794][  0]LogWindows:    1. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.21-04.02.34:794][  0]LogWindows:    2. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.21-04.02.34:794][  0]LogWindows:    3. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.21-04.02.34:794][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.08.21-04.02.34:794][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 770
+[2016.08.21-04.02.34:794][  0]LogD3D11RHI:   Driver Version: 368.81 (internal:10.18.13.6881, unified:368.81)
+[2016.08.21-04.02.34:794][  0]LogD3D11RHI:      Driver Date: 7-10-2016
+[2016.08.21-04.02.34:795][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.21-04.02.34:806][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.21-04.02.34:821][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.08.21-04.02.34:821][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/3184/).
+[2016.08.21-04.02.34:821][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/amber/AppData/Local/Temp/UnrealShaderWorkingDir/4A272E4C487B2DE1754AE2966046249E/'.
+[2016.08.21-04.02.34:821][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.21-04.02.35:603][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.21-04.02.35:611][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.21-04.02.35:619][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.21-04.02.35:627][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.21-04.02.35:635][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.21-04.02.35:642][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.21-04.02.35:649][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.21-04.02.35:656][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.21-04.02.35:662][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.21-04.02.35:669][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.21-04.02.35:676][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.21-04.02.35:690][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.21-04.02.35:690][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.21-04.02.35:691][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.21-04.02.35:710][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.21-04.02.35:717][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.21-04.02.35:724][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.21-04.02.35:730][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.21-04.02.35:737][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.21-04.02.35:737][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.21-04.02.35:798][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.21-04.02.35:848][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/amber/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.21-04.02.35:848][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/amber/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.08.21-04.02.35:848][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.21-04.02.35:848][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.21-04.02.35:848][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.21-04.02.35:848][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.21-04.02.35:863][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.21-04.02.35:875][  0]LogDerivedDataCache: Using Local data cache path C:/Users/amber/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.21-04.02.36:021][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.21-04.02.36:022][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.21-04.02.36:153][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.21-04.02.36:153][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.21-04.02.36:153][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.21-04.02.36:364][  0]LogAssetRegistry: FAssetRegistry took 0.0209 seconds to start up
+[2016.08.21-04.02.36:389][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.022778 seconds
+[2016.08.21-04.02.36:393][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.08.21-04.02.36:393][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.08.21-04.02.36:393][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.21-04.02.36:399][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.21-04.02.36:538][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.21-04.02.36:538][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.21-04.02.37:060][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.21-04.02.37:238][  0]SourceControl: Info Source control is disabled
+[2016.08.21-04.02.37:239][  0]SourceControl: Info Source control is disabled
+[2016.08.21-04.02.37:246][  0]SourceControl: Info Source control is disabled
+[2016.08.21-04.02.37:252][  0]SourceControl: Info Source control is disabled
+[2016.08.21-04.02.37:419][  0]LogEngine: Initializing Engine...
+[2016.08.21-04.02.37:419][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.21-04.02.37:420][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.21-04.02.37:538][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.21-04.02.37:546][  0]LogInit: XAudio2 using 'Speakers (Turtle Beach PX11 Chat)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-04.02.37:555][  0]LogInit: FAudioDevice initialized.
+[2016.08.21-04.02.37:580][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/amber/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.21-04.02.37:589][  0]LogInit: Texture streaming: Enabled
+[2016.08.21-04.02.37:606][  0]LogInit: Transaction tracking system initialized
+[2016.08.21-04.02.37:624][  0]BlueprintLog: New page: Editor Load
+[2016.08.21-04.02.37:679][  0]LocalizationService: Info Localization service is disabled
+[2016.08.21-04.02.37:729][  0]LogConsoleResponse:Display: 
+[2016.08.21-04.02.37:813][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.21-04.02.37:813][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.21-04.02.37:890][  0]LogFileCache: Scanning file cache for directory 'C:/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 0.02s
+[2016.08.21-04.02.37:890][  0]SourceControl: Info Source control is disabled
+[2016.08.21-04.02.37:890][  0]Cmd: MAP LOAD FILE="../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Levels/KartTestLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.21-04.02.37:897][  0]LightingResults: New page: Lighting Build
+[2016.08.21-04.02.37:899][  0]MapCheck: New page: Map Check
+[2016.08.21-04.02.37:899][  0]LightingResults: New page: Lighting Build
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Fire_SubUV'
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Fire_SubUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:791][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Fire_SubUV
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Heat_Distortion'
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Heat_Distortion' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:791][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Heat_Distortion
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:791][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Radial_Gradient
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:791][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_smoke_subUV
+[2016.08.21-04.02.39:791][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Fire_SubUV'
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Fire_SubUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:792][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Fire_SubUV
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Heat_Distortion'
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Heat_Distortion' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:792][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Heat_Distortion
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:792][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Radial_Gradient
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.39:792][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Fire.uasset.
+[2016.08.21-04.02.39:792][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Fire : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_smoke_subUV
+[2016.08.21-04.02.39:801][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.39:801][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Sparks.uasset.
+[2016.08.21-04.02.39:801][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Sparks : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Radial_Gradient
+[2016.08.21-04.02.39:801][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Sparks.uasset.
+[2016.08.21-04.02.39:802][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Sparks : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_smoke_subUV
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Spark'
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Spark' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Sparks.uasset.
+[2016.08.21-04.02.39:802][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Sparks : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Spark
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Sparks.uasset.
+[2016.08.21-04.02.39:802][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Sparks : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Radial_Gradient
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Sparks.uasset.
+[2016.08.21-04.02.39:802][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Sparks : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_smoke_subUV
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Spark'
+[2016.08.21-04.02.39:802][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Spark' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Sparks.uasset.
+[2016.08.21-04.02.39:802][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Sparks : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_Spark
+[2016.08.21-04.02.39:809][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.39:809][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Steam_Lit.uasset.
+[2016.08.21-04.02.39:809][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Steam_Lit : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_smoke_subUV
+[2016.08.21-04.02.39:809][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.39:809][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading ../../../../../../GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/AV/StarterContent/Particles/P_Steam_Lit.uasset.
+[2016.08.21-04.02.39:809][  0]LoadErrors:Error: Error /Game/AV/StarterContent/Particles/P_Steam_Lit : Can't find file for asset. /Game/StarterContent/Particles/Materials/M_smoke_subUV
+[2016.08.21-04.02.40:377][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.40:377][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_smoke_subUV.M_smoke_subUV Referenced by ParticleModuleRequired_0
+[2016.08.21-04.02.40:377][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading NULL.
+[2016.08.21-04.02.40:377][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_smoke_subUV.M_smoke_subUV Referenced by ParticleModuleRequired_0
+[2016.08.21-04.02.40:378][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Spark'
+[2016.08.21-04.02.40:378][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Spark.M_Spark Referenced by ParticleModuleRequired_0
+[2016.08.21-04.02.40:378][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Spark' while loading NULL.
+[2016.08.21-04.02.40:378][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Spark.M_Spark Referenced by ParticleModuleRequired_0
+[2016.08.21-04.02.40:378][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.40:378][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_smoke_subUV.M_smoke_subUV Referenced by ParticleModuleRequired_1
+[2016.08.21-04.02.40:378][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading NULL.
+[2016.08.21-04.02.40:378][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_smoke_subUV.M_smoke_subUV Referenced by ParticleModuleRequired_1
+[2016.08.21-04.02.40:378][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.40:378][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Radial_Gradient.M_Radial_Gradient Referenced by ParticleModuleRequired_4
+[2016.08.21-04.02.40:378][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading NULL.
+[2016.08.21-04.02.40:378][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Radial_Gradient.M_Radial_Gradient Referenced by ParticleModuleRequired_4
+[2016.08.21-04.02.40:380][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Heat_Distortion'
+[2016.08.21-04.02.40:380][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Heat_Distortion.M_Heat_Distortion Referenced by ParticleModuleRequired_0
+[2016.08.21-04.02.40:380][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Heat_Distortion' while loading NULL.
+[2016.08.21-04.02.40:380][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Heat_Distortion.M_Heat_Distortion Referenced by ParticleModuleRequired_0
+[2016.08.21-04.02.40:380][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_smoke_subUV'
+[2016.08.21-04.02.40:380][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_smoke_subUV.M_smoke_subUV Referenced by ParticleModuleRequired_1
+[2016.08.21-04.02.40:380][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_smoke_subUV' while loading NULL.
+[2016.08.21-04.02.40:380][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_smoke_subUV.M_smoke_subUV Referenced by ParticleModuleRequired_1
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Fire_SubUV'
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Fire_SubUV.M_Fire_SubUV Referenced by ParticleModuleRequired_2
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Fire_SubUV' while loading NULL.
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Fire_SubUV.M_Fire_SubUV Referenced by ParticleModuleRequired_2
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Radial_Gradient.M_Radial_Gradient Referenced by ParticleModuleRequired_3
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading NULL.
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Radial_Gradient.M_Radial_Gradient Referenced by ParticleModuleRequired_3
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Radial_Gradient'
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Radial_Gradient.M_Radial_Gradient Referenced by ParticleModuleRequired_4
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Radial_Gradient' while loading NULL.
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Radial_Gradient.M_Radial_Gradient Referenced by ParticleModuleRequired_4
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file '/Game/StarterContent/Particles/Materials/M_Fire_SubUV'
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Fire_SubUV.M_Fire_SubUV Referenced by ParticleModuleRequired_5
+[2016.08.21-04.02.40:381][  0]LogLinker:Warning: Can't find file for asset '/Game/StarterContent/Particles/Materials/M_Fire_SubUV' while loading NULL.
+[2016.08.21-04.02.40:381][  0]LoadErrors: Info Failed to load /Game/StarterContent/Particles/Materials/M_Fire_SubUV.M_Fire_SubUV Referenced by ParticleModuleRequired_5
+[2016.08.21-04.02.41:571][  0]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.08.21-04.02.41:575][  0]LogMaterial:Warning: Material /Game/Models/Karts/DashKart/DashKartMaterial.DashKartMaterial needed to have new flag set bUsedWithSkeletalMesh !
+[2016.08.21-04.02.41:577][  0]LogMaterial: Missing cached shader map for material DashKartMaterial, compiling. 
+[2016.08.21-04.02.41:619][  0]MapCheck:Warning: Warning DashKartMaterial Material /Game/Models/Karts/DashKart/DashKartMaterial.DashKartMaterial was missing the usage flag bUsedWithSkeletalMesh. If the material asset is not re-saved, it may not render correctly when run outside the editor. Fix
+[2016.08.21-04.02.41:620][  0]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.08.21-04.02.41:620][  0]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2016.08.21-04.02.41:648][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.21-04.02.41:649][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.21-04.02.41:705][  0]MapCheck: Info Map check complete: 0 Error(s), 1 Warning(s), took 56.282ms to complete.
+[2016.08.21-04.02.41:710][  0]LogFileHelpers: Loading map 'KartTestLevel' took 3.821
+[2016.08.21-04.02.41:851][  0]LogCollectionManager: Loaded 0 collections in 0.001668 seconds
+[2016.08.21-04.02.41:890][  0]LogFileCache: Scanning file cache for directory 'C:/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' took 0.01s
+[2016.08.21-04.02.41:890][  0]LogFileCache: Scanning file cache for directory 'C:/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/amber/Collections/' took 0.01s
+[2016.08.21-04.02.41:890][  0]LogFileCache: Scanning file cache for directory 'C:/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' took 0.01s
+[2016.08.21-04.02.41:890][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.08.21-04.02.41:897][  0]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 2047 classes and 369 folders.
+[2016.08.21-04.02.41:902][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.21-04.02.41:902][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.21-04.02.41:902][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.08.21-04.02.41:907][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.08.21-04.02.41:943][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.08.21-04.02.41:946][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.08.21-04.02.41:963][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.21-04.02.41:967][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.21-04.02.41:992][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.08.21-04.02.41:993][  0]LogLoad: Full Startup: 8.21 seconds (BP compile: 0.11 seconds)
+[2016.08.21-04.02.41:993][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2016.08.21-04.02.42:027][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.21-04.02.42:027][  0]LogOcInput: OculusInput pre-init called
+[2016.08.21-04.02.42:044][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.08.21-04.02.42:210][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2016.08.21-04.02.42:508][  2]LogAssetRegistry: Asset discovery search completed in 6.1647 seconds
+[2016.08.21-04.02.42:508][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.08.21-04.02.42:508][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000020 seconds (updated 0 objects)
+[2016.08.21-04.02.49:574][212]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkyBox (Sky Sphere))
+[2016.08.21-04.02.51:581][271]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.08.21-04.02.59:668][513]LogEditorViewport: Clicking on Actor (LMB): Emitter (P_Steam_Lit)
+[2016.08.21-04.03.01:220][559]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.08.21-04.03.01:220][559]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-04.03.01:221][559]PIE: New page: PIE session: KartTestLevel (Aug 20, 2016, 7:03:01 PM)
+[2016.08.21-04.03.01:221][559]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_KartTestLevel
+[2016.08.21-04.03.01:262][559]LogPlayLevel: PIE: StaticDuplicateObject took: (0.041398s)
+[2016.08.21-04.03.01:263][559]LogAIModule: Creating AISystem for world KartTestLevel
+[2016.08.21-04.03.01:263][559]LogPlayLevel: PIE: World Init took: (0.000912s)
+[2016.08.21-04.03.01:263][559]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/KartTestLevel.KartTestLevel to /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel (0.042562s)
+[2016.08.21-04.03.01:290][559]LogInit: XAudio2 using 'Speakers (Turtle Beach PX11 Chat)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-04.03.01:296][559]LogInit: FAudioDevice initialized.
+[2016.08.21-04.03.01:353][559]LogWorld: Game class is 'GameMode'
+[2016.08.21-04.03.01:359][559]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2016.08.21-04.03.01:363][559]LogWorld: Bringing World /Game/Levels/UEDPIE_0_KartTestLevel.KartTestLevel up for play (max tick rate 0) at 2016.08.21-00.03.01
+[2016.08.21-04.03.01:364][559]LogWorld: Bringing up level for play took: 0.007632
+[2016.08.21-04.03.01:367][559]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2016.08.21-04.03.01:368][559]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_KartTestLevel -0.775
+[2016.08.21-04.03.01:368][559]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.08.21-04.03.01:396][559]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2016.08.21-04.03.52:416][ 90]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.08.21-04.03.52:455][ 90]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel' with GeneratedClass '/Game/Levels/KartTestLevel.KartTestLevel_C' with ClassGeneratedBy '/Game/Levels/KartTestLevel.KartTestLevel:PersistentLevel.KartTestLevel'
+[2016.08.21-04.03.57:835][243]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 111 classes and 0 folders.
+[2016.08.21-04.04.01:367][327]LogRenderer: Reallocating scene render targets to support 1208x880 (Frame:2357).
+[2016.08.21-04.04.22:516][961]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Models/Characters/FlutterShy/Fluttershy_Anim_Reverse.Fluttershy_Anim_Reverse
+[2016.08.21-04.04.26:249][ 73]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Models/Characters/FlutterShy/Fluttershy_Anim_TurnLeft.Fluttershy_Anim_TurnLeft
+[2016.08.21-04.04.29:349][166]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Models/Characters/FlutterShy/Fluttershy_Anim_Basis.Fluttershy_Anim_Basis
+[2016.08.21-04.04.48:099][681]Cmd: QUIT_EDITOR
+[2016.08.21-04.04.49:071][681]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.21-04.04.49:094][681]LogExit: Preparing to exit.
+[2016.08.21-04.04.50:259][681]LogExit: Editor shut down
+[2016.08.21-04.04.50:259][681]LogExit: Transaction tracking system shut down
+[2016.08.21-04.04.50:382][681]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.21-04.04.50:382][681]LogExit: Object subsystem successfully closed.
+[2016.08.21-04.04.50:402][681]LogD3D11RHI: Shutdown
+[2016.08.21-04.04.50:402][681]LogD3D11RHI: CleanupD3DDevice
+[2016.08.21-04.04.50:478][681]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.08.21-04.04.50:488][681]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.08.21-04.04.50:489][681]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.08.21-04.04.50:490][681]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.08.21-04.04.50:754][681]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.08.21-04.04.50:755][681]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.08.21-04.04.50:796][681]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.08.21-04.04.50:797][681]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.08.21-04.04.50:804][681]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.08.21-04.04.50:804][681]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.08.21-04.04.50:804][681]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.08.21-04.04.50:804][681]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.08.21-04.04.50:804][681]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.08.21-04.04.50:804][681]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.08.21-04.04.50:805][681]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.08.21-04.04.50:806][681]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.08.21-04.04.50:806][681]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.08.21-04.04.50:806][681]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.08.21-04.04.50:907][681]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.08.21-04.04.50:909][681]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.08.21-04.04.50:909][681]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.08.21-04.04.50:909][681]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.08.21-04.04.50:909][681]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.08.21-04.04.50:909][681]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.08.21-04.04.50:909][681]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.08.21-04.04.50:910][681]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.08.21-04.04.51:022][681]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.21-04.04.51:022][681]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.21-04.04.51:022][681]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.21-04.04.51:022][681]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.08.21-04.04.51:110][681]LogDerivedDataCache: Shutdown
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.21-04.04.51:110][681]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.21-04.04.54:115][681]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.21-04.04.54:116][681]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.21-04.04.54:117][681]LogExit: Exiting.
+[2016.08.21-04.04.54:119][681]Log file closed, 08/21/16 00:04:54
