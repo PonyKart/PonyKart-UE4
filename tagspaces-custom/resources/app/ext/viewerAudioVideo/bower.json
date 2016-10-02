@@ -1,0 +1,28 @@
+{
+  "name": "Audio Video Player",
+  "id": "viewerAudioVideo",
+  "description": "A TagSpaces extension allowing playing of audio and video files.",
+  "type": "viewer",
+  "version": "1.0.0",
+  "dependencies": {
+    "plyr": "~1.6.13"
+  },
+  "devDependencies": {},
+  "authors": [
+    "TagSpaces Authors - http://tagspaces.org",
+    "Ilian Sapundshiev - http://ilian.me"
+  ],
+  "keywords": [
+    "player",
+    "ogv",
+    "ogg"
+  ],
+  "license": "MIT",
+  "main": [
+    "extension.js"
+  ],
+  "ignore": [
+    "Gruntfile.js"
+  ],
+  "private": true
+}

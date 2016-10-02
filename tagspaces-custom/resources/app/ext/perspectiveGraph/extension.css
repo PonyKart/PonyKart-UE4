@@ -1,0 +1,20 @@
+#aboutExtensionModalGraph img {
+  max-width: 100%;
+}
+
+#aboutExtensionModalGraph h1 {
+  font-size: 22px;
+}
+
+#aboutExtensionModalGraph h2 {
+  font-size: 20px;
+}
+
+#aboutExtensionModalGraph h3 {
+  font-size: 18px;
+}
+
+#aboutExtensionModalGraph .modal-body {
+  max-height: 500px;
+  overflow: auto;
+}

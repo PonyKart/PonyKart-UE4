@@ -1,0 +1,13 @@
+{
+    "zoomOut": "Zoom Indietro",
+    "zoomIn": "Zoom Avanti",
+    "zoomReset": "Ripristina lo Zoom",
+    "rotateRight": "Ruota a Destra",
+    "rotateLeft": "Ruota a Sinistra",
+    "print": "Stampa",
+    "about": "About",
+    "aboutTitle": "About ViewerImage",
+    "exif": "Show Exif & IPTC",
+    "exifTitle": "Exif And IPTC Image Data",
+    "-": "-"
+}

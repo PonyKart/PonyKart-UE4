@@ -1,0 +1,13 @@
+{
+    "zoomOut": "Odálit",
+    "zoomIn": "Přiblížit",
+    "zoomReset": "Resetovat Přiblížení/Odálení",
+    "rotateRight": "Otočit doprava",
+    "rotateLeft": "Otočit doleva",
+    "print": "Tisknout",
+    "about": "O ViewerImage",
+    "aboutTitle": "O ViewerImage",
+    "exif": "Ukaž Exif a IPTC",
+    "exifTitle": "Exif a IPTC obrazová data",
+    "-": "-"
+}

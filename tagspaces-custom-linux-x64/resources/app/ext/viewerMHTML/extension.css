@@ -1,0 +1,6 @@
+@import '../../assets/extensions.css';
+@import '../../libs/extCommon/common.css';
+
+html, body {
+  overflow: auto;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <script type="text/javascript" src="../../libs/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../libs/i18next/i18next.min.js"></script>
+  <script type="text/javascript" src="../../libs/marked/marked.min.js"></script>
+  <script type="text/javascript" src="../../libs/mousetrap/mousetrap.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.highlight.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="../../libs/extCommon/common.js"></script>
+  <link rel="stylesheet" href="extension.css"/>
+  <link rel="stylesheet" href="css/markdown.css"/>
+  <link rel="stylesheet" href="css/github.css"/>
+  <link rel="stylesheet" href="css/metro-vibes.css"/>
+  <link rel="stylesheet" href="css/solarized-dark.css"/>
+  <link rel="stylesheet" href="css/clearness.css"/>
+  <link rel="stylesheet" href="css/clearness-dark.css"/>
+  <base>
+</head>
+<body>
+<div id="searchToolbar" style="display: none;">
+    <div class="flexLayout">
+        <button class="btn btn-link" id="clearSearchExtButton" data-i18n="[title]ns.viewerMD:cancelSearch">
+            <i class="fa fa-lg fa-eraser"></i>
+        </button>
+        <input class="flexMaxWidth" id="searchBox" type="text" data-i18n="[placeholder]ns.viewerMD:findInDocument">
+        <button class="btn btn-link" id="searchExtButton" data-i18n="[title]ns.viewerMD:startSearch">
+            <i class="fa fa-lg fa-binoculars"></i>
+        </button>
+    </div>
+</div>
+<div id="htmlContent"></div>
+<div class="btn-group dropup extMainMenu">
+  <button type="button" class="btn roundButton dropdown-toggle viewerMainMenuButton" data-toggle="dropdown">
+    <i class="fa fa-ellipsis-v fa-2x"></i>
+  </button>
+  <ul class="dropdown-menu pull-right">
+    <li class="dropdown-header">
+      <button class="close">&times;</button>&nbsp;
+    </li>
+    <li class="divider"></li>
+    <li><a id="findInFile">
+      <i class="fa fa-binoculars fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:findInDocument"></span>
+    </a></li>
+    <li class="divider"></li>
+    <li><a id="changeStyleButton">
+      <i class="fa fa-adjust fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:changeTheme"></span>
+    </a></li>
+    <li><a id="resetStyleButton">
+      <i class="fa fa-circle-o fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:resetTheme"></span>
+    </a></li>
+    <li class="divider"></li>
+    <li><a id="zoomOutButton">
+      <i class="fa fa-search-minus fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:zoomOut"></span>
+    </a></li>
+    <li><a id="zoomInButton">
+      <i class="fa fa-search-plus fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:zoomIn"></span>
+    </a></li>
+    <li><a id="zoomResetButton">
+      <i class="fa fa-search fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:zoomReset"></span>
+    </a></li>
+    <li class="divider"></li>
+    <li><a id="printButton">
+      <i class="fa fa-print fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:print"></span>
+    </a></li>
+    <li><a id="mdHelpButton">
+      <i class="fa fa-info fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:MDHelp"></span>
+    </a></li>
+    <li><a id="aboutButton">
+      <i class="fa fa-comment fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMD:about"></span>
+    </a></li>
+  </ul>
+</div>
+<div class="modal fullScreenMobile" id="aboutExtensionModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title" data-i18n="ns.viewerMD:aboutTitle"></h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true"><i class="fa fa-check fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fullScreenMobile" id="markdownHelpModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title" data-i18n="ns.viewerMD:MDHelpTitle"></h4>
+      </div>
+      <div class="modal-body">
+          <table>
+           <tbody>
+           <tr>
+               <td><strong>Bold</strong></td>
+               <td>**bold**</td>
+           </tr>
+           <tr>
+               <td><i>Italics</i></td>
+               <td>*italics*</td>
+           </tr>
+           <tr>
+               <td><del>Strikethrough</del></td>
+               <td>~~strikethrough~~</td>
+           </tr>
+           <tr>
+               <td>Header</td>
+               <td># H1     ## H2     ### H3</td>
+           </tr>
+           <tr>
+               <td><li>item</li></td>
+               <td>* item</td>
+           </tr>
+           <tr>
+               <td>Blockquote</td>
+               <td>&gt; blockquote</td>
+           </tr>
+           <tr>
+               <td><a href="https://www.youtube.com/watch?v=8rMo5EFAqgM" target="_blank">Link</a></td>
+               <td>[title](http://)</td>
+           </tr>
+           <tr>
+               <td>Image</td>
+               <td>![alt](http://)</td>
+           </tr>
+           <tr>
+               <td><code>code</code></td>
+               <td>`code`</td>
+           </tr>
+           <tr>
+               <td><pre style="display: inline-block; margin: 4px 0"><code><span class="keyword">var </span>code = <span class="string">"formatted"</span>;</code></pre></td>
+               <td style="line-height: 100%">``` <i style="color: rgba(0,0,0,0.5)">(for line break click shift+enter)</i><br>var code = "formatted";<br>```</td>
+           </tr>
+           </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true"><i class="fa fa-check fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#viewerEPUBMain iframe {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+}
+
+.viewerEPUBNaviButton {
+  width: 40px;
+  font-size: 64px;
+  color: #D8D8D8;
+  font-family: arial, sans-serif";
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-align: center;
+  line-height: 700px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "PDF Viewer",
+  "id": "viewerPDF",
+  "description": "A TagSpaces extension allowing opening, searching and navigating thought PDF files.",
+  "type": "viewer",
+  "version": "1.0.0",
+  "dependencies": {
+    "pdfjs-dist":"1.2.109"
+  },
+  "devDependencies": {},
+  "authors": [
+    "TagSpaces Authors - http://tagspaces.org",
+    "Ilian Sapundshiev - http://ilian.me"
+  ],
+  "keywords": [
+    "PDF",
+    "viewer"
+  ],
+  "license": "MIT",
+  "main": [
+    "extension.js"
+  ],
+  "ignore": [
+    "Gruntfile.js"
+  ],
+  "private": true
+}

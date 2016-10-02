@@ -1,0 +1,27 @@
+{
+  "name": "JSON Editor",
+  "id": "editorJSON",
+  "description": "A TagSpaces extension allowing viewing and editing of JSON documents.",
+  "type": "editor",
+  "version": "1.0.0",
+  "dependencies": {
+    "jsoneditor": "~5.5.2"
+  },
+  "devDependencies": {},
+  "authors": [
+    "TagSpaces Authors - http://tagspaces.org",
+    "Ilian Sapundshiev - http://ilian.me"
+  ],
+  "keywords": [
+    "editor",
+    "json"
+  ],
+  "license": "MIT",
+  "main": [
+    "extension.js"
+  ],
+  "ignore": [
+    "Gruntfile.js"
+  ],
+  "private": true
+}

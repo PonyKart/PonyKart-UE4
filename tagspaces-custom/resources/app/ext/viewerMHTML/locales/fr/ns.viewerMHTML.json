@@ -1,0 +1,11 @@
+{
+    "zoomOut": "Zoom arrière",
+    "zoomIn": "Zoom avant",
+    "zoomReset": "Taille normale",
+    "changeTheme": "Changer le thème",
+    "resetTheme": "Réinitialiser le thème",
+    "print": "Imprimer",
+    "about": "A propos",
+    "aboutTitle": "A propos de l'extension ViewerMHTML",
+    "-": "-"
+}

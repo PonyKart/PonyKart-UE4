@@ -1,0 +1,13 @@
+{
+    "zoomOut": "Խոշորացնել",
+    "zoomIn": "Փոքրացնել",
+    "zoomReset": "Սկզբնադիր խոշորացում",
+    "rotateRight": "Պտտել աջ",
+    "rotateLeft": "Պտտել ձախ",
+    "print": "Տպել",
+    "about": "Տեղեկություն",
+    "aboutTitle": "ViewerImage-ի մասին",
+    "exif": "Ցույց տալ Exif-ն ու IPTC-ն",
+    "exifTitle": "Նկարի Exif և IPTC տվյալները",
+    "-": "-"
+}

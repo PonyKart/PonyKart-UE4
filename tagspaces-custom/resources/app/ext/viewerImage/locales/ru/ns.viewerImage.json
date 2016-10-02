@@ -1,0 +1,13 @@
+{
+    "zoomOut": "Уменьшить масштаб",
+    "zoomIn": "Увеличить масштаб",
+    "zoomReset": "Сбросить масштаб",
+    "rotateRight": "Повернуть вправо",
+    "rotateLeft": "Повернуть влево",
+    "print": "Печать",
+    "about": "О расширении",
+    "aboutTitle": "О расширении ViewerImage",
+    "exif": "Show Exif & IPTC",
+    "exifTitle": "Exif And IPTC Image Data",
+    "-": "-"
+}

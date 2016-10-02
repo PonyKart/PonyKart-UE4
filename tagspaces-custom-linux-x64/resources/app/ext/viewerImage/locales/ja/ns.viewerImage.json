@@ -1,0 +1,13 @@
+{
+    "zoomOut": "ズームアウト",
+    "zoomIn": "ズームイン",
+    "zoomReset": "ズーム解除",
+    "rotateRight": "右回転",
+    "rotateLeft": "左回転",
+    "print": "プリント",
+    "about": "詳細",
+    "aboutTitle": "ViewerImageについて",
+    "exif": "ExifとIPTCを表示",
+    "exifTitle": "ExifとIPTCの画像データ",
+    "-": "-"
+}

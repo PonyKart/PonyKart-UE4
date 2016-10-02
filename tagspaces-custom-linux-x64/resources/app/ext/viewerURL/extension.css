@@ -1,0 +1,5 @@
+@import '../../assets/extensions.css';
+@import '../../libs/extCommon/common.css';
+.viewerURLButton {
+    margin: 10px;
+}

@@ -1,0 +1,13 @@
+{
+    "zoomOut": "Зменшити",
+    "zoomIn": "Збільшити",
+    "zoomReset": "Повернути масштаб",
+    "rotateRight": "Повернути праворуч",
+    "rotateLeft": "Повернути ліворуч",
+    "print": "Друк",
+    "about": "Про TagSpaces",
+    "aboutTitle": "Про ViewerImage",
+    "exif": "Показати Exif & IPTC",
+    "exifTitle": "Данні зображення",
+    "-": "-"
+}

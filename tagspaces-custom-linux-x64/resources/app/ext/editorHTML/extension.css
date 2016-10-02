@@ -1,0 +1,40 @@
+@import '../../assets/extensions.css';
+@import '../../libs/extCommon/common.css';
+
+html, body {
+    height: 100%;
+    font-size: 13px;
+    padding: 0 !important;
+}
+
+.note-editor {
+    border-width: 0 !important;
+    height: 90%;
+}
+
+.note-codable {
+    overflow: auto;
+}
+
+.note-editable {
+    overflow: auto;
+}
+
+/* Custom scrollbars for chrome */
+/*
+::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #bbb;
+}*/

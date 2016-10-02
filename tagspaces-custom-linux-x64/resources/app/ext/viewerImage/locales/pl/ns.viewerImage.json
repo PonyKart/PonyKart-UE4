@@ -1,0 +1,13 @@
+{
+    "zoomOut": "Pomniejsz",
+    "zoomIn": "Powiększ",
+    "zoomReset": "Rozmiar oryginalny",
+    "rotateRight": "Obróć w prawo",
+    "rotateLeft": "Obróć w lewo",
+    "print": "Drukuj",
+    "about": "O programie",
+    "aboutTitle": "Informacje o programie ViewerImage",
+    "exif": "Pokaż dane Exif i IPTC",
+    "exifTitle": "Dane Exif i IPTC",
+    "-": "-"
+}

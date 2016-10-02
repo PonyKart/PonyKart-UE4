@@ -1,0 +1,25 @@
+@import '../../assets/extensions.css';
+@import '../../libs/extCommon/common.css';
+
+.plyr {
+    height: 100%;
+}
+
+.plyr--video .plyr__controls {
+    padding-right: 70px !important;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}

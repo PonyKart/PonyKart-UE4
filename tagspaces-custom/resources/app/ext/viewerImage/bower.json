@@ -1,0 +1,35 @@
+{
+  "name": "Image Viewer",
+  "id": "viewerImage",
+  "description": "A TagSpaces extension allowing you to open different kinds of image formats.",
+  "type": "viewer",
+  "version": "1.0.0",
+  "dependencies": {
+    "exif-js": "~2.1.1",
+    "jquery.panzoom": "~2.0.5",
+    "jquery-mousewheel": "~3.1.13"
+  },
+  "devDependencies": {},
+  "authors": [
+    "TagSpaces Authors - http://tagspaces.org",
+    "Ilian Sapundshiev - http://ilian.me"
+  ],
+  "keywords": [
+    "viewer",
+    "jpg",
+    "gif",
+    "bmp",
+    "webm",
+    "ico",
+    "svg",
+    "png"
+  ],
+  "license": "MIT",
+  "main": [
+    "extension.js"
+  ],
+  "ignore": [
+    "Gruntfile.js"
+  ],
+  "private": true
+}

@@ -1,0 +1,27 @@
+{
+  "name": "HTML Reader",
+  "id": "viewerHTML",
+  "description": "A TagSpaces extension allowing opening of HTML files.",
+  "type": "viewer",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+  "devDependencies": {},
+  "authors": [
+    "TagSpaces Authors - http://tagspaces.org",
+    "Ilian Sapundshiev - http://ilian.me"
+  ],
+  "keywords": [
+    "html",
+    "viewer"
+  ],
+  "license": "MIT",
+  "main": [
+    "extension.js"
+  ],
+  "ignore": [
+    "Gruntfile.js"
+  ],
+  "private": true
+}

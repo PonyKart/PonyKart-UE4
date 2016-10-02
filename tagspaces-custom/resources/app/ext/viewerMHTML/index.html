@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="../../libs/spinkit/css/spinkit.css"/>
+  <script type="text/javascript" src="../../libs/dompurify/dist/purify.min.js"></script>
+  <script type="text/javascript" src="../../libs/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../libs/i18next/i18next.min.js"></script>
+  <script type="text/javascript" src="../../libs/marked/marked.min.js"></script>
+  <script type="text/javascript" src="../../libs/mousetrap/mousetrap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="libs/jquery.highlight.js"></script>
+  <script type="text/javascript" src="../../libs/extCommon/common.js"></script>
+  <link rel="stylesheet" href="../../assets/tagspaces.css"/>
+  <link rel="stylesheet" href="extension.css"/>
+  <link rel="stylesheet" href="css/markdown.css"/>
+  <link rel="stylesheet" href="css/github.css"/>
+  <link rel="stylesheet" href="css/metro-vibes.css"/>
+  <link rel="stylesheet" href="css/solarized-dark.css"/>
+  <link rel="stylesheet" href="css/clearness.css"/>
+  <link rel="stylesheet" href="css/clearness-dark.css"/>  
+</head>
+<body>
+<div id="searchToolbar" style="display: none;">
+  <div class="flexLayout">
+    <button class="btn btn-link" id="clearSearchExtButton" data-i18n="[title]ns.viewerMHTML:cancelSearch">
+      <i class="fa fa-lg fa-eraser"></i>
+    </button>
+    <input class="flexMaxWidth" id="searchBox" type="text" data-i18n="[placeholder]ns.viewerMHTML:findInDocument">
+    <button class="btn btn-link" id="searchExtButton" data-i18n="[title]ns.viewerMHTML:startSearch">
+      <i class="fa fa-lg fa-binoculars"></i>
+    </button>
+  </div>
+</div>
+<div class="flexLayoutVertical" style="width: 100%;">
+  <p style="margin: 5px; font-size: 12px;">Preview of the document <span id="fileMeta"></span></p>
+</div>
+<div id="mhtmlViewer">
+  <div style="position: absolute; top:0; left: 0; right: 0; bottom: 0; background-color: #1DD19F;">
+    <div style="width:60px; height:60px; position:absolute;left:50%;top:50%;margin:-30px 0 0 -30px;">
+      <div class="sk-spinner sk-rotating-plane"></div>
+    </div>
+  </div>
+</div>
+<div class="btn-group dropup extMainMenu">
+  <button type="button" class="btn roundButton dropdown-toggle viewerMainMenuButton" data-toggle="dropdown">
+    <i class="fa fa-ellipsis-v fa-2x"></i>
+  </button>
+  <ul class="dropdown-menu pull-right">
+    <li class="dropdown-header">
+      <button class="close">&times;</button>&nbsp;
+    </li>
+    <li class="divider"></li>
+    <li><a id="findInFile">
+      <i class="fa fa-binoculars fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:findInDocument"></span>
+    </a></li>
+    <li class="divider"></li>
+    <li><a id="changeStyleButton">
+      <i class="fa fa-adjust fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:changeTheme"></span>
+    </a></li>
+    <li><a id="resetStyleButton">
+      <i class="fa fa-circle-o fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:resetTheme"></span>
+    </a></li>
+    <li><a id="zoomOutButton">
+      <i class="fa fa-search-minus fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:zoomOut"></span>
+    </a></li>
+    <li><a id="zoomInButton">
+      <i class="fa fa-search-plus fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:zoomIn"></span>
+    </a></li>
+    <li><a id="zoomResetButton">
+      <i class="fa fa-search fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:zoomReset"></span>
+    </a></li>
+    <li class="divider"></li>
+    <li><a id="printButton">
+      <i class="fa fa-print fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:print"></span>
+    </a></li>
+    <li><a id="openInNewWindowButton">
+      <i class="fa fa-external-link fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:openInNewWindow"></span>
+    </a></li>
+    <li><a id="openURLButton">
+      <i class="fa fa-external-link-square fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:openSourceURL"></span>
+    </a></li>
+    <li><a id="aboutButton">
+      <i class="fa fa-comment fa-lg fa-fw"></i>&nbsp;<span data-i18n="ns.viewerMHTML:about"></span>
+    </a></li>
+  </ul>
+</div>
+<div class="modal fullScreenMobile" id="aboutExtensionModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title" data-i18n="ns.viewerMHTML:aboutTitle"></h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true"><i class="fa fa-check fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

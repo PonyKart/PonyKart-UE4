@@ -1,0 +1,59 @@
+#imageSwiperShowAllFileContainer {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+.my-gallery {
+  width: 100%;
+  float: left;
+  background-color: black;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  flex-wrap: wrap;
+}
+.my-gallery img {
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
+.my-gallery figure {
+  display: block;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+  width: 250px;
+
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+}
+.my-gallery figcaption {
+  color: whitesmoke;
+}
+
+#aboutExtensionModalImageSwiper img {
+  max-width: 100%;
+}
+
+#aboutExtensionModalImageSwiper h1 {
+  font-size: 22px;
+}
+
+#aboutExtensionModalImageSwiper h2 {
+  font-size: 20px;
+}
+
+#aboutExtensionModalImageSwiper h3 {
+  font-size: 18px;
+}
+
+#aboutExtensionModalImageSwiper .modal-body {
+  max-height: 500px;
+  overflow: auto;
+}
