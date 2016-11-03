@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="cider.svg"
+   inkscape:export-filename="/home/lapsio/Documents/Projects/blends/garage/tex/cider.png"
+   inkscape:export-xdpi="152.80748"
+   inkscape:export-ydpi="152.80748">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3927">
+      <stop
+         style="stop-color:#f5e99d;stop-opacity:1"
+         offset="0"
+         id="stop3929" />
+      <stop
+         id="stop3935"
+         offset="0.56094819"
+         style="stop-color:#ded7bc;stop-opacity:1" />
+      <stop
+         style="stop-color:#bea655;stop-opacity:1"
+         offset="1"
+         id="stop3931" />
+    </linearGradient>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99999994;stroke-opacity:0.07142855"
+       d="m 179.40825,741.25123 c 22.82239,-22.4577 66.62361,-19.36675 86.12326,2.16692"
+       id="path3865-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3927"
+       id="linearGradient3933"
+       x1="290.39084"
+       y1="877.86066"
+       x2="175.14774"
+       y2="696.07495"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(20.714286,-111.42857)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="278.17302"
+     inkscape:cy="239.69963"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="-4"
+     inkscape:window-y="1077"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-552.36218)">
+    <path
+       style="fill:url(#linearGradient3933);fill-opacity:1;stroke:none"
+       d="m 167.53368,764.80993 c 24.27717,-4.13229 52.17008,-4.64883 52.17008,-4.64883 l 1.03307,-16.01259 2.58267,12.91338 c 24.18743,-0.29343 51.58213,0.0546 95.04252,3.61575 -4.45925,-30.5356 -5.94252,-56.60721 -7.74803,-83.1622 l -8.26457,-1.03307 11.88032,0 c -3.92924,-22.27356 -2.30724,-45.47233 -0.51654,-68.69921 l -5.68189,-1.54961 4.90709,-0.51653 c -1.14065,-11.74161 -0.25164,-23.03702 0.25826,-34.09134 -19.80054,2.86796 -39.29854,5.58466 -55.26929,6.53771 l 0,12.39686 -2.52,-9.02102 c -29.58867,2.23847 -54.12661,3.94451 -84.25794,1.96677 3.44633,43.62143 5.05222,135.99516 -3.61575,181.30393 z"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccc" />
+    <g
+       id="g3788"
+       transform="matrix(1.009879,-0.34443031,0.34443031,1.009879,-231.14117,-29.32117)"
+       style="fill:#5b4e23;fill-opacity:1">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3774"
+         d="m 223.81272,775.07385 c 20.37277,0.006 4.0614,24.69605 -7.12628,14.88602 -13.71316,-1.44474 -6.64149,-32.3467 7.12628,-14.88602 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3776"
+         d="m 224.02034,774.16458 c -0.39744,-1.94084 -1.17421,-3.82635 -2.2151,-5.50595 l 2.75074,-0.86871 c 0.66364,1.97125 0.007,4.18349 -0.53564,6.37466 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3778"
+         d="m 224.82294,774.14345 c 3.96441,0.62778 6.54212,-1.81029 7.72653,-5.20701 -4.00715,-0.31671 -7.15564,1.24114 -7.72653,5.20701 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g3788-2"
+       transform="matrix(0.99460657,-0.38632335,0.38632335,0.99460657,-299.63351,-12.76782)"
+       style="fill:#5b4e23;fill-opacity:1">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3774-4"
+         d="m 223.81272,775.07385 c 22.1279,-0.0218 7.14423,24.81527 -7.12628,14.88602 -14.36583,-2.3178 -6.12295,-34.14205 7.12628,-14.88602 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3776-0"
+         d="m 225.89058,774.89102 c 1.60331,-1.16372 3.44914,-2.03056 5.35086,-2.5672 l -1.44317,-2.4977 c -1.82024,1.00647 -2.82902,3.08193 -3.90769,5.0649 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3778-5"
+         d="m 225.31267,774.33367 c -3.34876,-2.21279 -3.60494,-5.75159 -2.18604,-9.05723 3.17033,2.47115 4.44179,5.74579 2.18604,9.05723 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g3788-2-1"
+       transform="matrix(0.97251746,-0.4389734,0.4389734,0.97251746,-311.91394,-10.0436)"
+       style="fill:#5b4e23;fill-opacity:1">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3774-4-1"
+         d="m 223.81272,775.07385 c 21.80628,0.28617 3.88603,27.93497 -7.12628,14.88602 -14.70056,-1.97629 -7.45397,-32.78408 7.12628,-14.88602 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3776-0-6"
+         d="m 224.02034,774.16458 c -0.39744,-1.94084 -1.17421,-3.82635 -2.2151,-5.50595 l 2.75074,-0.86871 c 0.66364,1.97125 0.007,4.18349 -0.53564,6.37466 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3778-5-5"
+         d="m 224.82294,774.14345 c 3.96441,0.62778 6.54212,-1.81029 7.72653,-5.20701 -4.00715,-0.31671 -7.15564,1.24114 -7.72653,5.20701 z"
+         style="fill:#5b4e23;fill-opacity:1;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5b4e23;fill-opacity:1;stroke:none;font-family:Celestia Redux;-inkscape-font-specification:Celestia Redux Medium"
+       id="text3861"
+       sodipodi:linespacing="125%"
+       transform="translate(-0.75761441,3.788072)"><textPath
+         xlink:href="#path3865"
+         id="textPath3867"
+         style="font-size:20px;font-weight:500;-inkscape-font-specification:Celestia Redux Medium;fill:#5b4e23;fill-opacity:1;font-style:normal">Apple Cider</textPath></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99999994;stroke-opacity:0.07142855"
+       d="m 206.13293,645.47381 c 10.83696,-31.12629 68.67435,-28.33046 78.43762,4.16502"
+       id="path3865"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5b4e23;fill-opacity:1;stroke:none;font-family:Celestia Redux;-inkscape-font-specification:Celestia Redux Medium"
+       id="text3861-0"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path3883"
+         id="textPath3898">102% Apple*</textPath></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99999994;stroke-opacity:0.07142855"
+       d="m 204.49756,703.07452 c 8.39498,8.26942 21.74525,15.52739 36.92431,15.76214 17.28736,0.26736 34.68376,-8.31478 42.3878,-21.44045"
+       id="path3883"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5b4e23;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text3900"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path3883-3"
+         id="textPath3924"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sans;-inkscape-font-specification:Adobe Utopia Bold;fill:#5b4e23;fill-opacity:1"
+           id="tspan3902">*2% error margin</tspan></textPath></text>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:none;stroke:#4c3e05;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3904"
+       sodipodi:cx="222.4861"
+       sodipodi:cy="226.24866"
+       sodipodi:rx="59.346462"
+       sodipodi:ry="59.346462"
+       d="m 281.83256,226.24866 a 59.346462,59.346462 0 1 1 -118.69292,0 59.346462,59.346462 0 1 1 118.69292,0 z"
+       transform="translate(20.714286,440.93361)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99999994;stroke-opacity:0.07142855"
+       d="m 213.74413,728.96284 c 13.85398,6.69374 44.80747,7.09201 58.21621,-0.27674"
+       id="path3883-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="240.53432"
+       y="836.64789"
+       id="text3937"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/lapsio/Documents/Projects/blends/garage/tex/text3943.png"
+       inkscape:export-xdpi="152.80748"
+       inkscape:export-ydpi="152.80748"><tspan
+         sodipodi:role="line"
+         id="tspan3939"
+         x="240.53432"
+         y="836.64789"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Celestia Redux;-inkscape-font-specification:Celestia Redux Medium">I HATE</tspan><tspan
+         sodipodi:role="line"
+         x="240.53432"
+         y="886.64789"
+         id="tspan3941"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Celestia Redux;-inkscape-font-specification:Celestia Redux Medium">MONDAYS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3943"
+       y="960.93365"
+       x="241.96289"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-xdpi="152.80748"
+       inkscape:export-ydpi="152.80748"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Celestia Redux;-inkscape-font-specification:Celestia Redux Medium"
+         id="tspan3947"
+         y="960.93365"
+         x="241.96289"
+         sodipodi:role="line">20% MORE</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Celestia Redux;-inkscape-font-specification:Celestia Redux Medium"
+         y="1010.9337"
+         x="241.96289"
+         sodipodi:role="line"
+         id="tspan3951">CAFFEINE</tspan></text>
+  </g>
+</svg>

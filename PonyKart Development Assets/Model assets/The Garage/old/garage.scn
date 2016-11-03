@@ -1,0 +1,68 @@
+# MaxToBlenderExport 1  author Silvio Falcinelli  wwww.rendering3d.net
+
+
+newlight Sky001
+	 from 110.166 136.237 0.0  
+	 to 110.166 136.237 -10.0 
+	 rot 0.0 0.0 0.0 
+	 color 0.95 0.95 1.0 
+	 power 1.0
+	 type HEMI
+	 samples 20 
+	 rot 0.0 0.0 0.0 
+
+
+newcam Camera002 
+	 from -9.22019 6.83234 40.0123 
+	 rot 90.0 0.0 90.0 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 
+
+
+newcam Camera004 
+	 from 130.637 -49.6585 81.5407 
+	 rot 71.7053 0.0 67.7412 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 
+
+
+newcam Camera005 
+	 from 139.128 -21.2511 61.7853 
+	 rot 77.1896 0.0 77.7472 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 
+
+
+newcam Camera006 
+	 from 163.603 -135.818 87.8485 
+	 rot 72.5157 0.0 51.2532 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 
+
+
+newcam Camera007 
+	 from 59.0514 -3.75345 18.2649 
+	 rot 92.0964 0.0 -11.582 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 
+
+
+newcam Camera008 
+	 from 50.2503 38.4642 54.3029 
+	 rot 80.021 0.0 -125.861 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 
+
+
+newcam Camera009 
+	 from 93.9133 -64.5924 26.2164 
+	 rot 90.0 0.0 0.0 
+	 lensM 38.6755 
+	 lensD 45.0 
+	 type PERSPECTIVE 

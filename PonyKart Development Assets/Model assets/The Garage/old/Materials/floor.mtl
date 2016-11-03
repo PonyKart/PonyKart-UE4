@@ -1,0 +1,22 @@
+# 3ds Max To BlenderExport  (c)2009 author Silvio Falcinelli  
+standardmaterial
+
+newmtl floor
+	 Ka 0.588235,0.588235,0.588235
+	 Kd 0.588235,0.588235,0.588235
+	 Ks 0.9,0.9,0.9
+	 Ke 0.9,0.9,0.9
+	 reflect_blur 1
+	 refract_blur 1
+	 ray_reflect 0
+	 ray_refract 0
+	 dist_reflect 0.0
+	 dist_refract 0.0
+	 samples_reflect 18
+	 samples_refract 18
+	 l_tr 0.0
+	 translucency 0.0
+	 sss_color 0.4 0.4 0.4
+	 emit 0.0
+
+	 map_Kd  floorplanks.psd|0 0 0 0.0 0.0 1.0 1.0 0 2 1 0 0 0.0 1.0 1.0 0.0
