@@ -18,8 +18,13 @@ $RECYCLE.BIN/
 ##############
 #Ponykart Specific
 ##############
-PonyKart\ Project\ Build/PonyKart/Saved/
-Ponykart\ Project\ Build/Ponykart/Intermediate/
+PonyKart\ Project\ Build/PonyKart/Saved/*
+PonyKart\ Project\ Build/PonyKart/Intermediate/*
+PonyKart\ Project\ Build/PonyKart/DerivedDataCache/*
+PonyKart\ Project\ Build/PonyKart/Build/*
+!PonyKart\ Project\ Build/PonyKart/Build/**/*.ico
+PonyKart\ Project\ Build/PonyKart/Binaries/*
+
 
 # Compiled Object files
 *.slo
