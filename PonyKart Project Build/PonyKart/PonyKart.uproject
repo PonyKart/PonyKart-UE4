@@ -3,11 +3,15 @@
 	"EngineAssociation": "4.13",
 	"Category": "",
 	"Description": "",
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		}
+	],
 	"TargetPlatforms": [
-		"Android",
-		"HTML5",
-		"IOS",
 		"LinuxNoEditor",
-		"MacNoEditor"
+		"MacNoEditor",
+		"WindowsNoEditor"
 	]
 }
