@@ -1990,4 +1990,372 @@ LogInit: Object subsystem initialized
 [2017.07.22-21.17.17:611][727]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/TextureFiles/Avatars/avatar_Rocks_Auto6.uasset
 [2017.07.22-21.17.17:612][727]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/TextureFiles/Avatars/avatar_twilight_sparkle] ([1] browsable assets)...
 [2017.07.22-21.17.17:618][727]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/TextureFiles/Avatars/avatar_twilight_sparkle.avatar_twilight_sparkle]
-[2017.07.22-21.17.17:618][727]OBJ SavePackage: Finished g
+[2017.07.22-21.17.17:618][727]OBJ SavePackage: Finished generating thumbnails for package [/Game/TextureFiles/Avatars/avatar_twilight_sparkle]
+[2017.07.22-21.17.17:639][727]LogSavePackage: Save=20.05ms
+[2017.07.22-21.17.17:639][727]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_twilight_sparkle_Auto6C543C5FB4ABDA01B10A6469D405CCB26.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/TextureFiles/Avatars/avatar_twilight_sparkle_Auto6.uasset'
+[2017.07.22-21.17.17:640][727]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/TextureFiles/Avatars/avatar_twilight_sparkle_Auto6.uasset
+[2017.07.22-21.17.17:640][727]LogFileHelpers: Auto-saving content packages took 0.212
+[2017.07.22-21.22.02:781][749]LogEditorTransaction: Undo Create Pin Link
+[2017.07.22-21.22.03:367][813]LogEditorTransaction: Undo Create Pin Link
+[2017.07.22-21.22.03:980][881]LogEditorTransaction: Undo Delete current selection
+[2017.07.22-21.24.47:277][599]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.24.48:532][729]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/OptionsMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset" SILENT=true
+[2017.07.22-21.24.48:580][729]LogSavePackage: Save=39.53ms
+[2017.07.22-21.24.48:580][729]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu0798D80B491D1EB7331021BE4FD46B6C.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset'
+[2017.07.22-21.24.48:586][729]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset
+[2017.07.22-21.26.05:939][654]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.31.37:299][621]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.34.07:278][992]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.35.35:201][867]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.35.36:098][954]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/OptionsMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset" SILENT=true
+[2017.07.22-21.35.36:146][954]LogSavePackage: Save=41.28ms
+[2017.07.22-21.35.36:146][954]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenuFE783ACA462D479D97EC5599D608A299.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset'
+[2017.07.22-21.35.36:148][954]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset
+[2017.07.22-21.37.39:208][787]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.014
+[2017.07.22-21.37.39:210][787]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI/MainMenu/OptionsMenu] ([1] browsable assets)...
+[2017.07.22-21.37.39:210][787]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/MainMenu/OptionsMenu]
+[2017.07.22-21.37.39:257][787]LogSavePackage: Save=42.62ms
+[2017.07.22-21.37.39:257][787]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu_Auto75683B5FC4A05236D6D0799BEFCD63AB6.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/MainMenu/OptionsMenu_Auto7.uasset'
+[2017.07.22-21.37.39:258][787]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/MainMenu/OptionsMenu_Auto7.uasset
+[2017.07.22-21.37.39:258][787]LogFileHelpers: Auto-saving content packages took 0.049
+[2017.07.22-21.43.37:841][416]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.43.59:454][960]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.44.34:839][135]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.45.45:238][861]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.46.22:391][352]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.22-21.46.23:531][469]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.23:531][469]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.22-21.46.23:531][469]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 12:46:23 PM)
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_ajbuttstamp'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_ajbuttstamp' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:543][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_ajbuttstamp
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_bonbon'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_bonbon' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:543][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_bonbon
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_BrownBunneh'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_BrownBunneh' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:543][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_BrownBunneh
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_Cheerilee'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_Cheerilee' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:543][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_Cheerilee
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_pinkie_pie'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_pinkie_pie' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:543][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_pinkie_pie
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_rainbow_dash'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_rainbow_dash' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:543][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_rainbow_dash
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_Rocks'
+[2017.07.22-21.46.23:543][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_Rocks' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:544][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_Rocks
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_Trixie'
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_Trixie' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:544][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_Trixie
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_twilight_sparkle'
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_twilight_sparkle' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:544][469]LoadErrors:Error: Error /Game/UI/MainMenu/OptionsMenu : Can't find file for asset. /Game/TextureFiles/Avatars/avatar_twilight_sparkle
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_ajbuttstamp'
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_ajbuttstamp' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_bonbon'
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_bonbon' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_BrownBunneh'
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_BrownBunneh' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_Cheerilee'
+[2017.07.22-21.46.23:544][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_Cheerilee' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_pinkie_pie'
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_pinkie_pie' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_rainbow_dash'
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_rainbow_dash' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_Rocks'
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_Rocks' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_Trixie'
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_Trixie' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file '/Game/TextureFiles/Avatars/avatar_twilight_sparkle'
+[2017.07.22-21.46.23:545][469]LogLinker:Warning: Can't find file for asset '/Game/TextureFiles/Avatars/avatar_twilight_sparkle' while loading F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset.
+[2017.07.22-21.46.23:546][469]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.22-21.46.23:546][469]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000658s)
+[2017.07.22-21.46.23:547][469]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.22-21.46.23:547][469]LogPlayLevel: PIE: World Init took: (0.000617s)
+[2017.07.22-21.46.23:547][469]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001448s)
+[2017.07.22-21.46.23:562][469]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.22-21.46.23:565][469]LogInit: FAudioDevice initialized.
+[2017.07.22-21.46.23:597][469]LogWorld: Game class is 'GameMode'
+[2017.07.22-21.46.23:600][469]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-17.46.23
+[2017.07.22-21.46.23:600][469]LogWorld: Bringing up level for play took: 0.000704
+[2017.07.22-21.46.23:601][469]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.22-21.46.23:601][469]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.46.23:601][469]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.46.23:601][469]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.46.23:606][469]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.46.23:608][469]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu 0.151
+[2017.07.22-21.46.23:608][469]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.37:955][184]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.37:982][184]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.39:327][342]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.39:327][342]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.22-21.46.39:327][342]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 12:46:39 PM)
+[2017.07.22-21.46.39:328][342]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.22-21.46.39:328][342]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000610s)
+[2017.07.22-21.46.39:329][342]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.22-21.46.39:329][342]LogPlayLevel: PIE: World Init took: (0.000483s)
+[2017.07.22-21.46.39:329][342]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001294s)
+[2017.07.22-21.46.39:347][342]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.22-21.46.39:351][342]LogInit: FAudioDevice initialized.
+[2017.07.22-21.46.39:385][342]LogWorld: Game class is 'GameMode'
+[2017.07.22-21.46.39:388][342]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-17.46.39
+[2017.07.22-21.46.39:388][342]LogWorld: Bringing up level for play took: 0.000698
+[2017.07.22-21.46.39:389][342]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.22-21.46.39:389][342]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.46.39:389][342]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.46.39:389][342]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.46.39:390][342]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.46.39:392][342]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu -0.065
+[2017.07.22-21.46.39:392][342]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.42:768][742]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.46.42:799][742]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.47.11:448][794]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.47.11:448][794]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.22-21.47.11:448][794]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 12:47:11 PM)
+[2017.07.22-21.47.11:449][794]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.22-21.47.11:449][794]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000625s)
+[2017.07.22-21.47.11:450][794]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.22-21.47.11:450][794]LogPlayLevel: PIE: World Init took: (0.000508s)
+[2017.07.22-21.47.11:450][794]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001277s)
+[2017.07.22-21.47.11:465][794]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.22-21.47.11:468][794]LogInit: FAudioDevice initialized.
+[2017.07.22-21.47.11:503][794]LogWorld: Game class is 'GameMode'
+[2017.07.22-21.47.11:506][794]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-17.47.11
+[2017.07.22-21.47.11:506][794]LogWorld: Bringing up level for play took: 0.000631
+[2017.07.22-21.47.11:507][794]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.22-21.47.11:507][794]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.47.11:507][794]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.47.11:507][794]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.47.11:508][794]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.47.11:510][794]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu 0.053
+[2017.07.22-21.47.11:510][794]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.47.40:410][257]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.47.40:439][257]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.47.42:304][478]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/OptionsMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset" SILENT=true
+[2017.07.22-21.47.42:355][478]LogSavePackage: Save=43.08ms
+[2017.07.22-21.47.42:355][478]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu2AF132FF42B4199EC4EF1E8A1AC7795A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset'
+[2017.07.22-21.47.42:357][478]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset
+[2017.07.22-21.47.51:662][794]LogSavePackage: Save=23.23ms
+[2017.07.22-21.47.51:662][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_ajbuttstamp14E32F5447302EEC66EF3BA8FC4667DE.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_ajbuttstamp.uasset'
+[2017.07.22-21.47.51:668][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_ajbuttstamp.uasset
+[2017.07.22-21.47.51:717][794]LogSavePackage: Save=37.11ms
+[2017.07.22-21.47.51:717][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_bonbon4B82ED58444A114D4DD24896E2ECFC4A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_bonbon.uasset'
+[2017.07.22-21.47.51:723][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_bonbon.uasset
+[2017.07.22-21.47.51:742][794]LogSavePackage: Save=9.83ms
+[2017.07.22-21.47.51:742][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_BrownBunneh0AE95B934FE9F89601BB929B3E1E1A38.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_BrownBunneh.uasset'
+[2017.07.22-21.47.51:748][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_BrownBunneh.uasset
+[2017.07.22-21.47.51:789][794]LogSavePackage: Save=31.51ms
+[2017.07.22-21.47.51:789][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_Cheerilee2F853D6B452FAD8DFC9E4DB2F97D701C.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_Cheerilee.uasset'
+[2017.07.22-21.47.51:794][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_Cheerilee.uasset
+[2017.07.22-21.47.51:840][794]LogSavePackage: Save=36.65ms
+[2017.07.22-21.47.51:840][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_pinkie_pie0E75F9C247754BFC8A85AEBA03FBBE7E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_pinkie_pie.uasset'
+[2017.07.22-21.47.51:848][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_pinkie_pie.uasset
+[2017.07.22-21.47.52:148][794]LogSavePackage: Save=286.37ms
+[2017.07.22-21.47.52:148][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_rainbow_dashB2F9250B4DC5AA51CCD57B92CDBD22C4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_rainbow_dash.uasset'
+[2017.07.22-21.47.52:153][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_rainbow_dash.uasset
+[2017.07.22-21.47.52:194][794]LogSavePackage: Save=30.26ms
+[2017.07.22-21.47.52:194][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_RocksC751DE5548548DAE8EA78494855B9446.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_Rocks.uasset'
+[2017.07.22-21.47.52:199][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_Rocks.uasset
+[2017.07.22-21.47.52:233][794]LogSavePackage: Save=23.65ms
+[2017.07.22-21.47.52:233][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_TrixieCE3281204FD3F21513367CB53B5EA5DD.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_Trixie.uasset'
+[2017.07.22-21.47.52:236][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_Trixie.uasset
+[2017.07.22-21.47.52:555][794]LogSavePackage: Save=309.06ms
+[2017.07.22-21.47.52:555][794]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/avatar_twilight_sparkleA8B2FE5F4362E46F27783DA0D2B1F20E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_twilight_sparkle.uasset'
+[2017.07.22-21.47.52:556][794]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/Avatars/avatar_twilight_sparkle.uasset
+[2017.07.22-21.48.30:596][523]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.48.30:596][523]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.22-21.48.30:596][523]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 12:48:30 PM)
+[2017.07.22-21.48.30:597][523]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.22-21.48.30:597][523]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000583s)
+[2017.07.22-21.48.30:598][523]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.22-21.48.30:598][523]LogPlayLevel: PIE: World Init took: (0.000534s)
+[2017.07.22-21.48.30:598][523]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001279s)
+[2017.07.22-21.48.30:613][523]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.22-21.48.30:617][523]LogInit: FAudioDevice initialized.
+[2017.07.22-21.48.30:650][523]LogWorld: Game class is 'GameMode'
+[2017.07.22-21.48.30:654][523]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-17.48.30
+[2017.07.22-21.48.30:654][523]LogWorld: Bringing up level for play took: 0.000655
+[2017.07.22-21.48.30:655][523]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.48.30:655][523]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.22-21.48.30:655][523]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.48.30:656][523]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.22-21.48.30:656][523]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu -0.801
+[2017.07.22-21.48.30:656][523]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.49.09:298][158]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.22-21.49.09:327][158]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.04.37:605][126]LogEditorViewport: Clicking Background
+[2017.07.23-00.04.38:765][250]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.04.38:765][250]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.23-00.04.38:765][250]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 3:04:38 PM)
+[2017.07.23-00.04.38:765][250]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.23-00.04.38:766][250]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000657s)
+[2017.07.23-00.04.38:767][250]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.23-00.04.38:767][250]LogPlayLevel: PIE: World Init took: (0.000565s)
+[2017.07.23-00.04.38:767][250]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001386s)
+[2017.07.23-00.04.38:784][250]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.23-00.04.38:788][250]LogInit: FAudioDevice initialized.
+[2017.07.23-00.04.38:817][250]LogWorld: Game class is 'GameMode'
+[2017.07.23-00.04.38:820][250]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-20.04.38
+[2017.07.23-00.04.38:820][250]LogWorld: Bringing up level for play took: 0.000551
+[2017.07.23-00.04.38:821][250]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.04.38:821][250]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.04.38:821][250]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.04.38:825][250]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.04.38:825][250]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu -0.632
+[2017.07.23-00.04.38:826][250]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.04.59:198][694]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.04.59:230][694]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.08.23:735][815]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.013
+[2017.07.23-00.08.23:736][815]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/AllLevels/GameInfoInstance] ([1] browsable assets)...
+[2017.07.23-00.08.23:736][815]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/AllLevels/GameInfoInstance]
+[2017.07.23-00.08.23:780][815]LogSavePackage: Save=31.77ms
+[2017.07.23-00.08.23:780][815]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GameInfoInstance_Auto8014B951141F605A49FD2F690F2BF8CA4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/AllLevels/GameInfoInstance_Auto8.uasset'
+[2017.07.23-00.08.23:781][815]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/AllLevels/GameInfoInstance_Auto8.uasset
+[2017.07.23-00.08.23:781][815]LogFileHelpers: Auto-saving content packages took 0.045
+[2017.07.23-00.10.17:299][736]BlueprintLog: New page: Compile GameInfoInstance
+[2017.07.23-00.10.18:052][798]LogSavePackage: Save=30.97ms
+[2017.07.23-00.10.18:052][798]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GameInfoInstanceFF87D7D0437762318E0F5DA9153B484D.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset'
+[2017.07.23-00.10.18:056][798]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset
+[2017.07.23-00.10.56:333][577]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.23-00.10.57:356][681]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/OptionsMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset" SILENT=true
+[2017.07.23-00.10.57:406][681]LogSavePackage: Save=42.98ms
+[2017.07.23-00.10.57:406][681]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu189DB45E4795B3105CE047B5B7092095.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset'
+[2017.07.23-00.10.57:407][681]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset
+[2017.07.23-00.12.50:865][896]BlueprintLog: New page: Compile OptionsMenu
+[2017.07.23-00.12.51:938][  2]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/OptionsMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset" SILENT=true
+[2017.07.23-00.12.51:988][  2]LogSavePackage: Save=45.92ms
+[2017.07.23-00.12.51:988][  2]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu1259A2B94F54276B4CF5A193F908FA52.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset'
+[2017.07.23-00.12.51:996][  2]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset
+[2017.07.23-00.13.35:577][670]LogSavePackage: Save=84.95ms
+[2017.07.23-00.13.35:577][670]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/MainMenu092B55AE4B996991AC04D5B7A1CD6D99.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap'
+[2017.07.23-00.13.35:577][670]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap
+[2017.07.23-00.13.38:538][ 17]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.13.38:539][ 17]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.23-00.13.38:539][ 17]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 3:13:38 PM)
+[2017.07.23-00.13.38:677][ 17]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.23-00.13.38:678][ 17]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000846s)
+[2017.07.23-00.13.38:679][ 17]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.23-00.13.38:679][ 17]LogPlayLevel: PIE: World Init took: (0.000942s)
+[2017.07.23-00.13.38:679][ 17]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.002022s)
+[2017.07.23-00.13.38:699][ 17]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.23-00.13.38:703][ 17]LogInit: FAudioDevice initialized.
+[2017.07.23-00.13.38:737][ 17]LogWorld: Game class is 'GameMode'
+[2017.07.23-00.13.38:741][ 17]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-20.13.38
+[2017.07.23-00.13.38:741][ 17]LogWorld: Bringing up level for play took: 0.000749
+[2017.07.23-00.13.38:741][ 17]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.13.38:741][ 17]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.13.38:741][ 17]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.13.38:744][ 17]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.13.38:744][ 17]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu -0.713
+[2017.07.23-00.13.38:744][ 17]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.02:365][850]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.02:393][850]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.05:564][227]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.05:565][227]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.23-00.14.05:565][227]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 3:14:05 PM)
+[2017.07.23-00.14.05:565][227]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.23-00.14.05:566][227]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000591s)
+[2017.07.23-00.14.05:566][227]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.23-00.14.05:566][227]LogPlayLevel: PIE: World Init took: (0.000517s)
+[2017.07.23-00.14.05:566][227]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001259s)
+[2017.07.23-00.14.05:579][227]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.23-00.14.05:583][227]LogInit: FAudioDevice initialized.
+[2017.07.23-00.14.05:611][227]LogWorld: Game class is 'GameMode'
+[2017.07.23-00.14.05:614][227]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-20.14.05
+[2017.07.23-00.14.05:614][227]LogWorld: Bringing up level for play took: 0.000770
+[2017.07.23-00.14.05:615][227]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.14.05:615][227]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.14.05:615][227]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.14.05:616][227]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.14.05:616][227]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu 0.159
+[2017.07.23-00.14.05:617][227]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.42:310][362]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.42:342][362]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.42:364][362]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.23-00.14.42:369][362]LightingResults: New page: Lighting Build
+[2017.07.23-00.14.42:370][362]LoadErrors: New page: Loading map: MainMenu.umap
+[2017.07.23-00.14.42:370][362]MapCheck: New page: Map Check
+[2017.07.23-00.14.42:370][362]LightingResults: New page: Lighting Build
+[2017.07.23-00.14.42:396][362]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.23-00.14.42:459][362]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.23-00.14.42:485][362]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.23-00.14.42:536][362]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 51.329ms to complete.
+[2017.07.23-00.14.42:536][362]LogFileHelpers: Loading map 'MainMenu' took 4.546
+[2017.07.23-00.14.44:556][589]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.14.44:556][589]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.23-00.14.44:556][589]PIE: New page: PIE session: MainMenu (Jul 22, 2017, 3:14:44 PM)
+[2017.07.23-00.14.44:557][589]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2017.07.23-00.14.44:557][589]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000587s)
+[2017.07.23-00.14.44:558][589]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.23-00.14.44:558][589]LogPlayLevel: PIE: World Init took: (0.000561s)
+[2017.07.23-00.14.44:558][589]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001333s)
+[2017.07.23-00.14.44:574][589]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.23-00.14.44:578][589]LogInit: FAudioDevice initialized.
+[2017.07.23-00.14.44:604][589]LogWorld: Game class is 'GameMode'
+[2017.07.23-00.14.44:607][589]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.22-20.14.44
+[2017.07.23-00.14.44:608][589]LogWorld: Bringing up level for play took: 0.000548
+[2017.07.23-00.14.44:608][589]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.14.44:608][589]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.23-00.14.44:608][589]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.14.44:610][589]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.23-00.14.44:610][589]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu -0.847
+[2017.07.23-00.14.44:610][589]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.15.32:893][496]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.15.32:922][496]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.23-00.15.47:566][863]LogSavePackage: Save=77.07ms
+[2017.07.23-00.15.47:566][863]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu31D28C9C44912A3109B0EFB321C8C0D4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.07.23-00.15.47:566][863]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.07.23-00.15.47:570][863]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.07.23-00.16.10:797][723]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.23-00.16.10:797][723]LightingResults: New page: Lighting Build
+[2017.07.23-00.16.10:798][723]LoadErrors: New page: Loading map: MainMenu.umap
+[2017.07.23-00.16.10:798][723]MapCheck: New page: Map Check
+[2017.07.23-00.16.10:798][723]LightingResults: New page: Lighting Build
+[2017.07.23-00.16.10:817][723]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.23-00.16.10:880][723]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.23-00.16.10:907][723]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.23-00.16.10:955][723]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 48.601ms to complete.
+[2017.07.23-00.16.10:956][723]LogFileHelpers: Loading map 'MainMenu' took 0.160
+[2017.07.23-00.19.14:317][636]BlueprintLog: New page: Compile GameInfoInstance
+[2017.07.23-00.19.18:480][857]LogSavePackage: Save=32.11ms
+[2017.07.23-00.19.18:480][857]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GameInfoInstance52F626934062289717986CAC89FA1063.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset'
+[2017.07.23-00.19.18:482][857]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset
+[2017.07.23-00.19.18:590][857]LogSavePackage: Save=77.40ms
+[2017.07.23-00.19.18:590][857]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu6D7B4E6A45E09259DF5E3A9C12A78051.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.07.23-00.19.18:590][857]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.07.23-00.19.18:594][857]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.07.23-00.19.33:366][160]LogSavePackage: Save=79.18ms
+[2017.07.23-00.19.33:366][160]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuCA5072D947918C837DB6A8AA12EAF92B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.07.23-00.19.33:367][160]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.07.23-00.19.33:371][160]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.07.23-00.21.08:203][835]LogSavePackage: Save=81.76ms
+[2017.07.23-00.21.08:203][835]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu93199BA24DCAC585522D149080A2CFA9.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.07.23-00.21.08:204][835]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.07.23-00.21.08:209][835]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.07.23-00.34.15:796][898]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.021
+[2017.07.23-00.34.15:798][898]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI/MainMenu/OptionsMenu] ([1] browsable assets)...
+[2017.07.23-00.34.15:798][898]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/MainMenu/OptionsMenu]
+[2017.07.23-00.34.15:855][898]LogSavePackage: Save=46.95ms
+[2017.07.23-00.34.15:855][898]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu_Auto9A4A1FE394BB91AC415D7D2ACDA355F39.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/MainMenu/OptionsMenu_Auto9.uasset'
+[2017.07.23-00.34.15:856][898]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/MainMenu/OptionsMenu_Auto9.uasset
+[2017.07.23-00.34.15:856][898]LogFileHelpers: Auto-saving content packages took 0.059
+[2017.07.23-00.36.54:022][260]LogSavePackage: Save=29.82ms
+[2017.07.23-00.36.54:022][260]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GameInfoInstance8787063043E61AA72E6FC7A7474AB4B7.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset'
+[2017.07.23-00.36.54:024][260]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset
+[2017.07.23-00.36.55:165][397]BlueprintLog: New page: Compile GameInfoInstance
+[2017.07.23-00.36.56:244][505]LogSavePackage: Save=29.11ms
+[2017.07.23-00.36.56:244][505]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GameInfoInstanceB3C8864844F867FEA4EAB3BE2C407F8B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset'
+[2017.07.23-00.36.56:245][505]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/GameInfoInstance.uasset
+[2017.07.23-00.36.59:911][754]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/OptionsMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset" SILENT=true
+[2017.07.23-00.36.59:959][754]LogSavePackage: Save=43.66ms
+[2017.07.23-00.36.59:959][754]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/OptionsMenu593959A0494ED4F4E163C2A478725906.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset'
+[2017.07.23-00.36.59:961][754]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset
+[2017.07.23-00.37.00:068][754]LogSavePackage: Save=77.64ms
+[2017.07.23-00.37.00:068][754]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuA6E56F594CE1EE122C5A78A2165E1CBE.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.07.23-00.37.00:068][754]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.07.23-00.37.00:073][754]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.07.23-00.41.42:602][733]LogSavePackage: Save=76.61ms
+[2017.07.23-00.41.42:602][7
