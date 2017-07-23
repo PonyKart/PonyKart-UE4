@@ -64,3 +64,4 @@ PonyKart\ Project\ Build/PonyKart/Binaries/*
 *.sdf
 *.VC.db
 *.VC.opendb
+*.log
