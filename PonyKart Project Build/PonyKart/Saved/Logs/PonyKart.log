@@ -1050,4 +1050,1189 @@ LogInit: Object subsystem initialized
 [2017.07.29-21.16.23:571][988]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:50609, Name: IpConnection_13, Driver: GameNetDriver IpNetDriver_10, IsServer: YES, PC: None, Owner: None
 [2017.07.29-21.16.23:571][988]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_12, Driver: GameNetDriver IpNetDriver_12, IsServer: NO, PC: None, Owner: None
 [2017.07.29-21.16.23:571][988]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_12, Driver: GameNetDriver IpNetDriver_12, IsServer: NO, PC: None, Owner: None, Channels: 2, Time: 2017.07.29-21.16.23
-[2017.07.29-21.16.23:571][988]LogNet: UCh
+[2017.07.29-21.16.23:571][988]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_12, Driver: GameNetDriver IpNetDriver_12, IsServer: NO, PC: None, Owner: None
+[2017.07.29-21.16.23:573][988]LogExit: GameNetDriver None shut down
+[2017.07.29-21.16.23:574][988]LogExit: GameNetDriver None shut down
+[2017.07.29-21.16.23:593][989]LogPlayLevel:Display: Destroying online subsystem :Context_20
+[2017.07.29-21.16.23:593][989]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.16.23:593][989]LogPlayLevel:Display: Destroying online subsystem :Context_19
+[2017.07.29-21.16.23:593][989]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.20.31:406][886]BlueprintLog: New page: Compile LobbyGM
+[2017.07.29-21.20.32:242][954]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2017.07.29-21.20.32:295][954]LogSavePackage: Save=40.95ms
+[2017.07.29-21.20.32:295][954]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMC8BAA3704385BE3C3EE1B68C7E0CEACD.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2017.07.29-21.20.32:296][954]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
+[2017.07.29-21.22.15:681][383]BlueprintLog: New page: Compile LobbyPC
+[2017.07.29-21.22.16:354][427]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
+[2017.07.29-21.22.16:402][427]LogSavePackage: Save=36.11ms
+[2017.07.29-21.22.16:402][427]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyPC73274EF94D7AA66B3A272EA73FA8ECF0.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset'
+[2017.07.29-21.22.16:403][427]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset
+[2017.07.29-21.25.28:769][774]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.014
+[2017.07.29-21.25.28:770][774]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2017.07.29-21.25.28:770][774]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2017.07.29-21.25.28:830][774]LogSavePackage: Save=51.28ms
+[2017.07.29-21.25.28:830][774]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM_Auto3B36E42EF422A4FE9867E04B213875C93.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto3.uasset'
+[2017.07.29-21.25.28:831][774]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto3.uasset
+[2017.07.29-21.25.28:831][774]LogFileHelpers: Auto-saving content packages took 0.061
+[2017.07.29-21.33.25:282][598]BlueprintLog: New page: Compile LobbyGM
+[2017.07.29-21.33.26:107][667]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2017.07.29-21.33.26:160][667]LogSavePackage: Save=42.98ms
+[2017.07.29-21.33.26:160][667]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM69842BC440072826E37894ABEDF001D4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2017.07.29-21.33.26:162][667]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
+[2017.07.29-21.33.49:223][ 51]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.33.49:223][ 51]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.29-21.33.49:225][ 51]PIE: New page: PIE session: MainMenu (Jul 29, 2017, 12:33:49 PM)
+[2017.07.29-21.33.49:225][ 51]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_1_MainMenu
+[2017.07.29-21.33.49:226][ 51]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001071s)
+[2017.07.29-21.33.49:227][ 51]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.33.49:227][ 51]LogPlayLevel: PIE: World Init took: (0.001018s)
+[2017.07.29-21.33.49:227][ 51]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_1_MainMenu.MainMenu (0.002338s)
+[2017.07.29-21.33.49:247][ 51]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.29-21.33.49:251][ 51]LogInit: FAudioDevice initialized.
+[2017.07.29-21.33.49:292][ 51]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.33.49:295][ 51]LogWorld: Bringing World /Game/Maps/UEDPIE_1_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.33.49
+[2017.07.29-21.33.49:296][ 51]LogWorld: Bringing up level for play took: 0.000655
+[2017.07.29-21.33.49:307][ 51]LogVoice:Warning: Failed to initialize voice interface
+[2017.07.29-21.33.49:308][ 51]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.33.49:308][ 51]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.29-21.33.49:308][ 51]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.33.49:308][ 51]LogNet: GameNetDriver IpNetDriver_13 IpNetDriver listening on port 7777
+[2017.07.29-21.33.49:308][ 51]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.33.49:308][ 51]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.33.49:308][ 51]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.33.49:309][ 51]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.33.49:314][ 51]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_1_MainMenu 0.543
+[2017.07.29-21.33.49:315][ 51]PIE: New page: PIE session: MainMenu (Jul 29, 2017, 12:33:49 PM)
+[2017.07.29-21.33.49:358][ 51]LogNet: Browse: 127.0.0.1//Game/Maps/MainMenu
+[2017.07.29-21.33.49:358][ 51]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.29-21.33.49:358][ 51]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.33.49:358][ 51]LogNet: Game client on port 7777, rate 10000
+[2017.07.29-21.33.49:358][ 51]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_14, Driver: PendingNetDriver IpNetDriver_14, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.29-21.33.49:363][ 51]PIE: Info Play in editor start time for /Game/Maps/MainMenu 0.593
+[2017.07.29-21.33.49:370][ 51]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.33.49:370][ 51]LogHandshake: SendConnectChallenge. Timestamp: 0.333334, Cookie: 226133084007238080074085172104177065001145223060229200195090
+[2017.07.29-21.33.49:372][ 51]LogHandshake: SendChallengeResponse. Timestamp: 0.333334, Cookie: 226133084007238080074085172104177065001145223060229200195090
+[2017.07.29-21.33.49:449][ 52]LogNet: Server accepting post-challenge connection from: 127.0.0.1:60041
+[2017.07.29-21.33.49:449][ 52]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.33.49:449][ 52]LogNet: NotifyAcceptedConnection: Name: MainMenu, TimeStamp: 07/29/17 17:33:49, [UNetConnection] RemoteAddr: 127.0.0.1:60041, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_13, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.33.49:449][ 52]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:60041, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_13, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.33.49:499][ 54]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_1_MainMenu.MainMenu: Accepted
+[2017.07.29-21.33.49:499][ 54]LogNet: Remote platform little endian=1
+[2017.07.29-21.33.49:499][ 54]LogNet: This platform little endian=1
+[2017.07.29-21.33.49:511][ 54]LogVoice:Warning: Failed to initialize voice interface
+[2017.07.29-21.33.49:520][ 55]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-C45419CA47855F9E6A71308A87EB2A4F userId: gary-pc-C45419CA47855F9E6A71308A87EB2A4F
+[2017.07.29-21.33.49:520][ 55]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_1_MainMenu, Game: /Script/Engine.GameMode)
+[2017.07.29-21.33.49:521][ 55]LogLoad: LoadMap: 127.0.0.1//Game/Maps/UEDPIE_1_MainMenu?game=/Script/Engine.GameMode
+[2017.07.29-21.33.49:539][ 55]Cmd: MEM
+[2017.07.29-21.33.49:560][ 55]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.33.49:560][ 55]LogMemory: Process Physical Memory: 1419.45 MB used, 1776.11 MB peak
+[2017.07.29-21.33.49:560][ 55]LogMemory: Process Virtual Memory: 2380.12 MB used, 2586.51 MB peak
+[2017.07.29-21.33.49:560][ 55]LogMemory: Physical Memory: 6367.89 MB used, 16322.38 MB total
+[2017.07.29-21.33.49:560][ 55]LogMemory: Virtual Memory: 3315.18 MB used, 134217728.00 MB total
+[2017.07.29-21.33.49:560][ 55]LogMemory: 
+[2017.07.29-21.33.49:560][ 55]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.33.49:561][ 55]LogWorld: PIE: Copying PIE streaming level from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu. OwningWorld: <null>
+[2017.07.29-21.33.49:562][ 55]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.33.49:565][ 55]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.33.49
+[2017.07.29-21.33.49:566][ 55]LogWorld: Bringing up level for play took: 0.000627
+[2017.07.29-21.33.49:566][ 55]LogLoad: Took 0.045083 seconds to LoadMap(/Game/Maps/UEDPIE_1_MainMenu)
+[2017.07.29-21.33.49:577][ 56]LogNet: Client netspeed is 10000
+[2017.07.29-21.33.49:577][ 56]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-C45419CA47855F9E6A71308A87EB2A4F?SplitscreenCount=1
+[2017.07.29-21.33.49:577][ 56]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-21.33.49:577][ 56]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.33.49:578][ 56]LogNet: Join succeeded: gary-pc-C45419CA4785
+[2017.07.29-21.33.49:604][ 58]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-21.33.49:625][ 60]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-21.33.54:813][591]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.33.54:813][591]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.33.54:813][591]LogNet: Browse: /Game/Maps/Lobby?Listen
+[2017.07.29-21.33.54:813][591]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
+[2017.07.29-21.33.54:813][591]LogNet: World NetDriver shutdown IpNetDriver_13 [GameNetDriver]
+[2017.07.29-21.33.54:813][591]LogNet: DestroyNamedNetDriver IpNetDriver_13 [GameNetDriver]
+[2017.07.29-21.33.54:814][591]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:60041, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_13, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-21.33.54:814][591]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:60041, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_13, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.29-21.33.54
+[2017.07.29-21.33.54:814][591]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:60041, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_13, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-21.33.54:814][591]LogExit: GameNetDriver IpNetDriver_13 shut down
+[2017.07.29-21.33.54:826][591]Cmd: MEM
+[2017.07.29-21.33.54:838][591]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.33.54:838][591]LogMemory: Process Physical Memory: 1432.24 MB used, 1776.11 MB peak
+[2017.07.29-21.33.54:838][591]LogMemory: Process Virtual Memory: 2380.09 MB used, 2586.51 MB peak
+[2017.07.29-21.33.54:838][591]LogMemory: Physical Memory: 6377.45 MB used, 16322.38 MB total
+[2017.07.29-21.33.54:838][591]LogMemory: Virtual Memory: 3323.18 MB used, 134217728.00 MB total
+[2017.07.29-21.33.54:838][591]LogMemory: 
+[2017.07.29-21.33.54:838][591]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.33.54:969][591]LogAIModule: Creating AISystem for world Lobby
+[2017.07.29-21.33.54:969][591]LogWorld: Game class is 'LobbyGM_C'
+[2017.07.29-21.33.54:970][591]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.29-21.33.54:970][591]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.33.54:970][591]LogNet: GameNetDriver IpNetDriver_15 IpNetDriver listening on port 7777
+[2017.07.29-21.33.54:974][591]LogWorld: Bringing World /Game/Maps/UEDPIE_1_Lobby.Lobby up for play (max tick rate 0) at 2017.07.29-17.33.54
+[2017.07.29-21.33.54:974][591]LogWorld: Bringing up level for play took: 0.001765
+[2017.07.29-21.33.54:980][591]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.33.54:980][591]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.33.54:980][591]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.33.54:980][591]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.07.29-21.33.54:980][591]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.33.54:980][591]LogLoad: Took 0.166559 seconds to LoadMap(/Game/Maps/Lobby)
+[2017.07.29-21.33.54:981][591]LogNet:Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2017.07.29-21.33.54:981][591]LogNet:Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2017.07.29-21.33.54:981][591]LogNet: NetworkFailure: FailureReceived, Error: 'Host closed the connection.'
+[2017.07.29-21.33.54:981][591]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_14, Driver: GameNetDriver IpNetDriver_14, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.29-21.33.54
+[2017.07.29-21.33.54:981][591]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_14, Driver: GameNetDriver IpNetDriver_14, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-21.33.54:981][591]LogNet:Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2017.07.29-21.33.54:981][591]LogNet:Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2017.07.29-21.33.54:981][591]LogNet: NetworkFailure: ConnectionLost, Error: 'Your connection to the host has been lost.'
+[2017.07.29-21.33.54:997][592]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.07.29-21.33.54:997][592]LogNet: Failed; returning to Entry
+[2017.07.29-21.33.54:997][592]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.07.29-21.33.54:997][592]LogNet: World NetDriver shutdown IpNetDriver_14 [GameNetDriver]
+[2017.07.29-21.33.54:997][592]LogNet: DestroyNamedNetDriver IpNetDriver_14 [GameNetDriver]
+[2017.07.29-21.33.54:997][592]LogExit: GameNetDriver IpNetDriver_14 shut down
+[2017.07.29-21.33.55:012][592]Cmd: MEM
+[2017.07.29-21.33.55:023][592]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.33.55:023][592]LogMemory: Process Physical Memory: 1541.94 MB used, 1776.11 MB peak
+[2017.07.29-21.33.55:023][592]LogMemory: Process Virtual Memory: 2647.34 MB used, 2647.34 MB peak
+[2017.07.29-21.33.55:023][592]LogMemory: Physical Memory: 6485.25 MB used, 16322.38 MB total
+[2017.07.29-21.33.55:023][592]LogMemory: Virtual Memory: 3545.80 MB used, 134217728.00 MB total
+[2017.07.29-21.33.55:023][592]LogMemory: 
+[2017.07.29-21.33.55:023][592]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.33.55:023][592]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_2_MainMenu
+[2017.07.29-21.33.55:024][592]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000591s)
+[2017.07.29-21.33.55:024][592]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.33.55:025][592]LogPlayLevel: PIE: World Init took: (0.000539s)
+[2017.07.29-21.33.55:025][592]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu (0.001318s)
+[2017.07.29-21.33.55:025][592]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.33.55:028][592]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.33.55
+[2017.07.29-21.33.55:029][592]LogWorld: Bringing up level for play took: 0.000747
+[2017.07.29-21.33.55:029][592]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.33.55:029][592]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.33.55:029][592]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.33.55:029][592]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.33.55:030][592]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.33.55:030][592]LogLoad: Took 0.032686 seconds to LoadMap(/Game/Maps/UEDPIE_2_MainMenu)
+[2017.07.29-21.34.05:173][610]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.34.05:173][610]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.34.05:173][610]LogNet: Browse: 192.168.1.46//Game/Maps/MainMenu
+[2017.07.29-21.34.05:173][610]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.29-21.34.05:174][610]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.34.05:174][610]LogNet: Game client on port 7777, rate 10000
+[2017.07.29-21.34.05:174][610]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_16, Driver: PendingNetDriver IpNetDriver_16, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.29-21.34.05:183][611]LogHandshake: SendConnectChallenge. Timestamp: 10.380973, Cookie: 118050075026102009197214013237105072092207202162090076126185
+[2017.07.29-21.34.05:184][611]LogHandshake: SendChallengeResponse. Timestamp: 10.380973, Cookie: 118050075026102009197214013237105072092207202162090076126185
+[2017.07.29-21.34.05:193][612]LogNet: Server accepting post-challenge connection from: 192.168.1.46:53753
+[2017.07.29-21.34.05:193][612]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.34.05:193][612]LogNet: NotifyAcceptedConnection: Name: Lobby, TimeStamp: 07/29/17 17:34:05, [UNetConnection] RemoteAddr: 192.168.1.46:53753, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.34.05:193][612]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 192.168.1.46:53753, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.34.05:399][633]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_1_Lobby.Lobby: Accepted
+[2017.07.29-21.34.05:399][633]LogNet: Remote platform little endian=1
+[2017.07.29-21.34.05:399][633]LogNet: This platform little endian=1
+[2017.07.29-21.34.05:410][634]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-C45419CA47855F9E6A71308A87EB2A4F userId: gary-pc-C45419CA47855F9E6A71308A87EB2A4F
+[2017.07.29-21.34.05:410][634]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_1_Lobby, Game: /Game/Blueprints/Lobby/LobbyGM.LobbyGM_C)
+[2017.07.29-21.34.05:411][634]LogLoad: LoadMap: 192.168.1.46//Game/Maps/UEDPIE_1_Lobby?game=/Game/Blueprints/Lobby/LobbyGM.LobbyGM_C
+[2017.07.29-21.34.05:423][634]Cmd: MEM
+[2017.07.29-21.34.05:435][634]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.34.05:435][634]LogMemory: Process Physical Memory: 1467.59 MB used, 1776.11 MB peak
+[2017.07.29-21.34.05:435][634]LogMemory: Process Virtual Memory: 2384.98 MB used, 2650.32 MB peak
+[2017.07.29-21.34.05:435][634]LogMemory: Physical Memory: 6412.34 MB used, 16322.38 MB total
+[2017.07.29-21.34.05:435][634]LogMemory: Virtual Memory: 3341.80 MB used, 134217728.00 MB total
+[2017.07.29-21.34.05:435][634]LogMemory: 
+[2017.07.29-21.34.05:435][634]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.34.05:592][634]LogAIModule: Creating AISystem for world Lobby
+[2017.07.29-21.34.05:597][634]LogWorld: Bringing World /Game/Maps/UEDPIE_2_Lobby.Lobby up for play (max tick rate 0) at 2017.07.29-17.34.05
+[2017.07.29-21.34.05:597][634]LogWorld: Bringing up level for play took: 0.001553
+[2017.07.29-21.34.05:597][634]LogLoad: Took 0.186314 seconds to LoadMap(/Game/Maps/UEDPIE_1_Lobby)
+[2017.07.29-21.34.05:607][635]LogNet: Client netspeed is 10000
+[2017.07.29-21.34.05:607][635]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-C45419CA47855F9E6A71308A87EB2A4F?SplitscreenCount=1
+[2017.07.29-21.34.05:611][635]LogNet: Join succeeded: gary-pc-C45419CA4785
+[2017.07.29-21.34.12:298][127]LogNet: Browse: /Game/Maps/MainMenu
+[2017.07.29-21.34.12:298][127]LogLoad: LoadMap: /Game/Maps/MainMenu
+[2017.07.29-21.34.12:298][127]LogNet: World NetDriver shutdown IpNetDriver_16 [GameNetDriver]
+[2017.07.29-21.34.12:298][127]LogNet: DestroyNamedNetDriver IpNetDriver_16 [GameNetDriver]
+[2017.07.29-21.34.12:298][127]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_16, Driver: GameNetDriver IpNetDriver_16, IsServer: NO, PC: LobbyPC_C_0, Owner: LobbyPC_C_0, Channels: 10, Time: 2017.07.29-21.34.12
+[2017.07.29-21.34.12:298][127]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_16, Driver: GameNetDriver IpNetDriver_16, IsServer: NO, PC: LobbyPC_C_0, Owner: LobbyPC_C_0
+[2017.07.29-21.34.12:298][127]LogExit: GameNetDriver IpNetDriver_16 shut down
+[2017.07.29-21.34.12:298][127]LogOnline:Warning: NULL: Can't destroy a null online session (Game)
+[2017.07.29-21.34.12:312][127]Cmd: MEM
+[2017.07.29-21.34.12:324][127]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.34.12:324][127]LogMemory: Process Physical Memory: 1443.64 MB used, 1776.11 MB peak
+[2017.07.29-21.34.12:324][127]LogMemory: Process Virtual Memory: 2393.44 MB used, 2651.48 MB peak
+[2017.07.29-21.34.12:324][127]LogMemory: Physical Memory: 6386.44 MB used, 16322.38 MB total
+[2017.07.29-21.34.12:324][127]LogMemory: Virtual Memory: 3336.80 MB used, 134217728.00 MB total
+[2017.07.29-21.34.12:324][127]LogMemory: 
+[2017.07.29-21.34.12:324][127]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.34.12:324][127]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_2_MainMenu
+[2017.07.29-21.34.12:324][127]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000622s)
+[2017.07.29-21.34.12:325][127]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.34.12:325][127]LogPlayLevel: PIE: World Init took: (0.000543s)
+[2017.07.29-21.34.12:325][127]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu (0.001439s)
+[2017.07.29-21.34.12:325][127]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.34.12:329][127]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.34.12
+[2017.07.29-21.34.12:329][127]LogWorld: Bringing up level for play took: 0.000577
+[2017.07.29-21.34.12:329][127]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.34.12:329][127]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.34.12:329][127]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.34.12:329][127]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.34.12:330][127]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.34.12:330][127]LogLoad: Took 0.032362 seconds to LoadMap(/Game/Maps/UEDPIE_2_MainMenu)
+[2017.07.29-21.34.12:339][128]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2017.07.29-21.34.12:339][128]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:53753, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: LobbyPC_C_1, Owner: LobbyPC_C_1
+[2017.07.29-21.34.12:339][128]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:53753, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: LobbyPC_C_1, Owner: LobbyPC_C_1, Channels: 10, Time: 2017.07.29-21.34.12
+[2017.07.29-21.34.12:339][128]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:53753, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: LobbyPC_C_1, Owner: LobbyPC_C_1
+[2017.07.29-21.34.12:341][128]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.07.29-21.34.12:341][128]LogScriptCore:Warning: 
+[2017.07.29-21.34.24:072][309]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.34.24:072][309]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.34.24:072][309]LogNet: Browse: 192.168.1.46//Game/Maps/MainMenu
+[2017.07.29-21.34.24:072][309]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.29-21.34.24:072][309]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.34.24:072][309]LogNet: Game client on port 7777, rate 10000
+[2017.07.29-21.34.24:072][309]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_18, Driver: PendingNetDriver IpNetDriver_17, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.29-21.34.24:082][310]LogHandshake: SendConnectChallenge. Timestamp: 29.279585, Cookie: 050110250097162074173252057248004112118119007130084068206074
+[2017.07.29-21.34.24:082][310]LogHandshake: SendChallengeResponse. Timestamp: 29.279585, Cookie: 050110250097162074173252057248004112118119007130084068206074
+[2017.07.29-21.34.24:092][311]LogNet: Server accepting post-challenge connection from: 192.168.1.46:53757
+[2017.07.29-21.34.24:092][311]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.34.24:092][311]LogNet: NotifyAcceptedConnection: Name: Lobby, TimeStamp: 07/29/17 17:34:24, [UNetConnection] RemoteAddr: 192.168.1.46:53757, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.34.24:092][311]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 192.168.1.46:53757, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.34.24:291][331]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_1_Lobby.Lobby: Accepted
+[2017.07.29-21.34.24:291][331]LogNet: Remote platform little endian=1
+[2017.07.29-21.34.24:291][331]LogNet: This platform little endian=1
+[2017.07.29-21.34.24:301][332]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-C45419CA47855F9E6A71308A87EB2A4F userId: gary-pc-C45419CA47855F9E6A71308A87EB2A4F
+[2017.07.29-21.34.24:302][332]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_1_Lobby, Game: /Game/Blueprints/Lobby/LobbyGM.LobbyGM_C)
+[2017.07.29-21.34.24:302][332]LogLoad: LoadMap: 192.168.1.46//Game/Maps/UEDPIE_1_Lobby?game=/Game/Blueprints/Lobby/LobbyGM.LobbyGM_C
+[2017.07.29-21.34.24:315][332]Cmd: MEM
+[2017.07.29-21.34.24:327][332]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.34.24:327][332]LogMemory: Process Physical Memory: 1445.45 MB used, 1776.11 MB peak
+[2017.07.29-21.34.24:327][332]LogMemory: Process Virtual Memory: 2395.30 MB used, 2651.48 MB peak
+[2017.07.29-21.34.24:327][332]LogMemory: Physical Memory: 6389.20 MB used, 16322.38 MB total
+[2017.07.29-21.34.24:327][332]LogMemory: Virtual Memory: 3326.80 MB used, 134217728.00 MB total
+[2017.07.29-21.34.24:327][332]LogMemory: 
+[2017.07.29-21.34.24:327][332]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.34.24:334][332]LogAIModule: Creating AISystem for world Lobby
+[2017.07.29-21.34.24:338][332]LogWorld: Bringing World /Game/Maps/UEDPIE_2_Lobby.Lobby up for play (max tick rate 0) at 2017.07.29-17.34.24
+[2017.07.29-21.34.24:339][332]LogWorld: Bringing up level for play took: 0.001702
+[2017.07.29-21.34.24:339][332]LogLoad: Took 0.036493 seconds to LoadMap(/Game/Maps/UEDPIE_1_Lobby)
+[2017.07.29-21.34.24:347][333]LogNet: Client netspeed is 10000
+[2017.07.29-21.34.24:347][333]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-C45419CA47855F9E6A71308A87EB2A4F?SplitscreenCount=1
+[2017.07.29-21.34.24:350][333]LogNet: Join succeeded: gary-pc-C45419CA4785
+[2017.07.29-21.34.31:059][941]LogNet: Browse: /Game/Maps/MainMenu
+[2017.07.29-21.34.31:059][941]LogLoad: LoadMap: /Game/Maps/MainMenu
+[2017.07.29-21.34.31:059][941]LogNet: World NetDriver shutdown IpNetDriver_17 [GameNetDriver]
+[2017.07.29-21.34.31:059][941]LogNet: DestroyNamedNetDriver IpNetDriver_17 [GameNetDriver]
+[2017.07.29-21.34.31:059][941]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_18, Driver: GameNetDriver IpNetDriver_17, IsServer: NO, PC: LobbyPC_C_0, Owner: LobbyPC_C_0, Channels: 10, Time: 2017.07.29-21.34.31
+[2017.07.29-21.34.31:059][941]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_18, Driver: GameNetDriver IpNetDriver_17, IsServer: NO, PC: LobbyPC_C_0, Owner: LobbyPC_C_0
+[2017.07.29-21.34.31:059][941]LogExit: GameNetDriver IpNetDriver_17 shut down
+[2017.07.29-21.34.31:060][941]LogOnline:Warning: NULL: Can't destroy a null online session (Game)
+[2017.07.29-21.34.31:074][941]Cmd: MEM
+[2017.07.29-21.34.31:085][941]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.34.31:085][941]LogMemory: Process Physical Memory: 1455.60 MB used, 1776.11 MB peak
+[2017.07.29-21.34.31:085][941]LogMemory: Process Virtual Memory: 2423.79 MB used, 2651.48 MB peak
+[2017.07.29-21.34.31:085][941]LogMemory: Physical Memory: 6401.04 MB used, 16322.38 MB total
+[2017.07.29-21.34.31:085][941]LogMemory: Virtual Memory: 3344.75 MB used, 134217728.00 MB total
+[2017.07.29-21.34.31:085][941]LogMemory: 
+[2017.07.29-21.34.31:085][941]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.34.31:085][941]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_2_MainMenu
+[2017.07.29-21.34.31:086][941]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000580s)
+[2017.07.29-21.34.31:086][941]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.34.31:086][941]LogPlayLevel: PIE: World Init took: (0.000509s)
+[2017.07.29-21.34.31:086][941]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu (0.001341s)
+[2017.07.29-21.34.31:086][941]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.34.31:090][941]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.34.31
+[2017.07.29-21.34.31:090][941]LogWorld: Bringing up level for play took: 0.000585
+[2017.07.29-21.34.31:090][941]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.34.31:091][941]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.34.31:091][941]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.34.31:091][941]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.34.31:091][941]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.34.31:091][941]LogLoad: Took 0.031843 seconds to LoadMap(/Game/Maps/UEDPIE_2_MainMenu)
+[2017.07.29-21.34.31:101][942]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2017.07.29-21.34.31:101][942]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:53757, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: LobbyPC_C_2, Owner: LobbyPC_C_2
+[2017.07.29-21.34.31:101][942]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:53757, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: LobbyPC_C_2, Owner: LobbyPC_C_2, Channels: 10, Time: 2017.07.29-21.34.31
+[2017.07.29-21.34.31:101][942]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:53757, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_15, IsServer: YES, PC: LobbyPC_C_2, Owner: LobbyPC_C_2
+[2017.07.29-21.34.31:102][942]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.07.29-21.34.31:102][942]LogScriptCore:Warning: 
+[2017.07.29-21.34.38:835][713]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.07.29-21.34.38:835][713]LogScriptCore:Warning: 
+[2017.07.29-21.34.38:835][713]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.34.38:879][713]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.34.38:902][713]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.34.38:902][713]LogPlayLevel:Display: Shutting down PIE online subsystems
+[2017.07.29-21.34.38:902][713]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.34.38:926][713]LogExit: GameNetDriver None shut down
+[2017.07.29-21.34.38:990][714]LogPlayLevel:Display: Destroying online subsystem :Context_23
+[2017.07.29-21.34.38:990][714]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.34.38:990][714]LogPlayLevel:Display: Destroying online subsystem :Context_22
+[2017.07.29-21.34.38:990][714]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.41.07:276][418]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.025
+[2017.07.29-21.41.07:278][418]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
+[2017.07.29-21.41.07:278][418]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
+[2017.07.29-21.41.07:364][418]LogSavePackage: Save=72.07ms
+[2017.07.29-21.41.07:364][418]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM_Auto4EEDA80294B021B421F0578B6DA556594.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto4.uasset'
+[2017.07.29-21.41.07:366][418]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto4.uasset
+[2017.07.29-21.41.07:366][418]LogFileHelpers: Auto-saving content packages took 0.089
+[2017.07.29-21.42.17:273][293]BlueprintLog: New page: Compile LobbyGM
+[2017.07.29-21.42.17:866][342]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2017.07.29-21.42.17:921][342]LogSavePackage: Save=47.78ms
+[2017.07.29-21.42.17:921][342]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM941E8DF24F6C6CA5235CA484C31F9649.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2017.07.29-21.42.17:924][342]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
+[2017.07.29-21.42.38:129][407]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.42.38:129][407]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.29-21.42.38:130][407]PIE: New page: PIE session: MainMenu (Jul 29, 2017, 12:42:38 PM)
+[2017.07.29-21.42.38:130][407]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_1_MainMenu
+[2017.07.29-21.42.38:131][407]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000646s)
+[2017.07.29-21.42.38:131][407]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.42.38:132][407]LogPlayLevel: PIE: World Init took: (0.000618s)
+[2017.07.29-21.42.38:132][407]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_1_MainMenu.MainMenu (0.001469s)
+[2017.07.29-21.42.38:147][407]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.29-21.42.38:151][407]LogInit: FAudioDevice initialized.
+[2017.07.29-21.42.38:189][407]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.42.38:193][407]LogWorld: Bringing World /Game/Maps/UEDPIE_1_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.42.38
+[2017.07.29-21.42.38:193][407]LogWorld: Bringing up level for play took: 0.000635
+[2017.07.29-21.42.38:204][407]LogVoice:Warning: Failed to initialize voice interface
+[2017.07.29-21.42.38:204][407]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.42.38:205][407]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.29-21.42.38:205][407]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.42.38:205][407]LogNet: GameNetDriver IpNetDriver_18 IpNetDriver listening on port 7777
+[2017.07.29-21.42.38:205][407]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.42.38:205][407]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.42.38:205][407]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.42.38:206][407]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.42.38:212][407]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_1_MainMenu -0.558
+[2017.07.29-21.42.38:213][407]PIE: New page: PIE session: MainMenu (Jul 29, 2017, 12:42:38 PM)
+[2017.07.29-21.42.38:255][407]LogNet: Browse: 127.0.0.1//Game/Maps/MainMenu
+[2017.07.29-21.42.38:255][407]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.29-21.42.38:255][407]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.42.38:255][407]LogNet: Game client on port 7777, rate 10000
+[2017.07.29-21.42.38:255][407]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_20, Driver: PendingNetDriver IpNetDriver_19, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.29-21.42.38:262][407]PIE: Info Play in editor start time for /Game/Maps/MainMenu -0.509
+[2017.07.29-21.42.38:269][407]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.42.38:269][407]LogHandshake: SendConnectChallenge. Timestamp: 0.008333, Cookie: 009047146064152193194105162055125255097133211090240083128225
+[2017.07.29-21.42.38:270][407]LogHandshake: SendChallengeResponse. Timestamp: 0.008333, Cookie: 009047146064152193194105162055125255097133211090240083128225
+[2017.07.29-21.42.38:349][408]LogNet: Server accepting post-challenge connection from: 127.0.0.1:60479
+[2017.07.29-21.42.38:349][408]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.42.38:349][408]LogNet: NotifyAcceptedConnection: Name: MainMenu, TimeStamp: 07/29/17 17:42:38, [UNetConnection] RemoteAddr: 127.0.0.1:60479, Name: IpConnection_21, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.42.38:349][408]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:60479, Name: IpConnection_21, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.42.38:368][410]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_1_MainMenu.MainMenu: Accepted
+[2017.07.29-21.42.38:368][410]LogNet: Remote platform little endian=1
+[2017.07.29-21.42.38:368][410]LogNet: This platform little endian=1
+[2017.07.29-21.42.38:379][410]LogVoice:Warning: Failed to initialize voice interface
+[2017.07.29-21.42.38:385][411]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-54BEA31E454AF06CB7D53C8A2A448F89 userId: gary-pc-54BEA31E454AF06CB7D53C8A2A448F89
+[2017.07.29-21.42.38:386][411]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_1_MainMenu, Game: /Script/Engine.GameMode)
+[2017.07.29-21.42.38:386][411]LogLoad: LoadMap: 127.0.0.1//Game/Maps/UEDPIE_1_MainMenu?game=/Script/Engine.GameMode
+[2017.07.29-21.42.38:399][411]Cmd: MEM
+[2017.07.29-21.42.38:411][411]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.42.38:411][411]LogMemory: Process Physical Memory: 1478.48 MB used, 1776.11 MB peak
+[2017.07.29-21.42.38:411][411]LogMemory: Process Virtual Memory: 2450.82 MB used, 2651.48 MB peak
+[2017.07.29-21.42.38:411][411]LogMemory: Physical Memory: 6429.64 MB used, 16322.38 MB total
+[2017.07.29-21.42.38:411][411]LogMemory: Virtual Memory: 3378.37 MB used, 134217728.00 MB total
+[2017.07.29-21.42.38:411][411]LogMemory: 
+[2017.07.29-21.42.38:411][411]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.42.38:411][411]LogWorld: PIE: Copying PIE streaming level from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu. OwningWorld: <null>
+[2017.07.29-21.42.38:412][411]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.42.38:416][411]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.42.38
+[2017.07.29-21.42.38:416][411]LogWorld: Bringing up level for play took: 0.000528
+[2017.07.29-21.42.38:416][411]LogLoad: Took 0.029398 seconds to LoadMap(/Game/Maps/UEDPIE_1_MainMenu)
+[2017.07.29-21.42.38:423][412]LogNet: Client netspeed is 10000
+[2017.07.29-21.42.38:423][412]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-54BEA31E454AF06CB7D53C8A2A448F89?SplitscreenCount=1
+[2017.07.29-21.42.38:424][412]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-21.42.38:424][412]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.42.38:424][412]LogNet: Join succeeded: gary-pc-54BEA31E454A
+[2017.07.29-21.42.38:442][414]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-21.42.38:467][417]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-21.42.45:357][242]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.42.45:357][242]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.42.45:357][242]LogNet: Browse: /Game/Maps/Lobby?Listen
+[2017.07.29-21.42.45:357][242]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
+[2017.07.29-21.42.45:357][242]LogNet: World NetDriver shutdown IpNetDriver_18 [GameNetDriver]
+[2017.07.29-21.42.45:357][242]LogNet: DestroyNamedNetDriver IpNetDriver_18 [GameNetDriver]
+[2017.07.29-21.42.45:357][242]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:60479, Name: IpConnection_21, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-21.42.45:357][242]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:60479, Name: IpConnection_21, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.29-21.42.45
+[2017.07.29-21.42.45:357][242]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:60479, Name: IpConnection_21, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-21.42.45:358][242]LogExit: GameNetDriver IpNetDriver_18 shut down
+[2017.07.29-21.42.45:370][242]Cmd: MEM
+[2017.07.29-21.42.45:381][242]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.42.45:381][242]LogMemory: Process Physical Memory: 1490.59 MB used, 1776.11 MB peak
+[2017.07.29-21.42.45:381][242]LogMemory: Process Virtual Memory: 2466.29 MB used, 2651.48 MB peak
+[2017.07.29-21.42.45:381][242]LogMemory: Physical Memory: 6429.03 MB used, 16322.38 MB total
+[2017.07.29-21.42.45:381][242]LogMemory: Virtual Memory: 3394.37 MB used, 134217728.00 MB total
+[2017.07.29-21.42.45:381][242]LogMemory: 
+[2017.07.29-21.42.45:381][242]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.42.45:499][242]LogAIModule: Creating AISystem for world Lobby
+[2017.07.29-21.42.45:499][242]LogWorld: Game class is 'LobbyGM_C'
+[2017.07.29-21.42.45:500][242]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.29-21.42.45:500][242]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.42.45:500][242]LogNet: GameNetDriver IpNetDriver_20 IpNetDriver listening on port 7777
+[2017.07.29-21.42.45:505][242]LogWorld: Bringing World /Game/Maps/UEDPIE_1_Lobby.Lobby up for play (max tick rate 0) at 2017.07.29-17.42.45
+[2017.07.29-21.42.45:505][242]LogWorld: Bringing up level for play took: 0.001830
+[2017.07.29-21.42.45:510][242]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.42.45:510][242]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.42.45:510][242]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.42.45:510][242]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.07.29-21.42.45:510][242]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.42.45:510][242]LogLoad: Took 0.153741 seconds to LoadMap(/Game/Maps/Lobby)
+[2017.07.29-21.42.45:511][242]LogNet:Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2017.07.29-21.42.45:511][242]LogNet:Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2017.07.29-21.42.45:511][242]LogNet: NetworkFailure: FailureReceived, Error: 'Host closed the connection.'
+[2017.07.29-21.42.45:511][242]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_20, Driver: GameNetDriver IpNetDriver_19, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.29-21.42.45
+[2017.07.29-21.42.45:511][242]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_20, Driver: GameNetDriver IpNetDriver_19, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-21.42.45:511][242]LogNet:Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2017.07.29-21.42.45:511][242]LogNet:Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2017.07.29-21.42.45:511][242]LogNet: NetworkFailure: ConnectionLost, Error: 'Your connection to the host has been lost.'
+[2017.07.29-21.42.45:526][243]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.07.29-21.42.45:526][243]LogNet: Failed; returning to Entry
+[2017.07.29-21.42.45:526][243]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.07.29-21.42.45:526][243]LogNet: World NetDriver shutdown IpNetDriver_19 [GameNetDriver]
+[2017.07.29-21.42.45:526][243]LogNet: DestroyNamedNetDriver IpNetDriver_19 [GameNetDriver]
+[2017.07.29-21.42.45:526][243]LogExit: GameNetDriver IpNetDriver_19 shut down
+[2017.07.29-21.42.45:545][243]Cmd: MEM
+[2017.07.29-21.42.45:557][243]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.42.45:557][243]LogMemory: Process Physical Memory: 1602.19 MB used, 1776.11 MB peak
+[2017.07.29-21.42.45:557][243]LogMemory: Process Virtual Memory: 2717.96 MB used, 2717.96 MB peak
+[2017.07.29-21.42.45:557][243]LogMemory: Physical Memory: 6538.32 MB used, 16322.38 MB total
+[2017.07.29-21.42.45:557][243]LogMemory: Virtual Memory: 3609.37 MB used, 134217728.00 MB total
+[2017.07.29-21.42.45:557][243]LogMemory: 
+[2017.07.29-21.42.45:557][243]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.42.45:557][243]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_2_MainMenu
+[2017.07.29-21.42.45:558][243]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000569s)
+[2017.07.29-21.42.45:558][243]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.42.45:558][243]LogPlayLevel: PIE: World Init took: (0.000507s)
+[2017.07.29-21.42.45:558][243]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu (0.001264s)
+[2017.07.29-21.42.45:558][243]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.42.45:562][243]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.42.45
+[2017.07.29-21.42.45:563][243]LogWorld: Bringing up level for play took: 0.000914
+[2017.07.29-21.42.45:563][243]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.42.45:563][243]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.42.45:563][243]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.42.45:563][243]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.42.45:565][243]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.42.45:565][243]LogLoad: Took 0.038015 seconds to LoadMap(/Game/Maps/UEDPIE_2_MainMenu)
+[2017.07.29-21.42.59:109][857]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.42.59:109][857]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.07.29-21.42.59:109][857]LogNet: Browse: 192.168.1.46//Game/Maps/MainMenu
+[2017.07.29-21.42.59:109][857]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.29-21.42.59:109][857]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.42.59:109][857]LogNet: Game client on port 7777, rate 10000
+[2017.07.29-21.42.59:109][857]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_22, Driver: PendingNetDriver IpNetDriver_21, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.29-21.42.59:116][858]LogHandshake: SendConnectChallenge. Timestamp: 13.769220, Cookie: 164199026211062207150139090019205031182250228213121154113137
+[2017.07.29-21.42.59:117][858]LogHandshake: SendChallengeResponse. Timestamp: 13.769220, Cookie: 164199026211062207150139090019205031182250228213121154113137
+[2017.07.29-21.42.59:125][859]LogNet: Server accepting post-challenge connection from: 192.168.1.46:54120
+[2017.07.29-21.42.59:125][859]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-21.42.59:125][859]LogNet: NotifyAcceptedConnection: Name: Lobby, TimeStamp: 07/29/17 17:42:59, [UNetConnection] RemoteAddr: 192.168.1.46:54120, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_20, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.42.59:125][859]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 192.168.1.46:54120, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_20, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-21.42.59:327][883]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_1_Lobby.Lobby: Accepted
+[2017.07.29-21.42.59:327][883]LogNet: Remote platform little endian=1
+[2017.07.29-21.42.59:327][883]LogNet: This platform little endian=1
+[2017.07.29-21.42.59:335][884]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-54BEA31E454AF06CB7D53C8A2A448F89 userId: gary-pc-54BEA31E454AF06CB7D53C8A2A448F89
+[2017.07.29-21.42.59:336][884]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_1_Lobby, Game: /Game/Blueprints/Lobby/LobbyGM.LobbyGM_C)
+[2017.07.29-21.42.59:336][884]LogLoad: LoadMap: 192.168.1.46//Game/Maps/UEDPIE_1_Lobby?game=/Game/Blueprints/Lobby/LobbyGM.LobbyGM_C
+[2017.07.29-21.42.59:348][884]Cmd: MEM
+[2017.07.29-21.42.59:360][884]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.42.59:360][884]LogMemory: Process Physical Memory: 1551.62 MB used, 1776.11 MB peak
+[2017.07.29-21.42.59:360][884]LogMemory: Process Virtual Memory: 2439.43 MB used, 2719.27 MB peak
+[2017.07.29-21.42.59:360][884]LogMemory: Physical Memory: 6489.07 MB used, 16322.38 MB total
+[2017.07.29-21.42.59:360][884]LogMemory: Virtual Memory: 3387.93 MB used, 134217728.00 MB total
+[2017.07.29-21.42.59:360][884]LogMemory: 
+[2017.07.29-21.42.59:360][884]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.42.59:514][884]LogAIModule: Creating AISystem for world Lobby
+[2017.07.29-21.42.59:519][884]LogWorld: Bringing World /Game/Maps/UEDPIE_2_Lobby.Lobby up for play (max tick rate 0) at 2017.07.29-17.42.59
+[2017.07.29-21.42.59:519][884]LogWorld: Bringing up level for play took: 0.001605
+[2017.07.29-21.42.59:520][884]LogLoad: Took 0.184120 seconds to LoadMap(/Game/Maps/UEDPIE_1_Lobby)
+[2017.07.29-21.42.59:528][885]LogNet: Client netspeed is 10000
+[2017.07.29-21.42.59:528][885]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-54BEA31E454AF06CB7D53C8A2A448F89?SplitscreenCount=1
+[2017.07.29-21.42.59:531][885]LogNet: Join succeeded: gary-pc-54BEA31E454A
+[2017.07.29-21.43.07:063][718]LogNet: Browse: /Game/Maps/MainMenu
+[2017.07.29-21.43.07:063][718]LogLoad: LoadMap: /Game/Maps/MainMenu
+[2017.07.29-21.43.07:063][718]LogNet: World NetDriver shutdown IpNetDriver_21 [GameNetDriver]
+[2017.07.29-21.43.07:063][718]LogNet: DestroyNamedNetDriver IpNetDriver_21 [GameNetDriver]
+[2017.07.29-21.43.07:063][718]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_22, Driver: GameNetDriver IpNetDriver_21, IsServer: NO, PC: LobbyPC_C_0, Owner: LobbyPC_C_0, Channels: 10, Time: 2017.07.29-21.43.07
+[2017.07.29-21.43.07:063][718]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:7777, Name: IpConnection_22, Driver: GameNetDriver IpNetDriver_21, IsServer: NO, PC: LobbyPC_C_0, Owner: LobbyPC_C_0
+[2017.07.29-21.43.07:063][718]LogExit: GameNetDriver IpNetDriver_21 shut down
+[2017.07.29-21.43.07:064][718]LogOnline:Warning: NULL: Can't destroy a null online session (Game)
+[2017.07.29-21.43.07:078][718]Cmd: MEM
+[2017.07.29-21.43.07:090][718]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-21.43.07:090][718]LogMemory: Process Physical Memory: 1501.80 MB used, 1776.11 MB peak
+[2017.07.29-21.43.07:090][718]LogMemory: Process Virtual Memory: 2458.45 MB used, 2719.27 MB peak
+[2017.07.29-21.43.07:090][718]LogMemory: Physical Memory: 6457.97 MB used, 16322.38 MB total
+[2017.07.29-21.43.07:090][718]LogMemory: Virtual Memory: 3394.80 MB used, 134217728.00 MB total
+[2017.07.29-21.43.07:090][718]LogMemory: 
+[2017.07.29-21.43.07:090][718]Allocator Stats for TBB: (not implemented)
+[2017.07.29-21.43.07:090][718]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_2_MainMenu
+[2017.07.29-21.43.07:091][718]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000643s)
+[2017.07.29-21.43.07:091][718]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-21.43.07:091][718]LogPlayLevel: PIE: World Init took: (0.000488s)
+[2017.07.29-21.43.07:091][718]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu (0.001333s)
+[2017.07.29-21.43.07:091][718]LogWorld: Game class is 'GameMode'
+[2017.07.29-21.43.07:094][718]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-17.43.07
+[2017.07.29-21.43.07:094][718]LogWorld: Bringing up level for play took: 0.000558
+[2017.07.29-21.43.07:095][718]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-21.43.07:095][718]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.43.07:095][718]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-21.43.07:095][718]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.43.07:096][718]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-21.43.07:096][718]LogLoad: Took 0.032847 seconds to LoadMap(/Game/Maps/UEDPIE_2_MainMenu)
+[2017.07.29-21.43.07:103][719]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2017.07.29-21.43.07:103][719]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:54120, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_20, IsServer: YES, PC: LobbyPC_C_1, Owner: LobbyPC_C_1
+[2017.07.29-21.43.07:103][719]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:54120, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_20, IsServer: YES, PC: LobbyPC_C_1, Owner: LobbyPC_C_1, Channels: 10, Time: 2017.07.29-21.43.07
+[2017.07.29-21.43.07:103][719]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:54120, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_20, IsServer: YES, PC: LobbyPC_C_1, Owner: LobbyPC_C_1
+[2017.07.29-21.43.07:104][719]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.07.29-21.43.07:104][719]LogScriptCore:Warning: 
+[2017.07.29-21.43.12:425][341]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.43.12:451][341]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.43.12:452][341]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.07.29-21.43.12:452][341]LogScriptCore:Warning: 
+[2017.07.29-21.43.12:495][341]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.43.12:495][341]LogPlayLevel:Display: Shutting down PIE online subsystems
+[2017.07.29-21.43.12:495][341]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-21.43.12:509][341]LogExit: GameNetDriver None shut down
+[2017.07.29-21.43.12:530][342]LogPlayLevel:Display: Destroying online subsystem :Context_25
+[2017.07.29-21.43.12:531][342]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.43.12:531][342]LogPlayLevel:Display: Destroying online subsystem :Context_24
+[2017.07.29-21.43.12:531][342]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-21.54.16:644][793]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
+[2017.07.29-21.54.16:700][793]LogSavePackage: Save=44.89ms
+[2017.07.29-21.54.16:700][793]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM692DADC349B8EAB0A6AB14B16DD70E37.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
+[2017.07.29-21.54.16:702][793]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
+[2017.07.29-21.54.21:611][351]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.07.29-21.55.31:537][245]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.013
+[2017.07.29-21.55.31:538][245]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI/Lobby/CharacterSelect] ([1] browsable assets)...
+[2017.07.29-21.55.31:538][245]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/Lobby/CharacterSelect]
+[2017.07.29-21.55.31:575][245]LogSavePackage: Save=25.95ms
+[2017.07.29-21.55.31:575][245]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/CharacterSelect_Auto5B420DDFB453826EF77B77D911AFF563B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/Lobby/CharacterSelect_Auto5.uasset'
+[2017.07.29-21.55.31:576][245]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/Lobby/CharacterSelect_Auto5.uasset
+[2017.07.29-21.55.31:576][245]LogFileHelpers: Auto-saving content packages took 0.038
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/MainMenu.MainMenu:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/OptionsMenu.OptionsMenu:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/ServerMenu.ServerMenu:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu_C:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/MainMenu.MainMenu_C:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/OptionsMenu.OptionsMenu_C:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/MainMenu/ServerMenu.ServerMenu_C:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/Lobby/LobbyMenu.LobbyMenu:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/UI/Lobby/LobbyMenu.LobbyMenu_C:WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_18:HostMenu_C_6.WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_18:HostMenu_C_7.WidgetTree.CanvasPanel_0
+[2017.07.29-21.55.50:007][424]LogProperty:Warning: Illegal TEXT reference to a private object in external package (CanvasPanelSlot /Game/UI/MainMenu/HostMenu.HostMenu:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0) from referencer (Border /Engine/UMG/Editor/Transient.Border_0).  Import failed...
+[2017.07.29-21.55.50:007][424]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'CanvasPanelSlot'CanvasPanel_0.CanvasPanelSlot_0''
+[2017.07.29-22.05.31:444][ 55]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.017
+[2017.07.29-22.05.31:445][ 55]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI/Lobby/CharacterSelect] ([1] browsable assets)...
+[2017.07.29-22.05.31:445][ 55]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/Lobby/CharacterSelect]
+[2017.07.29-22.05.31:466][ 55]LogSavePackage: Save=9.42ms
+[2017.07.29-22.05.31:466][ 55]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/CharacterSelect_Auto6DCB251FA4CC68708F4FD64A333AB5CF6.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/Lobby/CharacterSelect_Auto6.uasset'
+[2017.07.29-22.05.31:467][ 55]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/Lobby/CharacterSelect_Auto6.uasset
+[2017.07.29-22.05.31:467][ 55]LogFileHelpers: Auto-saving content packages took 0.022
+[2017.07.29-22.10.47:466][255]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TextureFiles/thumb_AJ" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_AJ.uasset" SILENT=true
+[2017.07.29-22.10.47:481][255]LogSavePackage: Save=13.15ms
+[2017.07.29-22.10.47:481][255]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_AJE5021D5844EF1C9C25EC54A4BF6ED2CC.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_AJ.uasset'
+[2017.07.29-22.10.47:483][255]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_AJ.uasset
+[2017.07.29-22.11.04:918][325]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TextureFiles/thumb_Dashie" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Dashie.uasset" SILENT=true
+[2017.07.29-22.11.04:932][325]LogSavePackage: Save=11.79ms
+[2017.07.29-22.11.04:932][325]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_Dashie97C774C4404AB9E79F269B8A899278C4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Dashie.uasset'
+[2017.07.29-22.11.04:933][325]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Dashie.uasset
+[2017.07.29-22.11.16:427][679]LogSavePackage: Save=13.59ms
+[2017.07.29-22.11.16:427][679]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_FluttershyD4D0DEAB49E9084AF07B3BAF067614F1.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Fluttershy.uasset'
+[2017.07.29-22.11.16:428][679]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Fluttershy.uasset
+[2017.07.29-22.11.42:865][833]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TextureFiles/thumb_Pinkie" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Pinkie.uasset" SILENT=true
+[2017.07.29-22.11.42:881][833]LogSavePackage: Save=13.89ms
+[2017.07.29-22.11.42:881][833]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_Pinkie7CD9A91A4E0B9F41A5747587AE00A4A2.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Pinkie.uasset'
+[2017.07.29-22.11.42:883][833]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Pinkie.uasset
+[2017.07.29-22.11.57:019][510]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TextureFiles/thumb_Rarity" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Rarity.uasset" SILENT=true
+[2017.07.29-22.11.57:034][510]LogSavePackage: Save=13.32ms
+[2017.07.29-22.11.57:034][510]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_RarityE82947DB452EDAAFDC5ADE8CAFB3482E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Rarity.uasset'
+[2017.07.29-22.11.57:035][510]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Rarity.uasset
+[2017.07.29-22.12.15:253][634]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TextureFiles/thumb_Twilight" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Twilight.uasset" SILENT=true
+[2017.07.29-22.12.15:268][634]LogSavePackage: Save=13.13ms
+[2017.07.29-22.12.15:268][634]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_Twilight9CD9A8024462D1565F9000A4A80512EC.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Twilight.uasset'
+[2017.07.29-22.12.15:269][634]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumb_Twilight.uasset
+[2017.07.29-22.12.45:792][266]LogSavePackage: Save=13.44ms
+[2017.07.29-22.12.45:792][266]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_Twilight1659075443F130A57D9ABF8BDF51817D.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Twilight.uasset'
+[2017.07.29-22.12.45:794][266]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Twilight.uasset
+[2017.07.29-22.13.02:720][276]LogSavePackage: Save=13.05ms
+[2017.07.29-22.13.02:720][276]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_AJ2A283FD746098D4110689097C0F5ECFE.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_AJ.uasset'
+[2017.07.29-22.13.02:721][276]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_AJ.uasset
+[2017.07.29-22.13.02:750][276]LogSavePackage: Save=11.40ms
+[2017.07.29-22.13.02:750][276]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_DashieD6EC37104E2E2C6A1613F4B9C64A534F.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Dashie.uasset'
+[2017.07.29-22.13.02:751][276]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Dashie.uasset
+[2017.07.29-22.13.02:777][276]LogSavePackage: Save=13.08ms
+[2017.07.29-22.13.02:777][276]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_Fluttershy37FFDDCC43194880498B7F828FDED1B0.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Fluttershy.uasset'
+[2017.07.29-22.13.02:779][276]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Fluttershy.uasset
+[2017.07.29-22.13.02:803][276]LogSavePackage: Save=11.97ms
+[2017.07.29-22.13.02:803][276]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_PinkieED6B262B42972C987EF6A98517A7F86B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Pinkie.uasset'
+[2017.07.29-22.13.02:805][276]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Pinkie.uasset
+[2017.07.29-22.13.02:858][276]LogSavePackage: Save=13.25ms
+[2017.07.29-22.13.02:858][276]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/thumb_RarityACF7EED54FD49136A22BFE88066C1E40.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Rarity.uasset'
+[2017.07.29-22.13.02:859][276]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/TextureFiles/thumbnails/thumb_Rarity.uasset
+[2017.07.29-22.13.25:145][896]LogSavePackage: Save=69.79ms
+[2017.07.29-22.13.25:146][896]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/MainMenuD276EC0542749F343CF28A96BD6B6476.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap'
+[2017.07.29-22.13.25:146][896]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap
+[2017.07.29-22.15.03:054][789]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.15.03:054][789]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_AJ.thumb_AJ')
+[2017.07.29-22.15.03:054][789]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.15.03:054][789]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_AJ.thumb_AJ')
+[2017.07.29-22.15.03:054][789]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.15.03:054][789]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_AJ.thumb_AJ')
+[2017.07.29-22.15.06:953][255]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.15.06:953][255]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_AJ.thumb_AJ')
+[2017.07.29-22.15.06:953][255]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.15.06:953][255]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_AJ.thumb_AJ')
+[2017.07.29-22.15.06:953][255]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.15.06:953][255]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_AJ.thumb_AJ')
+[2017.07.29-22.15.40:216][433]BlueprintLog: New page: Compile CharacterSelect
+[2017.07.29-22.16.24:436][800]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.24:436][800]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.24:436][800]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.24:436][800]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.24:436][800]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.16.34:844][ 33]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_1.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.34:844][ 33]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.34:844][ 33]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.34:844][ 33]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.34:844][ 33]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.34:844][ 33]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.16.36:861][270]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_1.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.36:861][270]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_2.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.36:861][270]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.36:861][270]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.36:861][270]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.36:861][270]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.36:861][270]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.16.38:878][508]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_1.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.38:878][508]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_2.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.38:878][508]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_3.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.38:878][508]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.38:878][508]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.38:878][508]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.38:878][508]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.38:878][508]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_1.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_2.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_3.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_4.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.40:761][730]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.40:761][730]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_1.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_2.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_3.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_4.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_5.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.42:483][933]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.42:483][933]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_6.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_1.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_2.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_3.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_4.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_5.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_0.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Engine/Transient.World_16:CharacterSelect_C_19.WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogUObjectHash:Warning: Ambiguous search, could be UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0 or UniformGridPanel /Game/UI/Lobby/CharacterSelect.CharacterSelect_C:WidgetTree.UniformGridPanel_0
+[2017.07.29-22.16.45:456][286]LogProperty:Warning: Illegal TEXT reference to a private object in external package (UniformGridSlot /Game/UI/Lobby/CharacterSelect.CharacterSelect:WidgetTree.UniformGridPanel_0.UniformGridSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Applejack_btn).  Import failed...
+[2017.07.29-22.16.45:456][286]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'UniformGridSlot'UniformGridPanel_0.UniformGridSlot_0''
+[2017.07.29-22.24.40:908][322]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.018
+[2017.07.29-22.24.40:909][322]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI/Lobby/CharacterSelect] ([1] browsable assets)...
+[2017.07.29-22.24.40:909][322]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/Lobby/CharacterSelect]
+[2017.07.29-22.24.40:934][322]LogSavePackage: Save=12.64ms
+[2017.07.29-22.24.40:934][322]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/CharacterSelect_Auto7E1B9BA6C4452316A71EBADB701C5642A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/Lobby/CharacterSelect_Auto7.uasset'
+[2017.07.29-22.24.40:934][322]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/UI/Lobby/CharacterSelect_Auto7.uasset
+[2017.07.29-22.24.40:934][322]LogFileHelpers: Auto-saving content packages took 0.026
+[2017.07.29-22.27.35:211][629]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.27.35:211][629]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Dashie.thumb_Dashie')
+[2017.07.29-22.27.35:211][629]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.27.35:211][629]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Dashie.thumb_Dashie')
+[2017.07.29-22.27.35:212][629]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.27.35:212][629]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Dashie.thumb_Dashie')
+[2017.07.29-22.27.37:653][920]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.27.37:653][920]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Dashie.thumb_Dashie')
+[2017.07.29-22.27.37:653][920]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.27.37:653][920]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Dashie.thumb_Dashie')
+[2017.07.29-22.27.37:653][920]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.27.37:653][920]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Dashie.thumb_Dashie')
+[2017.07.29-22.28.07:845][514]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.28.07:845][514]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Fluttershy.thumb_Fluttershy')
+[2017.07.29-22.28.07:845][514]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.28.07:845][514]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Fluttershy.thumb_Fluttershy')
+[2017.07.29-22.28.07:845][514]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.28.07:845][514]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Fluttershy.thumb_Fluttershy')
+[2017.07.29-22.28.10:586][842]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.28.10:586][842]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Fluttershy.thumb_Fluttershy')
+[2017.07.29-22.28.10:586][842]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.28.10:586][842]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Fluttershy.thumb_Fluttershy')
+[2017.07.29-22.28.10:586][842]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.28.10:586][842]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Fluttershy.thumb_Fluttershy')
+[2017.07.29-22.28.24:991][553]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.28.24:991][553]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Pinkie.thumb_Pinkie')
+[2017.07.29-22.28.24:991][553]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.28.24:991][553]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Pinkie.thumb_Pinkie')
+[2017.07.29-22.28.24:991][553]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.28.24:991][553]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Pinkie.thumb_Pinkie')
+[2017.07.29-22.28.27:453][847]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.28.27:453][847]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Pinkie.thumb_Pinkie')
+[2017.07.29-22.28.27:453][847]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.28.27:453][847]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Pinkie.thumb_Pinkie')
+[2017.07.29-22.28.27:453][847]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.28.27:453][847]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Pinkie.thumb_Pinkie')
+[2017.07.29-22.28.47:078][178]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.28.47:078][178]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Rarity.thumb_Rarity')
+[2017.07.29-22.28.47:078][178]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.28.47:078][178]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Rarity.thumb_Rarity')
+[2017.07.29-22.28.47:078][178]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.28.47:078][178]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Rarity.thumb_Rarity')
+[2017.07.29-22.28.49:303][444]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.28.49:303][444]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Rarity.thumb_Rarity')
+[2017.07.29-22.28.49:303][444]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.28.49:303][444]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Rarity.thumb_Rarity')
+[2017.07.29-22.28.49:303][444]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.28.49:303][444]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Rarity.thumb_Rarity')
+[2017.07.29-22.29.14:423][436]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.29.14:423][436]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Twilight.thumb_Twilight')
+[2017.07.29-22.29.14:423][436]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.29.14:423][436]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Twilight.thumb_Twilight')
+[2017.07.29-22.29.14:423][436]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.29.14:423][436]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Twilight.thumb_Twilight')
+[2017.07.29-22.29.16:462][679]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.29.16:462][679]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Twilight.thumb_Twilight')
+[2017.07.29-22.29.16:462][679]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.29.16:462][679]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Twilight.thumb_Twilight')
+[2017.07.29-22.29.16:462][679]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.29.16:462][679]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Game/TextureFiles/thumbnails/thumb_Twilight.thumb_Twilight')
+[2017.07.29-22.29.39:903][436]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.29.39:903][436]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.29.39:903][436]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.29.39:903][436]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.29.39:903][436]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.29.39:903][436]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.29.42:912][796]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.29.42:912][796]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.29.42:912][796]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.29.42:912][796]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.29.42:912][796]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.29.42:912][796]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.30.06:011][533]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.30.06:011][533]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.30.06:011][533]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.30.06:012][533]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.30.06:012][533]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.30.06:012][533]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.30.08:703][855]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateColorStylingMode' with an invalid value of 'Specified'
+[2017.07.29-22.30.08:703][855]Warning: Invalid property value in defaults: ColorUseRule=Specified Color),Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.30.08:703][855]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushTileType' with an invalid value of 'No'
+[2017.07.29-22.30.08:703][855]Warning: Invalid property value in defaults: Tiling=No Tile,Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.30.08:703][855]LogEnum:Warning: In asset 'None', there is an enum property of type 'ESlateBrushMirrorType' with an invalid value of 'No'
+[2017.07.29-22.30.08:703][855]Warning: Invalid property value in defaults: Mirroring=No Mirror,ResourceObject=Texture2D'/Engine/VREditor/Tutorial/UMG/Specialized/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD')
+[2017.07.29-22.32.49:588][601]BlueprintLog: New page: Compile CharacterSelect
+[2017.07.29-22.32.50:480][679]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/Lobby/CharacterSelect" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/Lobby/CharacterSelect.uasset" SILENT=true
+[2017.07.29-22.32.50:508][679]LogSavePackage: Save=16.49ms
+[2017.07.29-22.32.50:508][679]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/CharacterSelect51BC3DD34924F7FCDDCC4B9C141ED4A6.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/Lobby/CharacterSelect.uasset'
+[2017.07.29-22.32.50:510][679]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/Lobby/CharacterSelect.uasset
+[2017.07.29-22.34.30:797][929]BlueprintLog: New page: Compile LobbyMenu
+[2017.07.29-22.34.31:486][993]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/Lobby/LobbyMenu" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/Lobby/LobbyMenu.uasset" SILENT=true
+[2017.07.29-22.34.31:547][993]LogSavePackage: Save=50.60ms
+[2017.07.29-22.34.31:548][993]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyMenu191896E14B1BAF6412A0429568B206AE.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/Lobby/LobbyMenu.uasset'
+[2017.07.29-22.34.31:550][993]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/Lobby/LobbyMenu.uasset
+[2017.07.29-22.35.47:756][320]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-22.35.47:756][320]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.29-22.35.47:757][320]PIE: New page: PIE session: MainMenu (Jul 29, 2017, 1:35:47 PM)
+[2017.07.29-22.35.47:758][320]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_1_MainMenu
+[2017.07.29-22.35.47:759][320]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000696s)
+[2017.07.29-22.35.47:759][320]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-22.35.47:759][320]LogPlayLevel: PIE: World Init took: (0.000666s)
+[2017.07.29-22.35.47:760][320]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_1_MainMenu.MainMenu (0.001599s)
+[2017.07.29-22.35.47:773][320]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.29-22.35.47:776][320]LogInit: FAudioDevice initialized.
+[2017.07.29-22.35.47:813][320]LogWorld: Game class is 'GameMode'
+[2017.07.29-22.35.47:817][320]LogWorld: Bringing World /Game/Maps/UEDPIE_1_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-18.35.47
+[2017.07.29-22.35.47:817][320]LogWorld: Bringing up level for play took: 0.000872
+[2017.07.29-22.35.47:828][320]LogVoice:Warning: Failed to initialize voice interface
+[2017.07.29-22.35.47:828][320]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.29-22.35.47:829][320]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-22.35.47:829][320]LogNet: GameNetDriver IpNetDriver_22 IpNetDriver listening on port 7777
+[2017.07.29-22.35.47:829][320]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-22.35.47:829][320]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-22.35.47:829][320]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-22.35.47:830][320]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-22.35.47:833][320]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_1_MainMenu 1.063
+[2017.07.29-22.35.47:835][320]PIE: New page: PIE session: MainMenu (Jul 29, 2017, 1:35:47 PM)
+[2017.07.29-22.35.47:870][320]LogNet: Browse: 127.0.0.1//Game/Maps/MainMenu
+[2017.07.29-22.35.47:870][320]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.29-22.35.47:870][320]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-22.35.47:870][320]LogNet: Game client on port 7777, rate 10000
+[2017.07.29-22.35.47:871][320]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_24, Driver: PendingNetDriver IpNetDriver_23, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.29-22.35.47:874][320]PIE: Info Play in editor start time for /Game/Maps/MainMenu 1.103
+[2017.07.29-22.35.47:878][320]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-22.35.47:878][320]LogHandshake: SendConnectChallenge. Timestamp: 0.008333, Cookie: 011145207054144052136018053167031021073109211122132158168100
+[2017.07.29-22.35.47:879][320]LogHandshake: SendChallengeResponse. Timestamp: 0.008333, Cookie: 011145207054144052136018053167031021073109211122132158168100
+[2017.07.29-22.35.47:943][321]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54157
+[2017.07.29-22.35.47:944][321]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-22.35.47:944][321]LogNet: NotifyAcceptedConnection: Name: MainMenu, TimeStamp: 07/29/17 18:35:47, [UNetConnection] RemoteAddr: 127.0.0.1:54157, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-22.35.47:944][321]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54157, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.29-22.35.47:961][323]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_1_MainMenu.MainMenu: Accepted
+[2017.07.29-22.35.47:961][323]LogNet: Remote platform little endian=1
+[2017.07.29-22.35.47:961][323]LogNet: This platform little endian=1
+[2017.07.29-22.35.47:973][323]LogVoice:Warning: Failed to initialize voice interface
+[2017.07.29-22.35.47:979][324]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-4B72248C4D390BCBC4CA47B53BA2645D userId: gary-pc-4B72248C4D390BCBC4CA47B53BA2645D
+[2017.07.29-22.35.47:980][324]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_1_MainMenu, Game: /Script/Engine.GameMode)
+[2017.07.29-22.35.47:980][324]LogLoad: LoadMap: 127.0.0.1//Game/Maps/UEDPIE_1_MainMenu?game=/Script/Engine.GameMode
+[2017.07.29-22.35.47:995][324]Cmd: MEM
+[2017.07.29-22.35.48:006][324]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-22.35.48:006][324]LogMemory: Process Physical Memory: 1524.13 MB used, 1776.11 MB peak
+[2017.07.29-22.35.48:006][324]LogMemory: Process Virtual Memory: 2594.29 MB used, 2719.27 MB peak
+[2017.07.29-22.35.48:006][324]LogMemory: Physical Memory: 6465.00 MB used, 16322.38 MB total
+[2017.07.29-22.35.48:006][324]LogMemory: Virtual Memory: 3474.00 MB used, 134217728.00 MB total
+[2017.07.29-22.35.48:006][324]LogMemory: 
+[2017.07.29-22.35.48:006][324]Allocator Stats for TBB: (not implemented)
+[2017.07.29-22.35.48:007][324]LogWorld: PIE: Copying PIE streaming level from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu. OwningWorld: <null>
+[2017.07.29-22.35.48:007][324]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-22.35.48:011][324]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-18.35.48
+[2017.07.29-22.35.48:011][324]LogWorld: Bringing up level for play took: 0.000447
+[2017.07.29-22.35.48:011][324]LogLoad: Took 0.031377 seconds to LoadMap(/Game/Maps/UEDPIE_1_MainMenu)
+[2017.07.29-22.35.48:019][325]LogNet: Client netspeed is 10000
+[2017.07.29-22.35.48:019][325]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-4B72248C4D390BCBC4CA47B53BA2645D?SplitscreenCount=1
+[2017.07.29-22.35.48:020][325]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-22.35.48:021][325]LogNet: Join succeeded: gary-pc-4B72248C4D39
+[2017.07.29-22.35.48:040][327]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-22.35.48:065][330]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2017.07.29-22.35.53:717][  8]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.07.29-22.35.53:717][  8]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.07.29-22.35.53:717][  8]LogNet: Browse: /Game/Maps/Lobby?Listen
+[2017.07.29-22.35.53:717][  8]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
+[2017.07.29-22.35.53:717][  8]LogNet: World NetDriver shutdown IpNetDriver_22 [GameNetDriver]
+[2017.07.29-22.35.53:717][  8]LogNet: DestroyNamedNetDriver IpNetDriver_22 [GameNetDriver]
+[2017.07.29-22.35.53:717][  8]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:54157, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-22.35.53:717][  8]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54157, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.29-22.35.53
+[2017.07.29-22.35.53:717][  8]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54157, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-22.35.53:718][  8]LogExit: GameNetDriver IpNetDriver_22 shut down
+[2017.07.29-22.35.53:731][  8]Cmd: MEM
+[2017.07.29-22.35.53:742][  8]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-22.35.53:742][  8]LogMemory: Process Physical Memory: 1533.17 MB used, 1776.11 MB peak
+[2017.07.29-22.35.53:742][  8]LogMemory: Process Virtual Memory: 2538.24 MB used, 2719.27 MB peak
+[2017.07.29-22.35.53:742][  8]LogMemory: Physical Memory: 6472.78 MB used, 16322.38 MB total
+[2017.07.29-22.35.53:742][  8]LogMemory: Virtual Memory: 3442.00 MB used, 134217728.00 MB total
+[2017.07.29-22.35.53:742][  8]LogMemory: 
+[2017.07.29-22.35.53:742][  8]Allocator Stats for TBB: (not implemented)
+[2017.07.29-22.35.53:877][  8]LogAIModule: Creating AISystem for world Lobby
+[2017.07.29-22.35.53:877][  8]LogWorld: Game class is 'LobbyGM_C'
+[2017.07.29-22.35.53:878][  8]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.29-22.35.53:878][  8]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.29-22.35.53:878][  8]LogNet: GameNetDriver IpNetDriver_24 IpNetDriver listening on port 7777
+[2017.07.29-22.35.53:883][  8]LogWorld: Bringing World /Game/Maps/UEDPIE_1_Lobby.Lobby up for play (max tick rate 0) at 2017.07.29-18.35.53
+[2017.07.29-22.35.53:883][  8]LogWorld: Bringing up level for play took: 0.002104
+[2017.07.29-22.35.53:889][  8]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-22.35.53:889][  8]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-22.35.53:889][  8]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-22.35.53:889][  8]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.07.29-22.35.53:890][  8]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-22.35.53:890][  8]LogLoad: Took 0.172407 seconds to LoadMap(/Game/Maps/Lobby)
+[2017.07.29-22.35.53:891][  8]LogNet:Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2017.07.29-22.35.53:891][  8]LogNet:Warning: Network Failure: GameNetDriver[FailureReceived]: Host closed the connection.
+[2017.07.29-22.35.53:891][  8]LogNet: NetworkFailure: FailureReceived, Error: 'Host closed the connection.'
+[2017.07.29-22.35.53:891][  8]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_24, Driver: GameNetDriver IpNetDriver_23, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.29-22.35.53
+[2017.07.29-22.35.53:891][  8]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_24, Driver: GameNetDriver IpNetDriver_23, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.29-22.35.53:891][  8]LogNet:Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2017.07.29-22.35.53:891][  8]LogNet:Warning: Network Failure: GameNetDriver[ConnectionLost]: Your connection to the host has been lost.
+[2017.07.29-22.35.53:891][  8]LogNet: NetworkFailure: ConnectionLost, Error: 'Your connection to the host has been lost.'
+[2017.07.29-22.35.53:906][  9]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.07.29-22.35.53:906][  9]LogNet: Failed; returning to Entry
+[2017.07.29-22.35.53:907][  9]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.07.29-22.35.53:907][  9]LogNet: World NetDriver shutdown IpNetDriver_23 [GameNetDriver]
+[2017.07.29-22.35.53:907][  9]LogNet: DestroyNamedNetDriver IpNetDriver_23 [GameNetDriver]
+[2017.07.29-22.35.53:907][  9]LogExit: GameNetDriver IpNetDriver_23 shut down
+[2017.07.29-22.35.53:919][  9]Cmd: MEM
+[2017.07.29-22.35.53:930][  9]LogMemory: Platform Memory Stats for Windows
+[2017.07.29-22.35.53:930][  9]LogMemory: Process Physical Memory: 1636.08 MB used, 1776.11 MB peak
+[2017.07.29-22.35.53:930][  9]LogMemory: Process Virtual Memory: 2794.23 MB used, 2794.23 MB peak
+[2017.07.29-22.35.53:930][  9]LogMemory: Physical Memory: 6578.36 MB used, 16322.38 MB total
+[2017.07.29-22.35.53:930][  9]LogMemory: Virtual Memory: 3653.00 MB used, 134217728.00 MB total
+[2017.07.29-22.35.53:930][  9]LogMemory: 
+[2017.07.29-22.35.53:930][  9]Allocator Stats for TBB: (not implemented)
+[2017.07.29-22.35.53:930][  9]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_2_MainMenu
+[2017.07.29-22.35.53:930][  9]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000591s)
+[2017.07.29-22.35.53:931][  9]LogAIModule: Creating AISystem for world MainMenu
+[2017.07.29-22.35.53:931][  9]LogPlayLevel: PIE: World Init took: (0.000608s)
+[2017.07.29-22.35.53:931][  9]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_2_MainMenu.MainMenu (0.001389s)
+[2017.07.29-22.35.53:931][  9]LogWorld: Game class is 'GameMode'
+[2017.07.29-22.35.53:935][  9]LogWorld: Bringing World /Game/Maps/UEDPIE_2_MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.29-18.35.53
+[2017.07.29-22.35.53:935][  9]LogWorld: Bringing up level for play took: 0.001032
+[2017.07.29-22.35.53:935][  9]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.07.29-22.35.53:936][  9]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-22.35.53:936][  9]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.07.29-22.35.53:936][  9]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-22.35.53:937][  9]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.07.29-22.35.53:937][  9]LogLoad: Took 0.030282 seconds to LoadMap(/Game/Maps/UEDPIE_2_MainMenu)
+[2017.07.29-22.35.55:721][221]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
+[2017.07.29-22.37.57:756][856]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.07.29-22.37.57:756][856]LogScriptCore:Warning: 
+[2017.07.29-22.37.57:756][856]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-22.37.57:796][856]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-22.37.57:820][856]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-22.37.57:820][856]LogPlayLevel:Display: Shutting down PIE online subsystems
+[2017.07.29-22.37.57:820][856]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.07.29-22.37.57:833][856]LogExit: GameNetDriver None shut down
+[2017.07.29-22.37.57:849][857]LogPlayLevel:Display: Destroying online subsystem :Context_34
+[2017.07.29-22.37.57:849][857]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-22.37.57:849][857]LogPlayLevel:Display: Destroying online subsystem :Context_33
+[2017.07.29-22.37.57:849][857]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-22.39.17:190][588]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.29-22.39.17:345][589]Cmd: QUIT_EDITOR
+[2017.07.29-22.39.18:320][589]LogExit: Preparing to exit.
+[2017.07.29-22.39.19:475][589]LogExit: Editor shut down
+[2017.07.29-22.39.19:476][589]LogExit: Transaction tracking system shut down
+[2017.07.29-22.39.19:619][589]LogObj: Freed 0b from 0 cluster array pools.
+[2017.07.29-22.39.19:619][589]LogExit: Object subsystem successfully closed.
+[2017.07.29-22.39.19:629][589]LogD3D11RHI: Shutdown
+[2017.07.29-22.39.19:629][589]LogD3D11RHI: CleanupD3DDevice
+[2017.07.29-22.39.19:698][589]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (239)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module SequencerWidgets (238)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module BlueprintGraph (237)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (236)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (235)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module CrashTracker (234)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module SceneOutliner (233)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module WidgetCarousel (232)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module AddContentDialog (231)
+[2017.07.29-22.39.19:708][589]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.13/FeaturePacks/' was aborted.
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module GameplayTags (230)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module EditorWidgets (229)
+[2017.07.29-22.39.19:708][589]LogModuleManager: Shutting down and abandoning module CollectionManager (228)
+[2017.07.29-22.39.19:708][589]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' was aborted.
+[2017.07.29-22.39.19:709][589]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Gary/Collections/' was aborted.
+[2017.07.29-22.39.19:709][589]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' was aborted.
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module StatsViewer (227)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module FoliageEdit (226)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module LandscapeEditor (225)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (224)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module ActorPickerMode (223)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module GeometryMode (222)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module TextureAlignMode (221)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module BspMode (220)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module HardwareSurvey (219)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (218)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module SequenceRecorder (217)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module AutomationWorker (216)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (215)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module PlacementMode (214)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (213)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (212)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (211)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (210)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (209)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module Media (208)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (207)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (206)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module CharacterAI (205)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module SmartSnapping (204)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module SessionServices (203)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module ViewportSnapping (202)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module ViewportInteraction (201)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module LogVisualizer (200)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (199)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module IntroTutorials (198)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (197)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (196)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (195)
+[2017.07.29-22.39.19:709][589]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (194)
+[2017.07.29-22.39.20:323][589]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (193)
+[2017.07.29-22.39.20:323][589]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (192)
+[2017.07.29-22.39.20:323][589]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (191)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module NiagaraEditor (190)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module MergeActors (189)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module SizeMap (188)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module TreeMap (187)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module ReferenceViewer (186)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module LocalizationService (185)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (184)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module HardwareTargeting (183)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (182)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module UndoHistory (181)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module UserFeedback (180)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module XmlParser (179)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module Blutility (178)
+[2017.07.29-22.39.20:324][589]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (177)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (176)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module InputBindingEditor (175)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (174)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module SettingsEditor (173)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module ProjectLauncher (172)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module SessionFrontend (171)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module ProfilerClient (170)
+[2017.07.29-22.39.20:325][589]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (169)
+[2017.07.29-22.39.20:326][589]LogModuleManager: Shutting down and abandoning module DeviceManager (168)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module AutomationController (167)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module AutomationWindow (166)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module Layers (165)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (164)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module DetailCustomizations (163)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module PackagesDialog (162)
+[2017.07.29-22.39.20:380][589]LogModuleManager: Shutting down and abandoning module AnimGraph (161)
+[2017.07.29-22.39.20:381][589]LogModuleManager: Shutting down and abandoning module Persona (160)
+[2017.07.29-22.39.20:381][589]LogModuleManager: Shutting down and abandoning module Kismet (159)
+[2017.07.29-22.39.20:401][589]LogModuleManager: Shutting down and abandoning module GraphEditor (158)
+[2017.07.29-22.39.20:401][589]LogModuleManager: Shutting down and abandoning module ClassViewer (157)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module Toolbox (156)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module ModuleUI (155)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module MovieSceneTools (154)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module OutputLog (153)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module GammaUI (152)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module Documentation (151)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module Niagara (150)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (149)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module AnalyticsET (148)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module PortalServices (147)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module PortalRpc (146)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module MessagingRpc (145)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module GameplayDebugger (144)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module AITestSuite (143)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module AIModule (142)
+[2017.07.29-22.39.20:404][589]LogModuleManager: Shutting down and abandoning module ProfilerService (141)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module TaskGraph (140)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module SlateRemote (139)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module SteamVRController (138)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module SteamVR (137)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (136)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (135)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module OculusLibrary (134)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module OculusInput (133)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (132)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module CableComponent (131)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (130)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (129)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module HTML5Networking (128)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (127)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module GeometryCache (126)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module AlembicLibrary (125)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module AlembicImporter (124)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module SuperSearch (123)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (122)
+[2017.07.29-22.39.20:600][589]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (121)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module PluginBrowser (120)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (119)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module EpicSurvey (118)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module DesktopPlatform (117)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (116)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module UObjectPlugin (115)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (114)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (113)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module SourceControl (112)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module GitSourceControl (111)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (110)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (109)
+[2017.07.29-22.39.20:601][589]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (108)
+[2017.07.29-22.39.20:602][589]LogModuleManager: Shutting down and abandoning module MeshPaint (107)
+[2017.07.29-22.39.20:602][589]LogModuleManager: Shutting down and abandoning module FbxAutomationBuilderModule (106)
+[2017.07.29-22.39.20:602][589]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (105)
+[2017.07.29-22.39.20:602][589]LogModuleManager: Shutting down and abandoning module HotReload (104)
+[2017.07.29-22.39.20:602][589]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Binaries/Win64' was aborted.
+[2017.07.29-22.39.20:603][589]LogModuleManager: Shutting down and abandoning module MainFrame (103)
+[2017.07.29-22.39.20:603][589]LogModuleManager: Shutting down and abandoning module LevelEditor (102)
+[2017.07.29-22.39.20:605][589]LogModuleManager: Shutting down and abandoning module ContentBrowser (101)
+[2017.07.29-22.39.20:607][589]LogModuleManager: Shutting down and abandoning module Paper2DEditor (100)
+[2017.07.29-22.39.20:608][589]LogModuleManager: Shutting down and abandoning module UdpMessaging (99)
+[2017.07.29-22.39.20:709][589]LogModuleManager: Shutting down and abandoning module TcpMessaging (98)
+[2017.07.29-22.39.20:809][589]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (97)
+[2017.07.29-22.39.20:809][589]LogModuleManager: Shutting down and abandoning module Paper2D (96)
+[2017.07.29-22.39.20:809][589]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (95)
+[2017.07.29-22.39.20:809][589]LogModuleManager: Shutting down and abandoning module WmfMedia (94)
+[2017.07.29-22.39.20:809][589]LogModuleManager: Shutting down and abandoning module MediaAssets (93)
+[2017.07.29-22.39.20:809][589]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (92)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (91)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module VREditor (90)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (89)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module PropertyEditor (88)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (87)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module FunctionalTesting (86)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (85)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module Sequencer (84)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (83)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module MessageLog (82)
+[2017.07.29-22.39.20:810][589]LogModuleManager: Shutting down and abandoning module AssetTools (81)
+[2017.07.29-22.39.20:811][589]LogModuleManager: Shutting down and abandoning module UMGEditor (80)
+[2017.07.29-22.39.20:811][589]LogModuleManager: Shutting down and abandoning module UMG (79)
+[2017.07.29-22.39.20:811][589]LogModuleManager: Shutting down and abandoning module SlateReflector (78)
+[2017.07.29-22.39.20:811][589]LogModuleManager: Shutting down and abandoning module Slate (77)
+[2017.07.29-22.39.20:811][589]LogModuleManager: Shutting down and abandoning module EditorStyle (76)
+[2017.07.29-22.39.20:819][589]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (75)
+[2017.07.29-22.39.20:819][589]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (74)
+[2017.07.29-22.39.20:819][589]LogModuleManager: Shutting down and abandoning module XAudio2 (73)
+[2017.07.29-22.39.20:819][589]LogModuleManager: Shutting down and abandoning module Networking (72)
+[2017.07.29-22.39.20:819][589]LogModuleManager: Shutting down and abandoning module Core (71)
+[2017.07.29-22.39.20:819][589]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (70)
+[2017.07.29-22.39.20:819][589]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.07.29-22.39.20:820][589]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' was aborted.
+[2017.07.29-22.39.20:820][589]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.07.29-22.39.20:822][589]LogModuleManager: Shutting down and abandoning module AssetRegistry (69)
+[2017.07.29-22.39.21:022][589]LogModuleManager: Shutting down and abandoning module KismetCompiler (68)
+[2017.07.29-22.39.21:022][589]LogModuleManager: Shutting down and abandoning module PhysXFormats (67)
+[2017.07.29-22.39.21:022][589]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2017.07.29-22.39.21:022][589]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2017.07.29-22.39.21:069][589]LogDerivedDataCache: Shutdown
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2017.07.29-22.39.21:069][589]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (30)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module InputCore (28)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Settings (27)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module OculusRift (26)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module GearVR (25)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module Voice (21)
+[2017.07.29-22.39.21:070][589]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
+[2017.07.29-22.39.21:070][589]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.07.29-22.39.21:071][589]LogOnline:Display: Unloading online subsystem: STEAM
+[2017.07.29-22.39.21:071][589]LogOnline:Display: Unloading online subsystem: NULL
+[2017.07.29-22.39.21:071][589]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.07.29-22.39.21:071][589]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.07.29-22.39.21:071][589]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B22BDBDCF-4034-5AB1-13EA-68A0DCA3AACF%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.13.2-3172292%2B%2B%2BUE4%2BRelease-4.13&UserID=5e424bd34fcec041fca8e183614cc47a%7Cc8589a177a054e7787ebf917e28d2cbe%7C16c1c745-8550-4113-947a-940016429e72&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.07.29-22.39.21:075][589]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.07.29-22.39.21:075][589]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.07.29-22.39.21:076][589]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.07.29-22.39.21:076][589]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.07.29-22.39.21:076][589]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.07.29-22.39.21:086][589]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.07.29-22.39.21:090][589]LogExit: Exiting.
+[2017.07.29-22.39.21:093][589]Log file closed, 07/29/17 18:39:21
