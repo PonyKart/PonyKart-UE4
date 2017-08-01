@@ -1,9 +1,9 @@
-﻿Log file open, 07/30/17 23:34:55
+﻿Log file open, 07/31/17 23:07:42
 LogInit:Display: Running engine for game: PonyKart
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-26039538) SRandInit(-26039538).
+LogInit:Display: RandInit(286149983) SRandInit(286149983).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.066663
+LogStats: Stats thread started at 0.065568
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -148,328 +148,348 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.13/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.07.31-03.34.55:529][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.31-03.34.55:529][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.07.31-03.34.55:537][  0]LogInit: Computer: GARY-PC
-[2017.07.31-03.34.55:537][  0]LogInit: User: Gary
-[2017.07.31-03.34.55:537][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.07.31-03.34.55:537][  0]LogInit: High frequency timer resolution =3.905121 MHz
-[2017.07.31-03.34.55:537][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.07.31-03.34.55:537][  0]LogMemory: Platform Memory Stats for Windows
-[2017.07.31-03.34.55:537][  0]LogMemory: Process Physical Memory: 259.24 MB used, 259.24 MB peak
-[2017.07.31-03.34.55:537][  0]LogMemory: Process Virtual Memory: 260.55 MB used, 260.55 MB peak
-[2017.07.31-03.34.55:537][  0]LogMemory: Physical Memory: 5936.29 MB used, 16322.38 MB total
-[2017.07.31-03.34.55:537][  0]LogMemory: Virtual Memory: 627.90 MB used, 134217728.00 MB total
-[2017.07.31-03.34.55:561][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.07.31-03.34.55:844][  0]LogD3D11RHI: D3D11 adapters:
-[2017.07.31-03.34.55:870][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2017.07.31-03.34.55:870][  0]LogD3D11RHI:       4058/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.07.31-03.34.55:871][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.07.31-03.34.55:871][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.07.31-03.34.55:871][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.07.31-03.34.55:874][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.07.31-03.34.55:874][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2017.07.31-03.34.55:874][  0]LogWindows: EnumDisplayDevices:
-[2017.07.31-03.34.55:874][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2017.07.31-03.34.55:875][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.07.31-03.34.55:875][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.07.31-03.34.55:875][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.07.31-03.34.55:875][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.07.31-03.34.55:875][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2017.07.31-03.34.55:875][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
-[2017.07.31-03.34.55:875][  0]LogD3D11RHI:      Driver Date: 12-29-2016
-[2017.07.31-03.34.55:875][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.07.31-03.34.55:888][  0]LogD3D11RHI: Async texture creation enabled
-[2017.07.31-03.34.55:896][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.07.31-03.34.55:897][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/7052/).
-[2017.07.31-03.34.55:897][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gary/AppData/Local/Temp/UnrealShaderWorkingDir/984BC275403B5BC2F70035B969AA3E3F/'.
-[2017.07.31-03.34.55:897][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.07.31-03.34.56:943][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.07.31-03.34.56:949][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.07.31-03.34.56:955][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.07.31-03.34.56:961][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.07.31-03.34.56:961][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.07.31-03.34.57:017][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.07.31-03.34.57:055][  0]LogDerivedDataCache: Loaded boot cache 0.04s 61MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2017.07.31-03.34.57:055][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
-[2017.07.31-03.34.57:055][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.07.31-03.34.57:055][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.07.31-03.34.57:056][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.07.31-03.34.57:056][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.07.31-03.34.57:068][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.07.31-03.34.57:080][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gary/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.07.31-03.34.57:211][  0]LogAssetRegistry: FAssetRegistry took 0.0000 seconds to start up
-[2017.07.31-03.34.57:226][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.014898 seconds
-[2017.07.31-03.34.57:238][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.31-03.34.57:239][  0]LogContentStreaming: Texture pool size is 1000.00 MB
-[2017.07.31-03.34.57:306][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2017.07.31-03.34.57:306][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.07.31-03.34.57:306][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2017.07.31-03.34.57:350][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.07.31-03.34.57:517][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2940303804
-[2017.07.31-03.34.57:643][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.31-03.34.57:643][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.31-03.34.57:690][  0]LogMoviePlayer: Initializing movie player
-[2017.07.31-03.34.57:749][  0]LogWindowsMoviePlayer: Unable to load movie: F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Movies/Default_Startup.mp4
-[2017.07.31-03.34.57:855][  0]SourceControl: Info Source control is disabled
-[2017.07.31-03.34.57:855][  0]SourceControl: Info Source control is disabled
-[2017.07.31-03.34.57:863][  0]SourceControl: Info Source control is disabled
-[2017.07.31-03.34.57:952][  0]LogUObjectArray: 32663 objects as part of root set at end of initial load.
-[2017.07.31-03.34.57:952][  0]LogUObjectAllocator: 7458632 out of 0 bytes used by permanent object pool.
-[2017.07.31-03.34.57:952][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.07.31-03.34.57:996][  0]LogEngine: Initializing Engine...
-[2017.07.31-03.34.57:997][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.07.31-03.34.58:107][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.31-03.34.58:113][  0]LogInit: FAudioDevice initialized.
-[2017.07.31-03.34.58:139][  0]LogDerivedDataCache: Saved boot cache 0.03s 61MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2017.07.31-03.34.58:145][  0]LogInit: Texture streaming: Enabled
-[2017.07.31-03.34.58:215][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/UI/MainMenu/OptionsMenu.OptionsMenu_C:PlayerInfo'. Unknown structure.
-[2017.07.31-03.34.58:215][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/Blueprints/AllLevels/PlayerSaveGame.PlayerSaveGame_C:S_PlayerInfo'. Unknown structure.
-[2017.07.31-03.34.58:216][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/PlayerSaveGame.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.07.31-03.34.58:307][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.07.31-03.34.58:334][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.07.31-03.34.58:346][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.07.31-03.34.58:577][  0]LogInit:Display: Game Engine Initialized.
-[2017.07.31-03.34.58:619][  0]LogInit:Display: Starting Game.
-[2017.07.31-03.34.58:619][  0]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
-[2017.07.31-03.34.58:619][  0]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
-[2017.07.31-03.34.58:641][  0]LogMemory: Platform Memory Stats for Windows
-[2017.07.31-03.34.58:641][  0]LogMemory: Process Physical Memory: 869.68 MB used, 943.53 MB peak
-[2017.07.31-03.34.58:641][  0]LogMemory: Process Virtual Memory: 1028.41 MB used, 1073.06 MB peak
-[2017.07.31-03.34.58:641][  0]LogMemory: Physical Memory: 6560.55 MB used, 16322.38 MB total
-[2017.07.31-03.34.58:641][  0]LogMemory: Virtual Memory: 1631.44 MB used, 134217728.00 MB total
-[2017.07.31-03.34.58:641][  0]LogMemory: 
-[2017.07.31-03.34.58:641][  0]Allocator Stats for TBB: (not implemented)
-[2017.07.31-03.34.58:657][  0]LogAIModule: Creating AISystem for world MainMenu
-[2017.07.31-03.34.58:657][  0]LogWorld: Game class is 'GameMode'
-[2017.07.31-03.34.58:660][  0]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.30-23.34.58
-[2017.07.31-03.34.58:661][  0]LogWorld: Bringing up level for play took: 0.000437
-[2017.07.31-03.34.58:661][  0]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2017.07.31-03.34.58:661][  0]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.07.31-03.34.58:661][  0]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.07.31-03.34.58:661][  0]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.07.31-03.34.58:663][  0]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.07.31-03.34.58:663][  0]LogLoad: Took 0.044430 seconds to LoadMap(/Game/Maps/MainMenu)
-[2017.07.31-03.34.58:893][  0]LogLoad: (Engine Initialization) Total time: 4.12 seconds
-[2017.07.31-03.34.58:893][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.13 seconds
-[2017.07.31-03.34.58:893][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.07.31-03.34.58:893][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.07.31-03.34.58:895][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.07.31-03.34.58:896][  0]LogOcInput: OculusInput pre-init called
-[2017.07.31-03.34.58:997][  0]LogRenderer: Reallocating scene render targets to support 128x128 (Frame:1).
-[2017.07.31-03.34.59:048][  1]LogRenderer: Reallocating scene render targets to support 1600x900 (Frame:2).
-[2017.07.31-03.35.14:233][ 54]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2162631162
-[2017.07.31-03.35.14:235][ 54]LogInit: WinSock: I am gary-pc (192.168.1.46:0)
-[2017.07.31-03.35.14:450][ 54]LogPackageName: SearchForPackageOnDisk took   0.096s to resolve Lobby.umap.
-[2017.07.31-03.35.14:451][ 54]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
-[2017.07.31-03.35.14:451][ 54]LogGameState: Match State Changed from InProgress to LeavingMap
-[2017.07.31-03.35.14:516][ 54]LogPackageName: SearchForPackageOnDisk took   0.065s to resolve Lobby.umap.
-[2017.07.31-03.35.14:516][ 54]LogNet: Browse: /Game/Maps/Lobby?Listen
-[2017.07.31-03.35.14:516][ 54]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
-[2017.07.31-03.35.14:528][ 54]LogMemory: Platform Memory Stats for Windows
-[2017.07.31-03.35.14:528][ 54]LogMemory: Process Physical Memory: 879.69 MB used, 943.53 MB peak
-[2017.07.31-03.35.14:528][ 54]LogMemory: Process Virtual Memory: 1128.44 MB used, 1169.95 MB peak
-[2017.07.31-03.35.14:528][ 54]LogMemory: Physical Memory: 6488.78 MB used, 16322.38 MB total
-[2017.07.31-03.35.14:528][ 54]LogMemory: Virtual Memory: 1779.22 MB used, 134217728.00 MB total
-[2017.07.31-03.35.14:528][ 54]LogMemory: 
-[2017.07.31-03.35.14:528][ 54]Allocator Stats for TBB: (not implemented)
-[2017.07.31-03.35.15:293][ 54]LogAIModule: Creating AISystem for world Lobby
-[2017.07.31-03.35.15:293][ 54]LogWorld: Game class is 'LobbyGM_C'
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamUtils() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamUser() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamFriends() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamRemoteStorage() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamUserStats() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamMatchmakingServers() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamApps() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamNetworking() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steamworks: SteamMatchmaking() failed!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2017.07.31-03.35.15:294][ 54]LogOnline:Warning: STEAM: Steam API failed to initialize!
-[2017.07.31-03.35.15:294][ 54]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2017.07.31-03.35.15:295][ 54]LogInit: WinSock: Socket queue 131072 / 131072
-[2017.07.31-03.35.15:295][ 54]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
-[2017.07.31-03.35.15:295][ 54]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
-[2017.07.31-03.35.15:298][ 54]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.07.30-23.35.15
-[2017.07.31-03.35.15:298][ 54]LogWorld: Bringing up level for play took: 0.000956
-[2017.07.31-03.35.15:305][ 54]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.07.31-03.35.15:305][ 54]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.07.31-03.35.15:305][ 54]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.07.31-03.35.15:305][ 54]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
-[2017.07.31-03.35.15:316][ 54]LogVoice:Warning: Failed to initialize voice interface
-[2017.07.31-03.35.15:316][ 54]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.07.31-03.35.15:316][ 54]LogLoad: Took 0.800321 seconds to LoadMap(/Game/Maps/Lobby)
-[2017.07.31-03.35.17:264][481]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
-[2017.07.31-03.35.37:251][712]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
-[2017.07.31-03.35.37:251][712]LogGameState: Match State Changed from InProgress to LeavingMap
-[2017.07.31-03.35.37:252][712]LogGameMode: ProcessServerTravel: /Game/Maps/KartLevel_Test2
-[2017.07.31-03.35.37:253][712]LogWorld: SeamlessTravel to: /Game/Maps/KartLevel_Test2
-[2017.07.31-03.35.37:287][713]LogAIModule: Creating AISystem for world TravelMap
-[2017.07.31-03.35.37:290][713]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
-[2017.07.31-03.35.37:291][713]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.07.30-23.35.37
-[2017.07.31-03.35.37:291][713]LogWorld: Bringing up level for play took: 0.000412
-[2017.07.31-03.35.37:291][713]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
-[2017.07.31-03.35.37:291][713]LogNet:Verbose: NotifyLoadedWorld Begin
-[2017.07.31-03.35.37:291][713]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
-[2017.07.31-03.35.37:291][713]LogNet:Verbose: NotifyLoadedWorld End
-[2017.07.31-03.35.37:291][713]LogWorld: StartLoadingDestination to: /Game/Maps/KartLevel_Test2
-[2017.07.31-03.35.37:903][723]LogAIModule: Creating AISystem for world KartLevel_Test2
-[2017.07.31-03.35.37:903][723]LogWorld: Game class is 'GamePlayGM_C'
-[2017.07.31-03.35.37:906][723]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
-[2017.07.31-03.35.37:907][723]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
-[2017.07.31-03.35.37:911][723]LogAnimation:Warning: ApplejackRig : Missing joint on skeleton.  Make sure to assign to the skeleeton.
-[2017.07.31-03.35.37:912][723]LogWorld: Bringing World /Game/Maps/KartLevel_Test2.KartLevel_Test2 up for play (max tick rate 0) at 2017.07.30-23.35.37
-[2017.07.31-03.35.37:912][723]LogWorld: Bringing up level for play took: 0.006106
-[2017.07.31-03.35.37:912][723]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
-[2017.07.31-03.35.37:912][723]LogNet:Verbose: NotifyLoadedWorld Begin
-[2017.07.31-03.35.37:912][723]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
-[2017.07.31-03.35.37:912][723]LogNet:Verbose: NotifyLoadedWorld End
-[2017.07.31-03.35.37:912][723]LogWorld: ----SeamlessTravel finished in 0.66 seconds ------
-[2017.07.31-03.35.37:912][723]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0 
-[2017.07.31-03.35.37:913][723]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0
-[2017.07.31-03.35.37:913][723]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.07.31-03.35.37:913][723]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.07.31-03.35.37:913][723]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.07.31-03.35.37:913][723]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
-[2017.07.31-03.35.37:915][723]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.07.31-03.35.37:917][723]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
-[2017.07.31-03.36.40:633][475]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.07.31-03.36.40:635][475]LogOnline:Warning: NULL: No game present to leave for session (Game)
-[2017.07.31-03.36.40:635][475]LogEngine: All Windows Closed
-[2017.07.31-03.36.40:635][475]LogWindows: FPlatformMisc::RequestExit(0)
-[2017.07.31-03.36.40:635][476]LogMoviePlayer: Shutting down movie player
-[2017.07.31-03.36.41:036][476]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
-[2017.07.31-03.36.41:036][476]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
-[2017.07.31-03.36.41:036][476]LogExit: GameNetDriver IpNetDriver_0 shut down
-[2017.07.31-03.36.41:091][476]LogExit: Preparing to exit.
-[2017.07.31-03.36.41:179][476]LogExit: Game engine shut down
-[2017.07.31-03.36.41:307][476]LogObj: Freed 0b from 0 cluster array pools.
-[2017.07.31-03.36.41:307][476]LogExit: Object subsystem successfully closed.
-[2017.07.31-03.36.41:321][476]LogD3D11RHI: Shutdown
-[2017.07.31-03.36.41:321][476]LogD3D11RHI: CleanupD3DDevice
-[2017.07.31-03.36.41:365][476]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (121)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module SequenceRecorder (120)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module AutomationController (119)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module AutomationWorker (118)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module GameplayDebugger (117)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module AITestSuite (116)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module AIModule (115)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (114)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (113)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module Media (112)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (111)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module CharacterAI (110)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module SessionServices (109)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (108)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module Niagara (107)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (106)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module PortalServices (105)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module PortalRpc (104)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module MessagingRpc (103)
-[2017.07.31-03.36.41:370][476]LogModuleManager: Shutting down and abandoning module ProfilerService (102)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module TaskGraph (101)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module SlateRemote (100)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module SteamVRController (99)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module SteamVR (98)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (97)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module OculusLibrary (96)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module OculusInput (95)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (94)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module CableComponent (93)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (92)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module HTML5Networking (91)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module DesktopPlatform (90)
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
-[2017.07.31-03.36.41:603][476]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Binaries/Win64' was aborted.
-[2017.07.31-03.36.41:603][476]LogModuleManager: Shutting down and abandoning module HotReload (88)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (87)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module UObjectPlugin (86)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (85)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module SourceControl (84)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (83)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module UdpMessaging (82)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module TcpMessaging (81)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (80)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module Paper2D (79)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (78)
-[2017.07.31-03.36.41:604][476]LogModuleManager: Shutting down and abandoning module WmfMedia (77)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module MediaAssets (76)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (75)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (74)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module VREditor (73)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (72)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module PropertyEditor (71)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (70)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module FunctionalTesting (69)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (68)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module Sequencer (67)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (66)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module MessageLog (65)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module AssetTools (64)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module UMGEditor (63)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module UMG (62)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module SlateReflector (61)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module Slate (60)
-[2017.07.31-03.36.41:605][476]LogModuleManager: Shutting down and abandoning module EditorStyle (59)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module Messaging (58)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (57)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (56)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module XAudio2 (55)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module Networking (54)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module Core (53)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module KismetCompiler (52)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module PhysXFormats (51)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module MeshUtilities (50)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module AssetRegistry (49)
-[2017.07.31-03.36.41:609][476]LogModuleManager: Shutting down and abandoning module DerivedDataCache (48)
-[2017.07.31-03.36.41:650][476]LogDerivedDataCache: Shutdown
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (47)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (46)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (45)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (44)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (43)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (42)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (41)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (40)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module ImageWrapper (39)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (38)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (37)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (36)
-[2017.07.31-03.36.41:650][476]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (35)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (34)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (33)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (32)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (31)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (30)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module InputCore (28)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module Settings (27)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module OculusRift (26)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module GearVR (25)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module Voice (21)
-[2017.07.31-03.36.41:651][476]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
-[2017.07.31-03.36.41:651][476]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
-[2017.07.31-03.36.41:651][476]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
-[2017.07.31-03.36.41:652][476]LogOnline:Display: Unloading online subsystem: STEAM
-[2017.07.31-03.36.41:652][476]LogOnline:Display: Unloading online subsystem: NULL
-[2017.07.31-03.36.41:652][476]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2017.07.31-03.36.41:682][476]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2017.07.31-03.36.41:682][476]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.07.31-03.36.41:682][476]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.07.31-03.36.41:682][476]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.07.31-03.36.41:682][476]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.07.31-03.36.41:683][476]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.07.31-03.36.41:684][476]LogExit: Exiting.
-[2017.07.31-03.36.41:687][476]Log file closed, 07/30/17 23:36:41
+[2017.08.01-03.07.42:323][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.01-03.07.42:323][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.01-03.07.42:330][  0]LogInit: Computer: GARY-PC
+[2017.08.01-03.07.42:330][  0]LogInit: User: Gary
+[2017.08.01-03.07.42:330][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.08.01-03.07.42:330][  0]LogInit: High frequency timer resolution =3.905121 MHz
+[2017.08.01-03.07.42:330][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.01-03.07.42:330][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.01-03.07.42:330][  0]LogMemory: Process Physical Memory: 257.59 MB used, 257.59 MB peak
+[2017.08.01-03.07.42:330][  0]LogMemory: Process Virtual Memory: 260.49 MB used, 260.49 MB peak
+[2017.08.01-03.07.42:330][  0]LogMemory: Physical Memory: 7082.03 MB used, 16322.38 MB total
+[2017.08.01-03.07.42:330][  0]LogMemory: Virtual Memory: 627.90 MB used, 134217728.00 MB total
+[2017.08.01-03.07.42:358][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.08.01-03.07.42:663][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.01-03.07.42:688][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.08.01-03.07.42:688][  0]LogD3D11RHI:       4058/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.08.01-03.07.42:689][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.01-03.07.42:689][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.01-03.07.42:689][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.01-03.07.42:692][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.01-03.07.42:692][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.01-03.07.42:692][  0]LogWindows: EnumDisplayDevices:
+[2017.08.01-03.07.42:692][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.08.01-03.07.42:692][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.01-03.07.42:692][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.01-03.07.42:693][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.01-03.07.42:693][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.01-03.07.42:693][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.08.01-03.07.42:693][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.08.01-03.07.42:693][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.08.01-03.07.42:693][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.01-03.07.42:705][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.01-03.07.42:715][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.01-03.07.42:715][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/1356/).
+[2017.08.01-03.07.42:715][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gary/AppData/Local/Temp/UnrealShaderWorkingDir/3290FC02490FF528172C90B3508BF95D/'.
+[2017.08.01-03.07.42:716][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.01-03.07.43:767][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.01-03.07.43:774][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.01-03.07.43:780][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.01-03.07.43:786][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.01-03.07.43:786][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.01-03.07.43:842][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.01-03.07.43:883][  0]LogDerivedDataCache: Loaded boot cache 0.04s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2017.08.01-03.07.43:883][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
+[2017.08.01-03.07.43:883][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.01-03.07.43:883][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.01-03.07.43:883][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.01-03.07.43:883][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.01-03.07.43:896][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.01-03.07.43:908][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gary/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.01-03.07.44:045][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2017.08.01-03.07.44:060][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.014513 seconds
+[2017.08.01-03.07.44:074][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.01-03.07.44:074][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2017.08.01-03.07.44:142][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.08.01-03.07.44:142][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.01-03.07.44:142][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.08.01-03.07.44:185][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.01-03.07.44:351][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2940303804
+[2017.08.01-03.07.44:481][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.01-03.07.44:481][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.01-03.07.44:525][  0]LogMoviePlayer: Initializing movie player
+[2017.08.01-03.07.44:656][  0]LogWindowsMoviePlayer: Unable to load movie: F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Movies/Default_Startup.mp4
+[2017.08.01-03.07.44:755][  0]SourceControl: Info Source control is disabled
+[2017.08.01-03.07.44:755][  0]SourceControl: Info Source control is disabled
+[2017.08.01-03.07.44:762][  0]SourceControl: Info Source control is disabled
+[2017.08.01-03.07.44:854][  0]LogUObjectArray: 32663 objects as part of root set at end of initial load.
+[2017.08.01-03.07.44:854][  0]LogUObjectAllocator: 7458624 out of 0 bytes used by permanent object pool.
+[2017.08.01-03.07.44:854][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.01-03.07.44:922][  0]LogEngine: Initializing Engine...
+[2017.08.01-03.07.44:923][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.01-03.07.45:025][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.01-03.07.45:030][  0]LogInit: FAudioDevice initialized.
+[2017.08.01-03.07.45:058][  0]LogDerivedDataCache: Saved boot cache 0.03s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2017.08.01-03.07.45:063][  0]LogInit: Texture streaming: Enabled
+[2017.08.01-03.07.45:138][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/UI/MainMenu/OptionsMenu.OptionsMenu_C:PlayerInfo'. Unknown structure.
+[2017.08.01-03.07.45:138][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/Blueprints/AllLevels/PlayerSaveGame.PlayerSaveGame_C:S_PlayerInfo'. Unknown structure.
+[2017.08.01-03.07.45:139][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/PlayerSaveGame.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.01-03.07.45:228][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.01-03.07.45:254][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.01-03.07.45:266][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.01-03.07.45:530][  0]LogInit:Display: Game Engine Initialized.
+[2017.08.01-03.07.45:576][  0]LogInit:Display: Starting Game.
+[2017.08.01-03.07.45:576][  0]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.08.01-03.07.45:577][  0]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.08.01-03.07.45:619][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.01-03.07.45:619][  0]LogMemory: Process Physical Memory: 884.74 MB used, 949.19 MB peak
+[2017.08.01-03.07.45:619][  0]LogMemory: Process Virtual Memory: 1046.16 MB used, 1046.16 MB peak
+[2017.08.01-03.07.45:619][  0]LogMemory: Physical Memory: 7700.71 MB used, 16322.38 MB total
+[2017.08.01-03.07.45:619][  0]LogMemory: Virtual Memory: 1651.13 MB used, 134217728.00 MB total
+[2017.08.01-03.07.45:619][  0]LogMemory: 
+[2017.08.01-03.07.45:619][  0]Allocator Stats for TBB: (not implemented)
+[2017.08.01-03.07.45:634][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.08.01-03.07.45:634][  0]LogWorld: Game class is 'GameMode'
+[2017.08.01-03.07.45:637][  0]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.07.31-23.07.45
+[2017.08.01-03.07.45:637][  0]LogWorld: Bringing up level for play took: 0.000333
+[2017.08.01-03.07.45:637][  0]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.08.01-03.07.45:637][  0]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.01-03.07.45:637][  0]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.01-03.07.45:637][  0]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.01-03.07.45:639][  0]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.01-03.07.45:639][  0]LogLoad: Took 0.062795 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.08.01-03.07.45:875][  0]LogLoad: (Engine Initialization) Total time: 4.29 seconds
+[2017.08.01-03.07.45:875][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.17 seconds
+[2017.08.01-03.07.45:875][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.01-03.07.45:875][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.01-03.07.45:876][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.01-03.07.45:877][  0]LogOcInput: OculusInput pre-init called
+[2017.08.01-03.07.45:943][  0]LogRenderer: Reallocating scene render targets to support 128x128 (Frame:1).
+[2017.08.01-03.07.46:020][  1]LogRenderer: Reallocating scene render targets to support 1600x900 (Frame:2).
+[2017.08.01-03.07.51:811][673]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2162631162
+[2017.08.01-03.07.51:813][673]LogInit: WinSock: I am gary-pc (192.168.1.46:0)
+[2017.08.01-03.07.52:001][673]LogPackageName: SearchForPackageOnDisk took   0.068s to resolve Lobby.umap.
+[2017.08.01-03.07.52:002][673]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.01-03.07.52:002][673]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.01-03.07.52:067][673]LogPackageName: SearchForPackageOnDisk took   0.065s to resolve Lobby.umap.
+[2017.08.01-03.07.52:067][673]LogNet: Browse: /Game/Maps/Lobby?Listen
+[2017.08.01-03.07.52:067][673]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
+[2017.08.01-03.07.52:079][673]LogMemory: Platform Memory Stats for Windows
+[2017.08.01-03.07.52:079][673]LogMemory: Process Physical Memory: 922.12 MB used, 949.19 MB peak
+[2017.08.01-03.07.52:079][673]LogMemory: Process Virtual Memory: 1154.11 MB used, 1164.66 MB peak
+[2017.08.01-03.07.52:079][673]LogMemory: Physical Memory: 7684.14 MB used, 16322.38 MB total
+[2017.08.01-03.07.52:079][673]LogMemory: Virtual Memory: 1796.53 MB used, 134217728.00 MB total
+[2017.08.01-03.07.52:079][673]LogMemory: 
+[2017.08.01-03.07.52:079][673]Allocator Stats for TBB: (not implemented)
+[2017.08.01-03.07.52:806][673]LogAIModule: Creating AISystem for world Lobby
+[2017.08.01-03.07.52:806][673]LogWorld: Game class is 'LobbyGM_C'
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamUtils() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamUser() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamFriends() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamRemoteStorage() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamUserStats() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamMatchmakingServers() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamApps() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamNetworking() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steamworks: SteamMatchmaking() failed!
+[2017.08.01-03.07.52:806][673]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2017.08.01-03.07.52:806][673]LogOnline:Warning: STEAM: Steam API failed to initialize!
+[2017.08.01-03.07.52:806][673]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2017.08.01-03.07.52:807][673]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.08.01-03.07.52:807][673]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.08.01-03.07.52:807][673]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2017.08.01-03.07.52:810][673]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.07.31-23.07.52
+[2017.08.01-03.07.52:810][673]LogWorld: Bringing up level for play took: 0.000971
+[2017.08.01-03.07.52:817][673]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.01-03.07.52:817][673]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.01-03.07.52:817][673]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.01-03.07.52:817][673]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.01-03.07.52:828][673]LogVoice:Warning: Failed to initialize voice interface
+[2017.08.01-03.07.52:829][673]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.01-03.07.52:831][673]LogLoad: Took 0.764527 seconds to LoadMap(/Game/Maps/Lobby)
+[2017.08.01-03.07.54:491][ 38]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
+[2017.08.01-03.08.29:507][680]LogHandshake: SendConnectChallenge. Timestamp: 37.697857, Cookie: 219007070038076171181209021059192184052055153048182080142087
+[2017.08.01-03.08.29:515][681]LogNet: Server accepting post-challenge connection from: 192.168.1.46:64650
+[2017.08.01-03.08.29:515][681]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.08.01-03.08.29:515][681]LogNet: NotifyAcceptedConnection: Name: Lobby, TimeStamp: 07/31/17 23:08:29, [UNetConnection] RemoteAddr: 192.168.1.46:64650, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2017.08.01-03.08.29:515][681]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 192.168.1.46:64650, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2017.08.01-03.08.29:715][705]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/Lobby.Lobby: Accepted
+[2017.08.01-03.08.29:715][705]LogNet: Remote platform little endian=1
+[2017.08.01-03.08.29:715][705]LogNet: This platform little endian=1
+[2017.08.01-03.08.29:721][706]LogNet: Login request: /Game/Maps/MainMenu?Name=gary-pc-B81456774175443C28ED1E88DA52E518 userId: gary-pc-B81456774175443C28ED1E88DA52E518
+[2017.08.01-03.08.29:729][707]LogNet: Client netspeed is 10000
+[2017.08.01-03.08.30:678][964]LogNet: Join request: /Game/Maps/MainMenu?Name=gary-pc-B81456774175443C28ED1E88DA52E518?SplitscreenCount=1
+[2017.08.01-03.08.30:682][964]LogNet: Join succeeded: gary-pc-B81456774175
+[2017.08.01-03.09.00:035][ 97]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.01-03.09.00:035][ 97]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.01-03.09.00:095][ 97]LogGameMode: ProcessServerTravel: /Game/Maps/KartLevel_Test
+[2017.08.01-03.09.00:095][ 97]LogWorld: SeamlessTravel to: /Game/Maps/KartLevel_Test
+[2017.08.01-03.09.00:112][ 98]LogAIModule: Creating AISystem for world TravelMap
+[2017.08.01-03.09.00:115][ 98]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.01-03.09.00:116][ 98]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.07.31-23.09.00
+[2017.08.01-03.09.00:116][ 98]LogWorld: Bringing up level for play took: 0.000516
+[2017.08.01-03.09.00:116][ 98]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.08.01-03.09.00:116][ 98]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.01-03.09.00:116][ 98]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.01-03.09.00:116][ 98]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.01-03.09.00:116][ 98]LogWorld: StartLoadingDestination to: /Game/Maps/KartLevel_Test
+[2017.08.01-03.09.00:461][110]LogAIModule: Creating AISystem for world KartLevel_Test
+[2017.08.01-03.09.00:462][110]LogWorld: Game class is 'GamePlayGM_C'
+[2017.08.01-03.09.00:465][110]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.01-03.09.00:466][110]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2017.08.01-03.09.00:471][110]LogWorld: Bringing World /Game/Maps/KartLevel_Test.KartLevel_Test up for play (max tick rate 0) at 2017.07.31-23.09.00
+[2017.08.01-03.09.00:474][110]LogWorld: Bringing up level for play took: 0.009315
+[2017.08.01-03.09.00:474][110]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.08.01-03.09.00:474][110]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.01-03.09.00:474][110]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.01-03.09.00:474][110]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.01-03.09.00:474][110]LogWorld: ----SeamlessTravel finished in 0.38 seconds ------
+[2017.08.01-03.09.00:474][110]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0 
+[2017.08.01-03.09.00:475][110]LogBlueprintUserMessages: [GamePlayGM_C_0] index: 0 Player ControllerIdL 0
+[2017.08.01-03.09.00:475][110]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0
+[2017.08.01-03.09.00:475][110]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.01-03.09.00:475][110]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.01-03.09.00:475][110]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.01-03.09.00:475][110]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.01-03.09.00:479][110]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.01-03.09.00:481][110]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2017.08.01-03.09.00:516][112]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_1 
+[2017.08.01-03.09.00:516][112]LogBlueprintUserMessages: [GamePlayGM_C_0] index: 1 Player ControllerIdL -1
+[2017.08.01-03.09.00:518][112]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_1
+[2017.08.01-03.09.00:553][115]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.08.01-03.09.00:553][115]LogScriptCore:Warning: 
+[2017.08.01-03.09.08:411][ 70]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.01-03.09.08:413][ 70]LogOnline:Warning: NULL: No game present to leave for session (Game)
+[2017.08.01-03.09.08:413][ 70]LogEngine: All Windows Closed
+[2017.08.01-03.09.08:413][ 70]LogWindows: FPlatformMisc::RequestExit(0)
+[2017.08.01-03.09.08:414][ 71]LogMoviePlayer: Shutting down movie player
+[2017.08.01-03.09.08:960][ 71]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
+[2017.08.01-03.09.08:960][ 71]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
+[2017.08.01-03.09.08:960][ 71]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 192.168.1.46:64650, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: GamePlayPC_C_1, Owner: GamePlayPC_C_1
+[2017.08.01-03.09.08:960][ 71]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.46:64650, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: GamePlayPC_C_1, Owner: GamePlayPC_C_1, Channels: 10, Time: 2017.08.01-03.09.08
+[2017.08.01-03.09.08:960][ 71]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.46:64650, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: GamePlayPC_C_1, Owner: GamePlayPC_C_1
+[2017.08.01-03.09.08:960][ 71]LogExit: GameNetDriver IpNetDriver_0 shut down
+[2017.08.01-03.09.08:978][ 71]LogExit: Preparing to exit.
+[2017.08.01-03.09.09:063][ 71]LogExit: Game engine shut down
+[2017.08.01-03.09.09:179][ 71]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.01-03.09.09:179][ 71]LogExit: Object subsystem successfully closed.
+[2017.08.01-03.09.09:196][ 71]LogD3D11RHI: Shutdown
+[2017.08.01-03.09.09:196][ 71]LogD3D11RHI: CleanupD3DDevice
+[2017.08.01-03.09.09:253][ 71]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (121)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module SequenceRecorder (120)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module AutomationController (119)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module AutomationWorker (118)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module GameplayDebugger (117)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module AITestSuite (116)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module AIModule (115)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (114)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (113)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module Media (112)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (111)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module CharacterAI (110)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module SessionServices (109)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (108)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module Niagara (107)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (106)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module PortalServices (105)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module PortalRpc (104)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module MessagingRpc (103)
+[2017.08.01-03.09.09:259][ 71]LogModuleManager: Shutting down and abandoning module ProfilerService (102)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module TaskGraph (101)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module SlateRemote (100)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module SteamVRController (99)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module SteamVR (98)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (97)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module OculusLibrary (96)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module OculusInput (95)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (94)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module CableComponent (93)
+[2017.08.01-03.09.09:499][ 71]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (92)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module HTML5Networking (91)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module DesktopPlatform (90)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
+[2017.08.01-03.09.09:500][ 71]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Binaries/Win64' was aborted.
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module HotReload (88)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (87)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module UObjectPlugin (86)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (85)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module SourceControl (84)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (83)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module UdpMessaging (82)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module TcpMessaging (81)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (80)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module Paper2D (79)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (78)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module WmfMedia (77)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module MediaAssets (76)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (75)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (74)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module VREditor (73)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (72)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module PropertyEditor (71)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (70)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module FunctionalTesting (69)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (68)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module Sequencer (67)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (66)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module MessageLog (65)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module AssetTools (64)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module UMGEditor (63)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module UMG (62)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module SlateReflector (61)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module Slate (60)
+[2017.08.01-03.09.09:500][ 71]LogModuleManager: Shutting down and abandoning module EditorStyle (59)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module Messaging (58)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (57)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (56)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module XAudio2 (55)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module Networking (54)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module Core (53)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module KismetCompiler (52)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module PhysXFormats (51)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module MeshUtilities (50)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module AssetRegistry (49)
+[2017.08.01-03.09.09:502][ 71]LogModuleManager: Shutting down and abandoning module DerivedDataCache (48)
+[2017.08.01-03.09.09:954][ 71]LogDerivedDataCache: Shutdown
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (47)
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (46)
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (45)
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (44)
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (43)
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (42)
+[2017.08.01-03.09.09:954][ 71]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (41)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (40)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module ImageWrapper (39)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (38)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (37)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (36)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (35)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (34)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (33)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (32)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (31)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (30)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module InputCore (28)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module Settings (27)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module OculusRift (26)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module GearVR (25)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module Voice (21)
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
+[2017.08.01-03.09.09:955][ 71]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.08.01-03.09.09:955][ 71]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.08.01-03.09.09:955][ 71]LogOnline:Display: Unloading online subsystem: STEAM
+[2017.08.01-03.09.09:955][ 71]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.01-03.09.09:955][ 71]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.08.01-03.09.09:964][ 71]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.08.01-03.09.09:965][ 71]LogExit: Exiting.
+[2017.08.01-03.09.09:966][ 71]Log file closed, 07/31/17 23:09:09
