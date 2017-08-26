@@ -1,9 +1,9 @@
-﻿Log file open, 08/26/17 12:59:05
+﻿Log file open, 08/26/17 15:57:04
 LogInit:Display: Running engine for game: PonyKart
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(624800102) SRandInit(624800102).
+LogInit:Display: RandInit(-620287419) SRandInit(-620287419).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.065774
+LogStats: Stats thread started at 0.066110
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -138,1004 +138,425 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.13/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.08.26-16.59.05:269][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.26-16.59.05:269][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.08.26-16.59.05:291][  0]LogInit: Computer: GARY-PC
-[2017.08.26-16.59.05:291][  0]LogInit: User: Gary
-[2017.08.26-16.59.05:291][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.08.26-16.59.05:291][  0]LogInit: High frequency timer resolution =3.905121 MHz
-[2017.08.26-16.59.05:291][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.08.26-16.59.05:291][  0]LogMemory: Platform Memory Stats for Windows
-[2017.08.26-16.59.05:291][  0]LogMemory: Process Physical Memory: 257.77 MB used, 257.77 MB peak
-[2017.08.26-16.59.05:291][  0]LogMemory: Process Virtual Memory: 260.47 MB used, 260.47 MB peak
-[2017.08.26-16.59.05:291][  0]LogMemory: Physical Memory: 5795.72 MB used, 16322.38 MB total
-[2017.08.26-16.59.05:291][  0]LogMemory: Virtual Memory: 627.91 MB used, 134217728.00 MB total
-[2017.08.26-16.59.05:471][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.08.26-16.59.07:185][  0]LogD3D11RHI: D3D11 adapters:
-[2017.08.26-16.59.07:209][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2017.08.26-16.59.07:209][  0]LogD3D11RHI:       4058/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.08.26-16.59.07:210][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.08.26-16.59.07:210][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.08.26-16.59.07:210][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.08.26-16.59.07:213][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.08.26-16.59.07:213][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2017.08.26-16.59.07:213][  0]LogWindows: EnumDisplayDevices:
-[2017.08.26-16.59.07:213][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2017.08.26-16.59.07:213][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.08.26-16.59.07:213][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.08.26-16.59.07:213][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.08.26-16.59.07:213][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.08.26-16.59.07:213][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2017.08.26-16.59.07:213][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
-[2017.08.26-16.59.07:213][  0]LogD3D11RHI:      Driver Date: 12-29-2016
-[2017.08.26-16.59.07:213][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.08.26-16.59.07:223][  0]LogD3D11RHI: Async texture creation enabled
-[2017.08.26-16.59.07:233][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.08.26-16.59.07:233][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/3160/).
-[2017.08.26-16.59.07:233][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gary/AppData/Local/Temp/UnrealShaderWorkingDir/8DB683354613B7557EC17491616D6072/'.
-[2017.08.26-16.59.07:233][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.08.26-16.59.09:131][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.08.26-16.59.09:137][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.08.26-16.59.09:143][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.08.26-16.59.09:149][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.08.26-16.59.09:155][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.08.26-16.59.09:163][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.08.26-16.59.09:167][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.08.26-16.59.09:172][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.08.26-16.59.09:177][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.08.26-16.59.09:181][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.08.26-16.59.09:186][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.08.26-16.59.09:195][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.08.26-16.59.09:195][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.08.26-16.59.09:196][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.08.26-16.59.09:216][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.08.26-16.59.09:221][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.08.26-16.59.09:226][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.08.26-16.59.09:230][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.08.26-16.59.09:235][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.08.26-16.59.09:242][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.08.26-16.59.09:242][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.08.26-16.59.09:354][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.08.26-16.59.09:397][  0]LogDerivedDataCache: Loaded boot cache 0.04s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2017.08.26-16.59.09:397][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
-[2017.08.26-16.59.09:397][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.08.26-16.59.09:397][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.08.26-16.59.09:397][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.08.26-16.59.09:397][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.08.26-16.59.09:416][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.08.26-16.59.09:427][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gary/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.08.26-16.59.09:608][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.26-16.59.09:611][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.08.26-16.59.09:681][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2017.08.26-16.59.09:681][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.08.26-16.59.09:681][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2017.08.26-16.59.09:833][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.08.26-16.59.10:337][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2940303804
-[2017.08.26-16.59.10:379][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
-[2017.08.26-16.59.10:410][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.028297 seconds
-[2017.08.26-16.59.10:415][  0]LogUObjectArray: 29785 objects as part of root set at end of initial load.
-[2017.08.26-16.59.10:415][  0]LogUObjectAllocator: 6339056 out of 0 bytes used by permanent object pool.
-[2017.08.26-16.59.10:415][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.08.26-16.59.10:726][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.26-16.59.10:726][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.26-16.59.12:214][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.08.26-16.59.12:233][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.08.26-16.59.12:567][  0]SourceControl: Info Source control is disabled
-[2017.08.26-16.59.12:612][  0]SourceControl: Info Source control is disabled
-[2017.08.26-16.59.12:619][  0]SourceControl: Info Source control is disabled
-[2017.08.26-16.59.12:626][  0]SourceControl: Info Source control is disabled
-[2017.08.26-16.59.12:794][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
-[2017.08.26-16.59.12:794][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
-[2017.08.26-16.59.12:794][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/VehicleBP/VehicleOverview.VehicleOverview_C'
-[2017.08.26-16.59.12:976][  0]LogEngine: Initializing Engine...
-[2017.08.26-16.59.12:977][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.08.26-16.59.13:160][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.08.26-16.59.13:166][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.08.26-16.59.13:172][  0]LogInit: FAudioDevice initialized.
-[2017.08.26-16.59.13:198][  0]LogDerivedDataCache: Saved boot cache 0.03s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2017.08.26-16.59.13:205][  0]LogInit: Texture streaming: Enabled
-[2017.08.26-16.59.13:224][  0]LogInit: Transaction tracking system initialized
-[2017.08.26-16.59.13:242][  0]BlueprintLog: New page: Editor Load
-[2017.08.26-16.59.13:322][  0]LocalizationService: Info Localization service is disabled
-[2017.08.26-16.59.13:390][  0]LogConsoleResponse:Display: 
-[2017.08.26-16.59.13:686][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.08.26-16.59.13:686][  0]LogCook:Display: Mobile HDR setting 1
-[2017.08.26-16.59.13:849][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 0.02s
-[2017.08.26-16.59.13:849][  0]SourceControl: Info Source control is disabled
-[2017.08.26-16.59.13:850][  0]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-16.59.13:853][  0]LightingResults: New page: Lighting Build
-[2017.08.26-16.59.13:855][  0]MapCheck: New page: Map Check
-[2017.08.26-16.59.13:855][  0]LightingResults: New page: Lighting Build
-[2017.08.26-16.59.13:907][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/UI/MainMenu/OptionsMenu.OptionsMenu_C:PlayerInfo'. Unknown structure.
-[2017.08.26-16.59.13:914][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/Blueprints/AllLevels/PlayerSaveGame.PlayerSaveGame_C:S_PlayerInfo'. Unknown structure.
-[2017.08.26-16.59.13:914][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/PlayerSaveGame.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-16.59.14:075][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-16.59.14:137][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-16.59.14:153][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-16.59.14:547][  0]LogAIModule: Creating AISystem for world MainMenu
-[2017.08.26-16.59.14:548][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-16.59.14:549][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-16.59.14:591][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 42.346ms to complete.
-[2017.08.26-16.59.14:591][  0]LogFileHelpers: Loading map 'MainMenu' took 0.742
-[2017.08.26-16.59.14:703][  0]LogCollectionManager: Loaded 1 collections in 0.006811 seconds
-[2017.08.26-16.59.14:740][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' took 0.01s
-[2017.08.26-16.59.14:740][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Gary/Collections/' took 0.01s
-[2017.08.26-16.59.14:740][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' took 0.01s
-[2017.08.26-16.59.14:740][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000003 seconds
-[2017.08.26-16.59.14:740][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
-[2017.08.26-16.59.14:746][  0]LogContentBrowser: Native class hierarchy populated in 0.0065 seconds. Added 2143 classes and 418 folders.
-[2017.08.26-16.59.14:750][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.08.26-16.59.14:750][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.08.26-16.59.14:751][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
-[2017.08.26-16.59.14:754][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2017.08.26-16.59.14:949][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2017.08.26-16.59.14:953][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2017.08.26-16.59.14:998][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.08.26-16.59.15:002][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.08.26-16.59.15:027][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2017.08.26-16.59.15:028][  0]LogLoad: (Engine Initialization) Total time: 10.96 seconds
-[2017.08.26-16.59.15:028][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.24 seconds
-[2017.08.26-16.59.15:028][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.08.26-16.59.15:028][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.08.26-16.59.15:036][  0]LogOcInput: OculusInput pre-init called
-[2017.08.26-16.59.15:054][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.08.26-16.59.15:221][  1]LogRenderer: Reallocating scene render targets to support 1020x632 (Frame:2).
-[2017.08.26-16.59.15:221][  1]LogAssetRegistry: Asset discovery search completed in 4.8626 seconds
-[2017.08.26-16.59.15:221][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000004 seconds (found 0 objects)
-[2017.08.26-16.59.15:221][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000016 seconds (updated 0 objects)
-[2017.08.26-16.59.36:302][328]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 112 classes and 0 folders.
-[2017.08.26-17.24.56:974][ 19]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.044
-[2017.08.26-17.24.56:977][ 19]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/GamePlay/GamePlayPC] ([1] browsable assets)...
-[2017.08.26-17.24.56:977][ 19]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/GamePlay/GamePlayPC]
-[2017.08.26-17.24.57:012][ 19]LogSavePackage: Save=26.37ms
-[2017.08.26-17.24.57:012][ 19]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayPC_Auto11F0659C9428D25553A9A9EA4F67C337E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/GamePlay/GamePlayPC_Auto1.uasset'
-[2017.08.26-17.24.57:012][ 19]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/GamePlay/GamePlayPC_Auto1.uasset
-[2017.08.26-17.24.57:012][ 19]LogFileHelpers: Auto-saving content packages took 0.037
-[2017.08.26-17.29.18:854][702]BlueprintLog: New page: Compile GamePlayPC
-[2017.08.26-17.29.19:130][702]LogSavePackage: Save=25.54ms
-[2017.08.26-17.29.19:130][702]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayPC3112D62C401000105C5316A344F7B537.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayPC.uasset'
-[2017.08.26-17.29.19:134][702]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayPC.uasset
-[2017.08.26-17.29.19:164][702]LogSavePackage: Save=19.29ms
-[2017.08.26-17.29.19:164][702]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM3F5DE6B547AF2532019624BE7AD7908A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-17.29.19:165][702]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-17.31.12:274][513]BlueprintLog: New page: Compile GamePlayGM
-[2017.08.26-17.31.12:418][513]LogSavePackage: Save=19.47ms
-[2017.08.26-17.31.12:418][513]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM5FC2A8A9433F8FCEB85C2EA129775365.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-17.31.12:419][513]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-17.32.35:653][982]BlueprintLog: New page: Compile GamePlayGM
-[2017.08.26-17.32.36:386][ 52]LogSavePackage: Save=18.69ms
-[2017.08.26-17.32.36:386][ 52]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM177AA64544DCCCB886C6CBA5FC934578.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-17.32.36:387][ 52]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-17.39.04:388][423]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.018
-[2017.08.26-17.39.04:390][423]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/GamePlay/GamePlayPC] ([1] browsable assets)...
-[2017.08.26-17.39.04:390][423]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/GamePlay/GamePlayPC]
-[2017.08.26-17.39.04:424][423]LogSavePackage: Save=26.58ms
-[2017.08.26-17.39.04:424][423]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayPC_Auto287DBED534E4C0BF7F8E1FE8E6C684EC3.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/GamePlay/GamePlayPC_Auto2.uasset'
-[2017.08.26-17.39.04:425][423]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/GamePlay/GamePlayPC_Auto2.uasset
-[2017.08.26-17.39.04:425][423]LogFileHelpers: Auto-saving content packages took 0.036
-[2017.08.26-17.40.04:558][815]BlueprintLog: New page: Compile GamePlayPC
-[2017.08.26-17.40.04:741][815]LogSavePackage: Save=25.64ms
-[2017.08.26-17.40.04:741][815]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayPCA5DC81A2435CAFA21A9B0F9194F639AD.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayPC.uasset'
-[2017.08.26-17.40.04:743][815]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayPC.uasset
-[2017.08.26-17.40.05:537][899]LogSavePackage: Save=25.57ms
-[2017.08.26-17.40.05:537][899]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayPC7B2C316C413EA730745FDEA99FE6F7CB.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayPC.uasset'
-[2017.08.26-17.40.05:538][899]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayPC.uasset
-[2017.08.26-17.46.15:434][681]BlueprintLog: New page: Compile LobbyPC
-[2017.08.26-17.46.15:724][681]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
-[2017.08.26-17.46.15:840][681]LogSavePackage: Save=89.31ms
-[2017.08.26-17.46.15:840][681]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyPC63A76E74411AE6F43CDCCE87B238DD8A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset'
-[2017.08.26-17.46.15:850][681]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset
-[2017.08.26-17.46.16:107][703]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
-[2017.08.26-17.46.16:168][703]LogSavePackage: Save=57.21ms
-[2017.08.26-17.46.16:168][703]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyPCDB3D8839418641C5ECBCD3B89CEFAB08.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset'
-[2017.08.26-17.46.16:169][703]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset
-[2017.08.26-17.50.18:163][543]LogEditorTransaction: Undo Move Node
-[2017.08.26-17.50.18:855][612]LogEditorTransaction: Undo Move Node
-[2017.08.26-17.50.19:570][685]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-17.50.20:167][743]LogEditorTransaction: Undo Move Node
-[2017.08.26-17.50.23:673][151]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-17.51.42:788][894]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.025
-[2017.08.26-17.51.42:789][894]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
-[2017.08.26-17.51.42:789][894]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
-[2017.08.26-17.51.42:854][894]LogSavePackage: Save=57.41ms
-[2017.08.26-17.51.42:854][894]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM_Auto30ECC73A34BCD02313ECCDD9A0D445D08.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto3.uasset'
-[2017.08.26-17.51.42:855][894]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto3.uasset
-[2017.08.26-17.51.42:855][894]LogFileHelpers: Auto-saving content packages took 0.066
-[2017.08.26-17.55.35:223][442]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-17.55.35:578][442]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-17.55.35:634][442]LogSavePackage: Save=52.54ms
-[2017.08.26-17.55.35:634][442]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM91A72C3E4E6072C9451962BFA8CE0549.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-17.55.35:636][442]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-17.56.39:313][338]LogEditorTransaction: Undo Rename Node
-[2017.08.26-17.57.04:724][766]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-17.57.04:890][766]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-17.57.04:950][766]LogSavePackage: Save=52.90ms
-[2017.08.26-17.57.04:950][766]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM7144B9D94D12C1F144233DB4C1CF39C4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-17.57.04:952][766]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-17.57.05:717][855]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-17.57.05:771][855]LogSavePackage: Save=50.72ms
-[2017.08.26-17.57.05:771][855]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM347E2FF943C0AA86653621866181DD68.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-17.57.05:772][855]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-17.58.29:677][572]LogSavePackage: Save=88.43ms
-[2017.08.26-17.58.29:677][572]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuC83BC159465660DEF2B3E593D059A63E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-17.58.29:677][572]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-17.58.29:682][572]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.00.04:988][238]LogEditorViewport: Clicking Background
-[2017.08.26-18.00.11:817][ 11]LogSavePackage: Save=89.08ms
-[2017.08.26-18.00.11:817][ 11]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu67E3013F497E910A6303C78578997EC4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.00.11:818][ 11]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.00.11:823][ 11]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.03.30:727][175]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.03.31:788][301]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.03.31:969][301]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.03.32:044][301]LogSavePackage: Save=68.40ms
-[2017.08.26-18.03.32:044][301]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGME7D0B67A4E621F0EE16B0AAC5E94391C.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.03.32:046][301]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.03.32:538][357]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.03.32:591][357]LogSavePackage: Save=50.50ms
-[2017.08.26-18.03.32:591][357]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM642EBD6E469238F025DED28A2125F364.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.03.32:592][357]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.03.34:002][501]LogSavePackage: Save=88.66ms
-[2017.08.26-18.03.34:002][501]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu701DFE244DC8D4BF225E84AE2C18FF1E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.03.34:002][501]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.03.34:008][501]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.05.00:629][843]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.05.00:799][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.05.00:854][843]LogSavePackage: Save=52.54ms
-[2017.08.26-18.05.00:854][843]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM5652C1D541062930589C09857425F0B6.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.05.00:856][843]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.05.01:448][911]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.05.01:508][911]LogSavePackage: Save=56.81ms
-[2017.08.26-18.05.01:508][911]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM93D9C96E4435742AEC2AEDBC49C3C1E7.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.05.01:509][911]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.12.15:895][750]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.12.15:957][750]LogSavePackage: Save=53.81ms
-[2017.08.26-18.12.15:957][750]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM81D5044149351EBA81860BB4AD3408EA.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.12.15:959][750]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.20.31:781][615]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.34:033][871]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.35:185][996]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.36:187][103]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.36:829][167]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.37:531][238]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.38:198][305]LogEditorTransaction: Undo Resize Node
-[2017.08.26-18.20.38:916][377]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.20.39:452][425]LogEditorTransaction: Undo Break Pin Links
-[2017.08.26-18.20.40:043][482]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.40:784][558]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.20.41:334][624]LogEditorTransaction: Undo Clicking Background
-[2017.08.26-18.20.41:817][682]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.42:519][753]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.43:079][807]LogEditorTransaction: Undo Resize Node
-[2017.08.26-18.20.43:839][885]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.44:778][984]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.45:761][ 89]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.46:294][140]LogEditorTransaction: Undo AddPin
-[2017.08.26-18.20.46:835][202]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.47:495][268]LogEditorTransaction: Undo Rename Node
-[2017.08.26-18.20.48:018][318]LogEditorTransaction: Undo Add Node
-[2017.08.26-18.20.49:350][465]LogEditorTransaction: Undo Resize Node
-[2017.08.26-18.20.49:932][522]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.20.51:250][667]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.51:999][744]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.20.52:583][801]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.20.53:132][854]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.20.53:657][904]LogEditorTransaction: Undo Paste clipboard contents
-[2017.08.26-18.20.54:223][958]LogEditorTransaction: Undo Move Nodes
-[2017.08.26-18.20.55:338][ 79]LogEditorTransaction: Undo Resize Node
-[2017.08.26-18.20.55:930][137]LogEditorTransaction: Undo Delete current selection
-[2017.08.26-18.20.56:833][232]LogEditorTransaction: Undo Delete current selection
-[2017.08.26-18.20.57:424][290]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.20.58:240][388]LogEditorTransaction: Undo Delete current selection
-[2017.08.26-18.20.59:183][488]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.21.07:533][490]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.21.09:830][752]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.21.10:375][804]LogEditorTransaction: Undo Move Node
-[2017.08.26-18.21.10:980][864]LogEditorTransaction: Undo Paste clipboard contents
-[2017.08.26-18.21.11:616][927]LogEditorTransaction: Undo Create Pin Link
-[2017.08.26-18.21.56:810][334]LogEditorTransaction: Undo Move Nodes
-[2017.08.26-18.22.50:675][781]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/Blueprints/Lobby/LobbyGM.LobbyGM:EventGraph.K2Node_VariableSet_98 or K2Node_VariableSet /Game/Blueprints/Lobby/LobbyGM.LobbyGM:EventGraph.K2Node_VariableSet_98
-[2017.08.26-18.25.42:147][263]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.25.42:369][263]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.25.42:428][263]LogSavePackage: Save=52.20ms
-[2017.08.26-18.25.42:428][263]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGME01456CD424AD18004F5088CD8946B7B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.25.42:430][263]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.25.42:685][291]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.25.42:739][291]LogSavePackage: Save=51.22ms
-[2017.08.26-18.25.42:739][291]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM2DD883A14147178820345BA57C5B3DFD.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.25.42:740][291]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.25.45:216][578]BlueprintLog: New page: Compile LobbyPC
-[2017.08.26-18.25.45:493][578]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
-[2017.08.26-18.25.45:556][578]LogSavePackage: Save=55.37ms
-[2017.08.26-18.25.45:556][578]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyPCCF21881A49ED47E39B0547B6F9F484D2.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset'
-[2017.08.26-18.25.45:558][578]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset
-[2017.08.26-18.25.47:876][825]LogSavePackage: Save=87.40ms
-[2017.08.26-18.25.47:876][825]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu1C9BA901410877EDAA72259272721AEB.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.25.47:877][825]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.25.47:881][825]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.26.46:401][941]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.26.46:590][941]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.26.46:646][941]LogSavePackage: Save=53.11ms
-[2017.08.26-18.26.46:646][941]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM528E13D94EA5AAC7EAAE96A05F37A9E1.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.26.46:648][941]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.28.23:425][531]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.28.23:480][531]LogSavePackage: Save=52.25ms
-[2017.08.26-18.28.23:480][531]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMAA189A3C4D04B3E9A9AA4CA4901D71AC.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.28.23:482][531]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.30.48:728][450]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.30.48:791][450]LogSavePackage: Save=54.95ms
-[2017.08.26-18.30.48:791][450]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMFBCA4451452E2259044F708608463EE6.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.30.48:793][450]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.34.08:443][379]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.34.08:625][379]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.34.08:680][379]LogSavePackage: Save=52.57ms
-[2017.08.26-18.34.08:680][379]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM6342256C4D2838C29795BF904B16FAE2.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.34.08:682][379]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.35.08:288][508]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.35.08:452][508]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.35.08:508][508]LogSavePackage: Save=52.05ms
-[2017.08.26-18.35.08:508][508]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMEEF05F7741DFCDA992B7E58A9216127E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.35.08:510][508]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.35.09:084][574]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.35.09:143][574]LogSavePackage: Save=55.65ms
-[2017.08.26-18.35.09:143][574]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM3B860C214C459DFC8ACE7EB34D47B1CF.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.35.09:144][574]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.36.29:006][121]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.36.29:173][121]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.36.29:232][121]LogSavePackage: Save=52.58ms
-[2017.08.26-18.36.29:232][121]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM27CC03364FF002F2ACF3A3A2D70D0452.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.36.29:234][121]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.36.31:219][333]LogSavePackage: Save=87.59ms
-[2017.08.26-18.36.31:219][333]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu23113D8D48063FAA7E364FA87CE6E919.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.36.31:220][333]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.36.31:228][333]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.37.16:888][848]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-18.37.21:694][409]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.37.21:861][409]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.37.21:917][409]LogSavePackage: Save=53.19ms
-[2017.08.26-18.37.21:917][409]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMAF4EAEDB4946B2FEB5C6A1819B6AC7B3.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.37.21:919][409]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.39.00:315][ 47]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.39.00:482][ 47]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.39.00:537][ 47]LogSavePackage: Save=52.50ms
-[2017.08.26-18.39.00:537][ 47]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM44570887491BB4296A57049096FE7962.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.39.00:539][ 47]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.39.01:065][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.39.01:119][107]LogSavePackage: Save=51.19ms
-[2017.08.26-18.39.01:119][107]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM0ECC49484AFB89BE1B09E395383731DC.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.39.01:120][107]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.39.04:017][452]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.39.04:072][452]LogSavePackage: Save=51.94ms
-[2017.08.26-18.39.04:072][452]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM6306BFFA4B0219A2AC2BEAB72504CB79.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.39.04:073][452]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.39.06:030][662]LogSavePackage: Save=86.56ms
-[2017.08.26-18.39.06:030][662]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuFB66042C4CEB11A519C799A35F1C84A9.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.39.06:031][662]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.39.06:037][662]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.41.07:100][823]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.016
-[2017.08.26-18.41.07:102][823]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Lobby/LobbyGM] ([1] browsable assets)...
-[2017.08.26-18.41.07:102][823]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Lobby/LobbyGM]
-[2017.08.26-18.41.07:160][823]LogSavePackage: Save=54.01ms
-[2017.08.26-18.41.07:160][823]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM_Auto4F9C11D5F4CC7BC09DD04478D1ABE328E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto4.uasset'
-[2017.08.26-18.41.07:160][823]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/Lobby/LobbyGM_Auto4.uasset
-[2017.08.26-18.41.07:160][823]LogFileHelpers: Auto-saving content packages took 0.060
-[2017.08.26-18.43.04:111][641]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.43.04:282][641]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.43.04:343][641]LogSavePackage: Save=53.50ms
-[2017.08.26-18.43.04:343][641]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM53DF645A4DDC24211DEB9F814CA772CA.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.43.04:345][641]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.46.04:887][755]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.46.05:074][755]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.46.05:130][755]LogSavePackage: Save=53.40ms
-[2017.08.26-18.46.05:131][755]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMD25635C0489DA523F1FDB59AC7844220.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.46.05:132][755]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.46.05:812][834]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.46.05:866][834]LogSavePackage: Save=51.62ms
-[2017.08.26-18.46.05:866][834]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM6BC95E67489593DDC8C6C3A589B67673.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.46.05:867][834]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.46.09:321][224]LogSavePackage: Save=88.64ms
-[2017.08.26-18.46.09:321][224]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuC60C8D9A4846366A9B8B16B3A55605F6.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.46.09:322][224]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.46.09:326][224]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.46.44:574][406]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.46.44:744][406]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.46.44:800][406]LogSavePackage: Save=53.27ms
-[2017.08.26-18.46.44:800][406]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM6C75BB1F4D12B287813EE9B1AAD0C074.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.46.44:802][406]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.49.39:205][225]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.49.39:381][225]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.49.39:444][225]LogSavePackage: Save=55.04ms
-[2017.08.26-18.49.39:444][225]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM2FE08CC643CA6AD3EEFD06A0A2D09880.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.49.39:446][225]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.49.40:169][308]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.49.40:224][308]LogSavePackage: Save=51.81ms
-[2017.08.26-18.49.40:224][308]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM1D315B934B7D03C8E47E62AEA9A28089.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.49.40:225][308]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.49.43:425][667]LogSavePackage: Save=91.89ms
-[2017.08.26-18.49.43:425][667]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuEAD8B04348A239E6D27ABEB93ED6420E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.49.43:425][667]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.49.43:430][667]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.53.14:188][581]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.53.14:372][581]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.53.14:429][581]LogSavePackage: Save=53.47ms
-[2017.08.26-18.53.14:429][581]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGME1772DFD4B53F7787ADBFBB81567060B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.53.14:431][581]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.53.16:427][818]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.53.16:484][818]LogSavePackage: Save=53.29ms
-[2017.08.26-18.53.16:484][818]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMA37ED68340E8E0CF65F2F5B8705CFB9A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.53.16:485][818]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.53.17:705][939]LogSavePackage: Save=91.95ms
-[2017.08.26-18.53.17:706][939]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuA6042BB548ABA3BB387DA28D8F41C922.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.53.17:706][939]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.53.17:712][939]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.54.52:413][889]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.54.52:590][889]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.54.52:650][889]LogSavePackage: Save=53.50ms
-[2017.08.26-18.54.52:650][889]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM2A157E01478A2410BB6EAE8BE3617981.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.54.52:652][889]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.55.50:502][820]BlueprintLog: New page: Compile GamePlayGM
-[2017.08.26-18.55.50:652][820]LogSavePackage: Save=19.59ms
-[2017.08.26-18.55.50:652][820]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM8AD1A0544E75637D187EA1BAAB7C39B8.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-18.55.50:654][820]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-18.56.18:695][139]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2017.08.26-18.56.33:883][947]LogRenderer: Reallocating scene render targets to support 1108x656 (Frame:14981).
-[2017.08.26-18.57.23:476][882]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-18.58.37:052][652]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.58.37:225][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.58.37:282][652]LogSavePackage: Save=54.59ms
-[2017.08.26-18.58.37:282][652]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM4C0C41D74F1F29C02B8BF5908C4140A1.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.58.37:284][652]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.58.39:400][880]LogSavePackage: Save=90.90ms
-[2017.08.26-18.58.39:400][880]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuCA4AFC2D47A18B10A795A0AA4120DFA5.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.58.39:401][880]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.58.39:406][880]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-18.59.39:757][852]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-18.59.39:932][852]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-18.59.39:990][852]LogSavePackage: Save=54.46ms
-[2017.08.26-18.59.39:990][852]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMA796CDDD4975C723BEE488AA0724DF1A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-18.59.39:992][852]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-18.59.41:502][  8]LogSavePackage: Save=90.78ms
-[2017.08.26-18.59.41:502][  8]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu8A34A9A742425D7741C11A91C30C75A4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-18.59.41:502][  8]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-18.59.41:508][  8]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.00.27:153][228]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.01.57:977][ 90]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.01.58:156][ 90]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.01.58:217][ 90]LogSavePackage: Save=54.30ms
-[2017.08.26-19.01.58:217][ 90]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM081E544D43088D300372519ED68DC22E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.01.58:219][ 90]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.01.58:816][159]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.01.58:871][159]LogSavePackage: Save=52.37ms
-[2017.08.26-19.01.58:871][159]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM2FFAFF4647BD7BBDC890C99DAB093668.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.01.58:872][159]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.02.04:271][782]LogSavePackage: Save=90.88ms
-[2017.08.26-19.02.04:271][782]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuF8D4D10B474EB85BFAC7709DA52C0EF0.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.02.04:271][782]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.02.04:277][782]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.04.21:870][401]BlueprintLog: New page: Compile GamePlayGM
-[2017.08.26-19.04.22:021][401]LogSavePackage: Save=20.02ms
-[2017.08.26-19.04.22:021][401]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM64DC125E4AF55CA8CA3492BFA4D70F5C.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-19.04.22:023][401]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-19.04.26:045][859]LogSavePackage: Save=91.88ms
-[2017.08.26-19.04.26:045][859]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuD19EE2E44820A83C059C1AB5206A2439.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.04.26:046][859]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.04.26:051][859]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.05.47:088][598]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.015
-[2017.08.26-19.05.47:089][598]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/GamePlay/GamePlayGM] ([1] browsable assets)...
-[2017.08.26-19.05.47:089][598]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/GamePlay/GamePlayGM]
-[2017.08.26-19.05.47:112][598]LogSavePackage: Save=19.28ms
-[2017.08.26-19.05.47:112][598]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM_Auto54E77EA3C406A478BCF1E4BB824ABFF67.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/GamePlay/GamePlayGM_Auto5.uasset'
-[2017.08.26-19.05.47:112][598]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Blueprints/GamePlay/GamePlayGM_Auto5.uasset
-[2017.08.26-19.05.47:113][598]LogFileHelpers: Auto-saving content packages took 0.024
-[2017.08.26-19.07.19:659][611]LogEditorTransaction: Undo Move Nodes
-[2017.08.26-19.09.42:548][226]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.09.42:723][226]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.09.42:784][226]LogSavePackage: Save=53.53ms
-[2017.08.26-19.09.42:784][226]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMAE9A3ED14F8AB1ED912E6785B8CF90CA.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.09.42:786][226]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.09.50:027][415]LogSavePackage: Save=19.76ms
-[2017.08.26-19.09.50:027][415]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM4679C9424DF44F2C4F9F62B9739E12BE.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-19.09.50:028][415]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-19.09.50:149][415]LogSavePackage: Save=90.93ms
-[2017.08.26-19.09.50:149][415]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu192D5E4B4567E81D1172E29EE5C9D6F0.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.09.50:150][415]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.09.50:156][415]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.10.44:267][785]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.10.48:355][153]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.10.48:529][153]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.10.48:588][153]LogSavePackage: Save=56.03ms
-[2017.08.26-19.10.48:588][153]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM3C6DE0E84E27D0D49777F5933A82ED0E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.10.48:590][153]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.10.49:559][243]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.10.49:614][243]LogSavePackage: Save=51.98ms
-[2017.08.26-19.10.49:614][243]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMBFE88F7E4FB7D8DA5D3E6DA59C3312E5.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.10.49:615][243]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.10.50:915][348]LogSavePackage: Save=92.21ms
-[2017.08.26-19.10.50:915][348]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuD583D4284F97B3950398F59AFBF96BF0.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.10.50:916][348]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.10.50:921][348]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.11.50:361][803]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.12.22:190][165]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.12.22:364][165]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.12.22:422][165]LogSavePackage: Save=54.19ms
-[2017.08.26-19.12.22:422][165]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMD40C31C24CFFA7FCA4555EBA966E20A8.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.12.22:424][165]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.12.23:710][317]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.12.23:765][317]LogSavePackage: Save=52.05ms
-[2017.08.26-19.12.23:765][317]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMDD15BF104078A2EFC428029A75312C20.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.12.23:766][317]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.14.32:426][501]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.14.32:484][501]LogSavePackage: Save=55.28ms
-[2017.08.26-19.14.32:484][501]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMD0A5DC3B4F0A3408F849B497A4EAE0E7.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.14.32:486][501]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.14.51:363][663]LogSavePackage: Save=104.10ms
-[2017.08.26-19.14.51:363][663]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuF188A9F045ED5F29838E00B5B7EA8E30.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.14.51:364][663]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.14.51:368][663]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.15.36:601][664]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.15.54:090][736]BlueprintLog: New page: Compile LobbyPC
-[2017.08.26-19.15.54:379][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyPC" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset" SILENT=true
-[2017.08.26-19.15.54:443][736]LogSavePackage: Save=55.85ms
-[2017.08.26-19.15.54:443][736]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyPCB36E301D4E813EC4749961984B721DBA.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset'
-[2017.08.26-19.15.54:445][736]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyPC.uasset
-[2017.08.26-19.16.17:888][522]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.16.17:950][522]LogSavePackage: Save=53.75ms
-[2017.08.26-19.16.17:950][522]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM295AFF7E43D8EECEC876F5A7D8FDE326.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.16.17:952][522]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.17.58:713][606]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.17.58:771][606]LogSavePackage: Save=54.08ms
-[2017.08.26-19.17.58:771][606]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMA89FEF9443F54C7AEC3674BFB0739D72.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.17.58:773][606]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.18.01:426][919]LogSavePackage: Save=19.75ms
-[2017.08.26-19.18.01:426][919]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM45CFF77E40A949F7087497ABC60B1D4E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
-[2017.08.26-19.18.01:428][919]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
-[2017.08.26-19.18.04:614][277]LogSavePackage: Save=93.74ms
-[2017.08.26-19.18.04:615][277]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuC2560A6B45DA176D334FD6AA30C28FF2.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.18.04:615][277]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.18.04:620][277]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.19.00:196][781]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.19.15:763][633]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.19.15:955][633]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.19.16:013][633]LogSavePackage: Save=54.27ms
-[2017.08.26-19.19.16:013][633]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM93B71AA647EC021359A72F932DE4EE95.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.19.16:014][633]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.19.16:412][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.19.16:468][678]LogSavePackage: Save=52.81ms
-[2017.08.26-19.19.16:468][678]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM6B35B2E741D24450B041B095FCE0F67F.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.19.16:471][678]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.19.19:764][ 40]LogSavePackage: Save=99.54ms
-[2017.08.26-19.19.19:764][ 40]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu8EAD76BA47419C95A35E4EAE197A47AB.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.19.19:764][ 40]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.19.19:769][ 40]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.19.46:536][710]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.19.54:431][642]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.19.54:493][642]LogSavePackage: Save=59.16ms
-[2017.08.26-19.19.54:493][642]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM31C2188349C2E4819FB0D0A40888DD42.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.19.54:495][642]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.20.36:125][614]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.20.36:182][614]LogSavePackage: Save=52.68ms
-[2017.08.26-19.20.36:182][614]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMEA93656643CA3BD30CDC7FB38C8858BB.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.20.36:182][614]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.21.22:722][171]LogAIModule: Creating AISystem for world Lobby
-[2017.08.26-19.21.22:744][171]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.21.22:745][171]LightingResults: New page: Lighting Build
-[2017.08.26-19.21.22:747][171]LoadErrors: New page: Loading map: Lobby.umap
-[2017.08.26-19.21.22:747][171]MapCheck: New page: Map Check
-[2017.08.26-19.21.22:747][171]LightingResults: New page: Lighting Build
-[2017.08.26-19.21.22:854][171]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.21.22:893][171]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.21.22:944][171]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 51.325ms to complete.
-[2017.08.26-19.21.22:945][171]LogFileHelpers: Loading map 'Lobby' took 0.201
-[2017.08.26-19.21.25:144][429]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.21.35:592][426]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.21.39:297][868]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Lobby" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.08.26-19.21.39:340][868]LogSavePackage: Save=21.52ms
-[2017.08.26-19.21.39:340][868]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Lobby78D1F76A421195608FF79DABEF271112.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap'
-[2017.08.26-19.21.39:340][868]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap
-[2017.08.26-19.21.43:495][362]LogAIModule: Creating AISystem for world MainMenu
-[2017.08.26-19.21.45:551][362]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.21.45:612][362]LogSavePackage: Save=53.72ms
-[2017.08.26-19.21.45:612][362]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMA61E39784C649391C721AF8E1910AD99.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.21.45:613][362]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.21.45:614][362]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.21.45:614][362]LightingResults: New page: Lighting Build
-[2017.08.26-19.21.45:615][362]LoadErrors: New page: Loading map: MainMenu.umap
-[2017.08.26-19.21.45:616][362]MapCheck: New page: Map Check
-[2017.08.26-19.21.45:616][362]LightingResults: New page: Lighting Build
-[2017.08.26-19.21.45:677][362]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.21.45:699][362]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.21.45:750][362]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 50.741ms to complete.
-[2017.08.26-19.21.45:750][362]LogFileHelpers: Loading map 'MainMenu' took 0.136
-[2017.08.26-19.21.49:547][783]LogSavePackage: Save=85.15ms
-[2017.08.26-19.21.49:547][783]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu995CA1F5447A0FCDE26ABF9755F8681F.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.21.49:548][783]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.21.49:552][783]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.22.28:423][436]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.22.29:977][592]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.22.30:032][592]LogSavePackage: Save=51.64ms
-[2017.08.26-19.22.30:032][592]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM064B8B5F462C3A819BAC2ABBCCEF062A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.22.30:033][592]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.22.36:175][327]LogAIModule: Creating AISystem for world Lobby
-[2017.08.26-19.22.36:194][327]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.22.36:194][327]LightingResults: New page: Lighting Build
-[2017.08.26-19.22.36:194][327]LoadErrors: New page: Loading map: Lobby.umap
-[2017.08.26-19.22.36:195][327]MapCheck: New page: Map Check
-[2017.08.26-19.22.36:195][327]LightingResults: New page: Lighting Build
-[2017.08.26-19.22.36:290][327]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.22.36:313][327]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.22.36:366][327]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 52.42ms to complete.
-[2017.08.26-19.22.36:366][327]LogFileHelpers: Loading map 'Lobby' took 0.173
-[2017.08.26-19.22.38:443][562]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.22.40:438][798]LogUObjectGlobals:Warning: Failed to find object 'Class None.None'
-[2017.08.26-19.22.48:315][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Lobby" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.08.26-19.22.48:354][742]LogSavePackage: Save=21.33ms
-[2017.08.26-19.22.48:354][742]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Lobby6723AF8A44075B50BC61F3850A22171D.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap'
-[2017.08.26-19.22.48:355][742]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap
-[2017.08.26-19.23.04:257][432]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.23.04:314][432]LogSavePackage: Save=53.79ms
-[2017.08.26-19.23.04:314][432]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM082B1CCF48AB0EABA906BBBE8201D64E.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.23.04:316][432]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.23.04:361][432]LogSavePackage: Save=19.59ms
-[2017.08.26-19.23.04:361][432]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCLobby9C576B7F41A60A3C216E2A8BB6D1DAF5.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCLobby.umap'
-[2017.08.26-19.23.04:361][432]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCLobby.umap
-[2017.08.26-19.23.04:365][432]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.23.19:876][170]LogUObjectGlobals:Warning: Failed to find object 'Class None.None'
-[2017.08.26-19.23.22:753][514]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Lobby" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.08.26-19.23.22:794][514]LogSavePackage: Save=20.33ms
-[2017.08.26-19.23.22:794][514]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Lobby7162D32C4EFEAA74331D6BB948DD3088.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap'
-[2017.08.26-19.23.22:795][514]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap
-[2017.08.26-19.23.25:974][687]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.23.26:033][687]LogSavePackage: Save=55.90ms
-[2017.08.26-19.23.26:033][687]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM0D810F2A452E792DCEC74DB0A02021FF.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.23.26:035][687]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.23.26:080][687]LogSavePackage: Save=20.56ms
-[2017.08.26-19.23.26:080][687]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCLobby91F0C5E14A00A83380D65F9B26E9F8BF.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCLobby.umap'
-[2017.08.26-19.23.26:081][687]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCLobby.umap
-[2017.08.26-19.23.26:085][687]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.24.01:606][991]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Lobby" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.08.26-19.24.01:650][991]LogSavePackage: Save=25.32ms
-[2017.08.26-19.24.01:650][991]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Lobby132E7F3C4F1A2A764A74DABBCEC012D3.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap'
-[2017.08.26-19.24.01:651][991]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap
-[2017.08.26-19.24.17:378][863]LogAIModule: Creating AISystem for world TravelMap
-[2017.08.26-19.24.19:533][863]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.24.19:604][863]LogSavePackage: Save=67.04ms
-[2017.08.26-19.24.19:604][863]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM1919D2E947AE2C401C4639BAD9FA93CB.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.24.19:609][863]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.24.19:611][863]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/TravelMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.24.19:611][863]LightingResults: New page: Lighting Build
-[2017.08.26-19.24.19:612][863]LoadErrors: New page: Loading map: TravelMap.umap
-[2017.08.26-19.24.19:613][863]MapCheck: New page: Map Check
-[2017.08.26-19.24.19:613][863]LightingResults: New page: Lighting Build
-[2017.08.26-19.24.19:704][863]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.24.19:732][863]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.24.19:785][863]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 52.607ms to complete.
-[2017.08.26-19.24.19:785][863]LogFileHelpers: Loading map 'TravelMap' took 0.176
-[2017.08.26-19.24.23:546][296]LogAIModule: Creating AISystem for world MainMenu
-[2017.08.26-19.24.23:562][296]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.24.23:562][296]LightingResults: New page: Lighting Build
-[2017.08.26-19.24.23:563][296]LoadErrors: New page: Loading map: MainMenu.umap
-[2017.08.26-19.24.23:563][296]MapCheck: New page: Map Check
-[2017.08.26-19.24.23:563][296]LightingResults: New page: Lighting Build
-[2017.08.26-19.24.23:624][296]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.24.23:649][296]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.24.23:699][296]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 50.549ms to complete.
-[2017.08.26-19.24.23:699][296]LogFileHelpers: Loading map 'MainMenu' took 0.138
-[2017.08.26-19.24.25:374][493]LogAIModule: Creating AISystem for world Lobby
-[2017.08.26-19.24.25:391][493]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.24.25:391][493]LightingResults: New page: Lighting Build
-[2017.08.26-19.24.25:392][493]LoadErrors: New page: Loading map: Lobby.umap
-[2017.08.26-19.24.25:392][493]MapCheck: New page: Map Check
-[2017.08.26-19.24.25:392][493]LightingResults: New page: Lighting Build
-[2017.08.26-19.24.25:491][493]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.24.25:513][493]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.24.25:563][493]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 50.103ms to complete.
-[2017.08.26-19.24.25:563][493]LogFileHelpers: Loading map 'Lobby' took 0.173
-[2017.08.26-19.24.28:013][771]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.24.35:407][653]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Lobby" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.08.26-19.24.35:446][653]LogSavePackage: Save=20.84ms
-[2017.08.26-19.24.35:446][653]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Lobby6FDB8C744F7B90A5B79F70A6ACA7439C.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap'
-[2017.08.26-19.24.35:447][653]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap
-[2017.08.26-19.24.40:829][293]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.24.40:884][293]LogSavePackage: Save=51.37ms
-[2017.08.26-19.24.40:884][293]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGME0136215468DFA5106EFB7A4F2085E64.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.24.40:886][293]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.24.57:081][221]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.24.57:308][221]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.24.57:364][221]LogSavePackage: Save=51.88ms
-[2017.08.26-19.24.57:364][221]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGMB1C0D4F64AB75CADEF07B3827A363BB3.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.24.57:366][221]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.25.00:065][529]LogSavePackage: Save=19.37ms
-[2017.08.26-19.25.00:065][529]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCLobby1BFF8F764CB40D3FC843F5A03C716CD3.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCLobby.umap'
-[2017.08.26-19.25.00:066][529]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCLobby.umap
-[2017.08.26-19.25.00:070][529]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.25.52:847][744]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.08.26-19.26.00:801][693]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Lobby" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.08.26-19.26.00:840][693]LogSavePackage: Save=20.08ms
-[2017.08.26-19.26.00:840][693]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyEE55DBC74D7F2F8FD6B4D980287E076A.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap'
-[2017.08.26-19.26.00:841][693]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/Lobby.umap
-[2017.08.26-19.26.19:584][923]BlueprintLog: New page: Compile LobbyGM
-[2017.08.26-19.26.19:812][923]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Lobby/LobbyGM" FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset" SILENT=true
-[2017.08.26-19.26.19:868][923]LogSavePackage: Save=52.08ms
-[2017.08.26-19.26.19:868][923]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/LobbyGM8B8D16F9430AF4638C1E5BB5B5BEB1A3.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset'
-[2017.08.26-19.26.19:869][923]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/Lobby/LobbyGM.uasset
-[2017.08.26-19.26.34:577][667]LogAIModule: Creating AISystem for world MainMenu
-[2017.08.26-19.26.34:594][667]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.26-19.26.34:594][667]LightingResults: New page: Lighting Build
-[2017.08.26-19.26.34:594][667]LoadErrors: New page: Loading map: MainMenu.umap
-[2017.08.26-19.26.34:595][667]MapCheck: New page: Map Check
-[2017.08.26-19.26.34:595][667]LightingResults: New page: Lighting Build
-[2017.08.26-19.26.34:657][667]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.26-19.26.34:679][667]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.26-19.26.34:734][667]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 53.928ms to complete.
-[2017.08.26-19.26.34:734][667]LogFileHelpers: Loading map 'MainMenu' took 0.141
-[2017.08.26-19.26.36:122][809]LogSavePackage: Save=83.62ms
-[2017.08.26-19.26.36:122][809]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenu8990DD4D48E49D1242C912881FA0600F.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
-[2017.08.26-19.26.36:123][809]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
-[2017.08.26-19.26.36:126][809]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.08.26-19.27.19:125][202]LogSavePackage: Save=86.79ms
-[2017.08.26-19.27.19:125][202]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/MainMenuBBACAE484577AA81F75D61B50FED18AE.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap'
-[2017.08.26-19.27.19:126][202]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap
-[2017.08.26-19.27.25:207][852]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2017.08.26-19.27.25:255][852]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2017.08.26-19.27.25:470][853]Cmd: QUIT_EDITOR
-[2017.08.26-19.27.25:507][853]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.08.26-19.27.25:527][853]LogExit: Preparing to exit.
-[2017.08.26-19.27.26:082][853]LogExit: Editor shut down
-[2017.08.26-19.27.26:082][853]LogExit: Transaction tracking system shut down
-[2017.08.26-19.27.26:222][853]LogObj: Freed 0b from 0 cluster array pools.
-[2017.08.26-19.27.26:222][853]LogExit: Object subsystem successfully closed.
-[2017.08.26-19.27.26:234][853]LogD3D11RHI: Shutdown
-[2017.08.26-19.27.26:234][853]LogD3D11RHI: CleanupD3DDevice
-[2017.08.26-19.27.26:313][853]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (239)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module SequencerWidgets (238)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module BlueprintGraph (237)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (236)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (235)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module CrashTracker (234)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module SceneOutliner (233)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module WidgetCarousel (232)
-[2017.08.26-19.27.26:323][853]LogModuleManager: Shutting down and abandoning module AddContentDialog (231)
-[2017.08.26-19.27.26:323][853]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.13/FeaturePacks/' was aborted.
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module GameplayTags (230)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module EditorWidgets (229)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module CollectionManager (228)
-[2017.08.26-19.27.26:324][853]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' was aborted.
-[2017.08.26-19.27.26:324][853]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Gary/Collections/' was aborted.
-[2017.08.26-19.27.26:324][853]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' was aborted.
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module StatsViewer (227)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module FoliageEdit (226)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module LandscapeEditor (225)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (224)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module ActorPickerMode (223)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module GeometryMode (222)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module TextureAlignMode (221)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module BspMode (220)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module HardwareSurvey (219)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (218)
-[2017.08.26-19.27.26:324][853]LogModuleManager: Shutting down and abandoning module SequenceRecorder (217)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module AutomationWorker (216)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (215)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module PlacementMode (214)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (213)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (212)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (211)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (210)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (209)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module Media (208)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (207)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (206)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module CharacterAI (205)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module SmartSnapping (204)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module SessionServices (203)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module ViewportSnapping (202)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module ViewportInteraction (201)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module LogVisualizer (200)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (199)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module IntroTutorials (198)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (197)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (196)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (195)
-[2017.08.26-19.27.26:325][853]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (194)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (193)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (192)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (191)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module NiagaraEditor (190)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module MergeActors (189)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module SizeMap (188)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module TreeMap (187)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module ReferenceViewer (186)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module LocalizationService (185)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (184)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module HardwareTargeting (183)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (182)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module UndoHistory (181)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module UserFeedback (180)
-[2017.08.26-19.27.27:165][853]LogModuleManager: Shutting down and abandoning module XmlParser (179)
-[2017.08.26-19.27.27:166][853]LogModuleManager: Shutting down and abandoning module Blutility (178)
-[2017.08.26-19.27.27:166][853]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (177)
-[2017.08.26-19.27.27:166][853]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (176)
-[2017.08.26-19.27.27:166][853]LogModuleManager: Shutting down and abandoning module InputBindingEditor (175)
-[2017.08.26-19.27.27:166][853]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (174)
-[2017.08.26-19.27.27:167][853]LogModuleManager: Shutting down and abandoning module SettingsEditor (173)
-[2017.08.26-19.27.27:167][853]LogModuleManager: Shutting down and abandoning module ProjectLauncher (172)
-[2017.08.26-19.27.27:167][853]LogModuleManager: Shutting down and abandoning module SessionFrontend (171)
-[2017.08.26-19.27.27:167][853]LogModuleManager: Shutting down and abandoning module ProfilerClient (170)
-[2017.08.26-19.27.27:167][853]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (169)
-[2017.08.26-19.27.27:167][853]LogModuleManager: Shutting down and abandoning module DeviceManager (168)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module AutomationController (167)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module AutomationWindow (166)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module Layers (165)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (164)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module DetailCustomizations (163)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module PackagesDialog (162)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module AnimGraph (161)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module Persona (160)
-[2017.08.26-19.27.27:220][853]LogModuleManager: Shutting down and abandoning module Kismet (159)
-[2017.08.26-19.27.27:241][853]LogModuleManager: Shutting down and abandoning module GraphEditor (158)
-[2017.08.26-19.27.27:241][853]LogModuleManager: Shutting down and abandoning module ClassViewer (157)
-[2017.08.26-19.27.27:245][853]LogModuleManager: Shutting down and abandoning module Toolbox (156)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module ModuleUI (155)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module MovieSceneTools (154)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module OutputLog (153)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module GammaUI (152)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module Documentation (151)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module Niagara (150)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (149)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module AnalyticsET (148)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module PortalServices (147)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module PortalRpc (146)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module MessagingRpc (145)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module GameplayDebugger (144)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module AITestSuite (143)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module AIModule (142)
-[2017.08.26-19.27.27:246][853]LogModuleManager: Shutting down and abandoning module ProfilerService (141)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module TaskGraph (140)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module SlateRemote (139)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module SteamVRController (138)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module SteamVR (137)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (136)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (135)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module OculusLibrary (134)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module OculusInput (133)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (132)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module CableComponent (131)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (130)
-[2017.08.26-19.27.27:417][853]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (129)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module HTML5Networking (128)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (127)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module GeometryCache (126)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module AlembicLibrary (125)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module AlembicImporter (124)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module SuperSearch (123)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (122)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (121)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module PluginBrowser (120)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (119)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module EpicSurvey (118)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module DesktopPlatform (117)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (116)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module UObjectPlugin (115)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (114)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (113)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module SourceControl (112)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module GitSourceControl (111)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (110)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (109)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (108)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module MeshPaint (107)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module FbxAutomationBuilderModule (106)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (105)
-[2017.08.26-19.27.27:418][853]LogModuleManager: Shutting down and abandoning module HotReload (104)
-[2017.08.26-19.27.27:418][853]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Binaries/Win64' was aborted.
-[2017.08.26-19.27.27:419][853]LogModuleManager: Shutting down and abandoning module MainFrame (103)
-[2017.08.26-19.27.27:419][853]LogModuleManager: Shutting down and abandoning module LevelEditor (102)
-[2017.08.26-19.27.27:420][853]LogModuleManager: Shutting down and abandoning module ContentBrowser (101)
-[2017.08.26-19.27.27:422][853]LogModuleManager: Shutting down and abandoning module Paper2DEditor (100)
-[2017.08.26-19.27.27:422][853]LogModuleManager: Shutting down and abandoning module UdpMessaging (99)
-[2017.08.26-19.27.27:523][853]LogModuleManager: Shutting down and abandoning module TcpMessaging (98)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (97)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module Paper2D (96)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (95)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module WmfMedia (94)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module MediaAssets (93)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (92)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (91)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module VREditor (90)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (89)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module PropertyEditor (88)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (87)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module FunctionalTesting (86)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (85)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module Sequencer (84)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (83)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module MessageLog (82)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module AssetTools (81)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module UMGEditor (80)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module UMG (79)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module SlateReflector (78)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module Slate (77)
-[2017.08.26-19.27.27:624][853]LogModuleManager: Shutting down and abandoning module EditorStyle (76)
-[2017.08.26-19.27.27:628][853]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (75)
-[2017.08.26-19.27.27:628][853]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (74)
-[2017.08.26-19.27.27:628][853]LogModuleManager: Shutting down and abandoning module XAudio2 (73)
-[2017.08.26-19.27.27:629][853]LogModuleManager: Shutting down and abandoning module Networking (72)
-[2017.08.26-19.27.27:629][853]LogModuleManager: Shutting down and abandoning module Core (71)
-[2017.08.26-19.27.27:629][853]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (70)
-[2017.08.26-19.27.27:629][853]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.08.26-19.27.27:629][853]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' was aborted.
-[2017.08.26-19.27.27:629][853]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.08.26-19.27.27:630][853]LogModuleManager: Shutting down and abandoning module AssetRegistry (69)
-[2017.08.26-19.27.27:816][853]LogModuleManager: Shutting down and abandoning module KismetCompiler (68)
-[2017.08.26-19.27.27:816][853]LogModuleManager: Shutting down and abandoning module PhysXFormats (67)
-[2017.08.26-19.27.27:816][853]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
-[2017.08.26-19.27.27:816][853]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
-[2017.08.26-19.27.27:884][853]LogDerivedDataCache: Shutdown
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
-[2017.08.26-19.27.27:884][853]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Messaging (45)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (30)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module InputCore (28)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Settings (27)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module OculusRift (26)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module GearVR (25)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module Voice (21)
-[2017.08.26-19.27.27:885][853]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
-[2017.08.26-19.27.27:885][853]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
-[2017.08.26-19.27.27:886][853]LogOnline:Display: Unloading online subsystem: STEAM
-[2017.08.26-19.27.27:886][853]LogOnline:Display: Unloading online subsystem: NULL
-[2017.08.26-19.27.27:886][853]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2017.08.26-19.27.27:886][853]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
-[2017.08.26-19.27.27:886][853]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA08D93B7-4854-FE22-2F17-6FAB2EA15102%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.13.2-3172292%2B%2B%2BUE4%2BRelease-4.13&UserID=5e424bd34fcec041fca8e183614cc47a%7Cc8589a177a054e7787ebf917e28d2cbe%7C16c1c745-8550-4113-947a-940016429e72&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.08.26-19.27.27:886][853]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA08D93B7-4854-FE22-2F17-6FAB2EA15102%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.13.2-3172292%2B%2B%2BUE4%2BRelease-4.13&UserID=5e424bd34fcec041fca8e183614cc47a%7Cc8589a177a054e7787ebf917e28d2cbe%7C16c1c745-8550-4113-947a-940016429e72&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.08.26-19.27.27:915][853]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2017.08.26-19.27.27:915][853]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.08.26-19.27.27:915][853]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.08.26-19.27.27:915][853]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.08.26-19.27.27:915][853]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.08.26-19.27.27:919][853]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.08.26-19.27.27:920][853]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.08.26-19.27.27:922][853]LogExit: Exiting.
-[2017.08.26-19.27.27:924][853]Log file closed, 08/26/17 15:27:27
+[2017.08.26-19.57.04:276][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.26-19.57.04:276][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.26-19.57.04:284][  0]LogInit: Computer: GARY-PC
+[2017.08.26-19.57.04:284][  0]LogInit: User: Gary
+[2017.08.26-19.57.04:284][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.08.26-19.57.04:284][  0]LogInit: High frequency timer resolution =3.905121 MHz
+[2017.08.26-19.57.04:285][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.26-19.57.04:285][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.26-19.57.04:285][  0]LogMemory: Process Physical Memory: 257.75 MB used, 257.75 MB peak
+[2017.08.26-19.57.04:285][  0]LogMemory: Process Virtual Memory: 260.47 MB used, 260.47 MB peak
+[2017.08.26-19.57.04:285][  0]LogMemory: Physical Memory: 5606.82 MB used, 16322.38 MB total
+[2017.08.26-19.57.04:285][  0]LogMemory: Virtual Memory: 627.91 MB used, 134217728.00 MB total
+[2017.08.26-19.57.04:309][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.08.26-19.57.04:738][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.26-19.57.04:762][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.08.26-19.57.04:762][  0]LogD3D11RHI:       4058/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.08.26-19.57.04:763][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.26-19.57.04:763][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.26-19.57.04:763][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.26-19.57.04:765][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.26-19.57.04:765][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.26-19.57.04:765][  0]LogWindows: EnumDisplayDevices:
+[2017.08.26-19.57.04:766][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.08.26-19.57.04:766][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.26-19.57.04:766][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.26-19.57.04:766][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.26-19.57.04:766][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.26-19.57.04:766][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.08.26-19.57.04:766][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.08.26-19.57.04:766][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.08.26-19.57.04:766][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.26-19.57.04:776][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.26-19.57.04:785][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.26-19.57.04:786][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/10996/).
+[2017.08.26-19.57.04:786][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gary/AppData/Local/Temp/UnrealShaderWorkingDir/0AE16ED0420F607192C24FB10ACF7B01/'.
+[2017.08.26-19.57.04:786][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.26-19.57.06:241][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.26-19.57.06:247][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.26-19.57.06:253][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.26-19.57.06:259][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.26-19.57.06:265][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.26-19.57.06:271][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.26-19.57.06:275][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.26-19.57.06:281][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.26-19.57.06:285][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.26-19.57.06:290][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.26-19.57.06:295][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.26-19.57.06:305][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.26-19.57.06:305][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.26-19.57.06:305][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.26-19.57.06:324][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.26-19.57.06:328][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.26-19.57.06:333][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.26-19.57.06:338][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.26-19.57.06:343][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.26-19.57.06:348][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.26-19.57.06:348][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.26-19.57.06:410][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.26-19.57.06:458][  0]LogDerivedDataCache: Loaded boot cache 0.05s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2017.08.26-19.57.06:458][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
+[2017.08.26-19.57.06:458][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.26-19.57.06:458][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.26-19.57.06:458][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.26-19.57.06:458][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.26-19.57.06:472][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.26-19.57.06:484][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gary/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.26-19.57.06:632][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.26-19.57.06:635][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.08.26-19.57.06:704][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.08.26-19.57.06:704][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.26-19.57.06:704][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.08.26-19.57.06:754][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.26-19.57.06:947][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2940303804
+[2017.08.26-19.57.06:981][  0]LogAssetRegistry: FAssetRegistry took 0.0213 seconds to start up
+[2017.08.26-19.57.07:007][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.023410 seconds
+[2017.08.26-19.57.07:011][  0]LogUObjectArray: 29785 objects as part of root set at end of initial load.
+[2017.08.26-19.57.07:011][  0]LogUObjectAllocator: 6339056 out of 0 bytes used by permanent object pool.
+[2017.08.26-19.57.07:011][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.26-19.57.07:178][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.26-19.57.07:178][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.26-19.57.07:653][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.26-19.57.07:671][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.26-19.57.07:852][  0]SourceControl: Info Source control is disabled
+[2017.08.26-19.57.07:871][  0]SourceControl: Info Source control is disabled
+[2017.08.26-19.57.07:879][  0]SourceControl: Info Source control is disabled
+[2017.08.26-19.57.07:886][  0]SourceControl: Info Source control is disabled
+[2017.08.26-19.57.08:009][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
+[2017.08.26-19.57.08:009][  0]LogLinker:Warning: Can't find file '/Game/VehicleBP/VehicleOverview'
+[2017.08.26-19.57.08:009][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/VehicleBP/VehicleOverview.VehicleOverview_C'
+[2017.08.26-19.57.08:166][  0]LogEngine: Initializing Engine...
+[2017.08.26-19.57.08:166][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.26-19.57.08:265][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.26-19.57.08:270][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.26-19.57.08:275][  0]LogInit: FAudioDevice initialized.
+[2017.08.26-19.57.08:303][  0]LogDerivedDataCache: Saved boot cache 0.03s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2017.08.26-19.57.08:310][  0]LogInit: Texture streaming: Enabled
+[2017.08.26-19.57.08:329][  0]LogInit: Transaction tracking system initialized
+[2017.08.26-19.57.08:344][  0]BlueprintLog: New page: Editor Load
+[2017.08.26-19.57.08:420][  0]LocalizationService: Info Localization service is disabled
+[2017.08.26-19.57.08:479][  0]LogConsoleResponse:Display: 
+[2017.08.26-19.57.08:558][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.26-19.57.08:558][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.26-19.57.08:679][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' took 0.02s
+[2017.08.26-19.57.08:679][  0]SourceControl: Info Source control is disabled
+[2017.08.26-19.57.08:680][  0]Cmd: MAP LOAD FILE="F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.26-19.57.08:680][  0]LightingResults: New page: Lighting Build
+[2017.08.26-19.57.08:682][  0]MapCheck: New page: Map Check
+[2017.08.26-19.57.08:682][  0]LightingResults: New page: Lighting Build
+[2017.08.26-19.57.08:716][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/UI/MainMenu/OptionsMenu.OptionsMenu_C:PlayerInfo'. Unknown structure.
+[2017.08.26-19.57.08:718][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/Blueprints/AllLevels/PlayerSaveGame.PlayerSaveGame_C:S_PlayerInfo'. Unknown structure.
+[2017.08.26-19.57.08:718][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/PlayerSaveGame.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.26-19.57.08:808][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.26-19.57.08:840][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.26-19.57.08:857][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2017.08.26-19.57.09:280][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.08.26-19.57.09:281][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.26-19.57.09:282][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.26-19.57.09:317][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 35.495ms to complete.
+[2017.08.26-19.57.09:317][  0]LogFileHelpers: Loading map 'MainMenu' took 0.638
+[2017.08.26-19.57.09:418][  0]LogCollectionManager: Loaded 1 collections in 0.001732 seconds
+[2017.08.26-19.57.09:455][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' took 0.01s
+[2017.08.26-19.57.09:455][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Gary/Collections/' took 0.01s
+[2017.08.26-19.57.09:455][  0]LogFileCache: Scanning file cache for directory 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' took 0.01s
+[2017.08.26-19.57.09:455][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000004 seconds
+[2017.08.26-19.57.09:455][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.08.26-19.57.09:468][  0]LogContentBrowser: Native class hierarchy populated in 0.0130 seconds. Added 2143 classes and 418 folders.
+[2017.08.26-19.57.09:476][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.26-19.57.09:476][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.26-19.57.09:477][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0007 seconds. Added 12 classes and 0 folders.
+[2017.08.26-19.57.09:483][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.08.26-19.57.09:519][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.08.26-19.57.09:523][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2017.08.26-19.57.09:563][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.26-19.57.09:568][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.08.26-19.57.09:596][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.08.26-19.57.09:596][  0]LogLoad: (Engine Initialization) Total time: 6.07 seconds
+[2017.08.26-19.57.09:596][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.23 seconds
+[2017.08.26-19.57.09:596][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.26-19.57.09:596][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.26-19.57.09:605][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.26-19.57.09:605][  0]LogOcInput: OculusInput pre-init called
+[2017.08.26-19.57.09:626][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.08.26-19.57.09:750][  1]LogRenderer: Reallocating scene render targets to support 1020x632 (Frame:2).
+[2017.08.26-19.57.09:772][  1]LogAssetRegistry: Asset discovery search completed in 2.8123 seconds
+[2017.08.26-19.57.09:772][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000012 seconds (found 0 objects)
+[2017.08.26-19.57.09:772][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000027 seconds (updated 0 objects)
+[2017.08.26-19.57.15:479][539]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 112 classes and 0 folders.
+[2017.08.26-19.57.21:424][106]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.08.26-19.58.07:465][558]BlueprintLog: New page: Compile GamePlayGM
+[2017.08.26-19.58.07:653][558]LogSavePackage: Save=21.05ms
+[2017.08.26-19.58.07:653][558]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM2A3109D0447C46A7E69DCAB842E0A118.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
+[2017.08.26-19.58.07:655][558]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
+[2017.08.26-19.58.08:281][628]LogSavePackage: Save=20.32ms
+[2017.08.26-19.58.08:281][628]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGM20EC9F7844700DB46F062697CA111543.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
+[2017.08.26-19.58.08:282][628]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
+[2017.08.26-19.58.40:073][419]LogSavePackage: Save=76.28ms
+[2017.08.26-19.58.40:073][419]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/UEDPCMainMenuE48B1C5B47F5652B6FB8A39D1D98E3A4.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.08.26-19.58.40:074][419]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.08.26-19.58.40:081][419]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.08.26-20.00.42:290][480]LogSavePackage: Save=22.39ms
+[2017.08.26-20.00.42:290][480]LogSavePackage: Moving 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/GamePlayGMF7BBEE4C4B0E8BA1F8DB6FA282931B7B.tmp' to 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset'
+[2017.08.26-20.00.42:292][480]LogSavePackage:Display: Finished SavePackage F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/GamePlay/GamePlayGM.uasset
+[2017.08.26-20.00.57:864][332]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.08.26-20.00.57:907][332]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.26-20.00.58:067][333]Cmd: QUIT_EDITOR
+[2017.08.26-20.00.58:105][333]LogExit: Preparing to exit.
+[2017.08.26-20.00.58:884][333]LogExit: Editor shut down
+[2017.08.26-20.00.58:885][333]LogExit: Transaction tracking system shut down
+[2017.08.26-20.00.59:024][333]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.26-20.00.59:024][333]LogExit: Object subsystem successfully closed.
+[2017.08.26-20.00.59:039][333]LogD3D11RHI: Shutdown
+[2017.08.26-20.00.59:039][333]LogD3D11RHI: CleanupD3DDevice
+[2017.08.26-20.00.59:090][333]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module BlueprintGraph (237)
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (236)
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (235)
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module CrashTracker (234)
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module SceneOutliner (233)
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module WidgetCarousel (232)
+[2017.08.26-20.00.59:100][333]LogModuleManager: Shutting down and abandoning module AddContentDialog (231)
+[2017.08.26-20.00.59:100][333]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.13/FeaturePacks/' was aborted.
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module GameplayTags (230)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module EditorWidgets (229)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module CollectionManager (228)
+[2017.08.26-20.00.59:101][333]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Collections/' was aborted.
+[2017.08.26-20.00.59:101][333]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Developers/Gary/Collections/' was aborted.
+[2017.08.26-20.00.59:101][333]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Saved/Collections/' was aborted.
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module StatsViewer (227)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module FoliageEdit (226)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module LandscapeEditor (225)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (224)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module ActorPickerMode (223)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module GeometryMode (222)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module TextureAlignMode (221)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module BspMode (220)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module HardwareSurvey (219)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (218)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module SequenceRecorder (217)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module AutomationWorker (216)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (215)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module PlacementMode (214)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (213)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (212)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (211)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (210)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (209)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module Media (208)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (207)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (206)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module CharacterAI (205)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module SmartSnapping (204)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module SessionServices (203)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module ViewportSnapping (202)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module ViewportInteraction (201)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module LogVisualizer (200)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (199)
+[2017.08.26-20.00.59:101][333]LogModuleManager: Shutting down and abandoning module IntroTutorials (198)
+[2017.08.26-20.00.59:102][333]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (197)
+[2017.08.26-20.00.59:102][333]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (196)
+[2017.08.26-20.00.59:102][333]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (195)
+[2017.08.26-20.00.59:102][333]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (194)
+[2017.08.26-20.00.59:521][333]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (193)
+[2017.08.26-20.00.59:521][333]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (192)
+[2017.08.26-20.00.59:521][333]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (191)
+[2017.08.26-20.00.59:521][333]LogModuleManager: Shutting down and abandoning module NiagaraEditor (190)
+[2017.08.26-20.00.59:521][333]LogModuleManager: Shutting down and abandoning module MergeActors (189)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module SizeMap (188)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module TreeMap (187)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module ReferenceViewer (186)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module LocalizationService (185)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (184)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module HardwareTargeting (183)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (182)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module UndoHistory (181)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module UserFeedback (180)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module XmlParser (179)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module Blutility (178)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (177)
+[2017.08.26-20.00.59:522][333]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (176)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module InputBindingEditor (175)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (174)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module SettingsEditor (173)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module ProjectLauncher (172)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module SessionFrontend (171)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module ProfilerClient (170)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (169)
+[2017.08.26-20.00.59:523][333]LogModuleManager: Shutting down and abandoning module DeviceManager (168)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module AutomationController (167)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module AutomationWindow (166)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module Layers (165)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (164)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module DetailCustomizations (163)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module PackagesDialog (162)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module AnimGraph (161)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module Persona (160)
+[2017.08.26-20.00.59:576][333]LogModuleManager: Shutting down and abandoning module Kismet (159)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module GraphEditor (158)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module ClassViewer (157)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module Toolbox (156)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module ModuleUI (155)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module MovieSceneTools (154)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module OutputLog (153)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module GammaUI (152)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module Documentation (151)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module Niagara (150)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (149)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module AnalyticsET (148)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module PortalServices (147)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module PortalRpc (146)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module MessagingRpc (145)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module GameplayDebugger (144)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module AITestSuite (143)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module AIModule (142)
+[2017.08.26-20.00.59:588][333]LogModuleManager: Shutting down and abandoning module ProfilerService (141)
+[2017.08.26-20.00.59:687][333]LogModuleManager: Shutting down and abandoning module TaskGraph (140)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SlateRemote (139)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SteamVRController (138)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SteamVR (137)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (136)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (135)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module OculusLibrary (134)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module OculusInput (133)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (132)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module CableComponent (131)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (130)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (129)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module HTML5Networking (128)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (127)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module GeometryCache (126)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module AlembicLibrary (125)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module AlembicImporter (124)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SuperSearch (123)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (122)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (121)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module PluginBrowser (120)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (119)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module EpicSurvey (118)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module DesktopPlatform (117)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (116)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module UObjectPlugin (115)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (114)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (113)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module SourceControl (112)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module GitSourceControl (111)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (110)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (109)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (108)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module MeshPaint (107)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module FbxAutomationBuilderModule (106)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (105)
+[2017.08.26-20.00.59:688][333]LogModuleManager: Shutting down and abandoning module HotReload (104)
+[2017.08.26-20.00.59:688][333]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Binaries/Win64' was aborted.
+[2017.08.26-20.00.59:689][333]LogModuleManager: Shutting down and abandoning module MainFrame (103)
+[2017.08.26-20.00.59:689][333]LogModuleManager: Shutting down and abandoning module LevelEditor (102)
+[2017.08.26-20.00.59:689][333]LogModuleManager: Shutting down and abandoning module ContentBrowser (101)
+[2017.08.26-20.00.59:690][333]LogModuleManager: Shutting down and abandoning module Paper2DEditor (100)
+[2017.08.26-20.00.59:690][333]LogModuleManager: Shutting down and abandoning module UdpMessaging (99)
+[2017.08.26-20.00.59:790][333]LogModuleManager: Shutting down and abandoning module TcpMessaging (98)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (97)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module Paper2D (96)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (95)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module WmfMedia (94)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module MediaAssets (93)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (92)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (91)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module VREditor (90)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (89)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module PropertyEditor (88)
+[2017.08.26-20.00.59:890][333]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (87)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module FunctionalTesting (86)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (85)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module Sequencer (84)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (83)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module MessageLog (82)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module AssetTools (81)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module UMGEditor (80)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module UMG (79)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module SlateReflector (78)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module Slate (77)
+[2017.08.26-20.00.59:891][333]LogModuleManager: Shutting down and abandoning module EditorStyle (76)
+[2017.08.26-20.00.59:892][333]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (75)
+[2017.08.26-20.00.59:892][333]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (74)
+[2017.08.26-20.00.59:892][333]LogModuleManager: Shutting down and abandoning module XAudio2 (73)
+[2017.08.26-20.00.59:892][333]LogModuleManager: Shutting down and abandoning module Networking (72)
+[2017.08.26-20.00.59:892][333]LogModuleManager: Shutting down and abandoning module Core (71)
+[2017.08.26-20.00.59:892][333]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (70)
+[2017.08.26-20.00.59:892][333]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.08.26-20.00.59:892][333]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/' was aborted.
+[2017.08.26-20.00.59:892][333]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.08.26-20.00.59:893][333]LogModuleManager: Shutting down and abandoning module AssetRegistry (69)
+[2017.08.26-20.01.00:029][333]LogModuleManager: Shutting down and abandoning module KismetCompiler (68)
+[2017.08.26-20.01.00:029][333]LogModuleManager: Shutting down and abandoning module PhysXFormats (67)
+[2017.08.26-20.01.00:029][333]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2017.08.26-20.01.00:029][333]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2017.08.26-20.01.00:091][333]LogDerivedDataCache: Shutdown
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2017.08.26-20.01.00:091][333]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (30)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module InputCore (28)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Settings (27)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module OculusRift (26)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module GearVR (25)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module Voice (21)
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
+[2017.08.26-20.01.00:092][333]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.08.26-20.01.00:092][333]LogOnline:Display: Unloading online subsystem: STEAM
+[2017.08.26-20.01.00:092][333]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.26-20.01.00:092][333]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.08.26-20.01.00:092][333]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.08.26-20.01.00:092][333]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B50C41850-4B56-0E2E-659A-B1AEE32CCC20%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.13.2-3172292%2B%2B%2BUE4%2BRelease-4.13&UserID=5e424bd34fcec041fca8e183614cc47a%7Cc8589a177a054e7787ebf917e28d2cbe%7C16c1c745-8550-4113-947a-940016429e72&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.08.26-20.01.00:098][333]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.08.26-20.01.00:098][333]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.08.26-20.01.00:099][333]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.08.26-20.01.00:099][333]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.08.26-20.01.00:099][333]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.08.26-20.01.00:100][333]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.08.26-20.01.00:101][333]LogExit: Exiting.
+[2017.08.26-20.01.00:102][333]Log file closed, 08/26/17 16:01:00
