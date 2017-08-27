@@ -1,9 +1,9 @@
-﻿Log file open, 08/26/17 15:58:40
+﻿Log file open, 08/27/17 17:19:12
 LogInit:Display: Running engine for game: PonyKart
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-243133555) SRandInit(-243133555).
+LogInit:Display: RandInit(-446581265) SRandInit(-446581265).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.073680
+LogStats: Stats thread started at 0.070750
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files/Epic Games/UE_4.13/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -148,542 +148,760 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.13/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.08.26-19.58.40:816][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.26-19.58.40:817][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.08.26-19.58.40:819][  0]LogInit: Computer: GARY-PC
-[2017.08.26-19.58.40:819][  0]LogInit: User: Gary
-[2017.08.26-19.58.40:819][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.08.26-19.58.40:819][  0]LogInit: High frequency timer resolution =3.905121 MHz
-[2017.08.26-19.58.40:819][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.08.26-19.58.40:819][  0]LogMemory: Platform Memory Stats for Windows
-[2017.08.26-19.58.40:819][  0]LogMemory: Process Physical Memory: 258.41 MB used, 258.41 MB peak
-[2017.08.26-19.58.40:819][  0]LogMemory: Process Virtual Memory: 260.53 MB used, 260.53 MB peak
-[2017.08.26-19.58.40:819][  0]LogMemory: Physical Memory: 7279.36 MB used, 16322.38 MB total
-[2017.08.26-19.58.40:819][  0]LogMemory: Virtual Memory: 627.91 MB used, 134217728.00 MB total
-[2017.08.26-19.58.40:843][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.08.26-19.58.41:149][  0]LogD3D11RHI: D3D11 adapters:
-[2017.08.26-19.58.41:167][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2017.08.26-19.58.41:167][  0]LogD3D11RHI:       4058/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.08.26-19.58.41:168][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.08.26-19.58.41:168][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.08.26-19.58.41:168][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.08.26-19.58.41:171][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.08.26-19.58.41:171][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2017.08.26-19.58.41:171][  0]LogWindows: EnumDisplayDevices:
-[2017.08.26-19.58.41:171][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2017.08.26-19.58.41:171][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.08.26-19.58.41:171][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.08.26-19.58.41:171][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.08.26-19.58.41:171][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.08.26-19.58.41:171][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2017.08.26-19.58.41:171][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
-[2017.08.26-19.58.41:171][  0]LogD3D11RHI:      Driver Date: 12-29-2016
-[2017.08.26-19.58.41:171][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.08.26-19.58.41:181][  0]LogD3D11RHI: Async texture creation enabled
-[2017.08.26-19.58.41:191][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.08.26-19.58.41:191][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/10968/).
-[2017.08.26-19.58.41:191][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gary/AppData/Local/Temp/UnrealShaderWorkingDir/8846A9464AA84D0B6EAE19902D9732E2/'.
-[2017.08.26-19.58.41:191][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.08.26-19.58.42:238][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.08.26-19.58.42:244][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.08.26-19.58.42:250][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.08.26-19.58.42:255][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.08.26-19.58.42:255][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.08.26-19.58.42:311][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.08.26-19.58.42:350][  0]LogDerivedDataCache: Loaded boot cache 0.04s 63MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2017.08.26-19.58.42:350][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
-[2017.08.26-19.58.42:351][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.08.26-19.58.42:351][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.08.26-19.58.42:351][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.08.26-19.58.42:351][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.08.26-19.58.42:364][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.08.26-19.58.42:375][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gary/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.08.26-19.58.42:507][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
-[2017.08.26-19.58.42:510][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.003146 seconds
-[2017.08.26-19.58.42:523][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.26-19.58.42:524][  0]LogContentStreaming: Texture pool size is 1000.00 MB
-[2017.08.26-19.58.42:591][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2017.08.26-19.58.42:591][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.08.26-19.58.42:591][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2017.08.26-19.58.42:632][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.08.26-19.58.42:803][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2940303804
-[2017.08.26-19.58.42:940][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.26-19.58.42:940][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.26-19.58.42:988][  0]LogMoviePlayer: Initializing movie player
-[2017.08.26-19.58.43:063][  0]LogWindowsMoviePlayer: Unable to load movie: F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Movies/Default_Startup.mp4
-[2017.08.26-19.58.43:142][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.08.26-19.58.43:161][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.08.26-19.58.43:229][  0]SourceControl: Info Source control is disabled
-[2017.08.26-19.58.43:229][  0]SourceControl: Info Source control is disabled
-[2017.08.26-19.58.43:239][  0]SourceControl: Info Source control is disabled
-[2017.08.26-19.58.43:334][  0]LogUObjectArray: 32663 objects as part of root set at end of initial load.
-[2017.08.26-19.58.43:334][  0]LogUObjectAllocator: 7458624 out of 0 bytes used by permanent object pool.
-[2017.08.26-19.58.43:334][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.08.26-19.58.43:377][  0]LogEngine: Initializing Engine...
-[2017.08.26-19.58.43:377][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.08.26-19.58.43:471][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.08.26-19.58.43:476][  0]LogInit: FAudioDevice initialized.
-[2017.08.26-19.58.43:480][  0]LogInit: Texture streaming: Enabled
-[2017.08.26-19.58.43:555][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/UI/MainMenu/OptionsMenu.OptionsMenu_C:PlayerInfo'. Unknown structure.
-[2017.08.26-19.58.43:555][  0]LogProperty:Error: UStructProperty::Serialize Loading: Property 'StructProperty /Game/Blueprints/AllLevels/PlayerSaveGame.PlayerSaveGame_C:S_PlayerInfo'. Unknown structure.
-[2017.08.26-19.58.43:556][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Blueprints/AllLevels/PlayerSaveGame.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-19.58.43:650][  0]LogClass:Warning: Property S_PlayerInfo of S_PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-19.58.43:676][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag STRUCT_REINST_PlayerInfo_0 != prop FallbackStruct) in package:  F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/UI/MainMenu/OptionsMenu.uasset. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-19.58.43:688][  0]LogClass:Warning: Property PlayerInfo of PlayerInfo has a struct type mismatch (tag FallbackStruct != prop PlayerInfo) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
-[2017.08.26-19.58.43:958][  0]LogInit:Display: Game Engine Initialized.
-[2017.08.26-19.58.44:003][  0]LogInit:Display: Starting Game.
-[2017.08.26-19.58.44:003][  0]LogNet: Browse: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
-[2017.08.26-19.58.44:003][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
-[2017.08.26-19.58.44:025][  0]LogMemory: Platform Memory Stats for Windows
-[2017.08.26-19.58.44:025][  0]LogMemory: Process Physical Memory: 883.53 MB used, 961.97 MB peak
-[2017.08.26-19.58.44:025][  0]LogMemory: Process Virtual Memory: 1041.52 MB used, 1041.52 MB peak
-[2017.08.26-19.58.44:025][  0]LogMemory: Physical Memory: 7850.84 MB used, 16322.38 MB total
-[2017.08.26-19.58.44:025][  0]LogMemory: Virtual Memory: 1646.45 MB used, 134217728.00 MB total
-[2017.08.26-19.58.44:025][  0]LogMemory: 
-[2017.08.26-19.58.44:025][  0]Allocator Stats for TBB: (not implemented)
-[2017.08.26-19.58.44:040][  0]LogAIModule: Creating AISystem for world MainMenu
-[2017.08.26-19.58.44:040][  0]LogWorld: Game class is 'GameMode'
-[2017.08.26-19.58.44:043][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Maps/UEDPCMainMenu.MainMenu up for play (max tick rate 0) at 2017.08.26-15.58.44
-[2017.08.26-19.58.44:043][  0]LogWorld: Bringing up level for play took: 0.000403
-[2017.08.26-19.58.44:044][  0]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.58.44:044][  0]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.58.44:044][  0]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.58.44:045][  0]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.58.44:045][  0]LogLoad: Took 0.042228 seconds to LoadMap(/Temp/Autosaves/Game/Maps/UEDPCMainMenu)
-[2017.08.26-19.58.44:259][  0]LogLoad: (Engine Initialization) Total time: 4.16 seconds
-[2017.08.26-19.58.44:259][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.16 seconds
-[2017.08.26-19.58.44:259][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.08.26-19.58.44:259][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.08.26-19.58.44:260][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.08.26-19.58.44:260][  0]LogOcInput: OculusInput pre-init called
-[2017.08.26-19.58.44:316][  0]LogRenderer: Reallocating scene render targets to support 128x128 (Frame:1).
-[2017.08.26-19.58.44:367][  1]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
-[2017.08.26-19.58.47:163][791]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2162631162
-[2017.08.26-19.58.47:164][791]LogInit: WinSock: I am gary-pc (192.168.1.46:0)
-[2017.08.26-19.58.47:368][791]LogPackageName: SearchForPackageOnDisk took   0.073s to resolve lobby.umap.
-[2017.08.26-19.58.47:368][791]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.58.47:368][791]LogGameState: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.58.47:438][791]LogPackageName: SearchForPackageOnDisk took   0.070s to resolve lobby.umap.
-[2017.08.26-19.58.47:438][791]LogNet: Browse: /Game/Maps/Lobby?Listen
-[2017.08.26-19.58.47:438][791]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
-[2017.08.26-19.58.47:449][791]LogMemory: Platform Memory Stats for Windows
-[2017.08.26-19.58.47:449][791]LogMemory: Process Physical Memory: 919.84 MB used, 961.97 MB peak
-[2017.08.26-19.58.47:449][791]LogMemory: Process Virtual Memory: 1133.80 MB used, 1146.84 MB peak
-[2017.08.26-19.58.47:449][791]LogMemory: Physical Memory: 7868.21 MB used, 16322.38 MB total
-[2017.08.26-19.58.47:449][791]LogMemory: Virtual Memory: 1765.97 MB used, 134217728.00 MB total
-[2017.08.26-19.58.47:449][791]LogMemory: 
-[2017.08.26-19.58.47:449][791]Allocator Stats for TBB: (not implemented)
-[2017.08.26-19.58.47:989][791]LogAIModule: Creating AISystem for world Lobby
-[2017.08.26-19.58.47:989][791]LogWorld: Game class is 'LobbyGM_C'
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamUtils() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamUser() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamFriends() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamRemoteStorage() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamUserStats() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamMatchmakingServers() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamApps() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamNetworking() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steamworks: SteamMatchmaking() failed!
-[2017.08.26-19.58.47:990][791]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2017.08.26-19.58.47:990][791]LogOnline:Warning: STEAM: Steam API failed to initialize!
-[2017.08.26-19.58.47:990][791]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2017.08.26-19.58.47:990][791]LogInit: WinSock: Socket queue 131072 / 131072
-[2017.08.26-19.58.47:991][791]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
-[2017.08.26-19.58.47:991][791]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
-[2017.08.26-19.58.47:995][791]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.08.26-15.58.47
-[2017.08.26-19.58.47:995][791]LogWorld: Bringing up level for play took: 0.001204
-[2017.08.26-19.58.48:004][791]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.58.48:004][791]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.58.48:004][791]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.58.48:004][791]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
-[2017.08.26-19.58.48:015][791]LogVoice:Warning: Failed to initialize voice interface
-[2017.08.26-19.58.48:015][791]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.58.48:016][791]LogLoad: Took 0.578019 seconds to LoadMap(/Game/Maps/Lobby)
-[2017.08.26-19.58.49:827][446]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
-[2017.08.26-19.58.53:506][898]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.58.53:506][898]LogGameState: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.58.53:507][898]LogGameMode: ProcessServerTravel: /Game/Maps/KartLevel_Test
-[2017.08.26-19.58.53:507][898]LogWorld: SeamlessTravel to: /Game/Maps/KartLevel_Test
-[2017.08.26-19.58.53:533][899]LogAIModule: Creating AISystem for world TravelMap
-[2017.08.26-19.58.53:536][899]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
-[2017.08.26-19.58.53:536][899]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.08.26-15.58.53
-[2017.08.26-19.58.53:536][899]LogWorld: Bringing up level for play took: 0.000441
-[2017.08.26-19.58.53:536][899]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
-[2017.08.26-19.58.53:536][899]LogNet:Verbose: NotifyLoadedWorld Begin
-[2017.08.26-19.58.53:536][899]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
-[2017.08.26-19.58.53:536][899]LogNet:Verbose: NotifyLoadedWorld End
-[2017.08.26-19.58.53:536][899]LogWorld: StartLoadingDestination to: /Game/Maps/KartLevel_Test
-[2017.08.26-19.58.53:675][904]LogStreaming:Error: Couldn't find file for package /Game/Blueprints/Characters/AppleJack requested by async loading code. NameToLoad: /Game/Blueprints/Characters/AppleJack
-[2017.08.26-19.58.53:698][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:698][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:698][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:698][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'AudioSource_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Camera_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Character_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:699][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SkeletalMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SpringArm_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'CollisionMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'StaticMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:700][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'AudioSource_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Camera_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Character_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SkeletalMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SpringArm_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'CollisionMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:701][905]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'StaticMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
-[2017.08.26-19.58.53:712][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:713][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:713][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:713][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:713][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:713][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:713][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:713][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:716][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:716][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:717][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:717][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:722][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:722][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:722][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:722][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:722][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:722][906]LoadErrors: Info Failed to load /Game/Blueprints/Characters/AppleJack.AppleJack_C Referenced by PersistentLevel
-[2017.08.26-19.58.53:722][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:722][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:722][906]LoadErrors: Info Failed to load /Game/Blueprints/Characters/AppleJack.AppleJack_C Referenced by PersistentLevel
-[2017.08.26-19.58.53:722][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:726][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:726][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:726][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:726][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:726][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:726][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:726][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:726][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:727][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:727][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
-[2017.08.26-19.58.53:728][906]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:728][906]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'AudioSource': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Camera': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Character': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SkeletalMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SpringArm': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'CollisionMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:737][907]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'StaticMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
-[2017.08.26-19.58.53:744][907]LogAIModule: Creating AISystem for world KartLevel_Test
-[2017.08.26-19.58.53:745][907]LogWorld: Game class is 'GamePlayGM_C'
-[2017.08.26-19.58.53:748][907]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
-[2017.08.26-19.58.53:749][907]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
-[2017.08.26-19.58.53:752][907]LogWorld: Bringing World /Game/Maps/KartLevel_Test.KartLevel_Test up for play (max tick rate 0) at 2017.08.26-15.58.53
-[2017.08.26-19.58.53:752][907]LogWorld: Bringing up level for play took: 0.004347
-[2017.08.26-19.58.53:752][907]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
-[2017.08.26-19.58.53:752][907]LogNet:Verbose: NotifyLoadedWorld Begin
-[2017.08.26-19.58.53:752][907]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
-[2017.08.26-19.58.53:752][907]LogNet:Verbose: NotifyLoadedWorld End
-[2017.08.26-19.58.53:752][907]LogWorld: ----SeamlessTravel finished in 0.24 seconds ------
-[2017.08.26-19.58.53:752][907]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0 
-[2017.08.26-19.58.53:753][907]LogBlueprintUserMessages: [GamePlayGM_C_0] index: 0 Player ControllerIdL 0
-[2017.08.26-19.58.53:753][907]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0
-[2017.08.26-19.58.53:753][907]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.58.53:753][907]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.58.53:753][907]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.58.53:753][907]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
-[2017.08.26-19.58.53:756][907]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.58.53:758][907]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
-[2017.08.26-19.59.04:842][ 54]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.59.04:842][ 54]LogGameState: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.59.04:843][ 54]LogGameMode: ProcessServerTravel: /Game/Maps/Lobby
-[2017.08.26-19.59.04:843][ 54]LogWorld: SeamlessTravel to: /Game/Maps/Lobby
-[2017.08.26-19.59.04:980][ 56]LogAIModule: Creating AISystem for world TravelMap
-[2017.08.26-19.59.04:985][ 56]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.005 s
-[2017.08.26-19.59.04:986][ 56]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.08.26-15.59.04
-[2017.08.26-19.59.04:986][ 56]LogWorld: Bringing up level for play took: 0.000582
-[2017.08.26-19.59.04:986][ 56]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: GamePlayPC_C_0
-[2017.08.26-19.59.04:986][ 56]LogNet:Verbose: NotifyLoadedWorld Begin
-[2017.08.26-19.59.04:986][ 56]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
-[2017.08.26-19.59.04:986][ 56]LogNet:Verbose: NotifyLoadedWorld End
-[2017.08.26-19.59.04:986][ 56]LogWorld: StartLoadingDestination to: /Game/Maps/Lobby
-[2017.08.26-19.59.05:410][ 59]LogAIModule: Creating AISystem for world Lobby
-[2017.08.26-19.59.05:410][ 59]LogWorld: Game class is 'LobbyGM_C'
-[2017.08.26-19.59.05:413][ 59]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
-[2017.08.26-19.59.05:414][ 59]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.08.26-15.59.05
-[2017.08.26-19.59.05:414][ 59]LogWorld: Bringing up level for play took: 0.000975
-[2017.08.26-19.59.05:414][ 59]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: GamePlayPC_C_0
-[2017.08.26-19.59.05:414][ 59]LogNet:Verbose: NotifyLoadedWorld Begin
-[2017.08.26-19.59.05:414][ 59]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
-[2017.08.26-19.59.05:414][ 59]LogNet:Verbose: NotifyLoadedWorld End
-[2017.08.26-19.59.05:414][ 59]LogWorld: ----SeamlessTravel finished in 0.57 seconds ------
-[2017.08.26-19.59.05:414][ 59]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0 
-[2017.08.26-19.59.05:422][ 59]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0
-[2017.08.26-19.59.05:422][ 59]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.59.05:422][ 59]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.59.05:422][ 59]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.59.05:422][ 59]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
-[2017.08.26-19.59.05:422][ 59]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.59.09:451][628]LogPackageName: SearchForPackageOnDisk took   0.066s to resolve MainMenu.umap.
-[2017.08.26-19.59.09:452][628]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.59.09:452][628]LogGameState: Match State Changed from InProgress to LeavingMap
-[2017.08.26-19.59.09:518][628]LogPackageName: SearchForPackageOnDisk took   0.067s to resolve MainMenu.umap.
-[2017.08.26-19.59.09:518][628]LogNet: Browse: /Game/Maps/MainMenu
-[2017.08.26-19.59.09:519][628]LogLoad: LoadMap: /Game/Maps/MainMenu
-[2017.08.26-19.59.09:519][628]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
-[2017.08.26-19.59.09:519][628]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
-[2017.08.26-19.59.09:519][628]LogExit: GameNetDriver IpNetDriver_0 shut down
-[2017.08.26-19.59.09:520][628]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
-[2017.08.26-19.59.09:520][628]LogScriptCore:Warning: 
-[2017.08.26-19.59.09:545][628]LogMemory: Platform Memory Stats for Windows
-[2017.08.26-19.59.09:545][628]LogMemory: Process Physical Memory: 1066.13 MB used, 1074.67 MB peak
-[2017.08.26-19.59.09:545][628]LogMemory: Process Virtual Memory: 1301.63 MB used, 1367.81 MB peak
-[2017.08.26-19.59.09:545][628]LogMemory: Physical Memory: 8000.90 MB used, 16322.38 MB total
-[2017.08.26-19.59.09:545][628]LogMemory: Virtual Memory: 1989.23 MB used, 134217728.00 MB total
-[2017.08.26-19.59.09:545][628]LogMemory: 
-[2017.08.26-19.59.09:545][628]Allocator Stats for TBB: (not implemented)
-[2017.08.26-19.59.09:550][628]LogAIModule: Creating AISystem for world MainMenu
-[2017.08.26-19.59.09:550][628]LogWorld: Game class is 'GameMode'
-[2017.08.26-19.59.09:553][628]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.08.26-15.59.09
-[2017.08.26-19.59.09:553][628]LogWorld: Bringing up level for play took: 0.000309
-[2017.08.26-19.59.09:553][628]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2017.08.26-19.59.09:554][628]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.59.09:554][628]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2017.08.26-19.59.09:554][628]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.59.09:554][628]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2017.08.26-19.59.09:554][628]LogLoad: Took 0.036023 seconds to LoadMap(/Game/Maps/MainMenu)
-[2017.08.26-19.59.10:530][264]Closing by request
-[2017.08.26-19.59.10:530][264]LogWindows: FPlatformMisc::RequestExit(0)
-[2017.08.26-19.59.10:531][265]LogMoviePlayer: Shutting down movie player
-[2017.08.26-19.59.11:416][265]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.08.26-19.59.11:425][265]LogExit: Preparing to exit.
-[2017.08.26-19.59.12:295][265]LogExit: Game engine shut down
-[2017.08.26-19.59.12:385][265]LogObj: Freed 0b from 0 cluster array pools.
-[2017.08.26-19.59.12:385][265]LogExit: Object subsystem successfully closed.
-[2017.08.26-19.59.12:396][265]LogD3D11RHI: Shutdown
-[2017.08.26-19.59.12:396][265]LogD3D11RHI: CleanupD3DDevice
-[2017.08.26-19.59.12:437][265]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (121)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module SequenceRecorder (120)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module AutomationController (119)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module AutomationWorker (118)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module GameplayDebugger (117)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module AITestSuite (116)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module AIModule (115)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (114)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (113)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module Media (112)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (111)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module CharacterAI (110)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module SessionServices (109)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (108)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module Niagara (107)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (106)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module PortalServices (105)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module PortalRpc (104)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module MessagingRpc (103)
-[2017.08.26-19.59.12:442][265]LogModuleManager: Shutting down and abandoning module ProfilerService (102)
-[2017.08.26-19.59.12:640][265]LogModuleManager: Shutting down and abandoning module TaskGraph (101)
-[2017.08.26-19.59.12:640][265]LogModuleManager: Shutting down and abandoning module SlateRemote (100)
-[2017.08.26-19.59.12:640][265]LogModuleManager: Shutting down and abandoning module SteamVRController (99)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module SteamVR (98)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (97)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module OculusLibrary (96)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module OculusInput (95)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (94)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module CableComponent (93)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (92)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module HTML5Networking (91)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module DesktopPlatform (90)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
-[2017.08.26-19.59.12:641][265]LogDirectoryWatcher: A directory notification for 'F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Binaries/Win64' was aborted.
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module HotReload (88)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (87)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module UObjectPlugin (86)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (85)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module SourceControl (84)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (83)
-[2017.08.26-19.59.12:641][265]LogModuleManager: Shutting down and abandoning module UdpMessaging (82)
-[2017.08.26-19.59.12:741][265]LogModuleManager: Shutting down and abandoning module TcpMessaging (81)
-[2017.08.26-19.59.13:153][265]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (80)
-[2017.08.26-19.59.13:153][265]LogModuleManager: Shutting down and abandoning module Paper2D (79)
-[2017.08.26-19.59.13:153][265]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (78)
-[2017.08.26-19.59.13:153][265]LogModuleManager: Shutting down and abandoning module WmfMedia (77)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module MediaAssets (76)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (75)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (74)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module VREditor (73)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (72)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module PropertyEditor (71)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (70)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module FunctionalTesting (69)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (68)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module Sequencer (67)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (66)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module MessageLog (65)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module AssetTools (64)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module UMGEditor (63)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module UMG (62)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module SlateReflector (61)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module Slate (60)
-[2017.08.26-19.59.13:154][265]LogModuleManager: Shutting down and abandoning module EditorStyle (59)
-[2017.08.26-19.59.13:155][265]LogModuleManager: Shutting down and abandoning module Messaging (58)
-[2017.08.26-19.59.13:155][265]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (57)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (56)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module XAudio2 (55)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module Networking (54)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module Core (53)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module KismetCompiler (52)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module PhysXFormats (51)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module MeshUtilities (50)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module AssetRegistry (49)
-[2017.08.26-19.59.13:156][265]LogModuleManager: Shutting down and abandoning module DerivedDataCache (48)
-[2017.08.26-19.59.13:388][265]LogDerivedDataCache: Shutdown
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (47)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (46)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (45)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (44)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (43)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (42)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (41)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (40)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module ImageWrapper (39)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (38)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (37)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (36)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (35)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (34)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (33)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (32)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (31)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (30)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module InputCore (28)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module Settings (27)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module OculusRift (26)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module GearVR (25)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
-[2017.08.26-19.59.13:388][265]LogModuleManager: Shutting down and abandoning module Voice (21)
-[2017.08.26-19.59.13:389][265]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
-[2017.08.26-19.59.13:389][265]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
-[2017.08.26-19.59.13:389][265]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
-[2017.08.26-19.59.13:389][265]LogOnline:Display: Unloading online subsystem: STEAM
-[2017.08.26-19.59.13:389][265]LogOnline:Display: Unloading online subsystem: NULL
-[2017.08.26-19.59.13:389][265]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.08.26-19.59.13:399][265]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.08.26-19.59.13:400][265]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.08.26-19.59.13:400][265]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.08.26-19.59.13:400][265]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.08.26-19.59.13:400][265]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.08.26-19.59.13:400][265]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.08.26-19.59.13:400][265]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.08.26-19.59.13:401][265]LogExit: Exiting.
-[2017.08.26-19.59.13:402][265]Log file closed, 08/26/17 15:59:13
+[2017.08.27-21.19.12:334][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.27-21.19.12:334][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.27-21.19.12:337][  0]LogInit: Computer: GARY-PC
+[2017.08.27-21.19.12:337][  0]LogInit: User: Gary
+[2017.08.27-21.19.12:337][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.08.27-21.19.12:337][  0]LogInit: High frequency timer resolution =3.905121 MHz
+[2017.08.27-21.19.12:337][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.27-21.19.12:337][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.27-21.19.12:337][  0]LogMemory: Process Physical Memory: 258.01 MB used, 258.01 MB peak
+[2017.08.27-21.19.12:337][  0]LogMemory: Process Virtual Memory: 260.54 MB used, 260.54 MB peak
+[2017.08.27-21.19.12:337][  0]LogMemory: Physical Memory: 6360.16 MB used, 16322.38 MB total
+[2017.08.27-21.19.12:337][  0]LogMemory: Virtual Memory: 627.91 MB used, 134217728.00 MB total
+[2017.08.27-21.19.12:362][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.08.27-21.19.12:677][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.27-21.19.12:697][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.08.27-21.19.12:697][  0]LogD3D11RHI:       4058/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.08.27-21.19.12:698][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.27-21.19.12:698][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.27-21.19.12:698][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.27-21.19.12:700][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.27-21.19.12:700][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.27-21.19.12:700][  0]LogWindows: EnumDisplayDevices:
+[2017.08.27-21.19.12:701][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.08.27-21.19.12:701][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.27-21.19.12:701][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.27-21.19.12:701][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.08.27-21.19.12:701][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.27-21.19.12:701][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.08.27-21.19.12:701][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.08.27-21.19.12:701][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.08.27-21.19.12:701][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.27-21.19.12:712][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.27-21.19.12:721][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.27-21.19.12:722][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Intermediate/Shaders/WorkingDirectory/7992/).
+[2017.08.27-21.19.12:722][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Gary/AppData/Local/Temp/UnrealShaderWorkingDir/BD324BF445F699D1849486A207209E1B/'.
+[2017.08.27-21.19.12:722][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.27-21.19.15:389][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.27-21.19.15:395][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.27-21.19.15:401][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.27-21.19.15:407][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.27-21.19.15:407][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.27-21.19.15:466][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.27-21.19.15:510][  0]LogDerivedDataCache: Loaded boot cache 0.04s 67MB C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2017.08.27-21.19.15:510][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Gary/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
+[2017.08.27-21.19.15:510][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.27-21.19.15:510][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.27-21.19.15:511][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.27-21.19.15:511][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.27-21.19.15:524][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.27-21.19.15:535][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Gary/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.27-21.19.15:670][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2017.08.27-21.19.15:673][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.003100 seconds
+[2017.08.27-21.19.15:686][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.27-21.19.15:687][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2017.08.27-21.19.15:758][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.08.27-21.19.15:758][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.27-21.19.15:758][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.08.27-21.19.15:803][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.27-21.19.15:977][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2940303804
+[2017.08.27-21.19.16:115][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.27-21.19.16:115][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.27-21.19.16:165][  0]LogMoviePlayer: Initializing movie player
+[2017.08.27-21.19.16:270][  0]LogWindowsMoviePlayer: Unable to load movie: F:/Users/Gary/Documents/GitHub/PonyKart-UE4/PonyKart Project Build/PonyKart/Content/Movies/Default_Startup.mp4
+[2017.08.27-21.19.16:376][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.27-21.19.16:395][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.27-21.19.16:474][  0]SourceControl: Info Source control is disabled
+[2017.08.27-21.19.16:474][  0]SourceControl: Info Source control is disabled
+[2017.08.27-21.19.16:486][  0]SourceControl: Info Source control is disabled
+[2017.08.27-21.19.16:592][  0]LogUObjectArray: 32663 objects as part of root set at end of initial load.
+[2017.08.27-21.19.16:592][  0]LogUObjectAllocator: 7458624 out of 0 bytes used by permanent object pool.
+[2017.08.27-21.19.16:592][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.27-21.19.16:635][  0]LogEngine: Initializing Engine...
+[2017.08.27-21.19.16:636][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.27-21.19.16:734][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.27-21.19.16:740][  0]LogInit: FAudioDevice initialized.
+[2017.08.27-21.19.16:744][  0]LogInit: Texture streaming: Enabled
+[2017.08.27-21.19.17:127][  0]LogInit:Display: Game Engine Initialized.
+[2017.08.27-21.19.17:174][  0]LogInit:Display: Starting Game.
+[2017.08.27-21.19.17:175][  0]LogNet: Browse: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
+[2017.08.27-21.19.17:177][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
+[2017.08.27-21.19.17:216][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.27-21.19.17:216][  0]LogMemory: Process Physical Memory: 867.32 MB used, 940.77 MB peak
+[2017.08.27-21.19.17:216][  0]LogMemory: Process Virtual Memory: 1038.82 MB used, 1044.38 MB peak
+[2017.08.27-21.19.17:216][  0]LogMemory: Physical Memory: 6793.94 MB used, 16322.38 MB total
+[2017.08.27-21.19.17:216][  0]LogMemory: Virtual Memory: 1647.51 MB used, 134217728.00 MB total
+[2017.08.27-21.19.17:216][  0]LogMemory: 
+[2017.08.27-21.19.17:216][  0]Allocator Stats for TBB: (not implemented)
+[2017.08.27-21.19.17:233][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.08.27-21.19.17:233][  0]LogWorld: Game class is 'GameMode'
+[2017.08.27-21.19.17:236][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Maps/UEDPCMainMenu.MainMenu up for play (max tick rate 0) at 2017.08.27-17.19.17
+[2017.08.27-21.19.17:238][  0]LogWorld: Bringing up level for play took: 0.002921
+[2017.08.27-21.19.17:257][  0]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.19.17:259][  0]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.19.17:259][  0]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.19.17:269][  0]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.19.17:269][  0]LogLoad: Took 0.091874 seconds to LoadMap(/Temp/Autosaves/Game/Maps/UEDPCMainMenu)
+[2017.08.27-21.19.17:497][  0]LogLoad: (Engine Initialization) Total time: 5.96 seconds
+[2017.08.27-21.19.17:497][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.10 seconds
+[2017.08.27-21.19.17:497][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.27-21.19.17:497][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.27-21.19.17:498][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.27-21.19.17:498][  0]LogOcInput: OculusInput pre-init called
+[2017.08.27-21.19.17:563][  0]LogRenderer: Reallocating scene render targets to support 128x128 (Frame:1).
+[2017.08.27-21.19.17:646][  1]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
+[2017.08.27-21.19.44:527][582]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: ponykart, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2162631162
+[2017.08.27-21.19.44:528][582]LogInit: WinSock: I am gary-pc (192.168.1.46:0)
+[2017.08.27-21.19.44:687][582]LogPackageName: SearchForPackageOnDisk took   0.072s to resolve Lobby.umap.
+[2017.08.27-21.19.44:687][582]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.19.44:687][582]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.19.44:756][582]LogPackageName: SearchForPackageOnDisk took   0.068s to resolve Lobby.umap.
+[2017.08.27-21.19.44:756][582]LogNet: Browse: /Game/Maps/Lobby?Listen
+[2017.08.27-21.19.44:756][582]LogLoad: LoadMap: /Game/Maps/Lobby?Listen
+[2017.08.27-21.19.44:772][582]LogMemory: Platform Memory Stats for Windows
+[2017.08.27-21.19.44:772][582]LogMemory: Process Physical Memory: 870.78 MB used, 940.77 MB peak
+[2017.08.27-21.19.44:772][582]LogMemory: Process Virtual Memory: 1052.11 MB used, 1094.50 MB peak
+[2017.08.27-21.19.44:772][582]LogMemory: Physical Memory: 6694.30 MB used, 16322.38 MB total
+[2017.08.27-21.19.44:772][582]LogMemory: Virtual Memory: 1715.35 MB used, 134217728.00 MB total
+[2017.08.27-21.19.44:772][582]LogMemory: 
+[2017.08.27-21.19.44:772][582]Allocator Stats for TBB: (not implemented)
+[2017.08.27-21.19.45:420][582]LogAIModule: Creating AISystem for world Lobby
+[2017.08.27-21.19.45:420][582]LogWorld: Game class is 'LobbyGM_C'
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamUtils() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamUser() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamFriends() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamRemoteStorage() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamUserStats() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamMatchmakingServers() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamApps() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamNetworking() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steamworks: SteamMatchmaking() failed!
+[2017.08.27-21.19.45:421][582]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2017.08.27-21.19.45:421][582]LogOnline:Warning: STEAM: Steam API failed to initialize!
+[2017.08.27-21.19.45:421][582]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2017.08.27-21.19.45:428][582]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.08.27-21.19.45:429][582]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.08.27-21.19.45:431][582]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2017.08.27-21.19.45:434][582]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.08.27-17.19.45
+[2017.08.27-21.19.45:434][582]LogWorld: Bringing up level for play took: 0.001101
+[2017.08.27-21.19.45:453][582]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.19.45:453][582]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.19.45:453][582]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.19.45:453][582]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.27-21.19.45:463][582]LogVoice:Warning: Failed to initialize voice interface
+[2017.08.27-21.19.45:463][582]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.19.45:465][582]LogLoad: Took 0.709035 seconds to LoadMap(/Game/Maps/Lobby)
+[2017.08.27-21.19.47:253][245]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
+[2017.08.27-21.19.50:981][727]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.19.50:981][727]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.19.50:983][727]LogGameMode: ProcessServerTravel: /Game/Maps/KartLevel_Test
+[2017.08.27-21.19.50:985][727]LogWorld: SeamlessTravel to: /Game/Maps/KartLevel_Test
+[2017.08.27-21.19.51:016][728]LogAIModule: Creating AISystem for world TravelMap
+[2017.08.27-21.19.51:018][728]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.002 s
+[2017.08.27-21.19.51:019][728]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.08.27-17.19.51
+[2017.08.27-21.19.51:019][728]LogWorld: Bringing up level for play took: 0.000455
+[2017.08.27-21.19.51:019][728]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.08.27-21.19.51:019][728]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.19.51:019][728]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.19.51:019][728]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.19.51:019][728]LogWorld: StartLoadingDestination to: /Game/Maps/KartLevel_Test
+[2017.08.27-21.19.51:157][733]LogStreaming:Error: Couldn't find file for package /Game/Blueprints/Characters/AppleJack requested by async loading code. NameToLoad: /Game/Blueprints/Characters/AppleJack
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:173][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:173][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'AudioSource_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:173][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:173][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:173][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:173][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:173][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Camera_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Character_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SkeletalMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SpringArm_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'CollisionMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'StaticMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:174][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'AudioSource_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Camera_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Character_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SkeletalMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SpringArm_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'CollisionMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:175][733]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'StaticMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.19.51:187][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:187][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:187][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:187][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:188][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:188][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:188][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:188][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:196][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:196][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:196][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:196][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:196][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:196][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:196][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:196][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:197][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:197][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:197][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:197][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:197][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:197][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:197][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:197][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:211][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:211][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:211][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:211][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:211][734]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:211][734]LoadErrors: Info Failed to load /Game/Blueprints/Characters/AppleJack.AppleJack_C Referenced by PersistentLevel
+[2017.08.27-21.19.51:211][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:212][734]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:212][734]LoadErrors: Info Failed to load /Game/Blueprints/Characters/AppleJack.AppleJack_C Referenced by PersistentLevel
+[2017.08.27-21.19.51:212][734]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:223][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:223][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:224][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:224][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:224][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:224][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:224][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:224][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:224][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:224][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.19.51:226][735]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:226][735]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'AudioSource': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Camera': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Character': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SkeletalMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SpringArm': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'CollisionMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:245][736]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'StaticMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.19.51:255][737]LogAIModule: Creating AISystem for world KartLevel_Test
+[2017.08.27-21.19.51:255][737]LogWorld: Game class is 'GamePlayGM_C'
+[2017.08.27-21.19.51:257][737]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.002 s
+[2017.08.27-21.19.51:259][737]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2017.08.27-21.19.51:261][737]LogWorld: Bringing World /Game/Maps/KartLevel_Test.KartLevel_Test up for play (max tick rate 0) at 2017.08.27-17.19.51
+[2017.08.27-21.19.51:264][737]LogWorld: Bringing up level for play took: 0.005976
+[2017.08.27-21.19.51:264][737]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.08.27-21.19.51:264][737]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.19.51:264][737]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.19.51:264][737]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.19.51:264][737]LogWorld: ----SeamlessTravel finished in 0.28 seconds ------
+[2017.08.27-21.19.51:264][737]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0 
+[2017.08.27-21.19.51:266][737]LogBlueprintUserMessages: [GamePlayGM_C_0] index: 0 Player ControllerIdL 0
+[2017.08.27-21.19.51:266][737]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0
+[2017.08.27-21.19.51:266][737]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.19.51:266][737]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.19.51:266][737]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.19.51:266][737]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.27-21.19.51:268][737]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.19.51:270][737]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2017.08.27-21.20.33:586][822]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.20.33:586][822]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.20.33:587][822]LogGameMode: ProcessServerTravel: /Game/Maps/Lobby
+[2017.08.27-21.20.33:587][822]LogWorld: SeamlessTravel to: /Game/Maps/Lobby
+[2017.08.27-21.20.33:707][824]LogAIModule: Creating AISystem for world TravelMap
+[2017.08.27-21.20.33:710][824]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.27-21.20.33:711][824]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.08.27-17.20.33
+[2017.08.27-21.20.33:711][824]LogWorld: Bringing up level for play took: 0.000441
+[2017.08.27-21.20.33:711][824]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: GamePlayPC_C_0
+[2017.08.27-21.20.33:711][824]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.20.33:711][824]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.20.33:711][824]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.20.33:711][824]LogWorld: StartLoadingDestination to: /Game/Maps/Lobby
+[2017.08.27-21.20.34:159][827]LogAIModule: Creating AISystem for world Lobby
+[2017.08.27-21.20.34:159][827]LogWorld: Game class is 'LobbyGM_C'
+[2017.08.27-21.20.34:161][827]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.27-21.20.34:162][827]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.08.27-17.20.34
+[2017.08.27-21.20.34:162][827]LogWorld: Bringing up level for play took: 0.001095
+[2017.08.27-21.20.34:162][827]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: GamePlayPC_C_0
+[2017.08.27-21.20.34:162][827]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.20.34:162][827]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.20.34:162][827]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.20.34:162][827]LogWorld: ----SeamlessTravel finished in 0.58 seconds ------
+[2017.08.27-21.20.34:162][827]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0 
+[2017.08.27-21.20.34:170][827]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0
+[2017.08.27-21.20.34:170][827]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.20.34:170][827]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.20.34:170][827]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.20.34:170][827]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.27-21.20.34:170][827]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.20.36:388][652]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
+[2017.08.27-21.20.41:269][584]PIE:Warning: Warning This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
+[2017.08.27-21.20.44:590][869]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.20.44:590][869]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.20.44:591][869]LogGameMode: ProcessServerTravel: /Game/Maps/KartLevel_Test
+[2017.08.27-21.20.44:591][869]LogWorld: SeamlessTravel to: /Game/Maps/KartLevel_Test
+[2017.08.27-21.20.44:608][870]LogAIModule: Creating AISystem for world TravelMap
+[2017.08.27-21.20.44:611][870]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.002 s
+[2017.08.27-21.20.44:611][870]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.08.27-17.20.44
+[2017.08.27-21.20.44:611][870]LogWorld: Bringing up level for play took: 0.000425
+[2017.08.27-21.20.44:611][870]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.08.27-21.20.44:611][870]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.20.44:611][870]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.20.44:611][870]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.20.44:611][870]LogWorld: StartLoadingDestination to: /Game/Maps/KartLevel_Test
+[2017.08.27-21.20.44:750][875]LogStreaming:Error: Couldn't find file for package /Game/Blueprints/Characters/AppleJack requested by async loading code. NameToLoad: /Game/Blueprints/Characters/AppleJack
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:766][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:766][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'AudioSource_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:766][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:766][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:766][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:766][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:766][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Camera_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Character_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SkeletalMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SpringArm_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'CollisionMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:767][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'StaticMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'AudioSource_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Camera_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'Character_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SkeletalMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'SpringArm_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'CollisionMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:768][875]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:769][875]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:769][875]LogLinker:Warning: CreateImport: Failed to load Outer for resource 'StaticMesh_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/Characters/AppleJack.AppleJack_C
+[2017.08.27-21.20.44:778][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:778][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:778][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:778][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:778][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:778][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:778][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:778][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:782][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:782][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:782][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:782][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:782][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:782][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:782][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:782][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:783][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:783][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:783][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:783][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:783][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:783][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:783][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:783][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:788][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:788][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:788][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:788][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:788][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:788][876]LoadErrors: Info Failed to load /Game/Blueprints/Characters/AppleJack.AppleJack_C Referenced by PersistentLevel
+[2017.08.27-21.20.44:788][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:788][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:788][876]LoadErrors: Info Failed to load /Game/Blueprints/Characters/AppleJack.AppleJack_C Referenced by PersistentLevel
+[2017.08.27-21.20.44:788][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:792][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:792][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:793][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:793][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:793][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:793][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:793][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:793][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file '/Game/Blueprints/Characters/AppleJack'
+[2017.08.27-21.20.44:794][876]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:794][876]LogUObjectGlobals:Warning: Failed to load '/Game/Blueprints/Characters/AppleJack': Can't find file for asset '/Game/Blueprints/Characters/AppleJack' while loading NULL.
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'AudioSource': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Camera': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'Character': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SkeletalMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'SpringArm': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'CollisionMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:811][878]LoadErrors:Warning: Warning CreateExport: Failed to load Outer for resource 'StaticMesh': AppleJack_C /Game/Maps/KartLevel_Test.KartLevel_Test:PersistentLevel.AppleJack2_732
+[2017.08.27-21.20.44:818][878]LogAIModule: Creating AISystem for world KartLevel_Test
+[2017.08.27-21.20.44:818][878]LogWorld: Game class is 'GamePlayGM_C'
+[2017.08.27-21.20.44:821][878]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.27-21.20.44:822][878]LogPhysics:Warning: FConstraintInstance::GetRefFrame : Contained scale.
+[2017.08.27-21.20.44:824][878]LogWorld: Bringing World /Game/Maps/KartLevel_Test.KartLevel_Test up for play (max tick rate 0) at 2017.08.27-17.20.44
+[2017.08.27-21.20.44:825][878]LogWorld: Bringing up level for play took: 0.003580
+[2017.08.27-21.20.44:825][878]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.08.27-21.20.44:825][878]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.20.44:825][878]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.20.44:825][878]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.20.44:825][878]LogWorld: ----SeamlessTravel finished in 0.23 seconds ------
+[2017.08.27-21.20.44:825][878]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0 
+[2017.08.27-21.20.44:825][878]LogBlueprintUserMessages: [GamePlayGM_C_0] index: 0 Player ControllerIdL 0
+[2017.08.27-21.20.44:825][878]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0
+[2017.08.27-21.20.44:825][878]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.20.44:825][878]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.20.44:825][878]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.20.44:825][878]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.27-21.20.44:827][878]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.20.44:829][878]LogAudio:Warning: Detected orphaned looping sound 'BGMusic1'.
+[2017.08.27-21.21.12:223][369]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.21.12:223][369]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.21.12:223][369]LogGameMode: ProcessServerTravel: /Game/Maps/Lobby
+[2017.08.27-21.21.12:223][369]LogWorld: SeamlessTravel to: /Game/Maps/Lobby
+[2017.08.27-21.21.12:351][371]LogAIModule: Creating AISystem for world TravelMap
+[2017.08.27-21.21.12:355][371]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.27-21.21.12:355][371]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.08.27-17.21.12
+[2017.08.27-21.21.12:355][371]LogWorld: Bringing up level for play took: 0.000450
+[2017.08.27-21.21.12:355][371]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: GamePlayPC_C_0
+[2017.08.27-21.21.12:355][371]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.21.12:355][371]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.21.12:355][371]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.21.12:355][371]LogWorld: StartLoadingDestination to: /Game/Maps/Lobby
+[2017.08.27-21.21.12:796][374]LogAIModule: Creating AISystem for world Lobby
+[2017.08.27-21.21.12:796][374]LogWorld: Game class is 'LobbyGM_C'
+[2017.08.27-21.21.12:799][374]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.003 s
+[2017.08.27-21.21.12:800][374]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.08.27-17.21.12
+[2017.08.27-21.21.12:800][374]LogWorld: Bringing up level for play took: 0.000975
+[2017.08.27-21.21.12:800][374]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: GamePlayPC_C_0
+[2017.08.27-21.21.12:800][374]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.08.27-21.21.12:800][374]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.08.27-21.21.12:800][374]LogNet:Verbose: NotifyLoadedWorld End
+[2017.08.27-21.21.12:800][374]LogWorld: ----SeamlessTravel finished in 0.58 seconds ------
+[2017.08.27-21.21.12:800][374]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: GamePlayPC_C_0 
+[2017.08.27-21.21.12:807][374]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0
+[2017.08.27-21.21.12:807][374]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.21.12:807][374]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.21.12:807][374]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.21.12:807][374]LogOnline:Warning: NULL: Can't start an online session (Game) in state InProgress
+[2017.08.27-21.21.12:807][374]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.21.14:216][856]LogPackageName: SearchForPackageOnDisk took   0.067s to resolve MainMenu.umap.
+[2017.08.27-21.21.14:226][856]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.21.14:226][856]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.08.27-21.21.14:291][856]LogPackageName: SearchForPackageOnDisk took   0.065s to resolve MainMenu.umap.
+[2017.08.27-21.21.14:291][856]LogNet: Browse: /Game/Maps/MainMenu
+[2017.08.27-21.21.14:291][856]LogLoad: LoadMap: /Game/Maps/MainMenu
+[2017.08.27-21.21.14:291][856]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
+[2017.08.27-21.21.14:294][856]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
+[2017.08.27-21.21.14:294][856]LogExit: GameNetDriver IpNetDriver_0 shut down
+[2017.08.27-21.21.14:294][856]LogScriptCore:Warning: Script Msg: DestroySession - Invalid player state
+[2017.08.27-21.21.14:294][856]LogScriptCore:Warning: 
+[2017.08.27-21.21.14:319][856]LogMemory: Platform Memory Stats for Windows
+[2017.08.27-21.21.14:319][856]LogMemory: Process Physical Memory: 1051.32 MB used, 1054.00 MB peak
+[2017.08.27-21.21.14:319][856]LogMemory: Process Virtual Memory: 1396.52 MB used, 1399.34 MB peak
+[2017.08.27-21.21.14:319][856]LogMemory: Physical Memory: 6890.26 MB used, 16322.38 MB total
+[2017.08.27-21.21.14:319][856]LogMemory: Virtual Memory: 2050.16 MB used, 134217728.00 MB total
+[2017.08.27-21.21.14:319][856]LogMemory: 
+[2017.08.27-21.21.14:319][856]Allocator Stats for TBB: (not implemented)
+[2017.08.27-21.21.14:325][856]LogAIModule: Creating AISystem for world MainMenu
+[2017.08.27-21.21.14:325][856]LogWorld: Game class is 'GameMode'
+[2017.08.27-21.21.14:328][856]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.08.27-17.21.14
+[2017.08.27-21.21.14:328][856]LogWorld: Bringing up level for play took: 0.000382
+[2017.08.27-21.21.14:328][856]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.08.27-21.21.14:329][856]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.21.14:329][856]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.08.27-21.21.14:329][856]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.21.14:329][856]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.08.27-21.21.14:329][856]LogLoad: Took 0.037786 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.08.27-21.21.15:506][613]Closing by request
+[2017.08.27-21.21.15:506][613]LogWindows: FPlatformMisc::RequestExit(0)
+[2017.08.27-21.21.15:507][614]LogMoviePlayer: Shutting down movie player
+[2017.08.27-21.21.15:706][614]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.27-21.21.15:715][614]LogExit: Preparing to exit.
+[2017.08.27-21.21.16:560][614]LogExit: Game engine shut down
+[2017.08.27-21.21.16:657][614]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.27-21.21.16:658][614]LogExit: Object subsystem successfully closed.
+[2017.08.27-21.21.16:676][614]LogD3D11RHI: Shutdown
+[2017.08.27-21.21.16:676][614]LogD3D11RHI: CleanupD3DDevice
+[2017.08.27-21.21.16:716][614]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (121)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module SequenceRecorder (120)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module AutomationController (119)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module AutomationWorker (118)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module GameplayDebugger (117)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module AITestSuite (116)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module AIModule (115)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (114)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (113)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module Media (112)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (111)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module CharacterAI (110)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module SessionServices (109)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (108)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module Niagara (107)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (106)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module PortalServices (105)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module PortalRpc (104)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module MessagingRpc (103)
+[2017.08.27-21.21.16:722][614]LogModuleManager: Shutting down and abandoning module ProfilerService (102)
+[2017.08.27-21.21.16:768][614]LogModuleManager: Shutting down and abandoning module TaskGraph (101)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module SlateRemote (100)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module SteamVRController (99)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module SteamVR (98)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (97)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module OculusLibrary (96)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module OculusInput (95)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (94)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module CableComponent (93)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (92)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module HTML5Networking (91)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module DesktopPlatform (90)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (89)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module HotReload (88)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (87)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module UObjectPlugin (86)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (85)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module SourceControl (84)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (83)
+[2017.08.27-21.21.16:769][614]LogModuleManager: Shutting down and abandoning module UdpMessaging (82)
+[2017.08.27-21.21.16:870][614]LogModuleManager: Shutting down and abandoning module TcpMessaging (81)
+[2017.08.27-21.21.17:421][614]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (80)
+[2017.08.27-21.21.17:421][614]LogModuleManager: Shutting down and abandoning module Paper2D (79)
+[2017.08.27-21.21.17:421][614]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (78)
+[2017.08.27-21.21.17:421][614]LogModuleManager: Shutting down and abandoning module WmfMedia (77)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module MediaAssets (76)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (75)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (74)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module VREditor (73)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (72)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module PropertyEditor (71)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (70)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module FunctionalTesting (69)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (68)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module Sequencer (67)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (66)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module MessageLog (65)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module AssetTools (64)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module UMGEditor (63)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module UMG (62)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module SlateReflector (61)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module Slate (60)
+[2017.08.27-21.21.17:427][614]LogModuleManager: Shutting down and abandoning module EditorStyle (59)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module Messaging (58)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (57)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (56)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module XAudio2 (55)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module Networking (54)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module Core (53)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module KismetCompiler (52)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module PhysXFormats (51)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module MeshUtilities (50)
+[2017.08.27-21.21.17:429][614]LogModuleManager: Shutting down and abandoning module AssetRegistry (49)
+[2017.08.27-21.21.17:430][614]LogModuleManager: Shutting down and abandoning module DerivedDataCache (48)
+[2017.08.27-21.21.17:462][614]LogDerivedDataCache: Shutdown
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (47)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (46)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (45)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (44)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (43)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (42)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (41)
+[2017.08.27-21.21.17:462][614]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (40)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module ImageWrapper (39)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (38)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (37)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (36)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (35)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (34)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (33)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (32)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (31)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (30)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module TargetPlatform (29)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module InputCore (28)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module Settings (27)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module OculusRift (26)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module GearVR (25)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (24)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (23)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module Voice (21)
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
+[2017.08.27-21.21.17:463][614]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.08.27-21.21.17:463][614]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2017.08.27-21.21.17:463][614]LogOnline:Display: Unloading online subsystem: STEAM
+[2017.08.27-21.21.17:463][614]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.27-21.21.17:463][614]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.08.27-21.21.17:489][614]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.08.27-21.21.17:489][614]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.08.27-21.21.17:489][614]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.08.27-21.21.17:489][614]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.08.27-21.21.17:489][614]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.08.27-21.21.17:490][614]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.08.27-21.21.17:491][614]LogExit: Exiting.
+[2017.08.27-21.21.17:492][614]Log file closed, 08/27/17 17:21:17
