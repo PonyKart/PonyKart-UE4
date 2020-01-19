@@ -1,0 +1,22 @@
+# 3ds Max To BlenderExport  (c)2009 author Silvio Falcinelli  
+standardmaterial
+
+newmtl RedApple
+	 Ka 1.0,1.0,1.0
+	 Kd 1.0,1.0,1.0
+	 Ks 1.0,1.0,1.0
+	 Ke 1.0,1.0,1.0
+	 reflect_blur 1
+	 refract_blur 1
+	 ray_reflect 0
+	 ray_refract 0
+	 dist_reflect 0.0
+	 dist_refract 0.0
+	 samples_reflect 18
+	 samples_refract 18
+	 l_tr 0.0
+	 translucency 0.0
+	 sss_color 0.4 0.4 0.4
+	 emit 2.0
+
+	 map_Kd  redapple.jpg|0 0 0 0.0 0.0 1.0 1.0 0 2 1 0 0 0.0 1.0 1.0 0.0
